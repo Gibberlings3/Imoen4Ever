@@ -1,0 +1,11 @@
+IF
+	Range([PC],10)
+//	GlobalGT("AsylumPlot","GLOBAL",4) 
+//	Range(Player1,15)
+	Global("C#IM_KidnappingBrynnlaw","AR1600",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#IM_KidnappingBrynnlaw","AR1600",1)
+END
+
+

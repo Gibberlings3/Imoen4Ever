@@ -1,0 +1,150 @@
+ACTION_IF GAME_IS ~bg2 tob bg2ee~ AND NOT GAME_IS ~bgt~ THEN BEGIN
+
+<<<<<<<< ...inlined/imoen_ar0400.baf
+IF
+	GlobalGT("BrusShow2","GLOBAL",0) 
+	!Exists("BRUS")
+	!InMyArea("imoen2")
+	InMyArea(Player1)
+	Global("C#IM_ImoenReturnSpawn","AR0400",0)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		StartCutSceneMode()
+		CreateCreatureObjectDoor("c#im_010",Player1,5,1,1)
+		SmallWait(3)
+	   	ActionOverride("IMOEN2",MakeGlobal()) 
+		SmallWait(3)
+	   	ActionOverride("IMOEN2",SetDialog("C#IMMET") 
+		ActionOverride("IMOEN2",ChangeAIScript("",DEFAULT))
+	    	ActionOverride("IMOEN2",ChangeAIScript("IMOEN2",OVERRIDE))
+		ActionOverride("IMOEN2",DestroyItem("IMOENHP1"))
+		SmallWait(1)	 
+//		ReallyForceSpellRES("c#im0001","IMOEN2") 
+//		SmallWait(1)	
+		SetPlayerSound("Imoen2",30759,MORALE)  
+		SetPlayerSound("Imoen2",30760,BORED)
+		SetPlayerSound("Imoen2",30762,BATTLE_CRY2)
+		SetPlayerSound("Imoen2",11035,BATTLE_CRY3)  
+		SetPlayerSound("Imoen2",30764,HURT) 
+		Wait(3)
+		SetGlobal("C#IM_ImoenReturnSpawn","AR0400",1)
+		SetInterrupt(TRUE)
+		ActionOverride("IMOEN2",StartDialogueNoSet(Player1))
+END
+
+>>>>>>>>
+END //BGII(:EE)
+
+
+ACTION_IF GAME_IS ~eet~ THEN BEGIN
+
+<<<<<<<< ...inlined/imoen_ar0400.baf
+IF
+	GlobalGT("BrusShow2","GLOBAL",0) 
+	!Exists("BRUS")
+	!InMyArea("imoen2")
+	InMyArea(Player1)
+	Global("C#IM_ImoenReturnSpawn","AR0400",0)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		StartCutSceneMode()
+		FadeToColor([30.0],0)	
+		Wait(3)
+		MoveGlobalObject("IMOEN2",Player1)
+	   	ActionOverride("IMOEN2",SetDialog("C#IMMET") 
+		ActionOverride("IMOEN2",ChangeAIScript("",DEFAULT))
+	    	ActionOverride("IMOEN2",ChangeAIScript("IMOEN2",OVERRIDE))
+		ActionOverride("IMOEN2",DestroyItem("IMOENHP1")) 
+		SmallWait(1)	 
+//		ReallyForceSpellRES("c#im0001","IMOEN2") 
+//		SmallWait(1)	
+		SetPlayerSound("Imoen2",30759,MORALE)  
+		SetPlayerSound("Imoen2",30760,BORED)
+		SetPlayerSound("Imoen2",30761,BATTLE_CRY2)
+		SetPlayerSound("Imoen2",30762,BATTLE_CRY3)  
+		SetPlayerSound("Imoen2",30764,HURT) 
+		FadeFromColor([30.0],0)
+		ActionOverride("imoen2",CreateVisualEffectObject("SPDIMNDR",Myself))
+		Wait(3)
+		SetGlobal("C#IM_ImoenReturnSpawn","AR0400",1)
+		SetInterrupt(TRUE)
+		ActionOverride("Imoen2",StartDialogueNoSet(Player1))
+END
+>>>>>>>>
+END //EET
+
+
+ACTION_IF GAME_IS ~bgt~ THEN BEGIN
+
+<<<<<<<< ...inlined/imoen_ar0400.baf
+IF
+	Global("ImoenPartyBG1","GLOBAL",1)
+	GlobalGT("BrusShow2","GLOBAL",0) 
+	!Exists("BRUS")
+	!InMyArea("imoen2")
+	InMyArea(Player1)
+	Global("C#IM_ImoenReturnSpawn","AR0400",0)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		StartCutSceneMode()
+		FadeToColor([30.0],0)	
+		Wait(3)
+		MoveGlobalObject("IMOEN2",Player1)
+		SetGlobal("C#IM_ImoenReturnSpawn","AR0400",1)
+	   	ActionOverride("IMOEN2",SetDialog("C#IMMET") 
+		ActionOverride("IMOEN2",ChangeAIScript("",DEFAULT))
+	    	ActionOverride("IMOEN2",ChangeAIScript("IMOEN2",OVERRIDE))
+		ActionOverride("IMOEN2",DestroyItem("IMOENHP1"))
+		SmallWait(1)	 
+//		ReallyForceSpellRES("c#im0001","IMOEN2") 
+//		SmallWait(1)	
+		SetPlayerSound("Imoen2",30759,MORALE)  
+		SetPlayerSound("Imoen2",30760,BORED)
+		SetPlayerSound("Imoen2",30762,BATTLE_CRY2)
+		SetPlayerSound("Imoen2",11035,BATTLE_CRY3)  
+		SetPlayerSound("Imoen2",30764,HURT) 	
+		FadeFromColor([30.0],0)
+		ActionOverride("imoen2",CreateVisualEffectObject("SPDIMNDR",Myself))
+		Wait(3)
+		SetInterrupt(TRUE)
+		ActionOverride("Imoen2",StartDialogueNoSet(Player1))
+END
+
+IF
+	Global("ImoenPartyBG1","GLOBAL",0)
+	GlobalGT("BrusShow2","GLOBAL",0) 
+	!Exists("BRUS")
+	!InMyArea("imoen2")
+	InMyArea(Player1)
+	Global("C#IM_ImoenReturnSpawn","AR0400",0)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		StartCutSceneMode()
+		CreateCreatureObjectDoor("c#im_010",Player1,5,1,1)
+		SetGlobal("C#IM_ImoenReturnSpawn","AR0400",1)
+		SmallWait(3)
+	   	ActionOverride("IMOEN2",MakeGlobal()) 
+		SmallWait(3)	
+	   	ActionOverride("IMOEN2",SetDialog("C#IMMET") 
+		ActionOverride("IMOEN2",ChangeAIScript("",DEFAULT))
+	    	ActionOverride("IMOEN2",ChangeAIScript("IMOEN2",OVERRIDE))
+		ActionOverride("IMOEN2",DestroyItem("IMOENHP1"))
+		SmallWait(1)	 
+//		ReallyForceSpellRES("c#im0001","IMOEN2") 
+//		SmallWait(1)	
+		SetPlayerSound("Imoen2",30759,MORALE)  
+		SetPlayerSound("Imoen2",30760,BORED)
+		SetPlayerSound("Imoen2",30762,BATTLE_CRY2)
+		SetPlayerSound("Imoen2",11035,BATTLE_CRY3)  
+		SetPlayerSound("Imoen2",30764,HURT) 
+		Wait(3)
+		SetInterrupt(TRUE)
+		ActionOverride("Imoen2",StartDialogueNoSet(Player1))
+END
+
+>>>>>>>>
+END //BGT

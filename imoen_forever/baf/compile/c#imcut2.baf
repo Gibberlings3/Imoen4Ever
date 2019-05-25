@@ -1,0 +1,30 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId("cujon3")  // Jon Irenicus
+		ActionOverride("cuimoen3",DestroySelf())		
+		MoveViewPoint([939.913],6)
+		FadeFromColor([30.0],0)
+		Wait(3)		
+		MoveToPointNoInterrupt([905.1043])
+		Face(6)
+		SmallWait(7)
+		CreateCreatureDoor("cuimoen3",[758.902],0)
+		Wait(4)
+		ActionOverride("cuimoen3",FaceObject("cujon3"))
+		DisplayStringWait("cuimoen3",@1012)  
+		DisplayStringWait(Myself,18647)  // Hello, little one.  You and I have a great deal to do.
+		DisplayStringWait("cuimoen3",18648)  // Wh- what are you planning?
+		DisplayStringWait(Myself,18649)  // Not to worry, nothing worse than what I shall do to your friend.
+		ForceSpell("cuimoen3",FLASHY_1)
+		Wait(2)
+		DisplayStringWait(Myself,56921)  // Patience, Imoen. Soon it all will end.
+		ForceSpell("cuimoen3",FLASHY_1)
+		Wait(1)
+		DisplayStringHead(Myself,56924)  // You are nearly ready for her, Imoen. She will be pleased. 
+		Wait(2)
+		FadeToColor([30.0],0)
+		Wait(4)
+		StartCutScene("C#IMCUT3")
+END

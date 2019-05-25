@@ -1,0 +1,9 @@
+IF
+	Exists("Yoshimo")
+	Global("C#IM_MakeYoshimoGlobal","AR0603",0)
+THEN
+	RESPONSE #100
+		ActionOverride("Yoshimo",MakeGlobal())
+		SetGlobal("C#IM_MakeYoshimoGlobal","AR0603",1)
+		Continue()
+END

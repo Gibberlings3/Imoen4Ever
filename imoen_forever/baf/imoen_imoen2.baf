@@ -1,0 +1,17 @@
+IF
+	Global("C#IM_ImoenStays","GLOBAL",1)
+	Global("C#IM_ApplySpellprotection","LOCALS",0)
+THEN
+	RESPONSE #100
+		ReallyForceSpellRES("c#im0001","IMOEN2")
+		SetGlobal("C#IM_ApplySpellprotection","LOCALS",1) 
+END
+
+IF
+	Global("C#IM_ImoenStays","GLOBAL",3)
+	Global("C#IM_RemoveSpellprotection","LOCALS",0)
+THEN
+	RESPONSE #100
+		ReallyForceSpellRES("c#im0002","IMOEN2")
+		SetGlobal("C#IM_RemoveSpellprotection","LOCALS",1) 
+END

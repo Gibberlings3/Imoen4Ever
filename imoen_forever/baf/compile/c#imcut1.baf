@@ -1,0 +1,38 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		StorePartyLocations()
+		Wait(1)
+		MultiPlayerSync()
+		FadeToColor([30.0],0)
+		Wait(2)
+		LeaveAreaLUAPanic("AR0071","",[0.0],0)
+		LeaveAreaLUA("AR0071","",[0.0],0)
+		ActionOverride(Player2,LeaveAreaLUA("AR0071","",[0.0],0))
+		ActionOverride(Player3,LeaveAreaLUA("AR0071","",[0.0],0))
+		ActionOverride(Player4,LeaveAreaLUA("AR0071","",[0.0],0))
+		ActionOverride(Player5,LeaveAreaLUA("AR0071","",[0.0],0))
+		ActionOverride(Player6,LeaveAreaLUA("AR0071","",[0.0],0))
+		MultiPlayerSync()
+		ActionOverride("Imoen2",SetDialog("IMOEN2"))
+		ActionOverride("Imoen2",ChangeAIScript("",DEFAULT))
+		ActionOverride("Imoen2",SetNumTimesTalkedTo(0))
+		ActionOverride("Imoen2",SetGlobal("KickedOut","LOCALS",0))
+		ActionOverride("Imoen2",ChangeAIScript("IMOEN2",OVERRIDE))
+		MoveGlobal("AR0071","Imoen2",[1900.1500])  // Imoen
+		ApplySpellRES("SPPR712","imoen2")  // Resurrection
+		SmallWait(5)
+		ApplySpellRES("SPWI625","imoen2")  //WIZARD_STONE_TO_FLESH
+		SmallWait(5)
+		ReallyForceSpellRES("c#im0002","IMOEN2")  //protection against imprisonment and chunked death
+		Wait(1)
+		MoveViewPoint([939.913],INSTANT)
+		Wait(1)
+		StartCutScene("C#IMCUT2")
+END
+
+
+
+

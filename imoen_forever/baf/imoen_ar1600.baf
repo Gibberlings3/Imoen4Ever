@@ -1,0 +1,34 @@
+IF
+//	GlobalGT("AsylumPlot","GLOBAL",4) 
+	AreaCheck("AR1600")
+	InPartyAllowDead("imoen2")
+	InMyArea(Player1)
+	!InMyArea("Bodhi")
+	CombatCounter(0)
+	!See([ENEMY])
+	Global("C#IM_KidnappingBrynnlaw","AR1600",1)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		StartCutSceneMode()
+		CreateCreatureObjectDoor("c#imcowl",Player1,1,1,1)
+		Wait(1)
+		SetGlobal("C#IM_ImoenStays","GLOBAL",2)
+		SetGlobal("C#IM_KidnappingBrynnlaw","AR1600",2)
+		SetInterrupt(TRUE)
+		ActionOverride("c#imcowl",StartDialogueNoSet(Player1))
+END
+
+IF
+//	GlobalGT("AsylumPlot","GLOBAL",4) 
+	AreaCheck("AR1600")
+	!InPartyAllowDead("imoen2")
+	InMyArea(Player1)
+	GlobalLT("C#IM_KidnappingBrynnlaw","AR1600",3)
+THEN
+	RESPONSE #100
+		SetGlobal("C#IM_ImoenStays","GLOBAL",2)
+		SetGlobal("C#IM_KidnappingBrynnlaw","AR1600",3)
+		StartCutSceneMode()
+		StartCutScene("c#imcut1")
+END

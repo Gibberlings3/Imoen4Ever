@@ -1,0 +1,7 @@
+IF
+	Global("C#IM__EraseJournalEntry","AR1512",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#IM__EraseJournalEntry","AR1512",1)
+		EraseJournalEntry(@1000)
+END

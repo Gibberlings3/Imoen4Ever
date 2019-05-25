@@ -1,0 +1,122 @@
+@1000  = ~Imoen is gone!
+
+As soon as we set foot onto Brynnlaw, Imoen was taken by what seemed to be a Coweld Wizard! If Irenicus has any hand in this I can only guess what horrors he has prepared for her. But is it really his doing? I stand helpless and with empty hands. All I can do is find a way into the Asylum as soon as possible and see what I will find...~
+
+@1001  = %I... I can go? Er, I don't have any gold... But I have this girdle... Surely a *very* powerful item, yes?%
+@1002  = %Would you accept this instead? (And I get rid of it at last...)%
+@1003  = %Indeed, this will do. We will remove it from you.%
+@1004  = %Oh! It's... er, really a powerful item? (cough)%
+@1005  = %Fools! You have no idea what this is about. Fine, no matter. Let her go. I will get back to them both, when the time is right.%
+@1006  = %But not without making sure you will be able to, little one - even without the girdle I gave you.%
+@1007  = %He is casting a spell, here, inside the building and in front of all of us! Take him away already!%
+@1008  = %The girl could walk free, if she pays the penalty.%
+@1009  = %Who are you and what is this about?%
+@1010  = %Hush. You are but a substitute, but you will do - for now.%
+@1011  = %Inprisoned Mage%
+
+
+@1012  = ~Where... where am I? How did I get here?!~
+
+
+@1013  = ~The gold was not important, Edwin. We have to help <CHARNAME> locate this Irenicus person.~
+@1014  = ~<CHARNAME>, I don't need to tell you how much I hate this. This all scares me. Once we reach our goal we must never associate with these people again.~
+@1015  = ~Our host may have a murky past, but this task benefits us both. We will earn access to Irenicus, and keep the balance here. A nature of the street to protect.~
+@1016  = ~As much as I will ramble on at the drop of a hat, I would think it wiser to find this Irenicus with all haste. It's like my uncle Gummo use to say, "Blah blah blah," he'd say, and we'd be right there with our "Uncle Gummo, we've got things to do," and he'd be right back with the "But just one more story. Just one more, blah blah."~
+@1017  = ~My task must not go unfinished. Please, Keldorn, serve until we defeated Irenicus.~
+@1018  = ~And that would accomplish what? Death on a grand scale, and make our task all the harder. Persuing our main goal must come first.~
+@1019  = ~Actually Keldorn, I've been thinking... The quest against Irenicus is my own and I have no right to force it upon a good friend against his will... You need to be here with your family.~ 
+@1020  = ~I felt... I felt like a husband again, like a father. It was good, <CHARNAME>. Very good... Now let us defeat this Irenicus, that I might return here all the sooner.~ 
+@1021  = ~Fine, then. Free it is. So long as we get a portion of the treasure.~
+@1022  = ~You'd have bought a trip to the graveyard if you had spent the money we needed to chase that mage! Minsc and Boo would see to that!~
+@1023  = ~I was wondering... is there anything you can tell me about this wizard, Irenicus? Or the Cowled Wizards?~
+@1024  = ~I cannot confirm anything else about the deal, except to confirm that yes... we can look into the location of this Irenicus.~
+@1025  = ~I have paid out a huge amount of gold; tell me how I can find Irenicus.~ 
+@1026  = ~It sounds good, though I must see to getting to Irenicus. What do you propose as a deal?~ 
+@1027  = ~I will do nothing of the sort! I demand you tell me where Irenicus is! I paid!~ 
+@1028  = ~You may not care about my people, <CHARNAME>, but I do. They deserve protection, and in fact, if they do not get it, you will not get our help.~ 
+@1029  = ~When you have destroyed their evil, return to me and I will fulfill our bargain. Do this job well and you may be with those you seek by the morning. What say you?~ 
+@1030  = ~He must be found, and that is best facilitated by helping you find him - obviously.~ 
+@1031  = ~Once on the island you will be on your own to contend with the asylum defenses and the pirates that run the place. Fight the pirates if you wish. Kill Irenicus if you can.~ 
+@1032  = ~Now, I know you are eager to set off after Irenicus, and I assure you that the time will come soon. It takes time to allocate the funds however.~  
+@1033  = ~And they are the block that prevents your pursuit of Irenicus. Trust in me, <CHARNAME>, you will not regret it.~ 
+@1034  = ~We thought you could lead us to him, and you can. You seek Irenicus, and we seek answers - both will be found together.~  
+@1035  = ~I would offer an alternative. I know Imoen came back to you and you might think both of you are safe. But you will not be as long as Irenicus is out there. I would help you find him for...oh... 15,000 gold? It is a sizeable amount less than the Shadow Thieves have asked and, coincidentally, it is what you have now.~ 
+@1036  = ~And you will help me find Irenicus for 15000? I still wonder why you would do this.~  
+@1037  = ~When will you help me find Irenicus? I have already paid to the necessary coin!~  
+@1038  = ~I have done much for you. When will you help me with Irenicus?~  
+@1039  = ~I have done everything you have asked. When will you help me with Irenicus?~  
+@1040  = ~I have tried to do as you have asked. When will you help me find Irenicus?~  
+@1041  = ~You would not want the path contested by Shadow Thieves, would you? The task at hand will ensure safe passage for you and all that travel with you. Let's get to it then.~ 
+@1042  = ~You seek Irenicus, the one who would give you power. I am prepared to give you his location, and the means with which to reach him.~ 
+@1043  = ~Of course you saw the outcome of that battle, with him spirited away - and some of your own companions, temporarily. You seek Irenicus, as well as I seek him. Both of us could benefit by his return.~  
+@1044  = ~I will do what I must. I make no promise for the safety of this Irenicus.~
+@1045  = ~I ask much, that is true, but this will benefit us both. You give him to me, and I give you what he has learned about you. Think of your potential. Think of what you hold dear.~ 
+@1046  = ~Perhaps he does, and perhaps he will get it. What happens is entirely dependent on your willingness to help. Do it for yourself. Do it for your power!~ 
+@1047  = ~It will not interfere. You will reach Irenicus with ease, for he is brought to a horrible place designed to hold the strong willed. A place the Cowled Wizards brought all they called "deviants".~ 
+@1048  = ~Return quickly to me. The longer you wait, the more distant Irenicus shall become. For a deviant, a stay in Spellhold is not a gentle one. Not even for one as powerful as Irenicus...~ 
+@1049  = ~First I would like to know where Irenicus is.~ 
+@1050  = ~I am leery of working for the people who took my friend Imoen with them without good reason. Tell me where Irenicus is, first.~ 
+@1051  = ~Irenicus?  Ah... the arrested wizard. I do not have such inconsequential information on me, so put aside such demands.~
+@1052  = ~I will not put it aside. Either you tell me where Irenicus is or you shall not receive my assistance.~
+@1053  = ~Perhaps if you tell me of Irenicus's location it will convince me to agree.~
+@1054  = ~You said you could look into Irenicus's location for me if I did as you asked, and I have done it.~
+@1055  = ~I have done as you asked and proven myself to you... now, I want to know what you've done with Irenicus.~
+@1056  = ~Members of your order arrested someone I seek, Irenicus. I want to know where he is before I agree to do anything.~
+@1057  = ~Perhaps. Members of your order, however, arrested someone I seek: Irenicus.  I would know where he is, first.~
+@1058  = ~I wish to know something. Members of your order arrested someone I seek: Irenicus. I would know where he is before I agree to anything.~
+@1059  = ~Your order arrested someone I seek: Irenicus. Tell me where he is and I might consider your task.~
+@1060  = ~Irenicus?  Ah... the arrested wizard. I do not have such inconsequential information on me. You must put such demands aside.~
+@1061  = ~This Irenicus... turned out to be a powerful wizard. He has caused... problems since his capture, striking fear into the heart of my order.~
+@1062  = ~The Cowled Wizards will not give away any information until the issue is resolved, so in effect I can tell you nothing.~
+@1063  = ~And even had this not occurred, you could not get to him, fool. He broke the law, and it is final. The Cowled Wizards do not give second chances.~
+@1064  = ~The Cowled Wizards? They are the ones that arrested Irenicus. I would be very interested in speaking to them about that.~
+@1065  = ~I do not know anything about that. I represent one of the wizards, as I said, a Master Tolgerias. Perhaps you could speak to him of this Irenicus?~
+@1066  = ~And what if I said I wished to know the whereabouts of Irenicus? Might your wizard see his way to doing that?~
+@1067  = ~You speak of trust when you are the ones that took Irenicus before I could have my revenge? Tell me where he is, then we will talk.~
+@1068  = ~Irenicus? I don't know the name. This is a large city, and the Cowled Wizards have many subdivisions and such. Taken because of unauthorized magic use?~
+@1069  = ~I will inquire to my superiors about him if you wish. Until then, I would advise that you act in accordance with this agreement.~
+@1070  = ~Have you discovered anything about the whereabouts of Irenicus? I must know.~
+@1071  = ~And before you ask, no, I have not learned anything new about your Irenicus friend. I have not forgotten. You must be patient.~
+@1072  = ~That's it? You've nothing else for me? What about Irenicus's whereabouts?~
+@1073  = ~And before you ask, no, I have no information about your friend Irenicus. I will ask again, because I know you will pester me.~
+@1074  = ~Regardless, I have some news of this Irenicus. I said I would tell you what I could, and since you have performed well, I think I owe you that much.~
+@1075  = ~He was taken into custody, that much you know. He proved to unruly for simple incarceration.~
+@1076  = ~He is no longer in the city. I could get nothing further from my superiors, and I expect that asking for more would yield a harsh response.~
+@1077  = ~Aran's tasks to receive the Shadow Thieves' aid.
+
+I informed Aran Linvail of the events on the docks, and he is even more concerned than before.  His next task for me is to go to the top floor of the Five Flagons Inn in the Bridge District... there I will find two Shadow Thieves named Jaylos and Caehan who plan to defect to the rival guild.
+
+Perhaps I can pretend to be another recruit, just as they are. If all goes as planned I might even fool their contact as well. Hopefully I will get the location of the rival guild's headquarters and then Aran can stop them from disrupting his people. Then we can get to the business of finding Irenicus. He seems sincere in this.~
+@1078  = ~Aran's tasks to receive the Shadow Thieves' aid.
+
+I have completed the tasks Aran Linvail set out for me, and at last the location of Irenicus has been revealed.  This did not come, mind you, without some revelations.
+
+The Shadow Thieves have been interested in me from the beginning. They were aware of my capture, but thought it nothing more than a simple kidnapping and none of their business. However, soon after that Bodhi appeared and their members started disappearing. They thought another guild was converting them, making a bid for control of the city's underground, and directed an attack against what they thought was the guild headquarters, Irenicus' dungeon below Waukeen's. 
+
+They were totally unprepared for how strong Irenicus was. After the battle they set their sights on me, because I was the only thing that came out of that dungeon alive. Since I was of such interest to Irenicus they needed to know what I was up to. Once they realized that Irenicus was a threat to us both, they sought to aid me, while also aiding themselves. Their intentions were good, despite their selfish motive.
+
+They believe that Irenicus is still very much a threat. He has been taken to an island asylum called Spellhold where mages are imprisoned and studied. And yet it sounds doubtful that Irenicus has been so easily overcome. Bodhi and her rival guild are tied to him in some manner...and his purpose in studying both myself and Imoen is still unknown.
+
+Irenicus still remains in that place, however. The Shadow Thieves have arranged a ship to take me to the isle at no small expense, hoping in that I might rid them of their problem, as well.  Whatever happens, I am sure my biggest challenge yet awaits me on this isle.~
+@1079  = ~Bodhi's offer rejected.
+
+Bodhi offered to let me join her guild, the one that has been warring with the Shadow Thieves.  She told me that my current employers were the Shadow Thieves, and that they could not be trusted. She also offered to help me find Irenicus, and at a significantly cheaper price than the Thieves. She hinted that my duties under her would be very bloody indeed. 
+
+I didn't think I could trust her, and I didn't want to throw away what I have done so far.  I turned her down, and now she is an enemy. She let me leave peacefully, accepting my decision, but stated quite matter-of-factly that we would meet again on less friendly terms.~
+@1080  = ~Perform Bodhi's tasks to receive her aid.
+
+Bodhi told me much today...but most importantly that she has booked passage to the island asylum where ...presumably... Irenicus is being held.  I am to return to her as soon as I am ready to leave on the ship.~
+@1081  = ~Bodhi keeps her side of the bargain.
+
+Bodhi agreed to fulfill our bargain, though there were some additional concerns she revealed.
+According to Bodhi, Irenicus captured me because he had discovered my nature as a child of Bhaal, and he was attempting to 'aid' my development, though his methods were indistinguishable from torture. The Shadow Thieves attacked Irenicus before I could be told any of this, and I escaped as he was incarcerated.
+
+Bodhi also told me that she is essentially Irenicus' sister, and that her reason for helping me is that she wishes to free the wizard from the place he has been sent to, a dread asylum for magic-users called Spellhold. Bodhi does this not out of any familial attachment, but rather because she requires Irenicus for her own purposes. As added incentive she offers to reveal whatever Irenicus learned about me. 
+
+The asylum is on an island under its own rule, and Bodhi used the gold I gave her to book passage for me.  There I will try to find a way into Spellhold to confront Irenicus...and, Bodhi hopes, free him at the same time.~
+@1082  = ~Meet with Tolgerias the Cowled Wizard.
+
+Tolgerias, the Cowled Wizard in the government building, has promised to find some information out on Irenicus if I perform the service that he is asking of me.~
+
+@1083 = %Yeah, that's exactly *why* I was...%
+

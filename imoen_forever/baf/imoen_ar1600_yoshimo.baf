@@ -1,0 +1,10 @@
+IF
+	!Dead("Yoshimo") 
+	!InPartyAllowDead("Yoshimo")
+	Global("C#IM_MovingYoshimo","AR1600",0)
+	InPartyAllowDead("imoen2")
+THEN
+	RESPONSE #100
+		MoveGlobal("AR1600","Yoshimo",[815.2868])
+		SetGlobal("C#IM_MovingYoshimo","AR1600",1)
+END

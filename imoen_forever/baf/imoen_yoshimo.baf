@@ -1,0 +1,9 @@
+IF
+	!InParty(Myself)
+	AreaCheck("AR1600")
+	Global("C#IM_MovingYoshimo","AR1600",1)
+	See(Player1)
+THEN
+	RESPONSE #100
+		StartDialogNoSet(Player1)
+END

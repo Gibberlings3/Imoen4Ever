@@ -1,0 +1,27 @@
+IF
+	Global("C#IM_ImoenStays","GLOBAL",1)
+	Global("C#IM_FoundThings","LOCALS",0)
+THEN
+	RESPONSE #100
+		CreateItem("MISC41",1,0,0)
+		CreateItem("MISC17",2,0,0)
+		CreateItem("MISC18",1,0,0)
+		CreateItem("POTN52",1,0,0)
+		CreateItem("SCRL05",1,0,0)
+		CreateItem("SCRL1D",1,0,0)
+		CreateItem("SCRL6F",1,0,0)
+		SetGlobal("C#IM_FoundThings","LOCALS",1) 
+END
+
+IF
+	InParty(Myself)
+	Detect(Player1)
+	!See([ENEMY])
+	CombatCounter(0)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	Global("C#IM_FoundThings","LOCALS",1)
+THEN
+	RESPONSE #100
+		StartDialogueNoSet(Player1)
+END
