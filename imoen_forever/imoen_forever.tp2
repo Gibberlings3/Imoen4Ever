@@ -10,7 +10,7 @@ BACKUP ~imoen_forever/backup~
 AUTHOR ~jastey@web.de~  
 
 
-VERSION ~pre1_190525~ 
+VERSION ~pre1_190528~ 
 
 README ~imoen_forever/readme.imoen_forever.%LANGUAGE%.txt~ ~imoen_forever/readme.imoen_forever.english.txt~
 

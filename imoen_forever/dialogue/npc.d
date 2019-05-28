@@ -113,6 +113,13 @@ ADD_TRANS_TRIGGER MAZZY 25 ~Global("C#IM_ImoenStays","GLOBAL",0)~ DO 0
 
 /* Nalia */
 /* meeting dialogue */
+
+/* #46099 ~I may be able to help you.  But I need to gather a large amount of gold to rescue a friend, so I'd be interested in knowing what you offer as payment.~ */
+ADD_TRANS_TRIGGER NALIA 1 ~Global("C#IM_ImoenStays","GLOBAL",0)~ DO 3
+
+/* #46100 ~I need to gather a large amount of gold to rescue a friend... so your payment had best be worth my time.~ */
+ADD_TRANS_TRIGGER NALIA 1 ~Global("C#IM_ImoenStays","GLOBAL",0)~ DO 3
+
 /* #42138 ~Just one thing, Nalia... you have to know that my goal is to rescue an old friend of mine, first and foremost.  Everything else is secondary.~ */
 ADD_TRANS_TRIGGER NALIA 43 ~Global("C#IM_ImoenStays","GLOBAL",0)~ DO 0
 
@@ -142,7 +149,9 @@ ADD_TRANS_TRIGGER VICONI 6 ~Global("C#IM_ImoenStays","GLOBAL",0)~ DO 0
 
 /* banter and dialogues */
 /* #8813 ~I have to rescue Imoen. She's been my companion since I was young.~ */
-ADD_TRANS_TRIGGER BVICONI 34 ~Global("C#IM_ImoenStays","GLOBAL",0)~ DO 0
+ADD_TRANS_TRIGGER BVICONI 34 ~Global("C#IM_ImoenStays","GLOBAL",0)~ DO 0 
+
+/* BVICONI 34 DO 1 also mentions Imoen, but it's ok */
 
 /* Yoshimo */
 

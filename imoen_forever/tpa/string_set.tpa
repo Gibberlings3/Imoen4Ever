@@ -16,6 +16,10 @@ STRING_SET 58162 @1015
 /* ~As much as I will ramble on at the drop of a hat, I would think it wiser to find this Imoen and Irenicus with all haste. It's like my uncle Gummo use to say, "Blah blah blah," he'd say, and we'd be right there with our "Uncle Gummo, we've got things to do," and he'd be right back with the "But just one more story. Just one more, blah blah." ~ */
 STRING_SET 56909 @1016
 
+//JANJ 175
+/* ~Well my point is that we should stop talking and fetching and try and find this Irenicus.~ */
+STRING_SET 56912 @1098
+
 //KELDORJ 46 DO 2
 /* #10396 ~My task must not go unfinished. Please, Keldorn, serve until we save Imoen.~ */
 STRING_SET 10396 @1017
@@ -29,8 +33,12 @@ STRING_SET 58140 @1018
 /* #10843 ~Actually Keldorn, I've been thinking... The quest for Imoen is my own and I have no right the force it upon a good friend against his will... You need to be here with your family.~ */
 STRING_SET 10843 @1019
 
+//KELDORP 27 DO 1
+/* #10853 ~Actually Keldorn, I've been thinking... The quest for Imoen is my own and I have no right the force it upon a good friend against his will... You need to be here with your family.~ */
+STRING_SET 10853 @1019
+
 //KELDORP 27
-/* #10853 ~I felt... I felt like a husband again, like a father. It was good, <CHARNAME>. Very good... Now let us rescue your Imoen, that I might return here all the sooner.~ */
+/* #10848 ~I felt... I felt like a husband again, like a father. It was good, <CHARNAME>. Very good... Now let us rescue your Imoen, that I might return here all the sooner.~ */
 STRING_SET 10848 @1020
 
 
@@ -51,6 +59,10 @@ STRING_SET 56886 @1022
 //RENAL 62 DO 0
 /* ~I was wondering... is there anything you can tell me about this wizard, Irenicus?  Or about the Cowled Wizards who hold Imoen?~ */
 STRING_SET 42460 @1023
+
+//RENAL 64 DO 1
+/* ~I can't. I must raise gold so the Shadow Thieves will aid me in finding Imoen.~ */
+STRING_SET 31750 @1090
 
 //RENAL 72 DO 0
 /* ~I was wondering... is there anything you can tell me about this wizard, Irenicus?  Or about the Cowled Wizards who hold Imoen?~ */
@@ -86,9 +98,14 @@ STRING_SET 49087 @1027
 //ARAN 9
 /* ~You may not care about my people, <CHARNAME>, but I do. They deserve protection, and in fact, if they do not get it, you will not see your Imoen.~ */
 STRING_SET 5754 @1028
+
 //ARAN 13
 /* ~When you have destroyed their evil, return to me and I will fulfill our bargain.  Do this job well and you may see Imoen by the morning.  What say you?~ */
 STRING_SET 5761 @1029
+
+// ARAN 29 DO 1 
+/* That is why I am asking gently. Why did you attack Irenicus? It was that fight that took Imoen from me. */
+STRING_SET 43015 @1096
 
 
 //ARAN 37
@@ -107,6 +124,10 @@ STRING_SET 49078 @1032
 //ARAN 65
 /* ~And they are the block that prevents your rescue of Imoen. Trust in me, <CHARNAME>, you will not regret it.~ */
 STRING_SET 49167 @1033
+
+//ARAN 71
+/* ~We must take partial responsibility for your loss of Imoen, but our chief concern was Irenicus at the time. We still don't know why he killed our guild members. ~*/
+STRING_SET 49176 @1097
 
 //ARAN 74
 /* ~We thought you could lead us to him, and you can. You seek Imoen and Irenicus, and we seek answers. They were taken to the same place, you see. ~ */
@@ -168,10 +189,29 @@ STRING_SET 42853 @1046
 /* ~It will not interfere.  You will reach Irenicus and Imoen with ease, for they are both in the same place; a horrible place designed to hold the strong willed.~ */
 STRING_SET 42854 @1047
 
-
 //BODHI 111
 /* ~Return quickly to me. The longer you wait, the more lost Imoen shall become. A stay in Spellhold is not a gentle one.~ */
 STRING_SET 42906 @1048
+
+//BODHI 113
+/* ~I trust you will waste no more time here? The ship awaits. Imoen awaits.  Irenicus awaits.~ */
+STRING_SET 42908 @1091
+
+//BODHI 125
+/* ~And rest assured, I will help you find Imoen, I will help you find Irenicus, but not just for your reasons. I have an interest in Irenicus myself.~ */
+STRING_SET 49065 @1093
+
+//BODHI 126
+/* ~You must bear this as one of the additional conditions. I offer much, and expect much in return. Imoen and Irenicus will be your joint goal in time.~ */
+STRING_SET 49067 @1094
+
+//BODHI 129
+/* ~15,000 is a lot, but I will compensate you well for it. You will ultimately have Imoen, and a few magical trinkets too.~ */
+STRING_SET 49071 @1095
+
+//FIRKRA02 18 -- this is actually not necessary for English, but for German version
+/* ~What do you know of Irenicus!~ */
+STRING_SET 43184 @1092
 
 /* Tolgerias TOLGER*/
 //TOLGER 1 DO 1
@@ -325,6 +365,16 @@ Bodhi offered to let me join her guild, the one that has been warring with the S
 I didn't think I could trust her, and I didn't want to throw away what I have done so far.  I turned her down, and now she is an enemy.   She let me leave peacefully, accepting my decision, but stated quite matter-of-factly that we would meet again on less friendly terms.~ */
 STRING_SET 6602 @1079
 
+//BODHI 21
+/* ~Perform Bodhi's tasks to receive her aid.
+
+I have agreed to work for Bodhi. She is the head of the 'rival guild' that is facing off against the Shadow Thieves.  She required far less coin than my current employers did.  I am also to perform several services in undermining the Shadow Thieves, and once these are done I will have her full aid in finding Imoen. These services may be bloody and harsh.
+
+Doing this means that the Shadow Thieves are now my enemies, and according to Bodhi they will already know that I have turned against them.  Fair enough.  My first mission is to go down to the docks in the Docks District and find a shipment that is being guarded by Shadow Thieves.  Once I obtain the shipment, I am to return to the crypts below in the Graveyard District and give it to Bodhi.
+
+Bodhi also mentions that despite its grim appearance, the crypts are a safe place to rest if I need it.~ */
+STRING_SET 6606 @1085
+
 
 //BODHI 111
 /* ~Perform Bodhi's tasks to receive her aid.
@@ -343,8 +393,58 @@ Bodhi also told me that she is essentially Irenicus' sister, and that her reason
 The asylum is on an island under its own rule, and Bodhi used the gold I gave her to book passage for me.  There I will try to find a way into Spellhold to free Imoen...and, Bodhi hopes, free Irenicus at the same time.~ */
 STRING_SET 20694 @1081
 
+//BODHI2 25
+/* ~Aran's tasks to receive the Shadow Thieves' aid.
+
+I have defeated the rival guild, full of vampires as it was, and have faced Bodhi. She claimed to know something of Imoen and seemed to be judging me in some manner before she left in gaseous form.  All that remains now is to return to Aran and tell him that the guild is gone, even if their leader remains unkilled. I will have questions for him as well.
+
+One more troubling thing... Bodhi knew. She knew I am a child of Bhaal. ~ */
+STRING_SET 47838 @1089
+
+//GAELAN 51
+/* Collect the fee for Gaelan Bayle.
+
+Gaelan Bayle will connect me with a group who will aid in finding Imoen, but the price is 20,000 gp!  A steep cost, but he did mention that it entailed crossing the Cowled Wizards, not something to be done lightly.  Once I have the 20,000 gp, I am to speak to him again.*/
+STRING_SET 34187 @1084
+
+//KORGANA 
+/* ~~ */
+STRING_SET 46101 @1100
+
+
+//NALIAJ 250
+/* ~He... he wants us to steal from a temple?  Even from Talos, it still creeps me out.  Just... just how far will we sink to rescue your friend, <CHARNAME>?~ */
+STRING_SET 49381 @1099
+
+//PPSAEM 14
+/* ~Chapter 4
+
+Now that I have completed the tasks that Bodhi set out for me, which included the disruption of the Shadow Thieves and the assassination of the Shadowmaster, Aran Linvail himself, she has made several things quite a bit clearer.
+
+Irenicus, the mage who kidnapped me, is Bodhi's brother.  She says she did not support his abduction of me, which was apparently done because I am a Child of Bhaal.  What Imoen and I perceived as torture was actually the mage trying to discover and activate "my true potential"... whether I wished to or not.
+Bodhi wants to find her brother and gain access to the knowledge that he possesses, and for my aid she will turn over whatever information he has about me.  She will accompany me beyond this point, as Irenicus and Imoen are held at the same place: a fortress asylum called Spellhold on a remote island far from Amn.  The gold I gave her has been used to book passage with a privateer named Saemon Havarian.  Once I am at the island I will need to find a way into the asylum... although I do not know how Bodhi will participate, herself.  Soon I will have the answers I seek...~ */
+STRING_SET 20633 @1086
+
+//PPSAEM 53
+/* ~Chapter 4
+
+I have completed the tasks that Aran Linvail set out for me, including destroying the rival guild that Bodhi had set up and forcing the vampire herself to flight, and now the Shadowmaster has enlightened me about several things.
+
+The Shadow Thieves were the ones who attacked Irenicus in the dungeon that I awoke in.  They had heard about my kidnapping, but not thought much of it... but then Bodhi's guild appeared and many of the Shadow Thieves began to disappear.  They managed to track down Irenicus' dungeon and linked it to Bodhi... and I was witness to their subsequent disastrous assault.
+Aran feels partly responsible for Imoen's kidnapping, and told me that she and Irenicus were taken to the same place: an island asylum for mages called Spellhold.  The gold I supplied was used to book passage to the isle, and it is there that I will find the answers I seek.  Aran warns me, though, that the asylum is a veritable fortress meant to contain insane wizards and other 'deviants'... and even gaining entry will be a feat unto itself.  Regardless, passage with a privateer named Saemon Havarian has been booked and I am on my way...~ */
+STRING_SET 20632 @1087
+
+
 //TOLGER 14
 /* ~Meet with Tolgerias the Cowled Wizard.
 
 Tolgerias, the Cowled Wizard in the government building, has promised to find some information out on Imoen if I perform the service that he is asking of me.~ */
 STRING_SET 8126 @1082
+
+//?
+/* Chapter 3
+
+Throughout my time in Athkatla and my adventures in and around the city, I have seen hints of some great struggle between the Shadow Thieves and some other source.  This other source approached me in the form of Bodhi... a woman of great power and evil, rivalling her ambition.  She revealed the nature of my benefactors under Gaelan Bayle to be none other than the Shadow Thieves, themselves, and offered to give me the same help that they did... but at a far lesser price.
+
+I have accepted Bodhi's offer and she has taken me into her confidence, for now.  The true nature of her motivations has yet to be revealed, but it obvious that Bodhi is on the winning side of this city-wide conflict.  As to the gold I have given her for her aid... I have the feeling that it is just the beginning of the final price I will eventually have to pay.  But I will have my answers... I will find Imoen and Irenicus both.*/
+STRING_SET 23351 @1088

@@ -25,11 +25,25 @@ ADD_TRANS_TRIGGER ARAN 70 ~Global("C#IM_ImoenStays","GLOBAL",0)~ DO 2
 
 
 /* Bodhi */
+/* #59400 ~I don't care about my 'friend'.  I want Irenicus for revenge and for what he can do for me!~ */
+ADD_TRANS_TRIGGER BODHI 6 ~Global("C#IM_ImoenStays","GLOBAL",0)~ DO 13
+
 /* #59426 ~Imoen is of paramount inportance.~ */
 ADD_TRANS_TRIGGER BODHI 81 ~Global("C#IM_ImoenStays","GLOBAL",0)~ DO 2
 
 /* #42892 ~Then it is a simple matter of retrieveing Imoen from this place.~ */
 ADD_TRANS_TRIGGER BODHI 104 ~Global("C#IM_ImoenStays","GLOBAL",0)~ DO 0
+
+/* Bodhi */
+/* #59401 ~I don't care about my 'friend'.  I want Irenicus for revenge and for what he can do for me!~ */
+ADD_TRANS_TRIGGER BODHI 130 ~Global("C#IM_ImoenStays","GLOBAL",0)~ DO 4
+
+/* MGTEOS01 2 DO 2: mentions Imoen but is ok (~You are the ones that took Imoen from under my nose! Explain why I should trust you!~) */
+
+/* Quayle - Aerie joining */
+/* 42164 ~You should know, Aerie, that my goal is to rescue a friend of mine... Imoen... who has been captured by the Cowled Wizards.  It could be dangerous.~ */
+ADD_TRANS_TRIGGER QUAYLE 4 ~Global("C#IM_ImoenStays","GLOBAL",0)~ DO 0
+
 
 /* abduction in Brynnlaw */
 BEGIN c#imcowl

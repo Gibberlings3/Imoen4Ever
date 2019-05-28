@@ -50,7 +50,7 @@ COMPATIBILITY
 Compatibility is a bit on the tough side with this mod since all mods assume Imoen is being taken at the Waukeen's Promenade fight and stays in Irenicus' grasps until the PC reaches Spellhold. 
 
 The mod is:
--compatible with Alamateria's Restauration Project "Extended Waukeen's Promenade Cutscene" (independent of installation order)
+-compatible with Almateria's Restauration Project "Extended Waukeen's Promenade Cutscene" (independent of installation order)
 
 -compatible with Tweaks Anthology "Faster Chapter 1&2 Cut-Scenes & Dreams" (component "Convenience Tweaks and/or Cheats") if Tweak Anthology is installed after.
 
@@ -123,10 +123,10 @@ Spellhold Studios			http://www.shsforums.net/
 LEGAL INFORMATION
 
 =============================================================================
-Imoen gets turned to stone Mod for Baldur's Gate II © jastey. This mod is not developed, supported, or endorsed by BioWare, Black Isle Studios, Interplay Entertainment Corp., the Wizards of the Coast, Overhaul Games or Beamdog. All other trademarks and copyrights are property of their respective owners.
+Imoen 4 Ever Mod for Baldur's Gate II © jastey. This mod is not developed, supported, or endorsed by BioWare, Black Isle Studios, Interplay Entertainment Corp., the Wizards of the Coast, Overhaul Games or Beamdog. All other trademarks and copyrights are property of their respective owners.
 =============================================================================
 =============================================================================
-REDISTRIBUTION NOTE: Imoen gets turned to stone Mod was created to be freely enjoyed by all Baldur's Gate players and may not be sold.
+REDISTRIBUTION NOTE: Imoen 4 Ever Mod was created to be freely enjoyed by all Baldur's Gate players and may not be sold.
 =============================================================================
 
 

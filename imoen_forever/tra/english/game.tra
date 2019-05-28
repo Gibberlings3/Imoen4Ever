@@ -118,5 +118,49 @@ The asylum is on an island under its own rule, and Bodhi used the gold I gave he
 
 Tolgerias, the Cowled Wizard in the government building, has promised to find some information out on Irenicus if I perform the service that he is asking of me.~
 
-@1083 = %Yeah, that's exactly *why* I was...%
+@1083 = ~Yeah, that's exactly *why* I was...~
+
+@1084 = ~Collect the fee for Gaelan Bayle.
+
+Gaelan Bayle will connect me with a group who will aid in finding Irenicus, but the price is 20,000 gp! A steep cost, but he did mention that it entailed crossing the Cowled Wizards, not something to be done lightly. Once I have the 20,000 gp, I am to speak to him again.~
+@1085 = ~Perform Bodhi's tasks to receive her aid.
+
+I have agreed to work for Bodhi. She is the head of the 'rival guild' that is facing off against the Shadow Thieves. She required far less coin than my current employers did. I am also to perform several services in undermining the Shadow Thieves, and once these are done I will have her full aid in finding Irenicus. These services may be bloody and harsh.
+
+Doing this means that the Shadow Thieves are now my enemies, and according to Bodhi they will already know that I have turned against them. Fair enough. My first mission is to go down to the docks in the Docks District and find a shipment that is being guarded by Shadow Thieves.  Once I obtain the shipment, I am to return to the crypts below in the Graveyard District and give it to Bodhi.
+
+Bodhi also mentions that despite its grim appearance, the crypts are a safe place to rest if I need it.~
+@1086 = ~Chapter 4
+
+Now that I have completed the tasks that Bodhi set out for me, which included the disruption of the Shadow Thieves and the assassination of the Shadowmaster, Aran Linvail himself, she has made several things quite a bit clearer.
+
+Irenicus, the mage who kidnapped me, is Bodhi's brother. She says she did not support his abduction of me, which was apparently done because I am a Child of Bhaal. What Imoen and I perceived as torture was actually the mage trying to discover and activate "my true potential"... whether I wished to or not.
+Bodhi wants to find her brother and gain access to the knowledge that he possesses, and for my aid she will turn over whatever information he has about me. She will accompany me beyond this point, as Irenicus is held in a fortress asylum called Spellhold on a remote island far from Amn. The gold I gave her has been used to book passage with a privateer named Saemon Havarian.  Once I am at the island I will need to find a way into the asylum... although I do not know how Bodhi will participate, herself. Soon I will have the answers I seek...~
+@1087 = ~Chapter 4
+
+I have completed the tasks that Aran Linvail set out for me, including destroying the rival guild that Bodhi had set up and forcing the vampire herself to flight, and now the Shadowmaster has enlightened me about several things.
+
+The Shadow Thieves were the ones who attacked Irenicus in the dungeon that I awoke in. They had heard about my kidnapping, but not thought much of it... but then Bodhi's guild appeared and many of the Shadow Thieves began to disappear. They managed to track down Irenicus' dungeon and linked it to Bodhi... and I was witness to their subsequent disastrous assault.
+Aran told me that Irenicus was taken to an island asylum for mages called Spellhold. The gold I supplied was used to book passage to the isle, and it is there that I will find the answers I seek. Aran warns me, though, that the asylum is a veritable fortress meant to contain insane wizards and other 'deviants'... and even gaining entry will be a feat unto itself. Regardless, passage with a privateer named Saemon Havarian has been booked and I am on my way...~
+@1088 = ~Chapter 3
+
+Throughout my time in Athkatla and my adventures in and around the city, I have seen hints of some great struggle between the Shadow Thieves and some other source. This other source approached me in the form of Bodhi... a woman of great power and evil, rivalling her ambition.  She revealed the nature of my benefactors under Gaelan Bayle to be none other than the Shadow Thieves, themselves, and offered to give me the same help that they did... but at a far lesser price.
+
+I have accepted Bodhi's offer and she has taken me into her confidence, for now. The true nature of her motivations has yet to be revealed, but it obvious that Bodhi is on the winning side of this city-wide conflict. As to the gold I have given her for her aid... I have the feeling that it is just the beginning of the final price I will eventually have to pay.  But I will have my answers... I will find Irenicus.~
+@1089 = ~Aran's tasks to receive the Shadow Thieves' aid.
+
+I have defeated the rival guild, full of vampires as it was, and have faced Bodhi. She seemed to be judging me in some manner before she left in gaseous form. All that remains now is to return to Aran and tell him that the guild is gone, even if their leader remains unkilled. I will have questions for him as well.
+
+One more troubling thing... Bodhi knew. She knew I am a child of Bhaal.~
+@1090 = ~I can't. I must raise gold so the Shadow Thieves will aid me in finding Irenicus.~
+@1091 = ~I trust you will waste no more time here? The ship awaits. Irenicus awaits.~
+@1092 = ~What do you know of Irenicus!~
+@1093 = ~And rest assured, I will help you find Irenicus, but not just for your reasons. I have an interest in him myself.~
+@1094 = ~You must bear this as one of the additional conditions. I offer much, and expect much in return. Irenicus will be your joint goal in time.~
+@1095 = ~15,000 is a lot, but I will compensate you well for it. You will ultimately have a lot of power, and a few magical trinkets too.~
+@1096 = ~That is why I am asking gently. Why did you attack Irenicus? It was that fight that took Imoen from me, luckily not for very long.~
+@1097 = ~We must take partial responsibility for your temporary loss of Imoen, but our chief concern was Irenicus at the time. We still don't know why he killed our guild members.~
+@1098 = ~Well my point is that we should stop talking and fetching and try and find this Irenicus.~
+@1099 = ~He... he wants us to steal from a temple?  Even from Talos, it still creeps me out.  Just... just how far will we sink to search for this Irenicus, <CHARNAME>?~
+@1100 = ~Very well. I need to gather a large amount of gold to persue a foe, so I'll join you.~
 

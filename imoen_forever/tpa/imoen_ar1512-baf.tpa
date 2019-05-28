@@ -1,4 +1,4 @@
-ACTION_IF GAME_IS ~bg2 tob bg2ee~ AND NOT GAME_IS ~bgt~ THEN BEGIN
+ACTION_IF GAME_IS ~bg2 tob~ AND NOT GAME_IS ~bgt~ THEN BEGIN
 
 <<<<<<<< ...inlined/inlined_ar1512.baf
 IF
@@ -9,6 +9,24 @@ THEN
 		ActionOverride("imoen_notthistime",DestroySelf())
 		SmallWait(5)	
 		MoveGlobal("AR1512","Imoen2",[1857.1520])  // Imoen 
+		SetPlayerSound("Imoen2",2838,EXISTANCE5)  // Imoen
+END
+>>>>>>>>
+
+END 
+
+ACTION_IF GAME_IS ~bg2ee~ THEN BEGIN
+
+<<<<<<<< ...inlined/inlined_ar1512.baf
+IF
+	Global("C#IM_ImoenStays","GLOBAL",2)
+THEN
+	RESPONSE #100
+		SetGlobal("C#IM_ImoenStays","GLOBAL",3) 
+		ActionOverride("imoen_notthistime",DestroySelf())
+		SmallWait(5)	
+		MoveGlobal("AR1512","Imoen2",[1857.1520])  // Imoen 
+		SetPlayerSound("Imoen2",74276,BIO)  // Imoen
 END
 >>>>>>>>
 
@@ -24,7 +42,8 @@ THEN
 	RESPONSE #100
 		SetGlobal("ImoenSpawned","GLOBAL",1) //original BGT variable, prevents other Imoen
 		SetGlobal("C#IM_ImoenStays","GLOBAL",3) 
-		MoveGlobal("AR1512","Imoen2",[1857.1520]) 
+		MoveGlobal("AR1512","Imoen2",[1857.1520])
+		SetPlayerSound("Imoen2",2838,EXISTANCE5)  // Imoen 
 END
 >>>>>>>>
 
