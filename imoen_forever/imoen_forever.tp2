@@ -5,12 +5,11 @@
 
 */
 
-
 BACKUP ~imoen_forever/backup~
 AUTHOR ~jastey@web.de~  
 
 
-VERSION ~pre1_190528~ 
+VERSION ~Beta_0.1~ 
 
 README ~imoen_forever/readme.imoen_forever.%LANGUAGE%.txt~ ~imoen_forever/readme.imoen_forever.english.txt~
 
@@ -70,7 +69,7 @@ LANGUAGE ~Deutsch~
 
 
 BEGIN @9900
-REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-bg2fixpack.TP2~ "0") @9901 
+REQUIRE_PREDICATE ((GAME_IS ~bg2ee eet~) OR (MOD_IS_INSTALLED ~setup-bg2fixpack.TP2~ "0")) @9901 
 REQUIRE_PREDICATE NOT (MOD_IS_INSTALLED ~setup-ImoenIsStone.TP2~ "0") @9902 
 
 
@@ -108,9 +107,18 @@ COPY_EXISTING ~cowled01.cre~ ~Override/c#imcowl.cre~
 /* erase references to kidnapped Imoen pre-Brynnlaw from the game */
 
 COMPILE EVALUATE_BUFFER ~imoen_forever/dialogue/npc.d~
+
+ACTION_IF GAME_IS ~bg2ee eet~ THEN BEGIN
+  COMPILE EVALUATE_BUFFER ~imoen_forever/dialogue/npc_ee.d~
+END
+
 COMPILE EVALUATE_BUFFER ~imoen_forever/dialogue/general.d~
 
 INCLUDE ~imoen_forever/tpa/string_set.tpa~
+
+ACTION_IF GAME_IS ~bg2ee eet~ THEN BEGIN
+  INCLUDE ~imoen_forever/tpa/string_set_ee.tpa~
+END
 
 
 /* Imoen will rejoin in the slums after Gaelan / Brus */
@@ -403,9 +411,7 @@ END
 
 
 /* add some lines referring to Imoen being set free */
-
-/* removed for compatibility reasons: Faster chapter 1&2 cutscenes and dreams TweaksAnthology
-
+/* ----removed for compatibility reasons: Faster chapter 1&2 cutscenes and dreams TweaksAnthology
 /* Imoen gets another line in the Government Building. No "Silence, child" without a reaction! */
 
 COPY_EXISTING ~movie01B.bcs~ ~override~
@@ -414,7 +420,7 @@ COPY_EXISTING ~movie01B.bcs~ ~override~
 		~\1 DisplayStringWait("cuimoen",@1083)~
   END
   BUT_ONLY_IF_IT_CHANGES
-*/
+--- */
 
 /* "I... er, found some things while they removed the belt. Don't look at me like that! It's not my fault they don't watch their stuff properly, is it?" */
 

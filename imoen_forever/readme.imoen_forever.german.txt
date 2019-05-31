@@ -15,12 +15,14 @@
 
 DESCRIPTION
 
-This mod gives back Imoen in Chapter 2 and 3, right after the first dialogue with Gaelan. The player can then explore and play all quests without any time pressure or moral dilemma about a friend needing rescue.
-The original game content kicks in again after the arrival in Brynnlaw: Imoen will now be kidnapped, and Yoshimo will be available for recruitment in the Brynnlaw tavern.
+Diese Mofdifikation lässt Imoen in Kapitel 2 wieder zum HC zurückkehren, gleich nach dem ersten Gespräch mit Gaelan in den Slums. 
+Der Spieler kann dann Kaptel 2 und 3 in Ruhe spielen und die BGII-Welt erkunden, ohne das Dilemma, dass man Quests machen möchte aber eigentlich schnell Imoen retten müsste. 
+Nach der Ankunft in Brynnlaw wird Imoen dann tatsächlich entführt, und von da an geht das Spiel mit dem normalen BGII-Inhalt weiter.
+Damit nicht plötzlich der Dieb in der Gruppe fehlt, wird in diesem Fall Yoshimo in Brynnlaw zu treffen sein. Er wartet in der Taverne.
 
-All lines referring to Imoen being taken and needing rescue where replaced with references to Irenicus, instead.
+Damit die Mod Sinn macht, wurden alle Dialogzeilen, die sich auf Imoens Verschwinden beziehen, entweder deaktiviert oder durch ein Erwähnen von Irenicus ersetzt.
 
-The mod tries to use as many originally voiced lines as possible, but some had to be taken out because they didn't make any sense without Imoen being there. 
+Die Mod verändert auch die Szenen entsprechend, in denen der Spieler etwas über Irenicus' (und Imoens) Verbleib erfährt. Hierbei wurden so viele vertonte Originalzeilen verwendet wie möglich, aber manche machten ohne Imoen vor Ort keinen Sinn mehr und mussten entfernt werden.
 
 
 

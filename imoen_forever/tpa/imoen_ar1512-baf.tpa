@@ -26,6 +26,7 @@ THEN
 		ActionOverride("imoen_notthistime",DestroySelf())
 		SmallWait(5)	
 		MoveGlobal("AR1512","Imoen2",[1857.1520])  // Imoen 
+		ActionOverride("imoen2",SetGlobal("BD_JOINXP","LOCALS",0))
 		SetPlayerSound("Imoen2",74276,BIO)  // Imoen
 END
 >>>>>>>>

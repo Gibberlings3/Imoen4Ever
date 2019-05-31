@@ -28,3 +28,11 @@ As the battle ended, however, Imoen attacked Irenicus, herself... and when stran
 Luckily, Imoen returned soon afterwards, unhurt and quite cheerful. Still, I am left in the city of Athkatla in Amn with few allies and enemies that I know nothing about.  Irenicus is gone, for now... but threatened to come back for us, once he is set up wherever he is now. And the only place I can go to achieve answers is likely the place he has been taken to.
 
 I have encountered a man named Gaelan Bayle who mysteriously seems to know who I am and sought me out.  He has an offer of aid from an equally mysterious source.  And one which comes with a very high price, indeed...~
+
+@22   = ~Is-is this your friend, <CHARNAME>? Oh, what a happy reunion! I wished that every rescue mission would take such a happy turn, and after so little time. It is nice to meet you, Imoen! <CHARNAME> was worried sick for you.~
+@23   = ~Imoen! As much as it pleases me to see you return to us so soon, I do wonder what it will mean in the end. The Cowled Wizards might come back to us for it, or Irenicus could come for us sooner, or... Oh, by Silvanus! It is good to see you, girl.~
+@24   = ~Minsc is so happy to see his friend back, and all in one piece! We do not need to go kick evil wizards' butts now, Boo! ...Or maybe yes? We could still go and kick evil wizards' butts, but together with our friend Imoen! Wohoo!~
+@25   = ~Minsc is so happy to see his friend back, and all in one piece! We do not need to go kick evil wizards' butts now! ...Or maybe yes? We could still go and kick evil wizards' butts, but together with our friend Imoen! Wohoo!~
+@26   = ~This is reason to rejoyce. Yoshimo is sincerely glad to see you back, young friend. Glad as well as surprised, as this Irenicus does not seem like someone letting go of his prey that easily. You need to be wary, <CHARNAME>. Irenicus will have plans for Imoen, as he has for you... At least that is what I assume, after noticing one thing or two while being trapped in his dungeon for some time.~
+
+@27   = ~I think... I think we will be safe from Irenicus... at least for now. Doesn't mean we should become a bunch of lazybones, though, does it?~

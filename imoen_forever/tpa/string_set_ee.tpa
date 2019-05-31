@@ -1,0 +1,15 @@
+//HEXXATJ 13 DO 1
+/* ~My childhood friend and I were kidnapped by a mage who experimented on and tortured us. I escaped, but he still has Imoen. I must find her.~ */
+STRING_SET 97095 @1164
+
+//HEXXATJ 14
+/* ~I'd settle for rescuing Imoen.~ */
+STRING_SET 97097 @1165
+
+//HEXXATJ 16 DO 0
+/* ~Here's the story, then: I must find my childhood friend, Imoen, and rescue her from the mage Irenicus. Satisfied now?~ */
+STRING_SET 97100 @1166
+
+//HEXXATJ 19
+/* ~We'll get your friend back, <CHARNAME>. I promise you that.~ */
+STRING_SET 96924 @1167

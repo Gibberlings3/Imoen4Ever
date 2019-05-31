@@ -8,7 +8,7 @@
 @7    = ~Was? Wer sollte die denn so eine Hilfe anbieten? Und ja klar, als ob wir so viel Gold übrig hätten!~
 @8    = ~Ich musste eine Strafe über un-glaub-lich viel Goldmünzen bezahlen, damit sie mich wieder gehen lassen. Aber weißt du was? Sie haben diesen komischen Gürtel als Bezahlung genommen, mit dem ich in letzter Zeit rumgerannt bin. Ich bin ihn los!~
 @9    = ~Ja, ich freu mich auch, dich zu sehen, Grummelkopf.~
-@10   = ~Und *dann* habe ich gelernt, dass mir der Gürtel einen Lebensbonus gegeben hat. Mit dem Ding konnte ich gar nicht sterben! Ist das nicht irre? Irenicus hat mir den angelegt. Wenn ich das gewusst hätte - wenn ich *das* gewusst hätte, dann hätte wär ich ihm an die Kehle gesprungen und hätte ihm die Augen ausgekratzt!~
+@10   = ~Und *dann* habe ich gelernt, dass mir der Gürtel einen Lebensbonus gegeben hat. Mit dem Ding konnte ich gar nicht sterben! Ist das nicht irre? Irenicus hat mir den angelegt. Wenn ich das gewusst hätte - wenn ich *das* gewusst hätte, dann wär ich ihm an die Kehle gesprungen und hätte ihm die Augen ausgekratzt!~
 @11   = ~Er... er hat auch noch einen Zauber auf mich gewirkt. Ich *glaube*, es soll ein Schutzzauber sein. Ist ein komisches Gefühl, weißt du. Unter einem Schutzzauber von diesem Irren zu stehen...~
 @12   = ~Kann ich wieder mitkommen?~
 @13   = ~Natürlich! Ich bin so froh dich zu sehen, dass ich gar nicht weiß, was ich sagen soll.~
@@ -29,8 +29,13 @@ Zum Glück tauchte Imoen kurz danach wieder auf, unversehrt und mit guter Laune. 
 
 Ich habe einen Mann namens Gaelan Bayle getroffen, der seltsamerweise zu wissen scheint, wer ich bin, und aktiv nach mir gesucht hat. Er kann mir Hilfe durch eine mysteriöse Organisation anbieten. Eine Hilfe, die offensichtlich einen sehr hohen Preis hat ...~
 
+@22   = ~Ist-ist das Eure Freundin, <CHARNAME>? Oh, was für eine freudige Überraschung! Ich wünschte, dass jede Suche so glücklich enden würde, und noch dazu nach so kurzer Zeit. Es ist schön, Euch kennen zu lernen, Imoen. <CHARNAME> war ganz krank vor Sorge.~
+@23   = ~Imoen! So sehr es mich auch freut, Euch so bald und unversehrt zu uns zurückkehren zu sehen, so beschleicht mich doch das Gefühl, dass dies ein übles Nachspiel haben könnte. Die Verhüllten Magier könnten weitere Forderungen an uns stellen, oder Irenicus könnte schon bald wieder seine hässlichen Krallen nach uns ausstrecken, oder... Oh, bei Silvanus! Es tut gut, Euch zu sehen, Mädchen.~
+@24   = ~Minsk freut sich so sehr, dass unsere Freundin wieder da ist, und auch noch unverletzt! Wir müssen doch nicht bösen Zauberern in die Hintern treten, Boo! ...Oder vielleicht doch? Wir können immer noch bösen Zauberern in die Hintern treten - aber mit unserer Freundin Imoen zusammen! Hurra!~
+@25   = ~Minsk freut sich so sehr, dass unsere Freundin wieder da ist, und auch noch unverletzt! Wir müssen doch nicht bösen Zauberern in die Hintern treten! ...Oder vielleicht doch? Wir können immer noch bösen Zauberern in die Hintern treten - aber mit unserer Freundin Imoen zusammen! Hurra!~
+@26   = ~Welch schöner Moment der Freude. Yoshimo ist ehrlich froh, Euch wiederzusehen, junge Freundin. Wenn auch mindestens ebenso überrascht, da dieser Irenicus niemand ist, der jemanden so einfach gehen lässt. Ihr müsst vorsichtig sein, <CHARNAME>. Irenicus hat mit großer Sicherheit Pläne für Imoen, so, wie er welche für Euch hat... zumindest ist dies das, was ich vermuten würde, nachdem ich in seinem Kerker das eine oder andere mitbekommen habe, als ich dort den Ausgang suchte.~
 
-
+@27   = ~Ich glaub... ich glaub wir haben erstmal ein bisschen Ruhe. Zumindest vor diesem Irenicus. Was aber nicht heißt, dass wir auf der faulen Haut liegen sollten!~
 
 
 

@@ -29,15 +29,25 @@ SAY @9
 IF ~~ THEN + free_05
 END
 
-IF ~~ THEN free_05
-SAY @10
+CHAIN
+IF ~~ THEN C#IMMET free_05
+@10
 = @11
-= @12
+= @27
+== BAERIE IF ~InParty("aerie") InMyArea("aerie") !StateCheck("aerie",CD_STATE_NOTVALID)~ THEN @22
+== BJAHEIR IF ~InParty("JAHEIRA") InMyArea("JAHEIRA") !StateCheck("JAHEIRA",CD_STATE_NOTVALID)~ THEN @23
+== BMINSC IF ~InParty("MINSC") InMyArea("MINSC") !StateCheck("MINSC",CD_STATE_NOTVALID) HasItem("MISC84","MINSC")~ THEN @24
+== BMINSC IF ~InParty("MINSC") InMyArea("MINSC") !StateCheck("MINSC",CD_STATE_NOTVALID) 
+!HasItem("MISC84","MINSC")~ THEN @25
+== BYOSHIM IF ~InParty("YOSHIMO") InMyArea("YOSHIMO") !StateCheck("YOSHIMO",CD_STATE_NOTVALID)~ THEN @26 
+== C#IMMET @12
+END
 ++ @13 + free_08
 ++ @14 + free_09
 ++ @15 + free_06
 ++ @16 + free_07
-END
+
+APPEND C#IMMET
 
 IF ~~ THEN free_06
 SAY @17
@@ -70,3 +80,4 @@ AddJournalEntry(@21,INFO)
 JoinParty()~ EXIT
 END
 
+END //APPEND
