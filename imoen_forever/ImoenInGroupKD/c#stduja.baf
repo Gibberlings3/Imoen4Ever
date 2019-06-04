@@ -1,0 +1,7 @@
+IF
+	!Dead("%IMOEN_DV_SOD%")
+	GlobalLT("C#st_ImoenRaised","GLOBAL",3)
+THEN
+	RESPONSE #100
+		DestroySelf()
+END

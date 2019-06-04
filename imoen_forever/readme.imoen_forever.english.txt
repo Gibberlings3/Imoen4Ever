@@ -5,7 +5,7 @@
 
 
 			               "Imoen 4 Ever"
-				for BGII, BGT, BGII:EE, and EET
+			for BG:EE, BGII, BGT, BGII:EE, and EET
 					by jastey 
 					Version 1
 
@@ -15,20 +15,42 @@
 
 DESCRIPTION
 
+This mod aims at making Imoen a steady companion throughout the whole BG-Saga. Imoen-related story content is being considered, therefore Imoen will be out of party temporarily to reflect the most crucial original game events. This mod makes her rejoin the party after such incidents, so that she can be seen as an actual travel companion in SoD (not finished yet) and BGII.
+
+Note: The SoD part is not finished yet.
+
+The mod tries to use as many originally voiced lines as possible, but some had to be taken out because they didn't make any sense without Imoen being there (BGII) or with Imoen catually being in the party (SoD).
+
+BGII:
+-----------------------------------
 This mod gives back Imoen in Chapter 2 and 3, right after the first dialogue with Gaelan. The player can then explore and play all quests without any time pressure or moral dilemma about a friend needing rescue.
 The original game content kicks in again after the arrival in Brynnlaw: Imoen will now be kidnapped, and Yoshimo will be available for recruitment in the Brynnlaw tavern.
 
-All lines referring to Imoen being taken and needing rescue where replaced with references to Irenicus, instead.
+All(most all) lines referring to Imoen being taken and needing rescue where replaced with references to Irenicus, instead.
 
-The mod tries to use as many originally voiced lines as possible, but some had to be taken out because they didn't make any sense without Imoen being there. 
+
+SoD:
+-----------------------------------
+With this tweak, Imoen will remain in your group in the beginning of SoD if she was in BG:EE. She will be a party member in Korlasz's crypt up until the point where all party members leave and the PC finds themselves in the Ducal Palace. From there, Imoen will take her role as in the original game. (Planned: let her rejoin in the first coalition camp.)
+Inside Korlasz' Crypt, Imoen will have a PID (player initiated dialogue) out of her original game dialogue. She will talk about Duke Jannath taking an interest in her, but she will only talk about her magic studies if she was already dual-classed to T/M in BG:EE.
+After the attack in the Ducal Palace, she will be in no shape to accompany the PC because of the poison. Her "good bye" dialogue the evening before the PC heads out against the crusade is changed with her new motive to stay behind accordingly. 
+
+If Imoen was not in party in the endfight of BG:EE, her presence in Korlasz' Crypt will play like in the original game with no changes. (Planned: but she will rejoin at the first coalition camp.)
+
+Compatibility note for modders: Inparty Imoen uses the same script name as the original SoD-Imoen (which is Imoen's script name). Both her "final" dialogue inside Korlasz's crypt, as well as the last dialogue state in the Ducal Palace (BDIMOEN 85) stay unchanged in case mod NPCs want to interject (e.g. say goodbye to the PC after defeating Korlasz or say hello/goodbye to Imoen after her recovery).
+
+
 
 
 
 INSTALLATION
 
  
-Extract the contents of the mod archive to your game's main directory. 
-NOTE: For BGII:EE it is important that you istall the mod to the language version you are playing the game in. Otherwise, the dialogues of the mod will not show but give error messages.
+Extract the contents of the mod archive to your game's main directory. The game will be recognized automatically and the appropriate content will be installed.
+
+NOTE: 
+-If you use SoD from GOG or Steam, you need to prepare your game with modmerge or Argent's DLC merger before installing any mods.
+-For BG(II):EE it is important that you istall the mod to the language version you are playing the game in. Otherwise, the dialogues of the mod will not show but give error messages.
 
 
 Windows
@@ -135,5 +157,8 @@ REDISTRIBUTION NOTE: Imoen 4 Ever Mod was created to be freely enjoyed by all Ba
 
 HISTORY
 
-alpha Versions: first public release
+Version Beta 0.2: 
+-Added component "Imoen stays in group in Korlasz' Dungeon" for SoD 
+
+alpha Versions, Beta 0.1: first public release
 

@@ -1,0 +1,15 @@
+IF
+	Clicked([ANYONE])
+	NearLocation(LastTrigger,790,1660,12)
+	OR(2)
+		Dead("bdkorlas")  // Korlasz
+		Global("BD_KORLASZ_SURRENDER","GLOBAL",1)
+	OR(2)
+		StateCheck("%IMOEN_DV_SOD%",CD_STATE_NOTVALID) 
+		Dead("%IMOEN_DV_SOD%")
+	Global("C#st_ImoenInGroupKD","GLOBAL",1)
+	Global("C#st_ImoenRaised","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#st_ImoenRaised","GLOBAL",1)
+END

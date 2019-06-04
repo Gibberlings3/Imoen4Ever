@@ -5,8 +5,8 @@
 
 
 			               "Imoen 4 Ever"
-				for BGII, BGT, BGII:EE, and EET
-					by jastey 
+			für BG:EE, BGII, BGT, BGII:EE, and EET
+					von jastey 
 					Version 1
 
 
@@ -15,6 +15,16 @@
 
 DESCRIPTION
 
+Die Imoen 4 Ever Mod wandelt Imoen in eine tatsächliche Weggefährtin für die ganze Baldurs Tor Saga. Die wichtigsten Story-Elemente wurden beibehalten, so dass sie temporär in SoD und BGII die Gruppe verlässt. Sie stößt dann aber danach schnell wieder zurück zum HC, so dass sie als durchgängige Begleiterin angesehen werden kann.
+
+Achtung: Der SoD-Teil ist noch nicht fertig.
+
+Hierbei wurden so viele vertonte Originalzeilen verwendet wie möglich, aber manche machten ohne Imoen vor Ort (Cutscnes in BGII) oder mit Imoen daneben (Korlasz' Dungeon in SoD) keinen Sinn mehr und mussten entfernt werden.
+
+
+
+BGII:
+-----------------------------------
 Diese Mofdifikation lässt Imoen in Kapitel 2 wieder zum HC zurückkehren, gleich nach dem ersten Gespräch mit Gaelan in den Slums. 
 Der Spieler kann dann Kaptel 2 und 3 in Ruhe spielen und die BGII-Welt erkunden, ohne das Dilemma, dass man Quests machen möchte aber eigentlich schnell Imoen retten müsste. 
 Nach der Ankunft in Brynnlaw wird Imoen dann tatsächlich entführt, und von da an geht das Spiel mit dem normalen BGII-Inhalt weiter.
@@ -22,15 +32,29 @@ Damit nicht plötzlich der Dieb in der Gruppe fehlt, wird in diesem Fall Yoshimo 
 
 Damit die Mod Sinn macht, wurden alle Dialogzeilen, die sich auf Imoens Verschwinden beziehen, entweder deaktiviert oder durch ein Erwähnen von Irenicus ersetzt.
 
-Die Mod verändert auch die Szenen entsprechend, in denen der Spieler etwas über Irenicus' (und Imoens) Verbleib erfährt. Hierbei wurden so viele vertonte Originalzeilen verwendet wie möglich, aber manche machten ohne Imoen vor Ort keinen Sinn mehr und mussten entfernt werden.
+Die Mod verändert auch die Szenen entsprechend, in denen der Spieler etwas über Irenicus' (und Imoens) Verbleib erfährt. 
 
+
+
+SoD:
+-----------------------------------
+Mit diesem Tweak wird Imoen im Anfangsdungeon von SoD weiter normal in der Gruppe sein, wenn sie dies beim Übergang von BG:EE ebenfalls war. Sie wird dann wie alle anderen NPC auch die Gruppe nach dem Säubern der Gruft verlassen. In den darauf folgenden Szenen im Herzogspalast wurde ihre Rolle im Originalinhalt des Spiels nicht verändert. 
+Imoen hat in Korlasz' Gruft einen PID ("Klickdialog"), der aus ihren originalen Dialogoptionen erstellt wurde. Zusätzlich wird sie über Herzogin Jannath sprechen und warum diese ein solches Interesse an ihr hat. Ihre Zeilen über magische Studien wird sie allerdings nur sagen, wenn sie bereits eine Magier Klasse hat. 
+Nach dem Überfall im Herzogspalast wird sie zu verletzt sein, um den HC weiter zu begleiten. Ihr "leb wohl"-Dialog wurde entsprechend geändert, um diese gegenüber dem Originalspiel geänderte Motivation für ihr Zurückbleiben zu berücksichtigen. 
+
+Wenn Imoen beim Endkampf gegen Sarevok nicht dabei war, wird sie wie im Originalspiel als nicht-aufnehmbarer NPC in Korlasz' Gruft anwesend sein.
+
+Kompatibilitätshinweis für Modder: Die Imoen in der Gruppe nutzt den normalen Skriptnamen von Imoen, welcher auch der in SoD verwendete ist. 
+Ihre beiden "finalen" Dialogstates sowohl in Korlasz' Gruft, als auch der letzte Dialogstate beim Verabschieden im Herzogspalast (BDIMOEN 85) sind von dieder Mod unverändert gelassen worden, damit andere Mods hier normal ihre Einmischdialoge einfügen können (z.B. um nach dem Besiegen von Korlaz dem HC auf Wiedersehen zu sagen oder Imoen im Herzogspalst zu verabschieden.)
+
+Geplant ist, in späteren MOdversionen Imoen im ersten Kolaitionslager wieder zur Gruppe dazustoßen zu lassen, so dass sie bis zum gescripteten Ende von SoD als aufnehmbarer NPC zur Verfügung stehen wird.
 
 
 INSTALLATION
 
  
 Extract the contents of the mod archive to your game's main directory. 
-NOTE: For BGII:EE it is important that you istall the mod to the language version you are playing the game in. Otherwise, the dialogues of the mod will not show but give error messages.
+NOTE: For BG(II):EE it is important that you istall the mod to the language version you are playing the game in. Otherwise, the dialogues of the mod will not show but give error messages.
 
 
 Windows
@@ -137,5 +161,8 @@ REDISTRIBUTION NOTE: Imoen 4 Ever Mod was created to be freely enjoyed by all Ba
 
 HISTORY
 
-alpha Versions: first public release
+Version Beta 0.2: 
+-Added component "Imoen stays in group in Korlasz' Dungeon" for SoD 
+
+alpha Versions, Beta 0.1: first public release
 

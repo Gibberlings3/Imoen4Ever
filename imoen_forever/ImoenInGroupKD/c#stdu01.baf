@@ -1,0 +1,20 @@
+// Duke Jannath raises Imoen
+IF
+    True()
+THEN
+    RESPONSE #100
+        CutSceneId(Player1)
+        FadeToColor([20.0],0)
+        Wait(2)
+	ApplySpellRES("bdresurr","%IMOEN_DV_SOD%")  // No such index
+	SmallWait(1)
+	ApplySpellRES("bdrejuve","%IMOEN_DV_SOD%")  // No such index
+	SmallWait(1)
+	ActionOverride("%IMOEN_DV_SOD%",DestroySelf())
+        Wait(1)
+	SetGlobal("C#st_ImoenInGroupKD","GLOBAL",2)
+	ActionOverride("c#stduja",EscapeAreaDestroy(3))
+        FadeFromColor([20.0],0)
+        Wait(1)
+	EndcutSceneMode()
+END 

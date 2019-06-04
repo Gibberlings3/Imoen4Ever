@@ -9,7 +9,7 @@ BACKUP ~imoen_forever/backup~
 AUTHOR ~jastey@web.de~  
 
 
-VERSION ~Beta_0.1~ 
+VERSION ~Beta_0.2~ 
 
 README ~imoen_forever/readme.imoen_forever.%LANGUAGE%.txt~ ~imoen_forever/readme.imoen_forever.english.txt~
 
@@ -50,6 +50,14 @@ INCLUDE ~imoen_forever/lib/extra_regexp_vars.tph~
           reload_array = fl#reload
       END
 
+/* check for a ready SoD */
+
+ACTION_IF ((FILE_EXISTS ~dlc/sod-dlc.zip~) OR (FILE_EXISTS ~sod-dlc.zip~)) THEN BEGIN
+  FAIL @1002 /* ~Modmerge or Argent's DLC Merger is required before mods can be installed on this game.~ */
+END
+
+OUTER_SPRINT newline ~%WNL%%LNL%%MNL%%TAB% ~
+
 
 
 END //ALWAYS
@@ -69,9 +77,18 @@ LANGUAGE ~Deutsch~
 
 
 BEGIN @9900
-REQUIRE_PREDICATE ((GAME_IS ~bg2ee eet~) OR (MOD_IS_INSTALLED ~setup-bg2fixpack.TP2~ "0")) @9901 
+REQUIRE_PREDICATE ((GAME_INCLUDES ~sod~) OR (GAME_IS ~bg2ee eet~) OR (MOD_IS_INSTALLED ~setup-bg2fixpack.TP2~ "0")) @9901 
 REQUIRE_PREDICATE NOT (MOD_IS_INSTALLED ~setup-ImoenIsStone.TP2~ "0") @9902 
 
+
+////////////////////////////////////////////////////////////////////////
+//////
+////// BGII content: ~Imoen returns after Promenade Fight~
+//////
+////////////////////////////////////////////////////////////////////////
+
+ACTION_IF GAME_IS ~tob bg2ee eet~ THEN BEGIN
+//// BGII-part
 
 ADD_JOURNAL @1000
 
@@ -79,7 +96,7 @@ ADD_JOURNAL @1000
 
 /* We need a lower level imoen cre for BGII(:EE) & BGT */
 
-ACTION_IF GAME_IS ~bg2 tob bg2ee~ THEN BEGIN
+ACTION_IF GAME_IS ~tob bg2ee~ THEN BEGIN
   COPY_EXISTING ~imoen10.cre~ ~override/c#im_010.cre~
     WRITE_ASCII 0x280 ~imoen2~ #32 // script name / DV
     WRITE_BYTE  0x240  5 // break
@@ -427,3 +444,207 @@ COPY_EXISTING ~movie01B.bcs~ ~override~
 COMPILE EVALUATE_BUFFER ~imoen_forever/dialogue/c#im_imoen2j.d~
 
 EXTEND_BOTTOM ~imoen2.bcs~ ~imoen_forever/baf/imoen_imoen2_2.baf~ EVALUATE_BUFFER
+
+END ///BGII-part
+
+
+
+////////////////////////////////////////////////////////////////////////
+//////
+////// SoD component: ~Imoen remains in the Group in SoD~
+//////
+////////////////////////////////////////////////////////////////////////
+
+/* ~Imoen remains in the Group in SoD~ */ 
+
+
+/* first part: Imoen remains in the group in Korlasz' dungeon */
+ACTION_IF ((GAME_IS ~eet~) OR (GAME_IS ~bgee~ AND FILE_EXISTS_IN_GAME ~bd0103.are~))  THEN BEGIN
+
+COMPILE ~imoen_forever/ImoenInGroupKD/Imoen_in_group_KD.d~ EVALUATE_BUFFER
+COMPILE ~imoen_forever/ImoenInGroupKD/c#stimoe.baf~ EVALUATE_BUFFER
+COMPILE ~imoen_forever/ImoenInGroupKD/c#stduja.baf~ EVALUATE_BUFFER
+COMPILE ~imoen_forever/ImoenInGroupKD/c#stdu01.baf~ EVALUATE_BUFFER
+
+
+EXTEND_TOP ~bdcut00z.BCS~ ~imoen_forever/ImoenInGroupKD/c#st_imo_bdcut00z.baf~ EVALUATE_BUFFER
+EXTEND_TOP ~bdrope.BCS~ ~imoen_forever/ImoenInGroupKD/c#st_imo_bdrope.baf~ EVALUATE_BUFFER
+
+
+/* Duke Jannath: makes sure Imoen won't stay dead in Korlasz's crypt so she can start the last dialogue */
+
+COPY_EXISTING ~bdliia.cre~ ~override/C#STDUJA.cre~
+    WRITE_ASCII 0x280 ~C#STDUJA~ #32 // set DV
+    WRITE_ASCII 0x2cc ~C#STDUJA~ #8 // set dialogue file
+    WRITE_ASCII 0x248 ~C#STDUJA~ #8 // set override script
+
+
+
+//bd0120.BCS
+COPY_EXISTING ~bd0120.BCS~ ~override~
+	DECOMPILE_AND_PATCH BEGIN
+		SPRINT textToReplace ~\(InPartyAllowDead("imoen2?")\)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY CASE_INSENSITIVE ~%textToReplace%~ ~\1 Global("C#st_ImoenInGroupKD","GLOBAL",0)~
+			PATCH_PRINT ~Patching: %num_matches% matches found in %SOURCE_FILESPEC% for REPLACE_TEXTUALLY: %textToReplace%~
+		END ELSE BEGIN
+			PATCH_WARN ~WARNING: could not find %textToReplace% in %SOURCE_FILESPEC%~
+		END
+		SPRINT textToReplace ~\(!InMyArea("imoen2?")\)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~%textToReplace%~ ~\1 !Global("C#st_ImoenInGroupKD","GLOBAL",1)~
+			PATCH_PRINT ~Patching: %num_matches% matches found in %SOURCE_FILESPEC% for REPLACE_TEXTUALLY: %textToReplace%~
+		END ELSE BEGIN
+			PATCH_WARN ~WARNING: could not find %textToReplace% in %SOURCE_FILESPEC%~
+		END
+		SPRINT textToReplace ~\(ActionOverride("imoen2?",JumpToPoint(\[1770\.1520\]))[%newline%]*ActionOverride("imoen2?",Face(N))\)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~%textToReplace%~ ~SetGlobal("C#st_ImoenMoveInCrypt","GLOBAL",1)~
+			PATCH_PRINT ~Patching: %num_matches% matches found in %SOURCE_FILESPEC% for REPLACE_TEXTUALLY: %textToReplace%~
+		END ELSE BEGIN
+			PATCH_WARN ~WARNING: could not find %textToReplace% in %SOURCE_FILESPEC%~
+		END
+		SPRINT textToReplace ~\(ActionOverride("imoen2?",JumpToPoint(\[1545\.700\]))[%newline%]*ActionOverride("imoen2?",Face(NE))\)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~%textToReplace%~ ~SetGlobal("C#st_ImoenMoveInCrypt","GLOBAL",2)~
+			PATCH_PRINT ~Patching: %num_matches% matches found in %SOURCE_FILESPEC% for REPLACE_TEXTUALLY: %textToReplace%~
+		END ELSE BEGIN
+			PATCH_WARN ~WARNING: could not find %textToReplace% in %SOURCE_FILESPEC%~
+		END
+	END
+BUT_ONLY
+
+
+EXTEND_TOP ~bd0120.BCS~ ~imoen_forever/ImoenInGroupKD/c#st_imo_bd0120.baf~ EVALUATE_BUFFER
+
+<<<<<<<< .../bd0120-et.baf
+
+IF
+	InPartyAllowDead("%IMOEN_DV_SOD%")
+	Global("C#st_ImoenInGroupKD","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#st_ImoenInGroupKD","GLOBAL",1)
+		ApplySpellRES("bdresurr","%IMOEN_DV_SOD%")  
+		SmallWait(1)
+	        ApplySpellRES("bdrejuve","%IMOEN_DV_SOD%")  
+	  	SmallWait(1)
+END
+>>>>>>>>
+
+EXTEND_TOP ~bd0120.BCS~ ~.../bd0120-et.baf~ EVALUATE_BUFFER
+
+
+//bdintro.BCS
+COPY_EXISTING ~bdintro.BCS~ ~override~
+	DECOMPILE_AND_PATCH BEGIN
+		SPRINT textToReplace ~\(CreateCreature("bdshimoe",\[881\.1652\],NE)\)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~%textToReplace%~ ~~
+			PATCH_PRINT ~Patching: %num_matches% matches found in %SOURCE_FILESPEC% for REPLACE_TEXTUALLY: %textToReplace%~
+		END ELSE BEGIN
+			PATCH_WARN ~WARNING: could not find %textToReplace% in %SOURCE_FILESPEC%~
+		END
+	END
+BUT_ONLY
+
+
+<<<<<<<< .../bdintro-et.baf
+
+IF
+	Global("SOD_fromimport","global",1)
+	InPartyAllowDead("%IMOEN_DV_SOD%")  
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		ActionOverride("%IMOEN_DV_SOD%",SetDialog("BDIMOEN"))
+		ActionOverride("%IMOEN_DV_SOD%",ChangeAIScript("C#STIMOE",OVERRIDE))
+END
+
+IF
+	Global("C#st_ImoenInGroupKD","GLOBAL",0)  
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		CreateCreature("bdshimoe",[881.1652],NE)
+END
+
+
+>>>>>>>>
+
+EXTEND_TOP ~bdintro.BCS~ ~.../bdintro-et.baf~ EVALUATE_BUFFER
+
+
+//bdshcut0.BCS
+COPY_EXISTING ~bdshcut0.BCS~ ~override~
+	DECOMPILE_AND_PATCH BEGIN
+		SPRINT textToReplace ~\(Global("BDSH_Spawn_Imoen","GLOBAL",0)\)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~%textToReplace%~ ~\1 Global("C#st_ImoenInGroupKD","GLOBAL",0)~
+			PATCH_PRINT ~Patching: %num_matches% matches found in %SOURCE_FILESPEC% for REPLACE_TEXTUALLY: %textToReplace%~
+		END ELSE BEGIN
+			PATCH_WARN ~WARNING: could not find %textToReplace% in %SOURCE_FILESPEC%~
+		END
+	END
+BUT_ONLY
+
+
+//bd0130.BCS
+COPY_EXISTING ~bd0130.BCS~ ~override~
+	DECOMPILE_AND_PATCH BEGIN
+		SPRINT textToReplace ~\(ActionOverride("imoen2?",JumpToPoint(\[1955\.1075\]))[%newline%]*ActionOverride("imoen2?",Face(S))\)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~%textToReplace%~ ~SetGlobal("C#st_ImoenMoveInCrypt","GLOBAL",3)~
+			PATCH_PRINT ~Patching: %num_matches% matches found in %SOURCE_FILESPEC% for REPLACE_TEXTUALLY: %textToReplace%~
+		END ELSE BEGIN
+			PATCH_WARN ~WARNING: could not find %textToReplace% in %SOURCE_FILESPEC%~
+		END
+		SPRINT textToReplace ~\(ActionOverride("imoen2?",JumpToPoint(\[3015\.1890\]))[%newline%]*ActionOverride("imoen2?",Face(SE))\)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~%textToReplace%~ ~SetGlobal("C#st_ImoenMoveInCrypt","GLOBAL",4)~
+			PATCH_PRINT ~Patching: %num_matches% matches found in %SOURCE_FILESPEC% for REPLACE_TEXTUALLY: %textToReplace%~
+		END ELSE BEGIN
+			PATCH_WARN ~WARNING: could not find %textToReplace% in %SOURCE_FILESPEC%~
+		END
+		SPRINT textToReplace ~\(ActionOverride("imoen2?",JumpToPoint(\[1830\.2390\]))[%newline%]*ActionOverride("imoen2?",Face(SE))\)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~%textToReplace%~ ~SetGlobal("C#st_ImoenMoveInCrypt","GLOBAL",5)~
+			PATCH_PRINT ~Patching: %num_matches% matches found in %SOURCE_FILESPEC% for REPLACE_TEXTUALLY: %textToReplace%~
+		END ELSE BEGIN
+			PATCH_WARN ~WARNING: could not find %textToReplace% in %SOURCE_FILESPEC%~
+		END
+		SPRINT textToReplace ~\(ActionOverride("imoen2?",JumpToPoint(\[970\.1435\]))[%newline%]*ActionOverride("imoen2?",Face(N))\)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~%textToReplace%~ ~SetGlobal("C#st_ImoenMoveInCrypt","GLOBAL",6)~
+			PATCH_PRINT ~Patching: %num_matches% matches found in %SOURCE_FILESPEC% for REPLACE_TEXTUALLY: %textToReplace%~
+		END ELSE BEGIN
+			PATCH_WARN ~WARNING: could not find %textToReplace% in %SOURCE_FILESPEC%~
+		END
+		SPRINT textToReplace ~\(ActionOverride("imoen2?",JumpToPoint(\[1000\.1060\]))[%newline%]*ActionOverride("imoen2?",Face(N))\)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~%textToReplace%~ ~SetGlobal("C#st_ImoenMoveInCrypt","GLOBAL",7)~
+			PATCH_PRINT ~Patching: %num_matches% matches found in %SOURCE_FILESPEC% for REPLACE_TEXTUALLY: %textToReplace%~
+		END ELSE BEGIN
+			PATCH_WARN ~WARNING: could not find %textToReplace% in %SOURCE_FILESPEC%~
+		END
+	END
+BUT_ONLY
+
+EXTEND_TOP ~bd0130.BCS~ ~imoen_forever/ImoenInGroupKD/c#st_imo_bd0130.baf~ EVALUATE_BUFFER
+
+
+/* second part: Imoen returns to PC in first camp bd1000 */
+/* to be continued... */
+
+END //SoD part

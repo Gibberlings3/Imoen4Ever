@@ -1,0 +1,193 @@
+/* Korlasz defeated, final dialogue in bd0120.are exit */
+IF
+	Global("bd_Imoen_farewell","bd0120",0)
+	OR(2)
+		Dead("bdkorlas")  // Korlasz
+		Global("BD_KORLASZ_SURRENDER","GLOBAL",1)
+	AreaCheck("bd0120")
+	InParty(Myself) 
+	See(Player1) 
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	CombatCounter(0)
+	Global("C#st_ImoenFinalDialog","GLOBAL",0)
+	Range(Player1,20)
+	Range("Rope",25)
+THEN
+	RESPONSE #100
+		SetGlobal("C#st_ImoenFinalDialog","GLOBAL",1)
+		StartDialogNoSet(Player1)
+END
+
+
+/* Korlasz defeated, dialogue in bd0130.are */
+IF
+	Global("C#st_KORLASZ_Defeated","LOCALS",0)
+	GlobalLT("BDSH_Imoen_Floor","GLOBAL",3)
+	OR(2)
+		Dead("bdkorlas")  // Korlasz
+		Global("BD_KORLASZ_SURRENDER","GLOBAL",1)
+	AreaCheck("bd0130")
+	InParty(Myself) 
+	See(Player1) 
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	CombatCounter(0)
+	!Range([EVILCUTOFF],30)
+	!TriggerOverride("Imoen_final_talk",Range([EVILCUTOFF],30))
+THEN
+	RESPONSE #100
+		SetGlobal("C#st_KORLASZ_Defeated","LOCALS",1)
+END
+
+IF
+	InParty(Myself) 
+	See(Player1) 
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	Global("C#st_KORLASZ_Defeated","LOCALS",1)
+THEN
+	RESPONSE #100
+		StartDialogNoSet(Player1)
+END
+
+
+/* comment upon entering bd0130.are */
+IF
+	Global("BD_Talk1","LOCALS",0)
+	Global("BDSH_Imoen_Room","BD0130",1)
+	AreaCheck("bd0130")
+	!StateCheck(Myself,STATE_INVISIBLE)
+	InParty(Myself) 
+	See(Player1) 
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	CombatCounter(0)
+THEN
+	RESPONSE #100
+		SetGlobal("BD_Talk1","LOCALS",1)
+		FaceObject(Player1)
+		SmallWait(5)
+END
+
+IF
+	InParty(Myself) 
+	See(Player1) 
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	Global("BD_Talk1","LOCALS",1)
+THEN
+	RESPONSE #100
+		StartDialogNoSet(Player1)
+END
+
+
+/* comments to surroundings */
+IF
+	Global("BD_Talk2","LOCALS",0)
+	AreaCheck("bd0130")
+	!Range("Bhaal_corner2",15)
+	Range("Bhaal_mural",20)
+	!StateCheck(Myself,STATE_INVISIBLE)
+	InParty(Myself) 
+	See(Player1) 
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	CombatCounter(0)
+THEN
+	RESPONSE #100
+		SetGlobal("BD_Talk2","LOCALS",1)
+		FaceObject(Player1)
+		DisplayStringHead(Myself,63976)  // That symbol sure looks familiar. How about we keep moving?
+END
+
+IF
+	Global("BD_Talk3","LOCALS",0)
+	AreaCheck("bd0130")
+	Range("Dead_Three_center",15)
+	!StateCheck(Myself,STATE_INVISIBLE)
+	InParty(Myself) 
+	See(Player1) 
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	CombatCounter(0)
+THEN
+	RESPONSE #100
+		SetGlobal("BD_Talk3","LOCALS",1)
+		FaceObject(Player1)
+		DisplayStringHead(Myself,63978)  // The braziers in here must be magical. The different colors really liven up this drab ol' place.
+END
+
+IF
+	Global("BD_Talk4","LOCALS",0)
+	Global("BDSH_Imoen_Room","BD0130",4)
+	AreaCheck("bd0130")
+	!StateCheck(Myself,STATE_INVISIBLE)
+	InParty(Myself) 
+	See(Player1) 
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	CombatCounter(0)
+THEN
+	RESPONSE #100
+		SetGlobal("BD_Talk4","LOCALS",1)
+		FaceObject(Player1)
+		DisplayStringHead(Myself,63974)  // Hey—you feel a breeze? I feel a breeze.
+END
+
+IF
+	Global("BD_Talk5","LOCALS",0)
+	Global("BD_Lever_Machine","BD0130",0)
+	AreaCheck("bd0130")
+	Range("Myrkul_mural",20)
+	!StateCheck(Myself,STATE_INVISIBLE)
+	InParty(Myself) 
+	See(Player1) 
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	CombatCounter(0)
+THEN
+	RESPONSE #100
+		SetGlobal("BD_Talk5","LOCALS",1)
+		FaceObject("Massive_Door")
+		DisplayStringHead(Myself,63975)  // Wow, look at the size of that door! There must be a lever or something to open it.
+END
+
+IF
+	Global("BD_Talk6","LOCALS",0)
+	AreaCheck("bd0120")
+	Range("Imoen_room1b",15)
+	!StateCheck(Myself,STATE_INVISIBLE)
+	InParty(Myself) 
+	See(Player1) 
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	CombatCounter(0)
+THEN
+	RESPONSE #100
+		SetGlobal("BD_Talk6","LOCALS",1)
+		FaceObject(Player1)
+		DisplayStringHead(Myself,63977)  // This chasm sure looks deep. Do you feel warm air coming up from below? I do. Wonder what's down there?
+END
+
+/* group finds Korlasz's tomes about Bhaal research with Imoen in group */
+IF
+	Global("C#st_BhaalResearch","LOCALS",0)
+	PartyHasItem("BDSHBHR")
+	!StateCheck(Myself,STATE_INVISIBLE)
+	InParty(Myself) 
+	See(Player1) 
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	CombatCounter(0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#st_BhaalResearch","LOCALS",1)
+END
+
+IF
+	InParty(Myself) 
+	See(Player1) 
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	Global("C#st_BhaalResearch","LOCALS",1)
+THEN
+	RESPONSE #100
+		StartDialogNoSet(Player1)
+END
+

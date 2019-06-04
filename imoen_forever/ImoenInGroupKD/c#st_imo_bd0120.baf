@@ -1,0 +1,40 @@
+IF
+	Global("C#st_ImoenRaised","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		SetGlobal("C#st_ImoenRaised","GLOBAL",2)
+		CreateCreatureObjectDoor("C#STDUJA",Player1,0,0,0)
+		Wait(1)
+		ActionOverride("C#STDUJA",Dialogue(Player1))
+		SetInterrupt(TRUE)
+END
+
+
+/* move Imoen as in the original game if not in group */
+IF
+	Global("C#st_ImoenInGroupKD","GLOBAL",0)
+	Global("C#st_ImoenMoveInCrypt","GLOBAL",1)
+	Global("C#st_ImoenMoveInCrypt_120","BD0120",0)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		SetGlobal("C#st_ImoenMoveInCrypt_120","BD0120",1)
+		ActionOverride("%IMOEN_DV_SOD%",JumpToPoint([1770.1520]))
+		ActionOverride("%IMOEN_DV_SOD%",Face(N))
+		SetInterrupt(TRUE)
+END
+
+IF
+	Global("C#st_ImoenInGroupKD","GLOBAL",0)
+	Global("C#st_ImoenMoveInCrypt","GLOBAL",2)
+	GlobalLT("C#st_ImoenMoveInCrypt_120","BD0120",2)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		SetGlobal("C#st_ImoenMoveInCrypt_120","BD0120",2)
+		ActionOverride("%IMOEN_DV_SOD%",JumpToPoint([1545.700]))
+		ActionOverride("%IMOEN_DV_SOD%",Face(NE))
+		SetInterrupt(TRUE)
+END
+
