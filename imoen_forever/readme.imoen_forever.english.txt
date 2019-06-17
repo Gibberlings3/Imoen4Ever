@@ -21,6 +21,8 @@ Note: The SoD part is not finished yet.
 
 The mod tries to use as many originally voiced lines as possible, but some had to be taken out because they didn't make any sense without Imoen being there (BGII) or with Imoen catually being in the party (SoD).
 
+The mod is compatible with SoD and all BGII games: BGII, BGT, BGII:EE, EET. For EET, install the mod dirctly into your EET game folder.
+
 BGII:
 -----------------------------------
 This mod gives back Imoen in Chapter 2 and 3, right after the first dialogue with Gaelan. The player can then explore and play all quests without any time pressure or moral dilemma about a friend needing rescue.
@@ -45,6 +47,7 @@ Compatibility note for modders: Inparty Imoen uses the same script name as the o
 
 INSTALLATION
 
+For installation order, this mod is to be treated as a quest mod (not a tweak mod) and should be installed before anyother NPC mods that add interjections in SoA chapter 2&3.
  
 Extract the contents of the mod archive to your game's main directory. The game will be recognized automatically and the appropriate content will be installed.
 
@@ -69,9 +72,9 @@ If you have installation problems or encounter any bugs, please post your bug re
 
 COMPATIBILITY
 
-Note: this mod is to be treated as a quest mod, so install it before any NPC mods that could add interjections or reply options to make sure the correct ones are patched by this mod.
+Note: this mod is to be treated as a quest mod, so install it before any NPC mods that could add interjections or reply options to chapter 2&3 in BGII to make sure the correct ones are patched by this mod.
 
-Compatibility is a bit on the tough side with this mod since all mods assume Imoen is being taken at the Waukeen's Promenade fight and stays in Irenicus' grasps until the PC reaches Spellhold. 
+Compatibility is a bit on the tough side with this mod since all mods assume Imoen is being taken at the Waukeen's Promenade fight and stays in Irenicus' grasps until the PC reaches Spellhold. I hope more mods will be made compatible with Imoen 4 Ever in the near future.
 
 The mod is:
 -compatible with Almateria's Restauration Project "Extended Waukeen's Promenade Cutscene" (independent of installation order)
@@ -81,6 +84,13 @@ The mod is:
 -technical compatible with Alternatives (independent of installation order) (reply options of Alternatives still refer to Imoen missing, though)
 
 -compatible with Saerileth's route to Spellhold if installed *after* Saerileth mod.
+
+In general: There should be no problem with mods that do not introduce talking NPCs in chapter 2 or 3, i.e. all mods with content that either do not include NPCs or where the content kicks in after going to Brynnlaw, e.g. NPC mods starting in the Underdark or ToB mods.
+
+There will be a list of mods with content-wise compatibility in the mod's forum at G3.
+
+
+The mod is *not* compatible with my "Imoen is Stone" mod.
 
 ---------
 more notes for modders:
@@ -156,6 +166,9 @@ REDISTRIBUTION NOTE: Imoen 4 Ever Mod was created to be freely enjoyed by all Ba
 
 
 HISTORY
+
+Version 1:
+-removed "test symbol" from Imoen's protection spell against chunked death
 
 Version Beta 0.2: 
 -Added component "Imoen stays in group in Korlasz' Dungeon" for SoD 

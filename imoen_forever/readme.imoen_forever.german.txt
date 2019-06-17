@@ -21,6 +21,7 @@ Achtung: Der SoD-Teil ist noch nicht fertig.
 
 Hierbei wurden so viele vertonte Originalzeilen verwendet wie möglich, aber manche machten ohne Imoen vor Ort (Cutscnes in BGII) oder mit Imoen daneben (Korlasz' Dungeon in SoD) keinen Sinn mehr und mussten entfernt werden.
 
+Die Mod ist mit SoD und allen BGII-Spielen kompatibel (BGII, BGT; BGII:EE, EET). Für die EET die Mod direkt in den EET-Spieleordner installieren.
 
 
 BGII:
@@ -52,6 +53,8 @@ Geplant ist, in späteren MOdversionen Imoen im ersten Kolaitionslager wieder zur
 
 INSTALLATION
 
+Installationsreihenfolge: die Mod ist als Questmod anzusehen (nicht als Tweakmod), und sollte for allen NPC-Mods installiert werden, die Einmischdialoge in den Kapiteln 2 und 3 in SvA haben.
+
  
 Extract the contents of the mod archive to your game's main directory. 
 NOTE: For BG(II):EE it is important that you istall the mod to the language version you are playing the game in. Otherwise, the dialogues of the mod will not show but give error messages.
@@ -73,7 +76,7 @@ If you have installation problems or encounter any bugs, please post your bug re
 
 COMPATIBILITY
 
-Note: this mod is to be treated as a quest mod, so install it before any NPC mods that could add interjections or reply options to make sure the correct ones are patched by this mod.
+Note: this mod is to be treated as a quest mod, so install it before any NPC mods that could add interjections or reply options in chapters 2&3 in SoA to make sure the correct ones are patched by this mod.
 
 Compatibility is a bit on the tough side with this mod since all mods assume Imoen is being taken at the Waukeen's Promenade fight and stays in Irenicus' grasps until the PC reaches Spellhold. 
 
@@ -160,6 +163,9 @@ REDISTRIBUTION NOTE: Imoen 4 Ever Mod was created to be freely enjoyed by all Ba
 
 
 HISTORY
+
+Version 1:
+-removed "test symbol" from Imoen's protection spell against chunked death
 
 Version Beta 0.2: 
 -Added component "Imoen stays in group in Korlasz' Dungeon" for SoD 
