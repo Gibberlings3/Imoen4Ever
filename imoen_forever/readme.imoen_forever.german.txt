@@ -7,7 +7,7 @@
 			               "Imoen 4 Ever"
 			für BG:EE, BGII, BGT, BGII:EE, and EET
 					von jastey 
-					Version 1
+					Version 2
 
 
 
@@ -23,8 +23,10 @@ Hierbei wurden so viele vertonte Originalzeilen verwendet wie möglich, aber manc
 
 Die Mod ist mit SoD und allen BGII-Spielen kompatibel (BGII, BGT; BGII:EE, EET). Für die EET die Mod direkt in den EET-Spieleordner installieren.
 
+Die Mod hat zwei voneinander unabhängige Komponenten:
 
-BGII:
+
+1. BGII:
 -----------------------------------
 Diese Mofdifikation lässt Imoen in Kapitel 2 wieder zum HC zurückkehren, gleich nach dem ersten Gespräch mit Gaelan in den Slums. 
 Der Spieler kann dann Kaptel 2 und 3 in Ruhe spielen und die BGII-Welt erkunden, ohne das Dilemma, dass man Quests machen möchte aber eigentlich schnell Imoen retten müsste. 
@@ -37,7 +39,7 @@ Die Mod verändert auch die Szenen entsprechend, in denen der Spieler etwas über 
 
 
 
-SoD:
+2. SoD:
 -----------------------------------
 Mit diesem Tweak wird Imoen im Anfangsdungeon von SoD weiter normal in der Gruppe sein, wenn sie dies beim Übergang von BG:EE ebenfalls war. Sie wird dann wie alle anderen NPC auch die Gruppe nach dem Säubern der Gruft verlassen. In den darauf folgenden Szenen im Herzogspalast wurde ihre Rolle im Originalinhalt des Spiels nicht verändert. 
 Imoen hat in Korlasz' Gruft einen PID ("Klickdialog"), der aus ihren originalen Dialogoptionen erstellt wurde. Zusätzlich wird sie über Herzogin Jannath sprechen und warum diese ein solches Interesse an ihr hat. Ihre Zeilen über magische Studien wird sie allerdings nur sagen, wenn sie bereits eine Magier Klasse hat. 
@@ -107,7 +109,7 @@ Trigger for NPC mod compatibility (triggers listed here are *additional* to what
 Content that could fire with this mod or without (with the right timing):
 -----
 1. Dialogues or Banters *with* Imoen that should happen after she is freed in Spellhold that are general enough so they can also fire with this mod:
-GlobalGT("Chapter",GLOBAL",3) !Global("C#IM_ImoenStays","GLOBAL",1)
+GlobalGT("Chapter","GLOBAL",3) !Global("C#IM_ImoenStays","GLOBAL",1)
 (i.e. was kidnapped by Irenicus, soul taken, PC came to rescue her; will fire once Imoen is in party after Spellhold, should not fire in chapter 2 or 3 pre-Spellhold, should fire with or without this mod)
 
 2. NPC talking / commenting *about* Imoen being taken pre-spellhold meant to fire before getting to her:
@@ -118,7 +120,7 @@ GlobalGT("Chapter",GLOBAL",3) !Global("C#IM_ImoenStays","GLOBAL",1)
 Content that should *not* fire with this mod:
 -----
 Global("C#IM_ImoenStays","GLOBAL",0)
-(Dialogues or banters with or about Imoen that *explicitely* state that she was taken and held by Irenicus since the Promenade fight (should only fire without this mod. Please note that for BGT+EET, you need also e.g. GlobalGT("Chapter",GLOBAL",3) or they could fire in ID.)
+(Dialogues or banters with or about Imoen that *explicitely* state that she was taken and held by Irenicus since the Promenade fight (should only fire without this mod. Please note that for BGT+EET, you need also e.g. GlobalGT("Chapter","GLOBAL",3) or they could fire in ID.)
 
 
 Crossmod content for this mod:
@@ -134,14 +136,17 @@ NPC talk to Imoen after Spellhold and explicitely address the fact that she was 
 
 CREDITS
 
+Acifer - promotion picture, beta testing
+
+memory - Polish translation
+
 
 
 TOOLS USED
-IESDP (http://iesdp.gibberlings3.net/)
-
-Infinity Explorer			http://infexp.sourceforge.net
-Near Infinity				http://www.idi.ntnu.no/~joh/ni
-WeiDU					http://www.weidu.org
+IESDP					https://gibberlings3.github.io/iesdp/index.htm
+Near Infinity				https://forums.beamdog.com/discussion/30593/new-versions-of-nearinfinity-available/p1
+WeiDU					https://github.com/WeiDUorg/weidu/releases/latest
+ 					(formerly: http://www.weidu.org)
 
 Modding communities, tutorials and technical assistance:
 
@@ -163,6 +168,15 @@ REDISTRIBUTION NOTE: Imoen 4 Ever Mod was created to be freely enjoyed by all Ba
 
 
 HISTORY
+
+Version 2:
+-Polish version by memory
+-BGII and SoD contents splitted into two optional components
+-reply options for Nalia and Hendak referring to Imoen missing disabled
+-remark from Bodhi about captured Imoen removed
+-Anomen will not refer to Imoen if she is in party (romance dialogue)
+-SoD part installs correctly 
+-typo corrections
 
 Version 1:
 -removed "test symbol" from Imoen's protection spell against chunked death

@@ -1,0 +1,39 @@
+@0    = ~<CHARNAME>! Puœcili mnie! Zakapturzeni Czarodzieje. Po przes³uchaniu w Budynku Rady pozwolili mi odejœæ.~
+@1    = ~Imoen! Co za ulga! A tak siê martwi³em!~ ~Imoen! Co za ulga! A tak siê martwi³am!~
+@2    = ~Muszê ci powiedzieæ, ¿e nie mog³em siê z tego otrz¹sn¹æ.~ ~Muszê ci powiedzieæ, ¿e nie mog³am siê z tego otrz¹sn¹æ.~
+@3    = ~Tak po prostu?~
+@4    = ~Ha! Wspaniale. W³aœnie obieca³em komuœ pokaŸn¹ sumê w z³ocie, ¿eby móc siê do ciebie dostaæ.~ ~Ha! Wspaniale. W³aœnie obieca³am komuœ pokaŸn¹ sumê w z³ocie, ¿eby móc siê do ciebie dostaæ.~
+@5    = ~Niewa¿ne, Imoen.~
+@6    = ~O, tak. Przez moment by³o strasznie!~
+@7    = ~Co? Kto móg³by byæ pomocny w odnalezieniu mnie? Zreszt¹... jakbyœmy mieli a¿ tyle na zbyciu.~
+@8    = ~Mia³am im zap³aciæ karê sama-nie-wiem-jak-du¿o-z³ota, ¿eby pozwolili mi odejœæ, ale wiesz co? Zamiast tego przyjêli ten g³upi pas, który mia³am na sobie!~
+@9    = ~Taa, ja te¿ siê cieszê, ¿e ciê widzê, g³uptasie!~
+@10   = ~A *potem* dowiedzia³em siê, ¿e ten pas strzeg³ mojego ¿ycia! Nosz¹c go, nie mog³am umrzeæ. Czy to nie zabawne? Irenicus mi go da³. Gdybym to wiedzia³a... gdybym to wiedzia³a, rzuci³abym siê na niego i wydrapa³a mu oczy!~
+@11   = ~On... rzuci³ te¿ na mnie jakieœ zaklêcie. I myœlê, ¿e by³o to zaklêcie ochronne. To dziwne, wiesz. Byæ ochronion¹ przez tego, który nas torturowa³ ...~
+@12   = ~Mogê siê przy³¹czyæ z powrotem?~
+@13   = ~Oczywiœcie! Tak siê cieszê, ¿e ciê widzê, ¿e a¿ brakuje mi s³ów!~
+@14   = ~Tak, zapraszam.~
+@15   = ~Na pewno tego chcesz? Wygl¹da na to, ¿e przebywanie ze mn¹ przysparza ci tylko niepotrzebnych cierpieñ.~
+@16   = ~Wybacz, ale wola³<PRO_HESHE>bym z tym trochê zaczekaæ.~
+@17   = ~Och, podj¹³em decyzjê ju¿ dawno temu. Wiesz, ¿e to nie ty mnie ranisz. I to, co powiedzia³ Irenicus... Sposób, w jaki powiedzia³, ¿e przyjdzie po nas oboje... Nie, nie s¹dzê, ¿ebym by³a bardziej bezpieczna bez ciebie, wrêcz przeciwnie.~
+@18   = ~Dobrze, w takim razie bêdê czekaæ w tamtej karczmie, gdzieœ przy barze. Tylko nie zwlekaj zbyt d³ugo, proszê!~
+@19   = ~Ja te¿ siê cieszê, ¿e znów jesteœmy razem! I tak ju¿ zostanie, prawda?~
+@20   = ~Tak siê cieszê, ¿e wróci³am!~
+
+@21   = ~Rozdzia³ 2
+
+Uda³o mi siê uciec z szalonego labiryntu, którym by³ loch Irenicusa, tylko po to, by spotkaæ samego maga, walcz¹cego z odzianymi w czarn¹ skórê zabójcami. Mo¿e w³aœnie dlatego tak ³atwo uda³o mi siê uciec... Nie wiem. Zabójcy najwyraŸniej obwiniali o coœ maga, na co Irenicus odpowiedzia³ gniewem oraz potê¿n¹ magi¹. Od si³y jego zaklêæ zapad³a siê nawet czêœæ budowli, która go otacza³a.  Gdy walka dobieg³a koñca, Irenicusa zaatakowa³a Imoen, a po chwili pojawili siê dziwni czarodzieje. Przerwali magiczn¹ bitwê i zabrali zarówno Imoen, jak i Irenicusa.
+
+Na szczêœcie Imoen wróci³a ju¿ wkrótce nietkniêta i ca³kiem weso³a.
+
+Mimo tego stojê teraz w mieœcie Athkatla w Amn, maj¹c niewielu sprzymierzeñców oraz wrogów, o których nic nie wiem. Irenicus na razie odszed³... ale zagrozi³, ¿e wróci po mnie i Imoen, gdy tylko pouk³ada swoje sprawy. Jakiekolwiek odpowiedzi mogê zapewne uzyskaæ jedynie w miejscu, do którego go zabrano.
+
+Skontaktowa³ siê ze mn¹ cz³owiek nazwiskiem Gaelan Bayle, który w jakiœ tajemniczy sposób wiedzia³, kim jestem. Zaofiarowa³ mi pomoc ze strony kogoœ potê¿nego. Pomoc, za któr¹ muszê naprawdê s³ono zap³aciæ...~
+
+@22   = ~<CHARNAME>, czy... czy to jest ta twoja przyjació³ka? Och, co za szczêœliwe spotkanie! Chcia³abym, ¿eby ka¿da misja ratunkowa koñczy³a siê tak szczêœliwie i tak szybko. Mi³o mi ciê poznaæ, Imoen! <CHARNAME> bardzo siê o ciebie martwi³<PRO_HESHE>. Czyli... czyli mamy wiêcej czasu na podró¿e i przygody, zanim zmierzymy siê z twoim wrogiem!~
+@23   = ~Imoen! Chocia¿ cieszê siê, ¿e wróci³aœ do nas tak szybko, to zastanawiam siê, co z tego ostatecznie wyniknie.  Zakapturzeni czarodzieje mog¹ do nas wróciæ, albo Irenicus przyjdzie po nas wczeœniej, albo... Och, na Silvanusa! Dobrze ciê widzieæ, dziewczyno.~
+@24   = ~Minsc jest taki szczêœliwy, widz¹c swoj¹ przyjació³kê z powrotem, i to w jednym kawa³ku! Nie musimy ju¿ kopaæ ty³ków z³ych czarodziejów, Boo! ...Czy musimy? Moglibyœmy dalej kopaæ ty³ki z³ych czarodziejów razem z nasz¹ przyjació³k¹ Imoen! Juhuu!~
+@25   = ~Minsc jest taki szczêœliwy, widz¹c swoj¹ przyjació³kê z powrotem, i to w jednym kawa³ku! Nie musimy ju¿ kopaæ ty³ków z³ych czarodziejów! ...Czy musimy? Moglibyœmy dalej kopaæ ty³ki z³ych czarodziejów razem z nasz¹ przyjació³k¹ Imoen! Juhuu!~
+@26   = ~Oto jest powód do radoœci. Yoshimo jest naprawdê szczêœliwy, ¿e wróci³aœ, m³odziutka przyjació³ko. Szczêœliwy i zaskoczony, gdy¿ Irenicus nie wygl¹da³ na kogoœ, kto ³atwo wypuszcza sw¹ ofiarê. <CHARNAME>, musisz byæ ostro¿ny. Irenicus ma wobec Imoen jakieœ plany tak samo, jak ma je wobec ciebie... Tak mi siê przynajmniej wydaje po tych kilku rzeczach, które zd¹¿y³em zobaczyæ uwiêziony w jego lochu.~
+
+@27   = ~Myœlê... Myœlê, ¿e na razie bêdziemy bezpieczni od Irenicusa... Przynajmniej na razie. Ale to wcale nie znaczy, ¿e mamy siê zaraz staæ band¹ leniuchów, prawda?~

@@ -1,4 +1,11 @@
 /*
+for SoD-content: needs compatibility variable! 
+z.B.: Global("C#IM_ImoenInSoD","GLOBAL",1)
+
+*/
+
+
+/*
 	***						  ***
 	*** This whole mod is a spoiler to the BGII story ***	
 	***						  ***
@@ -9,7 +16,7 @@ BACKUP ~imoen_forever/backup~
 AUTHOR ~jastey@web.de~  
 
 
-VERSION ~Version 1~ 
+VERSION ~Version 2~ 
 
 README ~imoen_forever/readme.imoen_forever.%LANGUAGE%.txt~ ~imoen_forever/readme.imoen_forever.english.txt~
 
@@ -58,6 +65,14 @@ END
 
 OUTER_SPRINT newline ~%WNL%%LNL%%MNL%%TAB% ~
 
+ACTION_IF GAME_IS ~bgee~ THEN BEGIN
+  OUTER_SPRINT ~IMOEN_DV_SOD~ ~IMOEN~
+END
+
+ACTION_IF GAME_IS ~eet~ THEN BEGIN
+  OUTER_SPRINT ~IMOEN_DV_SOD~ ~IMOEN2~
+END
+
 
 
 END //ALWAYS
@@ -75,9 +90,15 @@ LANGUAGE ~Deutsch~
          ~imoen_forever/tra/german/setup.tra~
          ~imoen_forever/tra/german/game.tra~
 
+LANGUAGE ~Polski~
+         ~polish~   
+         ~imoen_forever/tra/polish/setup.tra~
+         ~imoen_forever/tra/polish/game.tra~
+
 
 BEGIN @9900
-REQUIRE_PREDICATE ((GAME_INCLUDES ~sod~) OR (GAME_IS ~bg2ee eet~) OR (MOD_IS_INSTALLED ~setup-bg2fixpack.TP2~ "0")) @9901 
+REQUIRE_PREDICATE GAME_IS ~bg2ee eet bgt tob~ @9905 
+REQUIRE_PREDICATE ((GAME_IS ~bg2ee eet~) OR (MOD_IS_INSTALLED ~setup-bg2fixpack.TP2~ "0")) @9901 
 REQUIRE_PREDICATE NOT (MOD_IS_INSTALLED ~setup-ImoenIsStone.TP2~ "0") @9902 
 
 
@@ -455,7 +476,10 @@ END ///BGII-part
 //////
 ////////////////////////////////////////////////////////////////////////
 
-/* ~Imoen remains in the Group in SoD~ */ 
+/* ~Imoen remains in the Group in SoD~ */
+
+BEGIN @9903
+REQUIRE_PREDICATE (GAME_INCLUDES ~sod~) @9904 
 
 
 /* first part: Imoen remains in the group in Korlasz' dungeon */

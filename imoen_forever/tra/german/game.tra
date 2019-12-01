@@ -200,8 +200,8 @@ Eines beunruhigt mich ... Bodhi wusste es! Sie wusste, dass ich ein Kind Bhaals 
 @1136 = ~Jemand von Interesse für mich wurde von den Verhülltem Magiern gefangen genommen. Wisst Ihr vielleicht, wohin er gebracht wurde?~
 @1137 = ~Jemand den ich suche wurde von den Verhüllten Magiern gefangen genommen. Habt Ihr eine Ahnung, wo dieses Gefängnis sein könnte?~
 @1138 = ~Schade, dass Gerüchte wie dieses nie irgendwas Spezielles verraten, nicht wahr? Koordinaten etwa, oder Namen ... Ich wünsche Euch viel Glück und dass Ihr Euren Freund wiederfindet. Ihr werdet es brauchen.~
-@1139 = ~Jemand den ich suche wurde von den Verhüllten Magiern gefangen genommen ... könnt Ihr mir etwas über sie erzählen?~
-@1140 = ~Ihre Wachsamkeit dient hauptsächlich dazu, jegliche Konkurrenz zu unterbinden, oder wenigstens genauestens zu kennen. Den Ort ihrer Gefangenen halten sie sehr geheim. Wo auch immer Euer Freund sich befinden mag, keiner wird ihn je finden.~
+@1139 = ~Jemand den ich suche wurde von den Verhüllten Magiern mitgenommen ... könnt Ihr mir etwas über sie erzählen?~
+@1140 = ~Ihre Wachsamkeit dient hauptsächlich dazu, jegliche Konkurrenz zu unterbinden, oder wenigstens genauestens zu kennen. Den Ort ihrer Gefangenen halten sie sehr geheim. Wo auch immer die Person sich befinden mag, die Ihr sucht, keiner wird sie oder ihn je finden.~
 @1141 = ~Was ist Euch das wert? Ich muss genug Geld zusammenkriegen, um jemanden zu finden, den die Verhüllten Magier gefangen halten.~
 @1142 = ~Gibt es eine Belohnung? Ich muss zu Geld kommen, weil ich jemanden finden will, den die Verhüllten Magier gefangen halten, versteht Ihr?~
 @1143 = ~Ich werde Euch wohl helfen. Ich muss unbedingt zu Geld kommen, um zu jemanden zu gelangen, den die Verhüllten Magier festhalten ... ist eine Belohnung ausgesetzt?~
@@ -229,4 +229,9 @@ Eines beunruhigt mich ... Bodhi wusste es! Sie wusste, dass ich ein Kind Bhaals 
 @1165 = ~Ich würde es Vorsorge nennen, bevore er Imoen erneut etwas antun kann - und mir.~
 @1166 = ~Schön, hier ist die Geschichte: Ich muss einen mächtigen Magier finden, der mich und meine Kindheitsfreundin Imoen gefangen gehalten und gefolter hat. Jetzt zufrieden?~
 @1167 = ~Wir werden Euren Feind aufspüren, <CHARNAME>. Das verspreche ich Euch.~
+@1168 = ~Ich muss herausfinden, wer mich aus welchem Grund gefangen genommen hat und was sie mit Imoen und mir vorhaben.~
+@1169 = ~Eine Frage noch ... Ich suche nach jemandem, der von den Verhüllten Magiern gefangen genommen wurde. Wisst Ihr etwas über sie?~
 
+/* new for v2 */
+//#21511
+@1170   = ~Ihr arbeitet für die Schattendiebe unter der Bedingung, dass sie Euch helfen, Euren ehemaligen Entführer Irenicus zu finden. Ja, sie sind Schattendiebe, und ja, sie sind so verrucht, wie Ihr sicherlich schon gehört habt.~

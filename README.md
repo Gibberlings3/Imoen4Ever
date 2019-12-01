@@ -1,7 +1,17 @@
 # Imoen4Ever
 This mod aims at making Imoen a steady companion throughout the whole BG-Saga. Imoen-related story content is being considered, therefore Imoen will be out of party temporarily to reflect the most crucial original game events. This mod makes her rejoin the party after such incidents, so that she can be seen as an actual travel companion in SoD (not finished yet) and BGII.
 
-Note: The SoD part is not finished yet.
+The SoD part is not finished yet.
+
+Note: For downloading the current version from GitHUb, make sure you go to the releases page and download the [latest release of this mod!](https://github.com/Gibberlings3/Imoen4Ever/releases)
+
+[Visit the mod's forum at Gibberlings Three.](https://www.gibberlings3.net/forums/forum/209-imoen-4-ever/)
+
+[Visit the German Discussion Thread at Kerzenburgforum.](https://www.baldurs-gate.de/index.php?threads/imoen-4-ever-mit-imoen-bgii-erleben.44725/)
+
+[Visit the mod's Homepage.](https://www.gibberlings3.net/mods/other/imoen4ever/)
+
+[Download the mod at Gibberlings Three.](https://www.gibberlings3.net/files/file/1013-imoen-4-ever/)
 
 BGII:
 -----------------------------------

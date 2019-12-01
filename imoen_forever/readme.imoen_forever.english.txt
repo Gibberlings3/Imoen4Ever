@@ -7,7 +7,7 @@
 			               "Imoen 4 Ever"
 			for BG:EE, BGII, BGT, BGII:EE, and EET
 					by jastey 
-					Version 1
+					Version 2
 
 
 
@@ -23,6 +23,8 @@ The mod tries to use as many originally voiced lines as possible, but some had t
 
 The mod is compatible with SoD and all BGII games: BGII, BGT, BGII:EE, EET. For EET, install the mod dirctly into your EET game folder.
 
+The mod has two optional components:
+
 BGII:
 -----------------------------------
 This mod gives back Imoen in Chapter 2 and 3, right after the first dialogue with Gaelan. The player can then explore and play all quests without any time pressure or moral dilemma about a friend needing rescue.
@@ -37,7 +39,7 @@ With this tweak, Imoen will remain in your group in the beginning of SoD if she 
 Inside Korlasz' Crypt, Imoen will have a PID (player initiated dialogue) out of her original game dialogue. She will talk about Duke Jannath taking an interest in her, but she will only talk about her magic studies if she was already dual-classed to T/M in BG:EE.
 After the attack in the Ducal Palace, she will be in no shape to accompany the PC because of the poison. Her "good bye" dialogue the evening before the PC heads out against the crusade is changed with her new motive to stay behind accordingly. 
 
-If Imoen was not in party in the endfight of BG:EE, her presence in Korlasz' Crypt will play like in the original game with no changes. (Planned: but she will rejoin at the first coalition camp.)
+If Imoen was not in party in the end fight of BG:EE, her presence in Korlasz' Crypt will play like in the original game with no changes. (Planned: but she will rejoin at the first coalition camp.)
 
 Compatibility note for modders: Inparty Imoen uses the same script name as the original SoD-Imoen (which is Imoen's script name). Both her "final" dialogue inside Korlasz's crypt, as well as the last dialogue state in the Ducal Palace (BDIMOEN 85) stay unchanged in case mod NPCs want to interject (e.g. say goodbye to the PC after defeating Korlasz or say hello/goodbye to Imoen after her recovery).
 
@@ -47,13 +49,13 @@ Compatibility note for modders: Inparty Imoen uses the same script name as the o
 
 INSTALLATION
 
-For installation order, this mod is to be treated as a quest mod (not a tweak mod) and should be installed before anyother NPC mods that add interjections in SoA chapter 2&3.
+For installation order, this mod is to be treated as a quest mod (not a tweak mod) and should be installed before any other NPC mods that add interjections in SoA chapter 2&3.
  
 Extract the contents of the mod archive to your game's main directory. The game will be recognized automatically and the appropriate content will be installed.
 
 NOTE: 
 -If you use SoD from GOG or Steam, you need to prepare your game with modmerge or Argent's DLC merger before installing any mods.
--For BG(II):EE it is important that you istall the mod to the language version you are playing the game in. Otherwise, the dialogues of the mod will not show but give error messages.
+-For BG(II):EE it is important that you install the mod to the language version you are playing the game in. Otherwise, the dialogues of the mod will not show but give error messages.
 
 
 Windows
@@ -110,7 +112,7 @@ Trigger for NPC mod compatibility (triggers listed here are *additional* to what
 Content that could fire with this mod or without (with the right timing):
 -----
 1. Dialogues or Banters *with* Imoen that should happen after she is freed in Spellhold that are general enough so they can also fire with this mod:
-GlobalGT("Chapter",GLOBAL",3) !Global("C#IM_ImoenStays","GLOBAL",1)
+GlobalGT("Chapter","GLOBAL",3) !Global("C#IM_ImoenStays","GLOBAL",1)
 (i.e. was kidnapped by Irenicus, soul taken, PC came to rescue her; will fire once Imoen is in party after Spellhold, should not fire in chapter 2 or 3 pre-Spellhold, should fire with or without this mod)
 
 2. NPC talking / commenting *about* Imoen being taken pre-spellhold meant to fire before getting to her:
@@ -121,7 +123,7 @@ GlobalGT("Chapter",GLOBAL",3) !Global("C#IM_ImoenStays","GLOBAL",1)
 Content that should *not* fire with this mod:
 -----
 Global("C#IM_ImoenStays","GLOBAL",0)
-(Dialogues or banters with or about Imoen that *explicitely* state that she was taken and held by Irenicus since the Promenade fight (should only fire without this mod. Please note that for BGT+EET, you need also e.g. GlobalGT("Chapter",GLOBAL",3) or they could fire in ID.)
+(Dialogues or banters with or about Imoen that *explicitely* state that she was taken and held by Irenicus since the Promenade fight (should only fire without this mod. Please note that for BGT+EET, you need also e.g. GlobalGT("Chapter","GLOBAL",3) or they could fire in ID.)
 
 
 Crossmod content for this mod:
@@ -137,14 +139,17 @@ NPC talk to Imoen after Spellhold and explicitely address the fact that she was 
 
 CREDITS
 
+Acifer - promotion picture, beta testing
+
+memory - Polish translation
+
 
 
 TOOLS USED
-IESDP (http://iesdp.gibberlings3.net/)
-
-Infinity Explorer			http://infexp.sourceforge.net
-Near Infinity				http://www.idi.ntnu.no/~joh/ni
-WeiDU					http://www.weidu.org
+IESDP					https://gibberlings3.github.io/iesdp/index.htm
+Near Infinity				https://forums.beamdog.com/discussion/30593/new-versions-of-nearinfinity-available/p1
+WeiDU					https://github.com/WeiDUorg/weidu/releases/latest
+ 					(formerly: http://www.weidu.org)
 
 Modding communities, tutorials and technical assistance:
 
@@ -166,6 +171,15 @@ REDISTRIBUTION NOTE: Imoen 4 Ever Mod was created to be freely enjoyed by all Ba
 
 
 HISTORY
+
+Version 2:
+-Polish version by memory
+-BGII and SoD contents splitted into two optional components
+-reply options Nalia, Hendak referring to Imoen missing disabled
+-remark from Bodhi about captured Imoen removed
+-Anomen will not refer to Imoen if she is in party (romance dialogue)
+-SoD part installs correctly 
+-typo corrections
 
 Version 1:
 -removed "test symbol" from Imoen's protection spell against chunked death

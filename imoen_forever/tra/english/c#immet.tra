@@ -2,7 +2,7 @@
 @1    = ~Imoen! What a relief! I was so worried!~
 @2    = ~Well, that was a shock, I can tell you.~
 @3    = ~Just like that?~
-@4    = ~Ha! Wonderful. I just agreed to pay someone ten thausends of gold to get to you.~
+@4    = ~Ha! Wonderful. I just agreed to pay someone several ten thousands of gold to get to you.~
 @5    = ~Whatever, Imoen.~
 @6    = ~Oh yes. So scary!~
 @7    = ~What? Who would offer to help you find me? And yeah, as if we'd have that much to spare!~
@@ -19,17 +19,17 @@
 @18   = ~Fine, then I'll wait in that inn over there, at the bar. But don't take too long to return to me, please!~
 @19   = ~Me too. I'm so happy we are together, again! Let's stay it that way from now on, alright?~
 @20   = ~I'm so glad to be back!~
-
+//#23458 rephrased
 @21   = ~Chapter 2
 
-I escaped from the mad maze that was Irenicus' dungeon only to encounter the wizard, himself, in a battle with assassins in black leather.  Perhaps that was why I was able to escape as easily as I did... I do not know.  The assassins seemed to be blaming the mage for something, to which Irenicus responded with anger and powerful magic.  Indeed, part of the structure which surrounded him had collapsed from the might of his spells.
+I escaped from the mad maze that was Irenicus' dungeon only to encounter the wizard, himself, in a battle with assassins in black leather. Perhaps that was why I was able to escape as easily as I did... I do not know. The assassins seemed to be blaming the mage for something, to which Irenicus responded with anger and powerful magic. Indeed, part of the structure which surrounded him had collapsed from the might of his spells.
 As the battle ended, however, Imoen attacked Irenicus, herself... and when strange wizards appeared to put an end to the magical conflict, they took both Imoen and Irenicus away.
 
-Luckily, Imoen returned soon afterwards, unhurt and quite cheerful. Still, I am left in the city of Athkatla in Amn with few allies and enemies that I know nothing about.  Irenicus is gone, for now... but threatened to come back for us, once he is set up wherever he is now. And the only place I can go to achieve answers is likely the place he has been taken to.
+Luckily, Imoen returned soon afterwards, unhurt and quite cheerful. Still, I am left in the city of Athkatla in Amn with few allies and enemies that I know nothing about. Irenicus is gone, for now... but threatened to come back for us, once he is set up wherever he is now. And the only place I can go to achieve answers is likely the place he has been taken to.
 
-I have encountered a man named Gaelan Bayle who mysteriously seems to know who I am and sought me out.  He has an offer of aid from an equally mysterious source.  And one which comes with a very high price, indeed...~
+I have encountered a man named Gaelan Bayle who mysteriously seems to know who I am and sought me out. He has an offer of aid from an equally mysterious source. And one which comes with a very high price, indeed...~
 
-@22   = ~Is-is this your friend, <CHARNAME>? Oh, what a happy reunion! I wished that every rescue mission would take such a happy turn, and after so little time. It is nice to meet you, Imoen! <CHARNAME> was worried sick for you.~
+@22   = ~Is-is this your friend, <CHARNAME>? Oh, what a happy reunion! I wished that every rescue mission would take such a happy turn, and after so little time. It is nice to meet you, Imoen! <CHARNAME> was worried sick for you. S-so that means we have more time to explore and go adventuring, before facing your foe!~
 @23   = ~Imoen! As much as it pleases me to see you return to us so soon, I do wonder what it will mean in the end. The Cowled Wizards might come back to us for it, or Irenicus could come for us sooner, or... Oh, by Silvanus! It is good to see you, girl.~
 @24   = ~Minsc is so happy to see his friend back, and all in one piece! We do not need to go kick evil wizards' butts now, Boo! ...Or maybe yes? We could still go and kick evil wizards' butts, but together with our friend Imoen! Wohoo!~
 @25   = ~Minsc is so happy to see his friend back, and all in one piece! We do not need to go kick evil wizards' butts now! ...Or maybe yes? We could still go and kick evil wizards' butts, but together with our friend Imoen! Wohoo!~
