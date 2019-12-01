@@ -60,6 +60,11 @@ ADD_TRANS_TRIGGER HABREGA 0 ~Global("C#IM_ImoenStays","GLOBAL",0)~ DO 5
 /* #46115 ~My friend Imoen was taken by the Cowled Wizards.  Do you know where she is or where I could get help?~ */
 ADD_TRANS_TRIGGER HABREGA 1 ~Global("C#IM_ImoenStays","GLOBAL",0)~ DO 6
 
+//HENDAK prevent state 61: 
+/* ~If your friend is their captive, I can only offer condolences.  Maybe another powerful group, like the Shadow Thieves or the churches, could tell you more.~ */
+EXTEND_BOTTOM HENDAK 60
+IF ~!Global("C#IM_ImoenStays","GLOBAL",0)~ THEN + 62
+END
 
 //INSPECT 15 DO 5
 /* #45880 ~I'm afraid not. But I've a question... a friend of mine was taken by the Cowled Wizards. Know where she might be?~ */

@@ -22,6 +22,7 @@ ADD_TRANS_TRIGGER AERIE 25 ~Global("C#IM_ImoenStays","GLOBAL",0)~ DO 0 3
 /* #42174 ~I should tell you first, perhaps, that I seek to rescue an old friend who is being held hostage by the Cowled Wizards.  There may be significant risk.~ */
 ADD_TRANS_TRIGGER ANOMEN 21 ~Global("C#IM_ImoenStays","GLOBAL",0)~ DO 0
 
+
 /* banter and dialogues */
 /* BANOMEN */
 /* These reply options are also just disabled for GlobalGT("chapter","GLOBAL",3):
@@ -29,6 +30,15 @@ ADD_TRANS_TRIGGER ANOMEN 21 ~Global("C#IM_ImoenStays","GLOBAL",0)~ DO 0
 1: #35207 ~She's a bit of a brat, but I'm fond of her.~ 
 2: #35208 ~We grew up together and I've tolerated her presence...beyond that, she's proven herself useful occasionally.~*/
 ADD_TRANS_TRIGGER BANOMEN 144 ~Global("C#IM_ImoenStays","GLOBAL",0)~ DO 0 1 2
+
+
+/* in addition: disable comment about Imoen if Imoen is in party. */
+ADD_TRANS_TRIGGER BANOMEN 143 ~!InParty("IMOEN2")~ 
+
+EXTEND_BOTTOM BANOMEN 143 
+IF ~InParty("IMOEN2")~ THEN EXIT
+END
+
 
 
 /* Cernd */
@@ -115,7 +125,7 @@ ADD_TRANS_TRIGGER MAZZY 25 ~Global("C#IM_ImoenStays","GLOBAL",0)~ DO 0
 /* meeting dialogue */
 
 /* #46099 ~I may be able to help you.  But I need to gather a large amount of gold to rescue a friend, so I'd be interested in knowing what you offer as payment.~ */
-ADD_TRANS_TRIGGER NALIA 1 ~Global("C#IM_ImoenStays","GLOBAL",0)~ DO 3
+ADD_TRANS_TRIGGER NALIA 0 ~Global("C#IM_ImoenStays","GLOBAL",0)~ DO 3
 
 /* #46100 ~I need to gather a large amount of gold to rescue a friend... so your payment had best be worth my time.~ */
 ADD_TRANS_TRIGGER NALIA 1 ~Global("C#IM_ImoenStays","GLOBAL",0)~ DO 3
@@ -151,7 +161,6 @@ ADD_TRANS_TRIGGER VICONI 6 ~Global("C#IM_ImoenStays","GLOBAL",0)~ DO 0
 /* #8813 ~I have to rescue Imoen. She's been my companion since I was young.~ */
 ADD_TRANS_TRIGGER BVICONI 34 ~Global("C#IM_ImoenStays","GLOBAL",0)~ DO 0 
 
-/* BVICONI 34 DO 1 also mentions Imoen, but it's ok */
 
 /* Yoshimo */
 

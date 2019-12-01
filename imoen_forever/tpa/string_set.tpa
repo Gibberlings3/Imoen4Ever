@@ -154,6 +154,9 @@ STRING_SET 42423 @1109
 /* ~I friend of mine has been taken captive by the Cowled Wizards... do you know where they keep their prisoners?~ */
 STRING_SET 45782 @1106
 
+//BODHI 5
+/* You work for the Shadow Thieves on the pretense they will help locate your missing companion, Imoen. Yes, they are Shadow Thieves, and yes, they are as nefarious as you've probably heard. */
+STRING_SET 21511 @1170
 
 //BODHI 6
 /* ~I would offer an alternative. I would help you find your friend for...oh... 15,000 gold? It is a sizeable amount less than the Shadow Thieves have asked and, coincidentally, it is what you have now. ~ */
@@ -255,7 +258,9 @@ STRING_SET 39747 @1118
 /* ~Oh, I am not crawling away for fear of your wrath. By all means, coddle, develop and direct it. Fight on, and seek your lost Imoen; I have seen what I came to see.~ */
 STRING_SET 39748 @1119
 
-
+//BVICONI 34 DO 1
+/* ~I need to know who captured me, for what purpose, and what they have in mind for Imoen.~ */
+STRING_SET 8814 @1168
 
 //CERNDJ 134
 /* ~Our host may have a murky past, but this task benefits us both.  We will earn access to Imoen, and keep the balance here.  A nature of the street to protect.~ */
@@ -337,6 +342,14 @@ STRING_SET 42390 @1129
 //GARREN 58 DO 0
 /* ~I am searching for an old friend of mine who is being held hostage by the Cowled Wizards.  Do you know of them?~ */
 STRING_SET 42396 @1128
+
+//HENDAK 26 DO 2
+/* ~A question for you... I'm looking for a friend of mine who has been captured by the Cowled Wizards.  Do you know anything about them?~ */
+STRING_SET 42660 @1169
+
+//HENDAK 33 DO 1
+/* ~A question for you... I'm looking for a friend of mine who has been captured by the Cowled Wizards.  Do you know anything about them?~ */
+STRING_SET 42665 @1169
 
 
 //INSPECT 15 DO 6

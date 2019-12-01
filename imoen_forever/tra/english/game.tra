@@ -12,7 +12,7 @@ As soon as we set foot onto Brynnlaw, Imoen was taken by what seemed to be a Cow
 @1008  = %The girl could walk free, if she pays the penalty.%
 @1009  = %Who are you and what is this about?%
 @1010  = %Hush. You are but a substitute, but you will do - for now.%
-@1011  = %Inprisoned Mage%
+@1011  = %Imprisoned Mage%
 
 
 @1012  = ~Where... where am I? How did I get here?!~
@@ -23,7 +23,7 @@ As soon as we set foot onto Brynnlaw, Imoen was taken by what seemed to be a Cow
 @1015  = ~Our host may have a murky past, but this task benefits us both. We will earn access to Irenicus, and keep the balance here. A nature of the street to protect.~
 @1016  = ~As much as I will ramble on at the drop of a hat, I would think it wiser to find this Irenicus with all haste. It's like my uncle Gummo use to say, "Blah blah blah," he'd say, and we'd be right there with our "Uncle Gummo, we've got things to do," and he'd be right back with the "But just one more story. Just one more, blah blah."~
 @1017  = ~My task must not go unfinished. Please, Keldorn, serve until we defeated Irenicus.~
-@1018  = ~And that would accomplish what? Death on a grand scale, and make our task all the harder. Persuing our main goal must come first.~
+@1018  = ~And that would accomplish what? Death on a grand scale, and make our task all the harder. Pursuing our main goal must come first.~
 @1019  = ~Actually Keldorn, I've been thinking... The quest against Irenicus is my own and I have no right to force it upon a good friend against his will... You need to be here with your family.~ 
 @1020  = ~I felt... I felt like a husband again, like a father. It was good, <CHARNAME>. Very good... Now let us defeat this Irenicus, that I might return here all the sooner.~ 
 @1021  = ~Fine, then. Free it is. So long as we get a portion of the treasure.~
@@ -201,8 +201,8 @@ One more troubling thing... Bodhi knew. She knew I am a child of Bhaal.~
 @1136 = ~Someone of interest to me has been imprisoned by the Cowled Wizards. Do you know, perhaps, where they might have taken him?~
 @1137 = ~I am looking for someone who's been imprisoned by the Cowled Wizards. Any idea where that prison might be?~
 @1138 = ~Too bad stories like those don't give out specifics, eh? Like co-ordinates or names.  Best of luck, though, in tracking down your friend. You'll need it.~
-@1139 = ~Someone I am looking for has been captured by the Cowled Wizards... do you have any information on them?~
-@1140 = ~Their vigilance is likely just to eliminate competition, and they keep the location of their prisoners very secret. Wherever your friend is, no one will find them.~
+@1139 = ~Someone I am looking for has been taken by the Cowled Wizards... do you have any information on them?~
+@1140 = ~Their vigilance is likely just to eliminate competition, and they keep the location of their prisoners very secret. Wherever the person you seek is, no one will find them.~
 @1141 = ~What is it worth? I need to save up enough coin to search for someone being held by the Cowled Wizards.~
 @1142 = ~Is there a reward? I need to gather coin to search for someone being imprisoned by the Cowled Wizards, you see.~
 @1143 = ~Suppose I decide to help you. I need to gather coin to search for someone being held by the Cowled Wizards... is there a reward involved?~
@@ -226,8 +226,15 @@ One more troubling thing... Bodhi knew. She knew I am a child of Bhaal.~
 @1161 = ~I might. But I need to gather coin to persue someone that's been imprisoned by the Cowled Wizards. Is there a reward?~
 @1162 = ~I am saving coin to persue someone that's been imprisoned by the Cowled Wizards, so I will need a reward.~
 @1163 = ~I live, my followers live, and those that oppose us do not. Remember this in your search for Irenicus...~
-@1164 = ~My childhood friend and I were kidnapped by a mage who experimented on and tortured us. I escaped, but he was taken by the COwled Wizards before I could have my revenge. I must find him.~
+@1164 = ~My childhood friend and I were kidnapped by a mage who experimented on and tortured us. I escaped, but he was taken by the Cowled Wizards before I could have my revenge. I must find him.~
 @1165 = ~I'd settle for making sure he won't come after Imoen again - and me.~
 @1166 = ~Here's the story, then: I must find a powerful foe who kidnapped and tortured me and my childhood friend, Imoen. Satisfied now?~
 @1167 = ~We'll get to your foe, <CHARNAME>. I promise you that.~
 
+/* new for v2 */
+//#8814
+@1168 = ~I need to know who captured me, for what purpose, and what they have in mind for me and Imoen.~
+//#42660
+@1169   = ~A question for you... I'm looking for someone who has been captured by the Cowled Wizards.  Do you know anything about them?~
+//#21511
+@1170   = ~You work for the Shadow Thieves on the pretense they will help locate your former capturer, Irenicus. Yes, they are Shadow Thieves, and yes, they are as nefarious as you've probably heard.~

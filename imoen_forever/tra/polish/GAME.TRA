@@ -1,0 +1,256 @@
+@1000  = ~Imoen odesz³a!
+
+Gdy tylko postawiliœmy nasze stopy na Brynnlaw, Imoen zosta³a porwana przez kogoœ, kto wydawa³ siê byæ Zakapturzonym Czarodziejem! Jeœli macza³ w tym palce Irenicus, mogê tylko zgadywaæ, jakie okropnoœci dla niej przygotowa³. Tylko czy to na pewno on? Stojê w bezsilnoœci i z pustymi rêkami. Jedyne, co mi zosta³o, to jak najszybciej znaleŸæ drogê do Azylu, by sprawdziæ co tam znajdê...~
+
+@1001  = %Czy... Czy mogê odejœæ? Ee, nie mam z³ota... Ale mam ten pas... To na pewno *bardzo* potê¿ny przedmiot, prawda?%
+@1002  = %Przyjmiecie go w zamian? (I wreszcie siê go pozbêdê...)%
+@1003  = %Przyjmiemy, w rzeczy samej. Zdejmiemy go z ciebie.%
+@1004  = %Och! To... ee, bardzo potê¿na rzecz? (kaszle)%
+@1005  = %G³upcy! Nie macie pojêcia o co tu chodzi. Dobrze, niewa¿ne. Puœæcie j¹. W odpowiednim momencie wrócê po jedno i drugie.%
+@1006  = %Ale najpierw siê upewniê, ¿e dasz radê, ma³a. Nawet bez tego pasa, który ci podarowa³em.%
+@1007  = %On rzuca czar, tutaj, wewn¹trz naszego budynku, na naszych oczach! Zabraæ go natychmiast!%
+@1008  = %Dziewczyna mo¿e odejœæ, jeœli zap³aci karê.%
+@1009  = %Kim jesteœ i co tu siê dzieje?%
+@1010  = %Æœœ. Jesteœ tylko zastêpstwem, ale na razie musisz mi wystarczyæ.%
+@1011  = %Uwiêziony mag%
+
+
+@1012  = ~Gdzie... gdzie ja jestem? Jak siê tu dosta³am?!~
+
+
+@1013  = ~Z³oto nie by³o wa¿ne, Edwinie. <CHARNAME> musi odnaleŸæ tego Irenicusa, a my musimy w tym dopomóc.~
+@1014  = ~<CHARNAME>, nie muszê ci mówiæ, jak bardzo tego nienawidzê. To wszystko mnie przera¿a. Kiedy ju¿ osi¹gniemy cel, to ju¿ nigdy wiêcej nie powinniœmy siê zadawaæ z tymi ludŸmi.~
+@1015  = ~Nasz gospodarz ma mo¿e mroczn¹ przesz³oœæ, ale wszyscy zyskujemy na tym zadaniu. My dostaniemy siê do Irenicusa i utrzymamy tu równowagê. Ochronimy uliczn¹ przyrodê.~
+@1016  = ~Pomimo i¿ tak strasznie glêdzê, wydaje mi siê, ¿e m¹drzej by³oby jak najszybciej znaleŸæ tego Irenicusa. Wujek Gummo mówi³ „bla, bla, bla”, a my od razu odpowiadaliœmy naszym „Wujku Gummo, mamy sporo rzeczy do zrobienia”, a on dalej z „Ale to tylko jeszcze jedna historyjka. Tylko jedna, bla bla.”~
+@1017  = ~Moje zadanie nie mo¿e zostaæ niedokoñczone. Proszê, Keldornie, s³u¿ mi, a¿ pokonamy Irenicusa.~
+@1018  = ~A to do czego by doprowadzi³o? Œmieræ na wielk¹ skalê, a wykonanie naszego zadania uczyni³oby jeszcze ciê¿szym. A przecie¿ to powinno byæ najwa¿niejsze.~
+@1019  = ~Tak w³aœciwie, Keldornie, to po g³êbszym zastanowieniu doszed³em do wniosku, ¿e misja dopadniêcia Irenicusa jest moj¹ w³asn¹ i nie mam prawa zmuszaæ do niej dobrego przyjaciela wbrew jego woli... Powinieneœ zostaæ tutaj, z rodzin¹.~ ~Tak w³aœciwie, Keldornie, to po g³êbszym zastanowieniu dosz³am do wniosku, ¿e misja dopadniêcia Irenicusa jest moj¹ w³asn¹ i nie mam prawa zmuszaæ do niej dobrego przyjaciela wbrew jego woli... Powinieneœ zostaæ tutaj, z rodzin¹.~
+@1020  = ~Poczu³em siê... Poczu³em siê ponownie jak m¹¿, jak ojciec. To by³o dobre, <CHARNAME>. Bardzo dobre... A teraz chodŸmy pokonaæ tego Irenicusa, abym móg³ tu jak najszybciej powróciæ.~
+@1021  = ~Dobra. Niech bêdzie za darmo. O ile oczywiœcie dostaniemy swój udzia³ w ³upach.~
+@1022  = ~Jeœli w ten sposób marnujesz pieni¹dze, co zgromadziliœmy, aby dorwaæ tego maga, to tak jakby wykupiono ci ju¿ wycieczkê na cmentarz! Minsc i Boo tego dopilnuj¹!~
+@1023  = ~Tak siê zastanawiam... mo¿e wiesz coœ o tym czarodzieju, o Irenicusie? Albo o Zakapturzonych Czarodziejach?~
+@1024  = ~Nie mogê potwierdziæ nic wiêcej, ale... tak, mo¿emy spróbowaæ siê dowiedzieæ, jakie jest miejsce pobytu tego Irenicusa.~
+@1025  = ~Zap³aci³em du¿o z³ota. Powiedz mi, jak odnaleŸæ Irenicusa.~ ~Zap³aci³am du¿o z³ota. Powiedz mi, jak odnaleŸæ Irenicusa.~
+@1026  = ~Brzmi rozs¹dnie, choæ nie mogê zapominaæ o Irenicusie. Co proponujesz?~
+@1027  = ~Nie mam zamiaru tego robiæ! ¯¹dam, ¿ebyœ mi powiedzia³, gdzie jest Irenicus! Zap³aci³em za to!~ ~Nie mam zamiaru tego robiæ! ¯¹dam, ¿ebyœ mi powiedzia³, gdzie jest Irenicus! Zap³aci³am za to!~
+@1028  = ~Mo¿e ciebie nie obchodz¹ moi ludzie, ale mnie tak. Zas³uguj¹ na to, ¿eby ich chroniæ, a jeœli nie zapewnisz im ochrony, to nie otrzymasz naszej pomocy.~
+@1029  = ~Kiedy ju¿ uda ci siê zniszczyæ z³o, które sob¹ reprezentuj¹, wróæ do mnie, a wype³niê nasz¹ umowê. Spisz siê dobrze, a mo¿e jeszcze tego ranka zobaczysz tych, których szukasz. Co ty na to?~
+@1030  = ~Trzeba go odszukaæ, a naj³atwiej to osi¹gn¹æ, pomagaj¹c ci w jego odszukaniu - to proste.~
+@1031  = ~Kiedy bêdziecie ju¿ na miejscu, musicie uwa¿aæ na piratów, którzy rz¹dz¹ na wyspie, i dostaæ siê do samych Czarowiêzów. Jeœli chcesz, mo¿esz walczyæ z piratami. Zabij Irenicusa, jeœli tylko zdo³asz.~
+@1032  = ~Wiem, ¿e palisz siê do wyruszenia po Irenicusa i zapewniam ciê, ¿e wkrótce tak siê stanie. Jednak w³aœciwe rozdysponowanie funduszy wymaga czasu.~  
+@1033  = ~To oni s¹ przeszkod¹, która nie pozwala ci dopaœæ Irenicusa. Zaufaj mi, <CHARNAME>, a nie po¿a³ujesz tego.~
+@1034  = ~Myœleliœmy, ¿e nas do niego zaprowadzisz, i ci¹gle mo¿esz to zrobiæ. Ty szukasz Irenicusa, a nam potrzebne s¹ odpowiedzi na parê pytañ - i jedno i drugie mo¿na znaleŸæ w tym samym miejscu.~ 
+@1035  = ~Proponujê ci inne wyjœcie. Wiem, ¿e twoja przyjació³ka Imoen wróci³a do ciebie i pewnie myœlisz, ¿e oboje jesteœcie bezpieczni. Ale nie bêdziecie, dopóki Irenicus bêdzie gdzieœ tam. Pomogê ci odnaleŸæ tw¹ przyjació³kê za... och... piêtnaœcie tysiêcy sztuk z³ota? To sporo mniej, ni¿ za¿¹dali Z³odzieje Cienia i przypadkiem tyle, ile posiadasz.~ ~Proponujê ci inne wyjœcie. Wiem, ¿e twoja przyjació³ka Imoen wróci³a do ciebie i pewnie myœlisz, ¿e obie jesteœcie bezpieczne. Ale nie bêdziecie, dopóki Irenicus bêdzie gdzieœ tam. Pomogê ci odnaleŸæ tw¹ przyjació³kê za... och... piêtnaœcie tysiêcy sztuk z³ota? To sporo mniej, ni¿ za¿¹dali Z³odzieje Cienia i przypadkiem tyle, ile posiadasz.~
+@1036  = ~Pomo¿esz mi znaleŸæ Irenicusa za piêtnaœcie tysiêcy? Wci¹¿ chcê wiedzieæ, dlaczego mia³abyœ to zrobiæ.~  
+@1037  = ~Kiedy pomo¿esz mi znaleŸæ Irenicusa? Otrzyma³aœ ju¿ zap³atê, której ¿¹da³aœ!~ 
+@1038  = ~Wiele dla ciebie zrobi³em. Kiedy pomo¿esz mi odnaleŸæ Irenicusa?~ ~Wiele dla ciebie zrobi³am. Kiedy pomo¿esz mi odnaleŸæ Irenicusa?~  
+@1039  = ~Wykona³em wszystkie twoje polecenia. Kiedy pomo¿esz mi odnaleŸæ Irenicusa?~ ~Wykona³am wszystkie twoje polecenia. Kiedy pomo¿esz mi odnaleŸæ Irenicusa?~
+@1040  = ~Stara³em siê wykonaæ twoje polecenia. Kiedy pomo¿esz mi odnaleŸæ Irenicusa?~ ~Stara³am siê wykonaæ twoje polecenia. Kiedy pomo¿esz mi odnaleŸæ Irenicusa?~
+@1041  = ~Nie chcesz chyba, by Z³odzieje Cienia wchodzili ci w drogê? Kolejne zadanie zapewni bezpieczeñstwo tobie i tym, którzy z tob¹ podró¿uj¹. Zajmijmy siê nim.~ 
+@1042  = ~Poszukujesz Irenicusa, który mo¿e daæ ci moc. Mogê podaæ ci miejsce jego pobytu oraz zapewniæ œrodki dotarcia tam.~
+@1043  = ~Wynik tego spotkania oczywiœcie znasz, on znikn¹³... Tak, jak tymczasowo ktoœ z twoich towarzyszy. Ty szukasz Irenicusa, i ja chcê go znaleŸæ. Oboje zyskamy na odnalezieniu go.~ 
+@1044  = ~Zrobiê to, co konieczne, ale za bezpieczeñstwo Irenicusa rêczyæ nie mogê.~
+@1045  = ~Owszem, proszê o wiele, jednak tobie te¿ siê to op³aci. Wydasz mi go, a ja wyci¹gnê z niego to, co on wie o tobie. Pomyœl o swoich mo¿liwoœciach. Pomyœl o tym, co kochasz.~ 
+@1046  = ~Mo¿liwe, i mo¿e to w³aœnie dostanie. To, co siê zdarzy, zale¿y tylko od twojej chêci pomocy. Zrób to dla siebie. Zrób to dla swojej mocy!~ 
+@1047  = ~Nie bêdzie kolidowaæ. Irenicusa odnajdziesz bez trudu, gdy¿ znajduje siê w przera¿aj¹cym miejscu, stworzonym po to, by uwiêziæ tych, których wola jest silna. W miejscu, do którego Zakapturzeni czarodzieje sprowadzaj¹ wszystkich, których nazywaj¹ „dewiantami".~
+@1048  = ~Ale wracaj szybko. Im d³u¿ej zwlekasz, tym bardziej odleg³y staje siê Irenicus. Pobyt w Czarowiêzach nie jest mi³y. Nawet dla kogoœ tak potê¿nego, jak Irenicus...~
+@1049  = ~Najpierw chcê siê dowiedzieæ, gdzie jest Irenicus.~ 
+@1050  = ~Mam pewne opory, co do wspó³pracy z kimœ, kto bez ¿adnego powodu pojma³ Imoen. Najpierw powiedz, gdzie jest Irenicus.~
+@1051  = ~Irenicus? Ach... ten uwiêziony czarownik. Nie dysponujê teraz takimi b³ahymi informacjami, musisz siê wiêc wstrzymaæ ze swoimi ¿¹daniami.~
+@1052  = ~Z niczym nie zamierzam siê wstrzymywaæ. Albo powiesz mi, gdzie jest Irenicus, albo nici z mojej pomocy.~
+@1053  = ~Mo¿e, gdybyœ powiedzia³ mi o miejscu przebywaniu Irenicusa, to zdo³a³oby mnie to przekonaæ.~
+@1054  = ~Powiedzia³eœ, ¿e jeœli zrobiê, o co mnie prosisz, to powiesz mi, gdzie przebywa Irenicus. Moje zadanie zosta³o wykonane.~
+@1055  = ~Zrobi³em to, o co mnie prosi³eœ i wykaza³em siê przed tob¹... a teraz chcê wiedzieæ, co zrobi³eœ z Irenicusem.~
+@1056  = ~Cz³onkowie twojego bractwa uwiêzili kogoœ, kogo szukam, Irenicusa. Chcê wiedzieæ, gdzie on jest, zanim zgodzê siê cokolwiek zrobiæ.~
+@1057  = ~Mo¿e. Jednak, cz³onkowie twojego bractwa uwiêzili kogoœ, kogo szukam, Irenicusa. Najpierw muszê wiedzieæ, gdzie on jest.~
+@1058  = ~Muszê coœ wiedzieæ. Cz³onkowie twojego bractwa uwiêzili kogoœ, kogo szukam, Irenicusa. Zanim zgodzê siê cokolwiek dla was zrobiæ, muszê wiedzieæ, gdzie on jest.~
+@1059  = ~Twoje bractwo uwiêzi³o kogoœ, kogo szukam, Irenicusa. Powiedz, gdzie on jest, to mo¿e rozwa¿ê twoj¹ propozycjê.~
+@1060  = ~Irenicus? Ach, ten uwiêziony czarodziej. Nie dysponuje teraz takimi b³ahymi informacjami, musisz siê wiêc wstrzymaæ ze swoimi ¿¹daniami.~
+@1061  = ~Ten Irenicus... okaza³ siê byæ potê¿nym czarodziejem. Stwarza³ on... same problemy, od kiedy zosta³ pojmany, wywo³uj¹c trwogê w sercach moich braci.~
+@1062  = ~Zakapturzeni Czarodzieje nie ujawni¹ niczego, dopóki sprawa siê nie wyjaœni. W rezultacie czego nie mogê ci niczego powiedzieæ.~
+@1063  = ~A nawet gdyby ca³a sytuacja nie mia³a miejsca i tak nikt nie móg³by do niego dotrzeæ. Z³ama³ prawo, a to oznacza koniec. Zakapturzeni Czarodzieje nie daj¹ drugiej szansy.~
+@1064  = ~Przychodzisz od Zakapturzonych Czarodziejów? To w³aœnie oni uwiêzili Irenicusa. Z przyjemnoœci¹ zamieniê z nimi parê s³ów na ten temat.~
+@1065  = ~Nic o tym nie wiem. Reprezentujê jednego z czarodziejów, mistrza Tolgeriasa. Dlaczego nie porozmawiasz z nim o tym Irenicusie?~
+@1066  = ~A co jeœli odrzeknê, ¿e przede wszystkim pragnê dowiedzieæ siê czegoœ o Irenicusie? Czy twój czarodziej bêdzie móg³ jakoœ pomóc mi w tej sprawie?~
+@1067  = ~Mówisz o zaufaniu, ale to wy zabraliœcie Irenicusa, zanim dosiêg³a go moja zemsta! Powiedz mi, gdzie on jest, a wtedy porozmawiamy.~
+@1068  = ~Irenicus? Nie znam tego imienia. To wielkie miasto, zaœ organizacja Zakapturzonych Czarodziejów ma wiele wydzia³ów i tak dalej. Ujêto go za bezprawne nadu¿ywanie magii?~
+@1069  = ~Zapytam o niego moich zwierzchnich, jeœli tego pragniesz. Do tego czasu zaœ, radzê ci dobrze, postêpuj zgodnie z nasz¹ umow¹.~
+@1070  = ~Czy dowiedzia³eœ siê ju¿ czegoœ o miejscu pobytu Irenicusa? Muszê to wiedzieæ.~
+@1071  = ~Zanim zd¹¿ysz zapytaæ, odrzeknê ci, ¿e nic jeszcze nie wiem o twoim przyjacielu Irenicusie. Ale wci¹¿ o tym pamiêtam. Zachowaj cierpliwoœæ.~
+@1072  = ~Tylko tyle? Nic wiêcej dla mnie nie masz? A co z miejscem pobytu Irenicusa?~
+@1073  = ~Zanim otworzysz usta, aby mnie zapytaæ, odpowiadam – nie, nie mam ¿adnych wieœci o twoim przyjacielu Irenicusie. Ale bêdê nadal rozpytywa³, bo wiem, ¿e bêdziesz zawracaæ mi g³owê.~
+@1074  = ~Poza tym, mam dla ciebie wieœci o tym Irenicusie. Przyobieca³em, ¿e powiem ci wszystko, czego siê dowiem. Sprawiasz siê dobrze, a wiêc mniemam, ¿e jestem ci to winien.~
+@1075  = ~Nale¿a³o obj¹æ go aresztem – tyle ju¿ wiesz. Jednak okaza³o siê, i¿ jest zbyt niesforny, aby przytrzymywaæ go w zwyk³ym areszcie.~
+@1076  = ~W tym mieœcie ju¿ go nie ma. Nie mog³em wydobyæ nic wiêcej od swych prze³o¿onych, zaœ gdybym pyta³ wiêcej, œci¹gn¹³bym na swoj¹ g³owê gromy.~
+@1077  = ~Misje od Arana, by uzyskaæ pomoc Z³odziei Cienia
+
+Powiadomiliœmy Arana Linvaila o wydarzeniach jakie rozegra³y siê w dokach, co wprawi³o go w jeszcze wiêksze przygnêbienie. Naszym kolejnym zadaniem bêdzie udaæ siê na ostatnie piêtro gospody „Pod Piêcioma Dzbanami” w Dzielnicy Mostów... Tam spotkamy dwóch Z³odziei Cienia, Jaylosa i Caehana, którzy planuj¹ przejœæ na stronê konkurencyjnej gildii.
+
+Mo¿e warto by³oby udawaæ kolejnego rekruta i przy odrobinie szczêœcia oszukaæ tak¿e ³¹cznika. W ten sposób mo¿na by ustaliæ po³o¿enie kwatery konkurencyjnej gildii. Wówczas Aran móg³by zakoñczyæ konflikt raz na zawsze. PóŸniej zajêlibyœmy siê odszukaniem Irenicusa. Zdaje siê, ¿e Aran ma w tej kwestii szczere intencje.~
+@1078  = ~Misje od Arana, by uzyskaæ pomoc Z³odziei Cienia
+
+Wype³niliœmy wszystkie misje, jakie zleci³ nam Aran Linvail i nareszcie miejsce przetrzymywania Imoen przesta³o byæ tajemnic¹. Trzeba zauwa¿yæ jednak, ¿e nie oby³o siê bez pewnych rewelacji.
+
+Z³odzieje Cienia od samego pocz¹tku interesowali siê moj¹ osob¹. Wiedzieli o moim uprowadzeniu, ale uwa¿ali to za zwyk³e porwanie dla okupu i postanowili siê nie mieszaæ. Niemniej, nied³ugo potem pojawi³a siê Bodhi i wówczas zaczêli znikaæ cz³onkowie ich gildii. Uznano, ¿e kaptuje ich konkurencyjna gildia, chc¹c przej¹æ kontrolê nad podziemnym pó³œwiatkiem. Wydano wiêc rozkaz ataku na kwaterê g³ówn¹ wrogiej gildii, która mia³a siê wed³ug Z³odziei Cienia znajdowaæ w lochach Irenicusa pod Waukeen.
+
+Zostali ca³kowicie zaskoczeni potêg¹, jak¹ rozporz¹dza³ Irenicus. Po bitwie wzrok Z³odziei Cienia skupi³ siê znów na mojej osobie, poniewa¿ tylko mi uda³o siê ¿ywcem wydostaæ z tych lochów. Skoro Irenicus tak bardzo siê mn¹ interesowa³, Z³odzieje Cienia chcieli wiedzieæ, jakie s¹ moje plany. Kiedy zrozumieli, ¿e Irenicus stanowi zagro¿enie dla nas wszystkich, zdecydowali siê mi pomóc, tym samym pomagaj¹c te¿ sobie. Mieli dobre zamiary, chocia¿ przyœwieca³ im egoistyczny motyw.
+
+Uwa¿ali, ¿e Irenicus wci¹¿ stwarza powa¿ne zagro¿enie. Czarodziej zosta³ zabrany na pewn¹ wyspê, gdzie mieœci³ siê przytu³ek o nazwie Czarowiêzy, w którym wiêzi siê magów i poddaje wnikliwym badaniom. Wydaje siê jednak mocno w¹tpliwym, aby Irenicus da³ siê tak ³atwo pokonaæ. Bodhi oraz jej gildia wydaj¹ siê w jakiœ sposób powi¹zani z Irenicusem... natomiast jego intencje wobec mnie i Imoen pozostaj¹ wci¹¿ zagadk¹.
+
+Irenicus w dalszym ci¹gu przebywa na tamtej wyspie. Z³odzieje Cienia nie szczêdz¹c pieniêdzy, przygotowali statek, który ma mnie zabraæ do tamtego miejsca. Maj¹ nadziejê, ¿e przy okazji pozbêdê siê równie¿ ich problemu. W ka¿dym razie nie ulega w¹tpliwoœci, ¿e najwiêksze wyzwanie wci¹¿ jest jeszcze przede mn¹.~
+@1079  = ~Oferta Bodhi odrzucona
+
+Bodhi zaproponowa³a, bym wst¹pi³ do jej gildii, tej, która walczy ze Z³odziejami Cienia. Powiedzia³a mi, ¿e moi aktualni pracodawcy to Z³odzieje Cienia i ¿e nie mo¿na im ufaæ. Zaofiarowa³a tak¿e sw¹ pomoc w poszukiwaniach Irenicusa i to za ni¿sz¹ cenê ni¿ z³odzieje. Zasugerowa³a, ¿e moje obowi¹zki by³yby bardzo krwawe.
+
+Uzna³em, ¿e nie mogê jej ufaæ, ale nie chcia³em odrzucaæ tego, co uda³o mi siê ju¿ zrobiæ. Odmówi³em jej i sta³a siê moim wrogiem. Pozwoli³a mi odejœæ w pokoju, ale doœæ jasno stwierdzi³a, ¿e nastêpne spotkanie nie bêdzie mia³o tak spokojnego przebiegu.~ ~Oferta Bodhi odrzucona
+
+Bodhi zaproponowa³a, bym wst¹pi³a do jej gildii, tej, która walczy ze Z³odziejami Cienia. Powiedzia³a mi, ¿e moi aktualni pracodawcy to Z³odzieje Cienia i ¿e nie mo¿na im ufaæ. Zaofiarowa³a tak¿e sw¹ pomoc w poszukiwaniach Irenicusa i to za ni¿sz¹ cenê ni¿ z³odzieje. Zasugerowa³a, ¿e moje obowi¹zki by³yby bardzo krwawe.
+
+Uzna³am, ¿e nie mogê jej ufaæ, ale nie chcia³am odrzucaæ tego, co uda³o mi siê ju¿ zrobiæ. Odmówi³am jej i sta³a siê moim wrogiem. Pozwoli³a mi odejœæ w pokoju, ale doœæ jasno stwierdzi³a, ¿e nastêpne spotkanie nie bêdzie mia³o tak spokojnego przebiegu.~
+@1080  = ~Muszê wykonaæ dla Bodhi zadania, ¿eby uzyskaæ jej pomoc
+
+Bodhi du¿o mi dzisiaj powiedzia³a... ale najwa¿niejsze, ¿e za³atwi³a przejazd na wyspê, gdzie Irenicus... jest zapewne... przetrzymywany w jakimœ przytu³ku. Mam do niej wróciæ i kiedy bêdê gotowy, mam ruszyæ w drogê.~ ~Muszê wykonaæ dla Bodhi zadania, ¿eby uzyskaæ jej pomoc
+
+Bodhi du¿o mi dzisiaj powiedzia³a... ale najwa¿niejsze, ¿e za³atwi³a przejazd na wyspê, gdzie Irenicus... jest zapewne... przetrzymywany w jakimœ przytu³ku. Mam do niej wróciæ i kiedy bêdê gotowa, mam ruszyæ w drogê.~
+@1081  = ~Bodhi dotrzymuje umowy
+
+Bodhi zgodzi³a siê wype³niæ nasz¹ umowê, pomimo tego, ¿e pojawi³y siê nowe w¹tpliwoœci.
+Zgodnie z jej s³owami Irenicus pojma³ mnie, bo odkry³ moj¹ naturê dziecka Bhaala i próbowa³ „wspomóc” mój rozwój, choæ jego metody nie ró¿ni³y siê niczym od tortur. Z³odzieje Cienia zaatakowali go, zanim zd¹¿y³ mi to powiedzieæ. Kiedy zosta³ uwiêziony, mnie uda³o siê uciec.
+
+Bodhi powiedzia³a mi tak¿e, ¿e jest siostr¹ Irenicusa i powodem, dla którego mi pomaga, jest uwolnienie czarodzieja z miejsca, do którego go wys³ano – strasznego przytu³ku dla magów zwanego Czarowiêzami. Nie robi tego z powodu rodzinnego przywi¹zania, ale dlatego, ¿e potrzebuje Irenicusa do w³asnych celów. Dla zachêty zaproponowa³a, ¿e ujawni wszystko, czego mag siê o mnie dowiedzia³.
+
+Przytu³ek znajduje siê na wolnej wyspie, a Bodhi u¿y³a z³ota, które jej da³em, by wykupiæ mi przejazd. Tam poszukam sposobu, by siê dostaæ do Czarowiêzów i stawiæ czo³a Irenicusowi... Bodhi ma nadziejê, ¿e go oswobodzê.~~Bodhi dotrzymuje umowy
+
+Bodhi zgodzi³a siê wype³niæ nasz¹ umowê, pomimo tego, ¿e pojawi³y siê nowe w¹tpliwoœci.
+Zgodnie z jej s³owami Irenicus pojma³ mnie, bo odkry³ moj¹ naturê dziecka Bhaala i próbowa³ „wspomóc” mój rozwój, choæ jego metody nie ró¿ni³y siê niczym od tortur. Z³odzieje Cienia zaatakowali go, zanim zd¹¿y³ mi to powiedzieæ. Kiedy zosta³ uwiêziony, mnie uda³o siê uciec.
+
+Bodhi powiedzia³a mi tak¿e, ¿e jest siostr¹ Irenicusa i powodem, dla którego mi pomaga, jest uwolnienie czarodzieja z miejsca, do którego go wys³ano – strasznego przytu³ku dla magów zwanego Czarowiêzami. Nie robi tego z powodu rodzinnego przywi¹zania, ale dlatego, ¿e potrzebuje Irenicusa do w³asnych celów. Dla zachêty zaproponowa³a, ¿e ujawni wszystko, czego mag siê o mnie dowiedzia³.
+
+Przytu³ek znajduje siê na wolnej wyspie, a Bodhi u¿y³a z³ota, które jej da³am, by wykupiæ mi przejazd. Tam poszukam sposobu, by siê dostaæ do Czarowiêzów i stawiæ czo³a Irenicusowi... Bodhi ma nadziejê, ¿e go oswobodzê.~
+@1082  = ~Spotkaj siê z Tolgeriasem, Zakapturzonym Czarodziejem
+
+Tolgerias, Zakapturzony Czarodziej w budynku rz¹dowym, obieca³ znaleŸæ jakieœ informacje na temat Irenicusa, jeœli oddam mu pewn¹ przys³ugê.~
+
+@1083 = ~Tak! To w³aœnie *dlatego*...~
+
+@1084 = ~Zbierz pieni¹dze dla Gaelana Bayle'a
+
+Gaelan Bayle skontaktuje mnie z grup¹, która pomo¿e mi znaleŸæ Irenicusa, ale cena wynosi dwadzieœcia tysiêcy sztuk z³ota! Sporo, ale powiedzia³, ¿e niebezpiecznie jest nara¿aæ siê Zakapturzonym Czarodziejom. Mam siê do niego zg³osiæ, gdy zbiorê dwadzieœcia tysiêcy sztuk z³ota.~
+@1085 = ~Muszê wykonaæ dla Bodhi zadania, ¿eby uzyskaæ jej pomoc
+
+Bêdê pracowa³ dla Bodhi. Jest przywódczyni¹ gildii rywalizuj¹cej ze Z³odziejami Cienia. Wymaga mniejszych nak³adów finansowych ni¿ moi poprzedni pracodawcy. Mam te¿ wykonaæ kilka zadañ, ¿eby utrudniæ ¿ycie Z³odziejom Cienia i kiedy to zrobiê, Bodhi udzieli pe³nej pomocy w znalezieniu Irenicusa. Te zadania mog¹ byæ krwawe i brutalne.
+
+To znaczy, ¿e Z³odzieje Cienia s¹ teraz moimi wrogami. Wed³ug Bodhi oni bêd¹ o tym wiedzieæ. W porz¹dku. Moje pierwsze zadanie polega na odnalezieniu w Dzielnicy Portowej ³adunku, którego pilnuj¹ Z³odzieje Cienia. Muszê zdobyæ ten ³adunek i wróciæ z nim do Bodhi w Dzielnicy Cmentarnej. Bodhi powiedzia³a, ¿e pomimo ponurego wygl¹du grobowce s¹ bezpieczne i mogê w nich spokojnie odpocz¹æ.~ ~Muszê wykonaæ dla Bodhi zadania, ¿eby uzyskaæ jej pomoc
+
+Bêdê pracowa³a dla Bodhi. Jest przywódczyni¹ gildii rywalizuj¹cej ze Z³odziejami Cienia. Wymaga mniejszych nak³adów finansowych ni¿ moi poprzedni pracodawcy. Mam te¿ wykonaæ kilka zadañ, ¿eby utrudniæ ¿ycie Z³odziejom Cienia i kiedy to zrobiê, Bodhi udzieli pe³nej pomocy w znalezieniu Irenicusa. Te zadania mog¹ byæ krwawe i brutalne.
+
+To znaczy, ¿e Z³odzieje Cienia s¹ teraz moimi wrogami. Wed³ug Bodhi oni bêd¹ o tym wiedzieæ. W porz¹dku. Moje pierwsze zadanie polega na odnalezieniu w Dzielnicy Portowej ³adunku, którego pilnuj¹ Z³odzieje Cienia. Muszê zdobyæ ten ³adunek i wróciæ z nim do Bodhi w Dzielnicy Cmentarnej. Bodhi powiedzia³a, ¿e pomimo ponurego wygl¹du grobowce s¹ bezpieczne i mogê w nich spokojnie odpocz¹æ.~
+@1086 = ~Rozdzia³ 4
+
+Teraz, kiedy ju¿ uda³o mi siê wype³niæ wszystkie zadania, wyznaczone mi przez Bodhi, wliczaj¹c w to wprowadzenie zamêtu wœród Z³odziei Cienia i zamach na ¿ycie samego Mistrza Cienia, Arana Linvaila, wampirzyca wyjaœni³a mi kilka rzeczy.
+
+Mag, który mnie porwa³, Irenicus, jest bratem Bodhi i zrobi³ to podobno dlatego, ¿e jestem dzieckiem Bhaala. Wampirzyca twierdzi, ¿e nie przy³o¿y³a rêki do tego, ¿eby mu w tym pomóc. To, co ja i Imoen odebraliœmy jako tortury, by³o tak naprawdê wysi³kami maga zmierzaj¹cego do tego, aby odkryæ i uaktywniæ „mój prawdziwy potencja³”.
+
+Bodhi chce odnaleŸæ swojego brata i zdobyæ wiedzê, jak¹ on posiada, a w zamian za moj¹ pomoc ma mi przekazaæ wszystkie informacje, które sama wie na mój temat. Wampirzyca bêdzie mi towarzyszyæ, poniewa¿ Irenicusa zabrano w odosobnione miejsce: do fortecy-przytu³ku dla magów zwanego Czarowiêzami, która znajduje siê na odleg³ej wyspie. Z³oto, które ode mnie dosta³a, wykorzysta³a do zap³acenia pewnemu korsarzowi – Saemonowi Havarianowi za to, ¿eby nas tam przewióz³. Kiedy ju¿ dotrê na wyspê, muszê siê jakoœ dostaæ do œrodka Czarowiêzów... choæ nie wiem, co sama wampirzyca chce zrobiæ. Ju¿ wkrótce poznam odpowiedzi na nurtuj¹ce mnie pytania...~
+@1087 = ~Rozdzia³ 4
+
+Uda³o mi siê wykonaæ zadania, które wyznaczy³ mi Aran Linvail, w³¹cznie ze zniszczeniem wrogiej gildii, za³o¿onej przez Bodhi oraz ze zmuszeniem samej wampirzycy do ucieczki. W zamian za to Mistrz Cienia wyjaœni³ mi kilka spraw.
+
+To Z³odzieje Cienia zaatakowali Irenicusa w lochu, w którym mnie wiêzi³. Dowiedzieli siê o tym, ¿e mnie porwa³, ale niezbyt siê tym przejêli... Potem jednak pojawi³a siê gildia Bodhi i wielu Z³odziei Cienia zaczê³o znikaæ. Uda³o siê im odkryæ lochy Irenicusa i po³¹czyæ to z dzia³alnoœci¹ wampirzycy... Potem na w³asne oczy dane mi by³o ogl¹daæ ich atak na czarnoksiê¿nika.
+
+Aran wyjawi³ mi, ¿e Irenicusa zabrano do odosobnionego miejsca: przytu³ku dla czarodziejów zwanego Czarowiêzami, który znajduje siê na wyspie. Dostarczone przeze mnie z³oto zosta³o wykorzystane na op³acenie przeprawy na tê wyspê. W³aœnie na niej mam odnaleŸæ odpowiedzi na nurtuj¹ce mnie pytania. Jednak Aran mnie ostrzega, ¿e Czarowiêzy to prawdziwa forteca, w której wiêzi siê szalonych czarodziejów oraz innych „dewiantów”... i ju¿ samo dostanie siê do jej wnêtrza bêdzie wielkim sukcesem. Tak czy owak, na wyspê ma mnie przewieŸæ pewien korsarz – Saemon Havarian. W³aœnie jestem w drodze...~
+@1088 = ~Rozdzia³ 3
+
+Podczas mojego pobytu w Athkatli oraz przygód, jakie mnie spotka³y w mieœcie i okolicy, rzuci³y mi siê w oczy oznaki walki pomiêdzy Z³odziejami Cienia i inn¹ frakcj¹. Owa organizacja skontaktowa³a siê ze mn¹ poprzez Bodhi... kobietê potê¿n¹ i z³¹, pe³n¹ ambicji. Ta wyjawi³a mi, ¿e moi dobroczyñcy, w osobie Gaelana Bayle'a, to nikt inny, jak sami Z³odzieje Cienia, a tak¿e zaofiarowa³a mi podobn¹ pomoc... jednak po du¿o ni¿szej cenie.
+
+Zaakceptowa³em ofertê Bodhi, a ona obdarzy³a mnie swoim zaufaniem. Przynajmniej na razie. Jej prawdziwe zamiary nie s¹ mi jeszcze znane, chocia¿ oczywistym jest, ¿e to Bodhi wygrywa w trwaj¹cym w mieœcie konflikcie. Co do z³ota, które otrzyma³a ode mnie za pomoc... Mam przeczucie, ¿e to tylko pierwsza rata ostatecznej ceny, jak¹ przyjdzie mi zap³aciæ. Ale przynajmniej znajdê odpowiedzi, których szukam... Znajdê Irenicusa.~ ~Rozdzia³ 3
+
+Podczas mojego pobytu w Athkatli oraz przygód, jakie mnie spotka³y w mieœcie i okolicy, rzuci³y mi siê w oczy oznaki walki pomiêdzy Z³odziejami Cienia i inn¹ frakcj¹. Owa organizacja skontaktowa³a siê ze mn¹ poprzez Bodhi... kobietê potê¿n¹ i z³¹, pe³n¹ ambicji. Ta wyjawi³a mi, ¿e moi dobroczyñcy, w osobie Gaelana Bayle'a, to nikt inny, jak sami Z³odzieje Cienia, a tak¿e zaofiarowa³a mi podobn¹ pomoc... jednak po du¿o ni¿szej cenie.
+
+Zaakceptowa³am ofertê Bodhi, a ona obdarzy³a mnie swoim zaufaniem. Przynajmniej na razie. Jej prawdziwe zamiary nie s¹ mi jeszcze znane, chocia¿ oczywistym jest, ¿e to Bodhi wygrywa w trwaj¹cym w mieœcie konflikcie. Co do z³ota, które otrzyma³a ode mnie za pomoc... Mam przeczucie, ¿e to tylko pierwsza rata ostatecznej ceny, jak¹ przyjdzie mi zap³aciæ. Ale przynajmniej znajdê odpowiedzi, których szukam... Znajdê Irenicusa.~
+@1089 = ~Misje od Arana, by uzyskaæ pomoc Z³odziei Cienia
+
+Uda³o nam siê pokonaæ konkurencyjn¹ gildiê, sk³adaj¹c¹ siê g³ównie z wampirów, a na koñcu stanêliœmy oko w oko z Bodhi. Wydawa³o mi siê, ¿e zanim ulotni³a siê w ob³okach dymu, podda³a mnie jakiejœ wnikliwej ocenie. Teraz nie pozostaje nam nic innego, jak wróciæ do Arana i powiadomiæ go, ¿e wroga gildia przesta³a istnieæ, chocia¿ jej przywódczyni usz³a z ¿yciem. Trzeba zadaæ mu te¿ kilka pytañ.
+
+Jeszcze jedna niepokoj¹ca rzecz... Bodhi wiedzia³a, wiedzia³a o moim ojcu – Bhaalu.~
+@1090 = ~Nie mogê. Muszê zebraæ z³oto, ¿eby Z³odzieje Cienia pomogli mi w odnalezieniu Irenicusa.~
+@1091 = ~Rozumiem, ¿e nie bêdziesz marnowaæ tu wiêcej czasu? Statek czeka. Irenicus czeka.~
+@1092 = ~Co wiesz o Irenicusie?!~
+@1093 = ~I nie martw siê, pomogê ci odnaleŸæ Irenicusa. Mam ku temu tak¿e w³asne powody. Sama interesujê siê Irenicusem.~
+@1094 = ~Mo¿esz to uznaæ za dodatkowy warunek. Ofiarowujê ci wiele, ale i wiele oczekujê w zamian. Twoim celem bêdzie odnalezienie Irenicusa.~
+@1095 = ~Piêtnaœcie tysiêcy to wiele, ale i wiele na tym zyskasz. Przede wszystkim sporo mocy, ale zdobêdziesz te¿ parê magicznych zabawek.~
+@1096 = ~W³aœnie dlatego pytam grzecznie. Dlaczego zaatakowa³eœ Irenicusa? To przez tê walkê Imoen zosta³a mi zabrana. Szczêœliwie nie na d³ugo.~
+@1097 = ~Musimy przyj¹æ na siebie czêœciow¹ odpowiedzialnoœæ za chwilow¹ utratê Imoen, ale w tym momencie najwa¿niejszy by³ dla nas Irenicus. Ci¹gle nie wiemy, dlaczego zabija³ cz³onków naszej gildii.~
+@1098 = ~Có¿, mam na myœli to, ¿e powinniœmy przestaæ gadaæ i glêdziæ i spróbowaæ szybko znaleŸæ tego Irenicusa.~
+@1099 = ~Chce... chce byœmy okradli œwi¹tyniê? Nawet gdy chodzi o œwi¹tyniê Talosa, to mam gêsi¹ skórkê, gdy o tym pomyœlê. Jak... jak bardzo mamy siê jeszcze pogr¹¿yæ by odnaleŸæ tego Irenicusa, <CHARNAME>?~
+@1100 = ~Doskonale. Potrzebujê zebraæ spor¹ iloœæ pieniêdzy, by dopaœæ mojego wroga, wiêc siê do ciebie przy³¹czê.~
+@1101 = ~Szukam kogoœ, kogo pojmali Zakapturzeni Czarodzieje... Wiesz coœ o tym?~
+@1102 = ~Mmm. Czy tego kogoœ pojmano w tym samym czasie, co twoj¹ przyjació³kê?~
+@1103 = ~Tak, ma na imiê Irenicus.~
+@1104 = ~Ten mê¿czyzna, Irenicus jest niezwykle potê¿ny... Zakapturzeni Czarodzieje nie wiedzieli, na co siê porywaj¹, ³api¹c go.~
+@1105 = ~Nasze Ÿród³a twierdz¹, ¿e czarodzieje boj¹ siê jego mocy. Jednak nie wiem, gdzie on mo¿e teraz byæ.~
+@1106 = ~Ktoœ, kogo szukam, zosta³ porwany przez Zakapturzonych Czarodziejów. Wiesz, gdzie oni trzymaj¹ swoich wiêŸniów?~
+@1107 = ~Trzeba mi zebraæ du¿¹ iloœæ z³ota, aby dopaœæ mojego wroga, tak wiêc ka¿de wynagrodzenie, jakie mo¿esz mi przyobiecaæ, przyjmê z radoœci¹.~
+@1108 = ~Potrzeba mi z³ota, choæby po to, aby dopaœæ pewnego bardzo niebezpiecznego mê¿czyznê.~
+@1109 = ~Szukam maga o imieniu Irenicus, którego przetrzymuj¹ Zakapturzeni Czarodzieje. Czy wiesz coœ o nich?~
+@1110 = ~Dzia³aj¹ dla rady, ale czyni¹, co tylko zechc¹. Nie zbli¿amy siê do nich zbytnio, tak wiêc nie wiem nic wiêcej. Nie wiem, co mog³o siê staæ z tym magiem, którego szukasz.~ 
+@1111 =  ~Jeœli tego maga schwytali zakapturzeni, nie ma w³aœciwie po co go szukaæ. Ci czarodzieje maj¹ wiele tajemnic i zazdroœnie ich strzeg¹.~
+@1112 = ~Wezmê od ciebie z³oto, poniewa¿ nie skoñczy³em jeszcze z tym czarodziejem. To jest jedyny powód.~
+@1113 = ~Mogê to zrobiæ, ale muszê zebraæ wiele z³ota, ¿eby dopaœæ mojego wroga, wiêc bêdzie mi potrzebna nagroda.~
+@1114 = ~Odnajdê go! Odnajdê tego Irenicusa!~
+@1115 = ~Przecie¿ oboje szukamy Irenicusa. Mo¿e powinniœmy dzia³aæ razem?~ ~Przecie¿ obie szukamy Irenicusa. Mo¿e powinnyœmy dzia³aæ razem?~
+@1116 = ~Irenicus pozwoli³, by zapanowa³ nad nim gniew. Jednak wyszed³ ju¿ z tego i jest wolny. Twoja Imoen nie jest tak silna, chocia¿ mówiono mi, i¿ ma... potencja³.~
+@1117 = ~Wiele jeszcze trzeba siê o tobie dowiedzieæ... i o Imoen tak¿e. Sprawdzianem bêdzie walka. No dalej, nauczmy siê czegoœ.~
+@1118 = ~Mo¿liwe, ale gry mog¹ byæ œmiertelnie powa¿ne, zw³aszcza jeœli sama ustalam zasady. Walcz dalej i szukaj drogi do Irenicusa. Ja ujrza³am ju¿ dosyæ.~
+@1119 = ~Nie odchodzê ze strachu przed twoim gniewem. Choæ oczywiœcie mo¿esz go podsycaæ, rozwijaæ i ukierunkowaæ. Walcz dalej, szukaj swojej drogi do Irenicusa. Ja ju¿ ujrza³am to, co ujrzeæ chcia³am.~
+@1120 = ~Szukam kogoœ, kogo pojmali Zakapturzeni Czarodzieje... Wiesz mo¿e, gdzie przetrzymuj¹ wiêŸniów?~
+@1121 = ~Mam pytanie... Szukam kogoœ, kogo pojmali Zakapturzeni Czarodzieje... Czy wiesz, gdzie oni przetrzymuj¹ swych wiêŸniów?~
+@1122 = ~Jeœli nie uda ci siê przekonaæ czarodziejów do wyswobodzenia tej osoby, wtedy twoja wyprawa mo¿e okazaæ siê beznadziejna. Lecz nie ustawaj... wiedza, której szukasz, na pewno istnieje.~
+@1123 = ~Prawdê mówi¹c, nie. Szukam kogoœ, kogo pojmali Zakapturzeni Czarodzieje. Mo¿e wiesz, gdzie trzymaj¹ swoich wiêŸniów?~
+@1124 = ~Ktoœ, kogo szukam, zosta³ schwytany przez Zakapturzonych Czarodziejów... czy wiesz, gdzie oni mog¹ przetrzymywaæ swoich wiêŸniów?~
+@1125 = ~Szukam kogoœ, kogo pojmali Zakapturzeni Czarodzieje. Mo¿e wiesz, gdzie oni przetrzymuj¹ swoich wiêŸniów?~
+@1126 = ~Ale nawet gdybyœcie wiedzieli, to jak, na imiê Arvoreena, moglibyœcie siê tam dostaæ? Zakapturzeni Czarodzieje bardzo nie lubi¹ nieproszonych goœci. Przykro mi z powodu twojej przyjació³ki, <PRO_LADYLORD>.~
+@1127 = ~Pewnie s³ysza³eœ wiele rzeczy... ktoœ, kogo szukam, zosta³ pojmany przez Zakapturzonych Czarodziejów. Mo¿e wiesz, gdzie oni trzymaj¹ swoich wiêŸniów?~
+@1128 = ~Szukam kogoœ, kto zosta³ pojmany przez Zakapturzonych Czarodziejów. Znasz ich?~
+@1129 = ~Ale to prawdopodobnie nie jest dla ciebie nowin¹. Nie s¹dzê, by zechcieli ci wydaæ tak po prostu kogoœ, kogo uwiêzili. Musisz siê z nimi zmierzyæ.~
+@1130 = ~Coœ mnie zastanawia. Potrzebujê z³ota, aby dostaæ siê do mojego wroga... czy za z³apanie tego mordercy wyznaczona jest nagroda?~
+@1131 = ~Jesteœ Zakapturzonym Czarodziejem? Mo¿e jesteœ w stanie powiedzieæ mi, gdzie Zakapturzeni Czarodzieje trzymaj¹ swoich wiêŸniów. Pojmali kogoœ, kim siê interesujê.~
+@1132 = ~Zastanawiam siê... czy wiesz mo¿e coœ o Zakapturzonych Czarodziejach? Uwiêzili kogoœ, kim siê interesujê.~
+@1133 = ~Wiêc raczej nie znajdziesz tej osoby. Zakapturzeni Czarodzieje nie oddadz¹ ci jej, a nikt nie wie, gdzie mo¿na ich znaleŸæ... oprócz tych, którzy nie mog¹ mówiæ.~
+@1134 = ~Mario, to jest <CHARNAME>. Poszukujemy potê¿nego maga, który...~
+@1135 = ~A gdy potê¿ny mag zostanie odnaleziony...?~
+@1136 = ~Ktoœ, kim siê interesujê, zosta³ uwiêziony przez Zakapturzonych Czarodziejów. Wiesz mo¿e, gdzie mogliby go zabraæ?~
+@1137 = ~Szukam kogoœ, kto zosta³ uwiêziony przez Zakapturzonych Czarodziejów. Wiesz mo¿e, gdzie mog³oby byæ ich wiêzienie?~
+@1138 = ~Szkoda, ¿e takie opowieœci nie zawieraj¹ szczegó³ów, co? Takich jak wspó³rzêdne, albo imiona. ¯yczê jednak powodzenia w poszukiwaniach przyjaciela. Bêdzie ci ono potrzebne.~
+@1139 = ~Ktoœ, kogo szukam, zosta³ ujêty przez Zakapturzonych Czarodziejów... Czy wiesz coœ o nich?~
+@1140 = ~Czuwaj¹, aby niszczyæ wszelk¹ konkurencjê w zarzewiu, zaœ umiejscowienie swoich wiêzieñ trzymaj¹ w najg³êbszym sekrecie. Gdziekolwiek umieœcili twojego przyjaciela, nikt go nie odnajdzie.~
+@1141 = ~Ile mo¿na na tym zarobiæ? Muszê zebraæ doœæ monet, by odszukaæ kogoœ uwiêzionego przez Zakapturzonych Czarodziejów.~
+@1142 = ~Jest jakaœ nagroda? Widzisz, muszê zebraæ monety, ¿eby odszukaæ kogoœ uwiêzionego przez Zakapturzonych Czarodziejów.~
+@1143 = ~Przypuœæmy, ¿e postanowiê wam pomóc. Potrzebujê monet, ¿eby móc odszukaæ kogoœ uwiêzionego przez Zakapturzonych Czarodziejów... jest jakaœ nagroda?~
+@1144 = ~Szukam kogoœ, kto zosta³ pojmany przez Zakapturzonych Czarodziejów... Wiesz coœ o nich?~
+@1145 = ~Muszê zebraæ du¿¹ iloœæ z³ota, ¿eby dostaæ siê do mojego wroga, wiêc interesuje mnie, jak¹ dostanê za to nagrodê.~
+@1146 = ~Rozumiem. Jednak muszê zebraæ du¿¹ iloœæ z³ota, ¿eby dopaœæ mojego wroga, dlatego interesuje mnie, czy mogê siê za to spodziewaæ jakiejœ nagrody.~
+@1147 = ~Muszê zebraæ du¿¹ iloœæ z³ota, ¿eby dopaœæ mojego wroga, dlatego z radoœci¹ przyjmê ka¿d¹ nagrodê, któr¹ mi zaproponujesz.~
+@1148 = ~Potrzebujê du¿ej iloœci z³ota, ¿eby dopaœæ mojego wroga, wiêc chcia³bym najpierw wiedzieæ, jakiej nagrody mogê siê za to spodziewaæ.~
+@1149 = ~Masz jakiœ pomys³ na to, w jaki sposób zebraæ du¿o z³ota? Potrzebujê go, ¿eby dostaæ siê do kogoœ pojmanego przez Zakapturzonych Czarodziejów.~
+@1150 = ~Ktoœ, kogo szukam, zosta³ uwiêziony przez Zakapturzenych Czarodziejów. Muszê siê dowiedzieæ, gdzie go trzymaj¹. Wiesz coœ o tym?~
+@1151 = ~Szukamy kogoœ uwiêzionego przez Zakapturzenych Czarodziejów. Mo¿e s³ysza³aœ, gdzie trzymaj¹ swoich wiêŸniów?~
+@1152 = ~Ktoœ, kim siê interesujê, zosta³ uwiêziony przez Zakapturzonych Czarodziejów... wiesz mo¿e, gdzie oni przetrzymuj¹ swoich jeñców?~
+@1153 = ~Potrzebujê zebraæ spor¹ sumê, aby dopaœæ mojego wroga... czy znajdzie siê jakaœ nagroda, jeœli wykonam dla was to zadanie?~
+@1154 = ~Potrzebujê zebraæ spor¹ sumê, aby dopaœæ mojego wroga... tak wiêc najpierw muszê wiedzieæ, czy znajdzie siê jakaœ nagroda.~ 
+@1155 = ~Muszê od³o¿yæ du¿¹ iloœæ z³ota, ¿eby dostaæ siê do kogoœ uwiêzionego przez Zakapturzonych Czarodziejów. Jest mo¿e jakaœ nagroda?~
+@1156 = ~Muszê zgromadziæ du¿¹ iloœæ z³ota, ¿eby dostaæ siê do kogoœ uwiêzionego przez Zakapturzonych Czarodziejów. Jest mo¿e jakaœ nagroda?~
+@1157 = ~Tak. Ale muszê zebraæ du¿¹ iloœæ z³ota, ¿eby kogoœ dopaœæ. Jest jakaœ nagroda?~
+@1158 = ~Muszê zebraæ du¿o z³ota, ¿eby dostaæ siê do kogoœ uwiêzionego przez Zakapturzonych Czarodziejów. Wiêc potrzebujê nagrody.~
+@1159 = ~Có¿... trzeba mi pieniêdzy, aby dostaæ siê do kogoœ uwiêzionego przez Zakapturzonych Czarodziejów. Czy przypadkiem wyznaczy³eœ jak¹œ nagrodê?~
+@1160 = ~Byæ mo¿e, je¿eli jest za to jakaœ nagroda. Trzeba mi pieniêdzy, aby dostaæ siê do kogoœ uwiêzionego przez Zakapturzonych Czarodziejów.~
+@1161 = ~Móg³bym. Ale trzeba mi pieniêdzy, aby dostaæ siê do kogoœ uwiêzionego przez Zakapturzonych Czarodziejów. Czy wyznaczy³eœ jak¹œ nagrodê?~
+@1162 = ~Zbieram pieni¹dze, aby dostaæ siê do kogoœ uwiêzionego przez Zakapturzonych Czarodziejów, wiêc przyda mi siê nagroda.~
+@1163 = ~Ja ¿yjê, moi zwolennicy ¿yj¹, zaœ nasi wrogowie nie. Pamiêtaj o tym, szukaj¹c Irenicusa...~
+@1164 = ~Moja przyjació³ka z dzieciñstwa i ja zostaliœmy porwani przez maga, który nas torturowa³ i przeprowadza³ na nas eksperymenty. Zdo³a³em uciec, ale zanim mog³em mu odp³aciæ, zosta³ zabrany przez Zakapturzonych Czarodziejów. Muszê go odnaleŸæ.~~Moja przyjació³ka z dzieciñstwa i ja zosta³yœmy porwane przez maga, który nas torturowa³ i przeprowadza³ na nas eksperymenty. Zdo³a³am uciec, ale zanim mog³am mu odp³aciæ, zosta³ zabrany przez Zakapturzonych Czarodziejów. Muszê go odnaleŸæ.~
+@1165 = ~Wystarczy mi pewnoœæ, ¿e wiêcej nie wróci ju¿ po Imoen... i po mnie.~
+@1166 = ~Zatem oto moja historia, muszê odnaleŸæ potê¿nego wroga, który porwa³ i torturowa³ mnie i moj¹ przyjació³kê z dzieciñstwa, Imoen. Zadowolona?~
+@1167 = ~Dopadniemy twojego wroga, <CHARNAME>. Obiecujê.~
+@1168 = ~Muszê ustaliæ, kto mnie porwa³, w jakim celu, i co zamierza zrobiæ ze mn¹ i Imoen.~
+@1169 = ~Mam do ciebie pytanie... Szukam kogoœ, kogo porwali Zakapturzeni Czarodzieje. Czy wiesz coœ o nich?~
+@1170 = ~Pracujesz dla Z³odziei Cienia, wierz¹c, i¿ pomog¹ ci odnaleŸæ twojego by³ego porywacza, Irenicusa. Tak, to naprawdê s¹ Z³odzieje Cienia i rzeczywiœcie s¹ takimi potworami, jak pewnie ci mówiono.~

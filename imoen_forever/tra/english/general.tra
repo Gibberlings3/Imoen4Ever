@@ -6,7 +6,7 @@
 @5    = ~Wh... what is happening? Hey! Take your hands away from me!~
 @6    = ~I am to take you now. That is all you need to know.~
 @7    = ~Wh-what was that? Who was that? Poor Imoen!~
-@8    = ~So Imoen was taken after all. We can't let our spirit be dampen by this! We will proceed with our plan. The answer has to be inside th Asylum!~
+@8    = ~So Imoen was taken after all. We can't let our spirit be dampen by this! We will proceed with our plan. The answer has to be inside the Asylum!~
 @9    = ~Not again! Minsc and Boo are raging with anger! This wizard will not hurt our friend!~
 @10   = ~Not again! Minsc is raging with anger! This wizard will not hurt our friend!~
 @11   = ~It hurts to see a friend go like this... I wish from the bottom of my heart that you succeed in saving her, <CHARNAME>.~
@@ -26,6 +26,7 @@
 @25   = ~Taker-of-my-honor. Yoshimo greets you.~
 @26   = ~Ah, my friends. How may Yoshimo help you?~
 @27   = ~I know that you are surprised to see me here, and it is indeed because I booked passage along with you. I needed to get away... for a time. Athkatla is a difficult place to stay for a rogue without a guild. I took advantage of your ship, my friends.~
-@28   = ~Yoshimo did not forget the hurting words <CHARNAME> spoke last time we met after going separate ways, but they are long forgotten. <CHARNAME> does not wish not repeat them now, I hope.~
+@28   = ~Yoshimo did not forget the hurting words <CHARNAME> spoke last time we met after going separate ways, but they are long forgotten. <CHARNAME> does not wish to repeat them now, I hope.~
 @29   = ~If you are in need of Yoshimo's services, come and find me in the Vulgar Monkey Tavern. I wish you best of luck for your undertaking, whatever it is you are seeking here in this unwelcoming pirate town.~
 @30   = ~My friends. Yoshimo greets you!~
+
