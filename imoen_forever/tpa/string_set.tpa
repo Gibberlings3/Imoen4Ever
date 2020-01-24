@@ -262,6 +262,10 @@ STRING_SET 39748 @1119
 /* ~I need to know who captured me, for what purpose, and what they have in mind for Imoen.~ */
 STRING_SET 8814 @1168
 
+//CELOGAN 21 DO 4
+/* I need to gather a large amount of coin to rescue a friend being held by the Cowled Wizards... so I would like a reward. */
+STRING_SET 7799 @1113
+
 //CERNDJ 134
 /* ~Our host may have a murky past, but this task benefits us both.  We will earn access to Imoen, and keep the balance here.  A nature of the street to protect.~ */
 STRING_SET 58162 @1015
@@ -323,6 +327,10 @@ STRING_SET 45792 @1127
 /* ~But even if you did know, how in Arvoreen's name would you get there? The Cowled Wizards don't take intrusion lightly.  Sorry about your friend, my <PRO_LADYLORD>.~ */
 STRING_SET 45799 @1126
 
+//FFBART 15 DO 3
+/* You must hear things... a friend of mine has been taken captive by the Cowled Wizards. Do you know where they keep their prisoners? */
+STRING_SET 45809 @1127
+
 
 
 //FIRKRA02 18 -- this is actually not necessary for English, but for German version
@@ -357,7 +365,7 @@ STRING_SET 42665 @1169
 STRING_SET 46133 @1130
 
 
-//JUGJER01 2 DO
+//JUGJER01 2 DO 1
 /* ~You're a Cowled Wizard?  Perhaps you could tell me where the Cowled Wizards keep their prisoners.  A friend of mine is being held.~ */
 STRING_SET 46041 @1131
 
@@ -652,6 +660,14 @@ STRING_SET 45534 @1152
 //SHOP06 12 DO 4
 /* ~A friend of mine has been imprisoned by the Cowled Wizards... do you have any idea where their prisoners would be kept?~ */
 STRING_SET 45547 @1152
+
+//SLSHOP01 3 DO 1
+/* A friend of mine has been taken captive by the Cowled Wizards. Do you know where they keep their prisoners? */
+STRING_SET 45563 @1152
+
+//SLSHOP01 7 DO 1
+/* A friend of mine has been taken captive by the Cowled Wizards. Do you know where they keep their prisoners? */
+STRING_SET 45569 @1152
 
 
 /* Tolgerias TOLGER*/

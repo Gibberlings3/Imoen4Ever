@@ -97,13 +97,13 @@ THEN
 	RESPONSE #100
 		SetGlobal("BD_Talk2","LOCALS",1)
 		FaceObject(Player1)
-		DisplayStringHead(Myself,63976)  // That symbol sure looks familiar. How about we keep moving?
+		DisplayStringHead(Myself,%63976%)  // That symbol sure looks familiar. How about we keep moving?
 END
 
 IF
 	Global("BD_Talk3","LOCALS",0)
 	AreaCheck("bd0130")
-	Range("Dead_Three_center",15)
+	Range("Dead_three_center",20)
 	!StateCheck(Myself,STATE_INVISIBLE)
 	InParty(Myself) 
 	See(Player1) 
@@ -113,13 +113,16 @@ THEN
 	RESPONSE #100
 		SetGlobal("BD_Talk3","LOCALS",1)
 		FaceObject(Player1)
-		DisplayStringHead(Myself,63978)  // The braziers in here must be magical. The different colors really liven up this drab ol' place.
+		DisplayStringHead(Myself,%63978%)  // The braziers in here must be magical. The different colors really liven up this drab ol' place.
 END
 
 IF
 	Global("BD_Talk4","LOCALS",0)
-	Global("BDSH_Imoen_Room","BD0130",4)
+//	Global("BDSH_Imoen_Room","BD0130",4)
 	AreaCheck("bd0130")
+	Range("Lava01",20)
+//	Range("Chasm02",15)
+	!Range("Trap_spook",5)
 	!StateCheck(Myself,STATE_INVISIBLE)
 	InParty(Myself) 
 	See(Player1) 
@@ -129,7 +132,7 @@ THEN
 	RESPONSE #100
 		SetGlobal("BD_Talk4","LOCALS",1)
 		FaceObject(Player1)
-		DisplayStringHead(Myself,63974)  // Hey—you feel a breeze? I feel a breeze.
+		DisplayStringHead(Myself,%63974%)  // Hey—you feel a breeze? I feel a breeze.
 END
 
 IF
@@ -146,13 +149,16 @@ THEN
 	RESPONSE #100
 		SetGlobal("BD_Talk5","LOCALS",1)
 		FaceObject("Massive_Door")
-		DisplayStringHead(Myself,63975)  // Wow, look at the size of that door! There must be a lever or something to open it.
+		DisplayStringHead(Myself,%63975%)  // Wow, look at the size of that door! There must be a lever or something to open it.
 END
 
 IF
 	Global("BD_Talk6","LOCALS",0)
 	AreaCheck("bd0120")
-	Range("Imoen_room1b",15)
+	OR(3)
+		Range("Imoen_room2",15)
+		Range("Imoen_room1b",15)
+		Range("Imoen_room2b",15)
 	!StateCheck(Myself,STATE_INVISIBLE)
 	InParty(Myself) 
 	See(Player1) 
@@ -162,7 +168,7 @@ THEN
 	RESPONSE #100
 		SetGlobal("BD_Talk6","LOCALS",1)
 		FaceObject(Player1)
-		DisplayStringHead(Myself,63977)  // This chasm sure looks deep. Do you feel warm air coming up from below? I do. Wonder what's down there?
+		DisplayStringHead(Myself,%63977%)  // This chasm sure looks deep. Do you feel warm air coming up from below? I do. Wonder what's down there?
 END
 
 /* group finds Korlasz's tomes about Bhaal research with Imoen in group */
