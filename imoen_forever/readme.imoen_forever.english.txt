@@ -7,7 +7,7 @@
 			               "Imoen 4 Ever"
 			for BG:EE, BGII, BGT, BGII:EE, and EET
 					by jastey 
-					Version 2
+					Version 3
 
 
 
@@ -32,6 +32,9 @@ The original game content kicks in again after the arrival in Brynnlaw: Imoen wi
 
 All(most all) lines referring to Imoen being taken and needing rescue where replaced with references to Irenicus, instead.
 
+Please note: For BGII(:EE), the Imoen inside Irenicus Dungeon is *not* the one you will get back. This is due to teh original game behavior where imoen rejoining in Spellhold is not Imoen from ID, and there is nothing I4E could do here as the different creature files use different dialogue and script names (i.e. death variables which cannot be changed inside a running game).
+
+For BGT/EET, Imoen will be continuous.
 
 SoD:
 -----------------------------------
@@ -171,6 +174,14 @@ REDISTRIBUTION NOTE: Imoen 4 Ever Mod was created to be freely enjoyed by all Ba
 
 
 HISTORY
+
+Version 3:
+-added note to readme about Imoen in ID not being the same as outside like in the original games (BGII+BGII:EE only)
+-(EET) fixed bug in EET where Imoen's dialogue would hang in Korlasz's crypt
+-Imoen's scenery comments in Korlasz' crypt should trigger correctly
+-added imoen_forever.ini with mod info
+-removed more instances to references of Imoen being kidnapped: fence standing next to temple of Ilmater, High merchant Logan of Trademeet, Samuel Thunderburp (owner of Five Flagons).
+-added folder libiconv-1.9.2-1-src.7z with iconv licence info
 
 Version 2:
 -Polish version by memory

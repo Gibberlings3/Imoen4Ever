@@ -1,11 +1,4 @@
 /*
-for SoD-content: needs compatibility variable! 
-z.B.: Global("C#IM_ImoenInSoD","GLOBAL",1)
-
-*/
-
-
-/*
 	***						  ***
 	*** This whole mod is a spoiler to the BGII story ***	
 	***						  ***
@@ -13,10 +6,10 @@ z.B.: Global("C#IM_ImoenInSoD","GLOBAL",1)
 */
 
 BACKUP ~imoen_forever/backup~
-AUTHOR ~jastey@web.de~  
+AUTHOR ~Please post at G3 or Kerzenburgforum, refer to readme.~  
 
 
-VERSION ~Version 2~ 
+VERSION ~Version 3~  
 
 README ~imoen_forever/readme.imoen_forever.%LANGUAGE%.txt~ ~imoen_forever/readme.imoen_forever.english.txt~
 
@@ -67,10 +60,82 @@ OUTER_SPRINT newline ~%WNL%%LNL%%MNL%%TAB% ~
 
 ACTION_IF GAME_IS ~bgee~ THEN BEGIN
   OUTER_SPRINT ~IMOEN_DV_SOD~ ~IMOEN~
+  OUTER_SPRINT ~35302~ ~35302~
+  OUTER_SPRINT ~35304~ ~35304~
+  OUTER_SPRINT ~35323~ ~35323~
+  OUTER_SPRINT ~55721~ ~55721~
+  OUTER_SPRINT ~55722~ ~55722~
+  OUTER_SPRINT ~55723~ ~55723~
+  OUTER_SPRINT ~55725~ ~55725~
+  OUTER_SPRINT ~55726~ ~55726~
+  OUTER_SPRINT ~35320~ ~35320~
+  OUTER_SPRINT ~35321~ ~35321~
+  OUTER_SPRINT ~35322~ ~35322~
+  OUTER_SPRINT ~35327~ ~35327~
+  OUTER_SPRINT ~35344~ ~35344~
+  OUTER_SPRINT ~35345~ ~35345~
+  OUTER_SPRINT ~35347~ ~35347~
+  OUTER_SPRINT ~35350~ ~35350~
+  OUTER_SPRINT ~55732~ ~55732~
+  OUTER_SPRINT ~55743~ ~55743~
+  OUTER_SPRINT ~55744~ ~55744~
+  OUTER_SPRINT ~55745~ ~55745~
+  OUTER_SPRINT ~55746~ ~55746~
+  OUTER_SPRINT ~63943~ ~63943~
+  OUTER_SPRINT ~63944~ ~63944~
+  OUTER_SPRINT ~63974~ ~63974~
+  OUTER_SPRINT ~63975~ ~63975~
+  OUTER_SPRINT ~63976~ ~63976~
+  OUTER_SPRINT ~63977~ ~63977~
+  OUTER_SPRINT ~63978~ ~63978~
+  OUTER_SPRINT ~64518~ ~64518~
+  OUTER_SPRINT ~64521~ ~64521~
+  OUTER_SPRINT ~64522~ ~64522~
+  OUTER_SPRINT ~64524~ ~64524~
+  OUTER_SPRINT ~64525~ ~64525~
+  OUTER_SPRINT ~66750~ ~66750~
+  OUTER_SPRINT ~66751~ ~66751~
+  OUTER_SPRINT ~69736~ ~69736~
 END
 
 ACTION_IF GAME_IS ~eet~ THEN BEGIN
   OUTER_SPRINT ~IMOEN_DV_SOD~ ~IMOEN2~
+  OUTER_SPRINT ~35302~ ~235302~
+  OUTER_SPRINT ~35304~ ~235304~
+  OUTER_SPRINT ~35323~ ~235323~
+  OUTER_SPRINT ~55721~ ~255721~
+  OUTER_SPRINT ~55722~ ~255722~
+  OUTER_SPRINT ~55723~ ~255723~
+  OUTER_SPRINT ~55725~ ~255725~
+  OUTER_SPRINT ~55726~ ~255726~
+  OUTER_SPRINT ~35320~ ~235320~
+  OUTER_SPRINT ~35321~ ~235321~
+  OUTER_SPRINT ~35322~ ~235322~
+  OUTER_SPRINT ~35327~ ~235327~
+  OUTER_SPRINT ~35344~ ~235344~
+  OUTER_SPRINT ~35345~ ~235345~
+  OUTER_SPRINT ~35347~ ~235347~
+  OUTER_SPRINT ~35350~ ~235350~
+  OUTER_SPRINT ~55732~ ~255732~
+  OUTER_SPRINT ~55743~ ~255743~
+  OUTER_SPRINT ~55744~ ~255744~
+  OUTER_SPRINT ~55745~ ~255745~
+  OUTER_SPRINT ~55746~ ~255746~
+  OUTER_SPRINT ~63943~ ~263943~
+  OUTER_SPRINT ~63944~ ~263944~
+  OUTER_SPRINT ~63974~ ~263974~
+  OUTER_SPRINT ~63975~ ~263975~
+  OUTER_SPRINT ~63976~ ~263976~
+  OUTER_SPRINT ~63977~ ~263977~
+  OUTER_SPRINT ~63978~ ~263978~
+  OUTER_SPRINT ~64518~ ~264518~
+  OUTER_SPRINT ~64521~ ~264521~
+  OUTER_SPRINT ~64522~ ~264522~
+  OUTER_SPRINT ~64524~ ~264524~
+  OUTER_SPRINT ~64525~ ~264525~
+  OUTER_SPRINT ~66750~ ~266750~
+  OUTER_SPRINT ~66751~ ~266751~
+  OUTER_SPRINT ~69736~ ~269736~
 END
 
 
@@ -107,9 +172,6 @@ REQUIRE_PREDICATE NOT (MOD_IS_INSTALLED ~setup-ImoenIsStone.TP2~ "0") @9902
 ////// BGII content: ~Imoen returns after Promenade Fight~
 //////
 ////////////////////////////////////////////////////////////////////////
-
-ACTION_IF GAME_IS ~tob bg2ee eet~ THEN BEGIN
-//// BGII-part
 
 ADD_JOURNAL @1000
 
@@ -466,7 +528,7 @@ COMPILE EVALUATE_BUFFER ~imoen_forever/dialogue/c#im_imoen2j.d~
 
 EXTEND_BOTTOM ~imoen2.bcs~ ~imoen_forever/baf/imoen_imoen2_2.baf~ EVALUATE_BUFFER
 
-END ///BGII-part
+
 
 
 
@@ -481,9 +543,32 @@ END ///BGII-part
 BEGIN @9903
 REQUIRE_PREDICATE (GAME_INCLUDES ~sod~) @9904 
 
+/* set detecting variable for other mods - is set in Thieves Maze in BG as well as SoD Palace L3 (bd0103.bcs) 
+Global("C#IM_ImoenInSoD","GLOBAL",1) */
+<<<<<<<< .../ar0146_i4e_sod_detection.baf
+IF
+	Global("C#IM_ImoenInSoD","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#IM_ImoenInSoD","GLOBAL",1)
+END
+>>>>>>>>
+EXTEND_BOTTOM ~%ThievesMaze%.bcs~ ~.../ar0146_i4e_sod_detection.baf~ EVALUATE_BUFFER 
+
+<<<<<<<< .../bd0103_i4e_sod_detection.baf
+IF
+	Global("C#IM_ImoenInSoD","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#IM_ImoenInSoD","GLOBAL",1)
+END
+>>>>>>>>
+EXTEND_BOTTOM ~bd0103.bcs~ ~.../bd0103_i4e_sod_detection.baf~ EVALUATE_BUFFER 
+
+
+
 
 /* first part: Imoen remains in the group in Korlasz' dungeon */
-ACTION_IF ((GAME_IS ~eet~) OR (GAME_IS ~bgee~ AND FILE_EXISTS_IN_GAME ~bd0103.are~))  THEN BEGIN
 
 COMPILE ~imoen_forever/ImoenInGroupKD/Imoen_in_group_KD.d~ EVALUATE_BUFFER
 COMPILE ~imoen_forever/ImoenInGroupKD/c#stimoe.baf~ EVALUATE_BUFFER
@@ -671,4 +756,3 @@ EXTEND_TOP ~bd0130.BCS~ ~imoen_forever/ImoenInGroupKD/c#st_imo_bd0130.baf~ EVALU
 /* second part: Imoen returns to PC in first camp bd1000 */
 /* to be continued... */
 
-END //SoD part

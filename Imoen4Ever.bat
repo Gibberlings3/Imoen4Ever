@@ -6,7 +6,7 @@ call "%~dp0..\ModPackaging\utilities\ie_games.bat"
 
 REM /* MODIFY: set the values of the 3 variables below to reflect the current mod version */
 set "mod_name=Imoen 4 Ever"
-set mod_version=v2
+set mod_version=v3
 set mod_folder=imoen_forever
 
 REM /* MODIFY: list here which IE games the mod is compatible with, from this list of possibilities: */
@@ -23,7 +23,7 @@ set ico_folder=%mod_folder%\style
 set audio_folder=%mod_folder%\audio
 set tispack_folder=%mod_folder%\tiz
 set iconv_folder=%mod_folder%\tra\autotra\iconv
-set mod_readme=http://www.gibberlings3.net/readmes/readme.imoen_forever.english.txt
+set mod_readme=https://gibberlings3.github.io/Documentation/readmes/readme.imoen_forever.english.txt
 
 REM /* MODIFY: if you don't need to build a specific package, you can disable it below by setting the appropriate variable to 0 */
 set build_windows_zip=1
