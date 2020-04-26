@@ -9,7 +9,7 @@ BACKUP ~imoen_forever/backup~
 AUTHOR ~Please post at G3 or Kerzenburgforum, refer to readme.~  
 
 
-VERSION ~Version 3~  
+VERSION ~v4~  
 
 README ~imoen_forever/readme.imoen_forever.%LANGUAGE%.txt~ ~imoen_forever/readme.imoen_forever.english.txt~
 
@@ -30,7 +30,19 @@ ALWAYS
     OUTER_SET EVAL ~%name_source%~ = bg2_chapter
   END
 
-INCLUDE ~imoen_forever/lib/extra_regexp_vars.tph~
+  INCLUDE ~imoen_forever/lib/extra_regexp_vars.tph~
+
+  ACTION_IF GAME_IS ~bgt~ THEN BEGIN
+    INCLUDE ~imoen_forever/lib/g3_bgt_cpmvars.tpa~ 
+  END
+
+  ACTION_IF GAME_IS ~bgee~ THEN BEGIN
+    INCLUDE ~imoen_forever/lib/g3_bgee_cpmvars.tpa~
+  END
+
+  ACTION_IF GAME_IS ~eet~ THEN BEGIN
+    INCLUDE ~EET/other/cpmvars/eet_cpmvars.tpa~
+  END
 
 //CamDawgs CD_STATE_NOTVALID 
     APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~ UNLESS ~CD_STATE_NOTVALID~
