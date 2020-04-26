@@ -1,6 +1,6 @@
 @1000  = ~Imoen is gone!
 
-As soon as we set foot onto Brynnlaw, Imoen was taken by what seemed to be a Coweld Wizard! If Irenicus has any hand in this I can only guess what horrors he has prepared for her. But is it really his doing? I stand helpless and with empty hands. All I can do is find a way into the Asylum as soon as possible and see what I will find...~
+As soon as we set foot onto Brynnlaw, Imoen was taken by what seemed to be a Cowled Wizard! If Irenicus had a hand in this I can only guess what horrors he has prepared for her. But is it really his doing? I stand helpless and bereft of my friend. All I can do is search for a way into the Asylum, as quickly as possible, to see what I will find...~
 
 @1001  = %I... I can go? Er, I don't have any gold... But I have this girdle... Surely a *very* powerful item, yes?%
 @1002  = %Would you accept this instead? (And I get rid of it at last...)%
@@ -20,9 +20,9 @@ As soon as we set foot onto Brynnlaw, Imoen was taken by what seemed to be a Cow
 
 @1013  = ~The gold was not important, Edwin. We have to help <CHARNAME> locate this Irenicus person.~
 @1014  = ~<CHARNAME>, I don't need to tell you how much I hate this. This all scares me. Once we reach our goal we must never associate with these people again.~
-@1015  = ~Our host may have a murky past, but this task benefits us both. We will earn access to Irenicus, and keep the balance here. A nature of the street to protect.~
-@1016  = ~As much as I will ramble on at the drop of a hat, I would think it wiser to find this Irenicus with all haste. It's like my uncle Gummo use to say, "Blah blah blah," he'd say, and we'd be right there with our "Uncle Gummo, we've got things to do," and he'd be right back with the "But just one more story. Just one more, blah blah."~
-@1017  = ~My task must not go unfinished. Please, Keldorn, serve until we defeated Irenicus.~
+@1015  = ~Our host may have a murky past, but this task benefits us both. We will earn access to Irenicus, and keep the balance here. The nature of the street to protect.~
+@1016  = ~As much as I ramble on at the drop of a hat, I would think it wiser to find this Irenicus with all haste. It's like my uncle Gummo use to say, "Blah blah blah," he'd say, and we'd be like "Uncle Gummo, we've got things to do," and he'd just continue with "But just one more story. Just one more, blah blah."~
+@1017  = ~My task must not go unfinished. Please, Keldorn, serve until we've defeated Irenicus.~
 @1018  = ~And that would accomplish what? Death on a grand scale, and make our task all the harder. Pursuing our main goal must come first.~
 @1019  = ~Actually Keldorn, I've been thinking... The quest against Irenicus is my own and I have no right to force it upon a good friend against his will... You need to be here with your family.~ 
 @1020  = ~I felt... I felt like a husband again, like a father. It was good, <CHARNAME>. Very good... Now let us defeat this Irenicus, that I might return here all the sooner.~ 
@@ -42,17 +42,17 @@ As soon as we set foot onto Brynnlaw, Imoen was taken by what seemed to be a Cow
 @1034  = ~We thought you could lead us to him, and you can. You seek Irenicus, and we seek answers - both will be found together.~  
 @1035  = ~I would offer an alternative. I know your friend Imoen came back to you and you might think both of you are safe. But you will not be as long as Irenicus is out there. I would help you find him for...oh... 15,000 gold? It is a sizeable amount less than the Shadow Thieves have asked and, coincidentally, it is what you have now.~ 
 @1036  = ~And you will help me find Irenicus for 15000? I still wonder why you would do this.~  
-@1037  = ~When will you help me find Irenicus? I have already paid to the necessary coin!~  
+@1037  = ~When will you help me find Irenicus? I have already paid you what you asked!~  
 @1038  = ~I have done much for you. When will you help me with Irenicus?~  
 @1039  = ~I have done everything you have asked. When will you help me with Irenicus?~  
 @1040  = ~I have tried to do as you have asked. When will you help me find Irenicus?~  
-@1041  = ~You would not want the path contested by Shadow Thieves, would you? The task at hand will ensure safe passage for you and all that travel with you. Let's get to it then.~ 
+@1041  = ~You would not want the path blocked by Shadow Thieves, would you? The task at hand will ensure safe passage for you and all that travel with you. Let's get to it then.~ 
 @1042  = ~You seek Irenicus, the one who would give you power. I am prepared to give you his location, and the means with which to reach him.~ 
 @1043  = ~Of course you saw the outcome of that battle, with him spirited away - and some of your own companions, temporarily. You seek Irenicus, as well as I seek him. Both of us could benefit by his return.~  
 @1044  = ~I will do what I must. I make no promise for the safety of this Irenicus.~
-@1045  = ~I ask much, that is true, but this will benefit us both. You give him to me, and I give you what he has learned about you. Think of your potential. Think of what you hold dear.~ 
+@1045  = ~I ask much, that is true, but this will benefit us both. You give him to me, and I tell you what he has learned about you. Think of your potential. Think of what you hold dear.~ 
 @1046  = ~Perhaps he does, and perhaps he will get it. What happens is entirely dependent on your willingness to help. Do it for yourself. Do it for your power!~ 
-@1047  = ~It will not interfere. You will reach Irenicus with ease, for he is brought to a horrible place designed to hold the strong willed. A place the Cowled Wizards brought all they called "deviants".~ 
+@1047  = ~It will not interfere. You will reach Irenicus with ease, for he is brought to a horrible place designed to hold the strong willed. A place the Cowled Wizards bring all they call "deviants".~ 
 @1048  = ~Return quickly to me. The longer you wait, the more distant Irenicus shall become. For a deviant, a stay in Spellhold is not a gentle one. Not even for one as powerful as Irenicus...~ 
 @1049  = ~First I would like to know where Irenicus is.~ 
 @1050  = ~I am leery of working for the people who took my friend Imoen with them without good reason. Tell me where Irenicus is, first.~ 
@@ -80,7 +80,7 @@ As soon as we set foot onto Brynnlaw, Imoen was taken by what seemed to be a Cow
 @1072  = ~That's it? You've nothing else for me? What about Irenicus's whereabouts?~
 @1073  = ~And before you ask, no, I have no information about your friend Irenicus. I will ask again, because I know you will pester me.~
 @1074  = ~Regardless, I have some news of this Irenicus. I said I would tell you what I could, and since you have performed well, I think I owe you that much.~
-@1075  = ~He was taken into custody, that much you know. He proved to unruly for simple incarceration.~
+@1075  = ~He was taken into custody, that much you know. He proved too unruly for simple incarceration.~
 @1076  = ~He is no longer in the city. I could get nothing further from my superiors, and I expect that asking for more would yield a harsh response.~
 @1077  = ~Aran's tasks to receive the Shadow Thieves' aid.
 
@@ -144,9 +144,9 @@ The Shadow Thieves were the ones who attacked Irenicus in the dungeon that I awo
 Aran told me that Irenicus was taken to an island asylum for mages called Spellhold. The gold I supplied was used to book passage to the isle, and it is there that I will find the answers I seek. Aran warns me, though, that the asylum is a veritable fortress meant to contain insane wizards and other 'deviants'... and even gaining entry will be a feat unto itself. Regardless, passage with a privateer named Saemon Havarian has been booked and I am on my way...~
 @1088 = ~Chapter 3
 
-Throughout my time in Athkatla and my adventures in and around the city, I have seen hints of some great struggle between the Shadow Thieves and some other source. This other source approached me in the form of Bodhi... a woman of great power and evil, rivalling her ambition.  She revealed the nature of my benefactors under Gaelan Bayle to be none other than the Shadow Thieves, themselves, and offered to give me the same help that they did... but at a far lesser price.
+Throughout my time in Athkatla and my adventures in and around the city, I have seen hints of some great struggle between the Shadow Thieves and some other source. This other source approached me in the form of Bodhi... a woman of great power and evil, rivalling her ambition.  She revealed the nature of my benefactors under Gaelan Bayle to be none other than the Shadow Thieves themselves, and offered to give me the same help that they did... but at a far lesser price.
 
-I have accepted Bodhi's offer and she has taken me into her confidence, for now. The true nature of her motivations has yet to be revealed, but it obvious that Bodhi is on the winning side of this city-wide conflict. As to the gold I have given her for her aid... I have the feeling that it is just the beginning of the final price I will eventually have to pay.  But I will have my answers... I will find Irenicus.~
+I have accepted Bodhi's offer and she has taken me into her confidence, for now. The true nature of her motivations has yet to be revealed, but it's obvious that Bodhi is on the winning side of this city-wide conflict. As to the gold I have given her for her aid... I have the feeling that it is just the beginning of the final price I will eventually have to pay.  But I will have my answers... I will find Irenicus.~
 @1089 = ~Aran's tasks to receive the Shadow Thieves' aid.
 
 I have defeated the rival guild, full of vampires as it was, and have faced Bodhi. She seemed to be judging me in some manner before she left in gaseous form. All that remains now is to return to Aran and tell him that the guild is gone, even if their leader remains unkilled. I will have questions for him as well.
@@ -156,9 +156,9 @@ One more troubling thing... Bodhi knew. She knew I am a child of Bhaal.~
 @1091 = ~I trust you will waste no more time here? The ship awaits. Irenicus awaits.~
 @1092 = ~What do you know of Irenicus!~
 @1093 = ~And rest assured, I will help you find Irenicus, but not just for your reasons. I have an interest in him myself.~
-@1094 = ~You must bear this as one of the additional conditions. I offer much, and expect much in return. Irenicus will be your joint goal in time.~
+@1094 = ~You must bear this as one of the additional conditions. I offer much, and expect much in return. Irenicus will be our joint goal in time.~
 @1095 = ~15,000 is a lot, but I will compensate you well for it. You will ultimately have a lot of power, and a few magical trinkets too.~
-@1096 = ~That is why I am asking gently. Why did you attack Irenicus? It was that fight that took Imoen from me, luckily not for very long.~
+@1096 = ~That is why I am asking politely. Why did you attack Irenicus? It was that fight that took Imoen from me, luckily not for very long.~
 @1097 = ~We must take partial responsibility for your temporary loss of Imoen, but our chief concern was Irenicus at the time. We still don't know why he killed our guild members.~
 @1098 = ~Well my point is that we should stop talking and fetching and try and find this Irenicus.~
 @1099 = ~He... he wants us to steal from a temple?  Even from Talos, it still creeps me out.  Just... just how far will we sink to search for this Irenicus, <CHARNAME>?~
@@ -200,7 +200,7 @@ One more troubling thing... Bodhi knew. She knew I am a child of Bhaal.~
 @1135 = ~And when the mighty mage is found...?~
 @1136 = ~Someone of interest to me has been imprisoned by the Cowled Wizards. Do you know, perhaps, where they might have taken him?~
 @1137 = ~I am looking for someone who's been imprisoned by the Cowled Wizards. Any idea where that prison might be?~
-@1138 = ~Too bad stories like those don't give out specifics, eh? Like co-ordinates or names.  Best of luck, though, in tracking down your friend. You'll need it.~
+@1138 = ~Too bad stories like those don't give out specifics, eh? Like coordinates or names.  Best of luck, though, in tracking down your friend. You'll need it.~
 @1139 = ~Someone I am looking for has been taken by the Cowled Wizards... do you have any information on them?~
 @1140 = ~Their vigilance is likely just to eliminate competition, and they keep the location of their prisoners very secret. Wherever the person you seek is, no one will find them.~
 @1141 = ~What is it worth? I need to save up enough coin to search for someone being held by the Cowled Wizards.~
@@ -226,7 +226,7 @@ One more troubling thing... Bodhi knew. She knew I am a child of Bhaal.~
 @1161 = ~I might. But I need to gather coin to persue someone that's been imprisoned by the Cowled Wizards. Is there a reward?~
 @1162 = ~I am saving coin to persue someone that's been imprisoned by the Cowled Wizards, so I will need a reward.~
 @1163 = ~I live, my followers live, and those that oppose us do not. Remember this in your search for Irenicus...~
-@1164 = ~My childhood friend and I were kidnapped by a mage who experimented on and tortured us. I escaped, but he was taken by the Cowled Wizards before I could have my revenge. I must find him.~
+@1164 = ~My childhood friend and I were kidnapped by a mage who experimented on and tortured us. We escaped, but he was taken by the Cowled Wizards before I could have my revenge. I must find him.~
 @1165 = ~I'd settle for making sure he won't come after Imoen again - and me.~
 @1166 = ~Here's the story, then: I must find a powerful foe who kidnapped and tortured me and my childhood friend, Imoen. Satisfied now?~
 @1167 = ~We'll get to your foe, <CHARNAME>. I promise you that.~
