@@ -7,7 +7,6 @@
 			               „Imoen 4 Ever"
 			dla BG:EE, BGII, BGT, BGII:EE, oraz EET
 					by jastey 
-					Version 2
 
 
 
@@ -129,6 +128,18 @@ UWAGI O ROZPOWSZECHNIANIU: Mod Imoen 4 Ever zosta³ stworzony po to, aby mogli si
 
 
 HISTORIA
+
+Version 4:
+-detection variable whether Imoen will stay in the group in Korlasz' Dungeon should be applied to the correct script (cpmvar.tpas should be read in)
+-English version proof read by Lauriel
+
+Version 3:
+-added note to readme about Imoen in ID not being the same as outside like in the original games (BGII+BGII:EE only)
+-(EET) fixed bug in EET where Imoen's dialogue would hang in Korlasz's crypt
+-Imoen's scenery comments in Korlasz' crypt should trigger correctly
+-added imoen_forever.ini with mod info
+-removed more instances to references of Imoen being kidnapped: fence standing next to temple of Ilmater, High merchant Logan of Trademeet, Samuel Thunderburp (owner of Five Flagons).
+-added folder libiconv-1.9.2-1-src.7z with iconv licence info
 
 Version 2:
 -Polish version by memory

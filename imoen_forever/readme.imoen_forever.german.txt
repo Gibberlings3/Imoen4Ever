@@ -7,7 +7,7 @@
 			               "Imoen 4 Ever"
 			für BG:EE, BGII, BGT, BGII:EE, and EET
 					von jastey 
-					Version 3
+
 
 
 
@@ -168,6 +168,10 @@ REDISTRIBUTION NOTE: Imoen 4 Ever Mod was created to be freely enjoyed by all Ba
 
 
 HISTORY
+
+Version 4:
+-detection variable whether Imoen will stay in the group in Korlasz' Dungeon should be applied to the correct script (cpmvar.tpas should be read in)
+-English version proof read by Lauriel
 
 Version 3:
 -added note to readme about Imoen in ID not being the same as outside like in the original games (BGII+BGII:EE only)
