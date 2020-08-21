@@ -9,7 +9,7 @@ BACKUP ~imoen_forever/backup~
 AUTHOR ~Please post at G3 or Kerzenburgforum, refer to readme.~  
 
 
-VERSION ~v4~  
+VERSION ~v5 pre~  
 
 README ~imoen_forever/readme.imoen_forever.%LANGUAGE%.txt~ ~imoen_forever/readme.imoen_forever.english.txt~
 
@@ -72,14 +72,14 @@ OUTER_SPRINT newline ~%WNL%%LNL%%MNL%%TAB% ~
 
 ACTION_IF GAME_IS ~bgee~ THEN BEGIN
   OUTER_SPRINT ~IMOEN_DV_SOD~ ~IMOEN~
+  OUTER_SPRINT ~11035~ ~11035~
+  OUTER_SPRINT ~16413~ ~16413~
+  OUTER_SPRINT ~16414~ ~16414~
+  OUTER_SPRINT ~16415~ ~16415~
   OUTER_SPRINT ~35302~ ~35302~
   OUTER_SPRINT ~35304~ ~35304~
   OUTER_SPRINT ~35323~ ~35323~
-  OUTER_SPRINT ~55721~ ~55721~
-  OUTER_SPRINT ~55722~ ~55722~
-  OUTER_SPRINT ~55723~ ~55723~
-  OUTER_SPRINT ~55725~ ~55725~
-  OUTER_SPRINT ~55726~ ~55726~
+  OUTER_SPRINT ~39771~ ~39771~
   OUTER_SPRINT ~35320~ ~35320~
   OUTER_SPRINT ~35321~ ~35321~
   OUTER_SPRINT ~35322~ ~35322~
@@ -88,13 +88,23 @@ ACTION_IF GAME_IS ~bgee~ THEN BEGIN
   OUTER_SPRINT ~35345~ ~35345~
   OUTER_SPRINT ~35347~ ~35347~
   OUTER_SPRINT ~35350~ ~35350~
+  OUTER_SPRINT ~39753~ ~39753~
+  OUTER_SPRINT ~39771~ ~39771~
+  OUTER_SPRINT ~52921~ ~52921~
+  OUTER_SPRINT ~55721~ ~55721~
+  OUTER_SPRINT ~55722~ ~55722~
+  OUTER_SPRINT ~55723~ ~55723~
+  OUTER_SPRINT ~55725~ ~55725~
+  OUTER_SPRINT ~55726~ ~55726~
   OUTER_SPRINT ~55732~ ~55732~
   OUTER_SPRINT ~55743~ ~55743~
   OUTER_SPRINT ~55744~ ~55744~
   OUTER_SPRINT ~55745~ ~55745~
   OUTER_SPRINT ~55746~ ~55746~
+  OUTER_SPRINT ~57089~ ~57089~
   OUTER_SPRINT ~63943~ ~63943~
   OUTER_SPRINT ~63944~ ~63944~
+  OUTER_SPRINT ~63958~ ~63958~
   OUTER_SPRINT ~63974~ ~63974~
   OUTER_SPRINT ~63975~ ~63975~
   OUTER_SPRINT ~63976~ ~63976~
@@ -105,21 +115,24 @@ ACTION_IF GAME_IS ~bgee~ THEN BEGIN
   OUTER_SPRINT ~64522~ ~64522~
   OUTER_SPRINT ~64524~ ~64524~
   OUTER_SPRINT ~64525~ ~64525~
+  OUTER_SPRINT ~66315~ ~66315~
+  OUTER_SPRINT ~66358~ ~66358~
   OUTER_SPRINT ~66750~ ~66750~
   OUTER_SPRINT ~66751~ ~66751~
+  OUTER_SPRINT ~69021~ ~69021~
   OUTER_SPRINT ~69736~ ~69736~
 END
 
 ACTION_IF GAME_IS ~eet~ THEN BEGIN
   OUTER_SPRINT ~IMOEN_DV_SOD~ ~IMOEN2~
+  OUTER_SPRINT ~11035~ ~211035~
+  OUTER_SPRINT ~16413~ ~216413~
+  OUTER_SPRINT ~16414~ ~216414~
+  OUTER_SPRINT ~16415~ ~216415~
   OUTER_SPRINT ~35302~ ~235302~
   OUTER_SPRINT ~35304~ ~235304~
   OUTER_SPRINT ~35323~ ~235323~
-  OUTER_SPRINT ~55721~ ~255721~
-  OUTER_SPRINT ~55722~ ~255722~
-  OUTER_SPRINT ~55723~ ~255723~
-  OUTER_SPRINT ~55725~ ~255725~
-  OUTER_SPRINT ~55726~ ~255726~
+  OUTER_SPRINT ~39771~ ~239771~
   OUTER_SPRINT ~35320~ ~235320~
   OUTER_SPRINT ~35321~ ~235321~
   OUTER_SPRINT ~35322~ ~235322~
@@ -128,13 +141,23 @@ ACTION_IF GAME_IS ~eet~ THEN BEGIN
   OUTER_SPRINT ~35345~ ~235345~
   OUTER_SPRINT ~35347~ ~235347~
   OUTER_SPRINT ~35350~ ~235350~
+  OUTER_SPRINT ~39753~ ~239753~
+  OUTER_SPRINT ~39771~ ~239771~
+  OUTER_SPRINT ~52921~ ~252921~
+  OUTER_SPRINT ~55721~ ~255721~
+  OUTER_SPRINT ~55722~ ~255722~
+  OUTER_SPRINT ~55723~ ~255723~
+  OUTER_SPRINT ~55725~ ~255725~
+  OUTER_SPRINT ~55726~ ~255726~
   OUTER_SPRINT ~55732~ ~255732~
   OUTER_SPRINT ~55743~ ~255743~
   OUTER_SPRINT ~55744~ ~255744~
   OUTER_SPRINT ~55745~ ~255745~
   OUTER_SPRINT ~55746~ ~255746~
+  OUTER_SPRINT ~57089~ ~257089~
   OUTER_SPRINT ~63943~ ~263943~
   OUTER_SPRINT ~63944~ ~263944~
+  OUTER_SPRINT ~63958~ ~263958~
   OUTER_SPRINT ~63974~ ~263974~
   OUTER_SPRINT ~63975~ ~263975~
   OUTER_SPRINT ~63976~ ~263976~
@@ -145,8 +168,11 @@ ACTION_IF GAME_IS ~eet~ THEN BEGIN
   OUTER_SPRINT ~64522~ ~264522~
   OUTER_SPRINT ~64524~ ~264524~
   OUTER_SPRINT ~64525~ ~264525~
+  OUTER_SPRINT ~66315~ ~266315~
+  OUTER_SPRINT ~66358~ ~266358~
   OUTER_SPRINT ~66750~ ~266750~
   OUTER_SPRINT ~66751~ ~266751~
+  OUTER_SPRINT ~69021~ ~269021~
   OUTER_SPRINT ~69736~ ~269736~
 END
 
@@ -173,17 +199,18 @@ LANGUAGE ~Polski~
          ~imoen_forever/tra/polish/game.tra~
 
 
-BEGIN @9900
+////////////////////////////////////////////////////////////////////////
+//////
+////// Imoen 4 Ever in BGII: Imoen returns at the beginning of chapter 2
+//////
+////////////////////////////////////////////////////////////////////////
+
+BEGIN @9928 DESIGNATED 0 //GROUP @9921
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet bgt tob~ @9905 
 REQUIRE_PREDICATE ((GAME_IS ~bg2ee eet~) OR (MOD_IS_INSTALLED ~setup-bg2fixpack.TP2~ "0")) @9901 
 REQUIRE_PREDICATE NOT (MOD_IS_INSTALLED ~setup-ImoenIsStone.TP2~ "0") @9902 
 
 
-////////////////////////////////////////////////////////////////////////
-//////
-////// BGII content: ~Imoen returns after Promenade Fight~
-//////
-////////////////////////////////////////////////////////////////////////
 
 ADD_JOURNAL @1000
 
@@ -257,32 +284,6 @@ EXTEND_TOP ~ar1512.bcs~ ~...inlined/inlined_ar1512.baf~ EVALUATE_BUFFER
 EXTEND_BOTTOM ~ar1512.bcs~ ~imoen_forever/baf/imoen_ar1512.baf~ EVALUATE_BUFFER
 
 
-/* Imoen will be protected against permanent death (sort of) */
-
-ADD_SECTYPE C#IM_NoPermanentDeath ~Protection against Permanent Death~ 
-
-/* spell protection against permanent death */
-COPY ~imoen_forever/spl/c#im0001.spl~ ~override~
-WRITE_BYTE 0x27 C#IM_NoPermanentDeath
-WRITE_BYTE 0xa2 C#IM_NoPermanentDeath
-
-/* remove spell protection against permanent death */
-COPY ~imoen_forever/spl/c#im0002.spl~ ~override~
-WRITE_BYTE 0xa2 C#IM_NoPermanentDeath
-
-/* make Imoen apply and remove spell protection */
-
-EXTEND_TOP ~imoen2.bcs~ ~imoen_forever/baf/imoen_imoen2.baf~ EVALUATE_BUFFER
-
-
-/* Make Yoshimo appear at Brynnlaw - only if Imoen is in party */
-
-/* make Yoshimo global */
-EXTEND_TOP ~ar0603.bcs~ ~imoen_forever/baf/imoen_ar0603.baf~ EVALUATE_BUFFER
-/* spawn Yoshimo on ship in Brynnlaw if Imoen is in party */
-EXTEND_TOP ~ar1600.bcs~ ~imoen_forever/baf/imoen_ar1600_yoshimo.baf~ EVALUATE_BUFFER
-/* make Yoshimo speak to the PC */
-EXTEND_TOP ~yoshimo.bcs~ ~imoen_forever/baf/imoen_yoshimo.baf~ EVALUATE_BUFFER
 
 
 /* area patches: give Brynnlaw detection trigger (AR1600) */
@@ -360,18 +361,7 @@ DisplayStringWait("cuwizsu",@1003)
 DisplayStringWait("cuimoen",@1004)
 DisplayStringWait("cujon",@1005)
 		SmallWait(6)		
-DisplayStringWait("cujon",@1006)~
-
-/* removed for compatibility reasons: Faster chapter 1&2 cutscenes and dreams TweaksAnthology
-
-/* Irenicus puts a spell on Imoen */
-    REPLACE_TEXTUALLY ~\(CreateVisualEffectObject("SPDISPMA","cujon")\)~
-		~CreateVisualEffectObject("SPDISPMA","cujon")
-		Wait(1)
-		ActionOverride("cujon",ForceSpell("cuimoen",FLASHY_1))  // Imoen
-		Wait(2)
-		DisplayStringWait("cuwizsu",@1007)~
-*/
+//DisplayStringWait("cujon",@1006)~
   END
   BUT_ONLY_IF_IT_CHANGES
 
@@ -430,96 +420,16 @@ COPY_EXISTING ~movie03d.bcs~ ~override~
 
 
 
+////////////////////////////////////////////////////////////////////////
+//////
+////// BGII content: ~Give Imoen dialogue content in chapter 2 & 3~
+//////
+////////////////////////////////////////////////////////////////////////
 
-/* compatibility */
-
-
-
-
-/* compatibility with Alternatives - if Alternatives is installed before ImoenHandling, change the relevent cutscenes here, too */
-
-ACTION_IF (MOD_IS_INSTALLED ~setup-alternatives.TP2~ "0") THEN BEGIN
-
-/* b!altm3b.baf (Aster's route) - no action */
-  
-/* b!altm3d.bcs (Aster's route) - replace "Imoen" with arbitrary thief and remove Imoen specific lines */
-
-COPY_EXISTING ~b!altm3d.bcs~ ~override~
-  DECOMPILE_AND_PATCH BEGIN
-   REPLACE_TEXTUALLY ~\(CutSceneId(Player1)\)~
-~\1 ActionOverride("cuimoen3",Polymorph(THIEF_FEMALE_DWARF)~
-    REPLACE_TEXTUALLY ~\(DisplayStringWait(Myself,56919)[%tab% %lnl%%mnl%%wnl%]+DisplayStringWait("cuimoen3",56920)[%tab% %lnl%%mnl%%wnl%]+DisplayStringWait(Myself,56921)\)~
-~~
-    REPLACE_TEXTUALLY ~\(DisplayStringHead(Myself,56924)[%tab% %lnl%%mnl%%wnl%]+Wait(4)\)~
-~~
-  END
-  BUT_ONLY_IF_IT_CHANGES
-
-
-/* b!malm3b.baf (Malficus's route) - no action */
-
-/* b!malm3d.bcs (Malficus's route) - replace "Imoen" with arbitrary thief and remove Imoen specific lines */
-
-COPY_EXISTING ~b!malm3d.bcs~ ~override~
-  DECOMPILE_AND_PATCH BEGIN
-   REPLACE_TEXTUALLY ~\(CutSceneId(Player1)\)~
-~\1 ActionOverride("cuimoen2",Polymorph(THIEF_FEMALE_DWARF)~
-    REPLACE_TEXTUALLY ~\(DisplayStringWait(Myself,56919)[%tab% %lnl%%mnl%%wnl%]+DisplayStringWait("cuimoen3",56920)[%tab% %lnl%%mnl%%wnl%]+DisplayStringWait(Myself,56921)\)~
-~~
-    REPLACE_TEXTUALLY ~\(DisplayStringHead(Myself,56924)[%tab% %lnl%%mnl%%wnl%]+Wait(4)\)~
-~~
-  END
-  BUT_ONLY_IF_IT_CHANGES
-
-END
-
-
-
-
-/* compatibility to Saerileth's path to Spellhold */
-
-
-ACTION_IF (MOD_IS_INSTALLED ~Setup-Saerileth.TP2~ "0") THEN BEGIN
-
-/* NSCH3a.baf - in Spellhold. cutscene start. Turn Imoen to stone */
-
-/* NSCH3c.baf - it's not Imoen in that cell! */
-
-COPY_EXISTING ~NSCH3c.bcs~ ~override~
-  DECOMPILE_AND_PATCH BEGIN
-
-    REPLACE_TEXTUALLY ~\(CutSceneId("cujon2")\)~
-		~CutSceneId("cujon2")
-		ActionOverride("cuimoen2",SetName(@1011)
-		ActionOverride("cuimoen2",Polymorph(MAGE_FEMALE_HUMAN)	
-		Wait(1)~
-
-    REPLACE_TEXTUALLY ~\(DisplayStringWait("cuimoen2",18648)[%tab% %lnl%%mnl%%wnl%]+DisplayStringWait(Myself,18649)\)~
-		~DisplayStringWait("cuimoen2",@1009)
-		SmallWait(6)
-		DisplayStringWait(Myself,@1010)~
-  END
-  BUT_ONLY_IF_IT_CHANGES
-
-
-/* NSGOSPH2.bcs (Saerileth's route) - replace "Imoen" with arbitrary thief and remove Imoen specific lines */
-
-COPY_EXISTING ~NSGOSPH2.bcs~ ~override~
-  DECOMPILE_AND_PATCH BEGIN
-   REPLACE_TEXTUALLY ~\(CutSceneId(Player1)\)~
-~\1 ActionOverride("cuimoen3",Polymorph(THIEF_FEMALE_DWARF)~
-    REPLACE_TEXTUALLY ~\(DisplayStringWait(Myself,56919)[%tab% %lnl%%mnl%%wnl%]+DisplayStringWait("cuimoen3",56920)[%tab% %lnl%%mnl%%wnl%]+DisplayStringWait(Myself,56921)\)~
-~~
-    REPLACE_TEXTUALLY ~\(DisplayStringHead(Myself,56924)[%tab% %lnl%%mnl%%wnl%]+Wait(4)\)~
-~~
-  END
-  BUT_ONLY_IF_IT_CHANGES
-
-
-END
-
-
-/* give Imoen some more content. This might go into a separate component. */
+BEGIN @9912 DESIGNATED 1 //GROUP @9921
+REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-imoen_forever.TP2~ "0") @9913 
+REQUIRE_PREDICATE GAME_IS ~bg2ee eet bgt tob~ @9905 
+REQUIRE_PREDICATE ((GAME_IS ~bg2ee eet~) OR (MOD_IS_INSTALLED ~setup-bg2fixpack.TP2~ "0")) @9901 
 
 
 /* add some lines referring to Imoen being set free */
@@ -541,6 +451,184 @@ COMPILE EVALUATE_BUFFER ~imoen_forever/dialogue/c#im_imoen2j.d~
 EXTEND_BOTTOM ~imoen2.bcs~ ~imoen_forever/baf/imoen_imoen2_2.baf~ EVALUATE_BUFFER
 
 
+////////////////////////////////////////////////////////////////////////
+//////
+////// BGII content: ~Yoshimo comes to Brynnlaw~
+//////
+////////////////////////////////////////////////////////////////////////
+
+BEGIN @9920 DESIGNATED 2 //GROUP @9921
+REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-imoen_forever.TP2~ "0") @9913 
+REQUIRE_PREDICATE GAME_IS ~bg2ee eet bgt tob~ @9905 
+REQUIRE_PREDICATE ((GAME_IS ~bg2ee eet~) OR (MOD_IS_INSTALLED ~setup-bg2fixpack.TP2~ "0")) @9901 
+
+/* Make Yoshimo appear at Brynnlaw - only if Imoen is in party */
+
+/* make Yoshimo global */
+EXTEND_TOP ~ar0603.bcs~ ~imoen_forever/baf/imoen_ar0603.baf~ EVALUATE_BUFFER
+/* spawn Yoshimo on ship in Brynnlaw if Imoen is in party */
+EXTEND_TOP ~ar1600.bcs~ ~imoen_forever/baf/imoen_ar1600_yoshimo.baf~ EVALUATE_BUFFER
+/* make Yoshimo speak to the PC */
+EXTEND_TOP ~yoshimo.bcs~ ~imoen_forever/baf/imoen_yoshimo.baf~ EVALUATE_BUFFER
+
+COMPILE EVALUATE_BUFFER ~imoen_forever/dialogue/yoshimo_brynnlaw.d~ USING ~imoen_forever/tra/%LANGUAGE%/general.tra~
+
+
+
+
+////////////////////////////////////////////////////////////////////////
+//////
+////// BGII content: ~Give Imoen protection spell in chapter 2 & 3~
+//////
+////////////////////////////////////////////////////////////////////////
+
+BEGIN @9914 DESIGNATED 3 //GROUP @9921
+REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-imoen_forever.TP2~ "0") @9913 
+REQUIRE_PREDICATE GAME_IS ~bg2ee eet bgt tob~ @9905 
+REQUIRE_PREDICATE ((GAME_IS ~bg2ee eet~) OR (MOD_IS_INSTALLED ~setup-bg2fixpack.TP2~ "0")) @9901 
+
+/* Imoen will be protected against permanent death (sort of) */
+
+ADD_SECTYPE C#IM_NoPermanentDeath ~Protection against Permanent Death~ 
+
+/* spell protection against permanent death */
+COPY ~imoen_forever/spl/c#im0001.spl~ ~override~
+WRITE_BYTE 0x27 C#IM_NoPermanentDeath
+WRITE_BYTE 0xa2 C#IM_NoPermanentDeath
+
+/* remove spell protection against permanent death */
+COPY ~imoen_forever/spl/c#im0002.spl~ ~override~
+WRITE_BYTE 0xa2 C#IM_NoPermanentDeath
+
+/* make Imoen apply and remove spell protection */
+
+EXTEND_TOP ~imoen2.bcs~ ~imoen_forever/baf/imoen_imoen2.baf~ EVALUATE_BUFFER
+
+COPY_EXISTING ~movie01B.bcs~ ~override~
+  DECOMPILE_AND_PATCH BEGIN
+
+/* Cowled Wizards let Imoen go: Irenicus announces his spell on her */
+    REPLACE_TEXTUALLY ~\(DisplayStringWait("cujon",@1005)[%tab% %lnl%%mnl%%wnl%]+SmallWait(6)\)~
+		~\1 DisplayStringWait("cujon",@1006)~
+  END
+  BUT_ONLY_IF_IT_CHANGES
+
+/* removed for compatibility reasons: Faster chapter 1&2 cutscenes and dreams TweaksAnthology
+COPY_EXISTING ~movie01B.bcs~ ~override~
+  DECOMPILE_AND_PATCH BEGIN
+/* Irenicus puts a spell on Imoen */
+    REPLACE_TEXTUALLY ~\(CreateVisualEffectObject("SPDISPMA","cujon")\)~
+		~CreateVisualEffectObject("SPDISPMA","cujon")
+		Wait(1)
+		ActionOverride("cujon",ForceSpell("cuimoen",FLASHY_1))  // Imoen
+		Wait(2)
+		DisplayStringWait("cuwizsu",@1007)~
+
+  END
+  BUT_ONLY_IF_IT_CHANGES
+*/
+
+
+
+////////////////////////////////////////////////////////////////////////
+//////
+////// BGII content: ~Compatibility with Alternatives and Saerileth~
+//////
+////////////////////////////////////////////////////////////////////////
+
+BEGIN @9915 DESIGNATED 9 //GROUP @9921
+REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-imoen_forever.TP2~ "0") @9913
+REQUIRE_PREDICATE GAME_IS ~bg2ee eet bgt tob~ @9905 
+REQUIRE_PREDICATE ((GAME_IS ~bg2ee eet~) OR (MOD_IS_INSTALLED ~setup-bg2fixpack.TP2~ "0")) @9901  
+
+/* compatibility with Alternatives - if Alternatives is installed, change the relevent cutscenes here, too */
+
+ACTION_IF (MOD_IS_INSTALLED ~setup-alternatives.TP2~ "0") THEN BEGIN
+    PRINT @9916 /* ~Alternatives detected: patching.~ */
+
+/* b!altm3b.baf (Aster's route) - no action */
+  
+/* b!altm3d.bcs (Aster's route) - replace "Imoen" with arbitrary thief and remove Imoen specific lines */
+
+COPY_EXISTING ~b!altm3d.bcs~ ~override~
+  DECOMPILE_AND_PATCH BEGIN
+   REPLACE_TEXTUALLY ~\(CutSceneId(Player1)\)~
+~\1 ActionOverride("cuimoen3",Polymorph(THIEF_FEMALE_DWARF)~
+    REPLACE_TEXTUALLY ~\(DisplayStringWait(Myself,56919)[%tab% %lnl%%mnl%%wnl%]+DisplayStringWait("cuimoen3",56920)[%tab% %lnl%%mnl%%wnl%]+DisplayStringWait(Myself,56921)\)~
+~~
+    REPLACE_TEXTUALLY ~\(DisplayStringHead(Myself,56924)[%tab% %lnl%%mnl%%wnl%]+Wait(4)\)~
+~~
+  END 
+  BUT_ONLY_IF_IT_CHANGES
+
+
+
+/* b!malm3b.baf (Malficus's route) - no action */
+
+/* b!malm3d.bcs (Malficus's route) - replace "Imoen" with arbitrary thief and remove Imoen specific lines */
+
+COPY_EXISTING ~b!malm3d.bcs~ ~override~
+  DECOMPILE_AND_PATCH BEGIN
+   REPLACE_TEXTUALLY ~\(CutSceneId(Player1)\)~
+~\1 ActionOverride("cuimoen2",Polymorph(THIEF_FEMALE_DWARF)~
+    REPLACE_TEXTUALLY ~\(DisplayStringWait(Myself,56919)[%tab% %lnl%%mnl%%wnl%]+DisplayStringWait("cuimoen3",56920)[%tab% %lnl%%mnl%%wnl%]+DisplayStringWait(Myself,56921)\)~
+~~
+    REPLACE_TEXTUALLY ~\(DisplayStringHead(Myself,56924)[%tab% %lnl%%mnl%%wnl%]+Wait(4)\)~
+~~
+  END
+  BUT_ONLY_IF_IT_CHANGES
+
+END ELSE BEGIN
+    PRINT @9917 /* ~Alternatives not detected.~ */
+END
+
+
+
+
+/* compatibility to Saerileth's path to Spellhold */
+
+
+ACTION_IF (MOD_IS_INSTALLED ~Setup-Saerileth.TP2~ "0") THEN BEGIN
+    PRINT @9918 /* ~Saerileth detected: patching.~ */
+
+/* NSCH3a.baf - in Spellhold. cutscene start. Turn Imoen to stone */
+
+/* NSCH3c.baf - it's not Imoen in that cell! */
+
+COPY_EXISTING ~NSCH3c.bcs~ ~override~
+  DECOMPILE_AND_PATCH BEGIN
+
+    REPLACE_TEXTUALLY ~\(CutSceneId("cujon2")\)~
+		~CutSceneId("cujon2")
+		ActionOverride("cuimoen2",SetName(@1011)
+		ActionOverride("cuimoen2",Polymorph(MAGE_FEMALE_HUMAN)	
+		Wait(1)~
+
+    REPLACE_TEXTUALLY ~\(DisplayStringWait("cuimoen2",18648)[%tab% %lnl%%mnl%%wnl%]+DisplayStringWait(Myself,18649)\)~
+		~DisplayStringWait("cuimoen2",@1009)
+		SmallWait(6)
+		DisplayStringWait(Myself,@1010)~
+  END 
+  BUT_ONLY_IF_IT_CHANGES
+
+
+
+/* NSGOSPH2.bcs (Saerileth's route) - replace "Imoen" with arbitrary thief and remove Imoen specific lines */
+
+COPY_EXISTING ~NSGOSPH2.bcs~ ~override~
+  DECOMPILE_AND_PATCH BEGIN
+   REPLACE_TEXTUALLY ~\(CutSceneId(Player1)\)~
+~\1 ActionOverride("cuimoen3",Polymorph(THIEF_FEMALE_DWARF)~
+    REPLACE_TEXTUALLY ~\(DisplayStringWait(Myself,56919)[%tab% %lnl%%mnl%%wnl%]+DisplayStringWait("cuimoen3",56920)[%tab% %lnl%%mnl%%wnl%]+DisplayStringWait(Myself,56921)\)~
+~~
+    REPLACE_TEXTUALLY ~\(DisplayStringHead(Myself,56924)[%tab% %lnl%%mnl%%wnl%]+Wait(4)\)~
+~~
+  END
+  BUT_ONLY_IF_IT_CHANGES
+
+END ELSE BEGIN
+    PRINT @9919 /* ~Saerileth not detected.~ */
+END
 
 
 
@@ -550,14 +638,16 @@ EXTEND_BOTTOM ~imoen2.bcs~ ~imoen_forever/baf/imoen_imoen2_2.baf~ EVALUATE_BUFFE
 //////
 ////////////////////////////////////////////////////////////////////////
 
-/* ~Imoen remains in the Group in SoD~ */
 
-BEGIN @9903
+////////////////////////////////////////////////////////////////////////
+/* first part: Imoen remains in the group in Korlasz' dungeon */
+////////////////////////////////////////////////////////////////////////
+BEGIN @9906 DESIGNATED 10 //GROUP @9922
 REQUIRE_PREDICATE (GAME_INCLUDES ~sod~) @9904 
 
 /* set detecting variable for other mods - is set in Thieves Maze in BG as well as SoD Palace L3 (bd0103.bcs) 
 Global("C#IM_ImoenInSoD","GLOBAL",1) */
-<<<<<<<< .../ar0146_i4e_sod_detection.baf
+<<<<<<<< .../i4e_sod_detection.baf
 IF
 	Global("C#IM_ImoenInSoD","GLOBAL",0)
 THEN
@@ -565,22 +655,9 @@ THEN
 		SetGlobal("C#IM_ImoenInSoD","GLOBAL",1)
 END
 >>>>>>>>
-EXTEND_BOTTOM ~%ThievesMaze%.bcs~ ~.../ar0146_i4e_sod_detection.baf~ EVALUATE_BUFFER 
+EXTEND_BOTTOM ~%ThievesMaze%.bcs~ ~.../i4e_sod_detection.baf~ EVALUATE_BUFFER 
+EXTEND_BOTTOM ~bd0103.bcs~ ~.../i4e_sod_detection.baf~ EVALUATE_BUFFER 
 
-<<<<<<<< .../bd0103_i4e_sod_detection.baf
-IF
-	Global("C#IM_ImoenInSoD","GLOBAL",0)
-THEN
-	RESPONSE #100
-		SetGlobal("C#IM_ImoenInSoD","GLOBAL",1)
-END
->>>>>>>>
-EXTEND_BOTTOM ~bd0103.bcs~ ~.../bd0103_i4e_sod_detection.baf~ EVALUATE_BUFFER 
-
-
-
-
-/* first part: Imoen remains in the group in Korlasz' dungeon */
 
 COMPILE ~imoen_forever/ImoenInGroupKD/Imoen_in_group_KD.d~ EVALUATE_BUFFER
 COMPILE ~imoen_forever/ImoenInGroupKD/c#stimoe.baf~ EVALUATE_BUFFER
@@ -684,7 +761,7 @@ THEN
 	RESPONSE #100
 		CutSceneId(Player1)
 		ActionOverride("%IMOEN_DV_SOD%",SetDialog("BDIMOEN"))
-		ActionOverride("%IMOEN_DV_SOD%",ChangeAIScript("C#STIMOE",OVERRIDE))
+		ActionOverride("%IMOEN_DV_SOD%",ChangeAIScript("c#stimoe",OVERRIDE))
 END
 
 IF
@@ -765,6 +842,312 @@ BUT_ONLY
 EXTEND_TOP ~bd0130.BCS~ ~imoen_forever/ImoenInGroupKD/c#st_imo_bd0130.baf~ EVALUATE_BUFFER
 
 
-/* second part: Imoen returns to PC in first camp bd1000 */
-/* to be continued... */
+///////////////////////////////////////////////////////////////////
+/* second SoD part: Imoen returns to PC in first camp bd1000 */
+///////////////////////////////////////////////////////////////////
+BEGIN @9907 DESIGNATED 11 //GROUP @9922
+REQUIRE_PREDICATE (GAME_INCLUDES ~sod~) @9904 
+
+
+/* set detecting variable for other mods - is set in Thieves Maze in BG as well as SoD Palace L3 (bd0103.bcs) 
+Global("C#IM_ImoenInSoD","GLOBAL",1) */
+<<<<<<<< .../i4e_sod_detection_2.baf
+IF
+	Global("C#IM_ImoenComesBackSoD","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#IM_ImoenComesBackSoD","GLOBAL",1)
+END
+>>>>>>>>
+EXTEND_BOTTOM ~%ThievesMaze%.bcs~ ~.../i4e_sod_detection_2.baf~ EVALUATE_BUFFER 
+EXTEND_BOTTOM ~bd0103.bcs~ ~.../i4e_sod_detection_2.baf~ EVALUATE_BUFFER 
+
+
+//  INCLUDE ~imoen_forever/lib/extra_regexp_vars.tph~
+
+
+/* Adapt lines to reflect that Imoen was also in Dragonspear */
+//BDIMOEN 92
+/* ~I'm so sorry, <CHARNAME>. I should never have let you go to Dragonspear without me.~ */
+ACTION_IF (GAME_IS ~bgee~ AND FILE_EXISTS_IN_GAME ~bd0103.are~) THEN BEGIN
+  STRING_SET 39703 @5010
+END
+ACTION_IF (GAME_IS ~eet~) THEN BEGIN
+  STRING_SET 239703 @5010
+END
+
+
+//add trigger point with script in bd1000 because "banter_trigger1" is unreliable for this purpose
+COPY_EXISTING ~bd1000.are~ ~override~
+  LPF ~fj_are_structure~
+    INT_VAR
+    fj_type         = 0    //proximity trigger
+    fj_box_left    = 1155
+    fj_box_top     = 3242
+    fj_box_right   = 1271
+    fj_box_bottom  = 3332
+    fj_vertex_0    = 1192 + (3332 << 16)
+    fj_vertex_1    = 1271 + (3329 << 16)
+    fj_vertex_2    = 1257 + (3264 << 16)
+    fj_vertex_3    = 1157 + (3242 << 16)
+    fj_vertex_4    = 1155 + (3289 << 16)
+    STR_VAR
+    fj_structure_type   = region
+    fj_name             = c#imback
+    fj_reg_script   = c#imback
+  END
+BUT_ONLY
+
+
+
+/* Imoen moves to war camp in bd1000.are */
+EXTEND_TOP ~bd1000.bcs~ ~%MOD_FOLDER%/sod_rejoin/imoen_bd1000.baf~
+  EVALUATE_BUFFER
+
+/* Imoen moves to war camp in bd1000.are - teleport into area near the PC and greetings dialogue */
+COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/sod_rejoin/c#imback.baf~ 
+  
+EXTEND_BOTTOM ~bdimoens.bcs~ ~%MOD_FOLDER%/sod_rejoin/imoen_rejoin_bd1000.baf~
+EVALUATE_BUFFER
+
+/* and the same for the next camp in bd7100.are: */
+EXTEND_TOP ~bd7100.bcs~ ~%MOD_FOLDER%/sod_rejoin/imoen_bd7100.baf~
+  EVALUATE_BUFFER
+
+/* Last camp is in bd3000.are. */
+EXTEND_TOP ~bd3000.bcs~ ~%MOD_FOLDER%/sod_rejoin/imoen_bd3000.baf~
+  EVALUATE_BUFFER
+
+	/* Patch your NPC's "Move Camp" variable to the original game's script block (bd3000.bcs) */
+COPY_EXISTING ~bd3000.BCS~ ~override~
+	DECOMPILE_AND_PATCH BEGIN
+		SPRINT textToReplace ~\(SetGlobal("bd_move_npcs","bd3000",1)\)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~%textToReplace%~ ~\1 SetGlobal("C#Imoen_MoveCamp","bd3000",1)~ 
+			PATCH_PRINT ~Patching: %num_matches% matches found in %SOURCE_FILESPEC% for REPLACE_TEXTUALLY: %textToReplace%~
+		END ELSE BEGIN
+			PATCH_WARN ~WARNING: could not find %textToReplace% in %SOURCE_FILESPEC%~
+		END
+		SPRINT textToReplace ~\(SetGlobal("bd_move_voghiln","bd3000",0)\)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~%textToReplace%~ ~\1 SetGlobal("C#Imoen_MoveCamp","bd3000",0)~ 
+			PATCH_PRINT ~Patching: %num_matches% matches found in %SOURCE_FILESPEC% for REPLACE_TEXTUALLY: %textToReplace%~
+		END ELSE BEGIN
+			PATCH_WARN ~WARNING: could not find %textToReplace% in %SOURCE_FILESPEC%~
+		END
+	END
+BUT_ONLY
+	
+
+/* return to camp if kicked out */
+EXTEND_TOP ~bdparty.bcs~ ~%MOD_FOLDER%/sod_rejoin/imoen_bdparty.baf~
+  EVALUATE_BUFFER
+
+/* Imoen is kicked in hell dimension - teleport to last hell area bd4400.are */
+EXTEND_TOP ~bdcut58.bcs~ ~%MOD_FOLDER%/sod_rejoin/imoen_bdcut58.baf~
+  EVALUATE_BUFFER
+
+/* Imoen is kicked in hell dimension or was waiting elsewhere- teleport to Dragonspear Castle interior (bd4300.are) after PC returns from Avernus */
+EXTEND_TOP ~bdcut59b.bcs~ ~%MOD_FOLDER%/sod_rejoin/imoen_bdcut59b.baf~
+  EVALUATE_BUFFER
+
+/* after PC gets arrested for murder: Imoen leaves party */
+EXTEND_TOP ~bdcut61.bcs~ ~%MOD_FOLDER%/sod_rejoin/imoen_bdcut61.baf~
+  EVALUATE_BUFFER
+
+/* (T3) Move NPC to entrance of the Allied Siege Camp (Crusade battle) */
+EXTEND_BOTTOM ~bdasc3.bcs~ ~%MOD_FOLDER%/sod_rejoin/imoen_bdasc3.baf~
+  EVALUATE_BUFFER
+
+
+
+/* SoD dialogue */
+COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/sod_rejoin/bdimoens.d~ 
+COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/sod_rejoin/bdimoenp.d~ 
+COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/sod_rejoin/bdimoen_cleanup.d~ USING ~imoen_forever/tra/%LANGUAGE%/bdimoenj.TRA~ 
+
+
+
+///////////////////////////////////////////////////////////////////
+/* third SoD part: Imoen gives better reason to stay behind in Palace */
+///////////////////////////////////////////////////////////////////
+BEGIN @9909 DESIGNATED 12 //GROUP @9922
+REQUIRE_PREDICATE (GAME_INCLUDES ~sod~) @9904 
+REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-imoen_forever.TP2~ "10") @9908
+
+COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/ImoenInGroupKD/imoen_in_palace.d~
+USING ~imoen_forever/tra/%LANGUAGE%/IMOEN_IN_GROUP_KD.TRA~ 
+
+
+
+///////////////////////////////////////////////////////////////////
+/* 4th SoD part: Play cutscene with Imoen an Duke Jannath */
+///////////////////////////////////////////////////////////////////
+BEGIN @9910 DESIGNATED 13 //GROUP @9922
+REQUIRE_PREDICATE (GAME_INCLUDES ~sod~) @9904 
+REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-imoen_forever.TP2~ "11") @9911
+
+
+/* cutscene after PC could see Imoen&Liia training */
+COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/sod_rejoin/c#imscry.baf~ 
+
+COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/sod_rejoin/cutscene_imoen_and_jannath.d~
+
+
+
+//////////////////////////////////////////////////////////////////
+/* 5th SoD part: Give Imoen dialogue content during chapters 8 to 12 */
+///////////////////////////////////////////////////////////////////
+BEGIN @9923 DESIGNATED 14 //GROUP @9922
+REQUIRE_PREDICATE (GAME_INCLUDES ~sod~) @9904 
+REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-imoen_forever.TP2~ "11") @9911
+
+/* React in case crusaders in cages are killed by spikes (bd7230.are) */
+//bdlever2.BCS
+COPY_EXISTING ~bdlever2.BCS~ ~override~
+	DECOMPILE_AND_PATCH BEGIN
+		SPRINT textToReplace ~\(Kill("bdkharmy")\)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~%textToReplace%~ ~SetGlobal("C#IM_UsedSpikes","bd7230",1) \1~ 
+			PATCH_PRINT ~Patching: %num_matches% matches found in %SOURCE_FILESPEC% for REPLACE_TEXTUALLY: %textToReplace%~
+		END ELSE BEGIN
+			PATCH_WARN ~WARNING: could not find %textToReplace% in %SOURCE_FILESPEC%~
+		END
+	END
+BUT_ONLY
+	
+
+EXTEND_BOTTOM ~bdimoens.bcs~ ~%MOD_FOLDER%/sod_rejoin/bdimoen_additions_sod.baf~
+EVALUATE_BUFFER
+
+/* Reaction to Caelar's first appearance on bridge */
+EXTEND_BOTTOM ~bd1000.bcs~ ~%MOD_FOLDER%/sod_rejoin/bd1000_commenting.baf~
+  EVALUATE_BUFFER
+
+/* PC gave Bridgefort Castle to the crusaders */
+/* & Battle at Bridgefort starts */
+EXTEND_BOTTOM ~bd2000.bcs~ ~%MOD_FOLDER%/sod_rejoin/bd2000_commenting.baf~
+  EVALUATE_BUFFER
+
+/* Imoen comments on murder accusation */
+EXTEND_TOP ~bd4100.bcs~ ~%MOD_FOLDER%/sod_rejoin/imoen_bd4100.baf~
+EVALUATE_BUFFER
+
+
+/* (T3) Comment after killing the Rhinoceros Beetle in bd0114.are */
+EXTEND_BOTTOM ~bd0114.bcs~ ~%MOD_FOLDER%/sod_rejoin/imoen_bd0114.baf~
+EVALUATE_BUFFER
+
+/* (T3) Comments in bd4300.are (Bridgefort Castle interior and Avernus portal) */
+EXTEND_TOP ~bd4300.bcs~ ~%MOD_FOLDER%/sod_rejoin/imoen_bd4300_commenting.baf~
+EVALUATE_BUFFER
+
+/* Comment upon entering Avernus */
+EXTEND_TOP ~bd4400.bcs~ ~%MOD_FOLDER%/sod_rejoin/imoen_bd4400_commenting.baf~
+EVALUATE_BUFFER
+
+/* Comment in the Avernus Elevator */
+EXTEND_TOP ~bd4601.bcs~ ~%MOD_FOLDER%/sod_rejoin/imoen_bd4601_commenting.baf~
+EVALUATE_BUFFER
+
+/* addition to Imoen's override script */
+EXTEND_BOTTOM ~bdimoens.bcs~ ~%MOD_FOLDER%/sod_rejoin/imoen_rejoin_bd1000.baf~ EVALUATE_BUFFER
+
+/* Comment in Dragonspear Castle Exterior */
+EXTEND_BOTTOM ~bdbark01.bcs~ ~%MOD_FOLDER%/sod_rejoin/imoen_bdbark01_commenting.baf~
+EVALUATE_BUFFER
+
+/* (T3) Comment in random area (Canyon Ambush) bd0063.are */
+EXTEND_BOTTOM ~bd0063.bcs~ ~%MOD_FOLDER%/sod_rejoin/imoen_bd0063.baf~
+EVALUATE_BUFFER
+
+
+COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/sod_rejoin/bdimoenj_additions.d~ USING ~imoen_forever/tra/%LANGUAGE%/bdimoenj.TRA~ 
+
+
+
+//////////////////////////////////////////////////////////////////
+/* 6th SoD part: Imoen at the end of the game should be the one that was in party (SoD only) */
+///////////////////////////////////////////////////////////////////
+/* Imoen at the end of the game should be the one that was in party (SoD only) - and talk with the right dialogue + execute the correct script */
+
+BEGIN @9929 /* ~Imoen at the End of the Game Should be the One that Was in Party (SoD Only)~ */ DESIGNATED 15 //GROUP @9922
+REQUIRE_PREDICATE ((GAME_INCLUDES ~sod~) AND GAME_IS ~bgee~) ~This component is for SoD only~
+REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-imoen_forever.TP2~ "10") OR 
+(MOD_IS_INSTALLED ~setup-imoen_forever.TP2~ "11") @9927
+
+COPY_EXISTING ~bd6200.bcs~ ~override~
+    DECOMPILE_AND_PATCH BEGIN
+        SPRINT textToReplace ~\(CreateCreature("bdimoen",\[775\.705\],E)\)~
+        COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+        PATCH_IF (num_matches > 0) BEGIN
+            REPLACE_TEXTUALLY ~%textToReplace%~ ~MoveGlobal("BD6200","Imoen",[775.705])  // Imoen
+		ApplySpellRES("bdresurr","Imoen")  // No such index
+		SmallWait(1)
+		ActionOverride("Imoen",Face(E))
+		ApplySpellRES("bdrejuve","Imoen")  // No such index
+		ChangeEnemyAlly("Imoen",NEUTRAL)  // Imoen
+		ChangeSpecifics("Imoen",ALLIES)  // Imoen
+		ActionOverride("Imoen",ChangeAIScript("BDIMOEN",OVERRIDE))
+		ActionOverride("Imoen",ChangeAIScript("",CLASS))
+		ActionOverride("Imoen",ChangeAIScript("",RACE))
+		ActionOverride("Imoen",ChangeAIScript("",GENERAL))
+		ActionOverride("Imoen",ChangeAIScript("",DEFAULT))
+		ActionOverride("Imoen",SetDialog("BDIMOEN"))~
+            PATCH_PRINT ~Patching: %num_matches% matches found in %SOURCE_FILESPEC% for REPLACE_TEXTUALLY: %textToReplace%~
+        END ELSE BEGIN
+            PATCH_WARN ~WARNING: could not find %textToReplace% in %SOURCE_FILESPEC%~
+        END
+    END
+BUT_ONLY
+
+
+//////////////////////////////////////////////////////////////////
+/* 7th SoD part: Unify Imoen's portrait in SoD */
+///////////////////////////////////////////////////////////////////
+BEGIN @9926 
+SUBCOMPONENT @9924
+DESIGNATED 16 //GROUP @9922
+REQUIRE_PREDICATE (GAME_INCLUDES ~sod~) @9904 
+REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-imoen_forever.TP2~ "10") OR 
+(MOD_IS_INSTALLED ~setup-imoen_forever.TP2~ "11") @9927
+
+
+  COPY ~%MOD_FOLDER%/imoen_portrait/c#imim01.spl~ ~override/c#imim01.spl~
+
+
+<<<<<<<< ...inlined/imoen_portrait_sod.baf
+IF
+	!InParty(Myself)
+	Global("C#IM_ImoenPortraitChange","MYAREA",0)
+	!GlobalLT("BD_PLOT","GLOBAL",51) //After Korlasz Crypt
+THEN
+	RESPONSE #100
+		SetGlobal("C#IM_ImoenPortraitChange","MYAREA",1)
+//		ApplySpellRES("c#imim01",Myself)
+		ReallyForceSpellRES("c#imim01",Myself)
+		Continue()
+END
+>>>>>>>>
+
+EXTEND_TOP ~bdimoens.bcs~ ~...inlined/imoen_portrait_sod.baf~
+
+BEGIN @9925 
+SUBCOMPONENT @9924
+DESIGNATED 17 //GROUP @9922
+REQUIRE_PREDICATE (GAME_INCLUDES ~sod~) @9904 
+REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-imoen_forever.TP2~ "10") OR 
+(MOD_IS_INSTALLED ~setup-imoen_forever.TP2~ "11") @9927
+
+
+COPY_EXISTING ~bdshimoe.cre~ ~override~
+  WRITE_EVALUATED_ASCII 0x34  ~IMOENM~ #8   // assign "small" portrait
+  WRITE_EVALUATED_ASCII 0x3c  ~IMOENL~ #8   // assign "large" portrait
+
+COPY_EXISTING ~bdimoen.cre~ ~override~
+  WRITE_EVALUATED_ASCII 0x34  ~IMOENM~ #8   // assign "small" portrait
+  WRITE_EVALUATED_ASCII 0x3c  ~IMOENL~ #8   // assign "large" portrait
 

@@ -15,39 +15,122 @@
 
 DESCRIPTION
 
-This mod aims at making Imoen a steady companion throughout the whole BG-Saga. Imoen-related story content is being considered, therefore Imoen will be out of party temporarily to reflect the most crucial original game events. This mod makes her rejoin the party after such incidents, so that she can be seen as an actual travel companion in SoD (not finished yet) and BGII.
+This mod aims at making Imoen a steady companion throughout the whole BG-Saga. Imoen-related story content is being considered, therefore Imoen will be out of party temporarily to reflect the most crucial original game events. This mod makes her rejoin the party after such incidents, so that she can be seen as an actual travel companion in SoD and BGII.
 
-Note: The SoD part is not finished yet.
-
-The mod tries to use as many originally voiced lines as possible, but some had to be taken out because they didn't make any sense without Imoen being there (BGII) or with Imoen catually being in the party (SoD).
+The mod tries to use as many originally voiced lines as possible, but some had to be taken out because they didn't make any sense without Imoen being there (BGII) or with Imoen actually being in the party (Korlasz' Crypt in SoD).
 
 The mod is compatible with SoD and all BGII games: BGII, BGT, BGII:EE, EET. For EET, install the mod dirctly into your EET game folder.
 
-The mod has two optional components:
+The mod has 12 components. The first 5 are for BGII; for these, the 1st component is required to install any of the other, optional components (numbers 2 to 5).
+The last components (numbers 6 to 12) are for SoD; for these, components 6 *or* 7 are required to install any of the other, optional components.
 
-BGII:
+
+Components for BGII content:
+
+1 I4E in BGII: Imoen Returns after Talking to Gaelan in Chapter 2 
 -----------------------------------
-This mod gives back Imoen in Chapter 2 and 3, right after the first dialogue with Gaelan. The player can then explore and play all quests without any time pressure or moral dilemma about a friend needing rescue.
-The original game content kicks in again after the arrival in Brynnlaw: Imoen will now be kidnapped, and Yoshimo will be available for recruitment in the Brynnlaw tavern.
+This component gives back Imoen in Chapter 2 and 3, right after the first dialogue with Gaelan. The player can then explore and play all quests without any time pressure or moral dilemma about a friend needing rescue.
+The original game content kicks in again after the arrival in Brynnlaw: Imoen will now be kidnapped.
 
 All(most all) lines referring to Imoen being taken and needing rescue where replaced with references to Irenicus, instead.
 
-Please note: For BGII(:EE), the Imoen inside Irenicus Dungeon is *not* the one you will get back. This is due to teh original game behavior where imoen rejoining in Spellhold is not Imoen from ID, and there is nothing I4E could do here as the different creature files use different dialogue and script names (i.e. death variables which cannot be changed inside a running game).
+Please note: For BGII(:EE), the Imoen inside Irenicus Dungeon is *not* the one you will get back. This is due to the original game behavior where Imoen rejoining in Spellhold is not the Imoen from ID, and there is nothing I4E could do here as the different creature files use different dialogue and script names (i.e. death variables which cannot be changed inside a running game).
+For BGT/EET, Imoen will be continuous, like it is normal for these games.
 
-For BGT/EET, Imoen will be continuous.
 
-SoD:
+2 I4E in BGII: Give Imoen Dialogue Content in BGII Chapters 2 & 3
 -----------------------------------
-With this tweak, Imoen will remain in your group in the beginning of SoD if she was in BG:EE. She will be a party member in Korlasz's crypt up until the point where all party members leave and the PC finds themselves in the Ducal Palace. From there, Imoen will take her role as in the original game. (Planned: let her rejoin in the first coalition camp.)
+This adds dialogue and interjections to Imoen in chapter 2&3, especially Imoen's reaction to the PC's dreams. 
+Up to now, there is not much content.
+
+
+3 I4E in BGII: Yoshimo Comes to Brynnlaw
+-----------------------------------
+This component will make Yoshimo appear in Brynnlaw when the group travelled there - he will have sneaked onto the same ship. He will only appear if he is not dead and was left standing somewhere.
+Yoshimo will then be available for recruitment in the Brynnlaw tavern.
+This option was added so the group has the chance to have a thief in the party after Imoen got abducted in Brynnlaw, and so the player has a chance to see Yoshimo's story without "wasting" another party slot.
+There will be no changes to Yoshimo if he is in party when the group travels to Brynnlaw.
+
+
+4 I4E in BGII: Give Imoen Protection Spell in Chapters 2 & 3
+-----------------------------------
+This component makes the protection spell against permanent death for Imoen optional. I originally added it to the main component because I thought Imoen needs to be protected against permanent death until I figured that it is not needed since e.g. EET manages without this for all other crucial NPCs, too.
+
+This component puts the effects "disable permanent death", "Immunity to effect Imprisonment", "Immunity to effect Maze", and "Immunity to effect Disintegrate" onto Imoen when she returns in the slums in chapter 2. The effects are removed when she is found in Spellhold.
+
+Despite the obvious advantage of Imoen being protected against permanent death in chapters 2&3, it is also a story element that is tied to the strange belt Imoen was wearing in Irenicus Dungeon - Irenicus wants her to be protected for his later plans.
+
+
+5 I4E in BGII: Compatibility with Alternatives and Saerileth
+-----------------------------------
+This component patches the cutscenes of Alternatives and the Saerileth mod the player gets to see when travelling to Brynnlaw so it is not Imoen who is with Irenicus in Spellhold.
+This component needs to be installed after the main component of Imoen4Ever and the Alternatives and/or Saerileth mods (or both) are installed.
+The two mods are detected and patched individually of course.
+
+
+
+Components for SoD content:
+
+6 I4E in SoD: Imoen Remains in Group in Korlasz' Dungeon
+-----------------------------------
+With this tweak, Imoen will remain in your group in the beginning of SoD if she was in BG:EE. She will be a party member in Korlasz's crypt up until the point where all party members leave and the PC finds themselves in the Ducal Palace. This component does not change any other Imoen content for the further game. 
 Inside Korlasz' Crypt, Imoen will have a PID (player initiated dialogue) out of her original game dialogue. She will talk about Duke Jannath taking an interest in her, but she will only talk about her magic studies if she was already dual-classed to T/M in BG:EE.
-After the attack in the Ducal Palace, she will be in no shape to accompany the PC because of the poison. Her "good bye" dialogue the evening before the PC heads out against the crusade is changed with her new motive to stay behind accordingly. 
+If Imoen was not in party in the transition from BG:EE to SoD, her presence in Korlasz' Crypt will play like in the original game with no changes. 
 
-If Imoen was not in party in the end fight of BG:EE, her presence in Korlasz' Crypt will play like in the original game with no changes. (Planned: but she will rejoin at the first coalition camp.)
+Compatibility note for modders: Inparty Imoen uses the same script name as the original SoD-Imoen. Her "final" dialogue states inside Korlasz' crypt (BDIMOEN 53 and BDIMOEN 54) are unchanged and can be used for mod NPCs to add their good-byes via I_C_T.
+Inparty Imoen in Korlasz' Dungeon will use the Override script "C#STIMOE".
 
-Compatibility note for modders: Inparty Imoen uses the same script name as the original SoD-Imoen (which is Imoen's script name). Both her "final" dialogue inside Korlasz's crypt, as well as the last dialogue state in the Ducal Palace (BDIMOEN 85) stay unchanged in case mod NPCs want to interject (e.g. say goodbye to the PC after defeating Korlasz or say hello/goodbye to Imoen after her recovery).
+Compatibility with Transitions: if the mod Transitions from Lauriel is installed, none of the changes added by this component will show, because the dungeon is then accessible in "BG1 world", and Imoen in party then will just be the normal BG1 one without any SoD-specific dialogues.
 
 
+7 I4E in SoD: Imoen Returns to PC in First Coalition Camp (bd1000)
+-----------------------------------
+This component will make Imoen rejoin after the PC reaches the first Coalition camp (bd1000.are). Leave the camp to the northeast where Edwin appears for the first time. Imoen will appear and ask to rejoin. 
+After that, she will behave like a normal SoD NPC: she can be left standing in the camp(s), will return to the camp(s) if told so upon kickout, and will move with the camp(s) according to the campaign's progress.
+Imoen will be in group until the events after the celebration at the end. From there, the normal game content for Imoen will kick in again.
 
+This component also adds the most crucial game reactions, but no further dialogue.
+
+Compatibility note for modders: Inparty Imoen uses the same script name as the original SoD-Imoen. Her joined dialogue is BDIMOEN.dlg as well as her kickout dialogue (as it is for SoD originally). Her override script is bdimoens. 
+
+
+8 I4E in SoD: Imoen Gives Better Reason to Stay Behind in Palace
+-----------------------------------
+This component alters Imoen's "good bye" dialogue the evening before the PC heads out against the crusade with her new motive to stay behind: After the attack, Imoen will be in no shape to accompany the PC because of the poison. 
+
+Again, the last dialogue state in the Ducal Palace (BDIMOEN 85) stays unchanged in case mod NPCs want to interject (e.g. say hello/goodbye to Imoen after her recovery).
+
+I read this idea in the BeamDog forums but I forgot by whom. If you know who this idea is credited to, please let me know.
+
+
+9 I4E in SoD: Play Cutscene With Imoen and Duke Jannath
+-----------------------------------
+In the original game, the PC can witness Imoen's training with Duke Jannath via a magic pool in Kanaglym (Underground River).
+This component removes this vision from the pool and makes it a cutscene for the player when the PC is marching out of the City with the Flaming Fist.
+
+
+10 I4E in SoD: Give Imoen Dialogue Content in SoD Chapters 8-12
+-----------------------------------
+The aim of this component is to give Imoen more reactions to game events, dialogues, and interjections.
+There is not much content yet.
+
+
+11 I4E in SoD: Imoen at the End of the Game Should be the One that Was in Party (SoD Only)
+-----------------------------------
+This component is for SoD only: at the end of SoD when the original game content kicks in, the Imoen coming to the prison exit will be the same that were in the group before.
+This is useful if Imoen had some items etc. on her you want to swap before the final save or something. 
+
+
+12 I4E in SoD: Unify Imoen's Portrait
+-----------------------------------
+This component comes with two options:
+1. Use Imoen's SoD Portrait after Korlasz' Crypt
+	This option will leave Imoen the BG1 portrait in Korlasz' Dungeon in case she is in party (via component 6), and will switch to her SoD portrait starting with the poison attack in the Palace.
+
+2. Use Imoen's BG1 Portrait in all of SoD
+	This option will leave Imoen's BG1 portrait for Imoen in all of SoD - also for the interactions with her when she is not in party.
+
+Do not install either component if you are using a different portrait for Imoen or have other portrait mods installed that change Imoen's portrait, unless you know the mods are compatible.
 
 
 INSTALLATION
@@ -79,21 +162,26 @@ COMPATIBILITY
 
 Note: this mod is to be treated as a quest mod, so install it before any NPC mods that could add interjections or reply options to chapter 2&3 in BGII to make sure the correct ones are patched by this mod.
 
+BGII compatibility:
+--------------------------------------------
 Compatibility is a bit on the tough side with this mod since all mods assume Imoen is being taken at the Waukeen's Promenade fight and stays in Irenicus' grasps until the PC reaches Spellhold. I hope more mods will be made compatible with Imoen 4 Ever in the near future.
-
-The mod is:
--compatible with Almateria's Restauration Project "Extended Waukeen's Promenade Cutscene" (independent of installation order)
-
--compatible with Tweaks Anthology "Faster Chapter 1&2 Cut-Scenes & Dreams" (component "Convenience Tweaks and/or Cheats") if Tweak Anthology is installed after.
-
--technical compatible with Alternatives (independent of installation order) (reply options of Alternatives still refer to Imoen missing, though)
-
--compatible with Saerileth's route to Spellhold if installed *after* Saerileth mod.
-
 In general: There should be no problem with mods that do not introduce talking NPCs in chapter 2 or 3, i.e. all mods with content that either do not include NPCs or where the content kicks in after going to Brynnlaw, e.g. NPC mods starting in the Underdark or ToB mods.
 
-There will be a list of mods with content-wise compatibility in the mod's forum at G3.
+As of 08/19/20, the mod is compatible with the following mods that add dialogues with Imoen etc. in chapter 2&3:
+    Afaaq, the Djinni Companion for BG2 and BG2:EE
+    Ajantis NPC for BGII
+    Almateria's Restauration Project "Extended Waukeen's Promenade Cutscene" (independent of installation order)
+    Alternatives (independent of installation order)
+    Ascalon's Breagar NPC
+    Edwin Romance
+    NPC Strongholds as of v8.1
+    Tweaks Anthology "Faster Chapter 1&2 Cut-Scenes & Dreams" (component "Convenience Tweaks and/or Cheats") if Tweak Anthology is installed after.
+    Unfinished Business as of v28beta
 
+I4E is also technically compatible with Saerileth's route to Spellhold if component 5 is installed *after* Saerileth mod (the mod still refers to Imoen being taken, though.)
+
+Check for more compatible mods at the compatibility list here:
+https://www.gibberlings3.net/forums/topic/30399-imoen-4-ever-compatibility-notes/
 
 The mod is *not* compatible with my "Imoen is Stone" mod.
 
@@ -137,7 +225,14 @@ Global("C#IM_ImoenStays","GLOBAL",1)
 NPC talk to Imoen after Spellhold and explicitely address the fact that she was taken twice, or that she was still taken by Irenicus although the Coweld Wizards let her go the first time he tried to take her with him at the Promenade fight: Global("C#IM_ImoenStays","GLOBAL",3)
 
 
+Modder compatibility notes for SoD:
+------------------------------------
+For detection of Imoen4Ever, the component "Imoen remains in the Group in SoD" sets a variable Global("C#IM_ImoenInSoD","GLOBAL",1) in both Thieves' Maze and Ducal Palace third floor (bd0103.bcs).
+If your mod NPC talks in Korlasz' Crypt about Imoen having joined Duke Jannath, please check whether Imoen might be in group, first.
 
+The component "Imoen returns to PC in first camp bd1000" sets a variable 
+Global("C#IM_ImoenComesBackSoD","GLOBAL",1) also in both Thieves' Maze and Ducal Palace third floor (bd0103.bcs) for detection whether Imoen returned to the PC.
+This should be helpful in case Imoen came back but was not taken into party but is waiting in the camp.
 
 
 CREDITS
@@ -145,6 +240,8 @@ CREDITS
 Acifer - promotion picture, beta testing
 
 memory - Polish translation
+
+unknown user: idea about Imoen staying behind in SoD because of her poison injury. (Let me know if you you know what name I should put here.)
 
 
 
@@ -174,6 +271,10 @@ REDISTRIBUTION NOTE: Imoen 4 Ever Mod was created to be freely enjoyed by all Ba
 
 
 HISTORY
+
+Version 5:
+-Added SoD content
+-Changed mod organization to more optional components
 
 Version 4:
 -detection variable whether Imoen will stay in the group in Korlasz' Dungeon should be applied to the correct script (cpmvar.tpas should be read in)

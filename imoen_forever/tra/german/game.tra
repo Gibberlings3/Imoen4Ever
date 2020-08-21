@@ -112,10 +112,11 @@ Bodhi erklärte sich bereit, sich an unseren Handel zu halten, obwohl es noch ein
 Laut Bodhi nahm Irenicus mich gefangen, weil er entdeckt hatte, dass ich ein Kind von Bhaal bin, und er versuchte, mir bei meiner Entwicklung zu „helfen“. Dabei waren seine Methoden von Folter jedoch nicht zu unterscheiden. Die Schattendiebe griffen Irenicus an, bevor man mir irgendetwas darüber erzählte. Ich floh, als er eingekerkert wurde.
 Bodhi erzählte mir, dass sie dem Wesen nach Irenicus' Schwester sei und dass sie mir helfen würde, weil sie den Magier von dem Ort befreien will, an dem er momentan festgehalten wird: ein gefürchtetes Heim für jene, die Magie praktizieren, das die „Zauberfeste“ genannt wird. Bodhi tut dies nicht aus Gründen familiärer Verbundenheit, sondern eher, weil sie Irenicus für ihre eigenen Zwecke braucht. Als zusätzlichen Anreiz bot sie mir an, mir alles zu offenbaren, was Irenicus über mich herausgefunden hat.
 Das Heim befindet sich auf einer autonomen Insel, und Bodhi hat das Gold, das ich ihr gab, verwandt, um mir die Überfahrt zu bezahlen. Dort werde ich dann nach einem Weg in das Heim suchen, um Irenicus zu konfrontieren und, so hofft Bodhi, ihn gleichzeitig auch herauszuholen.~
+
+
 @1082  = ~Das Treffen mit Tolgerias, dem Verhüllten Magier
 
 Tolgerias, der Verhüllte Magier im Regierungsgebäude, hat mir versprochen, mir Informationen über Irenicus zu beschaffen, wenn ich seinen Auftrag für ihn erfülle.~
-
 
 @1083 = ~Ja, genau *deswegen* habe ich's ja...~
 
@@ -229,9 +230,63 @@ Eines beunruhigt mich ... Bodhi wusste es! Sie wusste, dass ich ein Kind Bhaals 
 @1165 = ~Ich würde es Vorsorge nennen, bevore er Imoen erneut etwas antun kann - und mir.~
 @1166 = ~Schön, hier ist die Geschichte: Ich muss einen mächtigen Magier finden, der mich und meine Kindheitsfreundin Imoen gefangen gehalten und gefolter hat. Jetzt zufrieden?~
 @1167 = ~Wir werden Euren Feind aufspüren, <CHARNAME>. Das verspreche ich Euch.~
-@1168 = ~Ich muss herausfinden, wer mich aus welchem Grund gefangen genommen hat und was sie mit Imoen und mir vorhaben.~
-@1169 = ~Eine Frage noch ... Ich suche nach jemandem, der von den Verhüllten Magiern gefangen genommen wurde. Wisst Ihr etwas über sie?~
+
 
 /* new for v2 */
+//#8814
+@1168 = ~Ich muss herausfinden, wer mich aus welchem Grund gefangen genommen hat und was sie mit Imoen und mir vorhaben.~
+//#42660
+@1169 = ~Eine Frage noch ... Ich suche nach jemandem, der von den Verhüllten Magiern gefangen genommen wurde. Wisst Ihr etwas über sie?~
+
+
 //#21511
 @1170   = ~Ihr arbeitet für die Schattendiebe unter der Bedingung, dass sie Euch helfen, Euren ehemaligen Entführer Irenicus zu finden. Ja, sie sind Schattendiebe, und ja, sie sind so verrucht, wie Ihr sicherlich schon gehört habt.~
+
+/* SoD */
+
+/* new for v5 */
+/* cutscene_imoen_and_jannath.d */
+@5000  = ~Aber was, wenn <PRO_HESHE> ohne mich in Gefahr gerät?!~
+@5001  = ~Imoen!~
+
+/* imoen_bd4100.baf */
+@5005  = ~Was? Das würde <CHARNAME> niemals tun! Seid Ihr alle verrückt geworden?! Hände weg von meinem Freund!~ ~Was? Das würde <CHARNAME> niemals tun! Seid Ihr alle verrückt geworden?! Hände weg von meiner Freundin!~
+
+/* imoen_forever.tp2 */
+@5010  = ~Es tut mir so leid, <CHARNAME>. Ich wünschte, ich hätte mit dir ins Gefängnis gehen können!~
+
+/* bdimoen_additions_sod.baf */
+@5050  = ~Wie bescheuert! Aber - so ein lautes *Bumm*!~
+@5051  = ~<CHARNAME>! Sie konnten gar nichts dagegen machen! Das war echt gemein!~
+
+/* bd1000_commenting.baf */
+@5500  = ~Hast du ihre Augen gesehen? Ich glaube, die haben geleuchtet. Erinnert mich an jemanden, jawohl!~
+
+/* bd2000_commenting.baf */
+@5505  = ~Einfach so? Das werden die anderen bestimmt nicht gutheißen.~
+@5506  = ~Uuuuund auf in den nächsten Kampf!~
+
+/* imoen_bd0114.baf */
+@5510  = ~Das ist ja ein riiiiiiesen Käfer!~
+
+/* imoen_bd4300_commenting.baf */
+@5520  = ~Oh! Das war ganz schön knapp.~
+@5521  = ~Er hat dir weh getan, <CHARNAME>! Dieser Hephernaan soll sich mal warm anziehen, denn ich werde ihn mir vorknöpfen, jawohl!~ 
+@5522  = ~(seufz) Jetzt sind sie tot.~
+@5523  = ~Äh, <CHARNAME>? Ich glaube nicht, dass wir von hier aus viel erreichen können.~
+@5524  = ~Was für eine Reise! Ist es jetzt endlich vorbei?~
+
+/* imoen_bd4400_commenting.baf */
+@5530  = ~Ich habe doch gesagt, dass ich dir überall hin folgen würde, <CHARNAME>! Glaubst du es mir jetzt? Wir sind in der *Hölle*!~
+
+/* imoen_bd4601_commenting.baf */
+@5535  = ~Puh... ich hoffe inständig, dass dieses Ding nicht abstürzt.~
+
+/* imoen_bdbark01_commenting.baf */
+@5540  = ~So ein großes Drachenskelett! Das ist jetzt ein Teil des Schlosses! Ich mag es aber nicht. Es wirkt irgendwie... gemein.~
+
+/* imoen_bdvaultd.baf */
+@5545  = ~Ich mag die Türen nicht. Die sehen irgendwie unheimlich aus.~
+
+/* imoen_bd0063.baf */
+@5550  = ~Huch, meine Magie ist irgendwie weg. Ich glaube, das liegt an der Gegend hier.~

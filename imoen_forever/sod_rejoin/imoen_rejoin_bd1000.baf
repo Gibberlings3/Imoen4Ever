@@ -1,0 +1,30 @@
+/* Imoen rejoins in bd1000 */
+
+/*
+IF
+	AreaCheck("bd1000")
+	Global("C#IM_ImoenRejoinsbd1000","GLOBAL",2)
+THEN
+	RESPONSE #100
+//		FadeToColor([30.0],0)	
+//		Wait(3)
+		CreateVisualEffect("SPDIMNDR",[1387.3143])	
+		Wait(1)
+		MoveGlobal("bd1000",Myself,[1387.3143])
+		SmallWait(1)
+		FaceObject(Player1)
+		SmallWait(1)
+//		MoveGlobalObject(Myself,Player1)
+//		FadeFromColor([30.0],0)
+//		CreateVisualEffectObject("SPDIMNDR",Myself)
+		SetGlobal("C#IM_ImoenRejoinsbd1000","GLOBAL",3)
+END
+*/
+
+IF
+	Global("C#IM_ImoenRejoinsbd1000","GLOBAL",3)
+THEN
+	RESPONSE #100
+		StartDialogueNoSet(Player1)
+END
+

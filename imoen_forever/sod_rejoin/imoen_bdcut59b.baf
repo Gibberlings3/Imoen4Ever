@@ -1,0 +1,25 @@
+/* imoen_bdcut59b.baf:
+Global("C#Imoen_kicked_bd4700","global",1): Imoen was left standing in hell dimension - make sure she's coming back to the castle, too */
+
+IF
+  Global("C#Imoen_kicked_bd4700","global",1) //set in BDIMOENP.dlg
+  !Dead("%IMOEN_DV_SOD%")
+  !InParty("%IMOEN_DV_SOD%")
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    MoveGlobal("bd4300","%IMOEN_DV_SOD%",[835.483]) 
+    ActionOverride("%IMOEN_DV_SOD%",Face(NW))
+END
+
+/* This moves Imoen into the castle in case she was left standing somewhere else (not in hell dimension) because the other areas cannot be visited again (for plain SoD) */
+IF
+  Global("C#Imoen_kicked_bd4700","global",0)
+  !Dead("%IMOEN_DV_SOD%")
+  !InParty("%IMOEN_DV_SOD%")
+THEN
+  RESPONSE #100
+  CutSceneId(Player1)
+  MoveGlobal("bd4300","%IMOEN_DV_SOD%",[1681.1102]) 
+  ActionOverride("%IMOEN_DV_SOD%",Face(NW))
+END

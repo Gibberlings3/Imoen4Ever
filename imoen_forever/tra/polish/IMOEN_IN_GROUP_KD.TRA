@@ -18,6 +18,8 @@
 @17   = ~Mo¿esz zabraæ do ksiê¿nej Jannath wszystkie te studia nad Bhaalem, które znaleŸliœmy, Imoen.~
 @18   = ~<CHARNAME>, masz jakiœ *pomys³* na to, co mog³abym zrobiæ, ¿eby tu zostaæ? ¯eby ksiê¿na Jannath nie zabra³a mnie na nauki do tej swojej starej zakurzonej biblioteki? Nie ma mowy, ¿ebym siê st¹d wycofa³a, o nie.~
 @19   = ~<CHARNAME>! Gotowi do wyjœcia... ale co siê sta³o z moj¹ biedn¹ Imoen? Tak byæ nie mo¿e. Poczekaj tu chwilê, m³odzieñcze. Zajmê siê przywróceniem Imoen do zdrowia i œwie¿oœci. Ju¿ ona sama udzieli ci odpowiedniej reprymendy. (wzdycha) Lub nie, wiedz¹c jak ciê wielbi. Mff!~ ~<CHARNAME>! Gotowi do wyjœcia... ale co siê sta³o z moj¹ biedn¹ Imoen? Tak byæ nie mo¿e. Poczekaj tu chwilê, m³oda damo. Zajmê siê przywróceniem Imoen do zdrowia i œwie¿oœci. Ju¿ ona sama udzieli ci odpowiedniej reprymendy. (wzdycha) Lub nie, wiedz¹c jak ciê wielbi. Mff!~
+
+/* imoen_in_palace.d */
 @20   = ~Nie za dobrze.~
 @21   = ~Jej, chyba wci¹¿ jestem pod wp³ywem trucizny, skoro nie potrafiê nawet powiedzieæ, kogo ju¿ spotkaliœmy, a kogo nie.~ ~Jej, chyba wci¹¿ jestem pod wp³ywem trucizny, skoro nie potrafiê nawet powiedzieæ, kogo ju¿ spotka³yœmy, a kogo nie.~
 @22   = ~Co? Nigdy nie powiedzia³abyœ czegoœ takiego z w³asnej woli. Przera¿asz mnie! Co siê dzieje?~
@@ -26,3 +28,11 @@
 @25   = ~<CHARNAME>, jesteœ dla mnie jak rodzina. Kocham Ciê. Wiesz o tym. Ale teraz... potrzebujê siê wyciszyæ... na jakiœ czas.~
 @26   = ~I przygotujê siê na nasze nastêpne przygody. Tylko...~
 @27   = ~Zabawne, ¿e ty to mówisz. Nie mia³em *dos³ownie* ¿adnego wyboru, jak tylko zaakceptowaæ tê rolê „bohatera Wrót Baldura”.~ ~Zabawne, ¿e ty to mówisz. Nie mia³am *dos³ownie* ¿adnego wyboru, jak tylko zaakceptowaæ tê rolê „bohaterki Wrót Baldura”.~
+
+/* new for v5 */
+@28   = ~As I said, I accepted your decision to train with Duke Jannath, so you don't need to worry about staying here.~
+@29   = ~That's alright, Imoen. I know you are training with Duke Jannath. I wouldn't want to take you away from that, anyhow.~
+@30   = ~I know, but it's not only that...~
+@31   = ~I know that! But I do worry. I would rather come with you, <CHARNAME>.~
+@32   = ~So I'll keep on staying with Duke Jannath and use the time while I'm healing to train my magic abilities with her.~
+

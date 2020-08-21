@@ -1,0 +1,14 @@
+/* imoen_bd5300_commenting.baf */
+/* Comment when battle starts in Kanaglym (bd5300.are, Underground River) */
+IF
+	Global("BD_AREA_HOSTILE","BD5300",1)  // Kanaglym
+	!GlobalTimerNotExpired("bd_sdd350b_ot_timer","bd2000")  // This timer has the area code from Boareskyr Bridge & Bridgefort - I *think* this is a bug but I'll leave it for now. Needs to be checked for v2.6
+	Global("C#Imoen_bd_ot","bd5300",0)  // Kanaglym
+	IfValidForPartyDialog("%IMOEN_DV_SOD%")  
+	TriggerOverride("%IMOEN_DV_SOD%",Range([ENEMY.0.0.0.HOSTILES3],30))
+THEN
+	RESPONSE #100
+		SetGlobalTimer("bd_sdd350b_ot_timer","bd2000",THREE_MINUTES)  // ## see above
+		SetGlobal("C#Imoen_bd_ot","bd5300",1)  // Kanaglym
+		DisplayStringHead("%IMOEN_DV_SOD%",#%11035%)
+END

@@ -1,0 +1,33 @@
+IF
+	Global("C#IM_ImoenRejoinsbd1000","GLOBAL",0)
+	Range(Player1,20)
+	IsValidForPartyDialogue(Player1)
+	!InPartyAllowDead("%IMOEN_DV_SOD%")
+  	!Dead("%IMOEN_DV_SOD%")
+	CombatCounter(0)
+THEN
+    RESPONSE #100
+	ClearAllActions()
+	StartCutSceneMode()
+	SetGlobal("C#IM_ImoenRejoinsbd1000","GLOBAL",3)
+	ChangeEnemyAlly("%IMOEN_DV_SOD%",NEUTRAL)
+	ChangeSpecifics("%IMOEN_DV_SOD%",ALLIES)
+	ActionOverride("%IMOEN_DV_SOD%",SetGlobal("bd_joined","locals",0))
+	ActionOverride("%IMOEN_DV_SOD%",SetGlobal("bd_retreat","locals",0))
+	ActionOverride("%IMOEN_DV_SOD%",ChangeAIScript("BDIMOENS",OVERRIDE))
+	ActionOverride("%IMOEN_DV_SOD%",ChangeAIScript("bdasc3",CLASS))
+	ActionOverride("%IMOEN_DV_SOD%",ChangeAIScript("BDSHOUT",RACE))
+//	ActionOverride("%IMOEN_DV_SOD%",ChangeAIScript("BDTHIE01",GENERAL))
+	ActionOverride("%IMOEN_DV_SOD%",ChangeAIScript("",GENERAL))
+	ActionOverride("%IMOEN_DV_SOD%",ChangeAIScript("",DEFAULT))
+	ActionOverride("%IMOEN_DV_SOD%",SetDialogue("BDIMOENS"))
+	ActionOverride(Player1,CreateVisualEffect("SPDIMNDR",[1268.3238]))
+	Wait(2)
+	MoveGlobal("bd1000","%IMOEN_DV_SOD%",[1268.3238]) 
+	ReallyForceSpellDeadRES("bdrejuve","%IMOEN_DV_SOD%")
+	SmallWait(1)
+	FaceObject(Player1)
+	SmallWait(1)
+	EndCutSceneMode()
+END
+

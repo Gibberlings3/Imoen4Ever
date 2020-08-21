@@ -1,6 +1,32 @@
-@9900  = ~Imoen 4 Ever in BGII: Experience BGII without pressure - and with Imoen!~
+//@9900  = ~Imoen 4 Ever in BGII: Experience BGII without pressure - and with Imoen!~
 @9901  = ~BGIIFixpack Core Fixes needs to be installed for this mod.~
 @9902  = ~This mod is not compatible with the "Imoen Is Stone" mod.~
-@9903  = ~Imoen 4 Ever in SoD: Imoen remains in Group in SoD~
+//@9903  = ~Imoen 4 Ever in SoD: Imoen remains in Group in SoD~
 @9904  = ~This component is only compatible with SoD (and EET).~
 @9905  = ~This component is only compatible with BGII.~
+
+/* new for v5 */
+@9906  = ~Imoen 4 Ever in SoD: Imoen Remains in Group in Korlasz' Dungeon~
+@9907  = ~Imoen 4 Ever in SoD: Imoen Returns to PC in First Coalition Camp (bd1000)~
+@9908  = ~Component "Imoen Remains in Group in Korlasz' Dungeon" needs to be installed for this.~
+@9909  = ~Imoen 4 Ever in SoD: Imoen Gives Better Reason to Stay Behind in Palace~
+@9910  = ~Imoen 4 Ever in SoD: Play Cutscene With Imoen and Duke Jannath~
+@9911  = ~Component "Imoen Returns to PC in First Coalition Camp" needs to be installed for this.~
+@9912  = ~Imoen 4 Ever in BGII: Give Imoen Dialogue Content in BGII Chapters 2 & 3~
+@9913  = ~Component "Imoen Returns after Talking to Gaelan in Chapter 2" needs to be installed for this.~
+@9914  = ~Imoen 4 Ever in BGII: Give Imoen Protection Spell in Chapters 2 & 3~
+@9915  = ~Imoen 4 Ever in BGII: Compatibility with Alternatives and Saerileth~
+@9916  = ~Alternatives detected: patching.~
+@9917  = ~Alternatives not detected.~
+@9918  = ~Saerileth detected: patching.~
+@9919  = ~Saerileth not detected.~
+@9920  = ~Imoen 4 Ever in BGII: Yoshimo Comes to Brynnlaw~
+@9921  = ~Contents for BGII~
+@9922  = ~Contents for SoD~
+@9923  = ~Imoen 4 Ever in SoD: Give Imoen Dialogue Content in Chapters 8-12~
+@9924  = ~Imoen 4 Ever in SoD: Unify Imoen's Portrait~
+@9925  = ~Use Imoen's BG1 Portrait in all of SoD~
+@9926  = ~Use Imoen's SoD Portrait after Korlasz' Crypt~
+@9927  = ~Component "Imoen remains in the group in Korlasz' dungeon" OR Component "Imoen returns to PC in first coalition camp" needs to be installed for this.~
+@9928  = ~Imoen 4 Ever in BGII: Imoen Returns after Talking to Gaelan in Chapter 2~
+@9929  = ~Imoen at the End of the Game Should be the One that Was in Party (SoD Only)~

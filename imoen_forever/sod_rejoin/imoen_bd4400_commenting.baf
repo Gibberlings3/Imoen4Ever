@@ -1,0 +1,12 @@
+/* imoen_bd4400_commenting.baf */
+/* Comment upon entering Avernus */
+IF
+	GlobalLT("bd_plot","global",505)
+	IfValidForPartyDialog("%IMOEN_DV_SOD%")  
+	Global("C#Imoen_bd_avernus_bark","bd4400",0) 
+THEN
+	RESPONSE #100
+		DisplayStringWait("%IMOEN_DV_SOD%",@5530) 
+	    SetGlobal("C#Imoen_bd_avernus_bark","bd4400",0)  
+		SmallWait(8)
+END

@@ -1,0 +1,134 @@
+/* Reaction to the destroyed Bridge at Coastway Crossing */
+IF
+	GlobalTimerNotExpired("bd_caelar_timer","bd1000")
+	AreaCheck("bd1000")
+	IsValidForPartyDialog(Myself)
+	Detect(Player1)	
+	Global("C#IM_SoDbridge","bd1000",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#IM_SoDbridge","bd1000",1)
+		DisplayStringHead(Myself,@5050)
+END
+
+/* PC killed crusaders with the spikes */
+IF
+	InParty(Myself)
+	IsValidForPartyDialog(Myself)
+	See(Player1)
+	AreaCheck("bd7230")
+	Global("C#IM_UsedSpikes","bd7230",1) //this variable is set by patching bdlever2.BCS via tp2
+	CombatCounter(0)
+	!GlobalTimerNotExpired("C#SoD_spiketrap_timer","MYAREA") //If you use exactly this timer (with my prefix), then all NPC mods could be spaced so they do not talk at the same time. Otherwise you don't need a timer here.
+THEN
+	RESPONSE #100
+		SetGlobal("C#IM_UsedSpikes","bd7230",2)
+		SetGlobalTimer("C#SoD_spiketrap_timer","MYAREA",ONE_ROUND) //use this with my prefix for compatibility
+		DisplayStringHead(Myself,@5051)
+END
+
+/* Imoen reacts to Thrix's game */
+
+/* PC offered Imoen's soul */
+IF
+	IsValidForPartyDialogue(Myself)
+	See(Player1)
+	CombatCounter(0)
+	!See([ENEMY])
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	!StateCheck(PLAYER1,CD_STATE_NOTVALID)
+	OR(2)
+		Global("C#Imoen_SoDThrix","GLOBAL",2)
+		Global("C#Imoen_SoDThrix","GLOBAL",3)
+	GlobalLT("bd_plot","global",550)
+	OR(2)
+		Global("bd_thrix_plot","global",20)
+		Dead("bdthrix")  // Thrix
+THEN
+	RESPONSE #100
+		IncrementGlobal("C#Imoen_SoDThrix","GLOBAL",3)
+END
+
+/* PC offered someone else's soul */
+IF
+	IsValidForPartyDialogue(Myself)
+	See(Player1)
+	CombatCounter(0)
+	!See([ENEMY])
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	!StateCheck(PLAYER1,CD_STATE_NOTVALID)
+	!Global("C#Imoen_SoDThrix","GLOBAL",2)
+	!Global("C#Imoen_SoDThrix","GLOBAL",3)
+	GlobalLT("C#Imoen_SoDThrix","GLOBAL",7)
+	Global("bd_thrix_sacrifice_companion","global",1)
+	!Global("bd_thrix_sacrifice_self","global",1)
+	GlobalLT("bd_plot","global",550)
+	OR(2)
+		Global("bd_thrix_plot","global",20)
+		Dead("bdthrix")  // Thrix
+THEN
+	RESPONSE #100
+		SetGlobal("C#Imoen_SoDThrix","GLOBAL",7)
+END
+
+/* PC offered own soul after other NPC was chosen */
+
+IF
+	IsValidForPartyDialogue(Myself)
+	See(Player1)
+	CombatCounter(0)
+	!See([ENEMY])
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	!StateCheck(PLAYER1,CD_STATE_NOTVALID)
+	!Global("C#Imoen_SoDThrix","GLOBAL",1)
+	!Global("C#Imoen_SoDThrix","GLOBAL",2)
+	!Global("C#Imoen_SoDThrix","GLOBAL",3)
+	GlobalLT("C#Imoen_SoDThrix","GLOBAL",8)
+	Global("bd_thrix_sacrifice_self","global",1)
+	GlobalLT("bd_plot","global",550)
+	OR(2)
+		Global("bd_thrix_plot","global",20)
+		Dead("bdthrix")  // Thrix
+THEN
+	RESPONSE #100
+		SetGlobal("C#Imoen_SoDThrix","GLOBAL",9)
+END
+
+/* PC offered own soul after other Imoen was chosen */
+
+IF
+	IsValidForPartyDialogue(Myself)
+	See(Player1)
+	CombatCounter(0)
+	!See([ENEMY])
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	!StateCheck(PLAYER1,CD_STATE_NOTVALID)
+	Global("C#Imoen_SoDThrix","GLOBAL",1)
+	Global("bd_thrix_sacrifice_self","global",1)
+	GlobalLT("bd_plot","global",550)
+	OR(2)
+		Global("bd_thrix_plot","global",20)
+		Dead("bdthrix")  // Thrix
+THEN
+	RESPONSE #100
+		SetGlobal("C#Imoen_SoDThrix","GLOBAL",8)
+END
+
+/* trigger */
+IF
+	IsValidForPartyDialogue(Myself)
+	See(Player1)
+	CombatCounter(0)
+	!See([ENEMY])
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	!StateCheck(PLAYER1,CD_STATE_NOTVALID)
+	OR(5)
+		Global("C#Imoen_SoDThrix","GLOBAL",9)
+		Global("C#Imoen_SoDThrix","GLOBAL",8)
+		Global("C#Imoen_SoDThrix","GLOBAL",7)
+		Global("C#Imoen_SoDThrix","GLOBAL",6)
+		Global("C#Imoen_SoDThrix","GLOBAL",5)		
+THEN
+	RESPONSE #100
+		StartDialogNoSet(Player1)
+END

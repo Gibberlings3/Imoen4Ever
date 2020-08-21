@@ -1,0 +1,13 @@
+/* imoen_bd0063.baf */
+
+/* Warn about the place being a dead magic zone (mages only): */
+IF
+	Global("BD_NPC01","MYAREA",0)
+	IfValidForPartyDialog("%IMOEN_DV_SOD%") 
+	Class("%IMOEN_DV_SOD%",MAGE_ALL) 
+	Delay(3)
+THEN
+	RESPONSE #100
+		SetGlobal("BD_NPC01","MYAREA",1)
+		DisplayStringHead("%IMOEN_DV_SOD%",@5550)  
+END

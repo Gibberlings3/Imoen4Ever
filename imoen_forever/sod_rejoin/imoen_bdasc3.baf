@@ -1,0 +1,15 @@
+/* imoen_bdasc3.baf */
+/* Move NPC to entrance of the Allied Siege Camp (Crusade battle) */
+IF
+	Global("bd_battle","global",1)
+	Global("bd_move_npcs","bd3000",1)  // Allied Siege Camp
+	Global("bd_move_to_entrance","locals",0)
+	Name("%IMOEN_DV_SOD%",Myself)  
+	Global("C#Imoen_MoveCamp","bd3000",1)  
+THEN
+	RESPONSE #100
+		SetGlobal("bd_move_to_entrance","locals",1)
+		JumpToPoint([1275.318]) //Coordinates at the entrance of the Siege Camp. Minsc for example jumps to [1465.400]
+		Face(N)
+		SaveObjectLocation("LOCALS","bd_default_loc",Myself)
+END

@@ -1,0 +1,66 @@
+/* imoen_bd1000.baf
+Imoen moves to first war camp at Coast Way Crossing, bd1000.are 
+- this is preparation only. Will be moved to PC once player starts scouting the area (same trigger as Edwin: bdtalk01.bcs) */
+
+IF
+	GlobalLT("C#IM_ImoenRejoinsbd1000","GLOBAL",5)
+	InPartyAllowDead("%IMOEN_DV_SOD%")
+THEN
+	RESPONSE #100
+		SetGlobal("C#IM_ImoenRejoinsbd1000","GLOBAL",5)
+		Continue()
+END
+
+/*
+IF
+  Global("C#IM_ImoenRejoinsbd1000","GLOBAL",0)
+//  Global("C#Imoen_MoveCamp","bd1000",0)
+  !Dead("%IMOEN_DV_SOD%")
+  !InPartyAllowDead("%IMOEN_DV_SOD%")
+THEN
+  RESPONSE #100
+    SetGlobal("C#IM_ImoenRejoinsbd1000","GLOBAL",1)
+    MoveGlobal("bd1000","%IMOEN_DV_SOD%",[70.540]) 
+    ActionOverride("%IMOEN_DV_SOD%",Face(NW))
+    ReallyForceSpellDeadRES("bdrejuve","%IMOEN_DV_SOD%")
+    ChangeEnemyAlly("%IMOEN_DV_SOD%",NEUTRAL)
+    ChangeSpecifics("%IMOEN_DV_SOD%",ALLIES)
+    ActionOverride("%IMOEN_DV_SOD%",SetGlobal("bd_joined","locals",0))
+    ActionOverride("%IMOEN_DV_SOD%",SetGlobal("bd_retreat","locals",0))
+    ActionOverride("%IMOEN_DV_SOD%",SaveObjectLocation("LOCALS","bd_default_loc",Myself))
+    ActionOverride("%IMOEN_DV_SOD%",ChangeAIScript("BDIMOENS",OVERRIDE))
+    ActionOverride("%IMOEN_DV_SOD%",ChangeAIScript("bdasc3",CLASS))
+    ActionOverride("%IMOEN_DV_SOD%",ChangeAIScript("BDSHOUT",RACE))
+//    ActionOverride("%IMOEN_DV_SOD%",ChangeAIScript("BDTHIE01",GENERAL))
+    ActionOverride("%IMOEN_DV_SOD%",ChangeAIScript("",GENERAL))
+    ActionOverride("%IMOEN_DV_SOD%",ChangeAIScript("",DEFAULT))
+    ActionOverride("%IMOEN_DV_SOD%",SetDialogue("BDIMOENS"))
+    Continue()
+END
+*/
+
+IF
+  Global("C#IM_ImoenRejoinsbd1000","GLOBAL",4)
+//  Global("C#Imoen_MoveCamp","bd1000",0)
+  !Dead("%IMOEN_DV_SOD%")
+  !InPartyAllowDead("%IMOEN_DV_SOD%")
+THEN
+  RESPONSE #100
+    SetGlobal("C#IM_ImoenRejoinsbd1000","GLOBAL",5)
+    MoveGlobal("bd1000","%IMOEN_DV_SOD%",[470.3737]) 
+    ActionOverride("%IMOEN_DV_SOD%",Face(N))
+    ReallyForceSpellDeadRES("bdrejuve","%IMOEN_DV_SOD%")
+    ChangeEnemyAlly("%IMOEN_DV_SOD%",NEUTRAL)
+    ChangeSpecifics("%IMOEN_DV_SOD%",ALLIES)
+    ActionOverride("%IMOEN_DV_SOD%",SetGlobal("bd_joined","locals",0))
+    ActionOverride("%IMOEN_DV_SOD%",SetGlobal("bd_retreat","locals",0))
+    ActionOverride("%IMOEN_DV_SOD%",SaveObjectLocation("LOCALS","bd_default_loc",Myself))
+    ActionOverride("%IMOEN_DV_SOD%",ChangeAIScript("BDIMOENS",OVERRIDE))
+    ActionOverride("%IMOEN_DV_SOD%",ChangeAIScript("bdasc3",CLASS))
+    ActionOverride("%IMOEN_DV_SOD%",ChangeAIScript("BDSHOUT",RACE))
+//    ActionOverride("%IMOEN_DV_SOD%",ChangeAIScript("BDTHIE01",GENERAL))
+    ActionOverride("%IMOEN_DV_SOD%",ChangeAIScript("",GENERAL))
+    ActionOverride("%IMOEN_DV_SOD%",ChangeAIScript("",DEFAULT))
+    ActionOverride("%IMOEN_DV_SOD%",SetDialogue("BDIMOENP"))
+    Continue()
+END

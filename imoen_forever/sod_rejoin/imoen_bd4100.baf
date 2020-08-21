@@ -1,0 +1,13 @@
+/* xxbd4100.baf. CHARNAME is accused of murder. Imoen comments */
+
+IF
+	Global("bd_plot","global",591)
+	!GlobalTimerNotExpired("bd_mdd1352_ot_timer","bd4100") //this is SoD's own timer and makes sure all comments fire before the next scripted event kicks in 
+	Global("C#Imoen_SoDMurderAccusations","bd4100",0)
+	IsValidForPartyDialogue("%IMOEN_DV_SOD%")  
+THEN
+	RESPONSE #100
+		SetGlobal("C#Imoen_SoDMurderAccusations","bd4100",1)
+		SetGlobalTimer("bd_mdd1352_ot_timer","bd4100",ONE_ROUND) //set the timer according to how long the comment is. ONE_ROUND equals ONE_MINUTE = 6 seconds realtime. You can put in the amount of realtime seconds as a number directly.
+		DisplayStringHead("%IMOEN_DV_SOD%",@5005)  
+END

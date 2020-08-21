@@ -18,6 +18,8 @@
 @17   = ~Take the research on Bhaal we found for Duke Jannath, Imoen.~
 @18   = ~<CHARNAME>, do you have an *idea* of what I had to do so I could be here and Duke Jannath wouldn't just take me with her into her old dusty library for teaching? No way I'll stay behind, no <PRO_SIRMAAM>.~
 @19   = ~<CHARNAME>! Ready to leave - but what happened to my poor Imoen? This will not do. You wait just a minute there, young <PRO_MANWOMAN>. I will see to Imoen being all fresh and healthy once more. She'll give you a proper rebuke herself. (sigh) Or not, the way she admires you. Pff!~
+
+/* imoen_in_palace.d */
 @20   = ~Not good, <CHARNAME>.~
 @21   = ~Wow, I really am still under the poison's influence if I can't even tell who we met and who we didn't.~
 @22   = ~What? You would never say that out of free will. You are scaring me! What is going on?~
@@ -26,3 +28,10 @@
 @25   = ~You're the closest thing I have to family, <CHARNAME>. I love you. You know that. But with this... I need things to be... quiet, just for a little while.~
 @26   = ~And I will be preparing for our next adventure. Just...~
 @27   = ~Funny you'd say that. I had *literally* no other choice than to accept my role as "hero of Baldur's Gate" here.~
+
+/* new for v5 */
+@28   = ~As I said, I accepted your decision to train with Duke Jannath, so you don't need to worry about staying here.~
+@29   = ~That's alright, Imoen. I know you are training with Duke Jannath. I wouldn't want to take you away from that, anyhow.~
+@30   = ~I know, but it's not only that...~
+@31   = ~I know that! But I do worry. I would rather come with you, <CHARNAME>.~
+@32   = ~So I'll keep on staying with Duke Jannath and use the time while I'm healing to train my magic abilities with her.~
