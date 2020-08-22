@@ -255,6 +255,10 @@ Jeszcze jedna niepokoj¹ca rzecz... Bodhi wiedzia³a, wiedzia³a o moim ojcu – Bhaa
 @1169 = ~Mam do ciebie pytanie... Szukam kogoœ, kogo porwali Zakapturzeni Czarodzieje. Czy wiesz coœ o nich?~
 @1170 = ~Pracujesz dla Z³odziei Cienia, wierz¹c, i¿ pomog¹ ci odnaleŸæ twojego by³ego porywacza, Irenicusa. Tak, to naprawdê s¹ Z³odzieje Cienia i rzeczywiœcie s¹ takimi potworami, jak pewnie ci mówiono.~
 
+/* new for v5 */
+//#46040
+@1171   = ~I am saving coin to persue an enemy... what would the reward be for this task?~
+
 /* SoD */
 
 /* new for v5 */

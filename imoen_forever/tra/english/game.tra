@@ -239,6 +239,10 @@ One more troubling thing... Bodhi knew. She knew I am a child of Bhaal.~
 //#21511
 @1170   = ~You work for the Shadow Thieves on the pretense they will help locate your former capturer, Irenicus. Yes, they are Shadow Thieves, and yes, they are as nefarious as you've probably heard.~
 
+/* new for v5 */
+//#46040
+@1171   = ~I am saving coin to persue an enemy... what would the reward be for this task?~
+
 /* SoD */
 
 /* new for v5 */

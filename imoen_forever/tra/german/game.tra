@@ -242,6 +242,10 @@ Eines beunruhigt mich ... Bodhi wusste es! Sie wusste, dass ich ein Kind Bhaals 
 //#21511
 @1170   = ~Ihr arbeitet für die Schattendiebe unter der Bedingung, dass sie Euch helfen, Euren ehemaligen Entführer Irenicus zu finden. Ja, sie sind Schattendiebe, und ja, sie sind so verrucht, wie Ihr sicherlich schon gehört habt.~
 
+/* new for v5 */
+//#46040
+@1171   = ~Ich bin gerade dabei mir ein wenig Gold zusammen zu sparen, um einen Feind zu verfolgen... Wie hoch wäre die Belohnung für diesen Auftrag?~
+
 /* SoD */
 
 /* new for v5 */
