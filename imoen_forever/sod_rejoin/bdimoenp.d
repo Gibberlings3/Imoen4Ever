@@ -4,7 +4,9 @@ APPEND ~bdimoen~
 /* If kicked out in Avernus (so Caelar can join) in bd4700.are
 This sets Global("C#Imoen_kicked_bd4700","global",1) which is used in imoen_bdcut59b.baf */
 /* Biff can't go home from here - so he will stay and say something brave. */
-IF ~AreaCheck("bd4700")
+IF WEIGHT #-1
+~!InParty(Myself)
+AreaCheck("bd4700")
     GlobalGT("bd_joined","locals",0)
     GlobalLT("bd_plot","global",570)~ THEN BEGIN kickout_1
   SAY #%35347% /* ~Gods! You can really be mean sometimes, you know that?~ */
@@ -23,7 +25,9 @@ IF ~~ THEN BEGIN kickout_4
 END
 
 /* kicked out somewhere else (not bd4700.are in Avernus, not Korlasz's tomb) */
-IF ~GlobalGT("bd_joined","locals",0)~ THEN BEGIN kickout_5
+IF WEIGHT #-1
+~!InParty(Myself)
+GlobalGT("bd_joined","locals",0)~ THEN BEGIN kickout_5
   SAY #%52921% /* ~All right, all right, I get the message!~ */
   + ~GlobalGT("bd_npc_camp_chapter","global",1)
      GlobalLT("bd_npc_camp_chapter","global",5)

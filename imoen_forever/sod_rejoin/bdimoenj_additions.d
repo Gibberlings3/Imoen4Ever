@@ -61,8 +61,8 @@ SetGlobal("bd_thrix_sacrifice_companion","global",1)
 !Global("BD_NumInParty","bd4500",3)
 !Global("BD_NumInParty","bd4500",4)~ THEN REPLY @53 /* ~Imoen is my childhood friend. You will not get her soul.~ */ DO ~SetGlobal("C#Imoen_SoDThrix","GLOBAL",1)~ + 114
 
-  IF ~~ THEN REPLY @54 /* ~She has her faults, but I'll not risk Imoen's soul in so blithe a fashion. If I cannot answer your riddle, mine is the soul you will take. Agreed?~ */ GOTO 113
-  IF ~~ THEN REPLY @55 /* ~I'll feed you your own limbs if you don't let me into the tower, you wretched creature. I'm done playing games with you.~ */ GOTO 12
+  IF ~~ THEN REPLY @54 /* ~She has her faults, but I'll not risk Imoen's soul in so blithe a fashion. If I cannot answer your riddle, mine is the soul you will take. Agreed?~ */ DO ~SetGlobal("C#Imoen_SoDThrix","GLOBAL",1)~ GOTO 113
+  IF ~~ THEN REPLY @55 /* ~I'll feed you your own limbs if you don't let me into the tower, you wretched creature. I'm done playing games with you.~ */ DO ~SetGlobal("C#Imoen_SoDThrix","GLOBAL",1)~ GOTO 12
 END
 
 IF ~~ THEN imoen_01
@@ -103,7 +103,8 @@ END
 END //APPEND
 
 CHAIN
-IF ~OR(2)
+IF WEIGHT #-1
+~OR(2)
 Global("C#Imoen_SoDThrix","GLOBAL",6)
 Global("C#Imoen_SoDThrix","GLOBAL",5)~ THEN bdimoen after_thrix
 @61 /* ~<CHARNAME>! Gambling my soul to that demon was not nice. When I said that I'd be always there for you I surely meant it differently!~ [c#ablank] */
@@ -125,7 +126,7 @@ END
 
 IF ~~ THEN after_thrix_02
 SAY @69 /* ~Well, one thing is sure, you dummy. Since I won't leave your side, the fiend coming after *me* will also be your problem, just as well. So you still have a chance to make this right, next time we meet this thing.~ */
-IF ~~ THEN DO ~SetGlobal("C#Imoen_SoDThrix","GLOBAL",10)~ EXIT
+IF ~~ THEN DO ~SetGlobal("C#Imoen_SoDThrix","GLOBAL",11)~ EXIT
 END
 
 IF ~~ THEN after_thrix_03
@@ -133,7 +134,8 @@ SAY @70 /* ~Nah, this is not how this works. We need to stand up for each other!
 IF ~~ THEN + after_thrix_02
 END
 
-IF ~Global("C#Imoen_SoDThrix","GLOBAL",7)~ THEN after_thrix_04
+IF WEIGHT #-1
+~Global("C#Imoen_SoDThrix","GLOBAL",7)~ THEN after_thrix_04
 SAY @71 /* ~<CHARNAME>! Gambling a soul to that demon was not nice.~ [c#ablank] */
 + ~!Global("BD_Thrix_riddle_won","GLOBAL",1)~ + @72 /* ~Yes, I know. I wanted to spare a fight.~ */ + after_thrix_01
 + ~!Global("BD_Thrix_riddle_won","GLOBAL",1)~ + @64 /* ~I couldn't take that whole game serious, sorry.~ */ + after_thrix_01
@@ -149,7 +151,7 @@ END
 
 IF ~~ THEN after_thrix_06
 SAY @74 /* ~Well, one thing is sure, you dummy. Since I won't leave your side, the fiend coming after *you* will also be my problem. You won't have to face this thing alone!~ */
-IF ~~ THEN DO ~SetGlobal("C#Imoen_SoDThrix","GLOBAL",10)~ EXIT
+IF ~~ THEN DO ~SetGlobal("C#Imoen_SoDThrix","GLOBAL",12)~ EXIT
 END
 
 IF ~~ THEN after_thrix_07
@@ -159,7 +161,7 @@ END
 
 IF ~~ THEN after_thrix_08
 SAY @76 /* ~This scared me, <CHARNAME>. I don't like it if you are so mean.~ */
-IF ~~ THEN DO ~SetGlobal("C#Imoen_SoDThrix","GLOBAL",10)~ EXIT
+IF ~~ THEN DO ~SetGlobal("C#Imoen_SoDThrix","GLOBAL",13)~ EXIT
 END
 
 END //APPEND
@@ -189,6 +191,132 @@ IF ~~ THEN after_thrix_10
 SAY @84 /* ~We two, forever together! That's how it's going to be.~ */
 IF ~~ THEN + after_thrix_07
 IF ~!Global("BD_Thrix_riddle_won","GLOBAL",1)~ THEN + after_thrix_06
+END
+
+
+/* all those desparate people (with empty pockets) (Imoen THIEF_ALL)*/
+
+IF WEIGHT #-1
+~Global("C#IM_DialogueSoD","GLOBAL",2)~ THEN no_fun
+SAY @85 /* ~I don't know, this is no fun any more.~ */
+++ @86 /* ~Being chased by assassins? Yes, I agree.~ */ + no_fun_01
+++ @87 /* ~Having to save the world again? You are right there.~ */ + no_fun_01
+++ @88 /* ~I think what we do here is of great importance, Imoen.~ */ + no_fun_02
+++ @89 /* ~What exactly are we talking about?~ */ + no_fun_02
+END
+
+IF ~~ THEN no_fun_01
+SAY @90 /* ~No! I mean - yes, that, too. But that's not what I meant.~ */
+IF ~~ THEN + no_fun_02
+END
+
+IF ~~ THEN no_fun_02
+SAY @91 /* ~I am referring to ... disburden people from, er, things they might not be missing.~ */
+++ @92 /* ~You are stealing from the refugees? Do you have no shame?~ */ + no_fun_03
+++ @93 /* ~Please, do not steal from our allies. It might lead to misunderstandings.~ */ DO ~SetGlobal("C#IM_nofun_05","LOCALS",1)~ + no_fun_05
+++ @94 /* ~What? Do you renounce your thieving ways? That's something new. That Duke Jannath washed your head alright, hm?~ */ + no_fun_08
+++ @95 /* ~This is no longer fun for you? You indeed seem to be ill, my friend.~ */ + no_fun_12
+END
+
+IF ~~ THEN no_fun_03
+SAY @97 /* ~But that's exactly what I was referring to!~ */
+IF ~~ THEN + no_fun_09
+END
+
+IF ~~ THEN no_fun_04
+SAY @98 /* ~Of c... I mean, a girl has to stay in practive, right?~ */
++ ~Global("C#IM_nofun_05","LOCALS",1)~ + @99 /* ~Do not enrich yourself from our allies, Imoen. It might lead to misunderstandings.~ */ + no_fun_06
++ ~!Global("C#IM_nofun_05","LOCALS",1)~ + @99 /* ~Do not enrich yourself from our allies, Imoen. It might lead to misunderstandings.~ */ + no_fun_07
+++ @100 /* ~Honestly - I don't realy care about your problems in this case.~ */ + no_fun_10
+END
+
+IF ~~ THEN no_fun_05
+SAY @101 /* ~Wow... now that's a fantastic idea! I didn't even think about that. I mean, a little.~ */
+IF ~~ THEN + no_fun_11
+END
+
+IF ~~ THEN no_fun_06
+SAY @102 /* ~But I have to do *something*, or I'll be out of training soon enough. Oh! Oh! I have a fabulous idea. I'll just sneak everything I'll find in the camp into some poor refugee's pocket. Hey, don't look at me like that. You said I shouldn't enrich myself in the camp and I won't. That's good deeds I'll be doing - *and* staying skilled! Now off we go, saving the world again!~ */
+IF ~~ THEN DO ~SetGlobal("C#IM_DialogueSoD","GLOBAL",3)~ EXIT
+END
+
+IF ~~ THEN no_fun_07
+SAY @103 /* ~You mean in the camp?... I didn't even think about that. I mean, a little.~ */
+IF ~~ THEN + no_fun_06
+END
+
+IF ~~ THEN no_fun_08
+SAY @104 /* ~What? Noooo. I'd never do *that*! Although Duke Jannath was quite scary, indeed...~ */
+IF ~~ THEN + no_fun_11
+END
+
+IF ~~ THEN no_fun_09
+SAY @105 /* ~Their pockets are just empty, there is nothing to be found. And some are also greasy, yuck.~ */
+++ @106 /* ~So you *tried* stealing from the refugies!~ */ + no_fun_04
++ ~Global("C#IM_nofun_05","LOCALS",1)~ + @99 /* ~Do not enrich yourself from our allies, Imoen. It might lead to misunderstandings.~ */ + no_fun_06
++ ~!Global("C#IM_nofun_05","LOCALS",1)~ + @99 /* ~Do not enrich yourself from our allies, Imoen. It might lead to misunderstandings.~ */ + no_fun_07
+++ @111 /* ~Of course! You have to go for our pompeous "friends" in the camp if you want to have good results.~ */ + no_fun_13
+++ @107 /* ~Imoen! We are about to face a murderous crusade and that's what you are thinking about?~ */ + no_fun_10
+++ @100 /* ~Honestly - I don't realy care about your problems in this case.~ */ + no_fun_10
+END
+
+IF ~~ THEN no_fun_10
+SAY @108 /* ~Aw, you are no fun. Maybe I should start sneaking stones into your backpack. It would at least keep me skilled!~ */
+IF ~~ THEN DO ~SetGlobal("C#IM_DialogueSoD","GLOBAL",3)~ EXIT
+END
+
+IF ~~ THEN no_fun_11
+SAY @109 /* ~I was referring to the refugees.~ */
+IF ~~ THEN + no_fun_09
+END
+
+IF ~~ THEN no_fun_12
+SAY @110 /* ~What? Noooo. No no.~ */
+IF ~~ THEN + no_fun_11
+END
+
+IF ~~ THEN no_fun_13
+SAY @112 /* ~Wow. I didn't even really think about that. I guess Liia *did* mess with my head, huh. Hmm, but that doesn't change the empty pockets of the refugees. So sad, reaching into an empty pocket...~ */
+= @113 /* ~Oh! Oh! I have a fabulous idea. I'll just sneak everything I'll find in the camp into some poor refugee's pocket. Hey, don't look at me like that. You said I should steal from the camp and that's what I'll be doing. *And* it's good deeds I'll be doing - while staying skilled! Now off we go, saving the world again!~ */
+IF ~~ THEN DO ~SetGlobal("C#IM_DialogueSoD","GLOBAL",3)~ EXIT
+END
+
+/* Thrix erwähnte Imoens besondere Seele */
+
+IF WEIGHT #-1
+~Global("C#Imoen_SoDThrixSoul","GLOBAL",1)~ THEN thrix_soul
+SAY @114 /* ~Hast du verstanden, warum der Dämon meine Seele so interessant fand?~ */
+++ @115 /* ~Nein, aber mir war das auch aufgefallen, wie er das gesagt hat. Als würdest du einen Extrabonus mitbringen.~ */ + thrix_soul_02
+++ @116 /* ~Woher soll ich das wissen?~ */ + thrix_soul_02
++ ~!Global("C#Imoen_SoDThrix","GLOBAL",11)~ + @117 /* ~Vielleicht mag er kleine Menschenmädchen besonders gern.~ */ + thrix_soul_01
++ ~Global("C#Imoen_SoDThrix","GLOBAL",11)~ + @117 /* ~Vielleicht mag er kleine Menschenmädchen besonders gern.~ */ + thrix_soul_04
+++ @118 /* ~Ich möchte nicht darüber sprechen.~ */ + thrix_soul_03
+END
+
+END //APPEND
+
+CHAIN
+IF ~~ THEN bdimoen thrix_soul_01
+@119 /* ~Haha, du Eulenbär.~ */
+== bdimoen IF ~Gender(Player1,FEMALE) Race(Player1,HUMAN)~ THEN @120 /* ~I'm not that much smaller than you, you know.~ */
+END 
+IF ~~ THEN + thrix_soul_02
+
+APPEND bdimoen
+
+IF ~~ THEN thrix_soul_02
+SAY @121 /* ~Wirklich seltsam... Naja.~ */
+IF ~~ THEN + thrix_soul_03
+END
+
+IF ~~ THEN thrix_soul_03
+SAY @122 /* ~Er muss einfach gemerkt haben, dass wir richtig dicke Freunde sind. Vielleicht dachte er dann, dass er deine Seele auch gleich mit holen kann!~ */
+IF ~~ THEN DO ~SetGlobal("C#Imoen_SoDThrixSoul","GLOBAL",2)~ EXIT
+END
+
+IF ~~ THEN thrix_soul_04
+SAY @123 /* ~Uh. Die Bemerkung *wäre* witzig, wenn du ihm nicht meine Seele verspielt hättest.~ */
+IF ~~ THEN + thrix_soul_02
 END
 
 END //APPEND

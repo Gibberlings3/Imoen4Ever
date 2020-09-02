@@ -4,29 +4,3 @@
 @9903  = ~Imoen 4 Ever w SoD: Imoen pozostaje w druzynie podczas SoD.~
 @9904  = ~Ten komponent jest zgodny tylko z SoD (i EET).~
 @9905  = ~Ten komponent jest zgodny tylko z BGII.~
-
-/* new for v5 */
-@9906  = ~Imoen 4 Ever in SoD: Imoen remains in the group in Korlasz' dungeon~
-@9907  = ~Imoen 4 Ever in SoD: Imoen returns to PC in first coalition camp (bd1000)~
-@9908  = ~Component "Imoen remains in the group in Korlasz' dungeon" needs to be installed for this.~
-@9909  = ~Imoen 4 Ever in SoD: Imoen gives better reason to stay behind in Palace~
-@9910  = ~Imoen 4 Ever in SoD: Play cutscene with Imoen and Duke Jannath~
-@9911  = ~Component "Imoen returns to PC in first coalition camp" needs to be installed for this.~
-@9912  = ~Imoen 4 Ever in BGII: Give Imoen dialogue content in chapter 2 & 3~
-@9913  = ~Component "Imoen 4 Ever in BGII: Experience BGII without pressure - and with Imoen!" needs to be installed for this.~
-@9914  = ~Imoen 4 Ever in BGII: Give Imoen protection spell in chapter 2 & 3~
-@9915  = ~Imoen 4 Ever in BGII: Compatibility with Alternatives and Saerileth~
-@9916  = ~Alternatives detected: patching.~
-@9917  = ~Alternatives not detected.~
-@9918  = ~Saerileth detected: patching.~
-@9919  = ~Saerileth not detected.~
-@9920  = ~Imoen 4 Ever in BGII: Yoshimo comes to Brynnlaw~
-@9921  = ~Contents for BGII~
-@9922  = ~Contents for SoD~
-@9923  = ~Imoen 4 Ever in SoD: Give Imoen dialogue content in chapters 8-12~
-@9924  = ~Imoen 4 Ever in SoD: Unify Imoen's Portrait~
-@9925  = ~Use Imoen's BG1 Portrait in all of SoD~
-@9926  = ~Use Imoen's SoD Portrait after Korlasz' Crypt~
-@9927  = ~Component "Imoen remains in the group in Korlasz' dungeon" OR Component "Imoen returns to PC in first coalition camp" needs to be installed for this.~
-@9928  = ~Imoen 4 Ever in BGII: Imoen returns at the beginning of chapter 2~
-@9929  = ~Imoen at the End of the Game Should be the One that Was in Party (SoD Only)~

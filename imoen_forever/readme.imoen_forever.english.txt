@@ -38,10 +38,12 @@ Please note: For BGII(:EE), the Imoen inside Irenicus Dungeon is *not* the one y
 For BGT/EET, Imoen will be continuous, like it is normal for these games.
 
 
-2 I4E in BGII: Give Imoen Dialogue Content in BGII Chapters 2 & 3
+2 I4E in BGII: Give Imoen Dialogue Content in SoA
 -----------------------------------
-This adds dialogue and interjections to Imoen in chapter 2&3, especially Imoen's reaction to the PC's dreams. 
-Up to now, there is not much content.
+This adds dialogue and interjections to Imoen.
+In chapter 2&3 e.g. Imoen will react to the PC's dreams. After Spellhold she will talk about her abduction by Irenicus and her Bhaal heritage.
+
+The component is compatible with Imoen Friendship mod v3.6 and higher.
 
 
 3 I4E in BGII: Yoshimo Comes to Brynnlaw
@@ -106,13 +108,15 @@ I read this idea in the BeamDog forums but I forgot by whom. If you know who thi
 9 I4E in SoD: Play Cutscene With Imoen and Duke Jannath
 -----------------------------------
 In the original game, the PC can witness Imoen's training with Duke Jannath via a magic pool in Kanaglym (Underground River).
-This component removes this vision from the pool and makes it a cutscene for the player when the PC is marching out of the City with the Flaming Fist.
+This component makes this a cutscene for the player when the PC is marching out of the City with the Flaming Fist.
 
 
 10 I4E in SoD: Give Imoen Dialogue Content in SoD Chapters 8-12
 -----------------------------------
 The aim of this component is to give Imoen more reactions to game events, dialogues, and interjections.
-There is not much content yet.
+
+This component is not finished yet.
+Imoen reacts to most game situations and has some dialogues dependent on game events, but no banter with other NPCs.
 
 
 11 I4E in SoD: Imoen at the End of the Game Should be the One that Was in Party (SoD Only)
@@ -130,50 +134,62 @@ This component comes with two options:
 2. Use Imoen's BG1 Portrait in all of SoD
 	This option will leave Imoen's BG1 portrait for Imoen in all of SoD - also for the interactions with her when she is not in party.
 
+Compatibility note: The portrait names used are the ones for the original BG1/SoD portraits.
 Do not install either component if you are using a different portrait for Imoen or have other portrait mods installed that change Imoen's portrait, unless you know the mods are compatible.
 
 
 INSTALLATION
 
-For installation order, this mod is to be treated as a quest mod (not a tweak mod) and should be installed before any other NPC mods that add interjections in SoA chapter 2&3.
+For installation order, the main BGII component of this mod is to be treated as a quest mod (not a tweak mod) and should be installed before any other NPC mods that add interjections in SoA chapter 2&3.
  
-Extract the contents of the mod archive to your game's main directory. The game will be recognized automatically and the appropriate content will be installed.
-
-NOTE: 
--If you use SoD from GOG or Steam, you need to prepare your game with modmerge or Argent's DLC merger before installing any mods.
--For BG(II):EE it is important that you install the mod to the language version you are playing the game in. Otherwise, the dialogues of the mod will not show but give error messages.
-
-
-Windows
-On successful extraction, there should be an imoen_forever folder and a setup-imoen_forever.exe file in your game folder. To install, simply double-click setup-imoen_forever.exe and follow the instructions on screen.
-Run setup-imoen_forever.exe in your game folder to reinstall or uninstall the mod.
-
-There is no Mac OS X or Linux versions yet but if you know what you are doing you can use the mod folder and set it up.
-
-
-NOTE: BG(II):EE are actively supported games. Please note that every patch update will wipe your current mod setup! If in the middle of a modded game you might want to delay the patch update as even after reinstalling the mods, you might not be able to continue with your old savegames. 
-
+NOTE: If you've previously installed the mod, remove it before extracting a new version. To do this, uninstall all previously installed components and delete the mod folder and executables.
+Make sure the game is not running while installing the mod.
+When installing or uninstalling, do not close the DOS window by clicking on the X button! Instead, press the Enter key when instructed to do so.
 
 If you have installation problems or encounter any bugs, please post your bug report in one of the forum threads you found this mod in.
 
+Notes to modding EE games
+-----------------------------------
+If you use SoD from GOG or Steam, you need to prepare your game with DLC Merger or modmerge before installing any mods:
+argent77's DLC Merger
+modmerge(if in doubt, use the DLC Merger instead)
+For Enhanced Edition it is important that you istall the mod to the language version you are playing the game in. Otherwise, the dialogues of the mod will not show but give error messages.
+The EE games are actively supported games. Please note that every patch update will wipe your current mod setup! If in the middle of a modded game you might want to delay the patch update as even after reinstalling the mods, you might not be able to continue with your old savegames.
+
+Windows
+-----------------------------------
+Extract the contents of the mod archive to your game's main directory (BG:EE/SOD/BG2/BGT/BGII:EE/EET which contains the CHITIN.KEY file). On successful extraction, there should be an imoen_forever folder and a setup-imoen_forever.exe file in your game folder. To install, simply double-click setup-imoen_forever.exe and follow the instructions on screen.
+Run setup-imoen_forever.exe in your game folder to reinstall, uninstall or otherwise change components.
+
+Mac OS X
+-----------------------------------
+Extract the mod archive, then copy the contents of the folder into your game folder (BG:EE/SOD/BG2/BGT/BGII:EE/EET which contains the CHITIN.KEY file). If properly extracted, you should have a "imoen_forever" folder, setup-imoen_forever, and setup-imoen_forever.command in your game folder. To install, simply double-click setup-imoen_forever.command and follow the instructions on screen.
+Run setup-imoen_forever.command in your game folder to reinstall, uninstall or otherwise change components.
+
+Linux
+-----------------------------------
+Extract the contents of the mod to the folder of the game you wish to modify. Download the latest version of WeiDU for Linux from https://github.com/WeiDUorg/weidu/releases and copy WeiDU and WeInstall to /usr/bin. Following that, open a terminal and cd to your BG2 installation directory, run 'tolower' and answer Y to both queries. You can avoid running the second option (linux.ini) if you've already ran it once in the same directory. If you're unsure, running tolower and choosing both options is the safe bet.
+Run WeInstall imoen_forever in your game folder to install the mod. Then run wine BGMain.exe and start playing. 
 
 
 COMPATIBILITY
 
-Note: this mod is to be treated as a quest mod, so install it before any NPC mods that could add interjections or reply options to chapter 2&3 in BGII to make sure the correct ones are patched by this mod.
+Note: For installation order, the main BGII component of this mod is to be treated as a quest mod (not a tweak mod) and should be installed before any other NPC mods that add interjections in SoA chapter 2&3.
 
 BGII compatibility:
 --------------------------------------------
 Compatibility is a bit on the tough side with this mod since all mods assume Imoen is being taken at the Waukeen's Promenade fight and stays in Irenicus' grasps until the PC reaches Spellhold. I hope more mods will be made compatible with Imoen 4 Ever in the near future.
 In general: There should be no problem with mods that do not introduce talking NPCs in chapter 2 or 3, i.e. all mods with content that either do not include NPCs or where the content kicks in after going to Brynnlaw, e.g. NPC mods starting in the Underdark or ToB mods.
 
-As of 08/19/20, the mod is compatible with the following mods that add dialogues with Imoen etc. in chapter 2&3:
+As of 09/01/20, the mod is compatible with the following mods that add dialogues with Imoen and/or content about Imoen in chapter 2&3:
     Afaaq, the Djinni Companion for BG2 and BG2:EE
     Ajantis NPC for BGII
     Almateria's Restauration Project "Extended Waukeen's Promenade Cutscene" (independent of installation order)
     Alternatives (independent of installation order)
     Ascalon's Breagar NPC
     Edwin Romance
+    IEP Banters Mod (v5.7 or higher)
+    Imoen Friendship (v3.6 or higher)
     NPC Strongholds as of v8.1
     Tweaks Anthology "Faster Chapter 1&2 Cut-Scenes & Dreams" (component "Convenience Tweaks and/or Cheats") if Tweak Anthology is installed after.
     Unfinished Business as of v28beta
@@ -227,17 +243,22 @@ NPC talk to Imoen after Spellhold and explicitely address the fact that she was 
 
 Modder compatibility notes for SoD:
 ------------------------------------
-For detection of Imoen4Ever, the component "Imoen remains in the Group in SoD" sets a variable Global("C#IM_ImoenInSoD","GLOBAL",1) in both Thieves' Maze and Ducal Palace third floor (bd0103.bcs).
+For detection of Imoen4Ever, the component "Imoen remains in the Group in SoD" sets a variable Global("C#IM_ImoenInSoD","GLOBAL",1) in both Undercity area and Ducal Palace third floor (bd0103.bcs).
 If your mod NPC talks in Korlasz' Crypt about Imoen having joined Duke Jannath, please check whether Imoen might be in group, first.
 
 The component "Imoen returns to PC in first camp bd1000" sets a variable 
-Global("C#IM_ImoenComesBackSoD","GLOBAL",1) also in both Thieves' Maze and Ducal Palace third floor (bd0103.bcs) for detection whether Imoen returned to the PC.
+Global("C#IM_ImoenComesBackSoD","GLOBAL",1) also in both Undercity area and Ducal Palace third floor (bd0103.bcs) for detection whether Imoen returned to the PC.
 This should be helpful in case Imoen came back but was not taken into party but is waiting in the camp.
+
 
 
 CREDITS
 
-Acifer - promotion picture, beta testing
+Acifer - promotion picture, beta testing, mod name
+
+Argent77 - coding help for non-destructive ADD_TRANS_TRIGGER patching
+
+Lauriel - proof reading (English)
 
 memory - Polish translation
 
@@ -273,8 +294,14 @@ REDISTRIBUTION NOTE: Imoen 4 Ever Mod was created to be freely enjoyed by all Ba
 HISTORY
 
 Version 5:
+
 -Added SoD content
+
 -Changed mod organization to more optional components
+-More dialogues in BGII added (optional).
+-Content compatibility with Imoen Friendship mod added.
+-more reply options referring to Imoen missing disabled
+-patching of reply options will be done for the relevant strings only (no destructive patching). Thank you to Argent77 for the coding help!
 
 Version 4:
 -detection variable whether Imoen will stay in the group in Korlasz' Dungeon should be applied to the correct script (cpmvar.tpas should be read in)

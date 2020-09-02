@@ -1,7 +1,7 @@
 /* bdimoen_cleanup.d */
 @0   = ~Ja, das war ein Scherz, 'tschuldige. Glint ist weggegangen, er erwähnte irgendwelche dringenden Familienangelegenheiten, um die er sich kümmern müsste.~
 @1   = ~<CHARNAME>! Das wär gemein! So gemein sind wir nicht, oder?~
-@2   = ~Iih, die Zwerge für den Leichnam töten? Das machen wir aber nicht, <CHARNAME>, oder?~
+@2   = ~Iiih, die Zwerge für den Leichnam töten? Das machen wir aber nicht, <CHARNAME>, oder?~
 @3   = ~Oh, nein! Der Arme. Er war so nett! Naja, bis darauf, dass er all unser Gold vertrödelt hat, natürlich... Das ist so traurig!~
 
 /* bdimoenj_additions.d */
@@ -25,7 +25,7 @@
 @67  = ~Na und? Ich habe gewonnen, und wir haben uns einen Kampf gespart.~
 @68  = ~Oh, wie wär's wenn du dann mit deiner eigenen Seele spielst, hm?~
 @69  = ~Eine Sache ist jedenfalls sicher, du Dummkopf. Da ich nicht vorhabe, von deiner Seite zu weichen, wird der Teufel, wenn er kommt um meine Seele zu holen, auch dein Problem sein. Du wirst also noch die Gelegenheit haben, das wieder gut zu machen, wenn das Ding wieder auftaucht.~
-@70  = ~Neh, so funktioniert das nicht. Wir müssen doch aufeinander aufpassen! Es ist doch niemand sonst da, der das tun könnte.~
+@70  = ~Nee, so funktioniert das nicht. Wir müssen doch aufeinander aufpassen! Es ist doch niemand sonst da, der das tun könnte.~
 @71  = ~<CHARNAME>! Eine Seele an den Teufel zu verspielen war nicht nett.~ [c#ablank]
 @72  = ~Ja, ich weiß. Ich wollte uns einen Kampf ersparen.~
 @73  = ~Neh, so funktioniert das nicht. Wir müssen doch aufeinander aufpassen! Dafür sind wir doch zusammen unterwegs, oder etwa nicht?~
@@ -40,3 +40,42 @@
 @82  = ~Ich wollte ihn nicht bekämpfen. Nun kann ich stärker werden, bevor der Teufel wiederkommt.~
 @83  = ~Ich wollte ihn nicht bekämpfen.~
 @84  = ~Wir zwei, für immer zusammen! So soll es sein.~
+@85  = ~Ich weiß nicht, irgendwie macht das keinen Spaß mehr.~
+@86  = ~Von Auftragsmördern himgesucht zu werden? Finde ich auch.~
+@87  = ~Wieder die Welt retten zu müssen? Da hast du Recht.~
+@88  = ~Was wir hier machen halte ich aber für sehr wichtig, Imoen.~
+@89  = ~Wovon genau sprichst du?~
+@90  = ~Nein! Ich meine - ja, das auch. Aber darauf habe ich mich nicht bezogen.~
+@91  = ~Ich sprach vom... Erleichtern der Leute von Dingen, die sie, äh, bestimmt nicht vermissen werden.~
+@92  = ~Du bestiehlst die Flüchtlinge? Hast du kein Schamgefühl?~
+@93  = ~Entwende bitte nichts von unseren Verbündeten. Das könnte zu Missverständnissen führen.~
+@94  = ~Was höre ich da? Schwörst du etwa deinen diebischen Gepflogenheiten ab? Das ist neu. Herzogin Jannath hat dir wohl gehörig den Kopf gewaschen, hm?~
+@95  = ~Taschendiebstahl macht dir keinen Spaß mehr? Ich glaube, dir geht es wirklich nicht gut.~ 
+@96  = ~Ja, ich verstehe, was du meinst. In leeren Taschen findet man eben nicht viel.~
+@97  = ~Aber genau das meine ich doch!~
+@98  = ~Natü... Ich meine, man muss ja in Übung bleiben, nicht wahr?~
+@99  = ~Aber bereicher dich nicht bei unseren Verbündeten, Imoen. Das könnte zu Missverständnissen führen.~
+@100  = ~Ehrlich gesagt kümmern mich deine Probleme in diesem Fall nicht.~
+@101  = ~Uih... das ist ja eine tolle Idee! Daran hatte ich noch gar nicht gedacht. Naja gut, schon ein bisschen.~
+@102  = ~Aber *irgendwas* muss ich machen, sonst bin ich ratzfatz aus der Übung! Oh! Oh! Ich habe eine großartige Idee. Ich tu einfach alles, was ich im Camp klaue, einem Flüchtling in die Tasche! Heh, jetzt guck' nicht so. Du hast gesagt, ich soll mich nicht bereichern, und das tue ich ja auch nicht, oder? Ich tue damit was Gutes - *und* bleibe in der Übung. Also los, dann lass uns weiter wieder die Welt retten!~
+@103  = ~Du meinst im Camp?... Daran hatte ich noch gar nicht gedacht. Naja gut, schon ein bisschen.~
+@104  = ~Was? Neeeein. Das würde ich *nie* tun. Obwohl Herzogin Jannath in der Tat recht einschüchternd sein kann...~
+@105  = ~Deren Taschen sind einfach nur leer, da gibt's nichts drin zu finden. Und manche sind innen auch noch schmierig, igitt!~
+@106  = ~Also *hast* du versucht, bei den Flüchtlingen zu stehlen!~
+@107  = ~Imoen! Wir sind dabei, uns einer mordenden und plündernden Horde entgegen zu stellen und das ist alles, woran du denkst?~
+@108  = ~Och, mit dir macht das keinen Spaß. Vielleicht sollte ich anfangen, dir Steine in die Taschen zu schmuggeln. Das würde mich zumindest geübt halten!~
+@109  = ~Ich bezog mich auf die Flüchtlinge.~
+@110  = ~Was? Neeeein. Nein, nein.~
+@111  = ~Was erwartest du denn bei armen Flüchtlingen? Du musst dich an unsere aufgeblasenen "Freunde" im Camp halten, was denn sonst.~
+@112  = ~Huch, daran hatte ich noch gar nicht gedacht. Scheint so, als hätte Liia mich *wirklich* ein bisschen verdreht! Das ändert aber nichts an den traurig leeren Taschen der Flüchtlinge. Hmm.~
+@113  = ~Oh! Oh! Ich habe eine großartige Idee. Ich tu einfach alles, was ich im Camp stehle, einem Flüchtling in die Tasche! Heh, jetzt guck' nicht so. Du hast gesagt, ich soll im Camp klauen und das tu ich ja auch. Und obendrein tue ich noch was Gutes, *und* bleibe gleichzeitig in Übung! Also los, dann lass uns weiter wieder die Welt retten.~
+@114  = ~Hast du verstanden, warum der Dämon meine Seele so interessant fand?~
+@115  = ~Nein, aber mir war das auch aufgefallen, wie er das gesagt hat. Als würdest du einen Extrabonus mitbringen.~
+@116  = ~Woher soll ich das wissen?~
+@117  = ~Vielleicht mag er kleine Menschenmädchen besonders gern.~
+@118  = ~Ich möchte nicht darüber sprechen.~
+@119  = ~Haha.~
+@120  = ~So viel kleiner als du bin ich nicht, weißt du.~
+@121  = ~Wirklich seltsam... Naja.~
+@122  = ~Sein Versprecher war lustig. "Kleine Schwester"... Er muss einfach gemerkt haben, dass wir richtig dicke Freunde sind. Vielleicht dachte er dann, dass er deine Seele auch gleich mit holen kann!~
+@123  = ~Igitt. Die Bemerkung *wäre* witzig, wenn du ihm nicht meine Seele verspielt hättest.~

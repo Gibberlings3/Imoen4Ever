@@ -1,3 +1,64 @@
+/* set dialogue timer after joining in bd1000 */
+IF
+	InParty(Myself)
+	GlobalGT("C#IM_ImoenRejoinsbd1000","GLOBAL",0)
+	Global("C#IM_DialogueTimerSoDSet","GLOBAL",0)
+THEN  
+	RESPONSE #100
+		RealSetGlobalTimer("C#IM_DialogueTimerSoD","GLOBAL",2400)
+		SetGlobal("C#IM_DialogueSoD","GLOBAL",1)
+		SetGlobal("C#IM_DialogueTimerSoDSet","GLOBAL",1)
+END
+
+
+/* refugees have empty pockets */
+/* skip if Imoen is not a thief */
+IF 
+    RealGlobalTimerExpired("C#IM_DialogueTimer","GLOBAL")
+    Global("C#IM_DialogueSoD","GLOBAL",1)
+    !Class(Myself,THIEF_ALL)
+    InParty(Myself)
+    !Detect([ENEMY])
+    !Detect([EVILBUTBLUE])
+    CombatCounter(0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#IM_DialogueSoD","GLOBAL",3)
+END
+
+/* activate */
+IF 
+    RealGlobalTimerExpired("C#IM_DialogueTimer","GLOBAL")
+    Global("C#IM_DialogueSoD","GLOBAL",1)
+    Class(Myself,THIEF_ALL)
+    InParty(Myself)
+    !StateCheck(Player1,CD_STATE_NOTVALID)
+    !StateCheck(Myself,CD_STATE_NOTVALID)
+    See(Player1)
+    !Detect([ENEMY])
+    !Detect([EVILBUTBLUE])
+    CombatCounter(0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#IM_DialogueSoD","GLOBAL",2)
+END
+
+/* initiate */
+IF 
+  Global("C#IM_DialogueSoD","GLOBAL",2) 
+  !StateCheck(Player1,CD_STATE_NOTVALID)
+  !StateCheck(Myself,CD_STATE_NOTVALID)
+    See(Player1)
+    !Detect([ENEMY])
+    !Detect([EVILBUTBLUE])
+    CombatCounter(0)
+THEN
+	RESPONSE #100
+		StartDialogueNoSet(Player1)
+END
+
+
+
 /* Reaction to the destroyed Bridge at Coastway Crossing */
 IF
 	GlobalTimerNotExpired("bd_caelar_timer","bd1000")
@@ -94,7 +155,7 @@ THEN
 		SetGlobal("C#Imoen_SoDThrix","GLOBAL",9)
 END
 
-/* PC offered own soul after other Imoen was chosen */
+/* PC offered own soul after Imoen was chosen */
 
 IF
 	IsValidForPartyDialogue(Myself)
@@ -132,3 +193,38 @@ THEN
 	RESPONSE #100
 		StartDialogNoSet(Player1)
 END
+
+/* Follow up to Thrix: why would my soul be special? */
+
+IF
+	IsValidForPartyDialogue(Myself)
+	See(Player1)
+	CombatCounter(0)
+	!See([ENEMY])
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	!StateCheck(PLAYER1,CD_STATE_NOTVALID)
+	GlobalGT("C#Imoen_SoDThrix","GLOBAL",0)
+	!AreaCheck("bd4500")
+	!AreaCheck("bd4700")
+	!See("bdaun")
+	!See("bddelanc")
+	Global("C#Imoen_SoDThrixSoul","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#Imoen_SoDThrixSoul","GLOBAL",1)
+END
+
+/* trigger */
+IF
+	IsValidForPartyDialogue(Myself)
+	See(Player1)
+	CombatCounter(0)
+	!See([ENEMY])
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	!StateCheck(PLAYER1,CD_STATE_NOTVALID)
+	Global("C#Imoen_SoDThrixSoul","GLOBAL",1)	
+THEN
+	RESPONSE #100
+		StartDialogNoSet(Player1)
+END
+

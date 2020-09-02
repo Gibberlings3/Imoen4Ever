@@ -31,6 +31,7 @@ ALWAYS
   END
 
   INCLUDE ~imoen_forever/lib/extra_regexp_vars.tph~
+  INCLUDE ~imoen_forever/lib/get_respone_sstrrefs.tph~
 
   ACTION_IF GAME_IS ~bgt~ THEN BEGIN
     INCLUDE ~imoen_forever/lib/g3_bgt_cpmvars.tpa~ 
@@ -251,7 +252,10 @@ ACTION_IF GAME_IS ~bg2ee eet~ THEN BEGIN
   COMPILE EVALUATE_BUFFER ~imoen_forever/dialogue/npc_ee.d~
 END
 
-COMPILE EVALUATE_BUFFER ~imoen_forever/dialogue/general.d~
+/* disable all instances where the player asks for kidnapped Imoen, but do it non-destructively. Thank you argent77 for the code! */
+INCLUDE ~imoen_forever/tpa/add_trans_trigger_general.tpa~
+
+
 
 INCLUDE ~imoen_forever/tpa/string_set.tpa~
 
@@ -420,9 +424,24 @@ COPY_EXISTING ~movie03d.bcs~ ~override~
 
 
 
+/* compatibility: Imoen Friendship mod (first dialogue should be skipped) */
+
+<<<<<<<< .../inlined/if_comp.baf
+IF
+    Global("I#ImoenFriendshipTalks","GLOBAL",1)
+    Global("C#IM_ImoenStays","GLOBAL",3)
+THEN
+  RESPONSE #100
+    SetGlobal("I#ImoenFriendshipTalks","GLOBAL",3)
+END
+>>>>>>>>
+
+EXTEND_TOP ~imoen2.bcs~ ~.../inlined/if_comp.baf~ EVALUATE_BUFFER
+
+
 ////////////////////////////////////////////////////////////////////////
 //////
-////// BGII content: ~Give Imoen dialogue content in chapter 2 & 3~
+////// BGII content: ~Give Imoen dialogue content in SoA~
 //////
 ////////////////////////////////////////////////////////////////////////
 
@@ -431,24 +450,12 @@ REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-imoen_forever.TP2~ "0") @9913
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet bgt tob~ @9905 
 REQUIRE_PREDICATE ((GAME_IS ~bg2ee eet~) OR (MOD_IS_INSTALLED ~setup-bg2fixpack.TP2~ "0")) @9901 
 
-
-/* add some lines referring to Imoen being set free */
-/* ----removed for compatibility reasons: Faster chapter 1&2 cutscenes and dreams TweaksAnthology
-/* Imoen gets another line in the Government Building. No "Silence, child" without a reaction! */
-
-COPY_EXISTING ~movie01B.bcs~ ~override~
-  DECOMPILE_AND_PATCH BEGIN
-    REPLACE_TEXTUALLY ~\(DisplayStringWait("cujon",38738)\)~ 
-		~\1 DisplayStringWait("cuimoen",@1083)~
-  END
-  BUT_ONLY_IF_IT_CHANGES
---- */
-
 /* "I... er, found some things while they removed the belt. Don't look at me like that! It's not my fault they don't watch their stuff properly, is it?" */
 
 COMPILE EVALUATE_BUFFER ~imoen_forever/dialogue/c#im_imoen2j.d~
 
 EXTEND_BOTTOM ~imoen2.bcs~ ~imoen_forever/baf/imoen_imoen2_2.baf~ EVALUATE_BUFFER
+
 
 
 ////////////////////////////////////////////////////////////////////////
@@ -478,7 +485,7 @@ COMPILE EVALUATE_BUFFER ~imoen_forever/dialogue/yoshimo_brynnlaw.d~ USING ~imoen
 
 ////////////////////////////////////////////////////////////////////////
 //////
-////// BGII content: ~Give Imoen protection spell in chapter 2 & 3~
+////// BGII content: ~Give Imoen protection spell in Chapters 2 & 3~
 //////
 ////////////////////////////////////////////////////////////////////////
 
@@ -655,7 +662,7 @@ THEN
 		SetGlobal("C#IM_ImoenInSoD","GLOBAL",1)
 END
 >>>>>>>>
-EXTEND_BOTTOM ~%ThievesMaze%.bcs~ ~.../i4e_sod_detection.baf~ EVALUATE_BUFFER 
+EXTEND_BOTTOM ~%Undercity%.bcs~ ~.../i4e_sod_detection.baf~ EVALUATE_BUFFER 
 EXTEND_BOTTOM ~bd0103.bcs~ ~.../i4e_sod_detection.baf~ EVALUATE_BUFFER 
 
 
@@ -859,7 +866,7 @@ THEN
 		SetGlobal("C#IM_ImoenComesBackSoD","GLOBAL",1)
 END
 >>>>>>>>
-EXTEND_BOTTOM ~%ThievesMaze%.bcs~ ~.../i4e_sod_detection_2.baf~ EVALUATE_BUFFER 
+EXTEND_BOTTOM ~%Undercity%.bcs~ ~.../i4e_sod_detection_2.baf~ EVALUATE_BUFFER 
 EXTEND_BOTTOM ~bd0103.bcs~ ~.../i4e_sod_detection_2.baf~ EVALUATE_BUFFER 
 
 
