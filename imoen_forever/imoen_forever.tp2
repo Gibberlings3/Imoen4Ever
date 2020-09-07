@@ -89,6 +89,7 @@ ACTION_IF GAME_IS ~bgee~ THEN BEGIN
   OUTER_SPRINT ~35345~ ~35345~
   OUTER_SPRINT ~35347~ ~35347~
   OUTER_SPRINT ~35350~ ~35350~
+  OUTER_SPRINT ~38886~ ~38886~
   OUTER_SPRINT ~39753~ ~39753~
   OUTER_SPRINT ~39771~ ~39771~
   OUTER_SPRINT ~52921~ ~52921~
@@ -102,10 +103,13 @@ ACTION_IF GAME_IS ~bgee~ THEN BEGIN
   OUTER_SPRINT ~55744~ ~55744~
   OUTER_SPRINT ~55745~ ~55745~
   OUTER_SPRINT ~55746~ ~55746~
+  OUTER_SPRINT ~56051~ ~56051~
   OUTER_SPRINT ~57089~ ~57089~
+  OUTER_SPRINT ~63916~ ~63916~
   OUTER_SPRINT ~63943~ ~63943~
   OUTER_SPRINT ~63944~ ~63944~
   OUTER_SPRINT ~63958~ ~63958~
+  OUTER_SPRINT ~63960~ ~63960~
   OUTER_SPRINT ~63974~ ~63974~
   OUTER_SPRINT ~63975~ ~63975~
   OUTER_SPRINT ~63976~ ~63976~
@@ -116,12 +120,15 @@ ACTION_IF GAME_IS ~bgee~ THEN BEGIN
   OUTER_SPRINT ~64522~ ~64522~
   OUTER_SPRINT ~64524~ ~64524~
   OUTER_SPRINT ~64525~ ~64525~
+  OUTER_SPRINT ~65051~ ~65051~
   OUTER_SPRINT ~66315~ ~66315~
   OUTER_SPRINT ~66358~ ~66358~
   OUTER_SPRINT ~66750~ ~66750~
   OUTER_SPRINT ~66751~ ~66751~
   OUTER_SPRINT ~69021~ ~69021~
+  OUTER_SPRINT ~69732~ ~69732~
   OUTER_SPRINT ~69736~ ~69736~
+  OUTER_SPRINT ~70436~ ~70436~
 END
 
 ACTION_IF GAME_IS ~eet~ THEN BEGIN
@@ -133,6 +140,7 @@ ACTION_IF GAME_IS ~eet~ THEN BEGIN
   OUTER_SPRINT ~35302~ ~235302~
   OUTER_SPRINT ~35304~ ~235304~
   OUTER_SPRINT ~35323~ ~235323~
+  OUTER_SPRINT ~38886~ ~238886~
   OUTER_SPRINT ~39771~ ~239771~
   OUTER_SPRINT ~35320~ ~235320~
   OUTER_SPRINT ~35321~ ~235321~
@@ -155,10 +163,13 @@ ACTION_IF GAME_IS ~eet~ THEN BEGIN
   OUTER_SPRINT ~55744~ ~255744~
   OUTER_SPRINT ~55745~ ~255745~
   OUTER_SPRINT ~55746~ ~255746~
+  OUTER_SPRINT ~56051~ ~256051~
   OUTER_SPRINT ~57089~ ~257089~
+  OUTER_SPRINT ~63916~ ~263916~
   OUTER_SPRINT ~63943~ ~263943~
   OUTER_SPRINT ~63944~ ~263944~
   OUTER_SPRINT ~63958~ ~263958~
+  OUTER_SPRINT ~63960~ ~263960~
   OUTER_SPRINT ~63974~ ~263974~
   OUTER_SPRINT ~63975~ ~263975~
   OUTER_SPRINT ~63976~ ~263976~
@@ -169,12 +180,15 @@ ACTION_IF GAME_IS ~eet~ THEN BEGIN
   OUTER_SPRINT ~64522~ ~264522~
   OUTER_SPRINT ~64524~ ~264524~
   OUTER_SPRINT ~64525~ ~264525~
+  OUTER_SPRINT ~65051~ ~265051~
   OUTER_SPRINT ~66315~ ~266315~
   OUTER_SPRINT ~66358~ ~266358~
   OUTER_SPRINT ~66750~ ~266750~
   OUTER_SPRINT ~66751~ ~266751~
   OUTER_SPRINT ~69021~ ~269021~
+  OUTER_SPRINT ~69732~ ~269732~
   OUTER_SPRINT ~69736~ ~269736~
+  OUTER_SPRINT ~70436~ ~270436~
 END
 
 
@@ -252,7 +266,10 @@ ACTION_IF GAME_IS ~bg2ee eet~ THEN BEGIN
   COMPILE EVALUATE_BUFFER ~imoen_forever/dialogue/npc_ee.d~
 END
 
+COMPILE EVALUATE_BUFFER ~imoen_forever/dialogue/general.d~
+
 /* disable all instances where the player asks for kidnapped Imoen, but do it non-destructively. Thank you argent77 for the code! */
+INCLUDE ~imoen_forever/tpa/add_trans_trigger_npc.tpa~
 INCLUDE ~imoen_forever/tpa/add_trans_trigger_general.tpa~
 
 
@@ -665,6 +682,8 @@ END
 EXTEND_BOTTOM ~%Undercity%.bcs~ ~.../i4e_sod_detection.baf~ EVALUATE_BUFFER 
 EXTEND_BOTTOM ~bd0103.bcs~ ~.../i4e_sod_detection.baf~ EVALUATE_BUFFER 
 
+/* disable all instances that make no sense for Imoen in party, but do it non-destructively. Thank you argent77 for the code! */
+INCLUDE ~imoen_forever/tpa/add_trans_trigger_imoen_in_kd.tpa~
 
 COMPILE ~imoen_forever/ImoenInGroupKD/Imoen_in_group_KD.d~ EVALUATE_BUFFER
 COMPILE ~imoen_forever/ImoenInGroupKD/c#stimoe.baf~ EVALUATE_BUFFER
@@ -975,6 +994,9 @@ COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/sod_rejoin/bdimoens.d~
 COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/sod_rejoin/bdimoenp.d~ 
 COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/sod_rejoin/bdimoen_cleanup.d~ USING ~imoen_forever/tra/%LANGUAGE%/bdimoenj.TRA~ 
 
+/* Prevent Imoen in the Scrying Pool in bd1200.are: do it non-destructively. Thank you argent77 for the code! */
+INCLUDE ~imoen_forever/tpa/add_trans_trigger_scrying_pool_cleanup.tpa~
+
 
 
 ///////////////////////////////////////////////////////////////////
@@ -1073,6 +1095,7 @@ EVALUATE_BUFFER
 
 
 COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/sod_rejoin/bdimoenj_additions.d~ USING ~imoen_forever/tra/%LANGUAGE%/bdimoenj.TRA~ 
+
 
 
 

@@ -56,9 +56,9 @@
 @98  = ~Natü... Ich meine, man muss ja in Übung bleiben, nicht wahr?~
 @99  = ~Aber bereicher dich nicht bei unseren Verbündeten, Imoen. Das könnte zu Missverständnissen führen.~
 @100  = ~Ehrlich gesagt kümmern mich deine Probleme in diesem Fall nicht.~
-@101  = ~Uih... das ist ja eine tolle Idee! Daran hatte ich noch gar nicht gedacht. Naja gut, schon ein bisschen.~
+@101  = ~<CHARNAME>! Ich bin doch nicht blöd und klau im Camp! Und lass mich dabei erwischen, meine ich... Guck nicht so! Niemand wird was Wichtiges vermissen, darauf kannst du dich verlassen.~
 @102  = ~Aber *irgendwas* muss ich machen, sonst bin ich ratzfatz aus der Übung! Oh! Oh! Ich habe eine großartige Idee. Ich tu einfach alles, was ich im Camp klaue, einem Flüchtling in die Tasche! Heh, jetzt guck' nicht so. Du hast gesagt, ich soll mich nicht bereichern, und das tue ich ja auch nicht, oder? Ich tue damit was Gutes - *und* bleibe in der Übung. Also los, dann lass uns weiter wieder die Welt retten!~
-@103  = ~Du meinst im Camp?... Daran hatte ich noch gar nicht gedacht. Naja gut, schon ein bisschen.~
+@103  = ~~
 @104  = ~Was? Neeeein. Das würde ich *nie* tun. Obwohl Herzogin Jannath in der Tat recht einschüchternd sein kann...~
 @105  = ~Deren Taschen sind einfach nur leer, da gibt's nichts drin zu finden. Und manche sind innen auch noch schmierig, igitt!~
 @106  = ~Also *hast* du versucht, bei den Flüchtlingen zu stehlen!~
@@ -67,7 +67,7 @@
 @109  = ~Ich bezog mich auf die Flüchtlinge.~
 @110  = ~Was? Neeeein. Nein, nein.~
 @111  = ~Was erwartest du denn bei armen Flüchtlingen? Du musst dich an unsere aufgeblasenen "Freunde" im Camp halten, was denn sonst.~
-@112  = ~Huch, daran hatte ich noch gar nicht gedacht. Scheint so, als hätte Liia mich *wirklich* ein bisschen verdreht! Das ändert aber nichts an den traurig leeren Taschen der Flüchtlinge. Hmm.~
+@112  = ~<CHARNAME>! Hälst du mich für blöd? Das weiß ich doch selbst. Das ändert aber nichts an den traurig leeren Taschen der Flüchtlinge. Hmm.~
 @113  = ~Oh! Oh! Ich habe eine großartige Idee. Ich tu einfach alles, was ich im Camp stehle, einem Flüchtling in die Tasche! Heh, jetzt guck' nicht so. Du hast gesagt, ich soll im Camp klauen und das tu ich ja auch. Und obendrein tue ich noch was Gutes, *und* bleibe gleichzeitig in Übung! Also los, dann lass uns weiter wieder die Welt retten.~
 @114  = ~Hast du verstanden, warum der Dämon meine Seele so interessant fand?~
 @115  = ~Nein, aber mir war das auch aufgefallen, wie er das gesagt hat. Als würdest du einen Extrabonus mitbringen.~

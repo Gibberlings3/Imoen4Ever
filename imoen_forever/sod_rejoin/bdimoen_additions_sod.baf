@@ -14,7 +14,7 @@ END
 /* refugees have empty pockets */
 /* skip if Imoen is not a thief */
 IF 
-    RealGlobalTimerExpired("C#IM_DialogueTimer","GLOBAL")
+    RealGlobalTimerExpired("C#IM_DialogueTimerSoD","GLOBAL")
     Global("C#IM_DialogueSoD","GLOBAL",1)
     !Class(Myself,THIEF_ALL)
     InParty(Myself)
@@ -28,7 +28,7 @@ END
 
 /* activate */
 IF 
-    RealGlobalTimerExpired("C#IM_DialogueTimer","GLOBAL")
+    RealGlobalTimerExpired("C#IM_DialogueTimerSoD","GLOBAL")
     Global("C#IM_DialogueSoD","GLOBAL",1)
     Class(Myself,THIEF_ALL)
     InParty(Myself)
@@ -120,7 +120,7 @@ IF
 	!StateCheck(PLAYER1,CD_STATE_NOTVALID)
 	!Global("C#Imoen_SoDThrix","GLOBAL",2)
 	!Global("C#Imoen_SoDThrix","GLOBAL",3)
-	GlobalLT("C#Imoen_SoDThrix","GLOBAL",7)
+	GlobalLT("C#Imoen_SoDThrixReaction","GLOBAL",7)
 	Global("bd_thrix_sacrifice_companion","global",1)
 	!Global("bd_thrix_sacrifice_self","global",1)
 	GlobalLT("bd_plot","global",550)
@@ -129,7 +129,7 @@ IF
 		Dead("bdthrix")  // Thrix
 THEN
 	RESPONSE #100
-		SetGlobal("C#Imoen_SoDThrix","GLOBAL",7)
+		SetGlobal("C#Imoen_SoDThrixReaction","GLOBAL",7)
 END
 
 /* PC offered own soul after other NPC was chosen */
@@ -144,7 +144,7 @@ IF
 	!Global("C#Imoen_SoDThrix","GLOBAL",1)
 	!Global("C#Imoen_SoDThrix","GLOBAL",2)
 	!Global("C#Imoen_SoDThrix","GLOBAL",3)
-	GlobalLT("C#Imoen_SoDThrix","GLOBAL",8)
+	GlobalLT("C#Imoen_SoDThrixReaction","GLOBAL",8)
 	Global("bd_thrix_sacrifice_self","global",1)
 	GlobalLT("bd_plot","global",550)
 	OR(2)
@@ -152,7 +152,7 @@ IF
 		Dead("bdthrix")  // Thrix
 THEN
 	RESPONSE #100
-		SetGlobal("C#Imoen_SoDThrix","GLOBAL",9)
+		SetGlobal("C#Imoen_SoDThrixReaction","GLOBAL",9)
 END
 
 /* PC offered own soul after Imoen was chosen */
@@ -184,9 +184,9 @@ IF
 	!StateCheck(Myself,CD_STATE_NOTVALID)
 	!StateCheck(PLAYER1,CD_STATE_NOTVALID)
 	OR(5)
-		Global("C#Imoen_SoDThrix","GLOBAL",9)
+		Global("C#Imoen_SoDThrixReaction","GLOBAL",9)
 		Global("C#Imoen_SoDThrix","GLOBAL",8)
-		Global("C#Imoen_SoDThrix","GLOBAL",7)
+		Global("C#Imoen_SoDThrixReaction","GLOBAL",7)
 		Global("C#Imoen_SoDThrix","GLOBAL",6)
 		Global("C#Imoen_SoDThrix","GLOBAL",5)		
 THEN
@@ -204,8 +204,8 @@ IF
 	!StateCheck(Myself,CD_STATE_NOTVALID)
 	!StateCheck(PLAYER1,CD_STATE_NOTVALID)
 	GlobalGT("C#Imoen_SoDThrix","GLOBAL",0)
-	!AreaCheck("bd4500")
-	!AreaCheck("bd4700")
+//	!AreaCheck("bd4500")
+//	!AreaCheck("bd4700")
 	!See("bdaun")
 	!See("bddelanc")
 	Global("C#Imoen_SoDThrixSoul","GLOBAL",0)

@@ -29,7 +29,7 @@ END
 
 /* Thrix's game */
 
-ADD_TRANS_TRIGGER BDTHRIX 13 ~!IsValidForPartyDialogue("%IMOEN_DV_SOD%")~ DO 1
+ ADD_TRANS_TRIGGER BDTHRIX 13 ~!IsValidForPartyDialogue("%IMOEN_DV_SOD%")~ DO 2 IF ~!Is?f?ValidForPartyDialogue("Rasaad")~
 
 
 /* Thrix will chose Imoen first. Her soul is too attractive! */
@@ -75,15 +75,17 @@ END //APPEND
 
 /*
 
-Global("C#Imoen_SoDThrix","GLOBAL",1): -> 8 PC declined Thrix' choice of Imoen and chose own soul
 
 Global("C#Imoen_SoDThrix","GLOBAL",2)-> 5: PC agreed on Imoen's soul before the riddle
 
 Global("C#Imoen_SoDThrix","GLOBAL",3)-> 6: PC agreed on Imoen's soul before the riddle and did not fight for Imoen after riddle was lost
 
--> 7: PC let soul of other NPC be chosen
+Global("C#Imoen_SoDThrix","GLOBAL",1): -> 8 PC declined Thrix' choice of Imoen and chose own soul
 
--> 9: PC chose their own soul
+
+-> Global("C#Imoen_SoDThrixReaction","GLOBAL",7): PC let soul of other NPC be chosen (no check whether Imoen was first choice)
+
+-> Global("C#Imoen_SoDThrixReaction","GLOBAL",9): PC chose their own soul (Imoen was not chosen)
 
 */
 
@@ -108,6 +110,7 @@ IF WEIGHT #-1
 Global("C#Imoen_SoDThrix","GLOBAL",6)
 Global("C#Imoen_SoDThrix","GLOBAL",5)~ THEN bdimoen after_thrix
 @61 /* ~<CHARNAME>! Gambling my soul to that demon was not nice. When I said that I'd be always there for you I surely meant it differently!~ [c#ablank] */
+DO ~SetGlobal("C#Imoen_SoDThrix","GLOBAL",10)~ 
 == bdimoen IF ~Global("C#Imoen_SoDThrix","GLOBAL",5)~ THEN @62 /* ~I know you tried to reverse it, but the damage was done already, ya know.~ */ 
 END
 + ~!Global("BD_Thrix_riddle_won","GLOBAL",1)~ + @63 /* ~I'm sorry, Imoen. I wanted to spare a fight.~ */ + after_thrix_01
@@ -126,7 +129,7 @@ END
 
 IF ~~ THEN after_thrix_02
 SAY @69 /* ~Well, one thing is sure, you dummy. Since I won't leave your side, the fiend coming after *me* will also be your problem, just as well. So you still have a chance to make this right, next time we meet this thing.~ */
-IF ~~ THEN DO ~SetGlobal("C#Imoen_SoDThrix","GLOBAL",11)~ EXIT
+IF ~~ THEN EXIT
 END
 
 IF ~~ THEN after_thrix_03
@@ -135,13 +138,13 @@ IF ~~ THEN + after_thrix_02
 END
 
 IF WEIGHT #-1
-~Global("C#Imoen_SoDThrix","GLOBAL",7)~ THEN after_thrix_04
+~Global("C#Imoen_SoDThrixReaction","GLOBAL",7)~ THEN after_thrix_04
 SAY @71 /* ~<CHARNAME>! Gambling a soul to that demon was not nice.~ [c#ablank] */
-+ ~!Global("BD_Thrix_riddle_won","GLOBAL",1)~ + @72 /* ~Yes, I know. I wanted to spare a fight.~ */ + after_thrix_01
-+ ~!Global("BD_Thrix_riddle_won","GLOBAL",1)~ + @64 /* ~I couldn't take that whole game serious, sorry.~ */ + after_thrix_01
-+ ~!Global("BD_Thrix_riddle_won","GLOBAL",1)~ + @65 /* ~I'm not responsible for everyone's safety, Imoen. You get yourself into danger, you get hurt.~ */  + after_thrix_05
-+ ~Global("BD_Thrix_riddle_won","GLOBAL",1)~ + @66 /* ~I agree it was a high risk. I'm sorry.~ */ + after_thrix_07
-+ ~Global("BD_Thrix_riddle_won","GLOBAL",1)~ + @67 /* ~So what, I won, and we spared a fight.~ */ + after_thrix_07
++ ~!Global("BD_Thrix_riddle_won","GLOBAL",1)~ + @72 /* ~Yes, I know. I wanted to spare a fight.~ */ DO ~SetGlobal("C#Imoen_SoDThrixReaction","GLOBAL",10)~ + after_thrix_01
++ ~!Global("BD_Thrix_riddle_won","GLOBAL",1)~ + @64 /* ~I couldn't take that whole game serious, sorry.~ */ DO ~SetGlobal("C#Imoen_SoDThrixReaction","GLOBAL",10)~ + after_thrix_01
++ ~!Global("BD_Thrix_riddle_won","GLOBAL",1)~ + @65 /* ~I'm not responsible for everyone's safety, Imoen. You get yourself into danger, you get hurt.~ */  DO ~SetGlobal("C#Imoen_SoDThrixReaction","GLOBAL",10)~ + after_thrix_05
++ ~Global("BD_Thrix_riddle_won","GLOBAL",1)~ + @66 /* ~I agree it was a high risk. I'm sorry.~ */ DO ~SetGlobal("C#Imoen_SoDThrixReaction","GLOBAL",10)~ + after_thrix_07
++ ~Global("BD_Thrix_riddle_won","GLOBAL",1)~ + @67 /* ~So what, I won, and we spared a fight.~ */ DO ~SetGlobal("C#Imoen_SoDThrixReaction","GLOBAL",10)~ + after_thrix_07
 END
 
 IF ~~ THEN after_thrix_05
@@ -151,17 +154,17 @@ END
 
 IF ~~ THEN after_thrix_06
 SAY @74 /* ~Well, one thing is sure, you dummy. Since I won't leave your side, the fiend coming after *you* will also be my problem. You won't have to face this thing alone!~ */
-IF ~~ THEN DO ~SetGlobal("C#Imoen_SoDThrix","GLOBAL",12)~ EXIT
+IF ~~ THEN EXIT
 END
 
 IF ~~ THEN after_thrix_07
 SAY @75 /* ~Luckily, you won and the danger is over.~ */
-IF ~~ THEN DO ~SetGlobal("C#Imoen_SoDThrix","GLOBAL",10)~ EXIT
+IF ~~ THEN EXIT
 END
 
 IF ~~ THEN after_thrix_08
 SAY @76 /* ~This scared me, <CHARNAME>. I don't like it if you are so mean.~ */
-IF ~~ THEN DO ~SetGlobal("C#Imoen_SoDThrix","GLOBAL",13)~ EXIT
+IF ~~ THEN EXIT
 END
 
 END //APPEND
@@ -170,19 +173,21 @@ CHAIN
 IF WEIGHT #-1
 ~OR(2)
 Global("C#Imoen_SoDThrix","GLOBAL",8)
-Global("C#Imoen_SoDThrix","GLOBAL",9)~ THEN bdimoen after_thrix_09
+Global("C#Imoen_SoDThrixReaction","GLOBAL",9)~ THEN bdimoen after_thrix_09
 @77 /* ~You gave that thing your own soul!~ [c#ablank] */
+DO ~SetGlobal("C#Imoen_SoDThrixReaction","GLOBAL",10)~ 
 == bdimoen IF ~Global("C#Imoen_SoDThrix","GLOBAL",8)~ THEN @78 /* ~Instead of mine. I really, really *really* appreciate it.~ */
+DO ~SetGlobal("C#Imoen_SoDThrix","GLOBAL",10)~ 
 == bdimoen @79 /* ~But it was stupid! I think. Did you really have to do that?~ */
 END
 + ~!Global("BD_Thrix_riddle_won","GLOBAL",1)
 Global("C#Imoen_SoDThrix","GLOBAL",8)~ + @80 /* ~Noone's going after your soul, Imoen. Not while I'm breathing.~ */ + after_thrix_10
 + ~!Global("BD_Thrix_riddle_won","GLOBAL",1)
-Global("C#Imoen_SoDThrix","GLOBAL",9)~ + @81 /* ~Letting him take someone else's was out of the question.~ */ + after_thrix_06
+Global("C#Imoen_SoDThrixReaction","GLOBAL",9)~ + @81 /* ~Letting him take someone else's was out of the question.~ */ + after_thrix_06
 + ~!Global("BD_Thrix_riddle_won","GLOBAL",1)~ + @82 /* ~I didn't want to fight it. This way I can get stronger before it comes back to me.~ */ + after_thrix_06
 + ~Global("BD_Thrix_riddle_won","GLOBAL",1) Global("C#Imoen_SoDThrix","GLOBAL",8)~ + @80 /* ~Noone's going after your soul, Imoen. Not while I'm breathing.~ */ + after_thrix_10
 + ~Global("BD_Thrix_riddle_won","GLOBAL",1)
-Global("C#Imoen_SoDThrix","GLOBAL",9)~ + @81 /* ~Letting him take someone else's was out of the question.~ */ + after_thrix_07
+Global("C#Imoen_SoDThrixReaction","GLOBAL",9)~ + @81 /* ~Letting him take someone else's was out of the question.~ */ + after_thrix_07
 + ~Global("BD_Thrix_riddle_won","GLOBAL",1)~ + @83 /* ~I didn't want to fight it.~ */ + after_thrix_07
 
 APPEND bdimoen
@@ -191,6 +196,44 @@ IF ~~ THEN after_thrix_10
 SAY @84 /* ~We two, forever together! That's how it's going to be.~ */
 IF ~~ THEN + after_thrix_07
 IF ~!Global("BD_Thrix_riddle_won","GLOBAL",1)~ THEN + after_thrix_06
+END
+
+/* Thrix erwähnte Imoens besondere Seele */
+
+IF WEIGHT #-1
+~Global("C#Imoen_SoDThrixSoul","GLOBAL",1)~ THEN thrix_soul
+SAY @114 /* ~Hast du verstanden, warum der Dämon meine Seele so interessant fand?~ */
+++ @115 /* ~Nein, aber mir war das auch aufgefallen, wie er das gesagt hat. Als würdest du einen Extrabonus mitbringen.~ */ + thrix_soul_02
+++ @116 /* ~Woher soll ich das wissen?~ */ + thrix_soul_02
++ ~!Global("C#Imoen_SoDThrix","GLOBAL",11)~ + @117 /* ~Vielleicht mag er kleine Menschenmädchen besonders gern.~ */ + thrix_soul_01
++ ~Global("C#Imoen_SoDThrix","GLOBAL",11)~ + @117 /* ~Vielleicht mag er kleine Menschenmädchen besonders gern.~ */ + thrix_soul_04
+++ @118 /* ~Ich möchte nicht darüber sprechen.~ */ + thrix_soul_03
+END
+
+END //APPEND
+
+CHAIN
+IF ~~ THEN bdimoen thrix_soul_01
+@119 /* ~Haha, du Eulenbär.~ */
+== bdimoen IF ~Gender(Player1,FEMALE) Race(Player1,HUMAN)~ THEN @120 /* ~I'm not that much smaller than you, you know.~ */
+END 
+IF ~~ THEN + thrix_soul_02
+
+APPEND bdimoen
+
+IF ~~ THEN thrix_soul_02
+SAY @121 /* ~Wirklich seltsam... Naja.~ */
+IF ~~ THEN + thrix_soul_03
+END
+
+IF ~~ THEN thrix_soul_03
+SAY @122 /* ~Er muss einfach gemerkt haben, dass wir richtig dicke Freunde sind. Vielleicht dachte er dann, dass er deine Seele auch gleich mit holen kann!~ */
+IF ~~ THEN DO ~SetGlobal("C#Imoen_SoDThrixSoul","GLOBAL",2)~ EXIT
+END
+
+IF ~~ THEN thrix_soul_04
+SAY @123 /* ~Uh. Die Bemerkung *wäre* witzig, wenn du ihm nicht meine Seele verspielt hättest.~ */
+IF ~~ THEN + thrix_soul_02
 END
 
 
@@ -231,7 +274,7 @@ SAY @98 /* ~Of c... I mean, a girl has to stay in practive, right?~ */
 END
 
 IF ~~ THEN no_fun_05
-SAY @101 /* ~Wow... now that's a fantastic idea! I didn't even think about that. I mean, a little.~ */
+SAY @101 /* ~<CHARNAME>! Do you think I'm stupid? I'll never steal inside the camps. I mean - without getting caught, that is. Don't look at me like that! You can relax. Noone will miss anything important, I swear.~ */
 IF ~~ THEN + no_fun_11
 END
 
@@ -241,7 +284,7 @@ IF ~~ THEN DO ~SetGlobal("C#IM_DialogueSoD","GLOBAL",3)~ EXIT
 END
 
 IF ~~ THEN no_fun_07
-SAY @103 /* ~You mean in the camp?... I didn't even think about that. I mean, a little.~ */
+SAY @101 /* ~<CHARNAME>! Do you think I'm stupid? I'll never steal inside the camps. I mean - with getting caught, that is. Don't look at me like that! You can relax. Noone will miss anything important, I swear.~ */
 IF ~~ THEN + no_fun_06
 END
 
@@ -281,42 +324,5 @@ SAY @112 /* ~Wow. I didn't even really think about that. I guess Liia *did* mess
 IF ~~ THEN DO ~SetGlobal("C#IM_DialogueSoD","GLOBAL",3)~ EXIT
 END
 
-/* Thrix erwähnte Imoens besondere Seele */
-
-IF WEIGHT #-1
-~Global("C#Imoen_SoDThrixSoul","GLOBAL",1)~ THEN thrix_soul
-SAY @114 /* ~Hast du verstanden, warum der Dämon meine Seele so interessant fand?~ */
-++ @115 /* ~Nein, aber mir war das auch aufgefallen, wie er das gesagt hat. Als würdest du einen Extrabonus mitbringen.~ */ + thrix_soul_02
-++ @116 /* ~Woher soll ich das wissen?~ */ + thrix_soul_02
-+ ~!Global("C#Imoen_SoDThrix","GLOBAL",11)~ + @117 /* ~Vielleicht mag er kleine Menschenmädchen besonders gern.~ */ + thrix_soul_01
-+ ~Global("C#Imoen_SoDThrix","GLOBAL",11)~ + @117 /* ~Vielleicht mag er kleine Menschenmädchen besonders gern.~ */ + thrix_soul_04
-++ @118 /* ~Ich möchte nicht darüber sprechen.~ */ + thrix_soul_03
-END
-
-END //APPEND
-
-CHAIN
-IF ~~ THEN bdimoen thrix_soul_01
-@119 /* ~Haha, du Eulenbär.~ */
-== bdimoen IF ~Gender(Player1,FEMALE) Race(Player1,HUMAN)~ THEN @120 /* ~I'm not that much smaller than you, you know.~ */
-END 
-IF ~~ THEN + thrix_soul_02
-
-APPEND bdimoen
-
-IF ~~ THEN thrix_soul_02
-SAY @121 /* ~Wirklich seltsam... Naja.~ */
-IF ~~ THEN + thrix_soul_03
-END
-
-IF ~~ THEN thrix_soul_03
-SAY @122 /* ~Er muss einfach gemerkt haben, dass wir richtig dicke Freunde sind. Vielleicht dachte er dann, dass er deine Seele auch gleich mit holen kann!~ */
-IF ~~ THEN DO ~SetGlobal("C#Imoen_SoDThrixSoul","GLOBAL",2)~ EXIT
-END
-
-IF ~~ THEN thrix_soul_04
-SAY @123 /* ~Uh. Die Bemerkung *wäre* witzig, wenn du ihm nicht meine Seele verspielt hättest.~ */
-IF ~~ THEN + thrix_soul_02
-END
 
 END //APPEND

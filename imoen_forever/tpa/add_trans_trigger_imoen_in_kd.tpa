@@ -1,0 +1,200 @@
+/* ADD_TRANS_TRIGGER for specific reply options for Imoen_in_group_KD.d */
+
+<<<<<<<< .../inlined/i4e_BDIMOEN.d
+/* #63960 ~I'm more concerned about you. How have you been doing these last few weeks?~ */
+ADD_TRANS_TRIGGER BDIMOEN 9 ~!InParty("%IMOEN_DV_SOD%")~ DO %responses_9% //9
+
+/* #65051 ~How have you been doing these last few weeks?~ */
+ADD_TRANS_TRIGGER BDIMOEN 12 ~!InParty("%IMOEN_DV_SOD%")~ DO %responses_12% //9
+
+/* #70436 ~Duke Jannath sent you here seeking magical papers or books, did she not? I found these in Korlasz's room.~ */
+ADD_TRANS_TRIGGER BDIMOEN 33 ~!InParty("%IMOEN_DV_SOD%")~ DO %responses_33% //1
+>>>>>>>>
+
+// List of all potential response strrefs to check
+ACTION_DEFINE_ASSOCIATIVE_ARRAY response_strrefs BEGIN
+  ~%63960%~ => 1
+  ~%65051%~ => 1
+  ~%70436%~ => 1
+END
+  
+COPY_EXISTING ~BDIMOEN.dlg~ ~override~
+  // scanning listed dialog states
+  PATCH_FOR_EACH state IN 9 12 33 BEGIN
+    LPF GET_RESPONSE_STRREFS INT_VAR state RET strrefs RET_ARRAY strrefs END
+    TEXT_SPRINT indices ~~  // a temporary variable for building the index list
+    FOR (i = 0; i < strrefs; ++i) BEGIN
+      SET value = $strrefs(~%i%~)
+      // Include index only if strref is listed in the response_strrefs array
+      PATCH_IF (VARIABLE_IS_SET $response_strrefs(~%value%~)) BEGIN
+        TEXT_SPRINT indices ~%indices% %i%~ // building list of indices
+      END
+    END
+    // prevent adding a trigger if index list is empty
+    PATCH_IF (~%indices%~ STR_EQ ~~) BEGIN
+      TEXT_SPRINT indices "IF ~False()~"
+    END
+    // initialize variables responses_39, responses_40, ...
+    // EVAL is used to create the variable name dynamically
+    TEXT_SPRINT EVAL ~responses_%state%~ ~%indices%~
+    PATCH_PRINT ~Variable %state%: %indices%~
+  END
+BUT_ONLY
+
+// Variables response_39, response_70
+// are now initialized and can be used in the .d file
+COMPILE EVAL ~.../inlined/i4e_BDIMOEN.d~
+
+
+/* if Imoen is not in party, the final dialogue should not be triggered by one of the FF soldiers unless Imoen and the PC are at the exit. */
+<<<<<<<< .../inlined/i4e_BDFF1000.d
+/* #69736 ~Thank you. I'm ready to return to the Ducal Palace now.~ */
+ADD_TRANS_TRIGGER BDFF1000 0 ~Range("%IMOEN_DV_SOD%",20) !StateCheck("%IMOEN_DV_SOD%",CD_STATE_NOTVALID) !Dead("%IMOEN_DV_SOD%")~ DO%responses_0% //2
+>>>>>>>>
+
+// List of all potential response strrefs to check
+ACTION_DEFINE_ASSOCIATIVE_ARRAY response_strrefs BEGIN
+  ~%69736%~ => 1
+END
+  
+COPY_EXISTING ~BDFF1000.dlg~ ~override~
+  // scanning listed dialog states
+  PATCH_FOR_EACH state IN 0 BEGIN
+    LPF GET_RESPONSE_STRREFS INT_VAR state RET strrefs RET_ARRAY strrefs END
+    TEXT_SPRINT indices ~~  // a temporary variable for building the index list
+    FOR (i = 0; i < strrefs; ++i) BEGIN
+      SET value = $strrefs(~%i%~)
+      // Include index only if strref is listed in the response_strrefs array
+      PATCH_IF (VARIABLE_IS_SET $response_strrefs(~%value%~)) BEGIN
+        TEXT_SPRINT indices ~%indices% %i%~ // building list of indices
+      END
+    END
+    // prevent adding a trigger if index list is empty
+    PATCH_IF (~%indices%~ STR_EQ ~~) BEGIN
+      TEXT_SPRINT indices "IF ~False()~"
+    END
+    // initialize variables responses_39, responses_40, ...
+    // EVAL is used to create the variable name dynamically
+    TEXT_SPRINT EVAL ~responses_%state%~ ~%indices%~
+    PATCH_PRINT ~Variable %state%: %indices%~
+  END
+BUT_ONLY
+
+// Variables response_39, response_70
+// are now initialized and can be used in the .d file
+COMPILE EVAL ~.../inlined/i4e_BDFF1000.d~
+
+
+<<<<<<<< .../inlined/i4e_BDFF1001.d
+/* #69732 ~I'm ready to return to the Ducal Palace now and report our success.~ */
+ADD_TRANS_TRIGGER BDFF1001 0 ~Range("%IMOEN_DV_SOD%",20) !StateCheck("%IMOEN_DV_SOD%",CD_STATE_NOTVALID) !Dead("%IMOEN_DV_SOD%")~ DO%responses_0% //1
+>>>>>>>>
+
+// List of all potential response strrefs to check
+ACTION_DEFINE_ASSOCIATIVE_ARRAY response_strrefs BEGIN
+  ~%69732%~ => 1
+END
+  
+COPY_EXISTING ~BDFF1001.dlg~ ~override~
+  // scanning listed dialog states
+  PATCH_FOR_EACH state IN 0 BEGIN
+    LPF GET_RESPONSE_STRREFS INT_VAR state RET strrefs RET_ARRAY strrefs END
+    TEXT_SPRINT indices ~~  // a temporary variable for building the index list
+    FOR (i = 0; i < strrefs; ++i) BEGIN
+      SET value = $strrefs(~%i%~)
+      // Include index only if strref is listed in the response_strrefs array
+      PATCH_IF (VARIABLE_IS_SET $response_strrefs(~%value%~)) BEGIN
+        TEXT_SPRINT indices ~%indices% %i%~ // building list of indices
+      END
+    END
+    // prevent adding a trigger if index list is empty
+    PATCH_IF (~%indices%~ STR_EQ ~~) BEGIN
+      TEXT_SPRINT indices "IF ~False()~"
+    END
+    // initialize variables responses_39, responses_40, ...
+    // EVAL is used to create the variable name dynamically
+    TEXT_SPRINT EVAL ~responses_%state%~ ~%indices%~
+    PATCH_PRINT ~Variable %state%: %indices%~
+  END
+BUT_ONLY
+
+// Variables response_39, response_70
+// are now initialized and can be used in the .d file
+COMPILE EVAL ~.../inlined/i4e_BDFF1001.d~
+
+<<<<<<<< .../inlined/i4e_BDFF1002.d
+/* #69732 ~I'm ready to return to the Ducal Palace now and report our success.~ */
+ADD_TRANS_TRIGGER BDFF1001 0 ~Range("%IMOEN_DV_SOD%",20) !StateCheck("%IMOEN_DV_SOD%",CD_STATE_NOTVALID) !Dead("%IMOEN_DV_SOD%")~ DO%responses_0% //1
+>>>>>>>>
+
+// List of all potential response strrefs to check
+ACTION_DEFINE_ASSOCIATIVE_ARRAY response_strrefs BEGIN
+  ~%69732%~ => 1
+END
+  
+COPY_EXISTING ~BDFF1002.dlg~ ~override~
+  // scanning listed dialog states
+  PATCH_FOR_EACH state IN 0 BEGIN
+    LPF GET_RESPONSE_STRREFS INT_VAR state RET strrefs RET_ARRAY strrefs END
+    TEXT_SPRINT indices ~~  // a temporary variable for building the index list
+    FOR (i = 0; i < strrefs; ++i) BEGIN
+      SET value = $strrefs(~%i%~)
+      // Include index only if strref is listed in the response_strrefs array
+      PATCH_IF (VARIABLE_IS_SET $response_strrefs(~%value%~)) BEGIN
+        TEXT_SPRINT indices ~%indices% %i%~ // building list of indices
+      END
+    END
+    // prevent adding a trigger if index list is empty
+    PATCH_IF (~%indices%~ STR_EQ ~~) BEGIN
+      TEXT_SPRINT indices "IF ~False()~"
+    END
+    // initialize variables responses_39, responses_40, ...
+    // EVAL is used to create the variable name dynamically
+    TEXT_SPRINT EVAL ~responses_%state%~ ~%indices%~
+    PATCH_PRINT ~Variable %state%: %indices%~
+  END
+BUT_ONLY
+
+// Variables response_39, response_70
+// are now initialized and can be used in the .d file
+COMPILE EVAL ~.../inlined/i4e_BDFF1002.d~
+
+
+/* One reply option in Duke Jannath's dialogue needs to be restricted: */
+<<<<<<<< .../inlined/i4e_BDLIIA.d
+/* #56051 ~That's why she was reluctant to assist in rooting out Sarevok's minions...~ */
+ADD_TRANS_TRIGGER BDLIIA 24 ~Global("C#st_ImoenInGroupKD","GLOBAL",0)~ DO%responses_24% //0
+>>>>>>>>
+
+// List of all potential response strrefs to check
+ACTION_DEFINE_ASSOCIATIVE_ARRAY response_strrefs BEGIN
+  ~%56051%~ => 1
+END
+  
+COPY_EXISTING ~BDLIIA.dlg~ ~override~
+  // scanning listed dialog states
+  PATCH_FOR_EACH state IN 24 BEGIN
+    LPF GET_RESPONSE_STRREFS INT_VAR state RET strrefs RET_ARRAY strrefs END
+    TEXT_SPRINT indices ~~  // a temporary variable for building the index list
+    FOR (i = 0; i < strrefs; ++i) BEGIN
+      SET value = $strrefs(~%i%~)
+      // Include index only if strref is listed in the response_strrefs array
+      PATCH_IF (VARIABLE_IS_SET $response_strrefs(~%value%~)) BEGIN
+        TEXT_SPRINT indices ~%indices% %i%~ // building list of indices
+      END
+    END
+    // prevent adding a trigger if index list is empty
+    PATCH_IF (~%indices%~ STR_EQ ~~) BEGIN
+      TEXT_SPRINT indices "IF ~False()~"
+    END
+    // initialize variables responses_39, responses_40, ...
+    // EVAL is used to create the variable name dynamically
+    TEXT_SPRINT EVAL ~responses_%state%~ ~%indices%~
+    PATCH_PRINT ~Variable %state%: %indices%~
+  END
+BUT_ONLY
+
+// Variables response_39, response_70
+// are now initialized and can be used in the .d file
+COMPILE EVAL ~.../inlined/i4e_BDLIIA.d~
+

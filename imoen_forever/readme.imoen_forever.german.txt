@@ -113,7 +113,7 @@ Ich habe die Idee, dass Imoen aufgrund der Auswirkungen des Giftes im Palast zur
 
 9. I4E für SoD: Cutscene mit Imoen und Herzogin Jannath zeigen
 -----------------------------------
-Im Originalspiel kann der HC Imoen über ein magisches Becken in Kanaglym (Underground River) dabei zusehen, wie sie mit Herzogin Jannath trainiert. 
+Im Originalspiel kann der HC Imoen über ein magisches Becken in der Zwergenmine (Lichdungeon, bd1200.are) dabei zusehen, wie sie mit Herzogin Jannath trainiert. 
 Diese Komponente fügt die Cutscene stattdessen so ein, dass der Spieler Imoen beim Training sieht, kurz bevor der HC mit der Flammenden Faust aus der Stadt marschiert.
 
 
@@ -301,8 +301,7 @@ Version 5:
 -More dialogues in BGII added (optional).
 -Content compatibility with Imoen Friendship mod added.
 -more reply options referring to Imoen missing disabled
--patching of reply options will be done for the relevant strings only (no 
-destructive patching). Thank you to Argent77 for the coding help!
+-patching of reply options will be done for the relevant strings only (no destructive patching). Thank you to Argent77 for the coding help!
 
 Version 4:
 -detection variable whether Imoen will stay in the group in Korlasz' Dungeon should be applied to the correct script (cpmvar.tpas should be read in)

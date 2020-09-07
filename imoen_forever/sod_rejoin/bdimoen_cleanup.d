@@ -3,8 +3,7 @@
 
 
 /* Prevent Imoen in the Scrying Pool in bd1200.are */
-
-ADD_TRANS_TRIGGER BDSCRY 0 ~FALSE()~ DO 0
+/* ADD_TRANS_TRIGGER BDSCRY 0 ~FALSE()~ DO 0 */
 
 /* set variable to detect whether Imoen stayed behind with Duke Jannath */
 

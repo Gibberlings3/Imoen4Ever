@@ -15,12 +15,12 @@ EXTEND_BOTTOM BDIMOEN 2
 IF ~InParty("%IMOEN_DV_SOD%")~ THEN + 5
 END
 
-ADD_TRANS_TRIGGER BDIMOEN 9 ~!InParty("%IMOEN_DV_SOD%")~ DO 9
+/* ADD_TRANS_TRIGGER BDIMOEN 9 ~!InParty("%IMOEN_DV_SOD%")~ DO 9 */
 
 /* turn this into PID */
 ADD_STATE_TRIGGER BDIMOEN 12 ~InParty("%IMOEN_DV_SOD%") GlobalLT("BD_plot","global",50)~
 
-ADD_TRANS_TRIGGER BDIMOEN 12 ~!InParty("%IMOEN_DV_SOD%")~ DO 9
+/* ADD_TRANS_TRIGGER BDIMOEN 12 ~!InParty("%IMOEN_DV_SOD%")~ DO 9 */
 
 EXTEND_BOTTOM BDIMOEN 9 12 
 + ~InParty("%IMOEN_DV_SOD%")~ + @1 + 22_add
@@ -118,7 +118,7 @@ END
 END //APPEND
 
 
-ADD_TRANS_TRIGGER BDIMOEN 33 ~!InParty("%IMOEN_DV_SOD%")~ DO 1
+/* ADD_TRANS_TRIGGER BDIMOEN 33 ~!InParty("%IMOEN_DV_SOD%")~ DO 1 */
 
 EXTEND_BOTTOM BDIMOEN 33 
   IF ~InParty("%IMOEN_DV_SOD%") PartyHasItem("BDSHBHR")~ THEN REPLY @17  GOTO 36
@@ -141,9 +141,11 @@ ADD_STATE_TRIGGER BDIMOEN 33 ~Range("Rope",27)~
 
 /* if Imoen is not in party, the final dialogue should not be triggered by one of the FF soldiers unless Imoen and the PC are at the exit. */
 
+/*
 ADD_TRANS_TRIGGER BDFF1000 0 ~Range("%IMOEN_DV_SOD%",20) !StateCheck("%IMOEN_DV_SOD%",CD_STATE_NOTVALID) !Dead("%IMOEN_DV_SOD%")~ DO 2
 ADD_TRANS_TRIGGER BDFF1001 0 ~Range("%IMOEN_DV_SOD%",20) !StateCheck("%IMOEN_DV_SOD%",CD_STATE_NOTVALID) !Dead("%IMOEN_DV_SOD%")~ DO 1
 ADD_TRANS_TRIGGER BDFF1002 0 ~Range("%IMOEN_DV_SOD%",20) !StateCheck("%IMOEN_DV_SOD%",CD_STATE_NOTVALID) !Dead("%IMOEN_DV_SOD%")~ DO 1
+*/
 
 EXTEND_BOTTOM BDFF1000 0
   IF ~OR(2)
@@ -197,9 +199,9 @@ StartCutScene("c#stdu01")~ EXIT
 END
 
 /* One reply option in Duke Jannath's dialogue needs to be restricted:
-~That's why she was reluctant to assist in rooting out Sarevok's minions...~ */
-
+~That's why she was reluctant to assist in rooting out Sarevok's minions...~ 
 ADD_TRANS_TRIGGER BDLIIA 24 ~Global("C#st_ImoenInGroupKD","GLOBAL",0)~ DO 0
+*/
 
 
 

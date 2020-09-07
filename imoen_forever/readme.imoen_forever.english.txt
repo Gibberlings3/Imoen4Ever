@@ -107,7 +107,7 @@ I read this idea in the BeamDog forums but I forgot by whom. If you know who thi
 
 9 I4E in SoD: Play Cutscene With Imoen and Duke Jannath
 -----------------------------------
-In the original game, the PC can witness Imoen's training with Duke Jannath via a magic pool in Kanaglym (Underground River).
+In the original game, the PC can witness Imoen's training with Duke Jannath via a scrying pool in lich area of the dwarven dig (bd1200.are).
 This component makes this a cutscene for the player when the PC is marching out of the City with the Flaming Fist.
 
 
@@ -121,7 +121,7 @@ Imoen reacts to most game situations and has some dialogues dependent on game ev
 
 11 I4E in SoD: Imoen at the End of the Game Should be the One that Was in Party (SoD Only)
 -----------------------------------
-This component is for SoD only: at the end of SoD when the original game content kicks in, the Imoen coming to the prison exit will be the same that were in the group before.
+This component is for SoD only: at the end of SoD when the original game content kicks in, the Imoen coming to the prison exit will be the same that was in the group before.
 This is useful if Imoen had some items etc. on her you want to swap before the final save or something. 
 
 
