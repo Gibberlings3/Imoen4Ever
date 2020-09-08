@@ -1,0 +1,40 @@
+/* imoen_bdparty.baf:
+Addition to bdparty.bcs to toggle moving back to the current camp if kicked out of party. */
+
+IF
+  Global("bd_npc_camp","locals",1)  //this is set via the kickout dialogue, see below
+  Name("%IMOEN_DV_SOD%",Myself)
+  Switch("bd_npc_camp_chapter","global")  //this makes sure the NPC goes back to the correct camp along SoD's campaign
+  OR(2)
+    !Range("ff_camp",999) //"Name" of a trigger which detects the camps
+    !TriggerOverride("ff_camp",IsOverMe("%IMOEN_DV_SOD%"))
+THEN
+  RESPONSE #2
+    EscapeAreaMove("bd1000",470,3737,N) //coordinates as used in xxbd1000.baf
+  RESPONSE #3
+    EscapeAreaMove("bd7100",1017,3602,N) //coordinates as used in xxbd7100.baf
+  RESPONSE #4
+    EscapeAreaMove("bd3000",1575,1765,N) //coordinates as used in xxbd3000.baf
+END
+
+/* this sets the "bd_npc_camp" variable to "2" as soon as Imoen is in one of the camps again: bg1000.are, bg7100.are, bd3000.are – and will make bdparty.bcs set the correct fighting script etc. */
+IF
+  GlobalLT("bd_npc_camp","locals",2)
+  Global("bd_joined","locals",0)
+  Name("%IMOEN_DV_SOD%",Myself)
+  TriggerOverride("ff_camp",IsOverMe("%IMOEN_DV_SOD%"))
+  Switch("bd_npc_camp_chapter","global")
+THEN
+  RESPONSE #2
+    SetGlobal("bd_npc_camp","locals",2)
+    SaveLocation("LOCALS","bd_default_loc",[470.3737]) //coordinates as used in xxbd1000.baf
+	/* Note: here the "LOCALS" really need to be in capital letters. Ardanis: "Coordinate variables 
+are about the only place I know where case matters." */
+  RESPONSE #3
+    SetGlobal("bd_npc_camp","locals",2)
+    SaveLocation("LOCALS","bd_default_loc",[1017.3602]) //coordinates as used in xxbd7100.baf
+  RESPONSE #4
+    SetGlobal("bd_npc_camp","locals",2)
+    SaveLocation("LOCALS","bd_default_loc",[1575.1765]) //coordinates as used in xxbd3000.baf
+    ChangeAIScript("bdasc3",CLASS)
+END

@@ -369,6 +369,14 @@ STRING_SET 46133 @1130
 /* ~You're a Cowled Wizard?  Perhaps you could tell me where the Cowled Wizards keep their prisoners.  A friend of mine is being held.~ */
 STRING_SET 46041 @1131
 
+//JUGJER01 10 DO 1
+/* ~I am gathering coin to rescue a friend, so if there's a reward, I suppose I could.~ */
+STRING_SET 46039 @1171
+
+//JUGJER01 16 DO 1
+/* ~I am saving coin to rescue a friend... what would the reward be for this task?~ */
+STRING_SET 46040 @1171
+
 
 //JANJ 174
 /* ~As much as I will ramble on at the drop of a hat, I would think it wiser to find this Imoen and Irenicus with all haste. It's like my uncle Gummo use to say, "Blah blah blah," he'd say, and we'd be right there with our "Uncle Gummo, we've got things to do," and he'd be right back with the "But just one more story. Just one more, blah blah." ~ */

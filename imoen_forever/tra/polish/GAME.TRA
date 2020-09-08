@@ -254,3 +254,57 @@ Jeszcze jedna niepokoj¹ca rzecz... Bodhi wiedzia³a, wiedzia³a o moim ojcu – Bhaa
 @1168 = ~Muszê ustaliæ, kto mnie porwa³, w jakim celu, i co zamierza zrobiæ ze mn¹ i Imoen.~
 @1169 = ~Mam do ciebie pytanie... Szukam kogoœ, kogo porwali Zakapturzeni Czarodzieje. Czy wiesz coœ o nich?~
 @1170 = ~Pracujesz dla Z³odziei Cienia, wierz¹c, i¿ pomog¹ ci odnaleŸæ twojego by³ego porywacza, Irenicusa. Tak, to naprawdê s¹ Z³odzieje Cienia i rzeczywiœcie s¹ takimi potworami, jak pewnie ci mówiono.~
+
+/* new for v5 */
+//#46040
+@1171   = ~Oszczêdzam pieni¹dze, aby dotrzeæ do mojego wroga... czy bêdzie jakaœ nagroda za wype³nienie tego zadania?~
+
+/* SoD */
+
+/* new for v5 */
+/* cutscene_imoen_and_jannath.d */
+@5000  = ~A co jeœli znajdzie siê w niebezpieczeñstwie beze mnie?!~
+@5001  = ~Imoen!~
+
+/* imoen_bd4100.baf */
+@5005  = ~Co? <CHARNAME> nigdy by czegoœ takiego nie zrobi³<PRO_HESHE>! Poszaleliœcie wszyscy?! Zostawcie <PRO_MALEFEMALE>!~
+
+/* imoen_forever.tp2 */
+@5010  = ~<CHARNAME>, tak mi przykro. ¯a³ujê, ¿e nie mogê iœæ z tob¹ do wiêzienia!~
+
+/* bdimoen_additions_sod.baf */
+@5050  = ~Co za g³upota! Ale jakie *bum*!~
+@5051  = ~<CHARNAME>! Oni nie mogli nic zrobiæ, by siê uchroniæ. To takie pod³e!~
+
+/* bd1000_commenting.baf */
+@5500  = ~Widzia³eœ jej oczy? Chyba œwieci³y... Kogoœ mi przypomnia³y, wiesz!~ ~Widzia³aœ jej oczy? Chyba œwieci³y... Kogoœ mi przypomnia³y, wiesz!~
+
+/* bd2000_commenting.baf */
+@5505  = ~Tak po prostu? Nie wiem, czy innym siê to spodoba.~
+@5506  = ~Nooo i musimy walczyæ!~
+
+/* imoen_bd0114.baf */
+@5510  = ~Ale wielllgachny ¿uk!~
+
+/* imoen_bd4300_commenting.baf */
+@5520  = ~Och! By³o blisko.~
+@5521  = ~<CHARNAME>, on ciê zrani³! Niech ten Hephernaan siê grubo ubierze, bo zamierzam przetrzepaæ mu skórê, tak!~ 
+@5522  = ~(wzdycha) No i nie ¿yj¹.~
+@5523  = ~Hm, <CHARNAME>, chyba nie uda nam siê tutaj zbyt wiele osi¹gn¹æ.~
+@5524  = ~Co za podró¿! To ju¿ naprawdê koniec?~
+
+/* imoen_bd4400_commenting.baf */
+@5530  = ~<CHARNAME>, przecie¿ mówi³am ci, ¿e wszêdzie za tob¹ pójdê! Potrzebujesz wiêcej dowodów? Jesteœmy w *piekle*!~
+
+/* imoen_bd4601_commenting.baf */
+@5535  = ~Hmm... Mam nadziejê, ¿e to zadzia³a.~
+
+/* imoen_bdbark01_commenting.baf */
+@5540  = ~Ale wielki szkielet! I jest czêœci¹ zamku! Wcale mi siê to nie podoba. To... okropne!~
+
+/* imoen_bdvaultd.baf */
+@5545  = ~Nie podobaj¹ mi siê te drzwi! Wygl¹daj¹... przera¿aj¹co.~
+
+/* imoen_bd0063.baf */
+@5550  = ~Hm, moja magia mnie jakoœ opuœci³a. To chyba przez to miejsce.~
+

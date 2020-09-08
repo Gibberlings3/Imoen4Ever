@@ -1,6 +1,6 @@
-	***						  ***
+	***						                                  ***
 	*** Ca³y ten mod jest spoilerem historii z BGII ***	
-	***						  ***
+	***						                                  ***
 
 
 
@@ -14,34 +14,123 @@
 
 OPIS
 
-Celem tego moda jest uczynienie z Imoen sta³ego towarzysza poprzez ca³¹ Sagê BG. Niektóre zwi¹zane z Imoen fragmenty oryginalnej historii wymagaj¹ jednak, aby przebywa³a ona tymczasowo poza dru¿yn¹. Dziêki temu modowi, po takich incydentach Imoen do³¹cza ponownie do dru¿yny, dziêki czemu mo¿e byæ postrzegana jako rzeczywisty towarzysz podró¿y w SoD (jeszcze nie ukoñczony) i BGII.
-
-Uwaga: Czêœæ zwi¹zana z SoD nie jest jeszcze ukoñczona.
+Celem tego moda jest uczynienie z Imoen sta³ego towarzysza poprzez ca³¹ Sagê BG. Niektóre zwi¹zane z Imoen fragmenty oryginalnej historii wymagaj¹ jednak, aby przebywa³a ona tymczasowo poza dru¿yn¹. Dziêki temu modowi, po takich incydentach Imoen do³¹cza ponownie do dru¿yny, dziêki czemu mo¿e byæ postrzegana jako rzeczywisty towarzysz podró¿y w SoD i BGII.
 
 Mod stara siê zachowaæ tak wiele ug³osowionych linii, jak to tylko mo¿liwe. Niestety niektóre z nich zosta³y usuniête, gdy¿ traci³y sens z Imoen bêd¹c¹ cz³onkiem dru¿yny.
 
-Mod jest kompatybilny z SoD i wszystkimi wersjami gry: BGII, BGT, BGII:EE, EET. Dla EET, modyfikacjê nale¿y instalowaæ bezpoœrednio w folderze EET.
+Mod jest kompatybilny z SoD i wszystkimi wersjami gry: BGII, BGT, BGII:EE, EET. Dla EET modyfikacjê nale¿y instalowaæ bezpoœrednio w folderze EET.
 
-1. BGII:
+Mod ma dwanaœcie komponentów. Pierwsze piêæ dotyczy BGII; pierwszy z nich jest wymagany do zainstalowania któregokolwiek z kolejnych (numery 2 do 4) opcjonalnych komponentów. Ostatnie komponenty (od 6 do 12) dotycz¹ SoD; spoœród nich szósty *lub* siódmy jest wymagany do zainstalowania kolejnych komponentów opcjonalnych.
+
+
+Komponenty z zawartoœci¹ dla BGII:
+
+
+1. I4E w BGII: Imoen powraca po rozmowie z Gaelanem w rozdziale 2
 -----------------------------------
-Ten mod przywraca Imoen do gry w Rozdzia³ach 2 i 3, tu¿ po pierwszym dialogu z Gaelanem. Dziêki temu gracz mo¿e spokojnie eksplorowaæ mapê i wykonywaæ wszystkie zadania bez moralnego dylematu, zwi¹zanego z od³o¿eniem w czasie ratunku dla przyjació³ki w potrzebie.
-Oryginalna zawartoœæ gry rozpoczyna siê ponownie po przybyciu do Brynnlaw: to tam Imoen zostanie porwana. W lokalnej tawernie mo¿na z kolei przy³¹czyæ do dru¿yny Yoshimo.
+Ten komponent przywraca Imoen do gry w rozdzia³ach drugim i trzecim, tu¿ po pierwszym dialogu z Gaelanem. Dziêki temu gracz mo¿e spokojnie eksplorowaæ mapê i wykonywaæ wszystkie zadania bez moralnego dylematu, zwi¹zanego z od³o¿eniem w czasie ratunku dla przyjació³ki w potrzebie.
+Oryginalna zawartoœæ gry rozpoczyna siê ponownie po przybyciu do Brynnlaw: to tam Imoen zostanie porwana.
 
-Wszystkie linie dialogowe, w których wspominano, ¿e Imoen zosta³a porwana, albo potrzebuje pomocy, zosta³y zast¹pione odniesieniami do poœcigu i zemsty na Irenicusie.
+Wszystkie (prawie) linie dialogowe, w których wspominano, ¿e Imoen zosta³a porwana, albo potrzebuje pomocy, zosta³y zast¹pione odniesieniami do poœcigu i zemsty na Irenicusie.
+
+Uwaga dla BGII(:EE): Imoen w lochach Irenicusa *nie jest* t¹, która powróci do dru¿yny. Dzieje siê tak, poniewa¿ w oryginalnej grze Imoen do³¹czaj¹ca w Czarowiêzach tak¿e nie jest t¹ z lochów, a ró¿ne pliki stworzeñ korzystaj¹ z ró¿nych plików dialogowych i skryptów (nie da siê na przyk³ad zmieniæ "death variables" podczas gry).
+Dla potrzeb BGT/EET Imoen pozostaje taka sama jak zwykle przy tych modyfikacjach.
 
 
-2. SoD:
+2. I4E w BGII: Dodaje Imoen dialogi w rozdzia³ach 2 i 3
 -----------------------------------
-Jeœli Imoen by³a w Twojej dru¿ynie podczas rozgrywki w BG: EE, to dziêki tej poprawce pozostanie w niej równie¿ na pocz¹tku SoD. Imoen bêdzie cz³onkiem dru¿yny przez ca³e krypty Korlasz, a¿ do momentu, w którym samotna postaæ gracza znajdzie siê w Pa³acu Ksi¹¿êcym. Od tej pory Imoen bêdzie siê zachowywaæ jak w oryginalnej grze. (Planowane: mo¿liwoœæ przy³¹czenia Imoen w pierwszym obozie Koalicji).
-Podczas pobytu w kryptach Korlasz mo¿liwe jest nawi¹zanie z Imoen dialogu inicjowanego przez gracza (PID), którego treœæ pochodzi z oryginalnej gry. Jeœli Imoen zosta³a ju¿ dwuklasowana na maga, to opowie o swoich relacjach z Ksiê¿n¹ Jannath i swoich studiach magicznych.
-Po ataku w Pa³acu Ksi¹¿êcym Imoen nie bêdzie w stanie towarzyszyæ postaci gracza ze wzglêdu na dzia³anie trucizny. Jej po¿egnalny dialog poprzedzaj¹cy wymarsz wojsk Koalicji zosta³ zmieniony tak, by uwzglêdniæ nowy powód pozostania w mieœcie. 
+Ten komponent dodaje Imoen dialogi i wtr¹cenia.
+Na przyk³ad w rozdzia³ach drugim i trzecim bêdzie ona reagowaæ na sny postaci gracza. Po Czarowiêzach bêdzie mówiæ o porwaniu przez Irenicusa oraz jej zwi¹zkach z Bhaalem.
 
-Jeœli Imoen nie bra³a udzia³u w koñcowej walce BG: EE, jej obecnoœæ w Kryptach Korlasz bêdzie przebiegaæ tak, jak w oryginalnej grze. (Planowane: ale do³¹czy do pierwszego obozu Koalicji).
-
-Uwaga dla modderów dotycz¹ca kompatybilnoœci: wszystkie uwagi dotycz¹ce modowania gry z uwzglêdnieiem moda Imoen 4 Ever pozostawiam nieprzet³umaczone i odsy³am zainteresowanych do angielskiego readme (memory).
+Ten komponent jest kompatybilny z Imoen Friendship od wersji v3.6.
 
 
+3. I4E w BGII: Yoshimo pojawia siê w Brynnlaw
+-----------------------------------
+Ten komponent sprawia, ¿e Yoshimo pojawia siê w Brynnlaw, gdy tylko grupa tam dotrze - zakrada siê on na ten sam statek. Pojawi siê jednak tylko wtedy, gdy nie jest martwy i zosta³ gdzieœ wczeœniej pozostawiony przez dru¿ynê.
+Yoshimo bêdzie mo¿na przy³¹czyæ do dru¿yny w tawernie w Brynnlaw.
+Ta opcja zosta³a dodana, aby grupa mia³a szansê mieæ w dru¿ynie z³odzieja po porwaniu Imoen. Dziêki temu gracz ma szansê poznaæ historiê Yoshimo bez „marnowania” kolejnego miejsca w dru¿ynie.
+Jeœli Yoshimo jest w dru¿ynie, kiedy ta podró¿uje do Brynnlaw, to nie pojawi¹ siê tu ¿adne zmiany.
 
+
+4. I4E w BGII: Dodaje Imoen czary ochronne w rozdzia³ach 2 i 3
+-----------------------------------
+Ten komponent sprawia, ¿e zaklêcie chroni¹ce Imoen przed nieodwracaln¹ œmierci¹ staje siê opcjonalne. Pierwotnie doda³am je do g³ównego rdzenia moda, poniewa¿ uwa¿a³em, ¿e Imoen nale¿y chroniæ przed trwa³¹ œmierci¹. Potem jednak dosz³am do wniosku, ¿e nie jest to potrzebne, gdy¿ na przyk³ad EET radzi sobie bez takich sztuczek równie¿ dla wszystkich innych kluczowych NPC.
+
+Ten sk³adnik nak³ada na Imoen ochronê przed nieodwracaln¹ œmierci¹ oraz odpornoœci na efekty Uwiêzienia, Labiryntu i Dezintegracji, gdy Imoen powraca do Slumsów w rozdziale drugim. Efekty te s¹ usuwane, gdy Imoen znajdzie siê w Czarowiêzach.
+
+Pomimo oczywistych korzyœci, które Imoen uzyskuje w rozdzia³ach drugim i trzecim, jest to równie¿ element oryginalnej historii. W swoich lochach Irenicus nak³ada na Imoen specjalny pas, który ma j¹ chroniæ, dopóki mag nie zrealizuje swoich póŸniejszych planów.
+
+
+5. I4E w BGII: Kompatybilnoœæ z Alternatives i Saerileth
+-----------------------------------
+Ten komponent naprawia przerywniki filmowe modów Alternatives i Saerileth, które gracz mo¿e zobaczyæ podczas podró¿y do Brynnlaw. Od teraz to nie Imoen jest z Irenicusem w Czarowiêzach.
+Ten komponent nale¿y zainstalowaæ po g³ównym komponencie moda Imoen4Ever oraz po zainstalowaniu modów Alternatives i  Saerileth (lub któregoœ z nich).
+Te dwa mody s¹ oczywiœcie wykrywane i poprawiane niezale¿nie.
+
+
+Komponenty z zawartoœci¹ dla SoD:
+
+
+6. I4E w SoD: Imoen pozostaje w dru¿ynie w kryptach Korlasz
+-----------------------------------
+Jeœli Imoen by³a w Twojej dru¿ynie podczas rozgrywki w BG: EE, to dziêki tej poprawce pozostanie w niej równie¿ na pocz¹tku SoD. Imoen bêdzie cz³onkiem dru¿yny przez ca³e krypty Korlasz, a¿ do momentu, w którym samotna postaæ gracza znajdzie siê w Pa³acu Ksi¹¿êcym. Ten komponent nie zmienia ¿adnej innej zawartoœci dotycz¹cej Imoen w dalszej grze.
+Podczas pobytu w kryptach Korlasz mo¿liwe jest nawi¹zanie z Imoen dialogu inicjowanego przez gracza (PID), którego treœæ pochodzi z oryginalnej gry. Jeœli Imoen zosta³a ju¿ dwuklasowana na maga, to opowie o swoich relacjach z ksiê¿n¹ Jannath i swoich studiach magicznych.
+Jeœli Imoen nie by³a w dru¿ynie podczas przejœcia z BG: EE do SoD, jej obecnoœæ w krypcie Korlasz bêdzie wygl¹daæ tak, jak w oryginalnej grze, bez ¿adnych zmian.
+
+Uwaga dla modderów dotycz¹ca kompatybilnoœci: wszystkie uwagi dotycz¹ce modowania gry z uwzglêdnieniem moda Imoen 4 Ever pozostawiam nieprzet³umaczone i odsy³am zainteresowanych do angielskiego readme (memory).
+
+Kompatybilnoœæ z Transitions: jeœli zainstalowany jest mod Transitions od Lauriel, ¿adna ze zmian dodanych przez ten komponent nie bêdzie widoczna. Krypty Korlasz s¹ wtedy dostêpne w "œwiecie BG1", a Imoen w dru¿ynie jest zwyk³¹ Imoen z BG1, bez ¿adnych specyficznych dla SoD dialogów.
+
+7. I4E w SoD: Imoen powraca w pierwszym obozie Koalicji (bd1000)
+-----------------------------------
+Ten komponent sprawi, ¿e Imoen do³¹czy ponownie do dru¿yny, gdy tylko postaæ gracza dotrze do pierwszego obozu Koalicji (bd1000.are). Opuœæ obóz na pó³nocnym wschodzie, tam, gdzie Edwin pojawia siê po raz pierwszy. Zjawi siê tam Imoen i poprosi o ponowne do³¹czenie.
+Nastêpnie bêdzie zachowywaæ siê jak normalny NPC w SoD: mo¿e pozostaæ w obozie (obozach), wróci do obozu (obozów), jeœli zostanie o to poproszona po od³¹czeniu, i bêdzie poruszaæ siê z obozem (obozami) zgodnie z postêpem kampanii.
+Imoen pozostanie w dru¿ynie a¿ do wydarzeñ po zakoñczeniu uroczystoœci. Od tego momentu normalna zawartoœæ gry dla Imoen zostanie ponownie uruchomiona.
+
+Ten komponent dodaje równie¿ najwa¿niejsze reakcje w grze, ale bez dodatkowych dialogów.
+
+Uwaga dla modderów dotycz¹ca kompatybilnoœci: jw.
+
+
+8. I4E w SoD: Imoen podaje lepszy powód, by pozostaæ w Pa³acu
+-----------------------------------
+Ten komponent zmienia po¿egnalny dialog Imoen i postaci gracza wieczorem, przed wyruszeniem wojsk Koalicji. Imoen podaje teraz nowy powód, by pozostaæ w Pa³acu Ksi¹¿êcym: po ataku, nie jest w stanie wzi¹æ udzia³u w wyprawie ze wzglêdu na truciznê, z któr¹ siê zmaga.
+
+Uwaga dla modderów dotycz¹ca kompatybilnoœci: jw.
+
+Przeczyta³am o tym pomyœle na forum BeamDoga, ale zapomnia³am, przez kogo zosta³ podsuniêty. Jeœli wiesz, kto by³ jego autorem, daj mi znaæ.
+
+
+9. I4E w SoD: Odgrywa filmik z Imoen i Jannath
+-----------------------------------
+W oryginalnej grze postaæ gracza mo¿e, dziêki wró¿ebnej sadzawce w siedzibie lisza (bd1200.are), byæ œwiadkiem treningu Imoen z ksiê¿n¹ Jannath.
+Ten komponent usuwa tê wizjê z sadzawki i sprawia, ¿e jest to przerywnik filmowy wyœwietlany, gdy postaæ gracza wychodzi wraz z P³on¹c¹ Piêœci¹ z miasta.
+
+
+10. I4E w SoD: Dodaje Imoen dialogi w rozdzia³ach 8-12
+-----------------------------------
+Celem tego komponentu jest dodanie Imoen wiêcej reakcji na wydarzenia z gry, dialogów i przerywników.
+Komponent nie jest jeszcze ukoñczony.
+Imoen reaguje na wiêkszoœæ wydarzeñ w grze i ma z tym powi¹zane dialogi, ale nie ma banterów z innymi NPCami.
+
+
+11. I4E w SoD: Imoen na koniec gry powinna byæ taka, jak by³a w dru¿ynie (tylko SoD)
+-----------------------------------
+Ten komponent jest przeznaczony tylko dla SoD: pod koniec SoD, kiedy w³¹czy siê ju¿ oryginalna zawartoœæ gry, Imoen zbli¿aj¹ca siê do wyjœcia z wiêzienia bêdzie taka sama, jak by³a wczeœniej w dru¿ynie.
+Jest to przydatne, jeœli Imoen mia³a przy sobie na przyk³ad jakieœ przedmioty, które chcesz zamieniæ przed koñcowym zapisem, czy coœ.
+
+
+12. I4E w SoD: Ujednolicone portrety Imoen
+-----------------------------------
+Ten komponent posiada dwie opcje:
+1. U¿yj portretu Imoen z SoD po kryptach Korlasz
+ Jeœli dziêki komponentowi 6. Imoen bêdzie w dru¿ynie, to ta opcja zachowa jej portret z BG1 a¿ do czasu ataku na Pa³ac Ksi¹¿êcy.
+ 
+2. U¿yj portretu Imoen z BG1 przez ca³e SoD
+ Ta opcja pozwala zachowaæ dla Imoen jej portret z BG1 przez ca³e SoD. Tak¿e w czasie interakcji z Imoen, która nie jest aktualnie w dru¿ynie.
+ 
+Nie instaluj ¿adnej opcji tego komponentu, jeœli u¿ywasz dla Imoen innego portretu, lub gdy masz zainstalowane inne mody, które zmieniaj¹ jej portret (chyba ¿e wiesz, ¿e mody te s¹ kompatybilne).
 
 
 INSTALACJA
@@ -52,7 +141,7 @@ Wypakuj zawartoœæ archiwum moda do g³ównego katalogu gry. Rodzaj gry zostanie ro
 
 UWAGA: 
 -Jeœli u¿ywasz SoD z GOGa lub Steamu, to przed instalacj¹ jakichkolwiek modów u¿yj „modmerge" lub „DLCmerger" Argenta77
--W przypadku BG (II): EE wa¿ne jest, aby instalowaæ mod w wersji jêzykowej, w której u¿ywasz gry. W przeciwnym razie dialogi z modu nie bêd¹ wyœwietlane prawid³owo i pojawi¹ siê komunikaty o b³êdach.
+-W przypadku BG (II): EE wa¿ne jest, aby instalowaæ mod w wersji jêzykowej, w której u¿ywasz gry. W przeciwnym razie dialogi z moda nie bêd¹ wyœwietlane prawid³owo i pojawi¹ siê komunikaty o b³êdach.
 
 
 Windows
@@ -72,20 +161,30 @@ KOMPATYBILNOŒÆ
 
 Uwaga: ten mod nale¿y traktowaæ jako mod questowy i jako taki instalowaæ przed wszystkimi modami dodaj¹cymi do gry NPCów, nowe opcje dialogowe lub interakcje w
 rozdzia³ach 2 i 3 Cieni Amn. Powinno to zagwarantowaæ, ¿e odpowiednie linie zostan¹ podmienione.
+
+Kompatybilnoœæ z BGII:
+--------------------------------------------
 Kompatybilnoœæ z innymi modami jest w przypadku Imoen 4 Ever trudn¹ spraw¹, gdy¿ wszystkie one zak³adaj¹, ¿e Imoen zosta³a pojmana po walce na Promenadzie Waukeen i pozostaje w rêkach Irenicusa a¿ do czasu dotarcia postaci gracza do Czarowiêzów. Miejmy nadziejê, ¿e z czasem coraz wiêcej modów stanie siê kompatybilne z Imoen 4 Ever.
 
-Ten mod jest:
--kompatybilny z Almateria's Restauration Project „Extended Waukeen's Promenade Cutscene" (niezale¿nie od kolejnoœci instalacji),
+Ogólnie: nie powinno byæ problemu z modami, o ile nie wprowadzaj¹ NPCów z dialogami w rozdziale 2 lub 3, wszystkimi modami bez NPCów, oraz takimi, które dodaj¹ zawartoœæ ju¿ po dotarciu do Brynnlaw (np. zaczynaj¹cymi siê w Podmroku, czy Tronie Bhaala)
 
--kompatybilny z Tweaks Anthology „Szybsze przerywniki filmowe i sny z pierwszego i drugiego rozdzialu" jeœli Tweaks Anthology by³ instalowany póŸniej,
+Na 19.08.2020 mod jest kompatybilny z nastêpuj¹cymi modami dodaj¹cymi dialogi z Imoen w rozdzia³ach 2 i 3:
+    Afaaq, the Djinni Companion for BG2 and BG2:EE
+    Ajantis NPC for BGII
+    Almateria's Restauration Project "Extended Waukeen's Promenade Cutscene" (independent of installation order)
+    Alternatives (independent of installation order)
+    Ascalon's Breagar NPC
+    Edwin Romance
+    IEP Banters Mod (v5.7 or higher)
+    Imoen Friendship (v3.6 or higher)
+    NPC Strongholds as of v8.1
+    Tweaks Anthology "Faster Chapter 1&2 Cut-Scenes & Dreams" (component "Convenience Tweaks and/or Cheats") if Tweak Anthology is installed after.
+    Unfinished Business as of v28beta
 
--technicznie kompatybilny z  Alternatives (niezale¿nie od kolejnoœci instalacji), chocia¿ opcje dialogowe wci¹¿ zak³adaj¹, ¿e Imoen nie ma w dru¿ynie,
+I4E jest tak¿e technicznie kompatybilny z „Saerileth's route to Spellhold”, jeœli komponent 5. zosta³ zainstalowany *po* modzie Saerileth (jednak ta modyfikacja wci¹¿ odwo³uje siê do Imoen porwanej przez Irenicusa).
 
--kompatybilny z  „Saerileth's route to Spellhold”, jeœli zosta³ zainstalowany *po* modzie Saerileth.
-
-Ogólnie: nie powinno byæ problemu z modami, o ile nie wprowadzaj¹ NPCów z dialogami w rozdziale 2 lub 3, wszystkimi modami bez NPCów, oraz takimi, które dodaj¹ zawartoœæ ju¿ po dotarciu do Brynnlaw (np. zaczynaj¹cymi siê w Podmroku, czy Tronie Bhaala).
-
-Na Forum G3 pojawi siê pe³na lista modów kompatybilnych.
+Listê modów kompatybilnych mo¿na sprawdzaæ pod tym adresem:
+https://www.gibberlings3.net/forums/topic/30399-imoen-4-ever-compatibility-notes/
 
 Modyfikacja nie jest kompatybilna z moim modem „Imoen is Stone".
 
@@ -99,14 +198,23 @@ Po jeszcze wiêcej uwag dla modderów odsy³am do angielskiego readme (memory).
 
 NAPISY KOÑCOWE
 
+Acifer - promotion picture, beta testing
+
+Argent77 - coding help for non-destructive ADD_TRANS_TRIGGER patching
+
+Lauriel - proof reading (English)
+
+memory - Polish translation
+
+unknown user: idea about Imoen staying behind in SoD because of her poison injury. (Let me know if you you know what name I should put here.)
 
 
 U¯YTE NARZÊDZIA:
-IESDP (http://iesdp.gibberlings3.net/)
 
-Infinity Explorer			http://infexp.sourceforge.net
-Near Infinity				http://www.idi.ntnu.no/~joh/ni
-WeiDU					http://www.weidu.org
+IESDP					https://gibberlings3.github.io/iesdp/index.htm
+Near Infinity				https://forums.beamdog.com/discussion/30593/new-versions-of-nearinfinity-available/p1
+WeiDU					https://github.com/WeiDUorg/weidu/releases/latest
+ 					(formerly: http://www.weidu.org)
 
 Spo³ecznoœci modderskie, przewodniki i wsparcie techniczne:
 
@@ -114,7 +222,7 @@ Kerzenburgforum				https://www.baldurs-gate.de/index.php
 The Gibberlings Three			http://gibberlings3.net
 Pocket Plane Group			http://pocketplane.net
 Spellhold Studios			http://www.shsforums.net/
-
+Forum polskojêzyczne     http://athkatla.cob-bg.pl/
 
 INFORMACJE PRAWNE
 
@@ -122,12 +230,20 @@ INFORMACJE PRAWNE
 Imoen 4 Ever Mod for Baldur's Gate II © jastey. Ten mod nie jest rozwijany, obs³ugiwany ani wspierany przez BioWare, Black Isle Studios, Interplay Entertainment Corp., Wizards of the Coast, Overhaul Games lub Beamdog. Wszystkie inne znaki handlowe i prawa autorskie s¹ w³asnoœci¹ ich w³aœcicieli.
 =============================================================================
 =============================================================================
-UWAGI O ROZPOWSZECHNIANIU: Mod Imoen 4 Ever zosta³ stworzony po to, aby mogli sie nim cieszyæ wszyscy gracze i nie mo¿e byæ odsprzedawany.
+UWAGI O ROZPOWSZECHNIANIU: Mod Imoen 4 Ever zosta³ stworzony po to, aby mogli siê nim cieszyæ wszyscy gracze i nie mo¿e byæ odsprzedawany.
 =============================================================================
 
 
 
 HISTORIA
+
+Version 5:
+-Added SoD content
+-Changed mod organization to more optional components
+-More dialogues in BGII added (optional).
+-Content compatibility with Imoen Friendship mod added.
+-more reply options referring to Imoen missing disabled
+-patching of reply options will be done for the relevant strings only (no destructive patching). Thank you to Argent77 for the coding help!
 
 Version 4:
 -detection variable whether Imoen will stay in the group in Korlasz' Dungeon should be applied to the correct script (cpmvar.tpas should be read in)

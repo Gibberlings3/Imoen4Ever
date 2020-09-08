@@ -57,8 +57,7 @@ END
 
 IF ~~ THEN free_07
 SAY @18
-  IF ~~ THEN DO ~//ReallyForceSpellRES("c#im0001","IMOEN2")
-SetGlobal("C#IM_ImoenStays","GLOBAL",1) 
+  IF ~~ THEN DO ~SetGlobal("C#IM_ImoenStays","GLOBAL",1) 
 SetGlobal("KickedOut","LOCALS",1)
 EraseJournalEntry(23458)
 AddJournalEntry(@21,INFO) 
@@ -73,8 +72,7 @@ END
 
 IF ~~ THEN free_09
 SAY @20
-IF ~~ THEN DO ~//ReallyForceSpellRES("c#im0001","IMOEN2")
-SetGlobal("C#IM_ImoenStays","GLOBAL",1) 
+IF ~~ THEN DO ~SetGlobal("C#IM_ImoenStays","GLOBAL",1) 
 EraseJournalEntry(23458)
 AddJournalEntry(@21,INFO) 
 JoinParty()~ EXIT

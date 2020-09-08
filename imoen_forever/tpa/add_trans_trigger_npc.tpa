@@ -1,0 +1,802 @@
+
+<<<<<<<< .../inlined/i4e_AERIE.d
+/* AERIE */
+/* meeting dialogue */
+/* #42158  ~I think you should know, Aerie, that my ultimate goal is to rescue a friend of mine... Imoen... who has been captured by the Cowled Wizards.  It could be dangerous.~ */
+ADD_TRANS_TRIGGER AERIE 4 ~Global("C#IM_ImoenStays","GLOBAL",0)~ DO %responses_4% //0 3
+
+/* #42161 ~I think you should know, Aerie, that my ultimate goal is to rescue a friend of mine... Imoen... who has been captured by the Cowled Wizards.  It could be dangerous.~ */
+ADD_TRANS_TRIGGER AERIE 10 ~Global("C#IM_ImoenStays","GLOBAL",0)~ DO %responses_10% //0 3
+
+/* #42168 ~I think you should know, Aerie, that my ultimate goal is to rescue a friend of mine... Imoen... who has been captured by the Cowled Wizards.  It could be dangerous.~ */
+ADD_TRANS_TRIGGER AERIE 21 ~Global("C#IM_ImoenStays","GLOBAL",0)~ DO %responses_21% //0 3
+
+/* #42170 ~I think you should know, Aerie, that my ultimate goal is to rescue a friend of mine... Imoen... who has been captured by the Cowled Wizards.  It could be dangerous.~ */
+ADD_TRANS_TRIGGER AERIE 25 ~Global("C#IM_ImoenStays","GLOBAL",0)~ DO %responses_25% //0 3
+>>>>>>>>
+
+// List of all potential response strrefs to check
+ACTION_DEFINE_ASSOCIATIVE_ARRAY response_strrefs BEGIN
+  42158 => 1
+  42161 => 1
+  42168 => 1
+  42170 => 1
+END
+  
+COPY_EXISTING ~AERIE.dlg~ ~override~
+  // scanning listed dialog states
+  PATCH_FOR_EACH state IN 4 10 21 25 BEGIN
+    LPF GET_RESPONSE_STRREFS INT_VAR state RET strrefs RET_ARRAY strrefs END
+    TEXT_SPRINT indices ~~  // a temporary variable for building the index list
+    FOR (i = 0; i < strrefs; ++i) BEGIN
+      SET value = $strrefs(~%i%~)
+      // Include index only if strref is listed in the response_strrefs array
+      PATCH_IF (VARIABLE_IS_SET $response_strrefs(~%value%~)) BEGIN
+        TEXT_SPRINT indices ~%indices% %i%~ // building list of indices
+      END
+    END
+    // prevent adding a trigger if index list is empty
+    PATCH_IF (~%indices%~ STR_EQ ~~) BEGIN
+      TEXT_SPRINT indices "IF ~False()~"
+    END
+    // initialize variables responses_39, responses_40, ...
+    // EVAL is used to create the variable name dynamically
+    TEXT_SPRINT EVAL ~responses_%state%~ ~%indices%~
+    PATCH_PRINT ~Variable %state%: %indices%~
+  END
+BUT_ONLY
+
+// Variables response_39, response_70
+// are now initialized and can be used in the .d file
+COMPILE EVAL ~.../inlined/i4e_AERIE.d~
+
+
+<<<<<<<< .../inlined/i4e_ANOMEN.d
+/* ANOMEN */
+/* meeting dialogue */
+/* #42174 ~I should tell you first, perhaps, that I seek to rescue an old friend who is being held hostage by the Cowled Wizards.  There may be significant risk.~ */
+ADD_TRANS_TRIGGER ANOMEN 21 ~Global("C#IM_ImoenStays","GLOBAL",0)~ DO %responses_21% //0
+>>>>>>>>
+
+// List of all potential response strrefs to check
+ACTION_DEFINE_ASSOCIATIVE_ARRAY response_strrefs BEGIN
+  42174 => 1
+END
+  
+COPY_EXISTING ~ANOMEN.dlg~ ~override~
+  // scanning listed dialog states
+  PATCH_FOR_EACH state IN 21 BEGIN
+    LPF GET_RESPONSE_STRREFS INT_VAR state RET strrefs RET_ARRAY strrefs END
+    TEXT_SPRINT indices ~~  // a temporary variable for building the index list
+    FOR (i = 0; i < strrefs; ++i) BEGIN
+      SET value = $strrefs(~%i%~)
+      // Include index only if strref is listed in the response_strrefs array
+      PATCH_IF (VARIABLE_IS_SET $response_strrefs(~%value%~)) BEGIN
+        TEXT_SPRINT indices ~%indices% %i%~ // building list of indices
+      END
+    END
+    // prevent adding a trigger if index list is empty
+    PATCH_IF (~%indices%~ STR_EQ ~~) BEGIN
+      TEXT_SPRINT indices "IF ~False()~"
+    END
+    // initialize variables responses_39, responses_40, ...
+    // EVAL is used to create the variable name dynamically
+    TEXT_SPRINT EVAL ~responses_%state%~ ~%indices%~
+    PATCH_PRINT ~Variable %state%: %indices%~
+  END
+BUT_ONLY
+
+// Variables response_x, response_y
+// are now initialized and can be used in the .d file
+COMPILE EVAL ~.../inlined/i4e_ANOMEN.d~
+
+
+
+<<<<<<<< .../inlined/i4e_BANOMEN_0.d
+/* BANOMEN */
+/* These reply options are also just disabled for GlobalGT("chapter","GLOBAL",3):
+0: #35206 ~Imoen isn't really my sister, but we did grow up together and we are very close.~ */
+ADD_TRANS_TRIGGER BANOMEN 144 ~Global("C#IM_ImoenStays","GLOBAL",0)~ DO %responses_144% //0
+>>>>>>>>
+
+// List of all potential response strrefs to check
+ACTION_DEFINE_ASSOCIATIVE_ARRAY response_strrefs BEGIN
+  35206 => 1
+END
+  
+COPY_EXISTING ~BANOMEN.dlg~ ~override~
+  // scanning listed dialog states
+  PATCH_FOR_EACH state IN 144 BEGIN
+    LPF GET_RESPONSE_STRREFS INT_VAR state RET strrefs RET_ARRAY strrefs END
+    TEXT_SPRINT indices ~~  // a temporary variable for building the index list
+    FOR (i = 0; i < strrefs; ++i) BEGIN
+      SET value = $strrefs(~%i%~)
+      // Include index only if strref is listed in the response_strrefs array
+      PATCH_IF (VARIABLE_IS_SET $response_strrefs(~%value%~)) BEGIN
+        TEXT_SPRINT indices ~%indices% %i%~ // building list of indices
+      END
+    END
+    // prevent adding a trigger if index list is empty
+    PATCH_IF (~%indices%~ STR_EQ ~~) BEGIN
+      TEXT_SPRINT indices "IF ~False()~"
+    END
+    // initialize variables responses_39, responses_40, ...
+    // EVAL is used to create the variable name dynamically
+    TEXT_SPRINT EVAL ~responses_%state%~ ~%indices%~
+    PATCH_PRINT ~Variable %state%: %indices%~
+  END
+BUT_ONLY
+
+// Variables response_x, response_y
+// are now initialized and can be used in the .d file
+COMPILE EVAL ~.../inlined/i4e_BANOMEN_0.d~
+
+<<<<<<<< .../inlined/i4e_BANOMEN_1.d
+/* BANOMEN */
+/* These reply options are also just disabled for GlobalGT("chapter","GLOBAL",3):
+1: #35207 ~She's a bit of a brat, but I'm fond of her.~ */
+ADD_TRANS_TRIGGER BANOMEN 144 ~Global("C#IM_ImoenStays","GLOBAL",0)~ DO %responses_144% //1
+>>>>>>>>
+
+// List of all potential response strrefs to check
+ACTION_DEFINE_ASSOCIATIVE_ARRAY response_strrefs BEGIN
+  35207 => 1
+END
+  
+COPY_EXISTING ~BANOMEN.dlg~ ~override~
+  // scanning listed dialog states
+  PATCH_FOR_EACH state IN 144 BEGIN
+    LPF GET_RESPONSE_STRREFS INT_VAR state RET strrefs RET_ARRAY strrefs END
+    TEXT_SPRINT indices ~~  // a temporary variable for building the index list
+    FOR (i = 0; i < strrefs; ++i) BEGIN
+      SET value = $strrefs(~%i%~)
+      // Include index only if strref is listed in the response_strrefs array
+      PATCH_IF (VARIABLE_IS_SET $response_strrefs(~%value%~)) BEGIN
+        TEXT_SPRINT indices ~%indices% %i%~ // building list of indices
+      END
+    END
+    // prevent adding a trigger if index list is empty
+    PATCH_IF (~%indices%~ STR_EQ ~~) BEGIN
+      TEXT_SPRINT indices "IF ~False()~"
+    END
+    // initialize variables responses_39, responses_40, ...
+    // EVAL is used to create the variable name dynamically
+    TEXT_SPRINT EVAL ~responses_%state%~ ~%indices%~
+    PATCH_PRINT ~Variable %state%: %indices%~
+  END
+BUT_ONLY
+
+// Variables response_x, response_y
+// are now initialized and can be used in the .d file
+COMPILE EVAL ~.../inlined/i4e_BANOMEN_1.d~
+
+
+<<<<<<<< .../inlined/i4e_BANOMEN_2.d
+/* BANOMEN */
+/* These reply options are also just disabled for GlobalGT("chapter","GLOBAL",3):
+2: #35208 ~We grew up together and I've tolerated her presence...beyond that, she's proven herself useful occasionally.~ */
+ADD_TRANS_TRIGGER BANOMEN 144 ~Global("C#IM_ImoenStays","GLOBAL",0)~ DO %responses_144% //2
+>>>>>>>>
+
+// List of all potential response strrefs to check
+ACTION_DEFINE_ASSOCIATIVE_ARRAY response_strrefs BEGIN
+  35208 => 1
+END
+  
+COPY_EXISTING ~BANOMEN.dlg~ ~override~
+  // scanning listed dialog states
+  PATCH_FOR_EACH state IN 144 BEGIN
+    LPF GET_RESPONSE_STRREFS INT_VAR state RET strrefs RET_ARRAY strrefs END
+    TEXT_SPRINT indices ~~  // a temporary variable for building the index list
+    FOR (i = 0; i < strrefs; ++i) BEGIN
+      SET value = $strrefs(~%i%~)
+      // Include index only if strref is listed in the response_strrefs array
+      PATCH_IF (VARIABLE_IS_SET $response_strrefs(~%value%~)) BEGIN
+        TEXT_SPRINT indices ~%indices% %i%~ // building list of indices
+      END
+    END
+    // prevent adding a trigger if index list is empty
+    PATCH_IF (~%indices%~ STR_EQ ~~) BEGIN
+      TEXT_SPRINT indices "IF ~False()~"
+    END
+    // initialize variables responses_39, responses_40, ...
+    // EVAL is used to create the variable name dynamically
+    TEXT_SPRINT EVAL ~responses_%state%~ ~%indices%~
+    PATCH_PRINT ~Variable %state%: %indices%~
+  END
+BUT_ONLY
+
+// Variables response_x, response_y
+// are now initialized and can be used in the .d file
+COMPILE EVAL ~.../inlined/i4e_BANOMEN_2.d~
+
+
+<<<<<<<< .../inlined/i4e_CERND.d
+/* Cernd */
+/* meeting dialogue (seriously?) */
+/* #42351 ~I think I should tell you, as well, that my ultimate goal is to rescue an old friend of mine named Imoen, who has been taken hostage by the Cowled Wizards.  It could be quite dangerous.~ */
+ADD_TRANS_TRIGGER CERND 13 ~Global("C#IM_ImoenStays","GLOBAL",0)~ DO %responses_13% //0
+
+/* #42354 ~I think I should tell you, as well, that my ultimate goal is to rescue an old friend of mine named Imoen, who has been taken hostage by the Cowled Wizards.  It could be quite dangerous.~ */
+ADD_TRANS_TRIGGER CERND 14 ~Global("C#IM_ImoenStays","GLOBAL",0)~ DO %responses_14% //0
+
+/* #42356 ~I think I should tell you, as well, that my ultimate goal is to rescue an old friend of mine named Imoen, who has been taken hostage by the Cowled Wizards.  It could be quite dangerous.~ */
+ADD_TRANS_TRIGGER CERND 15 ~Global("C#IM_ImoenStays","GLOBAL",0)~ DO %responses_15% //0
+
+/* #42358 ~I think I should tell you, as well, that my ultimate goal is to rescue an old friend of mine named Imoen, who has been taken hostage by the Cowled Wizards.  It could be quite dangerous.~ */
+ADD_TRANS_TRIGGER CERND 18 ~Global("C#IM_ImoenStays","GLOBAL",0)~ DO %responses_18% //0
+
+/* #42360 ~I think I should tell you, as well, that my ultimate goal is to rescue an old friend of mine named Imoen, who has been taken hostage by the Cowled Wizards.  It could be quite dangerous.~ */
+ADD_TRANS_TRIGGER CERND 19 ~Global("C#IM_ImoenStays","GLOBAL",0)~ DO %responses_19% //0
+
+/* #42362 ~I think I should tell you, as well, that my ultimate goal is to rescue an old friend of mine named Imoen, who has been taken hostage by the Cowled Wizards.  It could be quite dangerous.~ */
+ADD_TRANS_TRIGGER CERND 35 ~Global("C#IM_ImoenStays","GLOBAL",0)~ DO %responses_35% //0
+
+/* #42364 ~I think I should tell you, as well, that my ultimate goal is to rescue an old friend of mine named Imoen, who has been taken hostage by the Cowled Wizards.  It could be quite dangerous.~ */
+ADD_TRANS_TRIGGER CERND 43 ~Global("C#IM_ImoenStays","GLOBAL",0)~ DO %responses_43% //0
+
+/* #42366 ~I think I should tell you that my ultimate goal is to rescue an old friend of mine named Imoen.  She's a captive of the Cowled wizards.~ */
+ADD_TRANS_TRIGGER CERND 52 ~Global("C#IM_ImoenStays","GLOBAL",0)~ DO %responses_52% //0
+
+/* #42369 ~I think I should tell you that my ultimate goal is to rescue an old friend of mine named Imoen, who has been taken hostage by the Cowled Wizards.  It could be quite dangerous.~ */
+ADD_TRANS_TRIGGER CERND 53 ~Global("C#IM_ImoenStays","GLOBAL",0)~ DO %responses_53% //0
+>>>>>>>>
+
+// List of all potential response strrefs to check
+ACTION_DEFINE_ASSOCIATIVE_ARRAY response_strrefs BEGIN
+  42351 => 1
+  42354 => 1
+  42356 => 1
+  42358 => 1
+  42360 => 1
+  42362 => 1
+  42364 => 1
+  42366 => 1
+  42369 => 1
+END
+  
+COPY_EXISTING ~CERND.dlg~ ~override~
+  // scanning listed dialog states
+  PATCH_FOR_EACH state IN 13 14 15 18 19 35 43 52 53 BEGIN
+    LPF GET_RESPONSE_STRREFS INT_VAR state RET strrefs RET_ARRAY strrefs END
+    TEXT_SPRINT indices ~~  // a temporary variable for building the index list
+    FOR (i = 0; i < strrefs; ++i) BEGIN
+      SET value = $strrefs(~%i%~)
+      // Include index only if strref is listed in the response_strrefs array
+      PATCH_IF (VARIABLE_IS_SET $response_strrefs(~%value%~)) BEGIN
+        TEXT_SPRINT indices ~%indices% %i%~ // building list of indices
+      END
+    END
+    // prevent adding a trigger if index list is empty
+    PATCH_IF (~%indices%~ STR_EQ ~~) BEGIN
+      TEXT_SPRINT indices "IF ~False()~"
+    END
+    // initialize variables responses_39, responses_40, ...
+    // EVAL is used to create the variable name dynamically
+    TEXT_SPRINT EVAL ~responses_%state%~ ~%indices%~
+    PATCH_PRINT ~Variable %state%: %indices%~
+  END
+BUT_ONLY
+
+// Variables response_39, response_70
+// are now initialized and can be used in the .d file
+COMPILE EVAL ~.../inlined/i4e_CERND.d~
+
+
+<<<<<<<< .../inlined/i4e_EDWIN.d
+/* Edwin */
+/* meeting dialogue */
+/* #42148 ~I should tell you first, Edwin, that my ultimate goal is to rescue Imoen... which may be quite a dangerous task.~ */
+ADD_TRANS_TRIGGER EDWIN 31 ~Global("C#IM_ImoenStays","GLOBAL",0)~ DO %responses_31% //0
+>>>>>>>>
+
+// List of all potential response strrefs to check
+ACTION_DEFINE_ASSOCIATIVE_ARRAY response_strrefs BEGIN
+  42148 => 1
+END
+  
+COPY_EXISTING ~EDWIN.dlg~ ~override~
+  // scanning listed dialog states
+  PATCH_FOR_EACH state IN 31 BEGIN
+    LPF GET_RESPONSE_STRREFS INT_VAR state RET strrefs RET_ARRAY strrefs END
+    TEXT_SPRINT indices ~~  // a temporary variable for building the index list
+    FOR (i = 0; i < strrefs; ++i) BEGIN
+      SET value = $strrefs(~%i%~)
+      // Include index only if strref is listed in the response_strrefs array
+      PATCH_IF (VARIABLE_IS_SET $response_strrefs(~%value%~)) BEGIN
+        TEXT_SPRINT indices ~%indices% %i%~ // building list of indices
+      END
+    END
+    // prevent adding a trigger if index list is empty
+    PATCH_IF (~%indices%~ STR_EQ ~~) BEGIN
+      TEXT_SPRINT indices "IF ~False()~"
+    END
+    // initialize variables responses_39, responses_40, ...
+    // EVAL is used to create the variable name dynamically
+    TEXT_SPRINT EVAL ~responses_%state%~ ~%indices%~
+    PATCH_PRINT ~Variable %state%: %indices%~
+  END
+BUT_ONLY
+
+// Variables response_39, response_70
+// are now initialized and can be used in the .d file
+COMPILE EVAL ~.../inlined/i4e_EDWIN.d~
+
+
+<<<<<<<< .../inlined/i4e_HAERDA.d
+/* Haer'Dalis */
+/* meeting dialogue */
+/* #61292 ~Haer'Dalis, I must tell you that my ultimate goal is to rescue an old friend who is hostage to the Cowled Wizards.  It will be quite dangerous.~ */
+ADD_TRANS_TRIGGER HAERDA 104 ~Global("C#IM_ImoenStays","GLOBAL",0)~ DO %responses_104% //0
+>>>>>>>>
+
+// List of all potential response strrefs to check
+ACTION_DEFINE_ASSOCIATIVE_ARRAY response_strrefs BEGIN
+  61292 => 1
+END
+  
+COPY_EXISTING ~HAERDA.dlg~ ~override~
+  // scanning listed dialog states
+  PATCH_FOR_EACH state IN 104 BEGIN
+    LPF GET_RESPONSE_STRREFS INT_VAR state RET strrefs RET_ARRAY strrefs END
+    TEXT_SPRINT indices ~~  // a temporary variable for building the index list
+    FOR (i = 0; i < strrefs; ++i) BEGIN
+      SET value = $strrefs(~%i%~)
+      // Include index only if strref is listed in the response_strrefs array
+      PATCH_IF (VARIABLE_IS_SET $response_strrefs(~%value%~)) BEGIN
+        TEXT_SPRINT indices ~%indices% %i%~ // building list of indices
+      END
+    END
+    // prevent adding a trigger if index list is empty
+    PATCH_IF (~%indices%~ STR_EQ ~~) BEGIN
+      TEXT_SPRINT indices "IF ~False()~"
+    END
+    // initialize variables responses_39, responses_40, ...
+    // EVAL is used to create the variable name dynamically
+    TEXT_SPRINT EVAL ~responses_%state%~ ~%indices%~
+    PATCH_PRINT ~Variable %state%: %indices%~
+  END
+BUT_ONLY
+
+// Variables response_39, response_70
+// are now initialized and can be used in the .d file
+COMPILE EVAL ~.../inlined/i4e_HAERDA.d~
+
+
+<<<<<<<< .../inlined/i4e_JAN.d
+/* Jan */
+/* meeting dialogue */
+/* #42190 ~I should probably tell you, first, that my goal is to rescue an old friend of mine, Imoen, who is being held hostage by the Cowled Wizards.~ */
+ADD_TRANS_TRIGGER JAN 35 ~Global("C#IM_ImoenStays","GLOBAL",0)~ DO %responses_35% //0
+
+/* #42193 ~I should probably tell you, first, that my goal is to rescue an old friend of mine, Imoen, who is being held hostage by the Cowled Wizards.~ */
+ADD_TRANS_TRIGGER JAN 36 ~Global("C#IM_ImoenStays","GLOBAL",0)~ DO %responses_36% //0
+>>>>>>>>
+
+// List of all potential response strrefs to check
+ACTION_DEFINE_ASSOCIATIVE_ARRAY response_strrefs BEGIN
+  42190 => 1
+  42193 => 1
+END
+  
+COPY_EXISTING ~JAN.dlg~ ~override~
+  // scanning listed dialog states
+  PATCH_FOR_EACH state IN 35 36 BEGIN
+    LPF GET_RESPONSE_STRREFS INT_VAR state RET strrefs RET_ARRAY strrefs END
+    TEXT_SPRINT indices ~~  // a temporary variable for building the index list
+    FOR (i = 0; i < strrefs; ++i) BEGIN
+      SET value = $strrefs(~%i%~)
+      // Include index only if strref is listed in the response_strrefs array
+      PATCH_IF (VARIABLE_IS_SET $response_strrefs(~%value%~)) BEGIN
+        TEXT_SPRINT indices ~%indices% %i%~ // building list of indices
+      END
+    END
+    // prevent adding a trigger if index list is empty
+    PATCH_IF (~%indices%~ STR_EQ ~~) BEGIN
+      TEXT_SPRINT indices "IF ~False()~"
+    END
+    // initialize variables responses_39, responses_40, ...
+    // EVAL is used to create the variable name dynamically
+    TEXT_SPRINT EVAL ~responses_%state%~ ~%indices%~
+    PATCH_PRINT ~Variable %state%: %indices%~
+  END
+BUT_ONLY
+
+// Variables response_39, response_70
+// are now initialized and can be used in the .d file
+COMPILE EVAL ~.../inlined/i4e_JAN.d~
+
+
+<<<<<<<< .../inlined/i4e_KELDOR.d
+/* Keldorn */
+/* meeting dialogue */
+/* #42204 ~I should tell you, I think, that I have another mission, as well.  I seek to rescue an old friend of mine named Imoen who has been captured by the Cowled Wizards.~ */
+ADD_TRANS_TRIGGER KELDOR 4 ~Global("C#IM_ImoenStays","GLOBAL",0)~ DO %responses_4% //0
+
+/* #42207 ~I should tell you, I think, that I have another mission, as well.  I seek to rescue an old friend of mine named Imoen who has been captured by the Cowled Wizards.~ */
+ADD_TRANS_TRIGGER KELDOR 7 ~Global("C#IM_ImoenStays","GLOBAL",0)~ DO %responses_7% //0
+
+/* #42209 ~I feel I should tell you, first, that I plan to rescue an old friend of mine named Imoen.  She is held captive by the Cowled Wizards, and there could be considerable danger.~ */
+ADD_TRANS_TRIGGER KELDOR 13 ~Global("C#IM_ImoenStays","GLOBAL",0)~ DO%responses_13% //0
+>>>>>>>>
+
+// List of all potential response strrefs to check
+ACTION_DEFINE_ASSOCIATIVE_ARRAY response_strrefs BEGIN
+  42204 => 1
+  42207 => 1
+  42209 => 1
+END
+  
+COPY_EXISTING ~KELDOR.dlg~ ~override~
+  // scanning listed dialog states
+  PATCH_FOR_EACH state IN 4 7 13 BEGIN
+    LPF GET_RESPONSE_STRREFS INT_VAR state RET strrefs RET_ARRAY strrefs END
+    TEXT_SPRINT indices ~~  // a temporary variable for building the index list
+    FOR (i = 0; i < strrefs; ++i) BEGIN
+      SET value = $strrefs(~%i%~)
+      // Include index only if strref is listed in the response_strrefs array
+      PATCH_IF (VARIABLE_IS_SET $response_strrefs(~%value%~)) BEGIN
+        TEXT_SPRINT indices ~%indices% %i%~ // building list of indices
+      END
+    END
+    // prevent adding a trigger if index list is empty
+    PATCH_IF (~%indices%~ STR_EQ ~~) BEGIN
+      TEXT_SPRINT indices "IF ~False()~"
+    END
+    // initialize variables responses_39, responses_40, ...
+    // EVAL is used to create the variable name dynamically
+    TEXT_SPRINT EVAL ~responses_%state%~ ~%indices%~
+    PATCH_PRINT ~Variable %state%: %indices%~
+  END
+BUT_ONLY
+
+// Variables response_39, response_70
+// are now initialized and can be used in the .d file
+COMPILE EVAL ~.../inlined/i4e_KELDOR.d~
+
+
+<<<<<<<< .../inlined/i4e_KELDORJ.d
+/* banter and dialogues */
+
+/* #9142 ~Do not try my patience in this matter. We must rescue Imoen. Your family will wait. ~ */
+ADD_TRANS_TRIGGER KELDORJ 6 ~Global("C#IM_ImoenStays","GLOBAL",0)~ DO%responses_6% //3
+>>>>>>>>
+
+// List of all potential response strrefs to check
+ACTION_DEFINE_ASSOCIATIVE_ARRAY response_strrefs BEGIN
+  9142 => 1
+END
+  
+COPY_EXISTING ~KELDORJ.dlg~ ~override~
+  // scanning listed dialog states
+  PATCH_FOR_EACH state IN 6 BEGIN
+    LPF GET_RESPONSE_STRREFS INT_VAR state RET strrefs RET_ARRAY strrefs END
+    TEXT_SPRINT indices ~~  // a temporary variable for building the index list
+    FOR (i = 0; i < strrefs; ++i) BEGIN
+      SET value = $strrefs(~%i%~)
+      // Include index only if strref is listed in the response_strrefs array
+      PATCH_IF (VARIABLE_IS_SET $response_strrefs(~%value%~)) BEGIN
+        TEXT_SPRINT indices ~%indices% %i%~ // building list of indices
+      END
+    END
+    // prevent adding a trigger if index list is empty
+    PATCH_IF (~%indices%~ STR_EQ ~~) BEGIN
+      TEXT_SPRINT indices "IF ~False()~"
+    END
+    // initialize variables responses_39, responses_40, ...
+    // EVAL is used to create the variable name dynamically
+    TEXT_SPRINT EVAL ~responses_%state%~ ~%indices%~
+    PATCH_PRINT ~Variable %state%: %indices%~
+  END
+BUT_ONLY
+
+// Variables response_39, response_70
+// are now initialized and can be used in the .d file
+COMPILE EVAL ~.../inlined/i4e_KELDORJ.d~
+
+
+<<<<<<<< .../inlined/i4e_KORGANA.d
+/* Korgan */
+/* meeting dialogue */
+/* #42181 ~One thing first... I should tell you that I intend to rescue an old friend of mine named Imoen, and this takes precedence over anything else.~ */
+ADD_TRANS_TRIGGER KORGANA 9 ~Global("C#IM_ImoenStays","GLOBAL",0)~ DO %responses_9% //0
+>>>>>>>>
+
+// List of all potential response strrefs to check
+ACTION_DEFINE_ASSOCIATIVE_ARRAY response_strrefs BEGIN
+  42181 => 1
+END
+  
+COPY_EXISTING ~KORGANA.dlg~ ~override~
+  // scanning listed dialog states
+  PATCH_FOR_EACH state IN 9 BEGIN
+    LPF GET_RESPONSE_STRREFS INT_VAR state RET strrefs RET_ARRAY strrefs END
+    TEXT_SPRINT indices ~~  // a temporary variable for building the index list
+    FOR (i = 0; i < strrefs; ++i) BEGIN
+      SET value = $strrefs(~%i%~)
+      // Include index only if strref is listed in the response_strrefs array
+      PATCH_IF (VARIABLE_IS_SET $response_strrefs(~%value%~)) BEGIN
+        TEXT_SPRINT indices ~%indices% %i%~ // building list of indices
+      END
+    END
+    // prevent adding a trigger if index list is empty
+    PATCH_IF (~%indices%~ STR_EQ ~~) BEGIN
+      TEXT_SPRINT indices "IF ~False()~"
+    END
+    // initialize variables responses_39, responses_40, ...
+    // EVAL is used to create the variable name dynamically
+    TEXT_SPRINT EVAL ~responses_%state%~ ~%indices%~
+    PATCH_PRINT ~Variable %state%: %indices%~
+  END
+BUT_ONLY
+
+// Variables response_39, response_70
+// are now initialized and can be used in the .d file
+COMPILE EVAL ~.../inlined/i4e_KORGANA.d~
+
+
+<<<<<<<< .../inlined/i4e_MAZZY.d
+/* Mazzy */
+/* meeting dialogue */
+/* #42341 ~I should tell you first, perhaps, that I intend to rescue an old friend of mine named Imoen after this is done.  It could be quite dangerous.~ */
+ADD_TRANS_TRIGGER MAZZY 25 ~Global("C#IM_ImoenStays","GLOBAL",0)~ DO %responses_25% //0
+>>>>>>>>
+
+// List of all potential response strrefs to check
+ACTION_DEFINE_ASSOCIATIVE_ARRAY response_strrefs BEGIN
+  42341 => 1
+END
+  
+COPY_EXISTING ~MAZZY.dlg~ ~override~
+  // scanning listed dialog states
+  PATCH_FOR_EACH state IN 25 BEGIN
+    LPF GET_RESPONSE_STRREFS INT_VAR state RET strrefs RET_ARRAY strrefs END
+    TEXT_SPRINT indices ~~  // a temporary variable for building the index list
+    FOR (i = 0; i < strrefs; ++i) BEGIN
+      SET value = $strrefs(~%i%~)
+      // Include index only if strref is listed in the response_strrefs array
+      PATCH_IF (VARIABLE_IS_SET $response_strrefs(~%value%~)) BEGIN
+        TEXT_SPRINT indices ~%indices% %i%~ // building list of indices
+      END
+    END
+    // prevent adding a trigger if index list is empty
+    PATCH_IF (~%indices%~ STR_EQ ~~) BEGIN
+      TEXT_SPRINT indices "IF ~False()~"
+    END
+    // initialize variables responses_39, responses_40, ...
+    // EVAL is used to create the variable name dynamically
+    TEXT_SPRINT EVAL ~responses_%state%~ ~%indices%~
+    PATCH_PRINT ~Variable %state%: %indices%~
+  END
+BUT_ONLY
+
+// Variables response_39, response_70
+// are now initialized and can be used in the .d file
+COMPILE EVAL ~.../inlined/i4e_MAZZY.d~
+
+
+<<<<<<<< .../inlined/i4e_NALIA.d
+/* Nalia */
+/* meeting dialogue */
+/* #46099 ~I may be able to help you.  But I need to gather a large amount of gold to rescue a friend, so I'd be interested in knowing what you offer as payment.~ */
+ADD_TRANS_TRIGGER NALIA 0 ~Global("C#IM_ImoenStays","GLOBAL",0)~ DO %responses_0% //3
+
+/* #46100 ~I need to gather a large amount of gold to rescue a friend... so your payment had best be worth my time.~ */
+ADD_TRANS_TRIGGER NALIA 1 ~Global("C#IM_ImoenStays","GLOBAL",0)~ DO %responses_1% //3
+
+/* #42138 ~Just one thing, Nalia... you have to know that my goal is to rescue an old friend of mine, first and foremost.  Everything else is secondary.~ */
+ADD_TRANS_TRIGGER NALIA 43 ~Global("C#IM_ImoenStays","GLOBAL",0)~ DO %responses_43% //0
+
+/* #42123 ~Alright, I'll do as I've agreed, but you should know that my ultimate goal is to rescue an old friend of mine, above and beyond anything else.~ */
+ADD_TRANS_TRIGGER NALIA 65 ~Global("C#IM_ImoenStays","GLOBAL",0)~ DO %responses_65% //0
+
+/* #42133 ~Alright, I'll do as I've agreed, but you should know that my ultimate goal is to rescue an old friend of mine, above and beyond anything else.~ */
+ADD_TRANS_TRIGGER NALIA 66 ~Global("C#IM_ImoenStays","GLOBAL",0)~ DO %responses_66% //0
+
+/* #42141 ~There's something you should know, first, Nalia.  I intend to rescue an old friend of mine who has been taken hostage by the Cowled Wizards... it could be quite dangerous.~ */
+ADD_TRANS_TRIGGER NALIA 100 ~Global("C#IM_ImoenStays","GLOBAL",0)~ DO%responses_100% //0
+>>>>>>>>
+
+// List of all potential response strrefs to check
+ACTION_DEFINE_ASSOCIATIVE_ARRAY response_strrefs BEGIN
+  46099 => 1
+  46100 => 1
+  42138 => 1
+  42123 => 1
+  42133 => 1
+  42141 => 1
+END
+  
+COPY_EXISTING ~NALIA.dlg~ ~override~
+  // scanning listed dialog states
+  PATCH_FOR_EACH state IN 0 1 43 65 66 100 BEGIN
+    LPF GET_RESPONSE_STRREFS INT_VAR state RET strrefs RET_ARRAY strrefs END
+    TEXT_SPRINT indices ~~  // a temporary variable for building the index list
+    FOR (i = 0; i < strrefs; ++i) BEGIN
+      SET value = $strrefs(~%i%~)
+      // Include index only if strref is listed in the response_strrefs array
+      PATCH_IF (VARIABLE_IS_SET $response_strrefs(~%value%~)) BEGIN
+        TEXT_SPRINT indices ~%indices% %i%~ // building list of indices
+      END
+    END
+    // prevent adding a trigger if index list is empty
+    PATCH_IF (~%indices%~ STR_EQ ~~) BEGIN
+      TEXT_SPRINT indices "IF ~False()~"
+    END
+    // initialize variables responses_39, responses_40, ...
+    // EVAL is used to create the variable name dynamically
+    TEXT_SPRINT EVAL ~responses_%state%~ ~%indices%~
+    PATCH_PRINT ~Variable %state%: %indices%~
+  END
+BUT_ONLY
+
+// Variables response_39, response_70
+// are now initialized and can be used in the .d file
+COMPILE EVAL ~.../inlined/i4e_NALIA.d~
+
+
+<<<<<<<< .../inlined/i4e_VALYGAR.d
+/* Valygar */
+/* meeting dialogue */
+/* #42348 ~I should probably tell you before you agree that I intend to rescue an old friend of mine, Imoen, who has been taken hostage by the Cowled Wizards.  It could be dangerous.~ */
+ADD_TRANS_TRIGGER VALYGAR 39 ~Global("C#IM_ImoenStays","GLOBAL",0)~ DO%responses_39% //0
+>>>>>>>>
+
+// List of all potential response strrefs to check
+ACTION_DEFINE_ASSOCIATIVE_ARRAY response_strrefs BEGIN
+  42348 => 1
+END
+  
+COPY_EXISTING ~VALYGAR.dlg~ ~override~
+  // scanning listed dialog states
+  PATCH_FOR_EACH state IN 39 BEGIN
+    LPF GET_RESPONSE_STRREFS INT_VAR state RET strrefs RET_ARRAY strrefs END
+    TEXT_SPRINT indices ~~  // a temporary variable for building the index list
+    FOR (i = 0; i < strrefs; ++i) BEGIN
+      SET value = $strrefs(~%i%~)
+      // Include index only if strref is listed in the response_strrefs array
+      PATCH_IF (VARIABLE_IS_SET $response_strrefs(~%value%~)) BEGIN
+        TEXT_SPRINT indices ~%indices% %i%~ // building list of indices
+      END
+    END
+    // prevent adding a trigger if index list is empty
+    PATCH_IF (~%indices%~ STR_EQ ~~) BEGIN
+      TEXT_SPRINT indices "IF ~False()~"
+    END
+    // initialize variables responses_39, responses_40, ...
+    // EVAL is used to create the variable name dynamically
+    TEXT_SPRINT EVAL ~responses_%state%~ ~%indices%~
+    PATCH_PRINT ~Variable %state%: %indices%~
+  END
+BUT_ONLY
+
+// Variables response_39, response_70
+// are now initialized and can be used in the .d file
+COMPILE EVAL ~.../inlined/i4e_VALYGAR.d~
+
+
+<<<<<<<< .../inlined/i4e_VICONI.d
+/* Viconia */
+/* meeting dialogue */
+/* #42195 ~One thing, though, Viconia... you should probably know that Imoen is being held hostage by the Cowled Wizards, and that I intend to rescue her.~ */
+ADD_TRANS_TRIGGER VICONI 4 ~Global("C#IM_ImoenStays","GLOBAL",0)~ DO %responses_4% //0 3
+
+/* #42202 ~One thing, though, Viconia... you should probably know that Imoen is being held hostage by the Cowled Wizards, and that I intend to rescue her.~ */
+ADD_TRANS_TRIGGER VICONI 6 ~Global("C#IM_ImoenStays","GLOBAL",0)~ DO%responses_6% //0
+>>>>>>>>
+
+// List of all potential response strrefs to check
+ACTION_DEFINE_ASSOCIATIVE_ARRAY response_strrefs BEGIN
+  42195 => 1
+  42202 => 1
+END
+  
+COPY_EXISTING ~VICONI.dlg~ ~override~
+  // scanning listed dialog states
+  PATCH_FOR_EACH state IN 4 6 BEGIN
+    LPF GET_RESPONSE_STRREFS INT_VAR state RET strrefs RET_ARRAY strrefs END
+    TEXT_SPRINT indices ~~  // a temporary variable for building the index list
+    FOR (i = 0; i < strrefs; ++i) BEGIN
+      SET value = $strrefs(~%i%~)
+      // Include index only if strref is listed in the response_strrefs array
+      PATCH_IF (VARIABLE_IS_SET $response_strrefs(~%value%~)) BEGIN
+        TEXT_SPRINT indices ~%indices% %i%~ // building list of indices
+      END
+    END
+    // prevent adding a trigger if index list is empty
+    PATCH_IF (~%indices%~ STR_EQ ~~) BEGIN
+      TEXT_SPRINT indices "IF ~False()~"
+    END
+    // initialize variables responses_39, responses_40, ...
+    // EVAL is used to create the variable name dynamically
+    TEXT_SPRINT EVAL ~responses_%state%~ ~%indices%~
+    PATCH_PRINT ~Variable %state%: %indices%~
+  END
+BUT_ONLY
+
+// Variables response_39, response_70
+// are now initialized and can be used in the .d file
+COMPILE EVAL ~.../inlined/i4e_VICONI.d~
+
+
+<<<<<<<< .../inlined/i4e_BVICONI.d
+/* Viconia */
+/* banter and dialogues */
+/* #8813 ~I have to rescue Imoen. She's been my companion since I was young.~ */
+ADD_TRANS_TRIGGER BVICONI 34 ~Global("C#IM_ImoenStays","GLOBAL",0)~ DO%responses_34% //0
+>>>>>>>>
+
+// List of all potential response strrefs to check
+ACTION_DEFINE_ASSOCIATIVE_ARRAY response_strrefs BEGIN
+  8813 => 1
+END
+  
+COPY_EXISTING ~BVICONI.dlg~ ~override~
+  // scanning listed dialog states
+  PATCH_FOR_EACH state IN 34 BEGIN
+    LPF GET_RESPONSE_STRREFS INT_VAR state RET strrefs RET_ARRAY strrefs END
+    TEXT_SPRINT indices ~~  // a temporary variable for building the index list
+    FOR (i = 0; i < strrefs; ++i) BEGIN
+      SET value = $strrefs(~%i%~)
+      // Include index only if strref is listed in the response_strrefs array
+      PATCH_IF (VARIABLE_IS_SET $response_strrefs(~%value%~)) BEGIN
+        TEXT_SPRINT indices ~%indices% %i%~ // building list of indices
+      END
+    END
+    // prevent adding a trigger if index list is empty
+    PATCH_IF (~%indices%~ STR_EQ ~~) BEGIN
+      TEXT_SPRINT indices "IF ~False()~"
+    END
+    // initialize variables responses_39, responses_40, ...
+    // EVAL is used to create the variable name dynamically
+    TEXT_SPRINT EVAL ~responses_%state%~ ~%indices%~
+    PATCH_PRINT ~Variable %state%: %indices%~
+  END
+BUT_ONLY
+
+// Variables response_39, response_70
+// are now initialized and can be used in the .d file
+COMPILE EVAL ~.../inlined/i4e_BVICONI.d~
+
+
+<<<<<<<< .../inlined/i4e_YOSHJ.d
+/* Yoshimo */
+/* #58147 ~Perhaps, but I will chance that if it helps retrieve Imoen. Do you suspect something?~ */
+ADD_TRANS_TRIGGER YOSHJ 97 ~Global("C#IM_ImoenStays","GLOBAL",0)~ DO %responses_97% //1
+
+/* #58194 ~Perhaps, but that does not mean Imoen should be confined there, does it?~ */
+ADD_TRANS_TRIGGER YOSHJ 103 ~Global("C#IM_ImoenStays","GLOBAL",0)~ DO%responses_103% //2
+>>>>>>>>
+
+// List of all potential response strrefs to check
+ACTION_DEFINE_ASSOCIATIVE_ARRAY response_strrefs BEGIN
+  58147 => 1
+  58194 => 1
+END
+  
+COPY_EXISTING ~YOSHJ.dlg~ ~override~
+  // scanning listed dialog states
+  PATCH_FOR_EACH state IN 97 103 BEGIN
+    LPF GET_RESPONSE_STRREFS INT_VAR state RET strrefs RET_ARRAY strrefs END
+    TEXT_SPRINT indices ~~  // a temporary variable for building the index list
+    FOR (i = 0; i < strrefs; ++i) BEGIN
+      SET value = $strrefs(~%i%~)
+      // Include index only if strref is listed in the response_strrefs array
+      PATCH_IF (VARIABLE_IS_SET $response_strrefs(~%value%~)) BEGIN
+        TEXT_SPRINT indices ~%indices% %i%~ // building list of indices
+      END
+    END
+    // prevent adding a trigger if index list is empty
+    PATCH_IF (~%indices%~ STR_EQ ~~) BEGIN
+      TEXT_SPRINT indices "IF ~False()~"
+    END
+    // initialize variables responses_39, responses_40, ...
+    // EVAL is used to create the variable name dynamically
+    TEXT_SPRINT EVAL ~responses_%state%~ ~%indices%~
+    PATCH_PRINT ~Variable %state%: %indices%~
+  END
+BUT_ONLY
+
+// Variables response_39, response_70
+// are now initialized and can be used in the .d file
+COMPILE EVAL ~.../inlined/i4e_YOSHJ.d~

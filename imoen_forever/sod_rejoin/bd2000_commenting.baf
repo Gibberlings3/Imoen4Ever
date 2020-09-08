@@ -1,0 +1,30 @@
+/* PC surrendered Bridgefort to the Crusaders */
+IF
+	Global("bd_plot","global",260)
+	Global("C#IM_betrayal_discussion","GLOBAL",0) //same variable as in the I_C_T so this doesn't fire if the dialogue happened
+	!GlobalTimerNotExpired("bd_betrayal_discuss_timer","bd2000") //in case there are more mod NPCs commenting
+	!IsValidForPartyDialogue("KHALID") //only if Khalid cannot start his dialogue
+	IsValidForPartyDialogue("%IMOEN_DV_SOD%")
+	OR(2) 
+		!IsValidForPartyDialogue("CORWIN") //Corwin is either not here
+		Global("bd_betrayal_discussion","bd2000",1) //or Corwin's dialogue fired already
+THEN
+	RESPONSE #100
+		SetGlobal("C#IM_betrayal_discussion","bd2000",1)
+		SetGlobalTimer("bd_betrayal_discuss_timer","bd2000",ONE_MINUTE) //to space all the other NPC comments
+		DisplayStringHead("%IMOEN_DV_SOD%",@5505)
+END
+
+/* Battle at Bridgefort starts */
+IF
+	Global("bd_plot","global",250)
+	!GlobalTimerNotExpired("bd_mdd410z_ot_timer","bd2000")  // Boareskyr Bridge & Bridgefort
+	Global("C#IM_bd_ot","bd2000",0)  // Boareskyr Bridge & Bridgefort
+	IfValidForPartyDialog("%IMOEN_DV_SOD%")  
+	TriggerOverride("%IMOEN_DV_SOD%",Range([ENEMY.0.0.0.CRUSADERS],30))
+THEN
+	RESPONSE #100
+		SetGlobalTimer("bd_mdd410z_ot_timer","bd2000",THREE_MINUTES)  // Boareskyr Bridge & Bridgefort
+		SetGlobal("C#IM_bd_ot","bd2000",1)  // Boareskyr Bridge & Bridgefort
+		DisplayStringHead("%IMOEN_DV_SOD%",@5506)  
+END

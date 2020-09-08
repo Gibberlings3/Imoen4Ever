@@ -1,0 +1,13 @@
+/* imoen_bdbark01_commenting.baf */
+/* Comment in Dragonspear Castle Exterior */
+IF
+	Name("bark_mdd1246a",Myself)
+	Global("C#Imoen_bd_mdd1246a_ot","bd4000",0)  
+	Range("%IMOEN_DV_SOD%",35)  
+	Global("chapter","global",11)
+	IfValidForPartyDialog("%IMOEN_DV_SOD%")  
+THEN
+	RESPONSE #100
+		SetGlobal("C#Imoen_bd_mdd1246a_ot","bd4000",1)  
+		DisplayStringHead("%IMOEN_DV_SOD%",@5540)
+END

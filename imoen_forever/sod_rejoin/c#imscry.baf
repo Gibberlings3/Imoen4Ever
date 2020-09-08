@@ -1,0 +1,25 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		SmallWait(5)
+		ActionOverride("imoen",ForceSpell(Myself,WIZARD_SHIELD))  // SPWI114.SPL (Shield)
+		SmallWait(15)
+		FadeToColor([20.0],0)
+		SmallWait(25)
+		ActionOverride("imoen",DestroySelf())
+		ActionOverride("bdliia",DestroySelf())
+		RestorePartyLocations()
+		MultiPlayerSync()
+		ApplySpellRES("bdunhide",Player1)  // No such index
+		ApplySpellRES("bdunhide",Player2)  // No such index
+		ApplySpellRES("bdunhide",Player3)  // No such index
+		ApplySpellRES("bdunhide",Player4)  // No such index
+		ApplySpellRES("bdunhide",Player5)  // No such index
+		ApplySpellRES("bdunhide",Player6)  // No such index
+		SmallWait(7)
+		MoveViewObject(Player1,INSTANT)
+		FadeFromColor([20.0],0)
+		StartCutScene("bdcut08")
+END

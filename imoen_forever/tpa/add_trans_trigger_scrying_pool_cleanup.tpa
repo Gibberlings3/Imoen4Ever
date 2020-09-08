@@ -1,0 +1,38 @@
+<<<<<<<< .../inlined/i4e_BDSCRY.d
+/* Prevent Imoen in the Scrying Pool in bd1200.are */
+/* #63916 ~Imoen...~ */
+ADD_TRANS_TRIGGER BDSCRY 0 ~FALSE()~ DO %responses_0% //0
+>>>>>>>>
+
+// List of all potential response strrefs to check
+ACTION_DEFINE_ASSOCIATIVE_ARRAY response_strrefs BEGIN
+  ~%63916%~ => 1
+END
+  
+COPY_EXISTING ~BDSCRY.dlg~ ~override~
+  // scanning listed dialog states
+  PATCH_FOR_EACH state IN 0 BEGIN
+    LPF GET_RESPONSE_STRREFS INT_VAR state RET strrefs RET_ARRAY strrefs END
+    TEXT_SPRINT indices ~~  // a temporary variable for building the index list
+    FOR (i = 0; i < strrefs; ++i) BEGIN
+      SET value = $strrefs(~%i%~)
+      // Include index only if strref is listed in the response_strrefs array
+      PATCH_IF (VARIABLE_IS_SET $response_strrefs(~%value%~)) BEGIN
+        TEXT_SPRINT indices ~%indices% %i%~ // building list of indices
+      END
+    END
+    // prevent adding a trigger if index list is empty
+    PATCH_IF (~%indices%~ STR_EQ ~~) BEGIN
+      TEXT_SPRINT indices "IF ~False()~"
+    END
+    // initialize variables responses_39, responses_40, ...
+    // EVAL is used to create the variable name dynamically
+    TEXT_SPRINT EVAL ~responses_%state%~ ~%indices%~
+    PATCH_PRINT ~Variable %state%: %indices%~
+  END
+BUT_ONLY
+
+
+// Variable response_13
+// is now initialized and can be used in the .d file
+COMPILE EVAL ~.../inlined/i4e_BDSCRY.d~

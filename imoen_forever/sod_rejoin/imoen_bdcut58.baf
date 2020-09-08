@@ -1,0 +1,13 @@
+/* imoen_bdcut58.baf
+Imoen was left standing in bd4700.are - make sure he's coming to the last hell area, too */
+
+IF
+  Global("C#Imoen_kicked_bd4700","global",1) //set in BDIMOENP.dlg
+  !Dead("%IMOEN_DV_SOD%")
+  !InParty("%IMOEN_DV_SOD%")
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    MoveGlobal("bd4400","%IMOEN_DV_SOD%",[1519.1291]) //coordinates somewhere near the portal in bd4400.are. 
+    ActionOverride("%IMOEN_DV_SOD%",Face(E))     
+END

@@ -1,0 +1,9 @@
+/*imoen_bdcut61.baf: Imoen leaves the group after the murder accusations */
+IF
+	InParty("%IMOEN_DV_SOD%")  
+THEN
+	RESPONSE #100
+		CutSceneId("%IMOEN_DV_SOD%")
+		ActionOverride("%IMOEN_DV_SOD%",LeaveParty())
+		ActionOverride("%IMOEN_DV_SOD%",DestroyAllFragileEquipment(ADAMANTINE)) //this destroys all drow equipment, just in case the NPC had any.
+END

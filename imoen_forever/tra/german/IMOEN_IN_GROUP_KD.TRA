@@ -18,6 +18,8 @@
 @17   = ~Nimm die ganzen Unterlagen über Bhaal und gib sie Herzogin Jannath, Imoen.~
 @18   = ~<CHARNAME>, hast du eigentlich die leiseste Ahnung, was ich alles anstellen musste, damit ich hier mit dir sein kann und nicht mit Herzogin Jannath in irgendeiner stickigen Bibliothek hocken muss? Tut mir leid, <PRO_SIRMAAM>, aber ich bleibe an deiner Seite.~
 @19   = ~<CHARNAME>! Bereit zum Verlassen der Gruft - aber was ist mit meiner armen Imoen passiert? Das ist so nicht akzeptabel. Einen kleinen Moment, wenn ich bitten darf, jung<PRO_MANWOMAN>. Ich werde Imoen wieder auf ihre Beine stellen. Kommt Ihr mal zum Ausgang, dann wird sie Euch selbst die Leviten lesen! (seufz) Oder auch nicht, so sehr, wie sie Euch bewundert. (Pfff!)~
+
+/* imoen_in_palace.d */
 @20   = ~Gar nicht gut, <CHARNAME>.~
 @21   = ~Boah, da bin ich aber noch ganz schön benommen von dem blöden Gift, wenn ich mich nicht mal mehr erinnern kann, wen wir so getroffen hatten, und wen nicht!~
 @22   = ~Was? Das würdest du doch niemals aus freien Stücken so entscheiden, oder? Jetzt machst du mir Angst, was ist los?~ 
@@ -26,3 +28,11 @@
 @25   = ~Du bist sozusagem meine engste Familie, <CHARNAME>. Ich hab dich echt lieb. Das weißt du hoffentlich. Aber so... so brauche ich erstmal etwas Ruhe. Zumindest für eine Weile.~
 @26   = ~Und ich werde mich auf unser nächstes Abenteuer vorbereiten. Es ist nur...~
 @27   = ~Sehr witzig, Imoen. Ich hatte hier sprichwörtlich *keine* andere Wahl, als meine Rolle als "Held von Baldurs Tor" anzunehmen.~ ~Sehr witzig, Imoen. Ich hatte hier sprichwörtlich *keine* andere Wahl, als meine Rolle als "Heldin von Baldurs Tor" anzunehmen.~ 
+
+/* new for v5 */
+@28   = ~Wie ich schon sagte: Ich habe deine Entscheidung, mit Herzogin Jannath zu trainieren, akzeptiert. Du musst also kein schlechtes Gewissen haben, wenn du nicht mitgehst.~
+@29   = ~Das ist kein Problem, Imoen. Ich weiß ja, dass du mit Herzogin Jannath Magie übst. Ich würde dich da eh nicht wegholen wollen.~
+@30   = ~Das weiß ich, das ist aber nicht der ganze Grund...~
+@31   = ~Das weiß ich doch! Ich fühl' mich trotzdem schlecht deswegen. Ich würde lieber mit dir ziehen, <CHARNAME>.~
+@32   = ~Also werde ich hier bei Herzogin Jannath bleiben, gesund werden und dabei Magie mit ihr üben.~
+
