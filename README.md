@@ -32,7 +32,7 @@ SoD:
 -----------------------------------
 With this mod, Imoen will be recruitable in SoD. There are several optional components. For one of them, Imoen will remain in your group in the beginning of SoD if she was in BG:EE (If Imoen was not in party in the transition from BG:EE, her presence in Korlasz' Crypt will play like in the original game with no changes.). She will be a party member in Korlasz's crypt up until the point where all party members leave and the PC finds themselves in the Ducal Palace. From there, Imoen will take her role as in the original game. 
 
-Another component lets Imoen return to the group when the group arrives at the first camp after marching out against the crusade.
+Another component lets Imoen return to the group when the group arrives at the first camp after marching out against the crusade. She will then be available as a party member until the original game events after the PC's fall kick in.
 
 Refer to the readme (link above) to see which other components are available.
 
