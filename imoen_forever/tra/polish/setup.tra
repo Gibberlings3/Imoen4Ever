@@ -1,6 +1,32 @@
-@9900  = ~Imoen 4 Ever w BGII: posmakuj BGII bez zbytecznego przymusu i razem z Imoen!~
+@9900  = ~Imoen 4 Ever w BGII: Posmakuj BGII bez zbytecznego przymusu i razem z Imoen!~
 @9901  = ~BGIIFixpack Core Fixes konieczne do zainstalowania tego moda.~
 @9902  = ~Ta modyfikacja nie jest kompatybilna z modem "Imoen Is Stone".~
 @9903  = ~Imoen 4 Ever w SoD: Imoen pozostaje w druzynie podczas SoD.~
 @9904  = ~Ten komponent jest zgodny tylko z SoD (i EET).~
 @9905  = ~Ten komponent jest zgodny tylko z BGII.~
+
+/* new for v5 */
+@9906  = ~Imoen 4 Ever w SoD: Imoen pozostaje w druzynie w kryptach Korlasz~
+@9907  = ~Imoen 4 Ever w SoD: Imoen powraca w pierwszym obozie Koalicji (bd1000)~
+@9908  = ~Wymaga komponentu "Imoen pozostaje w druzynie w kryptach Korlasz".~
+@9909  = ~Imoen 4 Ever w SoD: Imoen podaje lepszy powod, by pozostac w Palacu~
+@9910  = ~Imoen 4 Ever w SoD: Odgrywa filmik z Imoen i Jannath~
+@9911  = ~Wymaga komponentu "Imoen powraca w pierwszym obozie koalicji".~
+@9912  = ~Imoen 4 Ever w BGII: Dodaje Imoen dialogi w rozdzialach 2 i 3~
+@9913  = ~Wymaga komponentu "Imoen 4 Ever w BGII: Imoen powraca po rozmowie z Gaelanem w rozdziale 2".~
+@9914  = ~Imoen 4 Ever w BGII: Dodaje Imoen czary ochronne w rozdzialach 2 i 3~
+@9915  = ~Imoen 4 Ever w BGII: Kompatybilnosc z Alternatives i Saerileth~
+@9916  = ~Wykryto Alternatives: uzupelnianie.~
+@9917  = ~Nie wykryto Alternatives.~
+@9918  = ~Wykryto Saerileth: uzupelnianie.~
+@9919  = ~Nie wykryto Saerileth.~
+@9920  = ~Imoen 4 Ever w BGII: Yoshimo pojawia sie w Brynnlaw~
+@9921  = ~Zawartosc dla BGII~
+@9922  = ~Zawartosc dla SoD~
+@9923  = ~Imoen 4 Ever w SoD: Dodaje Imoen dialogi w rozdzialach 8-12~
+@9924  = ~Imoen 4 Ever w SoD: Ujednolicone portrety Imoen~
+@9925  = ~Uzyj portretu Imoen z BG1 przez cale SoD~
+@9926  = ~Uzyj portretu Imoen z SoD po kryptach Korlasz~
+@9927  = ~Wymaga komponentu "Imoen pozostaje w druzynie w kryptach Korlasz" lub komponentu "Imoen powraca w pierwszym obozie Koalicji".~
+@9928  = ~Imoen 4 Ever w BGII: Imoen powraca po rozmowie z Gaelanem w rozdziale 2~
+@9929  = ~Imoen na koniec gry powinna byc taka, jak byla w druzynie (tylko SoD)~

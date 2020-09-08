@@ -28,3 +28,11 @@
 @25   = ~<CHARNAME>, jesteœ dla mnie jak rodzina. Kocham Ciê. Wiesz o tym. Ale teraz... potrzebujê siê wyciszyæ... na jakiœ czas.~
 @26   = ~I przygotujê siê na nasze nastêpne przygody. Tylko...~
 @27   = ~Zabawne, ¿e ty to mówisz. Nie mia³em *dos³ownie* ¿adnego wyboru, jak tylko zaakceptowaæ tê rolê „bohatera Wrót Baldura”.~ ~Zabawne, ¿e ty to mówisz. Nie mia³am *dos³ownie* ¿adnego wyboru, jak tylko zaakceptowaæ tê rolê „bohaterki Wrót Baldura”.~
+
+/* new for v5 */
+@28   = ~Jak mówi³em, akceptujê twoj¹ decyzjê o trenowaniu z ksiê¿n¹ Jannath, wiêc nie musisz siê k³opotaæ tym, ¿e tu zostajesz.~ ~Jak mówi³am, akceptujê twoj¹ decyzjê o trenowaniu z ksiê¿n¹ Jannath, wiêc nie musisz siê k³opotaæ tym, ¿e tu zostajesz.~
+@29   = ~W porz¹dku, Imoen. Wiem, ¿e trenujesz z ksiê¿n¹ Jannath. I tak nie chcia³<PRO_HESHE>bym ciê od tego odrywaæ.~
+@30   = ~Wiem, ale jest coœ jeszcze...~
+@31   = ~Wiem o tym! Ale i tak siê martwiê. <CHARNAME>, wola³abym raczej pójœæ razem z tob¹.~
+@32   = ~Wiêc pozostanê z ksiê¿n¹ Jannath i wykorzystam ten czas, by trenowaæ z ni¹ moje magiczne zdolnoœci.~
+
