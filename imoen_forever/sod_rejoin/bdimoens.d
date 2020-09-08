@@ -55,8 +55,8 @@ END
 
 IF ~~ THEN heya_its_me_01
 SAY @12
-IF ~~ THEN + heya_its_me_09
-IF ~!AreaCheck("bd0103")~ THEN + heya_its_me_03
+IF ~~ THEN + heya_its_me_03
+IF ~AreaCheck("bd0103")~ THEN + heya_its_me_09
 END
 
 IF ~~ THEN heya_its_me_02
@@ -72,10 +72,10 @@ END
 IF ~~ THEN heya_its_me_04
 SAY @18
 IF ~~ THEN DO ~SetGlobal("C#IM_ImoenRejoinsbd1000","GLOBAL",5) 
-SetDialog("BDIMOENJ")
+SetDialog("BDIMOEN")
 JoinParty()~ EXIT
 IF ~AreaCheck("bd0103")~ THEN DO ~SetGlobal("C#IM_ImoenRejoinsbd1000","GLOBAL",4) 
-SetDialog("BDIMOENJ")
+SetDialog("BDIMOEN")
 JoinParty()~ EXIT
 END
 
@@ -89,8 +89,9 @@ END
 
 IF ~~ THEN heya_its_me_06
 SAY @20
-IF ~~ THEN + heya_its_me_09
-IF ~!AreaCheck("bd0103")~ THEN + heya_its_me_03
+IF ~~ THEN + heya_its_me_03
+IF ~AreaCheck("bd0103")~ THEN + heya_its_me_09
+
 END
 
 IF ~~ THEN heya_its_me_07
