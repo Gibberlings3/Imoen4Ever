@@ -34,6 +34,8 @@ With this mod, Imoen will be recruitable in SoD. There are several optional comp
 
 Another component lets Imoen return to the group when the group arrives at the first camp after marching out against the crusade. She will then be available as a party member until the original game events after the PC's fall kick in.
 
-Refer to the readme (link above) to see which other components are available.
+More content for SoD offered is reactions to game events and dialogues for Imoen, the original "Imoen studies with Jannath" scene from the scrying pool as a cutscene, the possibility to toggle between Imoen's BG1 and SoD Portrait, and an altered dialogue after the poison attack to give a better reason why she will stay behind.
+
+Please refer to the readme to see which other components are available.
 
 
