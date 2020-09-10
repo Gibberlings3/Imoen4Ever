@@ -296,7 +296,6 @@ HISTORY
 Version 5:
 
 -Added SoD content
-
 -Changed mod organization to more optional components
 -More dialogues in BGII added (optional).
 -Content compatibility with Imoen Friendship mod added.
