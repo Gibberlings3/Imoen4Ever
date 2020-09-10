@@ -56,6 +56,8 @@ THEN
 	ActionOverride("%IMOEN_DV_SOD%",MakeGlobalOverride())
 	SmallWait(1)
 	ActionOverride("%IMOEN_DV_SOD%",DestroyItem("MINHP1"))
+	ActionOverride("%IMOEN_DV_SOD%",DestroyItem("POTN14"))
+	SmallWait(1)
 	ChangeEnemyAlly("%IMOEN_DV_SOD%",NEUTRAL)
 	ChangeSpecifics("%IMOEN_DV_SOD%",ALLIES)
 	ActionOverride("%IMOEN_DV_SOD%",SetGlobal("bd_joined","locals",0))
