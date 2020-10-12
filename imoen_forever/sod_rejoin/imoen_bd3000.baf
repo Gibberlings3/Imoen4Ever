@@ -22,6 +22,6 @@ THEN
 //    ActionOverride("%IMOEN_DV_SOD%",ChangeAIScript("BDTHIE01",GENERAL))
     ActionOverride("%IMOEN_DV_SOD%",ChangeAIScript("",GENERAL))
     ActionOverride("%IMOEN_DV_SOD%",ChangeAIScript("",DEFAULT))
-    ActionOverride("%IMOEN_DV_SOD%",SetDialogue("BDIMOENP"))
+    ActionOverride("%IMOEN_DV_SOD%",SetDialogue("BDIMOEN"))
     Continue()
 END

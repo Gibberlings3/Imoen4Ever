@@ -2,7 +2,7 @@
 Imoen was left standing in bd4700.are - make sure he's coming to the last hell area, too */
 
 IF
-  Global("C#Imoen_kicked_bd4700","global",1) //set in BDIMOENP.dlg
+  Global("C#Imoen_kicked_bd4700","global",1) //set in BDIMOENP.d
   !Dead("%IMOEN_DV_SOD%")
   !InParty("%IMOEN_DV_SOD%")
 THEN
