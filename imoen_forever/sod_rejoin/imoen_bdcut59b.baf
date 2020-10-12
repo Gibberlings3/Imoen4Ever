@@ -2,7 +2,7 @@
 Global("C#Imoen_kicked_bd4700","global",1): Imoen was left standing in hell dimension - make sure she's coming back to the castle, too */
 
 IF
-  Global("C#Imoen_kicked_bd4700","global",1) //set in BDIMOENP.dlg
+  Global("C#Imoen_kicked_bd4700","global",1) //set in BDIMOENP.d
   !Dead("%IMOEN_DV_SOD%")
   !InParty("%IMOEN_DV_SOD%")
 THEN
