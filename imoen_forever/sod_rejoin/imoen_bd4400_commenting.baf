@@ -7,6 +7,6 @@ IF
 THEN
 	RESPONSE #100
 		DisplayStringWait("%IMOEN_DV_SOD%",@5530) 
-	    SetGlobal("C#Imoen_bd_avernus_bark","bd4400",0)  
+	    SetGlobal("C#Imoen_bd_avernus_bark","bd4400",1)  
 		SmallWait(8)
 END
