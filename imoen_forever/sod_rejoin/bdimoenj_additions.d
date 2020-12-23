@@ -23,6 +23,7 @@ END
 (StrRef: 57554) */
 I_C_T BDOPHYLL 40 C#IM_BDOPHYLL_40
 == bdimoen IF ~IsValidForPartyDialogue("%IMOEN_DV_SOD%")~ THEN @3
+== BDOPHYLL IF ~IsValidForPartyDialogue("%IMOEN_DV_SOD%")~ THEN %6377%
 END
 
 
