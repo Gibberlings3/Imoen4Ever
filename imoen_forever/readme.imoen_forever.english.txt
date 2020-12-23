@@ -260,9 +260,14 @@ Argent77 - coding help for non-destructive ADD_TRANS_TRIGGER patching
 
 Lauriel - proof reading (English)
 
-memory - Polish translation
-
 unknown user: idea about Imoen staying behind in SoD because of her poison injury. (Let me know if you you know what name I should put here.)
+
+Translations:
+------------
+
+memory - Polish
+
+Raza, stn & Arcanecoast Team - Russian
 
 
 
@@ -292,6 +297,13 @@ REDISTRIBUTION NOTE: Imoen 4 Ever Mod was created to be freely enjoyed by all Ba
 
 
 HISTORY
+
+Version 6:
+-Added Russian version by Raza, stn & Arcanecoast Team
+- Imoen should not die instead of Ophyllis after interjecting into his (last) dialogue
+- Imoen should not loop her "arrival in hell" StringHead line. Her script action should not block the rest of the area script.
+- Imoen's generic kickout dialogue should not block the original dialogue at the and of SoD.
+- typo corrections
 
 Version 5:
 

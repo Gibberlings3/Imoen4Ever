@@ -256,15 +256,22 @@ This should be helpful in case Imoen came back but was not taken into party but 
 
 CREDITS
 
-Acifer - promotion picture, beta testing, Name der Mod
+Acifer - Promotion-Bild, Betatesten, Name der Mod
 
-Argent77 - coding help for non-destructive ADD_TRANS_TRIGGER patching
+Argent77 - Codinghilfe für nicht-destruktives ADD_TRANS_TRIGGER Patchen
 
 Lauriel - Korrekturlesen (Englisch)
 
-memory - Polish translation
+Unbekannter User: Idee, dass Imoen aufgrund ihrer Vergiftung in SoD im Palast zurückbleibt. Lasst mich wissen, wer diese Idee hatte, wenn Ihr es wisst!
 
-unknown user: idea about Imoen staying behind in SoD because of her poison injury. (Let me know if you you know what name I should put here.)
+Translations:
+------------
+
+memory - Polnisch
+
+Raza, stn & Arcanecoast Team - Russisch
+
+
 
 TOOLS USED
 IESDP					https://gibberlings3.github.io/iesdp/index.htm
@@ -293,10 +300,15 @@ REDISTRIBUTION NOTE: Imoen 4 Ever Mod was created to be freely enjoyed by all Ba
 
 HISTORY
 
+Version 6:
+-Added Russian version by Raza, stn & Arcanecoast Team
+- Imoen should not die instead of Ophyllis after interjecting into his (last) dialogue
+- Imoen should not loop her "arrival in hell" StringHead line. Her script action should not block the rest of the area script.
+- Imoen's generic kickout dialogue should not block the original dialogue at the and of SoD.
+- typo corrections
+
 Version 5:
-
 -Added SoD content
-
 -Changed mod organization to more optional components
 -More dialogues in BGII added (optional).
 -Content compatibility with Imoen Friendship mod added.
