@@ -9,7 +9,7 @@ BACKUP ~imoen_forever/backup~
 AUTHOR ~Please post at G3 or Kerzenburgforum, refer to readme.~  
 
 
-VERSION ~v5 Beta 03~  
+VERSION ~v6~  
 
 README ~imoen_forever/readme.imoen_forever.%LANGUAGE%.txt~ ~imoen_forever/readme.imoen_forever.english.txt~
 
@@ -73,6 +73,7 @@ OUTER_SPRINT newline ~%WNL%%LNL%%MNL%%TAB% ~
 
 ACTION_IF GAME_IS ~bgee~ THEN BEGIN
   OUTER_SPRINT ~IMOEN_DV_SOD~ ~IMOEN~
+  OUTER_SPRINT ~6377~ ~6377~
   OUTER_SPRINT ~11035~ ~11035~
   OUTER_SPRINT ~16413~ ~16413~
   OUTER_SPRINT ~16414~ ~16414~
@@ -133,6 +134,7 @@ END
 
 ACTION_IF GAME_IS ~eet~ THEN BEGIN
   OUTER_SPRINT ~IMOEN_DV_SOD~ ~IMOEN2~
+  OUTER_SPRINT ~6377~ ~206377~
   OUTER_SPRINT ~11035~ ~211035~
   OUTER_SPRINT ~16413~ ~216413~
   OUTER_SPRINT ~16414~ ~216414~
@@ -212,6 +214,11 @@ LANGUAGE ~Polski~
          ~polish~   
          ~imoen_forever/tra/polish/setup.tra~
          ~imoen_forever/tra/polish/game.tra~
+
+LANGUAGE ~Russian~
+         ~russian~   
+         ~imoen_forever/tra/russian/setup.tra~
+         ~imoen_forever/tra/russian/game.tra~
 
 
 ////////////////////////////////////////////////////////////////////////
@@ -1075,7 +1082,7 @@ EXTEND_TOP ~bd4300.bcs~ ~%MOD_FOLDER%/sod_rejoin/imoen_bd4300_commenting.baf~
 EVALUATE_BUFFER
 
 /* Comment upon entering Avernus */
-EXTEND_TOP ~bd4400.bcs~ ~%MOD_FOLDER%/sod_rejoin/imoen_bd4400_commenting.baf~
+EXTEND_BOTTOM ~bd4400.bcs~ ~%MOD_FOLDER%/sod_rejoin/imoen_bd4400_commenting.baf~
 EVALUATE_BUFFER
 
 /* Comment in the Avernus Elevator */

@@ -47,7 +47,8 @@ END
 
 /* join-up after leaving the group */
 IF WEIGHT #-1
-~!InParty(Myself)
+~!AreaCheck("bd6200")
+!InParty(Myself)
 Global("bd_joined","locals",0)
 GlobalGT("bd_plot","GLOBAL",54)~ THEN join_again
   SAY #%63958% /* ~Heya, how are things going?~ */
