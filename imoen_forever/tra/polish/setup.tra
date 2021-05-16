@@ -30,3 +30,7 @@
 @9927  = ~Wymaga komponentu "Imoen pozostaje w druzynie w kryptach Korlasz" lub komponentu "Imoen powraca w pierwszym obozie Koalicji".~
 @9928  = ~Imoen 4 Ever w BGII: Imoen powraca po rozmowie z Gaelanem w rozdziale 2~
 @9929  = ~Imoen na koniec gry powinna byc taka, jak byla w druzynie (tylko SoD)~
+
+
+/* new for v7 */
+@9930  = ~This component needs to be installed before EET_End on your EET install.~

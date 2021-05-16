@@ -30,3 +30,6 @@
 @9927  = ~Die Komponente "Imoen 4 Ever fuer SoD: Imoen bleibt in Korlasz' Crypta in der Gruppe" ODER die Komponente "Imoen 4 Ever fuer SoD: Imoen kommt im ersten Koalitionslager zurück zum HC" muss installiert sein.~
 @9928  = ~Imoen 4 Ever fuer BGII: Imoen kehrt nach dem Gespaech mit Gaelan zu Beginn von Kapitel 2 zurueck~
 @9929  = ~Imoen 4 Ever fuer SoD: Imoen am Ende des Spiels soll dieselbe wie vorher sein (nur fuer SoD)~
+
+/* new for v7 */
+@9930  = ~Diese Komponente muss vor EET_End installiert werden.~

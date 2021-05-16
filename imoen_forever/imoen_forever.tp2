@@ -9,14 +9,21 @@ BACKUP ~imoen_forever/backup~
 AUTHOR ~Please post at G3 or Kerzenburgforum, refer to readme.~  
 
 
-VERSION ~v6~  
+VERSION ~v7~  
 
 README ~imoen_forever/readme.imoen_forever.%LANGUAGE%.txt~ ~imoen_forever/readme.imoen_forever.english.txt~
 
 
-AUTO_TRA ~imoen_forever/tra/%s~
+AUTO_TRA ~imoen_forever/tra/autotra/%s~
 
 ALWAYS
+
+/* check for a ready SoD */
+
+ACTION_IF ((FILE_EXISTS ~dlc/sod-dlc.zip~) OR (FILE_EXISTS ~sod-dlc.zip~)) THEN BEGIN
+  FAIL @1002 /* ~Modmerge or Argent's DLC Merger is required before mods can be installed on this game.~ */
+END
+
 
 
   ACTION_IF GAME_IS ~eet~ BEGIN
@@ -44,30 +51,6 @@ ALWAYS
   ACTION_IF GAME_IS ~eet~ THEN BEGIN
     INCLUDE ~EET/other/cpmvars/eet_cpmvars.tpa~
   END
-
-//CamDawgs CD_STATE_NOTVALID 
-    APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~ UNLESS ~CD_STATE_NOTVALID~
-
-
-    /* BGII:EE, EET - formatted texts etc. */
-    ACTION_DEFINE_ARRAY fl#noconvert BEGIN setup END
-
-    ACTION_DEFINE_ARRAY fl#reload BEGIN game END
-
-      LAF HANDLE_CHARSETS
-        INT_VAR
-          infer_charsets = 1
-        STR_VAR
-          tra_path = EVAL ~imoen_forever/Tra~
-          noconvert_array = fl#noconvert
-          reload_array = fl#reload
-      END
-
-/* check for a ready SoD */
-
-ACTION_IF ((FILE_EXISTS ~dlc/sod-dlc.zip~) OR (FILE_EXISTS ~sod-dlc.zip~)) THEN BEGIN
-  FAIL @1002 /* ~Modmerge or Argent's DLC Merger is required before mods can be installed on this game.~ */
-END
 
 OUTER_SPRINT newline ~%WNL%%LNL%%MNL%%TAB% ~
 
@@ -194,6 +177,96 @@ ACTION_IF GAME_IS ~eet~ THEN BEGIN
 END
 
 
+//-----Do only once for whole mod-------
+ACTION_IF !FILE_EXISTS ~imoen_forever/Install/imoen_foreverinstall.mrk~ BEGIN
+
+
+//CamDawgs CD_STATE_NOTVALID 
+    APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~ UNLESS ~CD_STATE_NOTVALID~
+
+
+    /* BGII:EE, EET - formatted texts etc. */
+
+    /* Copies tra files into the autotra-folder (to leave the originals untouched) */
+    DEFINE_ACTION_FUNCTION autotra_workaround BEGIN
+      COPY ~imoen_forever/tra/english~  ~imoen_forever/tra/autotra/%LANGUAGE%~
+      COPY ~imoen_forever/tra/%LANGUAGE%~  ~imoen_forever/tra/autotra/%LANGUAGE%~
+    END
+
+    LAF autotra_workaround END
+
+
+
+    ACTION_DEFINE_ARRAY fl#noconvert BEGIN setup END
+
+    ACTION_DEFINE_ARRAY fl#reload BEGIN game END
+
+      LAF HANDLE_CHARSETS
+        INT_VAR
+          infer_charsets = 1
+        STR_VAR
+          tra_path = EVAL ~imoen_forever/Tra/autotra~
+          noconvert_array = fl#noconvert
+          reload_array = fl#reload
+      END
+
+/* SoD bdbanter.2da */
+ACTION_IF (GAME_IS ~bgee~ AND FILE_EXISTS_IN_GAME ~bd0103.are~) THEN BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~BDBANTER.2DA~) BEGIN
+	APPEND ~bdbanter.2da~
+		~Imoen 	BDIMOENB~
+	UNLESS ~Imoen~
+        
+  END ELSE BEGIN 
+
+<<<<<<<< .../BDBANTER.2DA
+2DA      V1.0
+NONE
+         FILE
+KIVAN    BDKIVANB
+ALORA    BDALORAB
+MINSC    BDMINSCB
+DYNAHEIR BDDYNAHB
+YESLICK  BDYESLIB
+CORAN    BDCORANB
+AJANTIS  BDAJANTB
+KHALID   BDKHALIB
+JAHEIRA  BDJAHEIB
+GARRICK  BDGARRIB
+SAFANA   BDSAFANB
+FALDORN  BDFALDOB
+BRANWEN  BDBRANWB
+QUAYLE   BDQUAYLB
+XAN      BDXANB
+SKIE     BDSKIEB
+ELDOTH   BDELDOTB
+XZAR     BDXZARB
+MONTARON BDMONTAB
+TIAX     BDTIAXB
+KAGAIN   BDKAGAIB
+SHARTEEL BDSHARTB
+EDWIN    BDEDWINB
+VICONIA  BDVICONB
+IMOEN    BDIMOENB
+NEERA    BDNEERAB
+DORN     BDDORNB
+RASAAD   BDRASAAB
+BAELOTH  BDBAELOB
+VOGHILN  BDVOGHIB
+MKHIIN   BDMKHIIB
+CORWIN   BDCORWIB
+GLINT    BDGLINTB
+>>>>>>>>
+    COPY ~.../BDBANTER.2DA~ ~override~ 
+  END
+END //SoD
+
+// ----End (Do only once for whole mod)----
+  COPY ~imoen_forever/Install/component.xx~ ~imoen_forever/Install/imoen_foreverinstall.mrk~
+  END // imoen_foreverinstall.mrk
+
+  LOAD_TRA ~imoen_forever/tra/autotra/english/game.tra~
+  LOAD_TRA ~imoen_forever/tra/autotra/%LANGUAGE%/game.tra~
 
 END //ALWAYS
 
@@ -217,7 +290,7 @@ LANGUAGE ~Polski~
 
 LANGUAGE ~Russian~
          ~russian~   
-         ~imoen_forever/tra/russian/setup.tra~
+         ~imoen_forever/tra/english/setup.tra~
          ~imoen_forever/tra/russian/game.tra~
 
 
@@ -231,6 +304,8 @@ BEGIN @9928 DESIGNATED 0 //GROUP @9921
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet bgt tob~ @9905 
 REQUIRE_PREDICATE ((GAME_IS ~bg2ee eet~) OR (MOD_IS_INSTALLED ~setup-bg2fixpack.TP2~ "0")) @9901 
 REQUIRE_PREDICATE NOT (MOD_IS_INSTALLED ~setup-ImoenIsStone.TP2~ "0") @9902 
+FORBID_COMPONENT ~EET_end.tp2~ ~0~ @9930
+FORBID_COMPONENT ~EET_end.tp2~ ~1~ @9930
 
 
 
@@ -473,6 +548,8 @@ BEGIN @9912 DESIGNATED 1 //GROUP @9921
 REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-imoen_forever.TP2~ "0") @9913 
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet bgt tob~ @9905 
 REQUIRE_PREDICATE ((GAME_IS ~bg2ee eet~) OR (MOD_IS_INSTALLED ~setup-bg2fixpack.TP2~ "0")) @9901 
+FORBID_COMPONENT ~EET_end.tp2~ ~0~ @9930
+FORBID_COMPONENT ~EET_end.tp2~ ~1~ @9930
 
 /* "I... er, found some things while they removed the belt. Don't look at me like that! It's not my fault they don't watch their stuff properly, is it?" */
 
@@ -492,6 +569,8 @@ BEGIN @9920 DESIGNATED 2 //GROUP @9921
 REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-imoen_forever.TP2~ "0") @9913 
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet bgt tob~ @9905 
 REQUIRE_PREDICATE ((GAME_IS ~bg2ee eet~) OR (MOD_IS_INSTALLED ~setup-bg2fixpack.TP2~ "0")) @9901 
+FORBID_COMPONENT ~EET_end.tp2~ ~0~ @9930
+FORBID_COMPONENT ~EET_end.tp2~ ~1~ @9930
 
 /* Make Yoshimo appear at Brynnlaw - only if Imoen is in party */
 
@@ -502,7 +581,7 @@ EXTEND_TOP ~ar1600.bcs~ ~imoen_forever/baf/imoen_ar1600_yoshimo.baf~ EVALUATE_BU
 /* make Yoshimo speak to the PC */
 EXTEND_TOP ~yoshimo.bcs~ ~imoen_forever/baf/imoen_yoshimo.baf~ EVALUATE_BUFFER
 
-COMPILE EVALUATE_BUFFER ~imoen_forever/dialogue/yoshimo_brynnlaw.d~ USING ~imoen_forever/tra/%LANGUAGE%/general.tra~
+COMPILE EVALUATE_BUFFER ~imoen_forever/dialogue/yoshimo_brynnlaw.d~ USING ~imoen_forever/tra/autotra/%LANGUAGE%/general.tra~
 
 
 
@@ -517,6 +596,8 @@ BEGIN @9914 DESIGNATED 3 //GROUP @9921
 REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-imoen_forever.TP2~ "0") @9913 
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet bgt tob~ @9905 
 REQUIRE_PREDICATE ((GAME_IS ~bg2ee eet~) OR (MOD_IS_INSTALLED ~setup-bg2fixpack.TP2~ "0")) @9901 
+FORBID_COMPONENT ~EET_end.tp2~ ~0~ @9930
+FORBID_COMPONENT ~EET_end.tp2~ ~1~ @9930
 
 /* Imoen will be protected against permanent death (sort of) */
 
@@ -571,6 +652,8 @@ BEGIN @9915 DESIGNATED 9 //GROUP @9921
 REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-imoen_forever.TP2~ "0") @9913
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet bgt tob~ @9905 
 REQUIRE_PREDICATE ((GAME_IS ~bg2ee eet~) OR (MOD_IS_INSTALLED ~setup-bg2fixpack.TP2~ "0")) @9901  
+FORBID_COMPONENT ~EET_end.tp2~ ~0~ @9930
+FORBID_COMPONENT ~EET_end.tp2~ ~1~ @9930
 
 /* compatibility with Alternatives - if Alternatives is installed, change the relevent cutscenes here, too */
 
@@ -675,6 +758,8 @@ END
 ////////////////////////////////////////////////////////////////////////
 BEGIN @9906 DESIGNATED 10 //GROUP @9922
 REQUIRE_PREDICATE (GAME_INCLUDES ~sod~) @9904 
+FORBID_COMPONENT ~EET_end.tp2~ ~0~ @9930
+FORBID_COMPONENT ~EET_end.tp2~ ~1~ @9930
 
 /* set detecting variable for other mods - is set in Thieves Maze in BG as well as SoD Palace L3 (bd0103.bcs) 
 Global("C#IM_ImoenInSoD","GLOBAL",1) */
@@ -880,6 +965,8 @@ EXTEND_TOP ~bd0130.BCS~ ~imoen_forever/ImoenInGroupKD/c#st_imo_bd0130.baf~ EVALU
 ///////////////////////////////////////////////////////////////////
 BEGIN @9907 DESIGNATED 11 //GROUP @9922
 REQUIRE_PREDICATE (GAME_INCLUDES ~sod~) @9904 
+FORBID_COMPONENT ~EET_end.tp2~ ~0~ @9930
+FORBID_COMPONENT ~EET_end.tp2~ ~1~ @9930
 
 
 /* set detecting variable for other mods - is set in Thieves Maze in BG as well as SoD Palace L3 (bd0103.bcs) 
@@ -999,7 +1086,7 @@ EXTEND_BOTTOM ~bdasc3.bcs~ ~%MOD_FOLDER%/sod_rejoin/imoen_bdasc3.baf~
 /* SoD dialogue */
 COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/sod_rejoin/bdimoens.d~ 
 COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/sod_rejoin/bdimoenp.d~ 
-COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/sod_rejoin/bdimoen_cleanup.d~ USING ~imoen_forever/tra/%LANGUAGE%/bdimoenj.TRA~ 
+COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/sod_rejoin/bdimoen_cleanup.d~ USING ~imoen_forever/tra/autotra/%LANGUAGE%/bdimoenj.TRA~ 
 
 /* Prevent Imoen in the Scrying Pool in bd1200.are: do it non-destructively. Thank you argent77 for the code! */
 INCLUDE ~imoen_forever/tpa/add_trans_trigger_scrying_pool_cleanup.tpa~
@@ -1012,9 +1099,11 @@ INCLUDE ~imoen_forever/tpa/add_trans_trigger_scrying_pool_cleanup.tpa~
 BEGIN @9909 DESIGNATED 12 //GROUP @9922
 REQUIRE_PREDICATE (GAME_INCLUDES ~sod~) @9904 
 REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-imoen_forever.TP2~ "10") @9908
+FORBID_COMPONENT ~EET_end.tp2~ ~0~ @9930
+FORBID_COMPONENT ~EET_end.tp2~ ~1~ @9930
 
 COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/ImoenInGroupKD/imoen_in_palace.d~
-USING ~imoen_forever/tra/%LANGUAGE%/IMOEN_IN_GROUP_KD.TRA~ 
+USING ~imoen_forever/tra/autotra/%LANGUAGE%/IMOEN_IN_GROUP_KD.TRA~ 
 
 
 
@@ -1024,6 +1113,8 @@ USING ~imoen_forever/tra/%LANGUAGE%/IMOEN_IN_GROUP_KD.TRA~
 BEGIN @9910 DESIGNATED 13 //GROUP @9922
 REQUIRE_PREDICATE (GAME_INCLUDES ~sod~) @9904 
 REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-imoen_forever.TP2~ "11") @9911
+FORBID_COMPONENT ~EET_end.tp2~ ~0~ @9930
+FORBID_COMPONENT ~EET_end.tp2~ ~1~ @9930
 
 
 /* cutscene after PC could see Imoen&Liia training */
@@ -1039,6 +1130,8 @@ COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/sod_rejoin/cutscene_imoen_and_jannath.d~
 BEGIN @9923 DESIGNATED 14 //GROUP @9922
 REQUIRE_PREDICATE (GAME_INCLUDES ~sod~) @9904 
 REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-imoen_forever.TP2~ "11") @9911
+FORBID_COMPONENT ~EET_end.tp2~ ~0~ @9930
+FORBID_COMPONENT ~EET_end.tp2~ ~1~ @9930
 
 /* React in case crusaders in cages are killed by spikes (bd7230.are) */
 //bdlever2.BCS
@@ -1101,7 +1194,7 @@ EXTEND_BOTTOM ~bd0063.bcs~ ~%MOD_FOLDER%/sod_rejoin/imoen_bd0063.baf~
 EVALUATE_BUFFER
 
 
-COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/sod_rejoin/bdimoenj_additions.d~ USING ~imoen_forever/tra/%LANGUAGE%/bdimoenj.TRA~ 
+COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/sod_rejoin/bdimoenj_additions.d~ USING ~imoen_forever/tra/autotra/%LANGUAGE%/bdimoenj.TRA~ 
 
 
 
@@ -1115,6 +1208,8 @@ BEGIN @9929 /* ~Imoen at the End of the Game Should be the One that Was in Party
 REQUIRE_PREDICATE ((GAME_INCLUDES ~sod~) AND GAME_IS ~bgee~) ~This component is for SoD only~
 REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-imoen_forever.TP2~ "10") OR 
 (MOD_IS_INSTALLED ~setup-imoen_forever.TP2~ "11") @9927
+FORBID_COMPONENT ~EET_end.tp2~ ~0~ @9930
+FORBID_COMPONENT ~EET_end.tp2~ ~1~ @9930
 
 COPY_EXISTING ~bd6200.bcs~ ~override~
     DECOMPILE_AND_PATCH BEGIN
@@ -1151,6 +1246,8 @@ DESIGNATED 16 //GROUP @9922
 REQUIRE_PREDICATE (GAME_INCLUDES ~sod~) @9904 
 REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-imoen_forever.TP2~ "10") OR 
 (MOD_IS_INSTALLED ~setup-imoen_forever.TP2~ "11") @9927
+FORBID_COMPONENT ~EET_end.tp2~ ~0~ @9930
+FORBID_COMPONENT ~EET_end.tp2~ ~1~ @9930
 
 
   COPY ~%MOD_FOLDER%/imoen_portrait/c#imim01.spl~ ~override/c#imim01.spl~
