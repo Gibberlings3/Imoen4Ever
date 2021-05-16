@@ -260,7 +260,7 @@ Argent77 - coding help for non-destructive ADD_TRANS_TRIGGER patching
 
 Lauriel - proof reading (English)
 
-unknown user: idea about Imoen staying behind in SoD because of her poison injury. (Let me know if you you know what name I should put here.)
+UnderstandMouseMagic: idea about Imoen staying behind in SoD because of her poison injury.
 
 Translations:
 ------------
@@ -298,6 +298,17 @@ REDISTRIBUTION NOTE: Imoen 4 Ever Mod was created to be freely enjoyed by all Ba
 
 HISTORY
 
+Version 7:
+-Ophyllis should reply correctly after Imoen's interjection
+-Imoen should start her correct dialogue at the Sewer exit
+-more interjections in SoD
+-more lines altered from "searching for Imoen" to "going after Irenicus"
+-typo corrections
+-added UnderstandMouseMagic to credits
+-Internal restructure: texts will be copied to "autotra" folder before used in game (and converting them to utf8 for EE) and using marker file so text conversion is done only once; Russian version now uses English setup.tra directly. 
+-added check to tp2 to forbid installation after EET_End
+-corrected entry for "Beregost_House08_L2" on cpmvars.tpas
+
 Version 6:
 -Added Russian version by Raza, stn & Arcanecoast Team
 - Imoen should not die instead of Ophyllis after interjecting into his (last) dialogue
@@ -306,7 +317,6 @@ Version 6:
 - typo corrections
 
 Version 5:
-
 -Added SoD content
 -Changed mod organization to more optional components
 -More dialogues in BGII added (optional).

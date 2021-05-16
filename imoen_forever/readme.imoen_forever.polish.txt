@@ -204,9 +204,14 @@ Argent77 - coding help for non-destructive ADD_TRANS_TRIGGER patching
 
 Lauriel - proof reading (English)
 
-memory - Polish translation
+UnderstandMouseMagic: idea about Imoen staying behind in SoD because of her poison injury.
 
-unknown user: idea about Imoen staying behind in SoD because of her poison injury. (Let me know if you you know what name I should put here.)
+Translations:
+------------
+
+memory - Polish
+
+Raza, stn & Arcanecoast Team - Russian
 
 
 U¯YTE NARZÊDZIA:
@@ -236,6 +241,24 @@ UWAGI O ROZPOWSZECHNIANIU: Mod Imoen 4 Ever zosta³ stworzony po to, aby mogli si
 
 
 HISTORIA
+
+Version 7:
+-Ophyllis should reply correctly after Imoen's interjection
+-Imoen should start her correct dialogue at the Sewer exit
+-more interjections in SoD
+-more lines altered from "searching for Imoen" to "going after Irenicus"
+-typo corrections
+-added UnderstandMouseMagic to credits
+-Internal restructure: texts will be copied to "autotra" folder before used in game (and converting them to utf8 for EE) and using marker file so text conversion is done only once; Russian version now uses English setup.tra directly. 
+-added check to tp2 to forbid installation after EET_End
+-corrected entry for "Beregost_House08_L2" on cpmvars.tpas
+
+Version 6:
+-Added Russian version by Raza, stn & Arcanecoast Team
+- Imoen should not die instead of Ophyllis after interjecting into his (last) dialogue
+- Imoen should not loop her "arrival in hell" StringHead line. Her script action should not block the rest of the area script.
+- Imoen's generic kickout dialogue should not block the original dialogue at the and of SoD.
+- typo corrections
 
 Version 5:
 -Added SoD content
