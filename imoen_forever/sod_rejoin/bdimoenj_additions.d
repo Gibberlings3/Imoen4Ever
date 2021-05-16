@@ -23,7 +23,52 @@ END
 (StrRef: 57554) */
 I_C_T BDOPHYLL 40 C#IM_BDOPHYLL_40
 == bdimoen IF ~IsValidForPartyDialogue("%IMOEN_DV_SOD%")~ THEN @3
-== BDOPHYLL IF ~IsValidForPartyDialogue("%IMOEN_DV_SOD%")~ THEN %6377%
+== BDOPHYLL IF ~IsValidForPartyDialogue("%IMOEN_DV_SOD%")~ THEN #%6377%
+END
+
+
+/* chicken in the well easter egg */
+I_C_T BDDOGW01 0 C#IM_BDDOGW01_0
+== bdimoen IF ~IsValidForPartyDialogue("%IMOEN_DV_SOD%")~ THEN @124 /* ~Awww, now the chicken will get all clean and shiny. But, <CHARNAME>, one of these days, when we have a spare moment and are resting somewhere comfortly, you will explain to me why you actually did that, yes?~ */
+END
+
+/* catapult at castle */
+I_C_T BDHELDMO 5 C#IM_BDHELDMO_5
+== bdimoen IF ~IsValidForPartyDialogue("%IMOEN_DV_SOD%")~ THEN @125 /* ~I feel sorry for him. But... what a blast! (giggles)~ */
+END
+
+/* first time at commander tent, coalition camp */
+I_C_T BDSTONEH 16 C#IM_BDSTONEH_16
+== bdimoen IF ~IsValidForPartyDialogue("%IMOEN_DV_SOD%")~ THEN @129 /* ~<CHARNAME> didn't *do* this <PRO_HIMHER>self, isn't that obvious? Which, now that I think about it, probably doesn't make this any better with regard to the troops' morale...~ */
+END
+
+/* bdnederl and Skie */
+I_C_T bdnederl 39 C#IM_bdnederl_shovel
+== bdimoen IF ~IsValidForPartyDialogue("%IMOEN_DV_SOD%")~ THEN @130 /* ~Oh, there is still a lot of mischief one can do with a shovel, sand, and a bag... What? Never faught for a bigger sand shovel when you were young?~ */
+END
+/* bdnederl and Skie */
+I_C_T bdnederl 40 C#IM_bdnederl_shovel
+== bdimoen IF ~IsValidForPartyDialogue("%IMOEN_DV_SOD%")~ THEN @130 /* ~Oh, there is still a lot of mischief one can do with a shovel, sand, and a bag... What? Never faught for a bigger sand shovel when you were young?~ */
+END
+
+/* Torsin de Lancie, HC denied to poison the crusader provisions */
+I_C_T BDDELANC 25 C#IM_BDDELANC_25
+== bdimoen IF ~IsValidForPartyDialogue("%IMOEN_DV_SOD%")~ THEN @128 /* ~Woah. Like to exaggerate much?~ */
+END
+
+/* portal is open, talk to Torsin de Lancie through the closed door */
+I_C_T BDDELANC 75 C#IM_BDDELANC_75
+== bdimoen IF ~IsValidForPartyDialogue("%IMOEN_DV_SOD%")~ THEN @126 /* ~Oh, wow. Lucky you I guess, being outside of that door!~ */
+END
+
+/* after return from Avernus, Torsin de Lancie */
+I_C_T BDDELANC 79 C#IM_BDDELANC_79
+== bdimoen IF ~IsValidForPartyDialogue("%IMOEN_DV_SOD%")~ THEN @127 /* ~You can bet your ass we'll celebrate, right, <CHARNAME>? And don't you ever forget who freed you from this threat! It was <CHARNAME> and <PRO_HISHER> gang!~ */
+END
+
+/* Meeting with Caelar at Dead Men's Pass */
+I_C_T BDCAELAR 38 C#IM_BDCAELAR_38
+== bdimoen IF ~IsValidForPartyDialogue("%IMOEN_DV_SOD%")~ THEN @131 /* ~Unharmed! Suuure, that makes so much sense after sending assassins earlier.~ */
 END
 
 
@@ -236,6 +281,7 @@ IF ~~ THEN thrix_soul_04
 SAY @123 /* ~Uh. Die Bemerkung *wäre* witzig, wenn du ihm nicht meine Seele verspielt hättest.~ */
 IF ~~ THEN + thrix_soul_02
 END
+
 
 
 /* all those desparate people (with empty pockets) (Imoen THIEF_ALL)*/

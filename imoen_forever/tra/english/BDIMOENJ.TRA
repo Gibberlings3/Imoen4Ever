@@ -16,7 +16,7 @@
 @58  = ~No, you will not take her soul, devil. We will fight you!~
 @59  = ~<CHARNAME>? Just... just like that?~
 @60  = ~It's a bit late to say "sorry" *now*, don't ya think?!~
-@61  = ~<CHARNAME>! Gambling my soul to that demon was not nice. When I said that I'd always be there for you I surely didn't mean that!~ [c#ablank]
+@61  = ~<CHARNAME>! Gambling for my soul with that demon was not nice. When I said that I'd always be there for you I surely didn't mean that!~ [c#ablank]
 @62  = ~I know you tried to reverse it, but the damage was done already, ya know.~
 @63  = ~I'm sorry, Imoen. I wanted to spare a fight.~
 @64  = ~I couldn't take that whole game serious, sorry.~
@@ -26,13 +26,13 @@
 @68  = ~Oh, how about you do that while gambling with your own soul then, huh?~
 @69  = ~Well, one thing is sure, you dummy. Since I won't leave your side, the fiend coming after *me* will be your problem, as well. So you still have a chance to make this right, next time we meet this thing.~
 @70  = ~Nah, this is not how this works. We need to stand up for each other! There is no one else left, ya know.~
-@71  = ~<CHARNAME>! Gambling a soul to that demon was not nice.~ [c#ablank]
+@71  = ~<CHARNAME>! Gambling for soul with that demon was not nice.~ [c#ablank]
 @72  = ~Yes, I know. I wanted to spare a fight.~
 @73  = ~Nah, this is not how this works. We need to stand up for each other! That's why we are travelling together, remember?~
 @74  = ~Well, one thing is sure, you dummy. Since I won't leave your side, the fiend coming after *you* will also be my problem. You won't have to face this thing alone!~
-@75  = ~Luckily, you won and the danger is over.~
+@75  = ~Well, seems the dummies have all the luck, eh? I hope the weapon was worth it.~
 @76  = ~This scared me, <CHARNAME>. I don't like it when you're so mean.~
-@77  = ~You gave that thing your own soul!~ [c#ablank]
+@77  = ~You offered that thing your own soul!~ [c#ablank]
 @78  = ~Instead of mine. I really, really *really* appreciate it.~
 @79  = ~But it was stupid! I think. Did you really have to do that?~
 @80  = ~No one's going after your soul, Imoen. Not while I'm breathing.~
@@ -79,3 +79,13 @@
 @121  = ~Really strange... Oh well.~
 @122  = ~His slip was funny. "Little sister"... I'm sure he just noticed how close we are. Maybe he thought that he could collect your soul when coming for me then, too.~
 @123  = ~Uh. That remark *would* be funny if you hadn't gambled away my soul.~
+
+/* new for v7 */
+@124  = ~Awww, now the chicken will get all clean and shiny. But, <CHARNAME>, one of these days, when we have a spare moment and are resting somewhere comfortly, you will explain to me why you actually did that, yes?~
+@125  = ~I feel sorry for him. But... what a blast! (giggles)~
+@126  = ~Oh, wow. Lucky you I guess, being outside of that door!~
+@127  = ~You can bet your ass we'll celebrate, right, <CHARNAME>? And don't you ever forget who freed you from this threat! It was <CHARNAME> and <PRO_HISHER> gang!~
+@128  = ~Woah. Like to exaggerate much?~ //~Puh. Geht's auch 'ne Nummer kleiner?~
+@129  = ~<CHARNAME> didn't *do* this <PRO_HIMHER>self, isn't that obvious? Which, now that I think about it, probably doesn't make this any better with regard to the troops' morale...~
+@130  = ~Oh, there is still a lot of mischief one can do with a shovel, sand, and a bag... What? Never faught for a bigger sand shovel when you were young?~
+@131  = ~Unharmed! Suuure, that makes so much sense after sending assassins earlier.~

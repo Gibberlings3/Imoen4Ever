@@ -30,7 +30,7 @@
 @72  = ~Tak, wiem. Chcia³em unikn¹æ walki.~ ~Tak, wiem. Chcia³am unikn¹æ walki.~
 @73  = ~Nie, tak to nie dzia³a. Musimy siê chroniæ nawzajem! To dlatego podró¿ujemy razem, pamiêtasz?~
 @74  = ~Có¿, jedno jest pewne, g³uptasie. Skoro zawsze bêdê przy tobie, to demon œcigaj¹cy *ciebie*, bêdzie te¿ moim problemem. Nie bêdziesz musia³<PRO_HESHE> sam<PRO_HESHE> stawiaæ temu czo³a!~
-@75  = ~Na szczêœcie wygra³eœ i teraz jesteœmy bezpieczni.~ ~Na szczêœcie wygra³aœ i teraz jesteœmy bezpieczni.~
+@75  = ~Well, seems the dummies have all the luck, eh? I hope the weapon was worth it.~
 @76  = ~<CHARNAME>, to mnie przera¿a. Nie lubiê, gdy jesteœ taki pod³y.~ ~<CHARNAME>, to mnie przera¿a. Nie lubiê, gdy jesteœ taka pod³a.~
 @77  = ~Oddajesz temu czemuœ w³asn¹ duszê!~ [c#ablank]
 @78  = ~Zamiast mojej. Naprawdê, naprawdê *naprawdê* to doceniam.~
@@ -79,3 +79,13 @@
 @121  = ~Bardzo dziwne... No có¿.~
 @122  = ~Zabawnie siê przejêzyczy³. „Siostrzyczka”... Pewnie zauwa¿y³, jak bliscy sobie jesteœmy. Mo¿e myœla³, ¿e twoj¹ duszê te¿ sobie weŸmie, gdy przyjdzie po moj¹.~ ~Zabawnie siê przejêzyczy³. "Siostrzyczka"... Pewnie zauwa¿y³, jak bliskie sobie jesteœmy. Mo¿e myœla³, ¿e twoj¹ duszê te¿ sobie weŸmie, gdy przyjdzie po moj¹.~
 @123  = ~Hm. Ta uwaga *by³aby* zabawna, gdybyœ nie przegra³<PRO_HESHE> w³aœnie mojej duszy.~
+
+/* new for v7 */
+@124  = ~Awww, now the chicken will get all clean and shiny. But, <CHARNAME>, one of these days, when we have a spare moment and are resting somewhere comfortly, you will explain to me why you actually did that, yes?~
+@125  = ~I feel sorry for him. But... what a blast! (giggles)~
+@126  = ~Oh, wow. Lucky you I guess, being outside of that door!~
+@127  = ~You can bet your ass we'll celebrate, right, <CHARNAME>? And don't you ever forget who freed you from this threat! It was <CHARNAME> and <PRO_HISHER> gang!~
+@128  = ~Woah. Like to exaggerate much?~ //~Puh. Geht's auch 'ne Nummer kleiner?~
+@129  = ~<CHARNAME> didn't *do* this <PRO_HIMHER>self, isn't that obvious? Which, now that I think about it, probably doesn't make this any better with regard to the troops' morale...~
+@130  = ~Oh, there is still a lot of mischief one can do with a shovel, sand, and a bag... What? Never faught for a bigger sand shovel when you were young?~
+@131  = ~Unharmed! Suuure, that makes so much sense after sending assassins earlier.~

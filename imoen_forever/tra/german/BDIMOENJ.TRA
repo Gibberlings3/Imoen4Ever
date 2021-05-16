@@ -16,7 +16,7 @@
 @58  = ~Nein, Ihr werdet ihre Seele nicht nehmen, Teufel. Wir werden kämpfen!~
 @59  = ~<CHARNAME>? Einfach... einfach so?~
 @60  = ~Jetzt ist es etwas spät für "tut mir leid", meinst du nicht?!~
-@61  = ~<CHARNAME>! Meine Seele an diesen Teufel zu verspielen war nicht nett. Wenn ich sage, dass ich alles für dich tun würde, dann meine ich das gewiss nicht so!~ [c#ablank]
+@61  = ~<CHARNAME>! Meine Seele als Wetteinsatz an diesen Teufel war nicht nett. Wenn ich sage, dass ich alles für dich tun würde, dann meine ich das gewiss nicht so!~ [c#ablank]
 @62  = ~Ich weiß, dass du versucht hast, es rückgängig zu machen. Aber da war der Schaden schon angerichtet!~
 @63  = ~Es tut mir leid, Imoen. Ich wollte uns einen Kampf ersparen.~
 @64  = ~Ich konnte das ganze Spiel nicht ernst nehmen, tut mir leid.~
@@ -30,9 +30,9 @@
 @72  = ~Ja, ich weiß. Ich wollte uns einen Kampf ersparen.~
 @73  = ~Neh, so funktioniert das nicht. Wir müssen doch aufeinander aufpassen! Dafür sind wir doch zusammen unterwegs, oder etwa nicht?~
 @74  = ~Eine Sache ist jedenfalls sicher, du Dummkopf. Da ich nicht vorhabe, von deiner Seite zu weichen, wird der Teufel, wenn er kommt um deine Seele zu holen, auch mein Problem sein. Du wirst dem Ding nicht alleine gegenübertreten müssen!~
-@75  = ~Glücklicherweise hast du gewonnen, und die Gefahr ist vorbei.~
+@75  = ~Na, scheinbar haben Dummköpfe das meiste Glück. Ich hoffe, die Waffe war es wert.~
 @76  = ~Das macht mir Angst, wenn du so gemein bist, <CHARNAME>. Ich mag das nicht.~
-@77  = ~Du hast dem Ding deine eigene Seele gegeben!~ [c#ablank]
+@77  = ~Du hast dem Ding deine eigene Seele angeboten!~ [c#ablank]
 @78  = ~Anstatt meiner. Das finde ich wirklich, wirklich, *wirklich* toll von dir.~
 @79  = ~Aber das war dumm! Glaube ich. Musstest du das wirklich tun?~
 @80  = ~Niemand vergeift sich an deiner Seele, Imoen. Nicht, solange ich am Leben bin.~
@@ -79,3 +79,13 @@
 @121  = ~Wirklich seltsam... Naja.~
 @122  = ~Sein Versprecher war lustig. "Kleine Schwester"... Er muss einfach gemerkt haben, dass wir richtig dicke Freunde sind. Vielleicht dachte er dann, dass er deine Seele auch gleich mit holen kann!~
 @123  = ~Igitt. Die Bemerkung *wäre* witzig, wenn du ihm nicht meine Seele verspielt hättest.~
+
+/* new for v7 */
+@124  = ~Awww, now the chicken will get all clean and shiny. But, <CHARNAME>, one of these days, when we have a spare moment and are resting somewhere comfortly, you will explain to me why you actually did that, yes?~
+@125  = ~I feel sorry for him. But... what a blast! (giggles)~
+@126  = ~Oh, wow. Lucky you I guess, being outside of that door!~
+@127  = ~You can bet your ass we'll celebrate, right, <CHARNAME>? And don't you ever forget who freed you from this threat! It was <CHARNAME> and <PRO_HISHER> gang!~
+@128  = ~Woah. Like to exaggerate much?~ //~Puh. Geht's auch 'ne Nummer kleiner?~
+@129  = ~<CHARNAME> didn't *do* this <PRO_HIMHER>self, isn't that obvious? Which, now that I think about it, probably doesn't make this any better with regard to the troops' morale...~
+@130  = ~Oh, there is still a lot of mischief one can do with a shovel, sand, and a bag... What? Never faught for a bigger sand shovel when you were young?~
+@131  = ~Unharmed! Suuure, that makes so much sense after sending assassins earlier.~
