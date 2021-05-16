@@ -5,5 +5,6 @@ THEN
 	RESPONSE #100
 		CutSceneId("%IMOEN_DV_SOD%")
 		ActionOverride("%IMOEN_DV_SOD%",LeaveParty())
+		ActionOverride("%IMOEN_DV_SOD%",SetGlobal("bd_joined","locals",0))
 		ActionOverride("%IMOEN_DV_SOD%",DestroyAllFragileEquipment(ADAMANTINE)) //this destroys all drow equipment, just in case the NPC had any.
 END
