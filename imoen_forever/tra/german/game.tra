@@ -246,6 +246,12 @@ Eines beunruhigt mich ... Bodhi wusste es! Sie wusste, dass ich ein Kind Bhaals 
 //#46040
 @1171   = ~Ich bin gerade dabei mir ein wenig Gold zusammen zu sparen, um einen Feind zu verfolgen... Wie hoch wäre die Belohnung für diesen Auftrag?~
 
+/* new for v7 */
+//#39703
+@1173   = ~Vielleicht haben sie Mitleid mit meiner Not. Die Verfolgung, die ich anstrebe, ist eine gerechte Sache.~
+//#56899
+@1174   = ~Oh, wie großzügig. Erwartet Ihr wirklich, dass das eine angemessene Entschädigung dafür ist, dass wir warten und wichtigere Sachen hinten anstellen müssen? Feinde von uns müssen verfolgt und zur Rechenschaft gezogen werden!~
+
 /* SoD */
 
 /* new for v5 */

@@ -231,7 +231,9 @@ STRING_SET 49067 @1094
 /* ~15,000 is a lot, but I will compensate you well for it. You will ultimately have Imoen, and a few magical trinkets too.~ */
 STRING_SET 49071 @1095
 
-//BODHI2 14 ??
+//BODHI2 6 DO 2
+/* ~Perhaps they have some sympathy for my plight. The rescue I wish is a worthy cause.~ */
+STRING_SET 39703 @1173
 
 //BODHI2 14 DO 0
 /* ~Imoen was taken from me! I will find her! And I will find this Irenicus!~ */
@@ -360,6 +362,18 @@ STRING_SET 42660 @1169
 STRING_SET 42665 @1169
 
 
+//JAHEIRAJ 507
+/* ~Oh, how generous.  Do you expect that to compensate while you delay our more important concerns?  We have friends in need of rescue and vengeance both!~ */
+STRING_SET 56899 @1174
+
+//JANJ 174
+/* ~As much as I will ramble on at the drop of a hat, I would think it wiser to find this Imoen and Irenicus with all haste. It's like my uncle Gummo use to say, "Blah blah blah," he'd say, and we'd be right there with our "Uncle Gummo, we've got things to do," and he'd be right back with the "But just one more story. Just one more, blah blah." ~ */
+STRING_SET 56909 @1016
+
+//JANJ 175
+/* ~Well my point is that we should stop talking and fetching and try and find this Irenicus.~ */
+STRING_SET 56912 @1098
+
 //INSPECT 15 DO 6
 /* ~I'm wondering something first. I need gold to rescue an old friend... is there a reward for capturing this murderer?~ */
 STRING_SET 46133 @1130
@@ -377,14 +391,6 @@ STRING_SET 46039 @1171
 /* ~I am saving coin to rescue a friend... what would the reward be for this task?~ */
 STRING_SET 46040 @1171
 
-
-//JANJ 174
-/* ~As much as I will ramble on at the drop of a hat, I would think it wiser to find this Imoen and Irenicus with all haste. It's like my uncle Gummo use to say, "Blah blah blah," he'd say, and we'd be right there with our "Uncle Gummo, we've got things to do," and he'd be right back with the "But just one more story. Just one more, blah blah." ~ */
-STRING_SET 56909 @1016
-
-//JANJ 175
-/* ~Well my point is that we should stop talking and fetching and try and find this Irenicus.~ */
-STRING_SET 56912 @1098
 
 //KELDORJ 46 DO 2
 /* #10396 ~My task must not go unfinished. Please, Keldorn, serve until we save Imoen.~ */

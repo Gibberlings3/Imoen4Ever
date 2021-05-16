@@ -16,7 +16,7 @@
 @58  = ~Nie, nie dostaniesz jej duszy, diable. Bêdziemy z tob¹ walczyæ!~
 @59  = ~<CHARNAME>? Tak... tak po prostu?~
 @60  = ~Chyba trochê za póŸno na „przykro mi”, nie s¹dzisz?!~
-@61  = ~<CHARNAME>! Granie z tym demonem o moj¹ duszê nie by³o mi³e. Kiedy mówi³am, ¿e zawsze mo¿esz na mnie liczyæ, mia³am na myœli coœ zupe³nie innego!~ [c#ablank]
+@61  = ~<CHARNAME>! Granie z tym demonem o moj¹ duszê wcale nie by³o mi³e. Kiedy mówi³am, ¿e zawsze mo¿esz na mnie liczyæ, mia³am na myœli coœ zupe³nie innego!~ [c#ablank]
 @62  = ~Wiem, ¿e próbowa³eœ to odwróciæ, ale z³o ju¿ siê sta³o, rozumiesz?~ ~Wiem, ¿e próbowa³aœ to odwróciæ, ale z³o ju¿ siê sta³o, rozumiesz?~
 @63  = ~Przykro mi, Imoen. Chcia³em unikn¹æ walki.~ ~Przykro mi, Imoen. Chcia³am unikn¹æ walki.~
 @64  = ~Nie mog³em traktowaæ ca³ej tej gry na powa¿nie, przykro mi.~ ~Nie mog³am traktowaæ ca³ej tej gry na powa¿nie, przykro mi.~
@@ -26,13 +26,13 @@
 @68  = ~Och, a co powiesz na to, ¿eby postawiæ w grze swoj¹ w³asn¹ dusz¹, hê?~
 @69  = ~Có¿, jedno jest pewne, g³uptasie. Skoro zawsze bêdê przy tobie, to demon œcigaj¹cy *mnie*, bêdzie te¿ twoim problemem, po prostu. Wiêc wci¹¿ masz szansê, ¿eby to wszystko naprawiæ, kiedy go znowu spotkamy.~
 @70  = ~Nie, tak to nie dzia³a. Musimy siê chroniæ nawzajem! Nikt inny nam nie pomo¿e, wiesz?~
-@71  = ~<CHARNAME>! Granie z tym demonem o moj¹ duszê nie by³o mi³e.~ [c#ablank]
+@71  = ~<CHARNAME>! Granie z tym demonem o duszê wcale nie by³o mi³e.~ [c#ablank]
 @72  = ~Tak, wiem. Chcia³em unikn¹æ walki.~ ~Tak, wiem. Chcia³am unikn¹æ walki.~
 @73  = ~Nie, tak to nie dzia³a. Musimy siê chroniæ nawzajem! To dlatego podró¿ujemy razem, pamiêtasz?~
 @74  = ~Có¿, jedno jest pewne, g³uptasie. Skoro zawsze bêdê przy tobie, to demon œcigaj¹cy *ciebie*, bêdzie te¿ moim problemem. Nie bêdziesz musia³<PRO_HESHE> sam<PRO_HESHE> stawiaæ temu czo³a!~
-@75  = ~Na szczêœcie wygra³eœ i teraz jesteœmy bezpieczni.~ ~Na szczêœcie wygra³aœ i teraz jesteœmy bezpieczni.~
+@75  = ~Wygl¹da na to, ¿e szczêœcie sprzyja g³upcom. Mam nadziejê, ¿e ta broñ by³a tego warta.~
 @76  = ~<CHARNAME>, to mnie przera¿a. Nie lubiê, gdy jesteœ taki pod³y.~ ~<CHARNAME>, to mnie przera¿a. Nie lubiê, gdy jesteœ taka pod³a.~
-@77  = ~Oddajesz temu czemuœ w³asn¹ duszê!~ [c#ablank]
+@77  = ~Zaoferowa³eœ temu czemuœ w³asn¹ duszê!~ ~Zaoferowa³aœ temu czemuœ w³asn¹ duszê!~ [c#ablank]
 @78  = ~Zamiast mojej. Naprawdê, naprawdê *naprawdê* to doceniam.~
 @79  = ~Tylko, ¿e to by³o g³upie! Tak myœlê. Musia³eœ to zrobiæ?~ ~Tylko, ¿e to by³o g³upie! Tak myœlê. Musia³aœ to zrobiæ?~
 @80  = ~Nikt nie bêdzie polowa³ na twoj¹ duszê, Imoen. Nie, dopóki starczy mi tchu.~
@@ -79,3 +79,13 @@
 @121  = ~Bardzo dziwne... No có¿.~
 @122  = ~Zabawnie siê przejêzyczy³. „Siostrzyczka”... Pewnie zauwa¿y³, jak bliscy sobie jesteœmy. Mo¿e myœla³, ¿e twoj¹ duszê te¿ sobie weŸmie, gdy przyjdzie po moj¹.~ ~Zabawnie siê przejêzyczy³. "Siostrzyczka"... Pewnie zauwa¿y³, jak bliskie sobie jesteœmy. Mo¿e myœla³, ¿e twoj¹ duszê te¿ sobie weŸmie, gdy przyjdzie po moj¹.~
 @123  = ~Hm. Ta uwaga *by³aby* zabawna, gdybyœ nie przegra³<PRO_HESHE> w³aœnie mojej duszy.~
+
+/* new for v7 */
+@124  = ~Oooo, to teraz kurczak bêdzie czysty i lœni¹cy. <CHARNAME>... ale jak ju¿ pewnego dnia znajdziemy chwilê, by zatrzymaæ siê gdzieœ i odsapn¹æ, wyjaœnisz mi, dlaczego to zrobi³eœ, tak?~ ~Oooo, to teraz kurczak bêdzie czysty i lœni¹cy. <CHARNAME>... ale jak ju¿ pewnego dnia znajdziemy chwilê, by zatrzymaæ siê gdzieœ i odsapn¹æ, wyjaœnisz mi, dlaczego to zrobi³aœ, tak?~
+@125  = ~Trochê mi go szkoda, ale... co za heca! (chichocze)~
+@126  = ~O, ³a³. Chyba masz szczêœcie, ¿e jesteœ po tamtej stronie drzwi!~
+@127  = ~Mo¿esz iœæ o zak³ad, ¿e bêdziemy œwiêtowaæ, no nie, <CHARNAME>? I nie wa¿ siê zapomnieæ, kto ciê uratowa³! To <CHARNAME> i j<PRO_HISHER> ekipa!~
+@128  = ~Jej, nie przesadzasz trochê?~
+@129  = ~<CHARNAME> nie *zrobi³* tego sam, czy¿ to nie oczywiste? Chocia¿, teraz gdy o tym myœlê, nie wp³ywa to chyba za bardzo na morale wojsk...~ ~<CHARNAME> nie *zrobi³a* tego sama, czy¿ to nie oczywiste? Chocia¿, teraz gdy o tym myœlê, nie wp³ywa to chyba za bardzo na morale wojsk...~
+@130  = ~O, mo¿na mieæ sporo frajdy z ³opat¹, workiem i piaskiem... Co? Nie mów, ¿e nigdy siê nie bi³eœ o wiêksz¹ ³opatkê, gdy by³eœ dzieckiem?~
+@131  = ~Nietkniête! Jaaasne, to nawet ma sens po nasy³aniu wczeœniej tych wszystkich zabójców.~
