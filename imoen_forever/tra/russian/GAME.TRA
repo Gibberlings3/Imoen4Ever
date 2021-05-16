@@ -243,6 +243,12 @@
 //#46040
 @1171   = ~Я коплю монеты, чтобы преследовать врага ... какова будет награда за это задание?~
 
+/* new for v7 */
+//#39703
+@1173   = ~Perhaps they have some sympathy for my plight. The pursuit I seek is a justified cause.~
+//#56899
+@1174   = ~Oh, how generous.  Do you expect that to compensate while you delay our more important concerns?  We have need of pursuit and vengeance both!~
+
 /* SoD */
 
 /* new for v5 */
