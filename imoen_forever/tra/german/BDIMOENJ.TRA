@@ -81,11 +81,11 @@
 @123  = ~Igitt. Die Bemerkung *wäre* witzig, wenn du ihm nicht meine Seele verspielt hättest.~
 
 /* new for v7 */
-@124  = ~Awww, now the chicken will get all clean and shiny. But, <CHARNAME>, one of these days, when we have a spare moment and are resting somewhere comfortly, you will explain to me why you actually did that, yes?~
-@125  = ~I feel sorry for him. But... what a blast! (giggles)~
-@126  = ~Oh, wow. Lucky you I guess, being outside of that door!~
-@127  = ~You can bet your ass we'll celebrate, right, <CHARNAME>? And don't you ever forget who freed you from this threat! It was <CHARNAME> and <PRO_HISHER> gang!~
-@128  = ~Woah. Like to exaggerate much?~ //~Puh. Geht's auch 'ne Nummer kleiner?~
-@129  = ~<CHARNAME> didn't *do* this <PRO_HIMHER>self, isn't that obvious? Which, now that I think about it, probably doesn't make this any better with regard to the troops' morale...~
-@130  = ~Oh, there is still a lot of mischief one can do with a shovel, sand, and a bag... What? Never faught for a bigger sand shovel when you were young?~
-@131  = ~Unharmed! Suuure, that makes so much sense after sending assassins earlier.~
+@124  = ~Oooh, jetzt wird das Hühnchen ganz frisch und sauber. Aber, <CHARNAME>, irgendwann mal später, wenn wir alle warm und gemütlich zusammensitzen, dann erklärst du mir, warum du das da rein getan hast, ja?~
+@125  = ~Oh, irgendwie tut er mir Leid... aber *war* das ein Knall! (kichert)~
+@126  = ~Na, großartig. So ein Glück aber auch für Euch, auf der anderen Seite der Tür zu sein, was?~
+@127  = ~Da könnt Ihr Euren Hintern drauf verwetten, dass wir feiern werden, was, <CHARNAME>? Und vergesst nie, wer Euch aus der Gefahr gerettet hat! Das waren <CHARNAME> und <PRO_HISHER>e Leute!~
+@128  = ~Puh. Geht's auch 'ne Nummer kleiner?~
+@129  = ~<CHARNAME> hat das doch nicht *selbst* gemacht, ist das nicht klar? Na gut, wenn ich darüber nachdenke, dann macht das die Sache natürlich nicht besser, wenn wir von der moralischen Verfassung der Soldaten sprechen...~
+@130  = ~Oh, man kann eine ganze Mende Unsinn anstellen mit einer Schaufel, einem Sack und genügend Sand... Was denn, habt Ihr nie um die größere Schaufel gestritten als Ihr klein wart?~
+@131  = ~Unverletzt! Klaaar, das glaubt auch jeder nach den Meuchelmördern, die im Palast aufgetaucht sind.~
