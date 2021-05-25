@@ -211,7 +211,7 @@ Translations:
 
 memory - Polish
 
-Raza, stn & Arcanecoast Team - Russian
+Raza, stn & Arcanecoast Team, Arkie - Russian
 
 
 U¯YTE NARZÊDZIA:
@@ -241,6 +241,9 @@ UWAGI O ROZPOWSZECHNIANIU: Mod Imoen 4 Ever zosta³ stworzony po to, aby mogli si
 
 
 HISTORIA
+
+Version 7.1:
+-completion of Russian version with changes of v7, by Arkie
 
 Version 7:
 -Ophyllis should reply correctly after Imoen's interjection

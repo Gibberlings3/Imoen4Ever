@@ -30,9 +30,9 @@
 @72  = ~Да, я знаю. Но нам нужно было избежать боя.~
 @73  = ~Нет, это не так работает. Нам нужно стоять друг за друга! Вот почему мы путешествуем вместе, помнишь?~
 @74  = ~Что ж, одно можно сказать наверняка, болван. Так как я не оставлю тебя, бес, который придет за * тобой *, тоже будет моей проблемой. Тебе не придется столкнуться с этим в одиночку!~
-@75  = ~Well, seems the dummies have all the luck, eh? I hope the weapon was worth it.~
+@75  = ~Ну, дуракам везёт, получается? Надеюсь, это оружие того стоило.~
 @76  = ~Это напугало меня, <CHARNAME>. Мне не нравится, что в тебе столько злости.~
-@77  = ~Не стоило отдавать этой дряни свою душу!~ [c#ablank]
+@77  = ~Не стоило предлагать отдать этой дряни свою душу!~ [c#ablank]
 @78  = ~Вместо моей. Я очень, очень * очень * ценю это.~
 @79  = ~Но это было глупо, я так думаю! Это правда было необходимо?~
 @80  = ~Никто не преследует твою душу, Имоен. Нет, пока я дышу.~
@@ -81,11 +81,11 @@
 @123  = ~Эээ. Это замечание * было бы * забавным, если бы ты не проиграл мою душу.~ ~Эээ. Это замечание * было бы * забавным, если бы ты не проиграла мою душу.~
 
 /* new for v7 */
-@124  = ~Awww, now the chicken will get all clean and shiny. But, <CHARNAME>, one of these days, when we have a spare moment and are resting somewhere comfortly, you will explain to me why you actually did that, yes?~
-@125  = ~I feel sorry for him. But... what a blast! (giggles)~
-@126  = ~Oh, wow. Lucky you I guess, being outside of that door!~
-@127  = ~You can bet your ass we'll celebrate, right, <CHARNAME>? And don't you ever forget who freed you from this threat! It was <CHARNAME> and <PRO_HISHER> gang!~
-@128  = ~Woah. Like to exaggerate much?~ //~Puh. Geht's auch 'ne Nummer kleiner?~
-@129  = ~<CHARNAME> didn't *do* this <PRO_HIMHER>self, isn't that obvious? Which, now that I think about it, probably doesn't make this any better with regard to the troops' morale...~
-@130  = ~Oh, there is still a lot of mischief one can do with a shovel, sand, and a bag... What? Never faught for a bigger sand shovel when you were young?~
-@131  = ~Unharmed! Suuure, that makes so much sense after sending assassins earlier.~
+@124  = ~Оу, курочка будет просто блестеть от чистоты. Но, <CHARNAME>, когда-нибудь мы найдём свободную минутку и место поудобнее, и ты расскажешь, зачем это было нужно, хорошо?~
+@125  = ~Мне его жалко. Но... какой взрыв! (хихикает)~
+@126  = ~Ого. Повезло тебе, наверное, быть по ту сторону двери!~
+@127  = ~Мы ещё как отпразднуем, да, <CHARNAME>? И только попробуйте забыть, кто спас вас от этой угрозы! <CHARNAME> и <PRO_HISHER> банда!~
+@128  = ~Ничего себе. А можно не так сильно раздуваться?~
+@129  = ~<CHARNAME> не сам это сделал, разве не очевидно? Но если подумать, это совсем не меняет ситуацию с боевым духом...~ ~<CHARNAME> не сама это сделала, разве не очевидно? Но если подумать, это совсем не меняет ситуацию с боевым духом...~
+@130  = ~Ох, сколько пакостей можно устроить только с мешком, песком и лопатой... Что? Никогда в детстве не дрались в песочнице за лопатку побольше?~
+@131  = ~Целым и невредимым! Коне-е-ечно, именно поэтому ты насылала на нас убийц!~
