@@ -267,7 +267,7 @@ Translations:
 
 memory - Polish
 
-Raza, stn & Arcanecoast Team - Russian
+Raza, stn & Arcanecoast Team, Arkie - Russian
 
 
 
@@ -297,6 +297,9 @@ REDISTRIBUTION NOTE: Imoen 4 Ever Mod was created to be freely enjoyed by all Ba
 
 
 HISTORY
+
+Version 7.1:
+-completion of Russian version with changes of v7, by Arkie
 
 Version 7:
 -Ophyllis should reply correctly after Imoen's interjection
