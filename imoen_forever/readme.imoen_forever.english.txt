@@ -298,6 +298,9 @@ REDISTRIBUTION NOTE: Imoen 4 Ever Mod was created to be freely enjoyed by all Ba
 
 HISTORY
 
+Version 7.2:
+-Imoen should initiate kickout dialogue in BGII
+
 Version 7.1:
 -completion of Russian version with changes of v7, by Arkie
 

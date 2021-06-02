@@ -10,7 +10,7 @@ SAY @0
 END
 
 IF WEIGHT #-1
-~GlobalLT("Chapter","GLOBAL",%bg2_chapter_4%) Global("KickedOut","LOCALS",1)~ THEN kickout_01
+~GlobalLT("Chapter","GLOBAL",%bg2_chapter_4%) Global("KickedOut","LOCALS",0)~ THEN kickout_01
   SAY @1
   IF ~!AreaCheck("AR0406")~ THEN REPLY #49277 /* ~I think it best.~ */ GOTO 5
   IF ~AreaCheck("AR0406")~ THEN REPLY #49277 /* ~I think it best.~ */ GOTO 5_coppercoronet
