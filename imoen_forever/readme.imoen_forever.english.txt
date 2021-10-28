@@ -309,6 +309,7 @@ Version 8:
 -one more interjection in crusader camp.
 -added check to SoD kickout dialogue so it can't trigger in BGII.
 -typo corrections.
+-added globally unique LABELs to support Project Infinity.
 
 Version 7.2:
 -Imoen should initiate kickout dialogue in BGII
