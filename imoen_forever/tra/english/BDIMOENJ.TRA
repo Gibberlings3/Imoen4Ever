@@ -1,8 +1,5 @@
 /* bdimoen_cleanup.d */
 @0   = ~Yeah, that was a joke, sorry. Glint left, mumbling something about urgent family business he needs to attend to.~
-@1   = ~<CHARNAME>! That's mean! We aren't *that* mean, are we?~
-@2   = ~Eek, killing the dwarves for a lich? We won't really do that, will we?~
-@3   = ~Oh, no! The poor man. He was such a nice guy! Well, besides the fact that he lost all our gold, but... this is so sad!~
 
 /* bdimoenj_additions.d */
 @50  = ~Your little sister... friend looks at me with big eyes. Lose the riddle and I will teach her the power of magic indeed.~
@@ -53,7 +50,7 @@
 @95  = ~This is no longer fun for you? You indeed seem to be ill, my friend.~ 
 @96  = ~Yes, I know what you mean. Not much to find in empty pockets.~
 @97  = ~But that's exactly what I was referring to!~
-@98  = ~Of c... I mean, a girl has to stay in practive, right?~
+@98  = ~Of c... I mean, a girl has to stay in practice, right?~
 @99  = ~Do not enrich yourself from our allies, Imoen. It might lead to misunderstandings.~
 @100  = ~Honestly - I don't realy care about your problems in this case.~
 @101  = ~<CHARNAME>! Do you think I'm stupid? I'll never steal inside the camps. I mean - with getting caught, that is. Don't look at me like that! You can relax. No one will miss anything important, I swear.~
@@ -89,3 +86,9 @@
 @129  = ~<CHARNAME> didn't *do* this <PRO_HIMHER>self, isn't that obvious? Which, now that I think about it, probably doesn't make this any better with regard to the troops' morale...~
 @130  = ~Oh, there is still a lot of mischief one can do with a shovel, sand, and a bag... What? Never faught for a bigger sand shovel when you were young?~
 @131  = ~Unharmed! Suuure, that makes so much sense after sending assassins earlier.~
+
+/* new / moved for v8 */
+@132   = ~<CHARNAME>! That's mean! We aren't *that* mean, are we?~
+@133   = ~Eek, killing the dwarves for a lich? We won't really do that, will we?~
+@134   = ~Oh, no! The poor man. He was such a nice guy! Well, besides the fact that he lost all our gold, but... this is so sad!~
+@135   = ~I don't feel any different. Do you feel any different?~

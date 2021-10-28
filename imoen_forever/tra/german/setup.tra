@@ -33,3 +33,6 @@
 
 /* new for v7 */
 @9930  = ~Diese Komponente muss vor EET_End installiert werden.~
+
+/* new for v8 */
+@9931  = ~Imoens Kiste zieht ebenfalls von Lager zu Lager mit~

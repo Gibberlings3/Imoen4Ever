@@ -22,3 +22,9 @@
 //@21    = 
 @22   = ~Chcia³aby kontynuowaæ moje trening, ale ja ju¿ ich nie chcê. Chcê iœæ z tob¹!~
 @23   = ~Liia wie, ¿e chcê znowu podró¿owaæ z tob¹.~
+
+/* new for v8 */
+@24  = ~Oh, by the way. I stuffed my stuff into the tent next to your chest.~
+@25  = ~Imoen's Belongings
+
+Imoen's belongings will be inside the tent next to my personal chest. All the items that were in her chest in the palace will be there in case we need anything.~

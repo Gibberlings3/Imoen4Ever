@@ -33,3 +33,6 @@
 
 /* new for v7 */
 @9930  = ~This component needs to be installed before EET_End on your EET install.~
+
+/* new for v8 */
+@9931  = ~Imoen's chest moves with the campaign, too~

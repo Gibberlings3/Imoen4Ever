@@ -1,8 +1,5 @@
 /* bdimoen_cleanup.d */
 @0   = ~Ja, das war ein Scherz, 'tschuldige. Glint ist weggegangen, er erwähnte irgendwelche dringenden Familienangelegenheiten, um die er sich kümmern müsste.~
-@1   = ~<CHARNAME>! Das wär gemein! So gemein sind wir nicht, oder?~
-@2   = ~Iiih, die Zwerge für den Leichnam töten? Das machen wir aber nicht, <CHARNAME>, oder?~
-@3   = ~Oh, nein! Der Arme. Er war so nett! Naja, bis darauf, dass er all unser Gold vertrödelt hat, natürlich... Das ist so traurig!~
 
 /* bdimoenj_additions.d */
 @50  = ~Eure kleine Schwester... Freundin schaut mich mit großen Augen an. Verliert das Rätsel und ich werde ihr zeigen, wie mächtig Magie wirklich sein kann.~
@@ -89,3 +86,9 @@
 @129  = ~<CHARNAME> hat das doch nicht *selbst* gemacht, ist das nicht klar? Na gut, wenn ich darüber nachdenke, dann macht das die Sache natürlich nicht besser, wenn wir von der moralischen Verfassung der Soldaten sprechen...~
 @130  = ~Oh, man kann eine ganze Mende Unsinn anstellen mit einer Schaufel, einem Sack und genügend Sand... Was denn, habt Ihr nie um die größere Schaufel gestritten als Ihr klein wart?~
 @131  = ~Unverletzt! Klaaar, das glaubt auch jeder nach den Meuchelmördern, die im Palast aufgetaucht sind.~
+
+
+@132   = ~<CHARNAME>! Das wär gemein! So gemein sind wir nicht, oder?~
+@133   = ~Iiih, die Zwerge für den Leichnam töten? Das machen wir aber nicht, <CHARNAME>, oder?~
+@134   = ~Oh, nein! Der Arme. Er war so nett! Naja, bis darauf, dass er all unser Gold vertrödelt hat, natürlich... Das ist so traurig!~
+@135   = ~Ich fühl' keinen Unterschied. Merkt einer von Euch was?~

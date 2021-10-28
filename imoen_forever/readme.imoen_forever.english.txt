@@ -138,6 +138,12 @@ Compatibility note: The portrait names used are the ones for the original BG1/So
 Do not install either component if you are using a different portrait for Imoen or have other portrait mods installed that change Imoen's portrait, unless you know the mods are compatible.
 
 
+13 I4E in SoD: Imoen's chest moves with the campaign, too 
+-----------------------------------
+With this component, the contents of Imoen's chest in the 3rd floor of the palace will move along the camps as well - if Imoen joins the group in one of the camps. Imoen's items will be inside the tent next to the PC's chest in each camp in that case.
+This component requires component 7 "Imoen Returns to PC in First Coalition Camp" to be installed.
+
+
 INSTALLATION
 
 For installation order, the main BGII component of this mod is to be treated as a quest mod (not a tweak mod) and should be installed before any other NPC mods that add interjections in SoA chapter 2&3.
@@ -297,6 +303,12 @@ REDISTRIBUTION NOTE: Imoen 4 Ever Mod was created to be freely enjoyed by all Ba
 
 
 HISTORY
+
+Version 8:
+-new component: Imoen's chest moves with the campaign, too.
+-one more interjection in crusader camp.
+-added check to SoD kickout dialogue so it can't trigger in BGII.
+-typo corrections.
 
 Version 7.2:
 -Imoen should initiate kickout dialogue in BGII

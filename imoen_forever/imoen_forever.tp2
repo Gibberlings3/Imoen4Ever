@@ -9,7 +9,7 @@ BACKUP ~imoen_forever/backup~
 AUTHOR ~Please post at G3 or Kerzenburgforum, refer to readme.~  
 
 
-VERSION ~v7.2~  
+VERSION ~v8pre~  
 
 README ~imoen_forever/readme.imoen_forever.%LANGUAGE%.txt~ ~imoen_forever/readme.imoen_forever.english.txt~
 
@@ -655,7 +655,7 @@ REQUIRE_PREDICATE ((GAME_IS ~bg2ee eet~) OR (MOD_IS_INSTALLED ~setup-bg2fixpack.
 FORBID_COMPONENT ~EET_end.tp2~ ~0~ @9930
 FORBID_COMPONENT ~EET_end.tp2~ ~1~ @9930
 
-/* compatibility with Alternatives - if Alternatives is installed, change the relevent cutscenes here, too */
+/* compatibility with Alternatives - if Alternatives is installed, change the relevant cutscenes here, too */
 
 ACTION_IF (MOD_IS_INSTALLED ~setup-alternatives.TP2~ "0") THEN BEGIN
     PRINT @9916 /* ~Alternatives detected: patching.~ */
@@ -1108,7 +1108,7 @@ USING ~imoen_forever/tra/autotra/%LANGUAGE%/IMOEN_IN_GROUP_KD.TRA~
 
 
 ///////////////////////////////////////////////////////////////////
-/* 4th SoD part: Play cutscene with Imoen an Duke Jannath */
+/* 4th SoD part: Play cutscene with Imoen and Duke Jannath */
 ///////////////////////////////////////////////////////////////////
 BEGIN @9910 DESIGNATED 13 //GROUP @9922
 REQUIRE_PREDICATE (GAME_INCLUDES ~sod~) @9904 
@@ -1284,4 +1284,166 @@ COPY_EXISTING ~bdshimoe.cre~ ~override~
 COPY_EXISTING ~bdimoen.cre~ ~override~
   WRITE_EVALUATED_ASCII 0x34  ~IMOENM~ #8   // assign "small" portrait
   WRITE_EVALUATED_ASCII 0x3c  ~IMOENL~ #8   // assign "large" portrait
+
+
+//////////////////////////////////////////////////////////////////
+/* 8th SoD part: Imoen's chest moves with the campaign, too */
+///////////////////////////////////////////////////////////////////
+BEGIN @9931 DESIGNATED 20 //GROUP @9922
+REQUIRE_PREDICATE (GAME_INCLUDES ~sod~) @9904 
+REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-imoen_forever.TP2~ "11") @9911
+
+/* Imoen'll just stuff her stuff into the tent next to CHARNAME's chest. */
+COPY_EXISTING ~bd1000.are~ ~override~
+//container and item
+  LPF ~fj_are_structure~
+    INT_VAR
+    fj_type        = 8 //non-visible
+    fj_loc_x       = 116
+    fj_loc_y       = 3643
+    fj_box_left    = 65
+    fj_box_top     = 3596
+    fj_box_right   = 91
+    fj_box_bottom  = 3634
+    fj_trap_loc_x  = 116
+    fj_trap_loc_y  = 3643
+    fj_vertex_0    = 65 + (3633 << 16)
+    fj_vertex_1    = 91 + (3634 << 16)
+    fj_vertex_2    = 91 + (3609 << 16)
+    fj_vertex_3    = 72 + (3596 << 16)
+    STR_VAR
+    fj_structure_type = container
+    fj_name           = ~C#ImoensChest~
+  END
+BUT_ONLY
+
+COPY_EXISTING ~bd3000.are~ ~override~
+//container and item
+  LPF ~fj_are_structure~
+    INT_VAR
+    fj_type        = 8 //non-visible
+    fj_loc_x       = 1579
+    fj_loc_y       = 1871
+    fj_box_left    = 1588
+    fj_box_top     = 1799
+    fj_box_right   = 1618
+    fj_box_bottom  = 1861
+    fj_trap_loc_x  = 1579
+    fj_trap_loc_y  = 1871
+    fj_vertex_0    = 1588 + (1840 << 16)
+    fj_vertex_1    = 1614 + (1861 << 16)
+    fj_vertex_2    = 1618 + (1822 << 16)
+    fj_vertex_3    = 1613 + (1799 << 16)
+    STR_VAR
+    fj_structure_type = container
+    fj_name           = ~C#ImoensChest~
+  END
+BUT_ONLY
+
+COPY_EXISTING ~bd7100.are~ ~override~
+//container and item
+  LPF ~fj_are_structure~
+    INT_VAR
+    fj_type        = 8 //non-visible
+    fj_loc_x       = 243
+    fj_loc_y       = 3457
+    fj_box_left    = 208
+    fj_box_top     = 3401
+    fj_box_right   = 223
+    fj_box_bottom  = 3453
+    fj_trap_loc_x  = 1579
+    fj_trap_loc_y  = 1871
+    fj_vertex_0    = 208 + (3453 << 16)
+    fj_vertex_1    = 223 + (3440 << 16)
+    fj_vertex_2    = 221 + (3421 << 16)
+    fj_vertex_3    = 208 + (3401 << 16)
+    STR_VAR
+    fj_structure_type = container
+    fj_name           = ~C#ImoensChest~
+  END
+BUT_ONLY
+
+<<<<<<<< .../move_imoens_stuff_bd1000.baf
+IF
+	Global("C#I4E_bdimoen_chest","GLOBAL",1)
+	!Global("C#I4E_MoveImoensStuff","GLOBAL",1)
+	Global("C#I4E_MoveImoensStuff","GLOBAL",0)
+THEN
+	RESPONSE #100
+		MoveContainerContents("BD0103*Imoen_equipment","BD1000*C#ImoensChest")
+		SetGlobal("C#I4E_MoveImoensStuff","GLOBAL",1)
+END
+>>>>>>>>
+EXTEND_BOTTOM ~bd1000.bcs~ ~.../move_imoens_stuff_bd1000.baf~ EVALUATE_BUFFER
+
+<<<<<<<< .../move_imoens_stuff_bd3000.baf
+IF
+	Global("C#I4E_bdimoen_chest","GLOBAL",1)
+	!Global("C#I4E_MoveImoensStuff","GLOBAL",3)
+	Global("C#I4E_MoveImoensStuff","GLOBAL",0)
+THEN
+	RESPONSE #100
+		MoveContainerContents("BD0103*Imoen_equipment","BD3000*C#ImoensChest")
+		SetGlobal("C#I4E_MoveImoensStuff","GLOBAL",3)
+END
+
+IF
+	Global("C#I4E_bdimoen_chest","GLOBAL",1)
+	!Global("C#I4E_MoveImoensStuff","GLOBAL",3)
+	Global("C#I4E_MoveImoensStuff","GLOBAL",1)
+THEN
+	RESPONSE #100
+		MoveContainerContents("BD1000*C#ImoensChest","BD3000*C#ImoensChest")
+		SetGlobal("C#I4E_MoveImoensStuff","GLOBAL",3)
+END
+
+IF
+	Global("C#I4E_bdimoen_chest","GLOBAL",1)
+	!Global("C#I4E_MoveImoensStuff","GLOBAL",3)
+	Global("C#I4E_MoveImoensStuff","GLOBAL",2)
+THEN
+	RESPONSE #100
+		MoveContainerContents("BD7100*C#ImoensChest","BD3000*C#ImoensChest")
+		SetGlobal("C#I4E_MoveImoensStuff","GLOBAL",3)
+		Continue()
+END
+>>>>>>>>
+EXTEND_BOTTOM ~bd3000.bcs~ ~.../move_imoens_stuff_bd3000.baf~ EVALUATE_BUFFER
+
+<<<<<<<< .../move_imoens_stuff_bd7100.baf
+IF
+	Global("C#I4E_bdimoen_chest","GLOBAL",1)
+	!Global("C#I4E_MoveImoensStuff","GLOBAL",2)
+	Global("C#I4E_MoveImoensStuff","GLOBAL",0)
+THEN
+	RESPONSE #100
+		MoveContainerContents("BD0103*Imoen_equipment","BD7100*C#ImoensChest")
+		SetGlobal("C#I4E_MoveImoensStuff","GLOBAL",2)
+END
+
+IF
+	Global("C#I4E_bdimoen_chest","GLOBAL",1)
+	!Global("C#I4E_MoveImoensStuff","GLOBAL",2)
+	Global("C#I4E_MoveImoensStuff","GLOBAL",1)
+THEN
+	RESPONSE #100
+		MoveContainerContents("BD1000*C#ImoensChest","BD7100*C#ImoensChest")
+		SetGlobal("C#I4E_MoveImoensStuff","GLOBAL",2)
+END
+>>>>>>>>
+EXTEND_BOTTOM ~bd7100.bcs~ ~.../move_imoens_stuff_bd7100.baf~ EVALUATE_BUFFER
+
+// Get state for bdimoens %heya_its_me_04% (in bdimoens.d)
+/* ~Oh, yes! This is gonna be so great!~
+*/
+OUTER_SET heya_its_me_04 = STATE_WHICH_SAYS 18 IN ~imoen_forever/tra/autotra/%s/bdimoens.tra~ FROM ~bdimoens~
+
+<<<<<<<< .../add_bdimoen_chest.d
+I_C_T bdimoens %heya_its_me_04% C#I4E_bdimoen_chest
+== bdimoens @24
+DO ~AddJournalEntry(@25,INFO)~
+END
+>>>>>>>>
+COMPILE EVALUATE_BUFFER ~.../add_bdimoen_chest.d~ USING ~imoen_forever/tra/autotra/%s/bdimoens.tra~
+
 
