@@ -329,7 +329,7 @@ COPY_EXISTING ~imoen211.cre~ ~override~
     WRITE_ASCII 0x280 ~imoen_notthistime~ #32 // script name / DV
     WRITE_ASCII 0x248 ~~ #8 // OVERRIDE
 
-/* Coweld Wizard for abduction cutscene */
+/* Cowled Wizard for abduction cutscene */
 
 COPY_EXISTING ~cowled01.cre~ ~Override/c#imcowl.cre~
     WRITE_ASCII 0x280 ~c#imcowl~ #32 // script name / DV

@@ -47,11 +47,11 @@ END
 
 /* bdnederl and Skie */
 I_C_T bdnederl 39 C#IM_bdnederl_shovel
-== bdimoen IF ~IsValidForPartyDialogue("%IMOEN_DV_SOD%")~ THEN @130 /* ~Oh, there is still a lot of mischief one can do with a shovel, sand, and a bag... What? Never faught for a bigger sand shovel when you were young?~ */
+== bdimoen IF ~IsValidForPartyDialogue("%IMOEN_DV_SOD%")~ THEN @130 /* ~Oh, there is still a lot of mischief one can do with a shovel, sand, and a bag... What? Never fought for a bigger sand shovel when you were young?~ */
 END
 /* bdnederl and Skie */
 I_C_T bdnederl 40 C#IM_bdnederl_shovel
-== bdimoen IF ~IsValidForPartyDialogue("%IMOEN_DV_SOD%")~ THEN @130 /* ~Oh, there is still a lot of mischief one can do with a shovel, sand, and a bag... What? Never faught for a bigger sand shovel when you were young?~ */
+== bdimoen IF ~IsValidForPartyDialogue("%IMOEN_DV_SOD%")~ THEN @130 /* ~Oh, there is still a lot of mischief one can do with a shovel, sand, and a bag... What? Never fought for a bigger sand shovel when you were young?~ */
 END
 
 /* Torsin de Lancie, HC denied to poison the crusader provisions */

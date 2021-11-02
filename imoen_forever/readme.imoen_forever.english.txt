@@ -1,12 +1,12 @@
-	***						  ***
-	*** This whole mod is a spoiler to the BGII story ***	
-	***						  ***
+***						  ***
+*** This whole mod is a spoiler to the BGII story ***	
+***						  ***
 
 
 
-			               "Imoen 4 Ever"
-			for BG:EE, BGII, BGT, BGII:EE, and EET
-					by jastey 
+                    "Imoen 4 Ever"
+       for BG:EE, BGII, BGT, BGII:EE, and EET
+                    by jastey 
 
 
 
@@ -129,10 +129,10 @@ This is useful if Imoen had some items etc. on her you want to swap before the f
 -----------------------------------
 This component comes with two options:
 1. Use Imoen's SoD Portrait after Korlasz' Crypt
-	This option will leave Imoen the BG1 portrait in Korlasz' Dungeon in case she is in party (via component 6), and will switch to her SoD portrait starting with the poison attack in the Palace.
+   This option will leave Imoen the BG1 portrait in Korlasz' Dungeon in case she is in party (via component 6), and will switch to her SoD portrait starting with the poison attack in the Palace.
 
 2. Use Imoen's BG1 Portrait in all of SoD
-	This option will leave Imoen's BG1 portrait for Imoen in all of SoD - also for the interactions with her when she is not in party.
+   This option will leave Imoen's BG1 portrait for Imoen in all of SoD - also for the interactions with her when she is not in party.
 
 Compatibility note: The portrait names used are the ones for the original BG1/SoD portraits.
 Do not install either component if you are using a different portrait for Imoen or have other portrait mods installed that change Imoen's portrait, unless you know the mods are compatible.
@@ -211,7 +211,7 @@ The mod is *not* compatible with my "Imoen is Stone" mod.
 more notes for modders:
 Crossmod variable: "C#IM_ImoenStays"
 
-Global("C#IM_ImoenStays","GLOBAL",0) - Inside ID, Imoen gets kidnapped, Imoen is taken by the Coweld Wizards at the Promenade
+Global("C#IM_ImoenStays","GLOBAL",0) - Inside ID, Imoen gets kidnapped, Imoen is taken by the Cowled Wizards at the Promenade
 Global("C#IM_ImoenStays","GLOBAL",1) - Imoen is back after the PC talked to Gaelan the first time (slums) - Imoen is spawned beside the PC when he leaves Gaelan's house. No missing Imoen here, Imoen is no longer kidnapped.
 Global("C#IM_ImoenStays","GLOBAL",2) - Imoen gets kidnapped in Brynnlaw, Imoen is taken by Irenicus inside Spellhold, Imoen is kidnapped
 Global("C#IM_ImoenStays","GLOBAL",3) - Imoen is back, "normal status": after Spellhold, Irenicus took her soul for Bodhi.
@@ -244,7 +244,7 @@ Crossmod content for this mod:
 1. NPC commenting on Imoen being taken but released by the Cowled Wizards, to fire in chapter 2 or 3 or also at the neginning in Brynnlaw until Imoen is taken to Spellhold:
 Global("C#IM_ImoenStays","GLOBAL",1)
 
-NPC talk to Imoen after Spellhold and explicitely address the fact that she was taken twice, or that she was still taken by Irenicus although the Coweld Wizards let her go the first time he tried to take her with him at the Promenade fight: Global("C#IM_ImoenStays","GLOBAL",3)
+NPC talk to Imoen after Spellhold and explicitely address the fact that she was taken twice, or that she was still taken by Irenicus although the Cowled Wizards let her go the first time he tried to take her with him at the Promenade fight: Global("C#IM_ImoenStays","GLOBAL",3)
 
 
 Modder compatibility notes for SoD:
@@ -278,17 +278,17 @@ Raza, stn & Arcanecoast Team, Arkie - Russian
 
 
 TOOLS USED
-IESDP					https://gibberlings3.github.io/iesdp/index.htm
-Near Infinity				https://forums.beamdog.com/discussion/30593/new-versions-of-nearinfinity-available/p1
-WeiDU					https://github.com/WeiDUorg/weidu/releases/latest
- 					(formerly: http://www.weidu.org)
+IESDP                      https://gibberlings3.github.io/iesdp/index.htm
+Near Infinity              https://forums.beamdog.com/discussion/30593/new-versions-of-nearinfinity-available/p1
+WeiDU                      https://github.com/WeiDUorg/weidu/releases/latest
+                           (formerly: http://www.weidu.org)
 
 Modding communities, tutorials and technical assistance:
 
-Kerzenburgforum				https://www.baldurs-gate.de/index.php
-The Gibberlings Three			http://gibberlings3.net
-Pocket Plane Group			http://pocketplane.net
-Spellhold Studios			http://www.shsforums.net/
+Kerzenburgforum:           https://www.baldurs-gate.de/index.php
+The Gibberlings Three      http://gibberlings3.net
+Pocket Plane Group         http://pocketplane.net
+Spellhold Studio:          http://www.shsforums.net/
 
 
 LEGAL INFORMATION
