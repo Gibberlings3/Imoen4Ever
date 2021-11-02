@@ -1,8 +1,5 @@
 /* bdimoen_cleanup.d */
 @0   = ~Taa, to tylko ¿art, przepraszam. Glint odszed³, mamrocz¹c coœ o niecierpi¹cych zw³oki sprawach rodzinnych, którymi musi siê zaj¹æ.~
-@1   = ~<CHARNAME>! To pod³e! Nie jesteœmy *tak* podli, prawda?~
-@2   = ~Ej, pozabijamy krasnoludy dla lisza? Tak naprawdê to tego nie zrobimy, no nie?~
-@3   = ~Och, nie! Biedny cz³owiek. To by³ taki fajny goœæ! No, jeœli zapomnimy o tym, ¿e straci³ ca³e nasze z³oto... Mimo wszystko to takie smutne!~
 
 /* bdimoenj_additions.d */
 @50  = ~Twoja siostrzyczka... przyjació³ka... patrzy na mnie tymi wielkimi oczami. Jeœli nie odpowiesz na moj¹ zagadkê, to poka¿ê jej, jak potê¿na mo¿e byæ magia.~
@@ -89,3 +86,9 @@
 @129  = ~<CHARNAME> nie *zrobi³* tego sam, czy¿ to nie oczywiste? Chocia¿, teraz gdy o tym myœlê, nie wp³ywa to chyba za bardzo na morale wojsk...~ ~<CHARNAME> nie *zrobi³a* tego sama, czy¿ to nie oczywiste? Chocia¿, teraz gdy o tym myœlê, nie wp³ywa to chyba za bardzo na morale wojsk...~
 @130  = ~O, mo¿na mieæ sporo frajdy z ³opat¹, workiem i piaskiem... Co? Nie mów, ¿e nigdy siê nie bi³eœ o wiêksz¹ ³opatkê, gdy by³eœ dzieckiem?~
 @131  = ~Nietkniête! Jaaasne, to nawet ma sens po nasy³aniu wczeœniej tych wszystkich zabójców.~
+
+/* new / moved for v8 */
+@132   = ~<CHARNAME>! To pod³e! Nie jesteœmy *tak* podli, prawda?~
+@133   = ~Ej, pozabijamy krasnoludy dla lisza? Tak naprawdê to tego nie zrobimy, no nie?~
+@134   = ~Och, nie! Biedny cz³owiek. To by³ taki fajny goœæ! No, jeœli zapomnimy o tym, ¿e straci³ ca³e nasze z³oto... Mimo wszystko to takie smutne!~
+@135   = ~Nie widzê ró¿nicy. Ty jak¹œ widzisz?~

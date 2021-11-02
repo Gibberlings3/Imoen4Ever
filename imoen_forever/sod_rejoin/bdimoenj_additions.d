@@ -1,8 +1,11 @@
-
+/* after witnessing Hormorn's blessing in camp at Boarskyr bridge */
+I_C_T bdbarghe 8 C#IM_bdbarghe_8
+== bdimoen IF ~IsValidForPartyDialogue("%IMOEN_DV_SOD%")~ THEN @135 /* I don't feel any different. Do you feel any different? */
+END
 
 /* PC threatens to kill the crusaders with the spikes in bd7230.are */
 I_C_T bdkharmy 6 C#IM_bdkharmy_6
-== bdimoen IF ~IsValidForPartyDialogue("%IMOEN_DV_SOD%")~ THEN @1
+== bdimoen IF ~IsValidForPartyDialogue("%IMOEN_DV_SOD%")~ THEN @132
 END
 
 /* PC handed over the Bridgefort Castle to the crusaders */
@@ -14,7 +17,7 @@ END
 /* the dwarven miners. Do not kill them for the Lich! */
 
 I_C_T BDCOLDH 17 C#IM_BDCOLDH_17
-== bdimoen IF ~IsValidForPartyDialogue("%IMOEN_DV_SOD%")~ THEN @2
+== bdimoen IF ~IsValidForPartyDialogue("%IMOEN_DV_SOD%")~ THEN @133
 END
 
 /* Ophyllis in last camp */
@@ -22,7 +25,7 @@ END
 /* The sword is yours... M-may the gods smile upon you, O hero of Baldur's Gate... Uhhh...
 (StrRef: 57554) */
 I_C_T BDOPHYLL 40 C#IM_BDOPHYLL_40
-== bdimoen IF ~IsValidForPartyDialogue("%IMOEN_DV_SOD%")~ THEN @3
+== bdimoen IF ~IsValidForPartyDialogue("%IMOEN_DV_SOD%")~ THEN @134
 == BDOPHYLL IF ~IsValidForPartyDialogue("%IMOEN_DV_SOD%")~ THEN #%6377%
 END
 
@@ -44,11 +47,11 @@ END
 
 /* bdnederl and Skie */
 I_C_T bdnederl 39 C#IM_bdnederl_shovel
-== bdimoen IF ~IsValidForPartyDialogue("%IMOEN_DV_SOD%")~ THEN @130 /* ~Oh, there is still a lot of mischief one can do with a shovel, sand, and a bag... What? Never faught for a bigger sand shovel when you were young?~ */
+== bdimoen IF ~IsValidForPartyDialogue("%IMOEN_DV_SOD%")~ THEN @130 /* ~Oh, there is still a lot of mischief one can do with a shovel, sand, and a bag... What? Never fought for a bigger sand shovel when you were young?~ */
 END
 /* bdnederl and Skie */
 I_C_T bdnederl 40 C#IM_bdnederl_shovel
-== bdimoen IF ~IsValidForPartyDialogue("%IMOEN_DV_SOD%")~ THEN @130 /* ~Oh, there is still a lot of mischief one can do with a shovel, sand, and a bag... What? Never faught for a bigger sand shovel when you were young?~ */
+== bdimoen IF ~IsValidForPartyDialogue("%IMOEN_DV_SOD%")~ THEN @130 /* ~Oh, there is still a lot of mischief one can do with a shovel, sand, and a bag... What? Never fought for a bigger sand shovel when you were young?~ */
 END
 
 /* Torsin de Lancie, HC denied to poison the crusader provisions */

@@ -141,6 +141,12 @@ Kompatibilitätshinweis: Die verwendeten Portraitnamen sind die der originalen BG
 Installiert diese Komponenten nicht, wenn Ihr eine andere Portraitmod für Imoen installiert habt, außer Ihr wisst, dass die Mods kompatibel sind.
 
 
+13 I4E für SoD: Imoens Kiste zieht ebenfalls von Lager zu Lager mit 
+-----------------------------------
+Mit dieser Komponente folgt der Inhalt von "Imoens Kiste" aus dem obersten Stock des Palastes zu den drei Lagern, so wie es auch die Kiste des HC tut. Imoen muss dafür in einem der Lager der Gruppe beitreten. Dann befinden sich die Gegenstände aus ihrer Kiste im jeweiligen Zelt neben der Kiste des HCs.
+Voraussetzung ist, dass die Komponente 7 "Imoen kommt im ersten Koalitionslager zurück zum HC" installiert ist.
+
+
 
 INSTALLATION
 
@@ -299,6 +305,13 @@ REDISTRIBUTION NOTE: Imoen 4 Ever Mod was created to be freely enjoyed by all Ba
 
 
 HISTORY
+
+Version 8:
+-new component: Imoen's chest moves with the campaign, too.
+-one more interjection in crusader camp.
+-added check to SoD kickout dialogue so it can't trigger in BGII.
+-typo corrections.
+-added globally unique LABELs to support Project Infinity.
 
 Version 7.2:
 -Imoen should initiate kickout dialogue in BGII

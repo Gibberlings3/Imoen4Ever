@@ -163,7 +163,7 @@ STRING_SET 21511 @1170
 STRING_SET 21512 @1035
 
 //BODHI 11 DO 0
-/* ~And you will help me find Imoen for 15000? I still wonder why you would do this.~ */
+/* ~And you will help me find Imoen for 15,000? I still wonder why you would do this.~ */
 STRING_SET 21832 @1036
 
 //BODHI 37 DO 1

@@ -41,7 +41,7 @@ As soon as we set foot onto Brynnlaw, Imoen was taken by what seemed to be a Cow
 @1033  = ~And they are the block that prevents your pursuit of Irenicus. Trust in me, <CHARNAME>, you will not regret it.~ 
 @1034  = ~We thought you could lead us to him, and you can. You seek Irenicus, and we seek answers - both will be found together.~  
 @1035  = ~I would offer an alternative. I know your friend Imoen came back to you and you might think both of you are safe. But you will not be as long as Irenicus is out there. I would help you find him for...oh... 15,000 gold? It is a sizeable amount less than the Shadow Thieves have asked and, coincidentally, it is what you have now.~ 
-@1036  = ~And you will help me find Irenicus for 15000? I still wonder why you would do this.~  
+@1036  = ~And you will help me find Irenicus for 15,000? I still wonder why you would do this.~  
 @1037  = ~When will you help me find Irenicus? I have already paid you what you asked!~  
 @1038  = ~I have done much for you. When will you help me with Irenicus?~  
 @1039  = ~I have done everything you have asked. When will you help me with Irenicus?~  
@@ -162,20 +162,20 @@ One more troubling thing... Bodhi knew. She knew I am a child of Bhaal.~
 @1097 = ~We must take partial responsibility for your temporary loss of Imoen, but our chief concern was Irenicus at the time. We still don't know why he killed our guild members.~
 @1098 = ~Well my point is that we should stop talking and fetching and try and find this Irenicus.~
 @1099 = ~He... he wants us to steal from a temple?  Even from Talos, it still creeps me out.  Just... just how far will we sink to search for this Irenicus, <CHARNAME>?~
-@1100 = ~Very well. I need to gather a large amount of gold to persue a foe, so I'll join you.~
+@1100 = ~Very well. I need to gather a large amount of gold to pursue a foe, so I'll join you.~
 @1101 = ~I'm searching for someone who has been taken by the Cowled Wizards... do you know anything about this?~
 @1102 = ~Mmm. Is this the person who was taken in at the same time as your friend?~
 @1103 = ~Yes, his name is Irenicus.~
 @1104 = ~This man, Irenicus, is extremely powerful... the Cowled Wizards have likely bitten off far more than they can chew by taking him captive.~
 @1105 = ~Our sources say the wizards are terrified of his power. Where this Irenicus might be, however, I do not know.~
 @1106 = ~Someone I am looking for has been taken by the Cowled Wizards. Do you know where they keep their prisoners?~
-@1107 = ~I must gather a large amount of gold to persue a foe of mine, so any reward you could offer would be appreciated.~
-@1108 = ~I do need the gold, even if only to persue a very dangerous man.~
+@1107 = ~I must gather a large amount of gold to pursue a foe of mine, so any reward you could offer would be appreciated.~
+@1108 = ~I do need the gold, even if only to pursue a very dangerous man.~
 @1109 = ~I am searching for a mage named Irenicus who is being held by the Cowled Wizards. Do you know anything of them?~ 
 @1110 = ~They act for the Council, but they do as they wish. We do not associate with them at all, so I know little else. I do not know what happened to that mage you seek.~ 
 @1111 =  ~Pfeh! If that mage is a captive of the cowled ones there is little point in searching. The wizards have many secrets and they guard them all jealously.~
 @1112 = ~I will take your gold, as I have unfinished business with that wizard. No other reason.~
-@1113 = ~I may do this, but I am gathering a large amount of gold to persue a foe and would need a reward.~
+@1113 = ~I may do this, but I am gathering a large amount of gold to pursue a foe and would need a reward.~
 @1114 = ~I will find him! I will find this Irenicus!~
 @1115 = ~But we both seek Irenicus. Should we not work together?~
 @1116 = ~Irenicus allowed himself to be overcome in his rage. He has recovered, and is no one's prisoner. Your Imoen is not as strong, though I am told she has... potential.~
@@ -192,7 +192,7 @@ One more troubling thing... Bodhi knew. She knew I am a child of Bhaal.~
 @1127 = ~You must hear things... Someone I am looking for has been taken captive by the Cowled Wizards.  Do you know where they keep their prisoners?~
 @1128 = ~I am searching for someone who was taken by the Cowled Wizards. Do you know of them?~
 @1129 = ~But that is probably not news to you. If you seek a meeting with the one they took, I doubt they will hand him over gladly. You will need to operate against them.~
-@1130 = ~I'm wondering something first. I need gold to persue a foe... is there a reward for capturing this murderer?~
+@1130 = ~I'm wondering something first. I need gold to pursue a foe... is there a reward for capturing this murderer?~
 @1131 = ~You're a Cowled Wizard? Perhaps you could tell me where the Cowled Wizards keep their prisoners. Someone of interest to me is being held.~
 @1132 = ~I was wondering... do you know anything of the Cowled Wizards? Someone I am interested in is being held by them.~
 @1133 = ~Then you're unlikely to find this person. The Cowled Wizards don't give anything up, and nobody knows where to find them... except those who can't talk.~
@@ -207,24 +207,24 @@ One more troubling thing... Bodhi knew. She knew I am a child of Bhaal.~
 @1142 = ~Is there a reward? I need to gather coin to search for someone being imprisoned by the Cowled Wizards, you see.~
 @1143 = ~Suppose I decide to help you. I need to gather coin to search for someone being held by the Cowled Wizards... is there a reward involved?~
 @1144 = ~I'm searching for someone who has been captured by the Cowled Wizards... do you know anything of them?~
-@1145 = ~I need to gather a large amount of gold to persue a foe, so I would be interested in a reward.~
-@1146 = ~I see. I need to gather a large amount of gold to persue a foe, however, so I would be interested in some kind of reward.~
-@1147 = ~I need to collect a large amount of gold to persue a foe, so any reward you could offer would be appreciated.~
-@1148 = ~I need a large amount of gold to persue a foe, so I would like to know what reward you are offering, first.~
+@1145 = ~I need to gather a large amount of gold to pursue a foe, so I would be interested in a reward.~
+@1146 = ~I see. I need to gather a large amount of gold to pursue a foe, however, so I would be interested in some kind of reward.~
+@1147 = ~I need to collect a large amount of gold to pursue a foe, so any reward you could offer would be appreciated.~
+@1148 = ~I need a large amount of gold to pursue a foe, so I would like to know what reward you are offering, first.~
 @1149 = ~Any ideas on how I might gather a lot of coin? I need it to get to someone who was taken by the Cowled Wizards.~
 @1150 = ~Someone I am searching for has been taken by the Cowled Wizards, and I need to find out where they bring their prisoners. Do you know anything about that?~
 @1151 = ~We are looking for someone who has been taken captive by the Cowled Wizards. Perhaps you've heard where they keep their prisoners?~
 @1152 = ~Someone of interest has been imprisoned by the Cowled Wizards... do you have any idea where their prisoners would be kept?~
-@1153 = ~I need to collect a large amount of coin to persue a foe... might there be a reward if I did this task for you?~
-@1154 = ~I need to collect a large amount of gold to persue a foe... so I want to know if there is a reward, first.~ 
-@1155 = ~I need to save up a large amount of gold to persue someone who was taken by the Cowled Wizards. Is there a reward, perhaps?~
-@1156 = ~I need to gather a large amount of gold to persue someone who was taken by the Cowled Wizards. Might there be a reward involved?~
-@1157 = ~I could. But I need to gather a large amount of gold to persue someone. Is there a reward?~
-@1158 = ~I need to gather a large amount of gold to persue someone being held by the Cowled Wizards, so I'll need a reward.~
-@1159 = ~Well... I need to gather coin to persue someone that's been imprisoned by the Cowled Wizards. Is there a reward, perhaps?~
-@1160 = ~Perhaps, if there's a reward involved. I need to gather coin to persue someone that's been imprisoned by the Cowled Wizards.~
-@1161 = ~I might. But I need to gather coin to persue someone that's been imprisoned by the Cowled Wizards. Is there a reward?~
-@1162 = ~I am saving coin to persue someone that's been imprisoned by the Cowled Wizards, so I will need a reward.~
+@1153 = ~I need to collect a large amount of coin to pursue a foe... might there be a reward if I did this task for you?~
+@1154 = ~I need to collect a large amount of gold to pursue a foe... so I want to know if there is a reward, first.~ 
+@1155 = ~I need to save up a large amount of gold to pursue someone who was taken by the Cowled Wizards. Is there a reward, perhaps?~
+@1156 = ~I need to gather a large amount of gold to pursue someone who was taken by the Cowled Wizards. Might there be a reward involved?~
+@1157 = ~I could. But I need to gather a large amount of gold to pursue someone. Is there a reward?~
+@1158 = ~I need to gather a large amount of gold to pursue someone being held by the Cowled Wizards, so I'll need a reward.~
+@1159 = ~Well... I need to gather coin to pursue someone that's been imprisoned by the Cowled Wizards. Is there a reward, perhaps?~
+@1160 = ~Perhaps, if there's a reward involved. I need to gather coin to pursue someone that's been imprisoned by the Cowled Wizards.~
+@1161 = ~I might. But I need to gather coin to pursue someone that's been imprisoned by the Cowled Wizards. Is there a reward?~
+@1162 = ~I am saving coin to pursue someone that's been imprisoned by the Cowled Wizards, so I will need a reward.~
 @1163 = ~I live, my followers live, and those that oppose us do not. Remember this in your search for Irenicus...~
 @1164 = ~My childhood friend and I were kidnapped by a mage who experimented on and tortured us. We escaped, but he was taken by the Cowled Wizards before I could have my revenge. I must find him.~
 @1165 = ~I'd settle for making sure he won't come after Imoen again - and me.~
@@ -241,7 +241,7 @@ One more troubling thing... Bodhi knew. She knew I am a child of Bhaal.~
 
 /* new for v5 */
 //#46040
-@1171   = ~I am saving coin to persue an enemy... what would the reward be for this task?~
+@1171   = ~I am saving coin to pursue an enemy... what would the reward be for this task?~
 
 /* new for v7 */
 //#39703

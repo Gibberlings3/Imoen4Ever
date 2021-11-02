@@ -22,3 +22,9 @@
 //@21    = 
 @22   = ~Chcia³aby kontynuowaæ moje trening, ale ja ju¿ ich nie chcê. Chcê iœæ z tob¹!~
 @23   = ~Liia wie, ¿e chcê znowu podró¿owaæ z tob¹.~
+
+/* new for v8 */
+@24  = ~O, przy okazji, wrzuci³am moje rzeczy do tego namiotu obok twojej skrzyni.~
+@25  = ~Dobytek Imoen
+
+Dobytek Imoen znajduje siê teraz w namiocie tu¿ obok mojej skrzyni. Wszystko, co Imoen przechowywa³a w swojej skrzyni w Pa³acu, jest teraz tutaj, na wypadek, gdyby mia³o to byæ nam potrzebne.~
