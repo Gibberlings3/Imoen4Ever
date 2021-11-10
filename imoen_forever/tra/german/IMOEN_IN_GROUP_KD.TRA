@@ -36,3 +36,14 @@
 @31   = ~Das weiß ich doch! Ich fühl' mich trotzdem schlecht deswegen. Ich würde lieber mit dir ziehen, <CHARNAME>.~
 @32   = ~Also werde ich hier bei Herzogin Jannath bleiben, gesund werden und dabei Magie mit ihr üben.~
 
+
+/* new for v9 */
+/* @222 - @225 are the same as in "EndlessBG1/.../DIALOGUES.TRA". */
+@222  = ~<CHARNAME> hat einen Berg an alten Büchern und Forschung und so gefunden!~
+@223  = ~Hier, nehmt, Herzogin Liia. Ist das nicht ein unglaublich dicker Stapel?!~
+@224  = ~Ich danke Euch für die Aufzeichnungen, die Imoen mir gegeben hat. Nehmt dies als Ausgleich für Eure Mühen.~
+@225  = ~Ich bin sehr an den alten Aufzeichnungen interessiert, die Ihr in Korlasz' Familiengruft gefunden habt. Bitte überlasst sie mir, sobald Ihr Euch von ihnen trennen könnt, <CHARNAME>.~
+/* @229 is the same as @229 in "EndlessBG1/.../DIALOGUES.TRA". */
+@229  = ~Ich danke Euch. Nehmt dies als Ausgleich für Eure Mühen.~
+/* @232 is the same as @232 in "EndlessBG1/.../DIALOGUES.TRA". */
+@232  = ~Hier sind die Unterlagen über Nekromantie und Bhaal, die ich in Korlasz' Gruft gefunden habe. Ihr seid daran interessiert, soweit ich weiß.~

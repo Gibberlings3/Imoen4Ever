@@ -9,7 +9,7 @@ BACKUP ~imoen_forever/backup~
 AUTHOR ~Please post at G3 or Kerzenburgforum, refer to readme.~  
 
 
-VERSION ~v8~  
+VERSION ~v9pre~  
 
 README ~imoen_forever/readme.imoen_forever.%LANGUAGE%.txt~ ~imoen_forever/readme.imoen_forever.english.txt~
 
@@ -87,6 +87,7 @@ ACTION_IF GAME_IS ~bgee~ THEN BEGIN
   OUTER_SPRINT ~55744~ ~55744~
   OUTER_SPRINT ~55745~ ~55745~
   OUTER_SPRINT ~55746~ ~55746~
+  OUTER_SPRINT ~56028~ ~56028~
   OUTER_SPRINT ~56051~ ~56051~
   OUTER_SPRINT ~57089~ ~57089~
   OUTER_SPRINT ~63916~ ~63916~
@@ -149,6 +150,7 @@ ACTION_IF GAME_IS ~eet~ THEN BEGIN
   OUTER_SPRINT ~55745~ ~255745~
   OUTER_SPRINT ~55746~ ~255746~
   OUTER_SPRINT ~56051~ ~256051~
+  OUTER_SPRINT ~56028~ ~256028~
   OUTER_SPRINT ~57089~ ~257089~
   OUTER_SPRINT ~63916~ ~263916~
   OUTER_SPRINT ~63943~ ~263943~
@@ -763,7 +765,8 @@ END
 ////////////////////////////////////////////////////////////////////////
 BEGIN @9906 DESIGNATED 10 //GROUP @9922
 LABEL ~Imoen4Ever-SoD-ImoeninGroupKorlaszDungeon~
-REQUIRE_PREDICATE (GAME_INCLUDES ~sod~) @9904 
+REQUIRE_PREDICATE (GAME_INCLUDES ~sod~) @9904
+FORBID_COMPONENT ~c#endlessbg1.tp2~ ~14~ @9932 /* This component is not compatible with - and no longer needed for - EndlessBG1's "Korlasz' Dungeon is in BG1".~ */
 FORBID_COMPONENT ~EET_end.tp2~ ~0~ @9930
 FORBID_COMPONENT ~EET_end.tp2~ ~1~ @9930
 

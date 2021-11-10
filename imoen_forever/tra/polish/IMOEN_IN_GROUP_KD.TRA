@@ -36,3 +36,14 @@
 @31   = ~Wiem o tym! Ale i tak siê martwiê. <CHARNAME>, wola³abym raczej pójœæ razem z tob¹.~
 @32   = ~Wiêc pozostanê z ksiê¿n¹ Jannath i wykorzystam ten czas, by trenowaæ z ni¹ moje magiczne zdolnoœci.~
 
+
+/* new for v9 */
+/* @222 - @225 are the same as in "EndlessBG1/.../DIALOGUES.TRA". */
+@222  = ~<CHARNAME> found a lot of old tomes and research and stuff!~
+@223  = ~Here it is, Duke Liia. Look at the size of that pile!~
+@224  = ~I thank you for the tomes Imoen gave me. Here, take these for compensation.~
+@225  = ~I am very interested in these old tomes you found in Korlasz' family crypt for my research. Please hand them to me as soon as you can spare them, <CHARNAME>.~
+/* @229 is the same as @229 in "EndlessBG1/.../DIALOGUES.TRA". */
+@229  = ~I thank you. Take these for compensation.~
+/* @232 is the same as @232 in "EndlessBG1/.../DIALOGUES.TRA". */
+@232  = ~Here is resaerch about necromancy and Bhaal I found in Korlasz' family crypt. I believe you would have an interest in these.~

@@ -35,3 +35,15 @@
 @30   = ~Я знаю, но дело не только в этом ...~
 @31   = ~Я знаю это! Но я волнуюсь. Я лучше пойду с тобой, <CHARNAME>.~
 @32   = ~Так что я останусь здесь, под покровительством Герцогини Джаннат. Заодно использую время лечения, чтобы усовершенствовать свои магические навыки.~
+
+/* new for v9 */
+/* @222 - @225 are the same as in "EndlessBG1/.../DIALOGUES.TRA". */
+@222  = ~<CHARNAME> found a lot of old tomes and research and stuff!~
+@223  = ~Here it is, Duke Liia. Look at the size of that pile!~
+@224  = ~I thank you for the tomes Imoen gave me. Here, take these for compensation.~
+@225  = ~I am very interested in these old tomes you found in Korlasz' family crypt for my research. Please hand them to me as soon as you can spare them, <CHARNAME>.~
+/* @229 is the same as @229 in "EndlessBG1/.../DIALOGUES.TRA". */
+@229  = ~I thank you. Take these for compensation.~
+/* @232 is the same as @232 in "EndlessBG1/.../DIALOGUES.TRA". */
+@232  = ~Here is resaerch about necromancy and Bhaal I found in Korlasz' family crypt. I believe you would have an interest in these.~
+

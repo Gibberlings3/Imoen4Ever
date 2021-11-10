@@ -248,6 +248,10 @@ UWAGI O ROZPOWSZECHNIANIU: Mod Imoen 4 Ever zosta³ stworzony po to, aby mogli si
 
 HISTORIA
 
+Version 9:
+-"Imoen Remains in Group in Korlasz' Dungeon": Imoen will notify Duke Jannath about the Bhaal research found in Korlasz' Crypt. Research can be given Duke Jannath if Imoen didn't take them.
+-"Imoen Remains in Group in Korlasz' Dungeon": added check for EndlessBG1's "Korlasz' Dungeon is in BG1" component (the components are not compatible and redundant with regard to Imoen remaining in party in Korlasz' Crypt).
+
 Version 8:
 -new component: Imoen's chest moves with the campaign, too.
 -one more interjection in crusader camp.
