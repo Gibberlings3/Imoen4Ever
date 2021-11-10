@@ -1,4 +1,4 @@
-/* lines @0 - @18 are the same as in "EndlessBG1/.../IMOEN_IN_GROUP_KD_EBG1.TRA". */
+/* lines @0 - @17 are the same as in "EndlessBG1/.../IMOEN_IN_GROUP_KD_EBG1.TRA". */
 @0    = ~Don't look at me like that! I always wanted to sound like I knew more than you. It's just what Duke Jannath said to me like you wouldn't know.~
 @1    = ~What is it with you and Duke Jannath, anyway?~
 @2    = ~Well, uhm... She somehow took a fancy to me ever since we saved the Dukes at Sarevok's coronation. Or non-coronation, to be precise.~
@@ -17,8 +17,8 @@
 @15   = ~No, I want to keep them for now.~
 @16   = ~Fine, but tell me if you change your mind, alright?~
 @17   = ~Take the research on Bhaal we found for Duke Jannath, Imoen.~
-@18   = ~<CHARNAME>, do you have an *idea* of what I had to do so I could be here and Duke Jannath wouldn't just take me with her into her old dusty library for teaching? No way I'll stay behind, no <PRO_SIRMAAM>.~
 
+@18   = ~<CHARNAME>, do you have an *idea* of what I had to do so I could be here and Duke Jannath wouldn't just take me with her into her old dusty library for teaching? No way I'll stay behind, no <PRO_SIRMAAM>.~
 @19   = ~<CHARNAME>! Ready to leave - but what happened to my poor Imoen? This will not do. You wait just a minute there, young <PRO_MANWOMAN>. I will see to Imoen being all fresh and healthy once more. She'll give you a proper rebuke herself. (sigh) Or not, the way she admires you. Pff!~
 
 /* imoen_in_palace.d */
