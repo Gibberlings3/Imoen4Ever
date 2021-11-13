@@ -1109,7 +1109,6 @@ INCLUDE ~imoen_forever/tpa/add_trans_trigger_scrying_pool_cleanup.tpa~
 BEGIN @9909 DESIGNATED 12 //GROUP @9922
 LABEL ~Imoen4Ever-SoD-BetterReasonPalace~
 REQUIRE_PREDICATE (GAME_INCLUDES ~sod~) @9904 
-REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-imoen_forever.TP2~ "10") @9908
 FORBID_COMPONENT ~EET_end.tp2~ ~0~ @9930
 FORBID_COMPONENT ~EET_end.tp2~ ~1~ @9930
 
