@@ -92,6 +92,8 @@ Inparty Imoen in Korlasz' Dungeon hat das Override script "C#STIMOE".
 
 Kompatibilität zur Transitions Mod: wenn die Mod Transitions von Lauriel installiert ist, dann ist die Imoen in Korlasz' Dungeon nicht die von I4E eingefügte, sondern die "normale" BG1 Imoen, und wird daher auch keine Dialoge haben.
 
+Kompatibilität zur EndlessBG1 Mod: Diese Komponente ist nicht kompatibel zur Komponente "Korlasz' Dungeon ist in BG1" von EndlessBG1. Sie ist mit dieser Komponente aber auch nicht nötig: auch mit "Korlasz' Dungeon ist in BG1" von EndlessBG1 verbleibt Imoen in Korlasz' Dungeon in der Gruppe.
+
 
 7. I4E für SoD: Imoen kommt im ersten Koalitionslager zurück zum HC (bd1000)
 -----------------------------------
@@ -307,12 +309,9 @@ REDISTRIBUTION NOTE: Imoen 4 Ever Mod was created to be freely enjoyed by all Ba
 HISTORY
 
 Version 9:
--"Imoen Remains in Group in Korlasz' Dungeon": Imoen will notify Duke Jannath 
-about the Bhaal research found in Korlasz' Crypt. Research can be given Duke 
-Jannath if Imoen didn't take them.
--"Imoen Remains in Group in Korlasz' Dungeon": added check for EndlessBG1's 
-"Korlasz' Dungeon is in BG1" component (the components are not compatible and 
-redundant with regard to Imoen remaining in party in Korlasz' Crypt).
+-"Imoen Remains in Group in Korlasz' Dungeon": Imoen will notify Duke Jannath about the Bhaal research found in Korlasz' Crypt. Research can be given Duke Jannath if Imoen didn't take them.
+-"Imoen Remains in Group in Korlasz' Dungeon": added check for EndlessBG1's "Korlasz' Dungeon is in BG1" component (the components are not compatible and redundant with regard to Imoen remaining in party in Korlasz' Crypt).
+-"Imoen gives better reason to stay behind in Palace": component is no longer dependent on component "Imoen remains in the group in Korlasz' dungeon" - neither for installation, nor ingame. Imoen will now always give the changed reason for her remaining in the palace. Coding syntax was optimized.
 
 Version 8:
 -new component: Imoen's chest moves with the campaign, too.

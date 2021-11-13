@@ -84,6 +84,8 @@ Inparty Imoen in Korlasz' Dungeon will use the Override script "C#STIMOE".
 
 Compatibility with Transitions: if the mod Transitions from Lauriel is installed, none of the changes added by this component will show, because the dungeon is then accessible in "BG1 world", and Imoen in party then will just be the normal BG1 one without any SoD-specific dialogues.
 
+Compatibility with EndlessBg1: This component is not compatible with EndlessBG1's component "Korlasz' Dungeon is in BG1". It is also not needed: with "Korlasz' Dungeon is in BG1" from EndlessBG1, Imoen will also remain in the group in Korlasz' Dungeon.
+
 
 7 I4E in SoD: Imoen Returns to PC in First Coalition Camp (bd1000)
 -----------------------------------
@@ -307,6 +309,7 @@ HISTORY
 Version 9:
 -"Imoen Remains in Group in Korlasz' Dungeon": Imoen will notify Duke Jannath about the Bhaal research found in Korlasz' Crypt. Research can be given Duke Jannath if Imoen didn't take them.
 -"Imoen Remains in Group in Korlasz' Dungeon": added check for EndlessBG1's "Korlasz' Dungeon is in BG1" component (the components are not compatible and redundant with regard to Imoen remaining in party in Korlasz' Crypt).
+-"Imoen gives better reason to stay behind in Palace": component is no longer dependent on component "Imoen remains in the group in Korlasz' dungeon" - neither for installation, nor ingame. Imoen will now always give the changed reason for her remaining in the palace. Coding syntax was optimized.
 
 Version 8:
 -new component: Imoen's chest moves with the campaign, too.
