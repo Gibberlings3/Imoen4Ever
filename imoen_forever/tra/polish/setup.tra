@@ -36,7 +36,7 @@
 @9930  = ~Ten komponent musi byc instalowany przed EET_End jesli grasz w EET.~
 
 /* new for v8 */
-@9931  = ~Imoen's chest moves with the campaign, too~
+@9931  = ~Imoen 4 Ever w SoD: Skrzynia Imoen przenosi sie wraz z kampania~
 
 /* new for v9 */
-@9932  = ~This component is not compatible - and no longer needed - with EndlessBG1's "Korlasz' Dungeon is in BG1".~
+@9932  = ~Ten komponent jest niekompatybliny z komponentem "Krypta Korlasz bedzie dostepna w BG1" modyfikacji Endless BG1, a nawet nie jest juz dluzej potrzebny.~

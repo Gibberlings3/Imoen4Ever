@@ -39,11 +39,13 @@
 
 /* new for v9 */
 /* @222 - @225 are the same as in "EndlessBG1/.../DIALOGUES.TRA". */
-@222  = ~<CHARNAME> found a lot of old tomes and research and stuff!~
-@223  = ~Here it is, Duke Liia. Look at the size of that pile!~
-@224  = ~I thank you for the tomes Imoen gave me. Here, take these for compensation.~
-@225  = ~I am very interested in these old tomes you found in Korlasz' family crypt for my research. Please hand them to me as soon as you can spare them, <CHARNAME>.~
+@222  = ~<CHARNAME> znalaz³ pe³no starych ksi¹¿ek i opracowañ i innych g³upstw!~ ~<CHARNAME> znalaz³a pe³no starych ksi¹¿ek i opracowañ i innych g³upstw!~ 
+@223  = ~Tutaj s¹, ksiê¿no Jannath. Proszê spojrzeæ jaki ten stos jest wielki!~
+@224  = ~Chcia³am ci podziêkowaæ za materia³y, które Imoen mi przekaza³a. Proszê, przyjmij to jako rekompensatê.~
+@225  = ~<CHARNAME>, jestem wielce zainteresowana tymi ksiêgami, które znalaz³eœ w krypcie Korlasz. Potrzebujê ich do w³asnych badañ. Proszê, przeka¿ mi je, gdy tylko nie bêdziesz ich ju¿ potrzebowa³.~
+        ~<CHARNAME>, jestem wielce zainteresowana tymi ksiêgami, które znalaz³aœ w krypcie Korlasz. Potrzebujê ich do w³asnych badañ. Proszê, przeka¿ mi je, gdy tylko nie bêdziesz ich ju¿ potrzebowa³a.~ 
 /* @229 is the same as @229 in "EndlessBG1/.../DIALOGUES.TRA". */
-@229  = ~I thank you. Take these for compensation.~
+@229  = ~Dziêkujê. Proszê, przyjmij to jako rekompensatê.~
 /* @232 is the same as @232 in "EndlessBG1/.../DIALOGUES.TRA". */
-@232  = ~Here is resaerch about necromancy and Bhaal I found in Korlasz' family crypt. I believe you would have an interest in these.~
+@232  = ~Mam tutaj badania na temat nekromancji i Bhaala, które znalaz³em w grobowcu rodziny Korlasz. Myœlê, ¿e mog¹ ci siê przys³u¿yæ.~
+        ~Mam tutaj badania na temat nekromancji i Bhaala, które znalaz³am w grobowcu rodziny Korlasz. Myœlê, ¿e mog¹ ci siê przys³u¿yæ.~
