@@ -218,7 +218,7 @@ UnderstandMouseMagic: idea about Imoen staying behind in SoD because of her pois
 Translations:
 ------------
 
-memory - Polish
+memory, Roberciiik - Polish
 
 Raza, stn & Arcanecoast Team, Arkie - Russian
 

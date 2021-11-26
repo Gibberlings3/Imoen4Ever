@@ -275,7 +275,7 @@ UnderstandMouseMagic: Idee, dass Imoen aufgrund ihrer Vergiftung in SoD im Palas
 Translations:
 ------------
 
-memory - Polnisch
+memory, Roberciiik - Polnisch
 
 Raza, stn & Arcanecoast Team, Arkie - Russisch
 
