@@ -1,3 +1,4 @@
+/* lines @0 - @17 are the same as in "EndlessBG1/.../IMOEN_IN_GROUP_KD_EBG1.TRA". */
 @0    = ~Don't look at me like that! I always wanted to sound like I knew more than you. It's just what Duke Jannath said to me like you wouldn't know.~
 @1    = ~What is it with you and Duke Jannath, anyway?~
 @2    = ~Well, uhm... She somehow took a fancy to me ever since we saved the Dukes at Sarevok's coronation. Or non-coronation, to be precise.~
@@ -16,6 +17,7 @@
 @15   = ~No, I want to keep them for now.~
 @16   = ~Fine, but tell me if you change your mind, alright?~
 @17   = ~Take the research on Bhaal we found for Duke Jannath, Imoen.~
+
 @18   = ~<CHARNAME>, do you have an *idea* of what I had to do so I could be here and Duke Jannath wouldn't just take me with her into her old dusty library for teaching? No way I'll stay behind, no <PRO_SIRMAAM>.~
 @19   = ~<CHARNAME>! Ready to leave - but what happened to my poor Imoen? This will not do. You wait just a minute there, young <PRO_MANWOMAN>. I will see to Imoen being all fresh and healthy once more. She'll give you a proper rebuke herself. (sigh) Or not, the way she admires you. Pff!~
 
@@ -35,3 +37,15 @@
 @30   = ~I know, but it's not only that...~
 @31   = ~I know that! But I do worry. I would rather come with you, <CHARNAME>.~
 @32   = ~So I'll keep on staying with Duke Jannath and use the time while I'm healing to train my magic abilities with her.~
+
+/* new for v9 */
+/* @222 - @225 are the same as in "EndlessBG1/.../DIALOGUES.TRA". */
+@222  = ~<CHARNAME> found a lot of old tomes and research and stuff!~
+@223  = ~Here it is, Duke Liia. Look at the size of that pile!~
+@224  = ~I thank you for the tomes Imoen gave me. Here, take these for compensation.~
+@225  = ~I am very interested in these old tomes you found in Korlasz' family crypt for my research. Please hand them to me as soon as you can spare them, <CHARNAME>.~
+/* @229 is the same as @229 in "EndlessBG1/.../DIALOGUES.TRA". */
+@229  = ~I thank you. Take these for compensation.~
+/* @232 is the same as @232 in "EndlessBG1/.../DIALOGUES.TRA". */
+@232  = ~Here is resaerch about necromancy and Bhaal I found in Korlasz' family crypt. I believe you would have an interest in these.~
+
