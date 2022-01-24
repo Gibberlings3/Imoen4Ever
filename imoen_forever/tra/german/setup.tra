@@ -1,41 +1,31 @@
-//@9900  = ~Imoen 4 Ever fuer BGII: Die BG Saga in Ruhe erleben - mit Imoen!~
-@9901  = ~BGIIFixpack Hauptkomponente (Basis-Fixes) muss für diese Mod installiert sein.~
-@9902  = ~Diese Mod ist nicht mit "Versteinerte Imoen" kompatibel.~
-//@9903  = ~Imoen 4 Ever fuer SoD: Imoen bleibt in SoD in der Gruppe~
-@9904  = ~Diese Komponente ist nur mit SoD (und EET) kompatibel.~
-@9905  = ~Diese Komponente ist nur mit BGII kompatibel.~
-
-/* new for v5 */
-@9906  = ~Imoen 4 Ever fuer SoD: Imoen bleibt in Korlasz' Crypta in der Gruppe~
-@9907  = ~Imoen 4 Ever fuer SoD: Imoen kommt im ersten Koalitionslager zurueck zum HC (bd1000)~
-@9908  = ~Die Komponente "Imoen 4 Ever fuer SoD: Imoen bleibt in Korlasz' Crypta in der Gruppe" muss installiert sein.~
-@9909  = ~Imoen 4 Ever fuer SoD: Imoen hat besseren Grund fuer ihr Verbleiben im Palast~
-@9910  = ~Imoen 4 Ever fuer SoD: Cutscene mit Imoen und Herzogin Jannath zeigen~
-@9911  = ~Die Komponente "Imoen 4 Ever fuer SoD: Imoen kommt im ersten Koalitionslager zurück zum HC" muss installiert sein.~
-@9912  = ~Imoen 4 Ever fuer BGII: Imoen erhaelt Dialog-Inhalte in SvA~
-@9913  = ~Die Komponente "Imoen 4 Ever fuer BGII: Imoen kehrt nach dem Gespaech mit Gaelan zu Beginn von Kapitel 2 zurueck" muss installiert sein.~
-@9914  = ~Imoen 4 Ever fuer BGII: Imoen erhaelt Schutzzauber gegen permanentes Sterben in Kapitel 2&3~
-@9915  = ~Imoen 4 Ever fuer BGII: Kompatibilitaet mit Alternativen und Saerileth~
-@9916  = ~Alternativen entdeckt: wird gepatcht.~
-@9917  = ~Alternatives nicht entdeckt.~
-@9918  = ~Saerileth entdeckt: wird gepatcht.~
-@9919  = ~Saerileth nicht entdeckt.~
-@9920  = ~Imoen 4 Ever fuer BGII: Yoshimo kommt nach Brynnlaw~
-@9921  = ~Inhalte fuer BGII~
-@9922  = ~Inhalte fuer SoD~
-@9923  = ~Imoen 4 Ever fuer SoD: Imoen erhaelt Dialog-Inhalte in Kapitel 8-12~
-@9924  = ~Imoen 4 Ever fuer SoD: Imoens Portrait in SoD vereinheitlichen~
-@9925  = ~Imoens BG1 Portrait fuer ganz SoD verwenden~
-@9926  = ~Imoens SoD Portrait nach Korlasz' Crypta verwenden~
-@9927  = ~Die Komponente "Imoen 4 Ever fuer SoD: Imoen bleibt in Korlasz' Crypta in der Gruppe" ODER die Komponente "Imoen 4 Ever fuer SoD: Imoen kommt im ersten Koalitionslager zurück zum HC" muss installiert sein.~
-@9928  = ~Imoen 4 Ever fuer BGII: Imoen kehrt nach dem Gespaech mit Gaelan zu Beginn von Kapitel 2 zurueck~
-@9929  = ~Imoen 4 Ever fuer SoD: Imoen am Ende des Spiels soll dieselbe wie vorher sein (nur fuer SoD)~
-
-/* new for v7 */
-@9930  = ~Diese Komponente muss vor EET_End installiert werden.~
-
-/* new for v8 */
-@9931  = ~Imoens Kiste zieht ebenfalls von Lager zu Lager mit~
-
-/* new for v9 */
-@9932  = ~Diese Komponente ist nicht kompatibel mit der Komponente "Korlasz' Dungeon ist in BG1" von EndlessBG1, und wird mit ihr auch nicht gebraucht.~
+@9901 = ~BGIIFixpack-Hauptkomponente (Basis-Fixes) muss für diese Mod installiert sein.~
+@9902 = ~Diese Mod ist nicht mit "Versteinerte Imoen" kompatibel.~
+@9904 = ~Diese Komponente ist nur mit SoD (und EET) kompatibel.~
+@9905 = ~Diese Komponente ist nur mit BGII kompatibel.~
+@9906 = ~Imoen 4 Ever fuer SoD: Imoen bleibt in Korlasz' Crypta in der Gruppe~
+@9907 = ~Imoen 4 Ever fuer SoD: Imoen kommt im ersten Bündnislager zurueck zum HC (bd1000)~
+@9908 = ~Die Komponente "Imoen 4 Ever fuer SoD: Imoen bleibt in Korlasz' Crypta in der Gruppe" muss installiert sein.~
+@9909 = ~Imoen 4 Ever fuer SoD: Imoen hat besseren Grund fuer ihr Verbleiben im Palast~
+@9910 = ~Imoen 4 Ever fuer SoD: Cutscene mit Imoen und Herzogin Jannath zeigen~
+@9911 = ~Die Komponente "Imoen 4 Ever fuer SoD: Imoen kommt im ersten Bündnislager zurück zum HC" muss installiert sein.~
+@9912 = ~Imoen 4 Ever fuer BGII: Imoen erhaelt Dialog-Inhalte in SvA~
+@9913 = ~Die Komponente "Imoen 4 Ever fuer BGII: Imoen kehrt nach dem Gespaech mit Gaelan zu Beginn von Kapitel 2 zurueck" muss installiert sein.~
+@9914 = ~Imoen 4 Ever fuer BGII: Imoen erhaelt Schutzzauber gegen permanentes Sterben in Kapitel 2&3~
+@9915 = ~Imoen 4 Ever fuer BGII: Kompatibilitaet mit Alternativen und Saerileth~
+@9916 = ~Alternativen entdeckt: wird gepatcht.~
+@9917 = ~Alternativen nicht entdeckt.~
+@9918 = ~Saerileth entdeckt: wird gepatcht.~
+@9919 = ~Saerileth nicht entdeckt.~
+@9920 = ~Imoen 4 Ever fuer BGII: Yoshimo kommt nach Brynnlaw~
+@9921 = ~Inhalte fuer BGII~
+@9922 = ~Inhalte fuer SoD~
+@9923 = ~Imoen 4 Ever fuer SoD: Imoen erhaelt Dialog-Inhalte in Kapitel 8-12~
+@9924 = ~Imoen 4 Ever fuer SoD: Imoens Portrait in SoD vereinheitlichen~
+@9925 = ~Imoens BG1-Portrait fuer ganz SoD verwenden~
+@9926 = ~Imoens SoD-Portrait nach Korlasz' Crypta verwenden~
+@9927 = ~Die Komponente "Imoen 4 Ever fuer SoD: Imoen bleibt in Korlasz' Crypta in der Gruppe" ODER die Komponente "Imoen 4 Ever fuer SoD: Imoen kommt im ersten Koalitionslager zurück zum HC" muss installiert sein.~
+@9928 = ~Imoen 4 Ever fuer BGII: Imoen kehrt nach dem Gespraech mit Gaelan zu Beginn von Kapitel 2 zurueck~
+@9929 = ~Imoen 4 Ever fuer SoD: Imoen am Ende des Spiels soll dieselbe wie vorher sein (nur fuer SoD)~
+@9930 = ~Diese Komponente muss vor EET_End installiert werden.~
+@9931 = ~Imoens Kiste zieht ebenfalls von Lager zu Lager mit~
+@9932 = ~Diese Komponente ist nicht kompatibel mit der Komponente "Korlasz' Dungeon ist in BG1" von EndlessBG1, und wird für sie auch nicht benoetigt.~

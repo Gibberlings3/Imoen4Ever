@@ -1,30 +1,27 @@
-@0    = ~<CHARNAME>! <CHARNAME>, warte!~
-@1    = ~Mir geht es wieder besser! Meine Hände zittern nicht mehr!~
-@2    = ~Darf ich wieder bei dir mitkommen?~
-@3    = ~Imoen! Ist das schön, dich wohlauf zu sehen!~
-@4    = ~Kommt Herzogin Jannath gleich hinterher und zerrt dich dann wieder weg?~
-@5    = ~Wow, Teleportation bis hierher? Hast ja ganz schön was gelernt in der Zwischenzeit!~
-@6    = ~Wie lief dein Training? (zwinker) Bist du auf der Flucht?~
-@7    = ~Hast du jetzt echt dein Training mit Herzogin Jannath geschmissen? So eine Chance kriegst du doch nicht alle Tage!~
-@8    = ~Ja, klar! Reih dich ein!~
-@9    = ~Du musst ein bisschen warten.~
-@10   = ~Ich freu mich auch, <CHARNAME>! Ich hab noch nichts verpasst, oder?~
-@11   = ~Nein, keine Sorge. Reih dich ein!~
-@12   = ~Haha, sehr witzig, <CHARNAME>.~
-@13   = ~(prust) Das hättest du wohl gerne!~
-@14   = ~Liia hat mich hierher teleportiert.~
-@15   = ~Ich denke schon, dass es was gebracht hat. Obgleich ich noch *viel* Übung brauchen werde, bis ich als Magierin wirklich gut bin!~
-@16   = ~Ich meine - es war schon ganz spannend und so, aber irgendwie bleibt die Magie bei mir bisher nicht hängen.~
-@17   = ~Alsoooo?~
-@18   = ~Oh, toll! Das wird so klasse!~
-@19   = ~Hm, na gut! Ich warte da drüben bei dem Zelt.~
-@20   = ~Boah, nicht du auch noch! Ich werde ja wohl genug Übung kriegen, wenn ich mit dir unterwegs bin, oder hast du da Zweifel?~
-//@21    = 
-@22    = ~Sie würde zwar gerne mein Training fortsetzen, aber ich möchte nicht mehr. Ich will mit dir umherziehen!~
-@23   = ~Liia weiß, dass ich wieder auf Abenteuer ziehen möchte.~
-
-/* new for v8 */
-@24  = ~Oh, übrigens. Mein Zeug hab' ich in das Zelt geschmissen, das neben deiner Kiste steht.~
-@25  = ~Imoens Habseligkeiten
+@0  = ~<CHARNAME>! <CHARNAME>, wartet!~
+@1  = ~Mir geht es wieder besser! Meine Hände zittern nicht mehr!~
+@2  = ~Darf ich wieder mit Euch mitkommen?~
+@3  = ~Imoen! Ist das schön, Euch wohlauf zu sehen!~
+@4  = ~Kommt Herzogin Jannath gleich hinterher und zerrt Euch dann wieder weg?~
+@5  = ~Wow, Teleportation bis hierher? Habt ja ganz schön was gelernt in der Zwischenzeit!~
+@6  = ~Wie lief Euer Training? (zwinker) Sied Ihr auf der Flucht?~
+@7  = ~Habt Ihr jetzt echt Euer Training mit Herzogin Jannath geschmissen? So eine Chance kriegt Ihr doch nicht alle Tage!~
+@8  = ~Ja, klar! Reiht Euch ein!~
+@9  = ~Ihr müsst ein bisschen warten.~
+@10 = ~Ich freu mich auch, <CHARNAME>! Ich hab noch nichts verpasst, oder?~
+@11 = ~Nein, keine Sorge. Reiht Euch ein!~
+@12 = ~Haha, sehr witzig, <CHARNAME>.~
+@13 = ~(prust) Das hättet Ihr wohl gerne!~
+@14 = ~Liia hat mich hierherteleportiert.~
+@15 = ~Ich denke schon, dass es was gebracht hat. Obgleich ich noch VIEL Übung brauchen werde, bis ich als Magierin wirklich gut bin!~
+@16 = ~Ich meine … es war schon ganz spannend und so, aber irgendwie bleibt die Magie bei mir bisher nicht hängen.~
+@17 = ~Alsoooo?~
+@18 = ~Oh, toll! Das wird so klasse!~
+@19 = ~Hm, na gut! Ich warte da drüben bei dem Zelt.~
+@20 = ~Boah, nicht Ihr auch noch! Ich werde ja wohl genug Übung kriegen, wenn ich mit Euch unterwegs bin, oder habt Ihr da Zweifel?~
+@22 = ~Sie würde zwar gerne mein Training fortsetzen, aber ich möchte nicht mehr. Ich will mit Euch umherziehen!~
+@23 = ~Liia weiß, dass ich wieder auf Abenteuer ziehen möchte.~
+@24 = ~Oh, übrigens, mein Zeug hab ich in das Zelt geschmissen, das neben deiner Kiste steht.~
+@25 = ~Imoens Habseligkeiten
 
 Imoens Gegenstände aus ihrer Kiste im Palast werden im Zelt neben meiner persönlichen Kiste zu finden sein, wenn wir sie brauchen.~
