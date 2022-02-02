@@ -63,7 +63,7 @@ Kaum hatten wir Brynnlaw erreicht, wurde Imoen von einer vermummten Gestalt entf
 @1060 = ~Irenicus?  Ah … der Magier, der von den Zauberern festgenommen wurde. So unwichtige Informationen trage ich nicht bei mir, also vergesst solche Forderungen.~
 @1061 = ~Dieser Irenicus … stellte sich als ein sehr mächtiger Magier heraus. Seit seiner Festnahme bereitet er uns … Probleme, sät in unserem Orden Angst.~
 @1062 = ~Die Verhüllten Magier werden keine Informationen preisgeben, solange die Angelegenheit nicht beigelegt ist, daher kann ich Euch gar nichts sagen.~
-@1063 = ~Und selbst wenn dies nicht geschehen wäre, hättet Ihr nicht zu ihm kommen können, Närrin! Er hat das Gesetz gebrochen, es ist also endgültig. Die Verhüllten Magier vergeben keine zweite Chance!~
+@1063 = ~Und selbst wenn dies nicht geschehen wäre, hättet Ihr nicht zu ihm kommen können, Narr! Er hat das Gesetz gebrochen, es ist also endgültig. Die Verhüllten Magier vergeben keine zweite Chance!~ ~Und selbst wenn dies nicht geschehen wäre, hättet Ihr nicht zu ihm kommen können, Närrin! Er hat das Gesetz gebrochen, es ist also endgültig. Die Verhüllten Magier vergeben keine zweite Chance!~
 @1064 = ~Die Verhüllten Magier? Sie sind diejenigen, die Irenicus verhaftet haben. Ich hätte großes Interesse daran, darüber mit ihnen zu sprechen.~
 @1065 = ~Davon weiß ich nichts. Wie ich bereits erwähnte, vertrete ich einen der Magier, einen gewissen Meister Tolgerias. Vielleicht könntet Ihr mit ihm über diesen Irenicus sprechen?~
 @1066 = ~Und was wäre, wenn ich die Forderung stellte, über den Verbleib von Irenicus Genaueres zu erfahren? Könnte Euer Zauberer da etwas tun?~
@@ -78,6 +78,10 @@ Kaum hatten wir Brynnlaw erreicht, wurde Imoen von einer vermummten Gestalt entf
 @1075 = ~Er wurde festgenommen – soviel wisst Ihr ja bereits. Er erwies sich als zu widerspenstig für eine normale Einkerkerung.~
 @1076 = ~Er befindet sich nicht mehr in der Stadt. Ich konnte von meinen Herren nicht mehr erfahren, und ich fürchte, dass ich eine ziemlich unwirsche Antwort erhalten dürfte, sollte ich noch weiter nachfragen.~
 @1077 = ~Aran Linvails Aufgaben
+
+Ich habe Aran über die Ereignisse am Hafen informiert. Seine Besorgnis ist nur noch gestiegen. Als nächstes soll ich in das Obergeschoss des Wirtshauses „Zu den Fünf Krügen“ im Brückenviertel gehen … Dort werde ich auf zwei Schattendiebe namens Jaylos und Caehan treffen, die zu einer rivalisierenden Gilde überlaufen wollen.
+
+Vielleicht gelingt es mir ja vorzutäuschen, ebenfalls ein neuer Rekrut zu sein. Wenn alles gut geht, gelingt es mir vielleicht sogar, ihren Kontaktmann an der Nase herumzuführen. So kann ich den Standort des Hauptquartiers der rivalisierenden Gilde herausfinden. Dann kann Aran ihren Aktivitäten einen Riegel vorschieben, sodass sie seine Leute nicht mehr weiter stören. Ist das alles erledigt, können wir uns daran machen, Irenicus zu finden. Aran scheint es wirklich ehrlich zu meinen.~ ~Aran Linvails Aufgaben
 
 Ich habe Aran über die Ereignisse am Hafen informiert. Seine Besorgnis ist nur noch gestiegen. Als nächstes soll ich in das Obergeschoss des Wirtshauses „Zu den Fünf Krügen“ im Brückenviertel gehen … Dort werde ich auf zwei Schattendiebe namens Jaylos und Caehan treffen, die zu einer rivalisierenden Gilde überlaufen wollen.
 
@@ -231,7 +235,7 @@ Eines beunruhigt mich … Bodhi wusste es! Sie wusste, dass ich ein Kind Bhaals bi
 @1174 = ~Oh, wie großzügig. Erwartet Ihr wirklich, dass das eine angemessene Entschädigung dafür ist, dass wir warten und wichtigere Sachen hinten anstellen müssen? Feinde von uns müssen verfolgt und zur Rechenschaft gezogen werden!~
 @5000 = ~Aber was, wenn <PRO_HESHE> ohne mich in Gefahr gerät?!~
 @5001 = ~Imoen!~
-@5005 = ~Was? Das würde <CHARNAME> niemals tun! Seid Ihr alle verrückt geworden?! Hände weg von meiner Freundin!~
+@5005 = ~Was? Das würde <CHARNAME> niemals tun! Seid Ihr alle verrückt geworden?! Hände weg von meinem Freund!~ ~Was? Das würde <CHARNAME> niemals tun! Seid Ihr alle verrückt geworden?! Hände weg von meiner Freundin!~
 @5010 = ~Es tut mir so leid, <CHARNAME>. Ich wünschte, ich hätte mit dir ins Gefängnis gehen können!~
 @5050 = ~Wie bescheuert! Aber … was ein lautes BUMM!~
 @5051 = ~<CHARNAME>! Sie konnten gar nichts dagegen machen! Das war echt gemein!~
