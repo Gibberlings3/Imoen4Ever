@@ -82,9 +82,6 @@ Uwaga dla modderów dotycz¹ca kompatybilnoœci: wszystkie uwagi dotycz¹ce modowani
 
 Kompatybilnoœæ z Transitions: jeœli zainstalowany jest mod Transitions od Lauriel, ¿adna ze zmian dodanych przez ten komponent nie bêdzie widoczna. Krypty Korlasz s¹ wtedy dostêpne w "œwiecie BG1", a Imoen w dru¿ynie jest zwyk³¹ Imoen z BG1, bez ¿adnych specyficznych dla SoD dialogów.
 
-Compatibility with EndlessBg1: This component is not compatible with EndlessBG1's component "Korlasz' Dungeon is in BG1". It is also not needed: with "Korlasz' Dungeon is in BG1" from EndlessBG1, Imoen will also remain in the group in Korlasz' Dungeon.
-
-
 7. I4E w SoD: Imoen powraca w pierwszym obozie Koalicji (bd1000)
 -----------------------------------
 Ten komponent sprawi, ¿e Imoen do³¹czy ponownie do dru¿yny, gdy tylko postaæ gracza dotrze do pierwszego obozu Koalicji (bd1000.are). Opuœæ obóz na pó³nocnym wschodzie, tam, gdzie Edwin pojawia siê po raz pierwszy. Zjawi siê tam Imoen i poprosi o ponowne do³¹czenie.
@@ -218,7 +215,7 @@ UnderstandMouseMagic: idea about Imoen staying behind in SoD because of her pois
 Translations:
 ------------
 
-memory, Roberciiik - Polish
+memory - Polish
 
 Raza, stn & Arcanecoast Team, Arkie - Russian
 
@@ -250,11 +247,6 @@ UWAGI O ROZPOWSZECHNIANIU: Mod Imoen 4 Ever zosta³ stworzony po to, aby mogli si
 
 
 HISTORIA
-
-Version 9:
--"Imoen Remains in Group in Korlasz' Dungeon": Imoen will notify Duke Jannath about the Bhaal research found in Korlasz' Crypt. Research can be given Duke Jannath if Imoen didn't take them.
--"Imoen Remains in Group in Korlasz' Dungeon": added check for EndlessBG1's "Korlasz' Dungeon is in BG1" component (the components are not compatible and redundant with regard to Imoen remaining in party in Korlasz' Crypt).
--"Imoen gives better reason to stay behind in Palace": component is no longer dependent on component "Imoen remains in the group in Korlasz' dungeon" - neither for installation, nor ingame. Imoen will now always give the changed reason for her remaining in the palace. Coding syntax was optimized.
 
 Version 8:
 -new component: Imoen's chest moves with the campaign, too.

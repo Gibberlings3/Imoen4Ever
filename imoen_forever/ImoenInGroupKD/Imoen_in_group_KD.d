@@ -92,7 +92,7 @@ END
 
 /* group finds Korlasz's tomes about Bhaal research with Imoen in group */
 IF WEIGHT #-1
-~Global("C#st_BhaalResearch","GLOBAL",1)~ THEN bhaal_research
+~Global("C#st_BhaalResearch","LOCALS",1)~ THEN bhaal_research
 SAY @13
 ++ @14 + bhaal_research_01
 ++ @15 + bhaal_research_02
@@ -100,7 +100,7 @@ END
 
 IF ~~ THEN BEGIN bhaal_research_01
   SAY #%64525% /* ~This is exactly the sort of thing I was looking for. Thanks. I'll tell Duke Jannath you found these when we get back to the palace.~ [BD64525] */
-  IF ~~ THEN DO ~SetGlobal("C#st_BhaalResearch","GLOBAL",3)
+  IF ~~ THEN DO ~SetGlobal("C#st_BhaalResearch","LOCALS",2)
 ActionOverride(Player1,DestroyItem("BDSHBHR"))
 ActionOverride(Player2,DestroyItem("BDSHBHR"))
 ActionOverride(Player3,DestroyItem("BDSHBHR"))
@@ -111,7 +111,7 @@ END
 
 IF ~~ THEN BEGIN bhaal_research_02
   SAY @16
-IF ~~ THEN DO ~SetGlobal("C#st_BhaalResearch","GLOBAL",2)~
+IF ~~ THEN DO ~SetGlobal("C#st_BhaalResearch","LOCALS",2)~
 EXIT
 END
 
@@ -126,7 +126,7 @@ END
 
 /* make sure the tomes are actually gone from inventory after giving them to Imoen */
 
-ADD_TRANS_ACTION BDIMOEN BEGIN 36 END BEGIN END ~SetGlobal("C#st_BhaalResearch","GLOBAL",4) ActionOverride(Player1,DestroyItem("BDSHBHR"))
+ADD_TRANS_ACTION BDIMOEN BEGIN 36 END BEGIN END ~ActionOverride(Player1,DestroyItem("BDSHBHR"))
 ActionOverride(Player2,DestroyItem("BDSHBHR"))
 ActionOverride(Player3,DestroyItem("BDSHBHR"))
 ActionOverride(Player4,DestroyItem("BDSHBHR"))
@@ -204,43 +204,4 @@ ADD_TRANS_TRIGGER BDLIIA 24 ~Global("C#st_ImoenInGroupKD","GLOBAL",0)~ DO 0
 */
 
 
-/* Imoen talks to Duke Jannath about Bhaal research */
 
-CHAIN
-IF WEIGHT #-1
-~GlobalLT("BD_plot","global",55)
-AreaCheck("bd0102")
-GlobalLT("C#st_BhaalResearch","GLOBAL",5)
-OR(2) PartyHasItem("BDSHBHR") GlobalGT("C#st_BhaalResearch","GLOBAL",1)
-IfValidForPartyDialog("%IMOEN_DV_SOD%")
-~ THEN bdliia bhaal_research_imoen
-#%56028% /* ~Hello, <CHARNAME>. I am glad to see you well.~ [BD56028] */
-== %IMOEN_JOINED% IF ~GlobalLT("C#st_BhaalResearch","GLOBAL",5)
-OR(2) PartyHasItem("BDSHBHR") GlobalGT("C#st_BhaalResearch","GLOBAL",1)
-InParty("%IMOEN_DV_SOD%") InMyArea("%IMOEN_DV_SOD%") !StateCheck("%IMOEN_DV_SOD%",CD_STATE_NOTVALID)~ THEN @222 /* ~<CHARNAME> found a lot of old tomes and research and stuff!~ */
-== %IMOEN_JOINED% IF ~GlobalLT("C#st_BhaalResearch","GLOBAL",5)
-GlobalGT("C#st_BhaalResearch","GLOBAL",2)
-InParty("%IMOEN_DV_SOD%") InMyArea("%IMOEN_DV_SOD%") !StateCheck("%IMOEN_DV_SOD%",CD_STATE_NOTVALID)~ THEN @223 /* ~Here it is, Duke Liia. Look at the size of that pile!~ */
-== LIIA IF ~GlobalLT("C#st_BhaalResearch","GLOBAL",5)
-GlobalGT("C#st_BhaalResearch","GLOBAL",2)~ THEN @224 /* ~I thank you for the tomes Imoen gave me. Here, take these for compensation.~ */ DO ~GiveItemCreate("SCRL07",Player1,2,0,0) SetGlobal("C#st_BhaalResearch","GLOBAL",6)~
-== LIIA IF ~GlobalLT("C#st_BhaalResearch","GLOBAL",5)
-OR(2) PartyHasItem("BDSHBHR") GlobalGT("C#st_BhaalResearch","GLOBAL",1)~ THEN @225 /* ~I am very interested in these old tomes you found in Korlasz' family crypt for my research. Please hand them to me as soon as you can spare them, <CHARNAME>.~ */ DO ~SetGlobal("C#st_BhaalResearch","GLOBAL",5)~
-END
-
-EXTEND_BOTTOM BDLIIA 13
-+ ~PartyHasItem("BDSHBHR")~ + @232 /* ~Here is research about necromancy and Bhaal I found in Korlasz' family crypt. I believe you would have an interest in these.~ */ + bhaal_reserach_kd
-END
-
-APPEND bdliia
-IF ~~ THEN bhaal_reserach_kd
-SAY @229 /* ~I thank you. Take these for compensation.~ */
-IF ~~ THEN DO ~SetGlobal("C#st_BhaalResearch","GLOBAL",6)
-GiveItemCreate("SCRL07",Player1,2,0,0)
-ActionOverride(Player1,DestroyItem("BDSHBHR"))
-ActionOverride(Player2,DestroyItem("BDSHBHR"))
-ActionOverride(Player3,DestroyItem("BDSHBHR"))
-ActionOverride(Player4,DestroyItem("BDSHBHR"))
-ActionOverride(Player5,DestroyItem("BDSHBHR"))
-ActionOverride(Player6,DestroyItem("BDSHBHR"))~ EXIT
-END
-END //APPEND 
