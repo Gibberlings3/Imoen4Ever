@@ -21,9 +21,10 @@ Hierbei wurden so viele vertonte Originalzeilen verwendet wie möglich, aber manc
 
 Die Mod ist mit SoD und allen BGII-Spielen kompatibel (BGII, BGT; BGII:EE, EET). Für die EET die Mod direkt in den EET-Spieleordner installieren.
 
-Die Mod hat 12 Komponenten.
+Die Mod hat 14 Komponenten.
 Die Komponenten 1-5 sind für BGII. Die erste muss installiert sein, damit die optionalen Komponnten 2-5 installiert werden können.
-Die Komponenten 6-12 sind for SoD. Hier müssen entweder die Komponente 6 oder die Komponente 7 installiert sein, damit die optionalen Komponenten 8-12 installiert werden können.
+Die Komponenten 6-13 sind for SoD. Hier müssen entweder die Komponente 6 oder die Komponente 7 installiert sein, damit die optionalen Komponenten 8-13 installiert werden können (Details der Abhängigkeiten s. Komponentenbeschreibungen).
+Komponente 14 ist unabhängig installierbar und fügt ein alternatives Portrait für Imoen ins gesamte vorliegende Spiel ein.
 
 
 -----------------------------------
@@ -149,6 +150,18 @@ Mit dieser Komponente folgt der Inhalt von "Imoens Kiste" aus dem obersten Stock
 Voraussetzung ist, dass die Komponente 7 "Imoen kommt im ersten Koalitionslager zurück zum HC" installiert ist.
 
 
+-----------------------------------
+Komponenten für alle Spiele:
+-----------------------------------
+
+14 I4E für alle Spiele: Alternatives Imoenportrait von Acifer 
+-----------------------------------
+Diese optionale Komponente fügt ein alternatives Imoenportrait von Acifer ein. 
+Das Portrait wird für alle vorliegenden Teile (BG1, SoD, BGII) des Spiels verwendet. Hierfür werden die originalen Portraitnamen verwendet. 
+Die Komponente ist optional und unabhängig von den anderen Komponenten installierbar. Sie ist technisch kompatibel mit der Komponente 12 "I4E für SoD: Imoens Portrait in SoD vereinheitlichen" indem sie sie überschreibt.
+Werden andere Imoen-Portraitmods nach dieser installiert, überschreiben sie diese Komponente.
+
+
 
 INSTALLATION
 
@@ -264,7 +277,7 @@ This should be helpful in case Imoen came back but was not taken into party but 
 
 CREDITS
 
-Acifer - Promotion-Bild, Betatesten, Name der Mod
+Acifer - Imoenportrait, Promotion-Bild, Betatesten, Name der Mod
 
 Argent77 - Codinghilfe für nicht-destruktives ADD_TRANS_TRIGGER Patchen
 
@@ -307,6 +320,12 @@ REDISTRIBUTION NOTE: Imoen 4 Ever Mod was created to be freely enjoyed by all Ba
 
 
 HISTORY
+
+Version 10:
+-new optional component (not dependent on the others): new alternate portrait for Imoen for all games, by Acifer.
+-Imoen should not mention protection spell unless the component is installed; Irenicus mentioning it should be patched correctly.
+-More reactions in BGII chapters 2&3: Imoen notices cows in the slums.
+-One more reaction to item in SoD.
 
 Version 9:
 -"Imoen Remains in Group in Korlasz' Dungeon": Imoen will notify Duke Jannath about the Bhaal research found in Korlasz' Crypt. Research can be given Duke Jannath if Imoen didn't take them.

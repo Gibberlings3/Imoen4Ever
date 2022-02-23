@@ -217,3 +217,12 @@
 @211   = ~Ich meine... hm. Die Aufmerksamkeit von Duke Jannah? Die war doch wohl nicht deswegen... Da ging es doch um mein magisches Talent!~
 @212   = ~Oh! Oh! Meine Fähigkeit, magische Geschosse zu werfen! Kommt das von meinem Bhaalerbe? Ich dachte immer, das wäre durch die Magie von Irenicus geschehen...~
 @213   = ~Ja, gut, eine Fähigkeit habe ich auch erhalten, aber unter derartig seltsamen Umständen, dass der Ursprung nicht wirklich klar ist.~
+
+/* new for v10 */
+@214   = ~[Imoen]Eine Kuh! Mitten zwischen den Häusern. Ich hätte nicht erwartet, hier eine zu sehen.~
+@215   = ~[Imoen]Erinnerst du dich noch an die arme Frau Thirsty und ihre Kuh in Baldurs Tor? Was für ein Drama das war, mit ihrer Kuh in der Stadt. "Kühe sind innerhalb der Stadtmauern nicht erlaubt!"~
+@216   = ~[Imoen]Außer natürlich, man ist der Bauer im Seeturm Baldurans. Dann darf man - zwei, drei? - haben.~
+@217   = ~[Imoen]Wir befinden uns in Atkatla, der größten Stadt, die ich jemals gesehen habe - sehr viel größer als Baldurs Tor - und es werden Kühe auf der Straße der Slums gehalten. Gibt es noch andere Tiere hier? Elefanten auf der Promenade? Wölfe auf dem Friedhof? Pfaue im Tempelbezirk? (kicher)~
+@218   = ~[Jaheira]Das ist hier kein Zoo, Imoen. Die Kühe gehören den Leuten, die zum Anmieten einer Weide außerhalb der Stadt zu arm sind. Sie sind hier, um Milch und auch Fleisch zu liefern.~
+@219   = ~[Imoen]Ihr müsst mich wirklich nicht wie ein Kind behandeln, Jaheira. Das weiß ich doch.~
+@220   = ~[Imoen]Die Kuh tut mir ein bisschen leid... Sie sollte auf einer grünen Weide stehen, nicht am dreckigen Straßenrand. Nunja, scheint so, als würde es neben Straßenkötern und -katzen auch Straßenkühe geben!~

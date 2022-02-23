@@ -39,3 +39,7 @@
 
 /* new for v9 */
 @9932  = ~Diese Komponente ist nicht kompatibel mit der Komponente "Korlasz' Dungeon ist in BG1" von EndlessBG1, und wird mit ihr auch nicht gebraucht.~
+
+/* new for v10 */
+@9933  = ~Imoens Alternatives Portrait von Acifer~
+@9934  = ~Diese Komponente ist mit diesem Spiel nicht kompatibel.~

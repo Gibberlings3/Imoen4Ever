@@ -1,5 +1,10 @@
-New for v9:
+New for v10:
 
 new lines:
--IMOEN_IN_GROUP_KD.TRA: @200 - @232 (6 lines)
--setup.tra: @9932
+-BDIMOENJ.TRA: @136
+-C#IM_IMOEN2J.TRA: @214- @222
+-setup.tra: @9933 + @9934
+
+readme:
+-general description adjusted to new component number.
+-added component description "14 I4E in all games: Alternate Imoen Portrait by Acifer".

@@ -9,7 +9,7 @@ BACKUP ~imoen_forever/backup~
 AUTHOR ~Please post at G3 or Kerzenburgforum, refer to readme.~  
 
 
-VERSION ~v9~  
+VERSION ~v10~  
 
 README ~imoen_forever/readme.imoen_forever.%LANGUAGE%.txt~ ~imoen_forever/readme.imoen_forever.english.txt~
 
@@ -622,11 +622,26 @@ WRITE_BYTE 0xa2 C#IM_NoPermanentDeath
 
 EXTEND_TOP ~imoen2.bcs~ ~imoen_forever/baf/imoen_imoen2.baf~ EVALUATE_BUFFER
 
+/* add references to the protection spell */
+/* inside Imoen's greetings dialogue (after being released in teh slums) */
+// Get state @10 for C#IMMET %C#IMMET_10% 
+  OUTER_SET C#IMMET_10 = STATE_WHICH_SAYS 10 IN ~imoen_forever/tra/autotra/%s/C#IMMET.TRA~ FROM ~C#IMMET~
+<<<<<<<< ...inlined/imoen_spell.d
+I_C_T C#IMMET %C#IMMET_10% C#IM_C#IMMET_11
+== C#IMMET @11 
+END
+>>>>>>>>
+COMPILE EVALUATE_BUFFER ~...inlined/imoen_spell.d~ USING ~imoen_forever/tra/autotra/%s/C#IMMET.TRA~ 
+
+/* inside cutscene in government building */
+WITH_TRA ~imoen_forever/tra/autotra/%s/game.tra~ BEGIN
+  OUTER_SET strref1 = RESOLVE_STR_REF(@1005)
+END
 COPY_EXISTING ~movie01B.bcs~ ~override~
   DECOMPILE_AND_PATCH BEGIN
 
 /* Cowled Wizards let Imoen go: Irenicus announces his spell on her */
-    REPLACE_TEXTUALLY ~\(DisplayStringWait("cujon",@1005)[%tab% %lnl%%mnl%%wnl%]+SmallWait(6)\)~
+    REPLACE_TEXTUALLY ~\(DisplayStringWait("cujon",%strref1%)[%tab% %lnl%%mnl%%wnl%]+SmallWait(6)\)~
 		~\1 DisplayStringWait("cujon",@1006)~
   END
   BUT_ONLY_IF_IT_CHANGES
@@ -1462,4 +1477,45 @@ END
 >>>>>>>>
 COMPILE EVALUATE_BUFFER ~.../add_bdimoen_chest.d~ USING ~imoen_forever/tra/autotra/%s/bdimoens.tra~
 
+//////////////////////////////////////////////////////////////////
+/* general component: Imoen's Alternate Portrait from Acifer */
+///////////////////////////////////////////////////////////////////
+BEGIN @9933 DESIGNATED 30 
+LABEL ~Imoen4Ever-Imoen_Alternate_Portrait_Acifer~
+REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee tob bgt eet~)  @9934
 
+
+ACTION_IF GAME_IS ~bgt~ BEGIN
+/* BG1 portraits */
+  COPY ~imoen_forever/imoenportrait_acifer/classic/NIMOENL.bmp~ ~override/IMOENL.bmp~
+  COPY ~imoen_forever/imoenportrait_acifer/classic/NIMOENM.bmp~ ~override/IMOENM.bmp~
+  COPY ~imoen_forever/imoenportrait_acifer/classic/NIMOENS.bmp~ ~override/IMOENS.bmp~
+END
+
+ACTION_IF GAME_IS ~bg2 tob bgt~ BEGIN
+/* BGII portraits */
+  COPY ~imoen_forever/imoenportrait_acifer/classic/NIMOENL.bmp~ ~override~
+  COPY ~imoen_forever/imoenportrait_acifer/classic/NIMOENM.bmp~ ~override~
+  COPY ~imoen_forever/imoenportrait_acifer/classic/NIMOENS.bmp~ ~override~
+END
+
+ACTION_IF GAME_IS ~bgee bg2ee eet~ BEGIN
+/* BG1 portraits */
+  COPY ~imoen_forever/imoenportrait_acifer/ee/NIMOENL.bmp~ ~override/IMOENL.bmp~
+  COPY ~imoen_forever/imoenportrait_acifer/ee/NIMOENM.bmp~ ~override/IMOENM.bmp~
+  COPY ~imoen_forever/imoenportrait_acifer/ee/NIMOENM.bmp~ ~override/IMOENS.bmp~
+END
+
+ACTION_IF GAME_INCLUDES ~sod~ BEGIN
+/* SoD portraits */
+  COPY ~imoen_forever/imoenportrait_acifer/ee/NIMOENL.bmp~ ~override/BDIMOENL.bmp~
+  COPY ~imoen_forever/imoenportrait_acifer/ee/NIMOENM.bmp~ ~override/BDIMOENM.bmp~
+  COPY ~imoen_forever/imoenportrait_acifer/ee/NIMOENM.bmp~ ~override/BDIMOENS.bmp~
+END
+
+ACTION_IF GAME_IS ~bg2ee eet~ BEGIN
+/* BGII portraits */
+  COPY ~imoen_forever/imoenportrait_acifer/ee/NIMOENL.bmp~ ~override~
+  COPY ~imoen_forever/imoenportrait_acifer/ee/NIMOENM.bmp~ ~override/NIMOENM.bmp~
+  COPY ~imoen_forever/imoenportrait_acifer/ee/NIMOENM.bmp~ ~override/NIMOENS.bmp~
+END

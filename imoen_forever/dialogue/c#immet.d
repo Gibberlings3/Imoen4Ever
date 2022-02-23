@@ -32,7 +32,7 @@ END
 CHAIN
 IF ~~ THEN C#IMMET free_05
 @10
-= @11
+//= @11
 = @27
 == BAERIE IF ~InParty("aerie") InMyArea("aerie") !StateCheck("aerie",CD_STATE_NOTVALID)~ THEN @22
 == BJAHEIR IF ~InParty("JAHEIRA") InMyArea("JAHEIRA") !StateCheck("JAHEIRA",CD_STATE_NOTVALID)~ THEN @23

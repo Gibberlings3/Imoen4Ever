@@ -702,4 +702,19 @@ Global("C#IM_SalvanasImoen","AR0406",0)~ THEN SALVANAS slavanas
 EXIT
 
 
+/* Cow in the slums */
+
+CHAIN
+IF ~Global("C#IM_SlumCow","GLOBAL",1)~ THEN IMOEN2J cow_slums
+@214 /* ~[Imoen]A cow! In the midst of the houses. I didn't expect to see them here.~ */
+DO ~SetGlobal("C#IM_SlumCow","GLOBAL",2)~
+== IMOEN2J IF ~GlobalGT("C#Q11_CowQuest","GLOBAL",0)~ THEN @215 /* ~[Imoen]Do you remember poor Mrs Thirsty and her cow in Baldur's Gate? What a hassle it was, with her cow inside the city. "No cows are allowed inside the city walls!"~ */
+== IMOEN2J IF ~GlobalGT("ysTalkedToFarmer","GLOBAL",0)~ THEN @216 /* ~[Imoen]Unless you are the Seatower farmer, of course. Then you can have - two, three?~ */
+== IMOEN2J @217 /* ~[Imoen]We are in Athkatla, the biggest city I've ever seen - much bigger than Baldur's Gate - and they keep cows on the streets of the slums. Do you think there will be other animals in other parts of the city? Elefants in the Promenade? Wolves in the Graveyard? Peacocks in the Temple District? (giggle)~ */
+== BJAHEIR IF ~InParty("JAHEIRA") InMyArea("JAHEIRA") !StateCheck("JAHEIRA",CD_STATE_NOTVALID)~ THEN @218 /* ~[Jaheira]This is not a zoo, Imoen. The cows belong to very poor people who can't afford to rent a willow outside of town. They are here for milk and also meat.~ */
+== IMOEN2J IF ~InParty("JAHEIRA") InMyArea("JAHEIRA") !StateCheck("JAHEIRA",CD_STATE_NOTVALID)~ THEN @219 /* ~[Imoen]You really don't have to treat me like a child, Jaheira. I am well aware of that.~ */
+== IMOEN2J @220 /* ~[Imoen]I feel a bit sorry for the cow... It belongs onto a green willow, not on the side of the dirty road. Well, it looks well enough. So, there is street cats and dogs, and apparently, also street cows.~ */
+EXIT
+
+
 

@@ -20,7 +20,8 @@ Mod stara siê zachowaæ tak wiele ug³osowionych linii, jak to tylko mo¿liwe. Nies
 
 Mod jest kompatybilny z SoD i wszystkimi wersjami gry: BGII, BGT, BGII:EE, EET. Dla EET modyfikacjê nale¿y instalowaæ bezpoœrednio w folderze EET.
 
-Mod ma dwanaœcie komponentów. Pierwsze piêæ dotyczy BGII; pierwszy z nich jest wymagany do zainstalowania któregokolwiek z kolejnych (numery 2 do 4) opcjonalnych komponentów. Ostatnie komponenty (od 6 do 12) dotycz¹ SoD; spoœród nich szósty *lub* siódmy jest wymagany do zainstalowania kolejnych komponentów opcjonalnych.
+Mod ma dwanaœcie komponentów. Pierwsze piêæ dotyczy BGII; pierwszy z nich jest wymagany do zainstalowania któregokolwiek z kolejnych (numery 2 do 4) opcjonalnych komponentów. Ostatnie komponenty (od 6 do 13) dotycz¹ SoD; spoœród nich szósty *lub* siódmy jest wymagany do zainstalowania kolejnych komponentów opcjonalnych (for details refer to components' descriptions).
+Component 14 offers an alternate portrait for Imoen by Acifer. It is optional and independent on any other I4E component.
 
 
 Komponenty z zawartoœci¹ dla BGII:
@@ -142,6 +143,16 @@ With this component, the contents of Imoen's chest in the 3rd floor of the palac
 This component requires component 7 "Imoen Returns to PC in First Coalition Camp" to be installed.
 
 
+14 I4E in all games: Alternate Imoen Portrait by Acifer 
+-----------------------------------
+This optional component installs an alternate Imoen portrait, by Acifer. 
+The portrait will be used for Imoen in all parts (BG1, SoD, BGII) of the present game. For this, portrait naming of the original Imoen portraits will be used.
+The component is optional and independent on any other I4E component.
+This component is technicall compatible with component 12 "I4E in SoD: Unify Imoen's Portrait" but will overwrite it.
+Other portrait mods for Imoen installed after this one will overwrite its content.
+
+
+
 INSTALACJA
 
 Ten mod nale¿y traktowaæ jak mod questowy (nie jak tweak) i powinno siê go instalowaæ przed modami dodaj¹cymi NPCów oraz interakcje w SoA w rozdzia³ach 2 i 3.
@@ -207,7 +218,7 @@ Po jeszcze wiêcej uwag dla modderów odsy³am do angielskiego readme (memory).
 
 NAPISY KOÑCOWE
 
-Acifer - promotion picture, beta testing
+Acifer - Imoen portrait, promotion picture, beta testing
 
 Argent77 - coding help for non-destructive ADD_TRANS_TRIGGER patching
 
@@ -250,6 +261,12 @@ UWAGI O ROZPOWSZECHNIANIU: Mod Imoen 4 Ever zosta³ stworzony po to, aby mogli si
 
 
 HISTORIA
+
+Version 10:
+-new optional component (not dependent on the others): new alternate portrait for Imoen for all games, by Acifer.
+-Imoen should not mention protection spell unless the component is installed; Irenicus mentioning it should be patched correctly.
+-More reactions in BGII chapters 2&3: Imoen notices cows in the slums.
+-One more reaction to item in SoD.
 
 Version 9:
 -"Imoen Remains in Group in Korlasz' Dungeon": Imoen will notify Duke Jannath about the Bhaal research found in Korlasz' Crypt. Research can be given Duke Jannath if Imoen didn't take them.
