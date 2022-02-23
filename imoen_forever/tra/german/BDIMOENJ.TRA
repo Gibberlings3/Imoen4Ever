@@ -92,3 +92,7 @@
 @133   = ~Iiih, die Zwerge für den Leichnam töten? Das machen wir aber nicht, <CHARNAME>, oder?~
 @134   = ~Oh, nein! Der Arme. Er war so nett! Naja, bis darauf, dass er all unser Gold vertrödelt hat, natürlich... Das ist so traurig!~
 @135   = ~Ich fühl' keinen Unterschied. Merkt einer von Euch was?~
+
+/* new for v10 */
+/* #34030 "Archer's Eyes" */
+@136   = ~[Imoen]Augen des Bogenschützen, ja? Liegt es an mir, oder sind manche Talismane und magische Gegenstände einfach nur... igitt.~

@@ -21,8 +21,9 @@ The mod tries to use as many originally voiced lines as possible, but some had t
 
 The mod is compatible with SoD and all BGII games: BGII, BGT, BGII:EE, EET. For EET, install the mod dirctly into your EET game folder.
 
-The mod has 12 components. The first 5 are for BGII; for these, the 1st component is required to install any of the other, optional components (numbers 2 to 5).
-The last components (numbers 6 to 12) are for SoD; for these, components 6 *or* 7 are required to install any of the other, optional components.
+The mod has 14 components. The first 5 are for BGII; for these, the 1st component is required to install any of the other, optional components (numbers 2 to 5).
+The last components (numbers 6 to 13) are for SoD; for these, components 6 *or* 7 are required to install any of the other, optional components (for details refer to components' descriptions).
+Component 14 offers an alternate portrait for Imoen by Acifer. It is optional and independent on any other I4E component.
 
 
 Components for BGII content:
@@ -138,12 +139,23 @@ This component comes with two options:
 
 Compatibility note: The portrait names used are the ones for the original BG1/SoD portraits.
 Do not install either component if you are using a different portrait for Imoen or have other portrait mods installed that change Imoen's portrait, unless you know the mods are compatible.
+This component will be overwritten by component 14 "14 I4E in all games: Alternate Imoen Portrait by Acifer" without technical problems if both are installed.
 
 
 13 I4E in SoD: Imoen's chest moves with the campaign, too 
 -----------------------------------
 With this component, the contents of Imoen's chest in the 3rd floor of the palace will move along the camps as well - if Imoen joins the group in one of the camps. Imoen's items will be inside the tent next to the PC's chest in each camp in that case.
 This component requires component 7 "Imoen Returns to PC in First Coalition Camp" to be installed.
+
+
+14 I4E in all games: Alternate Imoen Portrait by Acifer 
+-----------------------------------
+This optional component installs an alternate Imoen portrait, by Acifer. 
+The portrait will be used for Imoen in all parts (BG1, SoD, BGII) of the present game. For this, portrait naming of the original Imoen portraits will be used.
+The component is optional and independent on any other I4E component.
+This component is technicall compatible with component 12 "I4E in SoD: Unify Imoen's Portrait" but will overwrite it.
+Other portrait mods for Imoen installed after this one will overwrite its content.
+
 
 
 INSTALLATION
@@ -262,7 +274,7 @@ This should be helpful in case Imoen came back but was not taken into party but 
 
 CREDITS
 
-Acifer - promotion picture, beta testing, mod name
+Acifer - Imoen portrait, promotion picture, beta testing, mod name
 
 Argent77 - coding help for non-destructive ADD_TRANS_TRIGGER patching
 
@@ -305,6 +317,12 @@ REDISTRIBUTION NOTE: Imoen 4 Ever Mod was created to be freely enjoyed by all Ba
 
 
 HISTORY
+
+Version 10:
+-new optional component (not dependent on the others): new alternate portrait for Imoen for all games, by Acifer.
+-Imoen should not mention protection spell unless the component is installed; Irenicus mentioning it should be patched correctly.
+-More reactions in BGII chapters 2&3: Imoen notices cows in the slums.
+-One more reaction to item in SoD.
 
 Version 9:
 -"Imoen Remains in Group in Korlasz' Dungeon": Imoen will notify Duke Jannath about the Bhaal research found in Korlasz' Crypt. Research can be given Duke Jannath if Imoen didn't take them.

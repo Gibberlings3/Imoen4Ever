@@ -376,3 +376,36 @@ THEN
 		RealSetGlobalTimer("C#IM_DialogueTimer","GLOBAL",1200)
 		StartDialogueNoSet(Player1)
 END
+
+/* Cow in the slums */
+/* activate */
+IF 
+    RealGlobalTimerExpired("C#IM_DialogueTimer","GLOBAL")
+    Global("C#IM_SlumCow","GLOBAL",0)
+    AreaCheck("AR0400")
+    Range("GithTrap03",15)
+    InParty(Myself)
+    !StateCheck(Player1,CD_STATE_NOTVALID)
+    !StateCheck(Myself,CD_STATE_NOTVALID)
+    See(Player1)
+    !Detect([ENEMY])
+    !Detect([EVILBUTBLUE])
+    CombatCounter(0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#IM_SlumCow","GLOBAL",1)
+END
+
+/* initiate */
+IF 
+  Global("C#IM_SlumCow","GLOBAL",1) 
+  !StateCheck(Player1,CD_STATE_NOTVALID)
+  !StateCheck(Myself,CD_STATE_NOTVALID)
+    See(Player1)
+    !Detect([ENEMY])
+    !Detect([EVILBUTBLUE])
+    CombatCounter(0)
+THEN
+	RESPONSE #100
+		StartDialogueNoSet(Player1)
+END

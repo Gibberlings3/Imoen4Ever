@@ -92,3 +92,7 @@
 @133   = ~Eek, killing the dwarves for a lich? We won't really do that, will we?~
 @134   = ~Oh, no! The poor man. He was such a nice guy! Well, besides the fact that he lost all our gold, but... this is so sad!~
 @135   = ~I don't feel any different. Do you feel any different?~
+
+/* new for v10 */
+/* #34030 "Archer's Eyes" */
+@136   = ~[Imoen]Archer's Eyes, huh? Is it me or are some talismans and magical items just... yuck.~

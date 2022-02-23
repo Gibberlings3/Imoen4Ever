@@ -74,6 +74,14 @@ I_C_T BDCAELAR 38 C#IM_BDCAELAR_38
 == bdimoen IF ~IsValidForPartyDialogue("%IMOEN_DV_SOD%")~ THEN @131 /* ~Unharmed! Suuure, that makes so much sense after sending assassins earlier.~ */
 END
 
+/* reaction to item: */
+/* bdamul02 "Archer's Eyes" */
+APPEND bdimoen 
+IF ~Global("C#Imoen_SoDbdamul02","GLOBAL",1)~ THEN archers_eyes
+SAY @136 /* ~[Imoen]Archer's Eyes, huh? Is it me or are some talismans and magical items just... yuck.~ */
+IF ~~ THEN DO ~SetGlobal("C#Imoen_SoDbdamul02","GLOBAL",2)~ EXIT
+END
+END //APPEND
 
 
 /* Thrix's game */
