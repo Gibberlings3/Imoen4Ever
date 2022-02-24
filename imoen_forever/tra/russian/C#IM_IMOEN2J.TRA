@@ -219,10 +219,10 @@
 @213   = ~Хорошо, хорошо, у меня есть * одна * способность, но в такой странный момент, что ее происхождение даже не ясно.~
 
 /* new for v10 */
-@214   = ~[Imoen]A cow! In the midst of the houses. I didn't expect to see them here.~
-@215   = ~[Imoen]Do you remember poor Mrs Thirsty and her cow in Baldur's Gate? What a hassle it was, with her cow inside the city. "No cows are allowed inside the city walls!"~
-@216   = ~[Imoen]Unless you are the Seatower farmer, of course. Then you can have - two, three?~
-@217   = ~[Imoen]We are in Athkatla, the biggest city I've ever seen - much bigger than Baldur's Gate - and they keep cows on the streets of the slums. Do you think there will be other animals in other parts of the city? Elefants in the Promenade? Wolves in the Graveyard? Peacocks in the Temple District? (giggle)~
-@218   = ~[Jaheira]This is not a zoo, Imoen. The cows belong to very poor people who can't afford to rent a willow outside of town. They are here for milk and also meat.~
-@219   = ~[Imoen]You really don't have to treat me like a child, Jaheira. I am well aware of that.~
-@220   = ~[Imoen]I feel a bit sorry for the cow... It belongs onto a green willow, not on the side of the dirty road. Well, it looks well enough. So, there is street cats and dogs, and apparently, also street cows.~
+@214   = ~[Imoen]Корова! Прямо посреди улицы. Не ожидала увидеть её тут.~
+@215   = ~[Imoen]Помнишь бедняжку миссис Фёрсти и её корову во Вратах Балдура? Столько шума было из-за того, что она держала корову в городе. «Никакого рогатого скота внутри городских стен!»~
+@216   = ~[Imoen]Может, где-то рядом фермер из Морской Башни? Сколько у него было голов - две, три?~
+@217   = ~[Imoen]Мы в Аткатле, крупнейшем городе, что я когда-либо видела - она даже больше Врат Балдура - а у них по трущобам ходят коровы. А в других районах тоже будут животные? Слоны на Променаде? Волки на клабдище? Павлины рядом с храмами? (хихикает)~
+@218   = ~[Jaheira]Мы не в зоопарке, Имоен. Эти коровы принадлежат беднякам, которые не могут позволить себе пастбище за городом. Так они добывают себе молоко и мясо.~
+@219   = ~[Imoen]Хватит уже общаться со мной, как с ребёнком, Джахейра. Я всё прекрасно понимаю.~
+@220   = ~[Imoen]Мне её немного жалко... Эта бурёнка должна бегать по зелёным лугам, а не тесниться на грязной дороге. Хотя, она не выглядит такой уж больной. Раз уж есть уличные собаки и кошки, почему бы и не быть уличным коровам.~
