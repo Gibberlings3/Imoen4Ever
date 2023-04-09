@@ -2,13 +2,13 @@
 IF
 	InParty(Myself)
 	Global("C#IM_ImoenStays","GLOBAL",1)
-	Global("C#IM_DialogueTimerSet","GLOBAL",0)
+	Global("C#IM_DialogueTimerSet","LOCALS",0)
 THEN  
 	RESPONSE #100
 		RealSetGlobalTimer("C#IM_DialogueTimer","GLOBAL",800)
 		RealSetGlobalTimer("C#IM_IrenicusTimer","GLOBAL",14400) // three hours
 		SetGlobal("C#IM_DialogueSoA","GLOBAL",1)
-		SetGlobal("C#IM_DialogueTimerSet","GLOBAL",1)
+		SetGlobal("C#IM_DialogueTimerSet","LOCALS",1)
 END
 
 /* set dialogue timer after joining in Spellhold */
@@ -16,12 +16,12 @@ IF
 	InParty(Myself)
 	GlobalGT("Chapter","GLOBAL",3) 
 	!Global("C#IM_ImoenStays","GLOBAL",1)
-	GlobalLT("C#IM_DialogueTimerSet","GLOBAL",2)
+	GlobalLT("C#IM_DialogueTimerSet","LOCALS",2)
 THEN  
 	RESPONSE #100
 		RealSetGlobalTimer("C#IM_DialogueTimer","GLOBAL",700)
 		SetGlobal("C#IM_DialogueSoA","GLOBAL",51)
-		SetGlobal("C#IM_DialogueTimerSet","GLOBAL",2)
+		SetGlobal("C#IM_DialogueTimerSet","LOCALS",2)
 END
 
 
