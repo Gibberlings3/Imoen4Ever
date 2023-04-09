@@ -1,0 +1,72 @@
+IF
+	Clicked([ANYONE])
+	InMyArea(Player1)
+	Range(Player1,15)
+	Global("C#_IGaveGem","LOCALS",0)
+THEN
+	RESPONSE #100
+		GiveItemCreate("C#IMSGM",Player1,0,0,0)
+		SetGlobal("C#_IGaveGem","LOCALS",1)
+END
+
+IF
+	Clicked([ANYONE])
+	InMyArea(Player1)
+	Range(Player2,15)
+	Global("C#_IGaveGem","LOCALS",0)
+THEN
+	RESPONSE #100
+		GiveItemCreate("C#IMSGM",Player2,0,0,0)
+		SetGlobal("C#_IGaveGem","LOCALS",1)
+END
+
+IF
+	Clicked([ANYONE])
+	InMyArea(Player1)
+	Range(Player3,15)
+	Global("C#_IGaveGem","LOCALS",0)
+THEN
+	RESPONSE #100
+		GiveItemCreate("C#IMSGM",Player3,0,0,0)
+		SetGlobal("C#_IGaveGem","LOCALS",1)
+END
+
+IF
+	Clicked([ANYONE])
+	InMyArea(Player1)
+	Range(Player4,15)
+	Global("C#_IGaveGem","LOCALS",0)
+THEN
+	RESPONSE #100
+		GiveItemCreate("C#IMSGM",Player4,0,0,0)
+		SetGlobal("C#_IGaveGem","LOCALS",1)
+END
+
+IF
+	Clicked([ANYONE])
+	InMyArea(Player1)
+	Range(Player5,15)
+	Global("C#_IGaveGem","LOCALS",0)
+THEN
+	RESPONSE #100
+		GiveItemCreate("C#IMSGM",Player5,0,0,0)
+		SetGlobal("C#_IGaveGem","LOCALS",1)
+END
+
+IF
+	Clicked([ANYONE])
+	InMyArea(Player1)
+	Range(Player6,15)
+	Global("C#_IGaveGem","LOCALS",0)
+THEN
+	RESPONSE #100
+		GiveItemCreate("C#IMSGM",Player6,0,0,0)
+		SetGlobal("C#_IGaveGem","LOCALS",1)
+END
+
+IF
+	Clicked([ANYONE])
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@5560)
+END

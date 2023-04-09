@@ -1,0 +1,8 @@
+IF
+  OR(2)
+	GlobalGT("C#IM_SoDQuest_Enc","GLOBAL",1)
+	GlobalGT("C#IM_SoDQuest","GLOBAL",2)
+THEN
+	RESPONSE #100
+	  EscapeAreaDestroy(5)
+END

@@ -7,12 +7,13 @@ IF
 	IsValidForPartyDialogue("%IMOEN_DV_SOD%")
 	OR(2) 
 		!IsValidForPartyDialogue("CORWIN") //Corwin is either not here
-		Global("bd_betrayal_discussion","bd2000",1) //or Corwin's dialogue fired already
+		Global("bd_betrayal_discussion","GLOBAL",1) //or Corwin's dialogue fired already
 THEN
 	RESPONSE #100
 		SetGlobal("C#IM_betrayal_discussion","bd2000",1)
 		SetGlobalTimer("bd_betrayal_discuss_timer","bd2000",ONE_MINUTE) //to space all the other NPC comments
 		DisplayStringHead("%IMOEN_DV_SOD%",@5505)
+		Continue()
 END
 
 /* Battle at Bridgefort starts */
@@ -27,4 +28,5 @@ THEN
 		SetGlobalTimer("bd_mdd410z_ot_timer","bd2000",THREE_MINUTES)  // Boareskyr Bridge & Bridgefort
 		SetGlobal("C#IM_bd_ot","bd2000",1)  // Boareskyr Bridge & Bridgefort
 		DisplayStringHead("%IMOEN_DV_SOD%",@5506)  
+		Continue()
 END

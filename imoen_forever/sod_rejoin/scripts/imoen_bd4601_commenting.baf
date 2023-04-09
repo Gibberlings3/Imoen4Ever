@@ -1,6 +1,7 @@
 /* imoen_bd4601_commenting.baf */
 /* Comment in the Avernus Elevator */
 IF
+	GlobalGT("bd_plot","global",554)
 	Global("C#Imoen_bd_hellevator_ot","bd4601",0)  
 	IfValidForPartyDialog("%IMOEN_DV_SOD%")  
 	!GlobalTimerNotExpired("bd_hellevator_timer","bd4601")  

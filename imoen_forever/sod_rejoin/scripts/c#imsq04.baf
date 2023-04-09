@@ -1,0 +1,23 @@
+IF
+  See(Player1)
+  !StateCheck(Myself,CD_STATE_NOTVALID)
+  See("%IMOEN_DV_SOD%")
+  !StateCheck("%IMOEN_DV_SOD%",CD_STATE_NOTVALID)
+  See("C#IMSQ05")
+  !StateCheck("C#IMSQ05",CD_STATE_NOTVALID)
+  Global("C#IM_SoDQuest","GLOBAL",2)
+  Global("C#IM_SoDQuest_Enc","GLOBAL",3)
+THEN
+	RESPONSE #100
+	  RealSetGlobalTimer("C#IM_QuestTimerSoD","GLOBAL",800)
+	  StartDialogueNoSet("C#IMSQ05")
+END
+
+IF
+  OR(2)
+	GlobalGT("C#IM_SoDQuest_Enc","GLOBAL",3)
+	GlobalGT("C#IM_SoDQuest","GLOBAL",2)
+THEN
+	RESPONSE #100
+	  EscapeAreaDestroy(5)
+END

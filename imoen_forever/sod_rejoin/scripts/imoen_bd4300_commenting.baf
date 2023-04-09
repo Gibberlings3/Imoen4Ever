@@ -16,13 +16,14 @@ END
 /* 2 Portal is opened after Hephernaan's scheme */
 IF
 	AreaCheck("BD4300")
-	Global("bd_plot","bd4300",495)
+	Global("bd_plot","global",495)
 	Global("C#Imoen_SoDPortalComment","bd4300",0) 
 	IfValidForPartyDialog("%IMOEN_DV_SOD%")  
 THEN
 	RESPONSE #100
 		SetGlobal("C#Imoen_SoDPortalComment","bd4300",1)
 		DisplayStringHead("%IMOEN_DV_SOD%",@5521)  
+		SmallWait(8)
 		Continue()
 END
 
@@ -44,13 +45,15 @@ END
 
 /* 4 Comment after first wave of demons if PC lingers */
 IF
+	GlobalLT("bd_plot","global",499)
 	Global("bd_mdd1290d_ot","bd4300",1)  
 	Global("C#Imoen_bd_mdd1290d_ot","bd4300",0)  
 	IfValidForPartyDialog("%IMOEN_DV_SOD%")  
 THEN
 	RESPONSE #100
 		DisplayStringHead("%IMOEN_DV_SOD%",@5523)  
-		SetGlobal("C#Imoen_bd_mdd1290d_ot","bd4300",1)    
+		SetGlobal("C#Imoen_bd_mdd1290d_ot","bd4300",1)   
+		SmallWait(8) 
 		Continue()
 END
 

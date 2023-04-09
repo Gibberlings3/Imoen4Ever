@@ -9,7 +9,7 @@ BACKUP ~imoen_forever/backup~
 AUTHOR ~Please post at G3 or Kerzenburgforum, refer to readme.~  
 
 
-VERSION ~v10~  
+VERSION ~v11~  
 
 README ~imoen_forever/readme.imoen_forever.%LANGUAGE%.txt~ ~imoen_forever/readme.imoen_forever.english.txt~
 
@@ -56,6 +56,7 @@ OUTER_SPRINT newline ~%WNL%%LNL%%MNL%%TAB% ~
 
 ACTION_IF GAME_IS ~bgee~ THEN BEGIN
   OUTER_SPRINT ~IMOEN_DV_SOD~ ~IMOEN~
+  OUTER_SPRINT ~Dialog_Timer_SoD~ ~1100~
   OUTER_SPRINT ~6377~ ~6377~
   OUTER_SPRINT ~11035~ ~11035~
   OUTER_SPRINT ~16413~ ~16413~
@@ -118,6 +119,7 @@ END
 
 ACTION_IF GAME_IS ~eet~ THEN BEGIN
   OUTER_SPRINT ~IMOEN_DV_SOD~ ~IMOEN2~
+  OUTER_SPRINT ~Dialog_Timer_SoD~ ~1100~
   OUTER_SPRINT ~6377~ ~206377~
   OUTER_SPRINT ~11035~ ~211035~
   OUTER_SPRINT ~16413~ ~216413~
@@ -262,6 +264,26 @@ GLINT    BDGLINTB
     COPY ~.../BDBANTER.2DA~ ~override~ 
   END
 END //SoD
+
+ACTION_IF GAME_INCLUDES ~sod~ THEN BEGIN
+/* Create NPCs' Banter files if not present */
+COPY_EXISTING ~BDBANTER.2DA~ ~%MOD_FOLDER%/install~
+	COUNT_2DA_COLS cols
+	COUNT_2DA_ROWS cols rows
+	FOR ( row = 2 ; row < rows ; row = row + 1 ) BEGIN
+		READ_2DA_ENTRY %row% 0 2 npc_dv
+    	READ_2DA_ENTRY %row% 1 2 banterfile
+      	INNER_ACTION BEGIN
+		ACTION_IF NOT FILE_EXISTS_IN_GAME ~%banterfile%.dlg~ THEN BEGIN
+		  <<<<<<<< .../banterfiles-inlined/%banterfile%.d
+		  BEGIN %banterfile%
+		  >>>>>>>>
+		  COMPILE EVALUATE_BUFFER ~.../banterfiles-inlined/%banterfile%.d~ 
+		END
+      	END
+	END
+BUT_ONLY
+END
 
 // ----End (Do only once for whole mod)----
   COPY ~imoen_forever/Install/component.xx~ ~imoen_forever/Install/imoen_foreverinstall.mrk~
@@ -776,7 +798,7 @@ END
 
 
 ////////////////////////////////////////////////////////////////////////
-/* first part: Imoen remains in the group in Korlasz' dungeon */
+/* Imoen remains in the group in Korlasz' dungeon */
 ////////////////////////////////////////////////////////////////////////
 BEGIN @9906 DESIGNATED 10 //GROUP @9922
 LABEL ~Imoen4Ever-SoD-ImoeninGroupKorlaszDungeon~
@@ -985,7 +1007,7 @@ EXTEND_TOP ~bd0130.BCS~ ~imoen_forever/ImoenInGroupKD/c#st_imo_bd0130.baf~ EVALU
 
 
 ///////////////////////////////////////////////////////////////////
-/* second SoD part: Imoen returns to PC in first camp bd1000 */
+/* SoD part: Imoen returns to PC in first camp bd1000 */
 ///////////////////////////////////////////////////////////////////
 BEGIN @9907 DESIGNATED 11 //GROUP @9922
 LABEL ~Imoen4Ever-SoD-ImoenReturnsCamp~
@@ -1046,21 +1068,35 @@ BUT_ONLY
 
 
 /* Imoen moves to war camp in bd1000.are */
-EXTEND_TOP ~bd1000.bcs~ ~%MOD_FOLDER%/sod_rejoin/imoen_bd1000.baf~
+EXTEND_TOP ~bd1000.bcs~ ~%MOD_FOLDER%/sod_rejoin/scripts/imoen_bd1000.baf~
   EVALUATE_BUFFER
 
 /* Imoen moves to war camp in bd1000.are - teleport into area near the PC and greetings dialogue */
-COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/sod_rejoin/c#imback.baf~ 
+COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/sod_rejoin/scripts/c#imback.baf~ 
   
-EXTEND_BOTTOM ~bdimoens.bcs~ ~%MOD_FOLDER%/sod_rejoin/imoen_rejoin_bd1000.baf~
+EXTEND_BOTTOM ~bdimoens.bcs~ ~%MOD_FOLDER%/sod_rejoin/scripts/imoen_rejoin_bd1000.baf~
 EVALUATE_BUFFER
 
 /* and the same for the next camp in bd7100.are: */
-EXTEND_TOP ~bd7100.bcs~ ~%MOD_FOLDER%/sod_rejoin/imoen_bd7100.baf~
+EXTEND_TOP ~bd7100.bcs~ ~%MOD_FOLDER%/sod_rejoin/scripts/imoen_bd7100.baf~
   EVALUATE_BUFFER
 
+	/* Patch your NPC's "Move Camp" variable to the original game's script block (bd7100.bcs) */
+COPY_EXISTING ~bd7100.BCS~ ~override~
+	DECOMPILE_AND_PATCH BEGIN
+		SPRINT textToReplace ~\(SetGlobal("bd_move_npcs","bd7100",1)\)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~%textToReplace%~ ~\1 SetGlobal("C#Imoen_MoveCamp","bd7100",1)~ 
+			PATCH_PRINT ~Patching: %num_matches% matches found in %SOURCE_FILESPEC% for REPLACE_TEXTUALLY: %textToReplace%~
+		END ELSE BEGIN
+			PATCH_WARN ~WARNING: could not find %textToReplace% in %SOURCE_FILESPEC%~
+		END
+	END
+BUT_ONLY
+
 /* Last camp is in bd3000.are. */
-EXTEND_TOP ~bd3000.bcs~ ~%MOD_FOLDER%/sod_rejoin/imoen_bd3000.baf~
+EXTEND_TOP ~bd3000.bcs~ ~%MOD_FOLDER%/sod_rejoin/scripts/imoen_bd3000.baf~
   EVALUATE_BUFFER
 
 	/* Patch your NPC's "Move Camp" variable to the original game's script block (bd3000.bcs) */
@@ -1087,39 +1123,49 @@ BUT_ONLY
 	
 
 /* return to camp if kicked out */
-EXTEND_TOP ~bdparty.bcs~ ~%MOD_FOLDER%/sod_rejoin/imoen_bdparty.baf~
+EXTEND_TOP ~bdparty.bcs~ ~%MOD_FOLDER%/sod_rejoin/scripts/imoen_bdparty.baf~
   EVALUATE_BUFFER
 
 /* Imoen is kicked in hell dimension - teleport to last hell area bd4400.are */
-EXTEND_TOP ~bdcut58.bcs~ ~%MOD_FOLDER%/sod_rejoin/imoen_bdcut58.baf~
+EXTEND_TOP ~bdcut58.bcs~ ~%MOD_FOLDER%/sod_rejoin/scripts/imoen_bdcut58.baf~
   EVALUATE_BUFFER
 
 /* Imoen is kicked in hell dimension or was waiting elsewhere- teleport to Dragonspear Castle interior (bd4300.are) after PC returns from Avernus */
-EXTEND_TOP ~bdcut59b.bcs~ ~%MOD_FOLDER%/sod_rejoin/imoen_bdcut59b.baf~
+EXTEND_TOP ~bdcut59b.bcs~ ~%MOD_FOLDER%/sod_rejoin/scripts/imoen_bdcut59b.baf~
   EVALUATE_BUFFER
 
 /* after PC gets arrested for murder: Imoen leaves party */
-EXTEND_TOP ~bdcut61.bcs~ ~%MOD_FOLDER%/sod_rejoin/imoen_bdcut61.baf~
+EXTEND_TOP ~bdcut61.bcs~ ~%MOD_FOLDER%/sod_rejoin/scripts/imoen_bdcut61.baf~
   EVALUATE_BUFFER
 
 /* (T3) Move NPC to entrance of the Allied Siege Camp (Crusade battle) */
-EXTEND_BOTTOM ~bdasc3.bcs~ ~%MOD_FOLDER%/sod_rejoin/imoen_bdasc3.baf~
+EXTEND_BOTTOM ~bdasc3.bcs~ ~%MOD_FOLDER%/sod_rejoin/scripts/imoen_bdasc3.baf~
   EVALUATE_BUFFER
 
 
 
 /* SoD dialogue */
-COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/sod_rejoin/bdimoens.d~ 
-COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/sod_rejoin/bdimoenp.d~ 
-COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/sod_rejoin/bdimoen_cleanup.d~ USING ~imoen_forever/tra/autotra/%LANGUAGE%/bdimoenj.TRA~ 
+COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/sod_rejoin/dialogues/bdimoens.d~ 
+COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/sod_rejoin/dialogues/bdimoenp.d~ 
+COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/sod_rejoin/dialogues/bdimoen_cleanup.d~ USING ~imoen_forever/tra/autotra/%LANGUAGE%/bdimoenj.TRA~ 
 
 /* Prevent Imoen in the Scrying Pool in bd1200.are: do it non-destructively. Thank you argent77 for the code! */
 INCLUDE ~imoen_forever/tpa/add_trans_trigger_scrying_pool_cleanup.tpa~
 
+/* Crossmod with Another fine Hell */
+ACTION_IF MOD_IS_INSTALLED ~c#anotherfinehell.tp2~ ~0~ THEN BEGIN
+  PRINT @9937 /* ~Another fine Hell: "Optional Ending for SoD and BGII Closure" detected.~ */ 
+  COPY_EXISTING ~bdcut61.bcs~ ~override~
+     DECOMPILE_AND_PATCH BEGIN
+        REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~(\InParty("%IMOEN_DV%")\)~ ~\1
+Global("C#AfHSoD_RevisedEnd","GLOBAL",0)~
+     END
+  BUT_ONLY_IF_IT_CHANGES 
+END //Another fine Hell
 
 
 ///////////////////////////////////////////////////////////////////
-/* third SoD part: Imoen gives better reason to stay behind in Palace */
+/* SoD part: Imoen gives better reason to stay behind in Palace */
 ///////////////////////////////////////////////////////////////////
 BEGIN @9909 DESIGNATED 12 //GROUP @9922
 LABEL ~Imoen4Ever-SoD-BetterReasonPalace~
@@ -1133,7 +1179,7 @@ USING ~imoen_forever/tra/autotra/%LANGUAGE%/IMOEN_IN_GROUP_KD.TRA~
 
 
 ///////////////////////////////////////////////////////////////////
-/* 4th SoD part: Play cutscene with Imoen and Duke Jannath */
+/* SoD part: Play cutscene with Imoen and Duke Jannath */
 ///////////////////////////////////////////////////////////////////
 BEGIN @9910 DESIGNATED 13 //GROUP @9922
 LABEL ~Imoen4Ever-SoD-CutesceneImoenDukeJannath~
@@ -1144,14 +1190,14 @@ FORBID_COMPONENT ~EET_end.tp2~ ~1~ @9930
 
 
 /* cutscene after PC could see Imoen&Liia training */
-COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/sod_rejoin/c#imscry.baf~ 
+COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/sod_rejoin/scripts/c#imscry.baf~ 
 
-COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/sod_rejoin/cutscene_imoen_and_jannath.d~
+COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/sod_rejoin/dialogues/cutscene_imoen_and_jannath.d~
 
 
 
 //////////////////////////////////////////////////////////////////
-/* 5th SoD part: Give Imoen dialogue content during chapters 8 to 12 */
+/* SoD part: Give Imoen dialogue content during chapters 8 to 12 */
 ///////////////////////////////////////////////////////////////////
 BEGIN @9923 DESIGNATED 14 //GROUP @9922
 LABEL ~Imoen4Ever-SoD-DialoguesContentChapters8to12~
@@ -1174,60 +1220,335 @@ COPY_EXISTING ~bdlever2.BCS~ ~override~
 		END
 	END
 BUT_ONLY
-	
 
-EXTEND_BOTTOM ~bdimoens.bcs~ ~%MOD_FOLDER%/sod_rejoin/bdimoen_additions_sod.baf~
-EVALUATE_BUFFER
+/* addition to Imoen's override script */
+EXTEND_BOTTOM ~bdimoens.bcs~ ~%MOD_FOLDER%/sod_rejoin/scripts/imoen_rejoin_bd1000.baf~ EVALUATE_BUFFER
+EXTEND_BOTTOM ~bdimoens.bcs~ ~%MOD_FOLDER%/sod_rejoin/scripts/sod_quest.baf~ EVALUATE_BUFFER
+EXTEND_BOTTOM ~bdimoens.bcs~ ~%MOD_FOLDER%/sod_rejoin/scripts/sod_important_reactions_scripts.baf~ EVALUATE_BUFFER
+EXTEND_BOTTOM ~bdimoens.bcs~ ~%MOD_FOLDER%/sod_rejoin/scripts/bdimoen_additions_sod.baf~ EVALUATE_BUFFER
+
+<<<<<<<< ...inlined/bdimoens_timer.baf
+/* Let's reset the timer once it run out without a valid dialogue, so the next reaction dialogue will not trigger right after the incident. */
+/* make sure this is at the END of all script blocks using this timer or any script block using this timer elsewhere will never trigger! */
+IF
+	InParty("%IMOEN_DV_SOD%")
+	CombatCounter(0)
+	!See([ENEMY])
+	ActionListEmpty()
+	RealGlobalTimerExpired("C#IM_DialogueTimer","GLOBAL")
+THEN
+	RESPONSE #25
+		RealSetGlobalTimer("C#IM_DialogueTimer","GLOBAL",%Dialog_Timer_SoD%)
+	RESPONSE #25
+		RealSetGlobalTimer("C#IM_DialogueTimer","GLOBAL",800)
+	RESPONSE #25
+		RealSetGlobalTimer("C#IM_DialogueTimer","GLOBAL",1000)
+	RESPONSE #25
+		RealSetGlobalTimer("C#IM_DialogueTimer","GLOBAL",%Dialog_Timer_SoD%)
+END	
+>>>>>>>>
+EXTEND_BOTTOM ~bdimoens.bcs~ ~...inlined/bdimoens_timer.baf~ EVALUATE_BUFFER
 
 /* Reaction to Caelar's first appearance on bridge */
-EXTEND_BOTTOM ~bd1000.bcs~ ~%MOD_FOLDER%/sod_rejoin/bd1000_commenting.baf~
+EXTEND_BOTTOM ~bd1000.bcs~ ~%MOD_FOLDER%/sod_rejoin/scripts/bd1000_commenting.baf~
   EVALUATE_BUFFER
 
 /* PC gave Bridgefort Castle to the crusaders */
 /* & Battle at Bridgefort starts */
-EXTEND_BOTTOM ~bd2000.bcs~ ~%MOD_FOLDER%/sod_rejoin/bd2000_commenting.baf~
+EXTEND_TOP ~bd2000.bcs~ ~%MOD_FOLDER%/sod_rejoin/scripts/bd2000_commenting.baf~
   EVALUATE_BUFFER
 
 /* Imoen comments on murder accusation */
-EXTEND_TOP ~bd4100.bcs~ ~%MOD_FOLDER%/sod_rejoin/imoen_bd4100.baf~
+EXTEND_TOP ~bd4100.bcs~ ~%MOD_FOLDER%/sod_rejoin/scripts/imoen_bd4100.baf~
 EVALUATE_BUFFER
 
 
 /* (T3) Comment after killing the Rhinoceros Beetle in bd0114.are */
-EXTEND_BOTTOM ~bd0114.bcs~ ~%MOD_FOLDER%/sod_rejoin/imoen_bd0114.baf~
+EXTEND_BOTTOM ~bd0114.bcs~ ~%MOD_FOLDER%/sod_rejoin/scripts/imoen_bd0114.baf~
 EVALUATE_BUFFER
 
 /* (T3) Comments in bd4300.are (Bridgefort Castle interior and Avernus portal) */
-EXTEND_TOP ~bd4300.bcs~ ~%MOD_FOLDER%/sod_rejoin/imoen_bd4300_commenting.baf~
+EXTEND_TOP ~bd4300.bcs~ ~%MOD_FOLDER%/sod_rejoin/scripts/imoen_bd4300_commenting.baf~
 EVALUATE_BUFFER
 
 /* Comment upon entering Avernus */
-EXTEND_BOTTOM ~bd4400.bcs~ ~%MOD_FOLDER%/sod_rejoin/imoen_bd4400_commenting.baf~
+EXTEND_BOTTOM ~bd4400.bcs~ ~%MOD_FOLDER%/sod_rejoin/scripts/imoen_bd4400_commenting.baf~
 EVALUATE_BUFFER
 
 /* Comment in the Avernus Elevator */
-EXTEND_TOP ~bd4601.bcs~ ~%MOD_FOLDER%/sod_rejoin/imoen_bd4601_commenting.baf~
+EXTEND_BOTTOM ~bd4601.bcs~ ~%MOD_FOLDER%/sod_rejoin/scripts/imoen_bd4601_commenting.baf~
 EVALUATE_BUFFER
 
-/* addition to Imoen's override script */
-EXTEND_BOTTOM ~bdimoens.bcs~ ~%MOD_FOLDER%/sod_rejoin/imoen_rejoin_bd1000.baf~ EVALUATE_BUFFER
-
 /* Comment in Dragonspear Castle Exterior */
-EXTEND_BOTTOM ~bdbark01.bcs~ ~%MOD_FOLDER%/sod_rejoin/imoen_bdbark01_commenting.baf~
+EXTEND_BOTTOM ~bdbark01.bcs~ ~%MOD_FOLDER%/sod_rejoin/scripts/imoen_bdbark01_commenting.baf~
 EVALUATE_BUFFER
 
 /* (T3) Comment in random area (Canyon Ambush) bd0063.are */
-EXTEND_BOTTOM ~bd0063.bcs~ ~%MOD_FOLDER%/sod_rejoin/imoen_bd0063.baf~
+EXTEND_BOTTOM ~bd0063.bcs~ ~%MOD_FOLDER%/sod_rejoin/scripts/imoen_bd0063.baf~
 EVALUATE_BUFFER
 
 
-COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/sod_rejoin/bdimoenj_additions.d~ USING ~imoen_forever/tra/autotra/%LANGUAGE%/bdimoenj.TRA~ 
+COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/sod_rejoin/dialogues/bdimoenj_additions.d~ USING ~imoen_forever/tra/autotra/%LANGUAGE%/bdimoenj.TRA~ 
+COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/sod_rejoin/dialogues/sod_important_reactions_dialogues.d~ USING ~imoen_forever/tra/autotra/%LANGUAGE%/bdimoenj.TRA~ 
+COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/sod_rejoin/dialogues/sod_dialogues.d~ USING ~imoen_forever/tra/autotra/%LANGUAGE%/bdimoenj.TRA~   
+COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/sod_rejoin/dialogues/sod_quest.d~ USING ~imoen_forever/tra/autotra/%LANGUAGE%/bdimoenj.TRA~  
+COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/sod_rejoin/dialogues/sod_banter.d~ 
+
+/* general quest things */
+
+/* add piles to tents in bd3000 */
+COPY_EXISTING ~bd3000.are~ ~override~
+/* stack 1 */
+  LPF ~fj_are_structure~
+    INT_VAR
+    fj_type        = 1    //trigger
+    fj_box_left    = 575
+    fj_box_top     = 515
+    fj_box_right   = 587
+    fj_box_bottom  = 530
+    fj_cursor_idx   = 2  //"take something"
+    fj_vertex_0    = 575 + (530 << 16)
+    fj_vertex_1    = 580 + (530 << 16)
+    fj_vertex_2    = 587 + (520 << 16)
+    fj_vertex_3    = 582 + (515 << 16)
+    STR_VAR
+    fj_structure_type = region
+    fj_name           = ~C#IMST01~
+    fj_reg_script   = C#IMST01
+  END
+/* stack 2 */
+  LPF ~fj_are_structure~
+    INT_VAR
+    fj_type        = 1    //trigger
+    fj_box_left    = 403
+    fj_box_top     = 592
+    fj_box_right   = 416
+    fj_box_bottom  = 607
+    fj_cursor_idx   = 2  //"take something"
+    fj_vertex_0    = 403 + (607 << 16)
+    fj_vertex_1    = 416 + (605 << 16)
+    fj_vertex_2    = 416 + (592 << 16)
+    fj_vertex_3    = 404 + (593 << 16)
+    STR_VAR
+    fj_structure_type = region
+    fj_name           = ~C#IMST02~
+    fj_reg_script   = C#IMST01
+  END
+/* stack 3 */
+  LPF ~fj_are_structure~
+    INT_VAR
+    fj_type        = 1    //trigger
+    fj_box_left    = 1080
+    fj_box_top     = 181
+    fj_box_right   = 1093
+    fj_box_bottom  = 193
+    fj_cursor_idx   = 2  //"take something"
+    fj_vertex_0    = 1081 + (193 << 16)
+    fj_vertex_1    = 1093 + (190 << 16)
+    fj_vertex_2    = 1092 + (181 << 16)
+    fj_vertex_3    = 1080 + (181 << 16)
+    STR_VAR
+    fj_structure_type = region
+    fj_name           = ~C#IMST03~
+    fj_reg_script   = C#IMST01
+  END
+/* stack 4 */
+  LPF ~fj_are_structure~
+    INT_VAR
+    fj_type        = 1    //trigger
+    fj_box_left    = 2263
+    fj_box_top     = 718
+    fj_box_right   = 2276
+    fj_box_bottom  = 728
+    fj_cursor_idx   = 2  //"take something"
+    fj_vertex_0    = 2264 + (728 << 16)
+    fj_vertex_1    = 2276 + (724 << 16)
+    fj_vertex_2    = 2275 + (718 << 16)
+    fj_vertex_3    = 2263 + (723 << 16)
+    STR_VAR
+    fj_structure_type = region
+    fj_name           = ~C#IMST04~
+    fj_reg_script   = C#IMST01
+  END
+/* stack 5 */
+  LPF ~fj_are_structure~
+    INT_VAR
+    fj_type        = 1    //trigger
+    fj_box_left    = 2175
+    fj_box_top     = 1645
+    fj_box_right   = 2192
+    fj_box_bottom  = 1661
+    fj_cursor_idx   = 2  //"take something"
+    fj_vertex_0    = 2175 + (1661 << 16)
+    fj_vertex_1    = 2191 + (1659 << 16)
+    fj_vertex_2    = 2192 + (1645 << 16)
+    fj_vertex_3    = 2180 + (1654 << 16)
+    STR_VAR
+    fj_structure_type = region
+    fj_name           = ~C#IMST05~
+    fj_reg_script   = C#IMST01
+  END
+/* stack 6 */
+  LPF ~fj_are_structure~
+    INT_VAR
+    fj_type        = 1    //trigger
+    fj_box_left    = 1617
+    fj_box_top     = 1866
+    fj_box_right   = 1626
+    fj_box_bottom  = 1874
+    fj_cursor_idx   = 2  //"take something"
+    fj_vertex_0    = 1617 + (1874 << 16)
+    fj_vertex_1    = 1626 + (1873 << 16)
+    fj_vertex_2    = 1625 + (1867 << 16)
+    fj_vertex_3    = 1617 + (1866 << 16)
+    STR_VAR
+    fj_structure_type = region
+    fj_name           = ~C#IMST06~
+    fj_reg_script   = C#IMST01
+  END
+/* stack 7 */
+  LPF ~fj_are_structure~
+    INT_VAR
+    fj_type        = 1    //trigger
+    fj_box_left    = 1607
+    fj_box_top     = 1448
+    fj_box_right   = 1619
+    fj_box_bottom  = 1468
+    fj_cursor_idx   = 2  //"take something"
+    fj_vertex_0    = 1607 + (1468 << 16)
+    fj_vertex_1    = 1619 + (1462 << 16)
+    fj_vertex_2    = 1619 + (1448 << 16)
+    fj_vertex_3    = 1607 + (1455 << 16)
+    STR_VAR
+    fj_structure_type = region
+    fj_name           = ~C#IMST07~
+    fj_reg_script   = C#IMST01
+  END
+/* stack 8 */
+  LPF ~fj_are_structure~
+    INT_VAR
+    fj_type        = 1    //trigger
+    fj_box_left    = 535
+    fj_box_top     = 1694
+    fj_box_right   = 549
+    fj_box_bottom  = 1707
+    fj_cursor_idx   = 2  //"take something"
+    fj_vertex_0    = 535 + (1707 << 16)
+    fj_vertex_1    = 549 + (1704 << 16)
+    fj_vertex_2    = 548 + (1694 << 16)
+    fj_vertex_3    = 539 + (1698 << 16)
+    STR_VAR
+    fj_structure_type = region
+    fj_name           = ~C#IMST08~
+    fj_reg_script   = C#IMST01
+  END
+BUT_ONLY
+
+/* additional quest scripts */
+
+COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/sod_rejoin/scripts/c#imsq01.baf~
+COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/sod_rejoin/scripts/c#imsq02.baf~
+COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/sod_rejoin/scripts/c#imsq03.baf~
+COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/sod_rejoin/scripts/c#imsq04.baf~
+COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/sod_rejoin/scripts/c#imsq05.baf~
+COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/sod_rejoin/scripts/c#imsq06.baf~
+COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/sod_rejoin/scripts/c#imsq07.baf~
+
+COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/sod_rejoin/scripts/c#imst01.baf~
+
+EXTEND_BOTTOM ~bd3000.bcs~ ~%MOD_FOLDER%/sod_rejoin/scripts/bd3000_quest.baf~
+EVALUATE_BUFFER
+
+/* quest cres */
+/* C#IMSQ01 //Fiancée */
+COPY ~%MOD_FOLDER%/sod_rejoin/cres/c#imsq01.cre~ ~override~ EVALUATE_BUFFER 
+	SAY NAME1 @5600 /* ~Synthia~ */
+	SAY NAME2 @5600 /* ~Synthia~ */
+    WRITE_ASCII 0x280 ~c#imsq01~ #32 // set DV
+    WRITE_ASCII 0x2cc ~c#imsq01~ #8 // set dialogue file
+WRITE_EVALUATED_ASCII 0x248 ~c#imsq01~ #8   // Override script
+
+/* C#IMSQ02 //Fiancé */
+COPY ~%MOD_FOLDER%/sod_rejoin/cres/c#imsq02.cre~ ~override~ EVALUATE_BUFFER 
+	SAY NAME1 @5601 /* ~Gregory~ */
+	SAY NAME2 @5601 /* ~Gregory~ */
+    WRITE_ASCII 0x280 ~c#imsq02~ #32 // set DV
+    WRITE_ASCII 0x2cc ~c#imsq02~ #8 // set dialogue file
+WRITE_EVALUATED_ASCII 0x248 ~c#imsq02~ #8   // Override script
+WRITE_EVALUATED_ASCII 0x268 ~~ #8   // Default script
+
+/* C#IMSQ03 //male Refugee */
+COPY ~%MOD_FOLDER%/sod_rejoin/cres/c#imsq03.cre~ ~override~ EVALUATE_BUFFER 
+	SAY NAME1 @5602 /* ~Holter~ */
+	SAY NAME2 @5602 /* ~Holter~ */
+    WRITE_ASCII 0x280 ~c#imsq03~ #32 // set DV
+    WRITE_ASCII 0x2cc ~c#imsq03~ #8 // set dialogue file
+WRITE_EVALUATED_ASCII 0x248 ~c#imsq03~ #8   // Override script
+
+<<<<<<<< .../inlined/cre_patching.tph
+>>>>>>>>
+OUTER_SET eet_200000 = GAME_IS ~eet~ ? 200000 : 0
+OUTER_SET strref_52888 = eet_200000 + 52888
+APPEND_OUTER - ~.../inlined/cre_patching.tph~ 
+"
+/* C#IMSQ04 //male Refugee */
+COPY ~%MOD_FOLDER%/sod_rejoin/cres/c#imsq04.cre~ ~override~ EVALUATE_BUFFER 
+	SAY NAME1 #%strref_52888% 
+	SAY NAME2 #%strref_52888%
+    WRITE_ASCII 0x280 ~c#imsq04~ #32 // set DV
+    WRITE_ASCII 0x2cc ~c#imsq04~ #8 // set dialogue file
+WRITE_EVALUATED_ASCII 0x248 ~c#imsq04~ #8   // Override script
+
+/* C#IMSQ05 //male Refugee */
+COPY ~%MOD_FOLDER%/sod_rejoin/cres/c#imsq05.cre~ ~override~ EVALUATE_BUFFER 
+	SAY NAME1 #%strref_52888%
+	SAY NAME2 #%strref_52888%
+    WRITE_ASCII 0x280 ~c#imsq05~ #32 // set DV
+    WRITE_ASCII 0x2cc ~c#imsq05~ #8 // set dialogue file
+WRITE_EVALUATED_ASCII 0x248 ~c#imsq05~ #8   // Override script
+
+/* C#IMSQ06 //female Refugee */
+COPY ~%MOD_FOLDER%/sod_rejoin/cres/c#imsq06.cre~ ~override~ EVALUATE_BUFFER 
+	SAY NAME1 #%strref_52888%
+	SAY NAME2 #%strref_52888%
+    WRITE_ASCII 0x280 ~c#imsq06~ #32 // set DV
+    WRITE_ASCII 0x2cc ~c#imsq06~ #8 // set dialogue file
+WRITE_EVALUATED_ASCII 0x248 ~c#imsq06~ #8   // Override script
+
+/* C#IMSQ07 //female Refugee */
+COPY ~%MOD_FOLDER%/sod_rejoin/cres/c#imsq07.cre~ ~override~ EVALUATE_BUFFER 
+	SAY NAME1 #%strref_52888%
+	SAY NAME2 #%strref_52888%
+    WRITE_ASCII 0x280 ~c#imsq07~ #32 // set DV
+    WRITE_ASCII 0x2cc ~c#imsq07~ #8 // set dialogue file
+WRITE_EVALUATED_ASCII 0x248 ~c#imsq07~ #8   // Override script
+"
+INCLUDE ~.../inlined/cre_patching.tph~
+
+/* quest items */
+COPY ~%MOD_FOLDER%/sod_rejoin/items/c#imsgm.itm~ ~override~
+SAY NAME1 @5603 /* ~Imoen's Trinkets~ */
+SAY NAME2 @5603 /* ~Imoen's Trinkets~ */
+SAY UNIDENTIFIED_DESC @5604 /* ~These are some gems collected by Imoen. Nothing too valuable, but everything to a person in need.~ */
+SAY DESC @5604
 
 
+
+/* The Boareskyr Bridge Scene */
+ACTION_IF (MOD_IS_INSTALLED ~c#sodboabri/setup-c#sodboabri.tp2~ ~0~) THEN BEGIN
+PRINT @9935 /* The Boareskyr Bridge Scene mod detected. */
+
+// Get state for c#stff24 %after_incident_at_bridge_10% (in c#sodboabri/dialogues/bhaalheritage_boareskyr_bridge.d)
+/* @76  = ~[FF Healer (female)]Everyone saw the sign of Bhaal painting itself on the ground around you. I fear what happened here will be the source of much speculation and rumors. Let us move on and leave this place.~
+*/
+OUTER_SET after_incident_at_bridge_10 = STATE_WHICH_SAYS 76 IN ~c#sodboabri/translations/autotra/%s/dialogues.tra~ FROM ~c#stff24~
+  COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/sod_rejoin/crossmod/crossmod_boareskyrbridge.d~ 
+     USING ~%MOD_FOLDER%/tra/autotra/%LANGUAGE%/sod_important_reactions_dialogues.TRA~
+END
 
 
 //////////////////////////////////////////////////////////////////
-/* 6th SoD part: Imoen at the end of the game should be the one that was in party (SoD only) */
+/* SoD part: Imoen at the end of the game should be the one that was in party (SoD only) */
 ///////////////////////////////////////////////////////////////////
 /* Imoen at the end of the game should be the one that was in party (SoD only) - and talk with the right dialogue + execute the correct script */
 
@@ -1266,7 +1587,7 @@ BUT_ONLY
 
 
 //////////////////////////////////////////////////////////////////
-/* 7th SoD part: Unify Imoen's portrait in SoD */
+/* SoD part: Unify Imoen's portrait in SoD */
 ///////////////////////////////////////////////////////////////////
 BEGIN @9926 
 DESIGNATED 16 //GROUP @9922
@@ -1317,7 +1638,7 @@ COPY_EXISTING ~bdimoen.cre~ ~override~
 
 
 //////////////////////////////////////////////////////////////////
-/* 8th SoD part: Imoen's chest moves with the campaign, too */
+/* SoD part: Imoen's chest moves with the campaign, too */
 ///////////////////////////////////////////////////////////////////
 BEGIN @9931 DESIGNATED 20 //GROUP @9922
 LABEL ~Imoen4Ever-SoD-MoveImoensChest~
@@ -1476,6 +1797,55 @@ DO ~AddJournalEntry(@25,INFO)~
 END
 >>>>>>>>
 COMPILE EVALUATE_BUFFER ~.../add_bdimoen_chest.d~ USING ~imoen_forever/tra/autotra/%s/bdimoens.tra~
+
+/* Crossmod with Another fine Hell */
+ACTION_IF MOD_IS_INSTALLED ~c#anotherfinehell.tp2~ ~2~ THEN BEGIN
+  PRINT @9938 /* ~Another fine Hell: "PC's and Imoen's chest in Palace should have their content" detected.~ */ 
+
+
+<<<<<<<< .../move_imoens_stuff_i4e_c#afh3.baf
+IF
+	Global("C#I4E_bdimoen_chest","GLOBAL",1)
+	!Global("C#I4E_MoveImoensStuff","GLOBAL",4)
+	Global("C#I4E_MoveImoensStuff","GLOBAL",3)
+THEN
+	RESPONSE #100
+		MoveContainerContents("BD3000*C#ImoensChest","c#afh3*Imoen_equipment")
+		SetGlobal("C#I4E_MoveImoensStuff","GLOBAL",4)
+		Continue()
+END
+>>>>>>>>
+EXTEND_BOTTOM ~c#afh3.bcs~ ~.../move_imoens_stuff_i4e_c#afh3.baf~ EVALUATE_BUFFER
+
+/* Move stuff back in case player visits the big coalition camp area again */
+<<<<<<<< .../move_imoens_stuff_i4e_bd3000.baf
+IF
+	Global("C#I4E_bdimoen_chest","GLOBAL",1)
+	!Global("C#I4E_MoveImoensStuff","GLOBAL",3)
+	Global("C#I4E_MoveImoensStuff","GLOBAL",4)
+THEN
+	RESPONSE #100
+		MoveContainerContents("c#afh3*Imoen_equipment","BD3000*C#ImoensChest")
+		SetGlobal("C#I4E_MoveImoensStuff","GLOBAL",3)
+		Continue()
+END
+>>>>>>>>
+EXTEND_BOTTOM ~bd3000.bcs~ ~.../move_imoens_stuff_i4e_bd3000.baf~ EVALUATE_BUFFER
+
+END //AfH
+
+//////////////////////////////////////////////////////////////////
+/* SoD part: Give Imoen PID during chapters 8 to 12 */
+///////////////////////////////////////////////////////////////////
+BEGIN @9936 DESIGNATED 25 //GROUP @9922
+LABEL ~Imoen4Ever-SoD-PIDChapters8to12~
+REQUIRE_PREDICATE (GAME_INCLUDES ~sod~) @9904 
+REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-imoen_forever.TP2~ "11") @9911
+FORBID_COMPONENT ~EET_end.tp2~ ~0~ @9930
+FORBID_COMPONENT ~EET_end.tp2~ ~1~ @9930
+
+
+COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/sod_rejoin/dialogues/sod_pid.d~ 
 
 //////////////////////////////////////////////////////////////////
 /* general component: Imoen's Alternate Portrait from Acifer */

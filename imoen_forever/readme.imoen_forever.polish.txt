@@ -103,8 +103,6 @@ Ten komponent zmienia po¿egnalny dialog Imoen i postaci gracza wieczorem, przed 
 
 Uwaga dla modderów dotycz¹ca kompatybilnoœci: jw.
 
-Przeczyta³am o tym pomyœle na forum BeamDoga, ale zapomnia³am, przez kogo zosta³ podsuniêty. Jeœli wiesz, kto by³ jego autorem, daj mi znaæ.
-
 
 9. I4E w SoD: Odgrywa filmik z Imoen i Jannath
 -----------------------------------
@@ -261,6 +259,10 @@ UWAGI O ROZPOWSZECHNIANIU: Mod Imoen 4 Ever zosta³ stworzony po to, aby mogli si
 
 
 HISTORIA
+
+Version 11:
+-SoD content finished.
+-German v9 proofread, by Shai Hulud.
 
 Version 10:
 -new optional component (not dependent on the others): new alternate portrait for Imoen for all games, by Acifer.

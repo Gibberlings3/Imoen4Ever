@@ -1,77 +1,93 @@
-/* after witnessing Hormorn's blessing in camp at Boarskyr bridge */
+
+/* the dwarven miners. Do not kill them for the Lich! */
+
+I_C_T BDCOLDH 17 C#IM_BDCOLDH_17
+== bdimoen IF ~InParty("%IMOEN_DV_SOD%") See("%IMOEN_DV_SOD%") !StateCheck("%IMOEN_DV_SOD%",CD_STATE_NOTVALID)~ THEN @133
+END
+
+/* after witnessing Hormorn's blessing in camp at Boareskyr bridge */
 I_C_T bdbarghe 8 C#IM_bdbarghe_8
-== bdimoen IF ~IsValidForPartyDialogue("%IMOEN_DV_SOD%")~ THEN @135 /* I don't feel any different. Do you feel any different? */
+== bdimoen IF ~InParty("%IMOEN_DV_SOD%") See("%IMOEN_DV_SOD%") !StateCheck("%IMOEN_DV_SOD%",CD_STATE_NOTVALID)~ THEN @135 /* I don't feel any different. Do you feel any different? */
 END
 
 /* PC threatens to kill the crusaders with the spikes in bd7230.are */
 I_C_T bdkharmy 6 C#IM_bdkharmy_6
-== bdimoen IF ~IsValidForPartyDialogue("%IMOEN_DV_SOD%")~ THEN @132
+== bdimoen IF ~InParty("%IMOEN_DV_SOD%") See("%IMOEN_DV_SOD%") !StateCheck("%IMOEN_DV_SOD%",CD_STATE_NOTVALID)~ THEN @132
 END
 
 /* PC handed over the Bridgefort Castle to the crusaders */
 
 I_C_T BDKHALIJ 33 C#IM_betrayal_discussion //"C#IM_betrayal_discussion" is the name of the global variable
-== bdimoen IF ~IsValidForPartyDialogue("%IMOEN_DV_SOD%")~ THEN @5505 /* ~Just like that? I'm not sure the others will like this.~ */
+== bdimoen IF ~InParty("%IMOEN_DV_SOD%") See("%IMOEN_DV_SOD%") !StateCheck("%IMOEN_DV_SOD%",CD_STATE_NOTVALID)~ THEN @5505 /* ~Just like that? I'm not sure the others will like this.~ */
 END
-
-/* the dwarven miners. Do not kill them for the Lich! */
-
-I_C_T BDCOLDH 17 C#IM_BDCOLDH_17
-== bdimoen IF ~IsValidForPartyDialogue("%IMOEN_DV_SOD%")~ THEN @133
-END
-
-/* Ophyllis in last camp */
-
-/* The sword is yours... M-may the gods smile upon you, O hero of Baldur's Gate... Uhhh...
-(StrRef: 57554) */
-I_C_T BDOPHYLL 40 C#IM_BDOPHYLL_40
-== bdimoen IF ~IsValidForPartyDialogue("%IMOEN_DV_SOD%")~ THEN @134
-== BDOPHYLL IF ~IsValidForPartyDialogue("%IMOEN_DV_SOD%")~ THEN #%6377%
-END
-
 
 /* chicken in the well easter egg */
-I_C_T BDDOGW01 0 C#IM_BDDOGW01_0
-== bdimoen IF ~IsValidForPartyDialogue("%IMOEN_DV_SOD%")~ THEN @124 /* ~Awww, now the chicken will get all clean and shiny. But, <CHARNAME>, one of these days, when we have a spare moment and are resting somewhere comfortly, you will explain to me why you actually did that, yes?~ */
-END
-
-/* catapult at castle */
-I_C_T BDHELDMO 5 C#IM_BDHELDMO_5
-== bdimoen IF ~IsValidForPartyDialogue("%IMOEN_DV_SOD%")~ THEN @125 /* ~I feel sorry for him. But... what a blast! (giggles)~ */
+I_C_T BDDOGW01 5 C#IM_BDDOGW01_5
+== bdimoen IF ~InParty("%IMOEN_DV_SOD%") See("%IMOEN_DV_SOD%") !StateCheck("%IMOEN_DV_SOD%",CD_STATE_NOTVALID)~ THEN @124 /* ~Awww, now the chicken will get all clean and shiny. But, <CHARNAME>, one of these days, when we have a spare moment and are resting somewhere comfortly, you will explain to me why you actually did that, yes?~ */
 END
 
 /* first time at commander tent, coalition camp */
 I_C_T BDSTONEH 16 C#IM_BDSTONEH_16
-== bdimoen IF ~IsValidForPartyDialogue("%IMOEN_DV_SOD%")~ THEN @129 /* ~<CHARNAME> didn't *do* this <PRO_HIMHER>self, isn't that obvious? Which, now that I think about it, probably doesn't make this any better with regard to the troops' morale...~ */
+== bdimoen IF ~InParty("%IMOEN_DV_SOD%") See("%IMOEN_DV_SOD%") !StateCheck("%IMOEN_DV_SOD%",CD_STATE_NOTVALID)~ THEN @129 /* ~<CHARNAME> didn't *do* this <PRO_HIMHER>self, isn't that obvious? Which, now that I think about it, probably doesn't make this any better with regard to the troops' morale...~ */
 END
 
 /* bdnederl and Skie */
 I_C_T bdnederl 39 C#IM_bdnederl_shovel
-== bdimoen IF ~IsValidForPartyDialogue("%IMOEN_DV_SOD%")~ THEN @130 /* ~Oh, there is still a lot of mischief one can do with a shovel, sand, and a bag... What? Never fought for a bigger sand shovel when you were young?~ */
+== bdimoen IF ~InParty("%IMOEN_DV_SOD%") See("%IMOEN_DV_SOD%") !StateCheck("%IMOEN_DV_SOD%",CD_STATE_NOTVALID)~ THEN @130 /* ~Oh, there is still a lot of mischief one can do with a shovel, sand, and a bag... What? Never fought for a bigger sand shovel when you were young?~ */
 END
 /* bdnederl and Skie */
 I_C_T bdnederl 40 C#IM_bdnederl_shovel
-== bdimoen IF ~IsValidForPartyDialogue("%IMOEN_DV_SOD%")~ THEN @130 /* ~Oh, there is still a lot of mischief one can do with a shovel, sand, and a bag... What? Never fought for a bigger sand shovel when you were young?~ */
+== bdimoen IF ~InParty("%IMOEN_DV_SOD%") See("%IMOEN_DV_SOD%") !StateCheck("%IMOEN_DV_SOD%",CD_STATE_NOTVALID)~ THEN @130 /* ~Oh, there is still a lot of mischief one can do with a shovel, sand, and a bag... What? Never fought for a bigger sand shovel when you were young?~ */
 END
 
 /* Torsin de Lancie, HC denied to poison the crusader provisions */
 I_C_T BDDELANC 25 C#IM_BDDELANC_25
-== bdimoen IF ~IsValidForPartyDialogue("%IMOEN_DV_SOD%")~ THEN @128 /* ~Woah. Like to exaggerate much?~ */
-END
-
-/* portal is open, talk to Torsin de Lancie through the closed door */
-I_C_T BDDELANC 75 C#IM_BDDELANC_75
-== bdimoen IF ~IsValidForPartyDialogue("%IMOEN_DV_SOD%")~ THEN @126 /* ~Oh, wow. Lucky you I guess, being outside of that door!~ */
-END
-
-/* after return from Avernus, Torsin de Lancie */
-I_C_T BDDELANC 79 C#IM_BDDELANC_79
-== bdimoen IF ~IsValidForPartyDialogue("%IMOEN_DV_SOD%")~ THEN @127 /* ~You can bet your ass we'll celebrate, right, <CHARNAME>? And don't you ever forget who freed you from this threat! It was <CHARNAME> and <PRO_HISHER> gang!~ */
+== bdimoen IF ~InParty("%IMOEN_DV_SOD%") See("%IMOEN_DV_SOD%") !StateCheck("%IMOEN_DV_SOD%",CD_STATE_NOTVALID)~ THEN @128 /* ~Woah. Like to exaggerate much?~ */
 END
 
 /* Meeting with Caelar at Dead Men's Pass */
 I_C_T BDCAELAR 38 C#IM_BDCAELAR_38
-== bdimoen IF ~IsValidForPartyDialogue("%IMOEN_DV_SOD%")~ THEN @131 /* ~Unharmed! Suuure, that makes so much sense after sending assassins earlier.~ */
+== bdimoen IF ~InParty("%IMOEN_DV_SOD%") See("%IMOEN_DV_SOD%") !StateCheck("%IMOEN_DV_SOD%",CD_STATE_NOTVALID)~ THEN @131 /* ~Unharmed! Suuure, that makes so much sense after sending assassins earlier.~ */
+END
+
+/* curse in Bridgefort */
+/* BDBF2 
+IF ~~ THEN BEGIN 2 // from:
+  SAY #43443 /* ~That's all well and good, but what are we going to do about it?~ */
+*/
+EXTEND_BOTTOM BDBF2 2
++ ~Class("%IMOEN_DV%",MAGE_ALL) IsValidForPartyDialogue("%IMOEN_DV%")~ + ~Imoen, can you see anything in that stone?~ EXTERN bdimoen enchanted_stone
+END
+
+APPEND bdimoen
+IF ~~ THEN enchanted_stone
+SAY ~The stone is enchanted and makes everyone sick, but - but I don't think I can do anything about it... sorry? If we had the original curse we could do something. I think.~
+COPY_TRANS BDBF2 2
+END
+END //APPEND
+
+
+/* Ophyllis in last camp */
+/* The sword is yours... M-may the gods smile upon you, O hero of Baldur's Gate... Uhhh...
+(StrRef: 57554) */
+I_C_T BDOPHYLL 40 C#IM_BDOPHYLL_40
+== bdimoen IF ~InParty("%IMOEN_DV_SOD%") See("%IMOEN_DV_SOD%") !StateCheck("%IMOEN_DV_SOD%",CD_STATE_NOTVALID)~ THEN @134
+== BDOPHYLL IF ~InParty("%IMOEN_DV_SOD%") See("%IMOEN_DV_SOD%") !StateCheck("%IMOEN_DV_SOD%",CD_STATE_NOTVALID)~ THEN #%6377%
+END
+
+/* catapult at castle */
+I_C_T BDHELDMO 5 C#IM_BDHELDMO_5
+== bdimoen IF ~InParty("%IMOEN_DV_SOD%") See("%IMOEN_DV_SOD%") !StateCheck("%IMOEN_DV_SOD%",CD_STATE_NOTVALID)~ THEN @125 /* ~I feel sorry for him. But... what a blast! (giggles)~ */
+END
+
+/* portal is open, talk to Torsin de Lancie through the closed door */
+I_C_T BDDELANC 75 C#IM_BDDELANC_75
+== bdimoen IF ~InParty("%IMOEN_DV_SOD%") InMyArea("%IMOEN_DV_SOD%") !StateCheck("%IMOEN_DV_SOD%",CD_STATE_NOTVALID)~ THEN @126 /* ~Oh, wow. Lucky you I guess, being outside of that door!~ */
+END
+
+/* after return from Avernus, Torsin de Lancie */
+I_C_T BDDELANC 79 C#IM_BDDELANC_79
+== bdimoen IF ~InParty("%IMOEN_DV_SOD%") InMyArea("%IMOEN_DV_SOD%") !StateCheck("%IMOEN_DV_SOD%",CD_STATE_NOTVALID)~ THEN @127 /* ~You can bet your ass we'll celebrate, right, <CHARNAME>? And don't you ever forget who freed you from this threat! It was <CHARNAME> and <PRO_HISHER> gang!~ */
 END
 
 /* reaction to item: */
@@ -293,94 +309,13 @@ SAY @123 /* ~Uh. Die Bemerkung *wäre* witzig, wenn du ihm nicht meine Seele vers
 IF ~~ THEN + thrix_soul_02
 END
 
-
-
-/* all those desparate people (with empty pockets) (Imoen THIEF_ALL)*/
-
-IF WEIGHT #-1
-~Global("C#IM_DialogueSoD","GLOBAL",2)~ THEN no_fun
-SAY @85 /* ~I don't know, this is no fun any more.~ */
-++ @86 /* ~Being chased by assassins? Yes, I agree.~ */ + no_fun_01
-++ @87 /* ~Having to save the world again? You are right there.~ */ + no_fun_01
-++ @88 /* ~I think what we do here is of great importance, Imoen.~ */ + no_fun_02
-++ @89 /* ~What exactly are we talking about?~ */ + no_fun_02
-END
-
-IF ~~ THEN no_fun_01
-SAY @90 /* ~No! I mean - yes, that, too. But that's not what I meant.~ */
-IF ~~ THEN + no_fun_02
-END
-
-IF ~~ THEN no_fun_02
-SAY @91 /* ~I am referring to ... disburden people from, er, things they might not be missing.~ */
-++ @92 /* ~You are stealing from the refugees? Do you have no shame?~ */ + no_fun_03
-++ @93 /* ~Please, do not steal from our allies. It might lead to misunderstandings.~ */ DO ~SetGlobal("C#IM_nofun_05","LOCALS",1)~ + no_fun_05
-++ @94 /* ~What? Do you renounce your thieving ways? That's something new. That Duke Jannath washed your head alright, hm?~ */ + no_fun_08
-++ @95 /* ~This is no longer fun for you? You indeed seem to be ill, my friend.~ */ + no_fun_12
-END
-
-IF ~~ THEN no_fun_03
-SAY @97 /* ~But that's exactly what I was referring to!~ */
-IF ~~ THEN + no_fun_09
-END
-
-IF ~~ THEN no_fun_04
-SAY @98 /* ~Of c... I mean, a girl has to stay in practive, right?~ */
-+ ~Global("C#IM_nofun_05","LOCALS",1)~ + @99 /* ~Do not enrich yourself from our allies, Imoen. It might lead to misunderstandings.~ */ + no_fun_06
-+ ~!Global("C#IM_nofun_05","LOCALS",1)~ + @99 /* ~Do not enrich yourself from our allies, Imoen. It might lead to misunderstandings.~ */ + no_fun_07
-++ @100 /* ~Honestly - I don't realy care about your problems in this case.~ */ + no_fun_10
-END
-
-IF ~~ THEN no_fun_05
-SAY @101 /* ~<CHARNAME>! Do you think I'm stupid? I'll never steal inside the camps. I mean - without getting caught, that is. Don't look at me like that! You can relax. Noone will miss anything important, I swear.~ */
-IF ~~ THEN + no_fun_11
-END
-
-IF ~~ THEN no_fun_06
-SAY @102 /* ~But I have to do *something*, or I'll be out of training soon enough. Oh! Oh! I have a fabulous idea. I'll just sneak everything I'll find in the camp into some poor refugee's pocket. Hey, don't look at me like that. You said I shouldn't enrich myself in the camp and I won't. That's good deeds I'll be doing - *and* staying skilled! Now off we go, saving the world again!~ */
-IF ~~ THEN DO ~SetGlobal("C#IM_DialogueSoD","GLOBAL",3)~ EXIT
-END
-
-IF ~~ THEN no_fun_07
-SAY @101 /* ~<CHARNAME>! Do you think I'm stupid? I'll never steal inside the camps. I mean - with getting caught, that is. Don't look at me like that! You can relax. Noone will miss anything important, I swear.~ */
-IF ~~ THEN + no_fun_06
-END
-
-IF ~~ THEN no_fun_08
-SAY @104 /* ~What? Noooo. I'd never do *that*! Although Duke Jannath was quite scary, indeed...~ */
-IF ~~ THEN + no_fun_11
-END
-
-IF ~~ THEN no_fun_09
-SAY @105 /* ~Their pockets are just empty, there is nothing to be found. And some are also greasy, yuck.~ */
-++ @106 /* ~So you *tried* stealing from the refugies!~ */ + no_fun_04
-+ ~Global("C#IM_nofun_05","LOCALS",1)~ + @99 /* ~Do not enrich yourself from our allies, Imoen. It might lead to misunderstandings.~ */ + no_fun_06
-+ ~!Global("C#IM_nofun_05","LOCALS",1)~ + @99 /* ~Do not enrich yourself from our allies, Imoen. It might lead to misunderstandings.~ */ + no_fun_07
-++ @111 /* ~Of course! You have to go for our pompeous "friends" in the camp if you want to have good results.~ */ + no_fun_13
-++ @107 /* ~Imoen! We are about to face a murderous crusade and that's what you are thinking about?~ */ + no_fun_10
-++ @100 /* ~Honestly - I don't realy care about your problems in this case.~ */ + no_fun_10
-END
-
-IF ~~ THEN no_fun_10
-SAY @108 /* ~Aw, you are no fun. Maybe I should start sneaking stones into your backpack. It would at least keep me skilled!~ */
-IF ~~ THEN DO ~SetGlobal("C#IM_DialogueSoD","GLOBAL",3)~ EXIT
-END
-
-IF ~~ THEN no_fun_11
-SAY @109 /* ~I was referring to the refugees.~ */
-IF ~~ THEN + no_fun_09
-END
-
-IF ~~ THEN no_fun_12
-SAY @110 /* ~What? Noooo. No no.~ */
-IF ~~ THEN + no_fun_11
-END
-
-IF ~~ THEN no_fun_13
-SAY @112 /* ~Wow. I didn't even really think about that. I guess Liia *did* mess with my head, huh. Hmm, but that doesn't change the empty pockets of the refugees. So sad, reaching into an empty pocket...~ */
-= @113 /* ~Oh! Oh! I have a fabulous idea. I'll just sneak everything I'll find in the camp into some poor refugee's pocket. Hey, don't look at me like that. You said I should steal from the camp and that's what I'll be doing. *And* it's good deeds I'll be doing - while staying skilled! Now off we go, saving the world again!~ */
-IF ~~ THEN DO ~SetGlobal("C#IM_DialogueSoD","GLOBAL",3)~ EXIT
-END
-
-
 END //APPEND
+
+/* Safana's quest */
+I_C_T bdsafana 82 C#IM_bdsafana_qint
+== bdimoen IF ~InParty("%IMOEN_DV_SOD%") See("%IMOEN_DV_SOD%") !StateCheck("%IMOEN_DV_SOD%",CD_STATE_NOTVALID)~ THEN @500 /* ~Oh, you too? It's really weird to see some of the things people carry with them, isn't it? But wait, the things you listed - oh dear.~ */
+END
+
+I_C_T BDSAFANJ 221 C#IM_bdsafana_qint
+== bdimoen IF ~InParty("%IMOEN_DV_SOD%") See("%IMOEN_DV_SOD%") !StateCheck("%IMOEN_DV_SOD%",CD_STATE_NOTVALID)~ THEN @500 /* ~Oh, you too? It's really weird to see some of the things people carry with them, isn't it? But wait, the things you listed - oh dear.~ */
+END

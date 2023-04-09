@@ -1,60 +1,15 @@
-/* set dialogue timer after joining in bd1000 */
+/* set dialogue timers after joining in bd1000 */
 IF
 	InParty(Myself)
+	CombatCounter(0)
+	!See([ENEMY])
 	GlobalGT("C#IM_ImoenRejoinsbd1000","GLOBAL",0)
-	Global("C#IM_DialogueTimerSoDSet","GLOBAL",0)
+	Global("C#IM_DialogueTimerSoDSet","LOCALS",0)
 THEN  
 	RESPONSE #100
-		RealSetGlobalTimer("C#IM_DialogueTimerSoD","GLOBAL",2400)
+		RealSetGlobalTimer("C#IM_DialogueTimer","GLOBAL",%Dialog_Timer_SoD%)
 		SetGlobal("C#IM_DialogueSoD","GLOBAL",1)
-		SetGlobal("C#IM_DialogueTimerSoDSet","GLOBAL",1)
-END
-
-
-/* refugees have empty pockets */
-/* skip if Imoen is not a thief */
-IF 
-    RealGlobalTimerExpired("C#IM_DialogueTimerSoD","GLOBAL")
-    Global("C#IM_DialogueSoD","GLOBAL",1)
-    !Class(Myself,THIEF_ALL)
-    InParty(Myself)
-    !Detect([ENEMY])
-    !Detect([EVILBUTBLUE])
-    CombatCounter(0)
-THEN
-	RESPONSE #100
-		SetGlobal("C#IM_DialogueSoD","GLOBAL",3)
-END
-
-/* activate */
-IF 
-    RealGlobalTimerExpired("C#IM_DialogueTimerSoD","GLOBAL")
-    Global("C#IM_DialogueSoD","GLOBAL",1)
-    Class(Myself,THIEF_ALL)
-    InParty(Myself)
-    !StateCheck(Player1,CD_STATE_NOTVALID)
-    !StateCheck(Myself,CD_STATE_NOTVALID)
-    See(Player1)
-    !Detect([ENEMY])
-    !Detect([EVILBUTBLUE])
-    CombatCounter(0)
-THEN
-	RESPONSE #100
-		SetGlobal("C#IM_DialogueSoD","GLOBAL",2)
-END
-
-/* initiate */
-IF 
-  Global("C#IM_DialogueSoD","GLOBAL",2) 
-  !StateCheck(Player1,CD_STATE_NOTVALID)
-  !StateCheck(Myself,CD_STATE_NOTVALID)
-    See(Player1)
-    !Detect([ENEMY])
-    !Detect([EVILBUTBLUE])
-    CombatCounter(0)
-THEN
-	RESPONSE #100
-		StartDialogueNoSet(Player1)
+		SetGlobal("C#IM_DialogueTimerSoDSet","LOCALS",1)
 END
 
 
@@ -198,6 +153,7 @@ END
 
 IF
 	IsValidForPartyDialogue(Myself)
+	RealGlobalTimerExpired("C#IM_DialogueTimer","GLOBAL")
 	See(Player1)
 	CombatCounter(0)
 	!See([ENEMY])
@@ -225,6 +181,7 @@ IF
 	Global("C#Imoen_SoDThrixSoul","GLOBAL",1)	
 THEN
 	RESPONSE #100
+		RealSetGlobalTimer("C#IM_DialogueTimer","GLOBAL",%Dialog_Timer_SoD%)
 		StartDialogNoSet(Player1)
 END
 
@@ -255,8 +212,86 @@ IF
 	Global("C#Imoen_SoDbdamul02","GLOBAL",1)	
 THEN
 	RESPONSE #100
+		RealSetGlobalTimer("C#IM_DialogueTimer","GLOBAL",%Dialog_Timer_SoD%)
 		StartDialogNoSet(Player1)
 END
+
+/* timered talks */
+/* after meeting Caelar at the bridge */
+
+/* activate */
+IF
+    InParty(Myself)
+    RealGlobalTimerExpired("C#IM_DialogueTimer","GLOBAL")
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+    !StateCheck(Player1,CD_STATE_NOTVALID)
+    !StateCheck(Myself,CD_STATE_NOTVALID)
+    See(Player1)
+    !Detect([ENEMY])
+    !Detect([EVILBUTBLUE])
+    CombatCounter(0)
+	GlobalGT("bd_plot","global",169)
+	!See("bdcaelar")
+	Global("C#IM_SoDCaelarBridge","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#IM_SoDCaelarBridge","GLOBAL",1)
+END
+
+/* initiate */
+IF 
+  Global("C#IM_SoDCaelarBridge","GLOBAL",1)
+  !StateCheck(Player1,CD_STATE_NOTVALID)
+  !StateCheck(Myself,CD_STATE_NOTVALID)
+    See(Player1)
+    !Detect([ENEMY])
+    !Detect([EVILBUTBLUE])
+    CombatCounter(0)
+THEN
+	RESPONSE #100
+		RealSetGlobalTimer("C#IM_DialogueTimer","GLOBAL",%Dialog_Timer_SoD%)
+		StartDialogueNoSet(Player1)
+END
+
+/* Friendship dialogues */
+/* activate */
+IF 
+    RealGlobalTimerExpired("C#IM_DialogueTimer","GLOBAL")
+    InParty(Myself)
+    !StateCheck(Player1,CD_STATE_NOTVALID)
+    !StateCheck(Myself,CD_STATE_NOTVALID)
+    See(Player1)
+    !Detect([ENEMY])
+    !Detect([EVILBUTBLUE])
+    CombatCounter(0)
+    OR(2)
+	Global("C#IM_DialogueSoD","GLOBAL",1)
+	Global("C#IM_DialogueSoD","GLOBAL",3)
+THEN
+	RESPONSE #100
+		IncrementGlobal("C#IM_DialogueSoD","GLOBAL",1)
+END
+
+/* initiate */
+IF 
+    InParty(Myself)
+    !StateCheck(Player1,CD_STATE_NOTVALID)
+    !StateCheck(Myself,CD_STATE_NOTVALID)
+    See(Player1)
+    !Detect([ENEMY])
+    !Detect([EVILBUTBLUE])
+    CombatCounter(0)
+    OR(2)
+	Global("C#IM_DialogueSoD","GLOBAL",2)
+	Global("C#IM_DialogueSoD","GLOBAL",4)
+THEN
+	RESPONSE #100
+		RealSetGlobalTimer("C#IM_DialogueTimer","GLOBAL",%Dialog_Timer_SoD%)
+		StartDialogueNoSet(Player1)
+END
+
+
+
 
 /* adjust XP after joining once */
 IF

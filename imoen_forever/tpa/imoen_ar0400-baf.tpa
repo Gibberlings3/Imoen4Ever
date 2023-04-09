@@ -2,7 +2,9 @@ ACTION_IF GAME_IS ~bg2 tob bg2ee~ AND NOT GAME_IS ~bgt~ THEN BEGIN
 
 <<<<<<<< ...inlined/imoen_ar0400.baf
 IF
-	GlobalGT("BrusShow2","GLOBAL",0) 
+	OR(2)
+		GlobalGT("BrusShow2","GLOBAL",0) 
+		Global("Chapter","GLOBAL",%bg2_chapter_3%)
 	!Exists("BRUS")
 	!InMyArea("imoen2")
 	InMyArea(Player1)
@@ -41,7 +43,9 @@ ACTION_IF GAME_IS ~eet~ THEN BEGIN
 
 <<<<<<<< ...inlined/imoen_ar0400.baf
 IF
-	GlobalGT("BrusShow2","GLOBAL",0) 
+	OR(2)
+		GlobalGT("BrusShow2","GLOBAL",0) 
+		Global("Chapter","GLOBAL",%bg2_chapter_3%)
 	!Exists("BRUS")
 	!InMyArea("imoen2")
 	InMyArea(Player1)
@@ -81,7 +85,9 @@ ACTION_IF GAME_IS ~bgt~ THEN BEGIN
 <<<<<<<< ...inlined/imoen_ar0400.baf
 IF
 	Global("ImoenPartyBG1","GLOBAL",1)
-	GlobalGT("BrusShow2","GLOBAL",0) 
+	OR(2)
+		GlobalGT("BrusShow2","GLOBAL",0) 
+		Global("Chapter","GLOBAL",%bg2_chapter_3%)
 	!Exists("BRUS")
 	!InMyArea("imoen2")
 	InMyArea(Player1)
@@ -115,7 +121,9 @@ END
 
 IF
 	Global("ImoenPartyBG1","GLOBAL",0)
-	GlobalGT("BrusShow2","GLOBAL",0) 
+	OR(2)
+		GlobalGT("BrusShow2","GLOBAL",0) 
+		Global("Chapter","GLOBAL",%bg2_chapter_3%)
 	!Exists("BRUS")
 	!InMyArea("imoen2")
 	InMyArea(Player1)
