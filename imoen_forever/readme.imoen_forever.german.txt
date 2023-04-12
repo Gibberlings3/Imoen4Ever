@@ -26,6 +26,8 @@ Die Komponenten 1-5 sind für BGII. Die erste muss installiert sein, damit die op
 Die Komponenten 6-13 sind for SoD. Hier müssen entweder die Komponente 6 oder die Komponente 7 installiert sein, damit die optionalen Komponenten 8-13 installiert werden können (Details der Abhängigkeiten s. Komponentenbeschreibungen).
 Komponente 14 ist unabhängig installierbar und fügt ein alternatives Portrait für Imoen ins gesamte vorliegende Spiel ein.
 
+Bitte beachten: damit Imoen in SoD entsprechend auf die Spielereignisse reagiert, muss die Hauptkomponente (2. Komponente, das "Trackingsystem") der Mod "Road to Discovery" installiert sein.
+
 
 -----------------------------------
 Komponenten für BGII:
@@ -122,6 +124,8 @@ Diese Komponente fügt die Cutscene stattdessen so ein, dass der Spieler Imoen be
 -----------------------------------
 Mit dieser Komonente erhält Imoen Reaktionen und Dialoge in SoD für die Zeit nach ihrer Rückkehr im erten Camp.
 Die Komponente ist noch nicht fertig. Imoen reagiert auf die meisten Spielevents wie es die SoD-NPCs ebenfalls tun ("Floating Text") und hat ein paar Dialoge abhängig vom Spielgeschehen, aber noch keine Banter mit anderen NPCs.
+
+Bitte beachten: damit Imoen in SoD entsprechend auf die Spielereignisse reagiert, muss die Hauptkomponente (2. Komponente, das "Trackingsystem") der Mod "Road to Discovery" installiert sein.
 
 
 11. I4E für SoD: Imoen am Ende des Spiels soll dieselbe wie vorher sein (nur für SoD)
@@ -308,6 +312,13 @@ Kerzenburgforum				https://baldurs-gate.de/index.php
 The Gibberlings Three		        https://www.gibberlings3.net/
 Pocket Plane Group			https://www.pocketplane.net/
 Spellhold Studios			http://www.shsforums.net/
+
+Further Links:
+Road to Discovery:
+https://www.gibberlings3.net/mods/other/road_to_discovery/
+
+DLC Merger: 				https://forums.beamdog.com/discussion/71305/mod-dlc-merger-merge-steam-gog-sod-dlc-or-custom-dlcs-with-the-main-game
+
 
 
 LEGAL INFORMATION

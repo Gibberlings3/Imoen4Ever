@@ -25,6 +25,8 @@ The mod has 14 components. The first 5 are for BGII; for these, the 1st componen
 The last components (numbers 6 to 13) are for SoD; for these, components 6 *or* 7 are required to install any of the other, optional components (for details refer to components' descriptions).
 Component 14 offers an alternate portrait for Imoen by Acifer. It is optional and independent on any other I4E component.
 
+Please note: For Imoen to react to game events in SoD accordingly, the main component (Tracking System, 2nd component) of "Road to Discovery" needs to be installed.
+
 
 Components for BGII content:
 
@@ -113,6 +115,7 @@ This component makes this a cutscene for the player when the PC is marching out 
 
 This component requires component 7 "Imoen Returns to PC in First Coalition Camp" to be installed.
 
+
 10 I4E in SoD: Give Imoen Dialogue Content in SoD Chapters 8-12
 -----------------------------------
 This component gives Imoen more reactions to game events, dialogues, and interjections, in addition to the basic ones that are included in component 7. I made this an optional component so players have the choice in case they do not agree to my characterization of Imoen.
@@ -120,6 +123,8 @@ This component gives Imoen more reactions to game events, dialogues, and interje
 There is also a small quest that plays out in the main coalition camp. Imoen needs to be a thief for the quest to trigger.
 
 This component requires component 7 "Imoen Returns to PC in First Coalition Camp" to be installed.
+
+Please note: For Imoen to react to game events in SoD accordingly, the main component (Tracking System, 2nd component) of "Road to Discovery" needs to be installed.
 
 
 11 I4E in SoD: Imoen at the End of the Game Should be the One that Was in Party (SoD Only)
@@ -320,6 +325,13 @@ Kerzenburgforum				https://baldurs-gate.de/index.php
 The Gibberlings Three		        https://www.gibberlings3.net/
 Pocket Plane Group			https://www.pocketplane.net/
 Spellhold Studios			http://www.shsforums.net/
+
+Further Links:
+Road to Discovery:
+https://www.gibberlings3.net/mods/other/road_to_discovery/
+
+DLC Merger: 				https://forums.beamdog.com/discussion/71305/mod-dlc-merger-merge-steam-gog-sod-dlc-or-custom-dlcs-with-the-main-game
+
 
 
 LEGAL INFORMATION
