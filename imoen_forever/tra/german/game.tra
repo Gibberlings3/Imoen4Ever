@@ -1,128 +1,125 @@
-@1000  = ~Imoen ist weg!
+@1000 = ~Imoen ist weg!
 
-Kaum hatten wir Brynnlaw erreicht, wurde Imoen von einer vermummten Gestalt entführt, die sehr nach einem Verhüllten Magier aussah! Wenn da irgendwie Irenicus dahintersteckt, dann möchte ich mir gar nicht ausdenken, was für Grausamkeiten er für Imoen vorbereitet hat. Aber steckt er wirklich dahinter? Ich bleibe zuürck, hilflos und mit leeren Händen. Alles, was ich tun kann, ist so schnell wie möglich einen Weg in die Feste zu finden und zu sehen, was mich dort erwartet...~
+Kaum hatten wir Brynnlaw erreicht, wurde Imoen von einer vermummten Gestalt entführt, die sehr nach einem Verhüllten Magier aussah! Wenn da irgendwie Irenicus dahintersteckt, dann möchte ich mir gar nicht ausdenken, was für Grausamkeiten er für Imoen vorbereitet hat. Aber steckt er wirklich dahinter? Ich bleibe zurück, hilflos und mit leeren Händen. Alles, was ich tun kann, ist, so schnell wie möglich einen Weg in die Feste zu finden und zu sehen, was mich dort erwartet …~
+@1001 = ~Ich … ich kann gehen? Öhm, ich habe aber kein Gold … Aber dafür diesen Gürtel. Der ist doch sicher viiiiiel wert, oder?~
+@1002 = ~Würdet Ihr den stattdessen nehmen? (Und ich kriege das Ding endlich los …)~
+@1003 = ~Dieser Gürtel ist in der Tat eine angemessene Bezahlung. Wir werden ihn Euch abnehmen.~
+@1004 = ~Oh! Der ist, äh, wirklich wertvoll? (hust)~
+@1005 = ~Narren! Ihr habt nicht die geringste Ahnung, worum es hier geht. Aber gut, lasst sie gehen, es macht keinen Unterschied. Ich werde zu beiden zurückkehren, wenn ich soweit bin.~
+@1006 = ~Aber nicht ohne sicherzugehen, dass Ihr dazu überhaupt in der Lage bist, Kleine – auch ohne den Gürtel, den ich Euch gegeben hatte.~
+@1007 = ~Er wendet Magie an, hier, in diesen Hallen und vor uns allen! Bringt ihn endlich weg von hier!~
+@1008 = ~Das Mädchen könnte gehen, wenn sie die Strafe zahlt.~
+@1009 = ~Wer seid Ihr und was wollt Ihr von mir?~
+@1010 = ~Still! Ihr seid nichts als ein Ersatz, aber Ihr werdet ausreichen – vorerst.~
+@1011 = ~Heiminsassin~
+@1012 = ~Wo … wo bin ich? Wie bin ich hierhergekommen?~
+@1013 = ~Das Gold war doch gar nicht wichtig, Edwin. Wir müssen <CHARNAME> dabei helfen, diesen merkwürdigen Irenicus zu finden.~
+@1014 = ~<CHARNAME>, ich muss Euch wohl nicht sagen, wie sehr mir das alles missfällt. All dies hier ängstigt mich. Sobald wir diesen Irenicus gefunden haben, dürfen wir nie wieder mit diesen Leuten gemeinsame Sache machen.~
+@1015 = ~Unser Gastgeber mag eine dunkle Vergangenheit haben, aber diese Aufgabe nutzt uns beiden. Wir werden uns Zugang zu Irenicus verschaffen und das Gleichgewicht hier bewahren. Eine Eigenart der Straße, die zu schützen ist.~
+@1016 = ~So sehr ich es auch liebe loszuschwafeln, wenn sich nur die geringste Gelegenheit dafür ergibt, denke ich, dass es im Augenblick klüger wäre, diesen Irenicus so rasch wie möglich zu finden. Es ist genauso, wie mein Onkel Gummo immer gesagt hat: „Bla, bla, bla“, würde er sagen. Und wir würden immer zu ihm sagen: „Onkel Gummo, wir müssen aber etwas Dringendes erledigen“, und er würde immer sofort kontern mit: „Aber ich habe da nur noch eine Geschichte. Nur noch eine, bla, bla, bla.“~
+@1017 = ~Meine Aufgabe darf nicht unerledigt bleiben. Bitte, Keldorn, dient, bis wir Irenicus erledigt haben.~
+@1018 = ~Und wozu würde das führen? Tod im großen Stil, und das Erreichen unserer Ziele würde noch schwerer werden. Das Leben und Wohlergehen der Bedürftigen müssen an erster Stelle stehen.~
+@1019 = ~Genau genommen, Keldorn … ich habe nachgedacht … Die Suche nach Irenicus ist die meine, und ich habe kein Recht, sie einem guten Freund gegen dessen Willen aufzudrängen … Ihr solltet hier bei Eurer Familie sein.~
+@1020 = ~Ich … ich habe mich wieder wie ein Ehemann gefühlt, wie ein Vater. Es war schön, <CHARNAME>, sehr schön. Jetzt lasst uns diesen Irenicus stoppen, auf dass ich schneller hierher zurückkehren kann.~
+@1021 = ~Nun gut. Also umsonst. Sofern wir einen Teil des Schatzes bekommen.~
+@1022 = ~Falls Ihr das Geld verschleudert habt, das wir zum Finden von Irenicus benötigen, habt Ihr eine Fahrkarte zum Friedhof gekauft! Minsk und Boo werden sich darum kümmern!~
+@1023 = ~Ich habe mich gefragt, ob … Ihr mir etwas über diesen Magier Irenicus sagen könntet? Oder über die Verhüllten Magier?~
+@1024 = ~Ich kann Euch bezüglich dieser Abmachung nichts Zusätzliches versprechen, ich kann nur bestätigen, dass wir … in der Tat fähig sind herauszufinden, wo dieser Irenicus steckt.~
+@1025 = ~Ich habe eine große Summe Gold bezahlt. Jetzt sagt mir, wie ich Irenicus finden kann.~
+@1026 = ~Hört sich gut an, aber ich muss Irenicus finden. Was für einen Handel schlagt Ihr vor?~
+@1027 = ~Ich werde nichts dergleichen tun! Ich verlange von Euch, dass Ihr mir sagt, wo Irenicus ist! Ich habe bezahlt!~
+@1028 = ~Euch sind meine Leute vielleicht egal, <CHARNAME>, aber mir nicht. Sie verdienen Schutz und – um genau zu sein – wenn sie ihn nicht bekommen, werdet Ihr unsere Hilfe nicht erhalten.~
+@1029 = ~Wenn Ihr das Böse in ihnen vernichtet habt, kommt hierher zurück und ich werde meinen Teil der Verabredung einhalten. Wenn Ihr diese Arbeit gut macht, könnt Ihr am Morgen bei denen sein, die Ihr sucht. Was sagt Ihr?~
+@1030 = ~Er muss gefunden werden, und das wird dadurch am meisten erleichtert, dass man Euch hilft, ihn zu finden – offensichtlich.~
+@1031 = ~Sobald Ihr auf der Insel ankommt, seid Ihr auf Euch allein gestellt. Ihr müsst Euch gegen die Verteidungsanlagen des Heimes behaupten, und gegen die Piraten kämpfen, die den Ort fest im Griff haben. Bekämpft die Piraten, wenn Ihr wollt. Tötet Irenicus, wenn Ihr könnt.~
+@1032 = ~Nun, ich weiß, dass Ihr begierig darauf seid, hinter Irenicus herzueilen. Ich versichere Euch, dass Eure Zeit bald kommen wird. Doch es dauert eine Weile, das Geld zu verteilen.~
+@1033 = ~Und sie sind es, die die Verfolgung Irenicus’ verhindern. Vertraut mir, <CHARNAME>, Ihr werdet es nicht bereuen.~
+@1034 = ~Wir dachten, Ihr könntet uns zu ihm führen, und das könnt Ihr auch. Ihr sucht Irenicus und wir suchen Antworten. Beides ist am gleichen Ort zu finden.~
+@1035 = ~Ich biete Euch eine Alternative an. Ich würde für … hm … 15.000 Goldmünzen helfen, Irenicus zu finden. Das ist eine ganze Menge weniger, als die Schattendiebe verlangt haben, und es ist zufälligerweise genau so viel, wie Ihr gerade bei Euch habt.~
+@1036 = ~Und Ihr werdet mir für 15.000 helfen, Irenicus zu finden? Ich frage mich immer noch, warum Ihr das tun solltet.~
+@1037 = ~Wann werdet Ihr mir helfen, Irenicus zu finden? Ich habe Euch bereits bezahlt!~
+@1038 = ~Ich habe viel für Euch getan. Wann helft Ihr mir bei Irenicus?~
+@1039 = ~Ich habe alles getan, was Ihr wolltet. Wann werdet Ihr mir helfen, Irenicus zu finden?~
+@1040 = ~Ich habe versucht zu tun, um was Ihr mich gebeten hattet. Wann werdet Ihr mir dabei helfen, Irenicus zu finden?~
+@1041 = ~Ihr würdet doch nicht den Weg nehmen wollen, der von den Schattendieben umkämpft wird, oder? Die Aufgabe, die ansteht, garantiert sicheres Geleit für Euch und alle, die Euch begleiten. Lasst sie uns in Angriff nehmen.~
+@1042 = ~Ihr sucht Irenicus, der Euch Macht geben würde. Ich bin bereit, Euch seinen Aufenthaltsort zu nennen und Euch die Mittel zur Verfügung zu stellen, ihn zu erreichen.~
+@1043 = ~Natürlich saht Ihr den Ausgang dieses Kampfes, bei dem Eure Imoen kurzzeitig fortgezaubert wurde. Ihr sucht Irenicus und ich ebenso. Wir könnten beide von seiner Rückkehr profitieren.~
+@1044 = ~Ich werde tun, was ich tun muss, aber ich gebe keine Versprechungen ab, was die Sicherheit von diesem Irenicus betrifft.~
+@1045 = ~Ich verlange viel, das ist wahr, aber davon werden wir beide profitieren. Ihr gebt ihn mir und ich gebe Euch das, was er über Euch herausgefunden hat. Denkt an Euer Potenzial. Denkt an das, was Euch wichtig ist.~
+@1046 = ~Vielleicht tut er das und vielleicht wird er es bekommen. Was passiert, hängt völlig von Eurer Bereitschaft zu helfen ab. Tut es für Euch selbst. Tut es für Eure Macht!~
+@1047 = ~Sie werden nicht in Mitleidenschaft gezogen werden. Ihr werdet keine Schwierigkeiten haben, zu Irenicus zu gelangen, da er sich an einem furchtbaren Ort befindet – einem Ort, der geschaffen wurde, um jene gefangen zu halten, die über einen starken Willen verfügen.~
+@1048 = ~Kehrt schnell zu mir zurück. Je länger Ihr wartet, desto mehr wird Irenicus sich entfernt haben. In der Zauberfeste wird man nicht mit Samthandschuhen angefasst, auch nicht ein solch mächtiger Zauberer wie er.~
+@1049 = ~Erst will ich wissen, wo Irenicus ist.~
+@1050 = ~Ich bin schon ein wenig misstrauisch, wenn es darum geht, für die Leute zu arbeiten, die Imoen ohne guten Grund mitgenommen hatten. Sagt mir erst, wo Irenicus ist.~
+@1051 = ~Irenicus? Ah … der Magier, der von den Zauberern festgenommen wurde. So unwichtige Informationen trage ich nicht bei mir, also vergesst solche Forderungen.~
+@1052 = ~Das werde ich nicht tun. Entweder Ihr sagt mir, wo Irenicus ist, oder ich werde Euch meine Unterstützung verweigern.~
+@1053 = ~Vielleicht würde ich leichter zustimmen können, wenn Ihr mir sagen würdet, wo Irenicus’ Aufenthaltsort ist.~
+@1054 = ~Ihr sagtet, Ihr könntet versuchen, Irenicus’ Aufenthaltsort herauszufinden, wenn ich täte, was Ihr verlangt. Und das habe ich.~
+@1055 = ~Ich habe getan, was Ihr von mir verlangt habt, und habe mich Euch bewiesen … Jetzt will ich wissen, was Ihr mit Irenicus gemacht habt.~
+@1056 = ~Mitglieder Eures Ordens haben jemanden gefangen genommen, den ich suche. Irenicus heißt er. Ich will wissen, wo er ist, bevor ich in irgendetwas einwillige.~
+@1057 = ~Vielleicht. Mitglieder Eures Ordens haben allerdings jemanden gefangen genommen, den ich suche: Irenicus. Erst will ich wissen, wo er ist.~
+@1058 = ~Ich möchte gerne etwas wissen. Mitglieder Eures Ordens haben jemanden gefangen genommen, den ich suche: Irenicus. Ich wüsste gern, wo er ist, bevor ich in irgendetwas einwillige.~
+@1059 = ~Euer Orden hat jemanden gefangen genommen, den ich suche: Irenicus. Sagt mir, wo er ist, und ich werde Eure Bitte in Erwägung ziehen.~
+@1060 = ~Irenicus?  Ah … der Magier, der von den Zauberern festgenommen wurde. So unwichtige Informationen trage ich nicht bei mir, also vergesst solche Forderungen.~
+@1061 = ~Dieser Irenicus … stellte sich als ein sehr mächtiger Magier heraus. Seit seiner Festnahme bereitet er uns … Probleme, sät in unserem Orden Angst.~
+@1062 = ~Die Verhüllten Magier werden keine Informationen preisgeben, solange die Angelegenheit nicht beigelegt ist, daher kann ich Euch gar nichts sagen.~
+@1063 = ~Und selbst wenn dies nicht geschehen wäre, hättet Ihr nicht zu ihm kommen können, Narr! Er hat das Gesetz gebrochen, es ist also endgültig. Die Verhüllten Magier vergeben keine zweite Chance!~ ~Und selbst wenn dies nicht geschehen wäre, hättet Ihr nicht zu ihm kommen können, Närrin! Er hat das Gesetz gebrochen, es ist also endgültig. Die Verhüllten Magier vergeben keine zweite Chance!~
+@1064 = ~Die Verhüllten Magier? Sie sind diejenigen, die Irenicus verhaftet haben. Ich hätte großes Interesse daran, darüber mit ihnen zu sprechen.~
+@1065 = ~Davon weiß ich nichts. Wie ich bereits erwähnte, vertrete ich einen der Magier, einen gewissen Meister Tolgerias. Vielleicht könntet Ihr mit ihm über diesen Irenicus sprechen?~
+@1066 = ~Und was wäre, wenn ich die Forderung stellte, über den Verbleib von Irenicus Genaueres zu erfahren? Könnte Euer Zauberer da etwas tun?~
+@1067 = ~Ihr sprecht von Vertrauen, wo Ihr Irenicus weggebracht habt, bevor ich Vergeltung suchen konnte? Sagt mir wo er ist, dann können wir reden!~
+@1068 = ~Irenicus? Diesen Namen kenne ich nicht. Dies hier ist eine große Stadt, und die Verhüllten Magier haben in ihr viele Untergruppen. Wurde er wegen unerlaubter Benutzung von Magie festgenommen?~
+@1069 = ~Ich werde meine Herren über ihn befragen, wenn Ihr wünscht. Bis dahin möchte ich Euch raten, dass Ihr Euch im Sinne dieses Abkommens verhaltet.~
+@1070 = ~Habt Ihr irgendetwas über den Verbleib von Irenicus herausgefunden? Ich muss das wissen.~
+@1071 = ~Fragt erst gar nicht, die Antwort lautet: Nein, ich habe nichts über Euren Irenicus gehört. Aber ich habe es auch nicht vergessen. Habt Geduld.~
+@1072 = ~War es das? Ihr habt sonst nichts für mich? Was ist mit Irenicus?~
+@1073 = ~Fragt erst gar nicht, die Antwort lautet: Nein, ich habe nichts über Euren Irenicus gehört. Ich werde noch einmal nachfragen, denn Ihr werdet mir wohl keine Ruhe lassen.~
+@1074 = ~Ungeachtet dessen habe ich ein paar Neuigkeiten über Euren Irenicus. Ich sagte, ich würde Euch alles sagen, was ich kann, und da Ihr Euch so wacker geschlagen habt, ist es das Mindeste, was ich nun tun kann.~
+@1075 = ~Er wurde festgenommen – soviel wisst Ihr ja bereits. Er erwies sich als zu widerspenstig für eine normale Einkerkerung.~
+@1076 = ~Er befindet sich nicht mehr in der Stadt. Ich konnte von meinen Herren nicht mehr erfahren, und ich fürchte, dass ich eine ziemlich unwirsche Antwort erhalten dürfte, sollte ich noch weiter nachfragen.~
+@1077 = ~Aran Linvails Aufgaben
 
-@1001  = ~Ich... ich kann gehen? Öhm, ich habe aber kein Gold.... Aber dafür diesen Gürtel. Der ist doch sicher viiiiiel wert, oder?~
-@1002  = ~Würdet Ihr den stattdessen nehmen? (Und ich kriege das Ding endlich los...)~
-@1003  = ~Dieser Gürtel ist in der Tat eine angemessene Bezahlung. Wir werden ihn Euch abnehmen.~
-@1004  = ~Oh! Der ist, äh, wirklich wertvoll? (hust)~
-@1005  = ~Narren! Ihr habt nicht die geringste Ahnung, worum es hier geht. Aber gut, lasst sie gehen, es macht keinen Unterschied. Ich werde zu beiden zurückkehren, wenn ich soweit bin.~
-@1006  = ~Aber nicht ohne sicherzugehen, dass du dazu überhaupt in der Lage bist, Kleine - auch ohne den Gürtel, den ich dir gegeben hatte.~
-@1007  = ~Er wendet Magie an, hier, in diesen Hallen und vor uns allen! Bringt ihn endlich weg von hier!~
-@1008  = ~Das Mädchen könnte gehen, wenn sie die Strafe zahlt.~
-@1009  = ~Wer seid Ihr und was wollt Ihr von mir?~
-@1010  = ~Still. Ihr seid nichts als ein Ersatz, aber Ihr werdet ausreichen - vorerst.~
-@1011  = ~Heiminsassin~
+Ich habe Aran über die Ereignisse am Hafen informiert. Seine Besorgnis ist nur noch gestiegen. Als nächstes soll ich in das Obergeschoss des Wirtshauses „Zu den Fünf Krügen“ im Brückenviertel gehen … Dort werde ich auf zwei Schattendiebe namens Jaylos und Caehan treffen, die zu einer rivalisierenden Gilde überlaufen wollen.
 
+Vielleicht gelingt es mir ja vorzutäuschen, ebenfalls ein neuer Rekrut zu sein. Wenn alles gut geht, gelingt es mir vielleicht sogar, ihren Kontaktmann an der Nase herumzuführen. So kann ich den Standort des Hauptquartiers der rivalisierenden Gilde herausfinden. Dann kann Aran ihren Aktivitäten einen Riegel vorschieben, sodass sie seine Leute nicht mehr weiter stören. Ist das alles erledigt, können wir uns daran machen, Irenicus zu finden. Aran scheint es wirklich ehrlich zu meinen.~ ~Aran Linvails Aufgaben
 
-@1012  = ~Wo... wo bin ich? Wie bin ich hierhergekommen?!~
+Ich habe Aran über die Ereignisse am Hafen informiert. Seine Besorgnis ist nur noch gestiegen. Als nächstes soll ich in das Obergeschoss des Wirtshauses „Zu den Fünf Krügen“ im Brückenviertel gehen … Dort werde ich auf zwei Schattendiebe namens Jaylos und Caehan treffen, die zu einer rivalisierenden Gilde überlaufen wollen.
 
-
-@1013  = ~Das Gold war doch gar nicht wichtig, Edwin. Wir müssen <CHARNAME> dabei helfen, diesen komischen Irenicus zu finden.~
-@1014  = ~<CHARNAME>, ich muss Euch wohl nicht sagen, wie sehr mir das alles missfällt. All dies hier ängstigt mich. Sobald wir diesen Irenicus gefunden haben, dürfen wir nie wieder mit diesen Leuten gemeinsame Sache machen.~
-@1015  = ~Unser Gastgeber mag eine dunkle Vergangenheit haben, aber diese Aufgabe nutzt uns beiden. Wir bekommen Zugang zu Irenicus und können hier das Gleichgewicht halten. Eine Eigenart der Straße, die zu schützen ist.~
-@1016  = ~So sehr ich es auch liebe los zu schwafeln, wenn sich nur die geringste Gelegenheit dafür ergibt, denke ich, dass es im Augenblick klüger wäre, diesen Irenicus so rasch wie möglich zu finden. Es ist genauso, wie mein Onkel Gummo immer gesagt hat, „Bla, bla, bla“, würde er sagen, und wir würden immer zu ihm sagen, „Onkel Gummo, wir müssen aber etwas Dringendes erledigen.“ und er konterte immer sofort mit „Aber ich habe da nur noch eine Geschichte. Nur noch eine, bla, bla, bla.“~
-@1017  = ~Meine Aufgabe darf nicht unerledigt bleiben. Bitte, Keldorn, dient, bis wir Irenicus erledigt haben.~
-@1018  = ~Und wozu würde das führen? Tod im großen Stil, und das Erreichen unserer Ziele würde noch schwerer werden. Das Leben und Wohlergehen der Bedürftigen müssen an erster Stelle stehen.~
-@1019  = ~Genau genommen, Keldorn ... ich habe nachgedacht ... Die Suche nach Irenicus ist die meine und ich habe kein Recht, sie einem guten Freund gegen dessen Willen aufzudrängen ... Ihr solltet hier bei Eurer Familie sein.~ 
-@1020  = ~Ich ... Ich habe mich wieder wie ein Ehemann gefühlt, wie ein Vater. Es war schön, <CHARNAME>, sehr schön. Jetzt lasst uns diesen Irenicus stoppen, auf dass ich schneller hierher zurückkehren kann.~ 
-@1021  = ~Nun gut. Also umsonst. Sofern wir einen Teil des Schatzes bekommen.~
-@1022  = ~Falls Ihr das Geld verschleudert habt, das wir zum Finden von Irenicus benötigen, habt Ihr eine Fahrkarte zum Friedhof gekauft! Minsk und Boo werden sich darum kümmern!~
-@1023  = ~Ich habe mich gefragt, ob ... Ihr mir etwas über diesen Magier Irenicus sagen könntet? Oder über die Verhüllten Magier?~
-@1024  = ~Ich kann Euch bezüglich dieser Abmachung nichts Zusätzliches versprechen, ich kann nur bestätigen, dass wir ... in der Tat fähig sind herauszufinden, wo dieser Irenicus steckt.~
-@1025  = ~Ich habe eine große Summe Gold bezahlt; sagt mir, wie ich Irenicus finden kann.~ 
-@1026  = ~Hört sich gut an, aber ich muss Irenicus finden. Was für einen Handel schlagt Ihr vor?~ 
-@1027  = ~Ich werde nichts dergleichen tun! Ich verlange von Euch, dass Ihr mir sagt, wo Irenicus ist! Ich habe bezahlt!~ 
-@1028  = ~Euch sind meine Leute vielleicht egal, <CHARNAME>, aber mir nicht. Sie verdienen Schutz und, um genau zu sein, wenn sie ihn nicht bekommen, werdet Ihr unsere Hilfe nicht erhalten.~ 
-@1029  = ~Wenn Ihr das Böse in ihnen vernichtet habt, kommt hierher zurück und ich werde meinen Teil der Verabredung einhalten. Wenn Ihr diese Arbeit gut macht, könnt Ihr am Morgen bei denen sein, die Ihr sucht. Was sagt Ihr?~ 
-@1030  = ~Er muss gefunden werden, und das wird dadurch am meisten erleichtert, dass man Euch hilft, ihn zu finden - offensichtlich.~ 
-@1031  = ~Sobald Ihr auf der Insel ankommt, seid Ihr auf Euch allein gestellt. Ihr müsst Euch gegen die Verteidungsanlagen des Heimes behaupten, und gegen die Piraten kämpfen, die den Ort fest im Griff haben. Bekämpft die Piraten, wenn Ihr wollt; tötet Irenicus, wenn Ihr könnt.~ 
-@1032  = ~Nun, ich weiß, dass Ihr begierig darauf seid, hinter Irenicus herzueilen. Ich versichere Euch, dass Eure Zeit bald kommen wird. Doch es dauert eine Weile, das Geld zu verteilen.~  
-@1033  = ~Und sie sind es, die die Verfolgung Irenicus' verhindern. Vertraut mir, <CHARNAME>, Ihr werdet es nicht bereuen.~ 
-@1034  = ~Wir dachten, Ihr könntet uns zu ihm führen, und das könnt Ihr auch. Ihr sucht Irenicus und wir suchen Antworten. Beides ist am gleichen Ort zu finden.~  
-@1035  = ~Ich biete Euch eine Alternative an. Ich würde für ... hm ... 15.000 Goldmünzen helfen, Irenicus zu finden. Das ist eine ganze Menge weniger, als die Schattendiebe verlangt haben, und es ist zufälligerweise genau so viel, wie Ihr gerade bei Euch habt.~ 
-@1036  = ~Und Ihr werdet mir für 15.000 helfen, Irenicus zu finden? Ich frage mich immer noch, warum Ihr das tun solltet.~  
-@1037  = ~Wann werdet Ihr mir helfen, Irenicus zu finden? Ich habe Euch bereits bezahlt!~  
-@1038  = ~Ich habe viel für Euch getan. Wann helft Ihr mir bei Irenicus?~  
-@1039  = ~Ich habe alles getan, was Ihr wolltet. Wann werdet Ihr mir helfen, Irenicus zu finden?~  
-@1040  = ~Ich habe versucht zu tun, um was Ihr mich gebeten hattet. Wann werdet Ihr mir dabei helfen, Irenicus zu finden?~  
-@1041  = ~Ihr würdet doch nicht den Weg nehmen wollen, der von den Schattendieben umkämpft wird, oder? Die Aufgabe, die ansteht, garantiert sicheres Geleit für Euch und alle, die Euch begleiten. Lasst sie uns in Angriff nehmen.~ 
-@1042  = ~Ihr sucht Irenicus, der Euch Macht geben würde. Ich bin bereit, Euch seinen Aufenthaltsort zu nennen und Euch die Mittel zur Verfügung zu stellen, ihn zu erreichen.~ 
-@1043  = ~Natürlich saht Ihr den Ausgang dieses Kampfes, bei dem Eure Imoen kurzzeitig fortgezaubert wurde. Ihr sucht Irenicus und ich ebenso. Wir könnten beide von seiner Rückkehr profitieren.~  
-@1044  = ~Ich werde tun, was ich tun muss, aber ich gebe keine Versprechungen ab, was die Sicherheit von diesem Irenicus betrifft.~
-@1045  = ~Ich verlange viel, das ist wahr, aber davon werden wir beide profitieren. Ihr gebt ihn mir und ich gebe Euch das, was er über Euch herausgefunden hat. Denkt an Euer Potenzial. Denkt an das, was Euch wichtig ist.~ 
-@1046  = ~Vielleicht tut er das und vielleicht wird er es bekommen. Was passiert hängt völlig von Eurer Bereitschaft zu helfen ab. Tut es für Euch selbst. Tut es für Eure Macht!~ 
-@1047  = ~Sie werden nicht in Mitleidenschaft gezogen werden. Ihr werdet keine Schwierigkeiten haben, zu Irenicus zu gelangen, da er sich an einem furchtbaren Ort befindet - einem Ort, der geschaffen wurde, um jene gefangenzuhalten, die über einen starken Willen verfügen.~ 
-@1048  = ~Kehrt schnell zu mir zurück. Je länger Ihr wartet, desto mehr wird Irenicus sich entfernt haben. In der Zauberfeste wird man nicht mit Samthandschuhen angefasst, auch nicht ein solch mächtiger Zauberer wie er.~ 
-@1049  = ~Erst will ich wissen, wo Irenicus ist.~ 
-@1050  = ~Ich bin schon ein wenig misstrauisch, wenn es darum geht, für die Leute zu arbeiten, die Imoen ohne guten Grund mitgenommen hatten. Sagt mir erst, wo Irenicus ist.~ 
-@1051  = ~Irenicus?  Ah... der Magier, der von den Zauberern festgenommen wurde. So unwichtige Informationen trage ich nicht bei mir, also, vergesst solche Forderungen.~
-@1052  = ~Das werde ich nicht tun. Entweder Ihr sagt mir, wo Irenicus ist, oder ich werde Euch meine Unterstützung verweigern.~
-@1053  = ~Vielleicht würde ich leichter zustimmen können, wenn Ihr mir sagen würdet, wo Irenicus' Aufenthaltsort ist.~
-@1054  = ~Ihr sagtet, Ihr könntet versuchen, Irenicus Aufenthaltsort herauszufinden, wenn ich täte, was Ihr verlangt. Und das habe ich.~
-@1055  = ~Ich habe getan, was Ihr von mir verlangt habt und habe mich Euch bewiesen ... jetzt will ich wissen, was Ihr mit Irenicus gemacht habt.~
-@1056  = ~Mitglieder Eures Ordens haben jemanden gefangen genommen, den ich suche. Irenicus heißt er. Ich will wissen, wo er ist, bevor ich in irgendetwas einwillige.~
-@1057  = ~Vielleicht. Mitglieder Eures Ordens haben allerdings jemanden gefangen genommen, den ich suche: Irenicus. Erst will ich wissen, wo er ist.~
-@1058  = ~Ich möchte gerne etwas wissen. Mitglieder Eures Ordens haben jemanden gefangen genommen, den ich suche: Irenicus. Ich wüsste gern, wo er ist, bevor ich in irgendetwas einwillige.~
-@1059  = ~Euer Orden hat jemanden gefangen genommen, den ich suche: Irenicus. Sagt mir, wo er ist, und ich werde Eure Bitte in Erwägung ziehen.~
-@1060  = ~Irenicus?  Ah... der Magier, der von den Zauberern festgenommen wurde. So unwichtige Informationen trage ich nicht bei mir, also, vergesst solche Forderungen.~
-@1061  = ~Dieser Irenicus... stellte sich als ein sehr mächtiger Magier heraus. Seit seiner Festnahme bereitet er uns ... Probleme, sät in unserem Orden Angst.~
-@1062  = ~Die Verhüllten Magier werden keine Informationen preisgeben, solange die Angelegenheit nicht beigelegt ist, also kann ich Euch gar nichts sagen.~
-@1063  = ~Und selbst wenn dies nicht geschehen wäre, hättet Ihr nicht zu ihm kommen können, Narr! Er hat das Gesetz gebrochen, es ist also endgültig. Die Verhüllten Magier vergeben keine zweite Chance!~
-@1064  = ~Die Verhüllten Magier? Sie sind diejenigen, die Irenicus verhaftet haben. Ich hätte großes Interesse daran, darüber mit ihnen zu sprechen.~
-@1065  = ~Davon weiß ich nichts. Wie ich bereits erwähnte, vertrete ich einen der Magier, einen gewissen Meister Tolgerias. Vielleicht könntet Ihr mit ihm über diesen Irenicus sprechen?~
-@1066  = ~Und was wäre, wenn ich die Forderung stellte, über den Verbleib von Irenicus Genaueres zu erfahren? Könnte Euer Zauberer da etwas tun?~
-@1067  = ~Ihr sprecht von Vertrauen, wo Ihr Irenicus weggebracht habt, bevor ich Vergeltung suchen konnte? Sagt mir wo er ist, dann können wir reden!~
-@1068  = ~Irenicus? Diesen Namen kenne ich nicht. Dies hier ist eine große Stadt, und die Verhüllten Magier haben in ihr viele Untergruppen. Wurde er wegen unerlaubter Benutzung von Magie festgenommen?~
-@1069  = ~Ich werde meine Herren über ihn befragen, wenn Ihr wünscht. Bis dahin möchte ich Euch raten, dass Ihr Euch im Sinne dieses Abkommens verhaltet.~
-@1070  = ~Habt Ihr irgendetwas über den Verbleib von Irenicus herausgefunden? Ich muss das wissen.~
-@1071  = ~Fragt erst gar nicht, die Antwort lautet „nein“ – Ich habe nichts über Euren Irenicus gehört. Aber ich habe es auch nicht vergessen. Habt Geduld.~
-@1072  = ~War es das? Ihr habt sonst nichts für mich? Was ist mit Irenicus?~
-@1073  = ~Fragt erst gar nicht, die Antwort lautet „nein“ – Ich habe nichts über Euren Irenicus gehört. Ich werde noch einmal nachfragen, denn Ihr werdet mir wohl keine Ruhe lassen.~
-@1074  = ~Ungeachtet dessen habe ich ein paar Neuigkeiten über Euren Irenicus. Ich sagte, ich würde Euch alles sagen, was ich kann, und da Ihr Euch so wacker geschlagen habt, ist es das Mindeste, was ich nun tun kann.~
-@1075  = ~Er wurde festgenommen – so viel wisst Ihr ja bereits. Er erwies sich als zu widerspenstig für eine normale Einkerkerung.~
-@1076  = ~Er befindet sich nicht mehr in der Stadt. Ich konnte von meinen Herren nicht mehr erfahren, und ich fürchte, dass ich eine ziemlich unwirsche Antwort erhalten dürfte, sollte ich noch weiter nachfragen wollen.~
-@1077  = ~Aran Linvails Aufgaben
-
-Ich habe Aran über die Ereignisse am Hafen informiert. Seine Besorgnis ist nur noch gestiegen. Als nächstes soll ich in das Obergeschoss des Wirtshauses „Zu den Fünf Krügen“ im Brückenviertel gehen ... Dort werde ich auf zwei Schattendiebe namens Jaylos und Caehan treffen, die zu einer rivalisierenden Gilde überlaufen wollen.
-
-Vielleicht gelingt es mir ja, vorzutäuschen, ebenfalls ein neuer Rekrut zu sein. Wenn alles gut geht, gelingt es mir vielleicht sogar, ihren Kontaktmann an der Nase herumzuführen. So kann ich den Standort des Hauptquartiers der rivalisierenden Gilde herausfinden. Dann kann Aran ihren Aktivitäten einen Riegel vorschieben, sodass sie seine Leute nicht mehr weiter stören. Ist das alles erledigt, können wir uns daran machen, Irenicus zu finden. Aran scheint es wirklich ehrlich zu meinen.~
-@1078  = ~Aran Linvails Aufgaben
+Vielleicht gelingt es mir ja, vorzutäuschen ebenfalls eine neue Rekrutin zu sein. Wenn alles gut geht, gelingt es mir vielleicht sogar, ihren Kontaktmann an der Nase herumzuführen. So kann ich den Standort des Hauptquartiers der rivalisierenden Gilde herausfinden. Dann kann Aran ihren Aktivitäten einen Riegel vorschieben, sodass sie seine Leute nicht mehr weiter stören. Ist das alles erledigt, können wir uns daran machen, Irenicus zu finden. Aran scheint es wirklich ehrlich zu meinen.~
+@1078 = ~Aran Linvails Aufgaben
 
 Ich habe Arans Aufgaben erfüllt und endlich erfahren, wo sich Irenicus aufhält. Bei der Gelegenheit wurden mir noch so einige andere interessante Dinge enthüllt.
 
-Die Schattendiebe sind schon seit dem Anfang an mir interessiert. Sie wussten, dass ich gefangen genommen wurde, waren allerdings zuerst der Ansicht, dass es sich nur um ein einfaches Kidnapping handelte und sie die Angelegenheit nichts angeht. Kurz danach erschien Bodhi, und ein Mitglied der Schattengilde nach dem anderen verschwand. Sie dachten, dass eine andere Gilde aufgetaucht wäre und ihnen die Kontrolle der Stadt streitig machen wollte. Daher starteten sie einen Angriff gegen das vermutliche Hauptquartier der feindlichen Gilde: Irenicus' Kerker unter Waukeens Promenade.
+Die Schattendiebe sind schon seit dem Anfang an mir interessiert. Sie wussten, dass ich gefangen genommen wurde, waren allerdings zuerst der Ansicht, dass es sich nur um eine einfache Entführung handelte und sie die Angelegenheit nichts angeht. Kurz danach erschien Bodhi, und ein Mitglied der Schattengilde nach dem anderen verschwand. Sie dachten, dass eine andere Gilde aufgetaucht wäre und ihnen die Kontrolle der Stadt streitig machen wollte. Daher starteten sie einen Angriff gegen das vermutliche Hauptquartier der feindlichen Gilde: Irenicus’ Kerker unter Waukeens Promenade.
 
-Sie waren in keiner Weise auf Irenicus' wahre Stärke vorbereitet. Nach dem Kampf richteten sie ihr Interesse auf mich, da nur ich lebend aus dem Kerker entkommen war. Da ich offenbar von enormer Bedeutung für Irenicus war, mussten sie einfach herausfinden, was ich vorhatte. Nachdem sie herausgefunden hatten, dass Irenicus uns beide bedrohte, versuchten sie mir und dabei gleichzeitig sich selbst zu helfen. Trotz ihrer selbstsüchtigen Motive handelten sie zu meinem Besten.
+Sie waren in keiner Weise auf Irenicus’ wahre Stärke vorbereitet. Nach dem Kampf richteten sie ihr Interesse auf mich, da nur ich lebend aus dem Kerker entkommen war. Da ich offenbar von enormer Bedeutung für Irenicus war, mussten sie einfach herausfinden, was ich vorhatte. Nachdem sie herausgefunden hatten, dass Irenicus uns beide bedrohte, versuchten sie mir und dabei gleichzeitig sich selbst zu helfen. Trotz ihrer selbstsüchtigen Motive handelten sie zu meinem Besten.
 
-Sie sind der Ansicht, dass Irenicus noch immer eine große Bedrohung darstellt. Irenicus wurde in ein Heim gebracht, die Zauberfeste. Hier werden magisch Bewanderte gefangen gehalten und untersucht. Es erscheint zweifelhaft, dass man Irenicus so leicht überwinden konnte. Bodhi und ihre Gilde stehen in irgendeinem Zusammenhang mit ihm ... Warum er sowohl Imoen als auch mich untersucht hat, ist noch immer unklar.
+Sie sind der Ansicht, dass Irenicus noch immer eine große Bedrohung darstellt. Irenicus wurde in ein Heim gebracht – die Zauberfeste. Hier werden magisch Bewanderte gefangen gehalten und untersucht. Es erscheint zweifelhaft, dass man Irenicus so leicht überwinden konnte. Bodhi und ihre Gilde stehen in irgendeinem Zusammenhang mit ihm … Warum er sowohl Imoen als auch mich untersucht hat, ist noch immer unklar.
 
-Irenicus befindet sich noch immer in diesem Heim. Die Schattendiebe haben ein Schiff organisiert, dass mich für eine geringe Entlohnung zu der Insel bringen wird. Sie hoffen, dass ich ihr anderes Problem gleich mit lösen werde, wenn ich Irenicus konfrontiere. Was auch immer geschehen mag: Ich bin mir sicher, dass mich auf dieser Insel meine bisher größte Herausforderung erwartet.~
-@1079  = ~Bodhis Angebot abgelehnt
+Irenicus befindet sich noch immer in diesem Heim. Die Schattendiebe haben ein Schiff organisiert, dass mich für eine geringe Entlohnung zu der Insel bringen wird. Sie hoffen, dass ich ihr anderes Problem gleich mit lösen werde, wenn ich Irenicus konfrontiere. Was auch immer geschehen mag – ich bin mir sicher, dass mich auf dieser Insel meine bisher größte Herausforderung erwartet.~
+@1079 = ~Bodhis Angebot abgelehnt
 
-Bodhi bot mir an, mich ihrer Gilde anzuschließen, die gegen die Schattendiebe Krieg führt. Sie sagte mir, dass meine momentanen Auftraggeber die Schattendiebe sind, und dass man ihnen nicht trauen kann. Sie bot mir außerdem Hilfe bei der Suche nach Irenicus an, und zwar zu einem wesentlich niedrigeren Preis als bei den Dieben. Sie merkte außerdem an, dass meine Aufgaben unter ihrem Kommando sehr blutig sein würden.
+Bodhi bot mir an, mich ihrer Gilde anzuschließen, die gegen die Schattendiebe Krieg führt. Sie sagte mir, dass meine momentanen Auftraggeber die Schattendiebe sind und dass man ihnen nicht trauen kann. Sie bot mir außerdem Hilfe bei der Suche nach Irenicus an, und zwar zu einem wesentlich niedrigeren Preis als bei den Dieben. Sie merkte außerdem an, dass meine Aufgaben unter ihrem Kommando sehr blutig sein würden.
 
-Ich glaube nicht, dass ich ihr trauen kann, und ich wollte auch nicht alles wegwerfen, was ich schon erreicht habe, also lehnte ich ab. Nun ist sie meine Feindin. Sie hat mich in Frieden ziehen lassen, erwähnte aber ganz sachlich, dass wir uns unter weniger freundlichen Umständen wiedersehen würden.~
-@1080  = ~Bodhi stellt Bedingungen für ihre Unterstützung
+Ich glaube nicht, dass ich ihr trauen kann, und ich wollte auch nicht alles wegwerfen, was ich schon erreicht habe, daher lehnte ich ab. Nun ist sie meine Feindin. Sie hat mich in Frieden ziehen lassen, erwähnte aber ganz sachlich, dass wir uns unter weniger freundlichen Umständen wiedersehen würden.~
+@1080 = ~Bodhi stellt Bedingungen für ihre Unterstützung
 
-Bodhi hat mir heute viel erzählt ... am wichtigsten ist jedoch, dass sie eine Überfahrt zur Insel mit dem Heim gebucht hat, wo – voraussichtlich - Irenicus festgehalten wird. Ich soll zu ihr zurückkommen, sobald ich soweit bin, um mit dem Schiff abzulegen.~
-@1081  = ~Bodhi hält ihren Teil der Abmachung
+Bodhi hat mir heute viel erzählt … Am wichtigsten ist jedoch, dass sie eine Überfahrt zur Insel mit dem Heim gebucht hat, wo – voraussichtlich – Irenicus festgehalten wird. Ich soll zu ihr zurückkommen, sobald ich soweit bin, um mit dem Schiff abzulegen.~
+@1081 = ~Bodhi hält ihren Teil der Abmachung
 
 Bodhi erklärte sich bereit, sich an unseren Handel zu halten, obwohl es noch einige andere Bedenken gab, die sie mir offenbarte.
 Laut Bodhi nahm Irenicus mich gefangen, weil er entdeckt hatte, dass ich ein Kind von Bhaal bin, und er versuchte, mir bei meiner Entwicklung zu „helfen“. Dabei waren seine Methoden von Folter jedoch nicht zu unterscheiden. Die Schattendiebe griffen Irenicus an, bevor man mir irgendetwas darüber erzählte. Ich floh, als er eingekerkert wurde.
-Bodhi erzählte mir, dass sie dem Wesen nach Irenicus' Schwester sei und dass sie mir helfen würde, weil sie den Magier von dem Ort befreien will, an dem er momentan festgehalten wird: ein gefürchtetes Heim für jene, die Magie praktizieren, das die „Zauberfeste“ genannt wird. Bodhi tut dies nicht aus Gründen familiärer Verbundenheit, sondern eher, weil sie Irenicus für ihre eigenen Zwecke braucht. Als zusätzlichen Anreiz bot sie mir an, mir alles zu offenbaren, was Irenicus über mich herausgefunden hat.
-Das Heim befindet sich auf einer autonomen Insel, und Bodhi hat das Gold, das ich ihr gab, verwandt, um mir die Überfahrt zu bezahlen. Dort werde ich dann nach einem Weg in das Heim suchen, um Irenicus zu konfrontieren und, so hofft Bodhi, ihn gleichzeitig auch herauszuholen.~
 
+Bodhi erzählte mir, dass sie dem Wesen nach Irenicus’ Schwester sei und dass sie mir helfen würde, weil sie den Magier von dem Ort befreien will, an dem er momentan festgehalten wird – einem gefürchteten Heim für jene, die Magie praktizieren, das die „Zauberfeste“ genannt wird. Bodhi tut dies nicht aus Gründen familiärer Verbundenheit, sondern eher, weil sie Irenicus für ihre eigenen Zwecke braucht. Als zusätzlichen Anreiz bot sie mir an, mir alles zu offenbaren, was Irenicus über mich herausgefunden hat.
 
-@1082  = ~Das Treffen mit Tolgerias, dem Verhüllten Magier
+Das Heim befindet sich auf einer autonomen Insel, und Bodhi hat das Gold, das ich ihr gab, dafür verwendet, um mir die Überfahrt zu bezahlen. Dort werde ich dann nach einem Weg in das Heim suchen, um Irenicus zu konfrontieren und, so hofft Bodhi, ihn gleichzeitig auch herauszuholen.~
+@1082 = ~Das Treffen mit Tolgerias, dem Verhüllten Magier
 
 Tolgerias, der Verhüllte Magier im Regierungsgebäude, hat mir versprochen, mir Informationen über Irenicus zu beschaffen, wenn ich seinen Auftrag für ihn erfülle.~
-
-@1083 = ~Ja, genau *deswegen* habe ich's ja...~
-
+@1083 = ~Ja, genau DESWEGEN habe ichs ja …~
 @1084 = ~Gaelen Bayles Honorar
 
-Gaelan Bayle kann mich mit einer Gruppe in Verbindung bringen, die mir dabei helfen wird, Irenicus zu finden. Dafür verlangt er allerdings eine Bezahlung von 20.000 GM! Ein hoher Preis, aber er hat mich darauf hingewiesen, dass er sich schließlich mit den Verhüllten Magiern anlegen muss, um mir zu helfen, etwas, das wohl niemand leichtfertig tun würde. Sobald ich die 20.000 GM beschafft habe, soll ich mich wieder mit ihm treffen.~
+Gaelan Bayle kann mich mit einer Gruppe in Verbindung bringen, die mir dabei helfen wird, Irenicus zu finden. Dafür verlangt er allerdings eine Bezahlung von 20.000 GM! Ein hoher Preis, aber er hat mich darauf hingewiesen, dass er sich schließlich mit den Verhüllten Magiern anlegen muss, um mir zu helfen – etwas, das wohl niemand leichtfertig tun würde. Sobald ich die 20.000 GM beschafft habe, soll ich mich wieder mit ihm treffen.~
 @1085 = ~Bodhi stellt Bedingungen für ihre Unterstützung
 
 Ich habe Bodhis Auftrag angenommen. Sie ist der Kopf der „rivalisierenden Gilde“, die sich mit den Schattendieben befehdet. Sie benötigte weit weniger Münzen als meine jetzigen Auftraggeber. Ich soll außerdem einige Dinge erledigen, um die Schattendiebe zu untergraben. Sobald das erledigt ist, werde ich ihre volle Unterstützung bei der Suche nach Irenicus haben. Ihre Aufträge könnten blutig und gewalttätig sein.
@@ -132,171 +129,156 @@ Wenn ich annehme, werden die Schattendiebe meine Feinde sein, und Bodhi zufolge 
 Bodhi erwähnte außerdem, dass die Krypten zwar erschreckend aussähen, aber ein sicherer Ort seien, um eine Rast einzulegen, sollte ich eine benötigen.~
 @1086 = ~Kapitel 4
 
-Jetzt, wo ich die Aufgaben erledigt habe, die Bodhi mir aufgetragen hat – die Störung der Schattendiebe und die Ermordung des Schattenmeisters, Aran Linvail – hat sie ein paar Dinge klargestellt.
+Jetzt, wo ich die Aufgaben erledigt habe, die Bodhi mir aufgetragen hat – die Störung der Schattendiebe und die Ermordung des Schattenmeisters Aran Linvail –, hat sie ein paar Dinge klargestellt.
 
-Irenicus, der Magier, der mich entführte, ist Bodhis Bruder. Sie sagt, dass sie meine Entführung nicht unterstützt hätte, und sie anscheinend durchgeführt wurde, weil ich ein Kind Bhaals bin. Was Imoen und ich als Folter ansahen, war eigentlich der Versuch des Magiers, „mein wahres Potenzial“ zu entdecken und zu aktivieren ... ob ich nun wollte oder nicht. Bodhi will ihren Bruder finden und Zugriff auf das Wissen erhalten, das er besitzt. Als Gegenleistung für meine Hilfe wird sie mir alle Informationen, die er über mich hat, zukommen lassen. Sie wird mich bis zu diesem Punkt begleiten, da Irenicus an einem bestimmten Ort festgehalten wird: ein Heim, das einer Festung gleicht, das sich auf einer abgelegenen Insel weit von Amn entfernt befindet und Zauberfeste genannt wird. Das Gold, das ich ihr gab, wurde für die Bezahlung der Überfahrt mit einem Freibeuter namens Saemon Havarian verwendet. Sobald ich auf der Insel bin, werde ich einen Weg in das Heim finden müssen ... obwohl ich nicht weiß, wie Bodhi sich
-beteiligen wird. Bald werde ich die Antworten haben, nach denen ich suche ...~
+Irenicus, der Magier, der mich entführte, ist Bodhis Bruder. Sie sagt, dass sie meine Entführung nicht unterstützt hätte, und sie anscheinend durchgeführt wurde, weil ich ein Kind Bhaals bin. Was Imoen und ich als Folter ansahen, war eigentlich der Versuch des Magiers, „mein wahres Potenzial“ zu entdecken und zu aktivieren … ob ich nun wollte oder nicht. Bodhi will ihren Bruder finden und Zugriff auf das Wissen erhalten, das er besitzt. Als Gegenleistung für meine Hilfe wird sie mir alle Informationen, die er über mich hat, zukommen lassen. Sie wird mich bis zu diesem Punkt begleiten, da Irenicus an einem bestimmten Ort festgehalten wird – einem Heim, das einer Festung gleicht, sich auf einer abgelegenen Insel weit von Amn entfernt befindet und Zauberfeste genannt wird. Das Gold, das ich ihr gab, wurde für die Bezahlung der Überfahrt mit einem Freibeuter namens Saemon Havarian verwendet. Sobald ich auf der Insel bin, werde ich einen Weg in das Heim finden müssen … obwohl ich nicht weiß, wie Bodhi sich beteiligen wird. Bald werde ich die Antworten haben, nach denen ich suche …~
 @1087 = ~Kapitel 4
 
-Ich habe die Aufträge, die Aran Linvail mir gab, erledigt; dazu gehörte die Vernichtung der rivalisierenden Gilde, die Bodhi aufgebaut hatte, und die Vertreibung des Vampirs selbst. Und jetzt hat mich der Schattenmeister über ein paar Dinge aufgeklärt.
+Ich habe die Aufträge, die Aran Linvail mir gab, erledigt. Dazu gehörte die Vernichtung der rivalisierenden Gilde, die Bodhi aufgebaut hatte, und die Vertreibung der Vampirin selbst. Und jetzt hat mich der Schattenmeister über ein paar Dinge aufgeklärt.
 
-Es waren die Schattendiebe, die Irenicus in dem Verlies, in dem ich erwachte, angegriffen haben. Sie hatten von meiner Entführung gehört, dem aber nicht viel Bedeutung beigemessen ... doch dann tauchte Bodhis Gilde auf, und viele der Schattendiebe verschwanden plötzlich. Es gelang ihnen, Irenicus' Verlies ausfindig zu machen, und sie brachten es mit Bodhi in Verbindung. Ich wurde Zeuge ihres anschließenden, verheerenden Angriffs.
-Aran erklärte mir, an welchen Ort Irenicus gebracht wurde: ein auf einer Insel gelegenes Heim für gestörte Magier, welches Zauberfeste genannt wird. Das Gold, das ich zur Verfügung stellte, wurde benutzt, um die Überfahrt zur Insel zu bezahlen. Dort werde ich die Antworten finden, nach denen ich suche. Aran warnt mich jedoch, dass es sich bei dem Heim um eine wahre Festung handelt, die dafür gedacht ist, verrückte Magier und andere „Verwirrte“ zu verwahren. Alleine schon hinzugelangen würde ein echtes Kunststück darstellen. Nichtsdestotrotz ist die Überfahrt mit einem Freibeuter namens Saemon Havarian gebucht, und ich bin auf dem Weg ...~
+Es waren die Schattendiebe, die Irenicus in dem Verlies, in dem ich erwachte, angegriffen haben. Sie hatten von meiner Entführung gehört, dem aber nicht viel Bedeutung beigemessen … Doch dann tauchte Bodhis Gilde auf, und viele der Schattendiebe verschwanden plötzlich. Es gelang ihnen, Irenicus’ Verlies ausfindig zu machen, und sie brachten es mit Bodhi in Verbindung. Ich wurde Zeuge ihres anschließenden, verheerenden Angriffs.
+
+Aran erklärte mir, an welchen Ort Irenicus gebracht wurde: ein auf einer Insel gelegenes Heim für gestörte Magier, welches Zauberfeste genannt wird. Das Gold, das ich zur Verfügung stellte, wurde benutzt, um die Überfahrt zur Insel zu bezahlen. Dort werde ich die Antworten finden, nach denen ich suche. Aran warnt mich jedoch, dass es sich bei dem Heim um eine wahre Festung handelt, die dafür gedacht ist, verrückte Magier und andere „Verwirrte“ zu verwahren. Alleine schon hinzugelangen, würde ein echtes Kunststück darstellen. Nichtsdestotrotz ist die Überfahrt mit einem Freibeuter namens Saemon Havarian gebucht, und ich bin auf dem Weg …~
 @1088 = ~Kapitel 3
 
-Während meines Aufenthalts in Athkatla und meiner Abenteuer in der Stadt und ihrer Umgebung bin ich aufgrund zahlreicher Hinweise zu dem Schluss gekommen, dass die Schattendiebe mit irgendeiner anderen Organisation im Krieg liegen. Diese andere Organisation trat an mich in Gestalt von Bodhi heran ... einer Frau, deren Macht und Bösartigkeit nur noch von ihrem Ehrgeiz übertroffen wird. Sie hat mir enthüllt, dass meine Wohltäter, angeführt von Gaelan Bayle, niemand anders als die Schattendiebe sind, und sie hat mir angeboten, mir die gleiche Hilfe zuteilwerden zu lassen ... nur zu einem wesentlich niedrigeren Preis.
+Während meines Aufenthalts in Athkatla und meiner Abenteuer in der Stadt und ihrer Umgebung bin ich aufgrund zahlreicher Hinweise zu dem Schluss gekommen, dass die Schattendiebe mit irgendeiner anderen Organisation im Krieg liegen. Diese andere Organisation trat an mich in Gestalt von Bodhi heran … einer Frau, deren Macht und Bösartigkeit nur noch von ihrem Ehrgeiz übertroffen wird. Sie hat mir enthüllt, dass meine Wohltäter, angeführt von Gaelan Bayle, niemand anders als die Schattendiebe sind, und sie hat mir angeboten, mir die gleiche Hilfe zuteilwerden zu lassen … nur zu einem wesentlich niedrigeren Preis.
 
-Ich habe Bodhis Angebot angenommen und sie scheint mir zumindest im Moment zu vertrauen. Ihre wahren Motive sind mir zum jetzigen Zeitpunkt noch nicht klar. Ich weiß nur, dass Bodhi offenbar drauf und dran ist, diese Auseinandersetzung zu gewinnen. Ich habe ihr zwar eine stattliche Summe Gold als Gegenleistung für ihre Hilfe bezahlt ... Aber ich habe das unangenehme Gefühl, dass dies nur ein geringer Teil des Preises ist, den ich schlussendlich bezahlen muss. Aber ich werde meine Antworten bekommen ... Ich werde Irenicus finden!~
+Ich habe Bodhis Angebot angenommen und sie scheint mir zumindest im Moment zu vertrauen. Ihre wahren Motive sind mir zum jetzigen Zeitpunkt noch nicht klar. Ich weiß nur, dass Bodhi offenbar drauf und dran ist, diese Auseinandersetzung zu gewinnen. Ich habe ihr zwar eine stattliche Summe Gold als Gegenleistung für ihre Hilfe bezahlt … Aber ich habe das unangenehme Gefühl, dass dies nur ein geringer Teil des Preises ist, den ich schlussendlich bezahlen muss. Aber ich werde meine Antworten bekommen … Ich werde Irenicus finden!~
 @1089 = ~Aran Linvails Aufgaben
 
 Ich habe die feindliche Gilde besiegt, obwohl sich mir dort zahlreiche Vampire entgegen gestellt haben. Ich bin auf Bodhi getroffen. Sie schien mich irgendwie zu beurteilen, bevor sie gasförmige Gestalt annahm und verschwand. Ich muss jetzt nur noch zu Aran zurückkehren und ihm von der Vernichtung der Gilde berichten. Leider ist es mir nicht gelungen, die Anführerin der Gilde ebenfalls zu vernichten. Ich möchte Aran auch noch so einige Fragen stellen.
 
-Eines beunruhigt mich ... Bodhi wusste es! Sie wusste, dass ich ein Kind Bhaals bin!~
+Eines beunruhigt mich … Bodhi wusste es! Sie wusste, dass ich ein Kind Bhaals bin!~
 @1090 = ~Das kann ich nicht tun. Ich muss viel Gold auftreiben, damit mich die Schattendiebe dabei unterstützen, Irenicus zu finden.~
 @1091 = ~Ich vertraue darauf, dass Ihr hier keine Zeit mehr verschwendet? Das Schiff wartet. Irenicus wartet.~
-@1092 = ~Was wisst Ihr von Irenicus! Könnt Ihr mir helfen, ihn zu finden?~
+@1092 = ~Was wisst Ihr von Irenicus?~
 @1093 = ~Macht in Ruhe eine Pause. Ich werde Euch helfen, Irenicus zu finden, aber nicht nur, weil Ihr das wollt. Ich habe selbst Interesse an ihm.~
 @1094 = ~Ihr müsst dies als eine der zusätzlichen Bedingungen ertragen. Ich biete viel, und erwarte auch viel im Gegenzug. Irenicus wird unser gemeinsames Ziel sein.~
 @1095 = ~15.000 sind eine ganze Menge, aber Ihr werdet einen guten Ausgleich dafür von mir bekommen. Am Schluss werdet Ihr sehr viel Macht haben und noch ein paar magische Schmuckstücke obendrauf.~
 @1096 = ~Darum frage ich auch vorsichtig an. Warum habt Ihr Irenicus angegriffen? Das war der Kampf, bei dem Imoen auch mitgenommen wurde, wenn auch zum Glück nicht lange.~
 @1097 = ~Wir müssen zum Teil die Verantwortung für Euren zwischenzeitigen Verlust von Imoen übernehmen, aber unser Hauptanliegen war zu der Zeit Irenicus. Wir wissen immer noch nicht, warum er unsere Gildenmitglieder getötet hat.~
 @1098 = ~Nun, ich wollte eigentlich sagen, wir sollten aufhören zu quatschen und stattdessen diesen Irenicus finden.~
-@1099 = ~Er ... Er will, dass wir einen Tempel bestehlen? Selbst bei Talos lässt mich das schaudern. Wie ... Wie tief werden wir noch sinken, um diesen Irenicus zu finden, <CHARNAME>?~
+@1099 = ~Er … er will, dass wir einen Tempel bestehlen? Selbst bei Talos lässt mich das schaudern. Wie … wie tief werden wir noch sinken, um diesen Irenicus zu finden, <CHARNAME>?~
 @1100 = ~Nun gut! Ich muss für die Suche nach einem Gegner einen ganzen Schwung Geld sammeln, also schließe ich mich Euch an.~
-@1101 = ~Ich suche nach jemandem, die von den Verhüllten Magiern gefangen genommen wurde ... wisst Ihr etwas darüber?~
-@1102 = ~Mm. Ist das die Person, die zur gleichen Zeit wie Eure Freundin Imoen verhaftet wurde?~
+@1101 = ~Ich suche nach jemandem, die von den Verhüllten Magiern gefangen genommen wurde … Wisst Ihr etwas darüber?~
+@1102 = ~Hmm. Ist das die Person, die zur gleichen Zeit wie Eure Freundin Imoen verhaftet wurde?~
 @1103 = ~Ja, er heißt Irenicus.~
-@1104 = ~Dieser Mann, Irenicus, ist überaus mächtig ... die Schattendiebe haben sich mit seiner Gefangennahme übernommen.~
+@1104 = ~Dieser Mann, Irenicus, ist überaus mächtig … Die Schattendiebe haben sich mit seiner Gefangennahme übernommen.~
 @1105 = ~Laut unserer Informationen haben die Zauberer Angst vor seiner Macht. Doch wo dieser Irenicus sein könnte, weiß ich nicht.~
-@1106 = ~Jemand den ich suche wurde von den Verhüllten Magiern gefangen genommen. Wisst Ihr, wo sie ihre Gefangenen hinbringen?~
+@1106 = ~Jemand, den ich suche, wurde von den Verhüllten Magiern gefangen genommen. Wisst Ihr, wo sie ihre Gefangenen hinbringen?~
 @1107 = ~Ich muss eine Menge Gold zusammenbringen, um einen Feind zu verfolgen. Jeder Lohn, den Ihr anbietet, ist willkommen.~
 @1108 = ~Ich brauche Gold, um einen gefährlichen Mann zu jagen.~
 @1109 = ~Ich suche nach einem Magier namens Irenicus, der von den Verhüllten Magiern gefangen gehalten wird. Wisst Ihr etwas über sie?~
-@1110 = ~Sie arbeiten offiziell für den Stadtrat, aber sie tun, was sie wollen. Wir geben uns in keinster Weise mit ihnen ab, daher weiß ich sonst nur wenig über sie. Was genau mit dem Magier geschehen ist, nach dem Ihr sucht, weiß ich nicht.~
+@1110 = ~Sie arbeiten offiziell für den Stadtrat, aber sie tun, was sie wollen. Wir geben uns in keiner Weise mit ihnen ab, daher weiß ich sonst nur wenig über sie. Was genau mit dem Magier geschehen ist, nach dem Ihr sucht, weiß ich nicht.~
 @1111 = ~Pah. Wenn der Magier Gefangener der Verhüllten ist, dann lohnt sich die Suche kaum. Die Zauberer haben viele Geheimnisse, und sie hüten sie alle eifersüchtig.~
 @1112 = ~Ich werde Euer Gold nehmen, da ich die Sache mit diesem Zauberer noch erledigen muss. Aus keinem anderen Grunde.~
 @1113 = ~Ich könnte es tun, aber ich sammle eine große Menge Gold, um einen Gegner zu verfolgen und benötige daher eine Belohnung.~
 @1114 = ~Ich werde ihn finden! Ich werde diesen Irenicus finden!~
 @1115 = ~Aber wir wollen doch beide Irenicus. Sollten wir nicht zusammenarbeiten?~
-@1116 = ~Irenicus ließ zu, dass die Wut ihn übermannte. Er hat sich erholt und ist niemandes Gefangener...~
-@1117 = ~Es gibt viel über Euch zu erfahren... und über die kleine Imoen dazu. Der Kampf wird mein Laboratorium sein. Kommt, lasst uns beide ein, zwei Dinge lernen.~
-@1118 = ~Vielleicht, aber auch Spiele können tödlicher Ernst sein, besonders, wenn ich die Spielregeln für mich behalte. Kämpft weiter und sucht nach einem Weg zu Irenicus; ich habe gesehen, was ich sehen wollte.~
-@1119 = ~Oh, ich krieche nicht aus Furcht vor Eurem Zorn weg. Umhegt, entwickelt und lenkt ihn – unbedingt. Kämpft weiter und sucht nach einem Weg zu Irenicus. Ich habe gesehen, was ich sehen wollte.~
-@1120 = ~Jemand den ich suche ist von den Verhüllten Magiern gefangen genommen worden ... wisst Ihr, wo sie ihre Gefangenen festhalten?~
+@1116 = ~Irenicus ließ zu, dass die Wut ihn übermannte. Er hat sich erholt und ist niemandes Gefangener. Eure Imoen ist nicht so stark, auch wenn mir erzählt wurde, dass sie … Potenzial hat.~
+@1117 = ~Es gibt viel über Euch zu erfahren … und über die kleine Imoen dazu. Der Kampf wird mein Laboratorium sein. Kommt, lasst uns beide ein, zwei Dinge lernen.~
+@1118 = ~Vielleicht, aber auch Spiele können tödlicher Ernst sein, besonders, wenn ich die Spielregeln für mich behalte. Kämpft weiter und sucht nach einem Weg zu Irenicus. Ich habe gesehen, was ich sehen wollte.~
+@1119 = ~Oh, ich krieche nicht aus Furcht vor Eurem Zorn weg. Umhegt, entwickelt und lenkt ihn – unbedingt. Kämpft weiter und sucht nach einem Weg zu Irenicus. Ich habe gesehen, was ich sehen wollte.~
+@1120 = ~Jemand, den ich suche, ist von den Verhüllten Magiern gefangen genommen worden … Wisst Ihr, wo sie ihre Gefangenen festhalten?~
 @1121 = ~Ich habe eine Frage. Jemand von Interesse ist von den Verhüllten Magiern gefangen genommen worden. Wisst Ihr, wo sie ihre Gefangenen festhalten?~
-@1122 = ~Wenn Ihr die Magier nicht dazu überreden könnt, diese Person herauszugeben, dann könnte Eure Suche hoffnungslos sein. Aber gebt nicht auf ... die Information, die Ihr sucht, könnte existieren.~
+@1122 = ~Wenn Ihr die Magier nicht dazu überreden könnt, diese Person herauszugeben, dann könnte Eure Suche hoffnungslos sein. Aber gebt nicht auf … Die Information, die Ihr sucht, könnte existieren.~
 @1123 = ~Nein, eigentlich nicht. Jemand von Interesse ist von den Verhüllten Magiern gefangen genommen worden. Wisst Ihr zufällig, wo sie ihre Gefangenen festhalten?~
-@1124 = ~Jemand den ich suche wird von den Verhüllten Magiern gefangen gehalten ... wisst Ihr, wo sie ihre Gefangenen festhalten?~
-@1125 = ~Jemand den ich suche ist von den Verhüllten Magiern gefangen genommen worden. Wisst Ihr zufällig, wo sie ihre Gefangenen festhalten?~
-@1126 = ~Aber auch, wenn Ihr es wüsstet, wie in Arvoreens Namen wollt Ihr dorthin kommen? Die Verhüllten Magier nehmen ein Eindringen nicht so einfach hin. Tut mir Leid um Euren Freund, <PRO_LADYLORD>.~
-@1127 = ~Ihr müsst doch was gehört haben ... Ich suche nach jemandem, der von den Verhüllten Magiern gefangen genommen wurde. Wisst Ihr, wo sie die Gefangenen festhalten?~
+@1124 = ~Jemand, den ich suche, wird von den Verhüllten Magiern gefangen gehalten … Wisst Ihr, wo sie ihre Gefangenen festhalten?~
+@1125 = ~Jemand, den ich suche, ist von den Verhüllten Magiern gefangen genommen worden … Wisst Ihr zufällig, wo sie ihre Gefangenen festhalten?~
+@1126 = ~Aber auch, wenn Ihr es wüsstet, wie in Arvoreens Namen wollt Ihr dorthin kommen? Die Verhüllten Magier nehmen ein Eindringen nicht so einfach hin. Tut mir leid um Euren Freund, <PRO_LADYLORD>.~
+@1127 = ~Ihr müsst doch was gehört haben … Ich suche nach jemandem, der von den Verhüllten Magiern gefangen genommen wurde. Wisst Ihr, wo sie die Gefangenen festhalten?~
 @1128 = ~Ich suche jemanden, der von den Verhüllten Magiern verhaftet wurde. Wisst Ihr etwas darüber?~
 @1129 = ~Aber das ist für Euch wahrscheinlich nichts Neues. Wenn Ihr denjenigen noch einmal treffen wollt, dann werden sie ihn Euch bestimmt nicht freudig überlassen. Ihr werdet etwas gegen sie unternehmen müssen.~
 @1130 = ~Ich frage mich noch etwas anderes. Ich brauche Gold, um einen Feind zu verfolgen. Gibt es eine Belohnung für die Ergreifung dieses Mörders?~
-@1131 = ~Ihr seid ein Verhüllter Magier? Vielleicht könnt Ihr mir ja verraten, wo die Verhüllten Magier ihre Gefangenen hinbringen. Jemand, für den ich mich interessiere ist in Gefangenschaft geraten.~
-@1132 = ~Ich frage mich ... wisst Ihr vielleicht etwas über die Verhüllten Magier? Jemand von INteresse wird von ihnen gefangen gehalten.~
-@1133 = ~Dann ist es unwahrscheinlich, dass Ihr diese Person findet. Die Verhüllten Magier geben nichts auf, und niemand weiß, wo sie sich aufhalten ... außer jene, die nicht sprechen können.~
-@1134 = ~Maria, dies hier ist <CHARNAME>. Wir suchen nach einem mächtigen Magier, der...~
+@1131 = ~Ihr seid ein Verhüllter Magier? Vielleicht könnt Ihr mir ja verraten, wo die Verhüllten Magier ihre Gefangenen hinbringen. Jemand, für den ich mich interessiere, ist in Gefangenschaft geraten.~
+@1132 = ~Ich frage mich … Wisst Ihr vielleicht etwas über die Verhüllten Magier? Jemand von Interesse wird von ihnen gefangen gehalten.~
+@1133 = ~Dann ist es unwahrscheinlich, dass Ihr diese Person findet. Die Verhüllten Magier geben nichts auf, und niemand weiß, wo sie sich aufhalten … außer jene, die nicht sprechen können.~
+@1134 = ~Maria, dies hier ist <CHARNAME>. Wir suchen nach einem mächtigen Magier, der …~
 @1135 = ~Und wenn der mächtige Magier gefunden ist?~
-@1136 = ~Jemand von Interesse für mich wurde von den Verhülltem Magiern gefangen genommen. Wisst Ihr vielleicht, wohin er gebracht wurde?~
-@1137 = ~Jemand den ich suche wurde von den Verhüllten Magiern gefangen genommen. Habt Ihr eine Ahnung, wo dieses Gefängnis sein könnte?~
-@1138 = ~Schade, dass Gerüchte wie dieses nie irgendwas Spezielles verraten, nicht wahr? Koordinaten etwa, oder Namen ... Ich wünsche Euch viel Glück und dass Ihr Euren Freund wiederfindet. Ihr werdet es brauchen.~
-@1139 = ~Jemand den ich suche wurde von den Verhüllten Magiern mitgenommen ... könnt Ihr mir etwas über sie erzählen?~
+@1136 = ~Jemand von Interesse für mich wurde von den Verhüllten Magiern gefangen genommen. Wisst Ihr vielleicht, wohin er gebracht wurde?~
+@1137 = ~Jemand, den ich suche, wurde von den Verhüllten Magiern gefangen genommen. Habt Ihr eine Ahnung, wo dieses Gefängnis sein könnte?~
+@1138 = ~Schade, dass Gerüchte wie dieses nie irgendwas Spezielles verraten, nicht wahr? Koordinaten etwa oder Namen. Ich wünsche Euch viel Glück und dass Ihr Euren Freund wiederfindet. Ihr werdet es brauchen.~
+@1139 = ~Jemand, den ich suche, wurde von den Verhüllten Magiern mitgenommen … Könnt Ihr mir etwas über sie erzählen?~
 @1140 = ~Ihre Wachsamkeit dient hauptsächlich dazu, jegliche Konkurrenz zu unterbinden, oder wenigstens genauestens zu kennen. Den Ort ihrer Gefangenen halten sie sehr geheim. Wo auch immer die Person sich befinden mag, die Ihr sucht, keiner wird sie oder ihn je finden.~
 @1141 = ~Was ist Euch das wert? Ich muss genug Geld zusammenkriegen, um jemanden zu finden, den die Verhüllten Magier gefangen halten.~
 @1142 = ~Gibt es eine Belohnung? Ich muss zu Geld kommen, weil ich jemanden finden will, den die Verhüllten Magier gefangen halten, versteht Ihr?~
-@1143 = ~Ich werde Euch wohl helfen. Ich muss unbedingt zu Geld kommen, um zu jemanden zu gelangen, den die Verhüllten Magier festhalten ... ist eine Belohnung ausgesetzt?~
-@1144 = ~Ich bin auf der Suche nach jemandem, der von den Verhüllten Magiern gefangen wurde ... wisst Ihr etwas über die?~
+@1143 = ~Ich werde Euch wohl helfen. Ich muss unbedingt zu Geld kommen, um zu jemanden zu gelangen, den die Verhüllten Magier festhalten … Ist eine Belohnung ausgesetzt?~
+@1144 = ~Ich bin auf der Suche nach jemandem, der von den Verhüllten Magiern gefangen wurde … Wisst Ihr etwas über die?~
 @1145 = ~Um einen Feind zu verfolgen, muss ich eine große Menge Gold auftreiben. Ich wäre daher verständlicherweise an einer Belohnung interessiert.~
 @1146 = ~Verstanden. Um einen Feind zu verfolgen, muss ich eine große Menge Gold auftreiben. Ich wäre daher verständlicherweise an einer Belohnung interessiert.~
 @1147 = ~Um einen Feind zu verfolgen, muss ich eine große Menge Gold auftreiben. Wenn Ihr mir irgendeine Belohnung anbieten könntet, wäre ich Euch sehr dankbar.~
 @1148 = ~Um einen Feind zu verfolgen, muss ich eine große Menge Gold auftreiben. Daher müsste ich zuerst wissen, welche Belohnung Ihr anbietet.~
 @1149 = ~Habt Ihr irgendeine Idee, wie ich eine Menge Geld verdienen könnte? Ich benötige es, um zu jemandem zu gelangen, der von den Verhüllten Magiern verhaftet wurde.~
-@1150 = ~Jemand den ich suche wurde von den Verhüllten Magiern verhaftet, und ich möchte herausfinden, wo sie ihn hingebracht haben. Wisst Ihr etwas über diese Dinge?~
+@1150 = ~Jemand, den ich suche, wurde von den Verhüllten Magiern verhaftet und ich möchte herausfinden, wo sie ihre Gefangenen hinbringen. Wisst Ihr etwas über diese Dinge?~
 @1151 = ~Wir suchen nach jemanden, der von den Verhüllten Magiern entführt worden ist. Vielleicht habt Ihr ja schon mal gehört, wo sie ihre Gefangenen hinbringen?~
 @1152 = ~Jemand von Interesse wurde von den Verhüllten Magiern festgenommen. Habt Ihr irgendeine Ahnung, wo sie ihre Gefangenen einsperren?~
-@1153 = ~Ich muss eine große Zahl von Goldstücken sammeln, um jemanden zu verfolgen ... gibt es vielleicht so etwas wie eine Belohnung, wenn ich diese Aufgabe für Euch erledige?~
-@1154 = ~Ich muss eine große Menge Gold sammeln, um jemanden zu verfolgen ... also möchte ich erst wissen, ob es eine Belohnung gibt.~
+@1153 = ~Ich muss eine große Zahl von Goldstücken sammeln, um jemanden zu verfolgen … Gibt es vielleicht so etwas wie eine Belohnung, wenn ich diese Aufgabe für Euch erledige?~
+@1154 = ~Ich muss eine große Menge Gold sammeln, um jemanden zu verfolgen … Daher möchte ich erst wissen, ob es eine Belohnung gibt.~
 @1155 = ~Ich muss eine große Summe Gold auftreiben, um zu jemandem zu gelangen, den die Verhüllten Magier verhaftet haben. Gibt es vielleicht eine Belohnung?~
 @1156 = ~Ich muss eine große Menge Gold zusammenkriegen, um zu jemandem zu gelangen, den die Verhüllten Magier verhaftet haben. Ist vielleicht eine Belohnung drin?~
 @1157 = ~Könnte ich. Aber ich muss eine große Menge Gold auftreiben, um jemanden zu verfolgen. Gibt es eine Belohnung?~
-@1158 = ~Ich muss eine große Summe Gold zusammenkriegen, um zu jemandem zu gelangen, der von den Verhüllten Magiern festgehalten wird, also brauche ich eine Belohnung.~
-@1159 = ~Na ja ... ich muss etwas Gold auftreiben, um zu jemandem zu gelangen, der von den Verhüllten Magiern gefangen genommen wurde. Gibt es vielleicht eine Belohnung?~
+@1158 = ~Ich muss eine große Summe Gold zusammenkriegen, um zu jemandem zu gelangen, der von den Verhüllten Magiern festgehalten wird, daher brauche ich eine Belohnung.~
+@1159 = ~Na ja … Ich muss etwas Gold auftreiben, um zu jemandem zu gelangen, der von den Verhüllten Magiern gefangen genommen wurde. Gibt es vielleicht eine Belohnung?~
 @1160 = ~Vielleicht, wenn es dafür eine Belohnung gibt. Ich muss Gold auftreiben, um zu jemandem zu gelangen, der von den Verhüllten Magiern gefangen genommen wurde.~
 @1161 = ~Ich könnte Euch helfen. Aber ich muss etwas Gold auftreiben, um zu jemandem zu gelangen, der von den Verhüllten Magiern gefangen genommen wurde. Gibt es eine Belohnung?~
 @1162 = ~Ich spare Gold, um zu jemandem zu gelangen, der von den Verhüllten Magiern gefangen genommen wurde. Ich brauche eine Belohnung.~
-@1163 = ~Ich lebe, meine Gefährten leben und die, die gegen uns kämpfen, tun es nicht. Denkt daran bei Eurer Suche nach Irenicus...~
+@1163 = ~Ich lebe, meine Gefährten leben und die, die gegen uns kämpfen, tun es nicht. Denkt daran bei Eurer Suche nach Irenicus …~
 @1164 = ~Meine Freundin aus der Kindheit und ich wurden von einem Magier entführt, der an uns experimentiert und uns gefoltert hat. Ich entkam, aber er wurde von den Verhüllten Magiern verhaftet, bevor ich mich rächen konnte. Ich muss ihn finden.~
-@1165 = ~Ich würde es Vorsorge nennen, bevore er Imoen erneut etwas antun kann - und mir.~
-@1166 = ~Schön, hier ist die Geschichte: Ich muss einen mächtigen Magier finden, der mich und meine Kindheitsfreundin Imoen gefangen gehalten und gefolter hat. Jetzt zufrieden?~
+@1165 = ~Ich würde es Vorsorge nennen, bevor er Imoen erneut etwas antun kann – und mir.~
+@1166 = ~Schön, hier ist die Geschichte: Ich muss einen mächtigen Magier finden, der mich und meine Kindheitsfreundin Imoen gefangen gehalten und gefoltert hat. Jetzt zufrieden?~
 @1167 = ~Wir werden Euren Feind aufspüren, <CHARNAME>. Das verspreche ich Euch.~
-
-
-/* new for v2 */
-//#8814
 @1168 = ~Ich muss herausfinden, wer mich aus welchem Grund gefangen genommen hat und was sie mit Imoen und mir vorhaben.~
-//#42660
-@1169 = ~Eine Frage noch ... Ich suche nach jemandem, der von den Verhüllten Magiern gefangen genommen wurde. Wisst Ihr etwas über sie?~
+@1169 = ~Eine Frage noch … Ich suche nach jemandem, der von den Verhüllten Magiern gefangen genommen wurde. Wisst Ihr etwas über sie?~
+@1170 = ~Ihr arbeitet für die Schattendiebe unter der Bedingung, dass sie Euch helfen, Euren ehemaligen Entführer Irenicus zu finden. Ja, sie sind Schattendiebe, und ja, sie sind so verrucht, wie Ihr sicherlich schon gehört habt.~
+@1171 = ~Ich bin gerade dabei mir ein wenig Gold zusammen zu sparen, um einen Feind zu verfolgen … Wie hoch wäre die Belohnung für diesen Auftrag?~
+@1173 = ~Vielleicht haben sie Mitleid mit meiner Not. Meine Bestrebungen sind eine gerechte Sache.~
+@1174 = ~Oh, wie großzügig. Erwartet Ihr wirklich, dass das eine angemessene Entschädigung dafür ist, dass wir warten und wichtigere Sachen hinten anstellen müssen? Feinde von uns müssen verfolgt und zur Rechenschaft gezogen werden!~
+@5000 = ~Aber was, wenn <PRO_HESHE> ohne mich in Gefahr gerät?!~
+@5001 = ~Imoen!~
+@5005 = ~Was? Das würde <CHARNAME> niemals tun! Seid Ihr alle verrückt geworden?! Hände weg von meinem Freund!~ ~Was? Das würde <CHARNAME> niemals tun! Seid Ihr alle verrückt geworden?! Hände weg von meiner Freundin!~
+@5010 = ~Es tut mir so leid, <CHARNAME>. Ich wünschte, ich hätte mit dir ins Gefängnis gehen können!~
+@5050 = ~Wie bescheuert! Aber … was ein lautes BUMM!~
+@5051 = ~<CHARNAME>! Sie konnten gar nichts dagegen machen! Das war echt gemein!~
+@5500 = ~Hast du ihre Augen gesehen? Ich glaube, die haben geleuchtet. Erinnert mich an jemanden, jawohl!~
+@5505 = ~Einfach so? Das werden die anderen bestimmt nicht gutheißen.~
+@5506 = ~Uuuuund auf in den nächsten Kampf!~
+@5510 = ~Das ist ja ein riiiiiiesiger Käfer!~
+@5520 = ~Oh! Das war ganz schön knapp.~
+@5521 = ~Er hat Euch weh getan, <CHARNAME>! Dieser Ifearnan soll sich mal warm anziehen, denn ich werde ihn mir vorknöpfen, jawohl!~
+@5522 = ~(seufz) Jetzt sind sie tot.~
+@5523 = ~Äh, <CHARNAME>? Ich glaube nicht, dass wir von hier aus viel erreichen können.~
+@5524 = ~Was für eine Reise! Ist es jetzt endlich vorbei?~
+@5530 = ~Ich habe doch gesagt, dass ich Euch überall hin folgen würde, <CHARNAME>! Glaubt Ihr es mir jetzt? Wir sind in der HÖLLE!~
+@5535 = ~Puh … ich hoffe inständig, dass dieses Ding nicht abstürzt.~
+@5540 = ~So ein großes Drachenskelett! Das ist jetzt ein Teil des Schlosses! Ich mag es aber nicht. Es wirkt irgendwie … gemein.~
+@5545 = ~Ich mag die Türen nicht. Die sehen irgendwie … unheimlich aus.~
+@5550 = ~Huch, meine Magie ist irgendwie weg. Ich glaube, das liegt an der Gegend hier.~
 
 
-//#21511
-@1170   = ~Ihr arbeitet für die Schattendiebe unter der Bedingung, dass sie Euch helfen, Euren ehemaligen Entführer Irenicus zu finden. Ja, sie sind Schattendiebe, und ja, sie sind so verrucht, wie Ihr sicherlich schon gehört habt.~
-
-/* new for v5 */
-//#46040
-@1171   = ~Ich bin gerade dabei mir ein wenig Gold zusammen zu sparen, um einen Feind zu verfolgen... Wie hoch wäre die Belohnung für diesen Auftrag?~
-
-/* new for v7 */
-//#39703
-@1173   = ~Vielleicht haben sie Mitleid mit meiner Not. Die Verfolgung, die ich anstrebe, ist eine gerechte Sache.~
-//#56899
-@1174   = ~Oh, wie großzügig. Erwartet Ihr wirklich, dass das eine angemessene Entschädigung dafür ist, dass wir warten und wichtigere Sachen hinten anstellen müssen? Feinde von uns müssen verfolgt und zur Rechenschaft gezogen werden!~
-
-/* SoD */
-
-/* new for v5 */
-/* cutscene_imoen_and_jannath.d */
-@5000  = ~Aber was, wenn <PRO_HESHE> ohne mich in Gefahr gerät?!~
-@5001  = ~Imoen!~
-
-/* imoen_bd4100.baf */
-@5005  = ~Was? Das würde <CHARNAME> niemals tun! Seid Ihr alle verrückt geworden?! Hände weg von meinem Freund!~ ~Was? Das würde <CHARNAME> niemals tun! Seid Ihr alle verrückt geworden?! Hände weg von meiner Freundin!~
+/* new for v11 */
+/* imoen_bd0063.baf */
+@5560  = ~Ihr müsst näher treten, um Hier etwas tun zu können.~
 
 /* imoen_forever.tp2 */
-@5010  = ~Es tut mir so leid, <CHARNAME>. Ich wünschte, ich hätte mit dir ins Gefängnis gehen können!~
+@5600  = ~Synthia~
+@5601  = ~Gregory~
+@5602  = ~Holter~
+@5603  = ~Imoens Edelsteine~
+@5604  = ~Dies sind Edelsteine, die Imoen gesammelt hat. Sie sind nicht besonders wertvoll, aber für eine Person in Nöten könnten sie die Welt bedeuten.~
 
-/* bdimoen_additions_sod.baf */
-@5050  = ~Wie bescheuert! Aber - so ein lautes *Bumm*!~
-@5051  = ~<CHARNAME>! Sie konnten gar nichts dagegen machen! Das war echt gemein!~
 
-/* bd1000_commenting.baf */
-@5500  = ~Hast du ihre Augen gesehen? Ich glaube, die haben geleuchtet. Erinnert mich an jemanden, jawohl!~
+/* Journal entries */
+/* SoD quest */
+@100000  = ~Imoens Edelsteine~
+@100001  = ~Imoens Edelsteine
 
-/* bd2000_commenting.baf */
-@5505  = ~Einfach so? Das werden die anderen bestimmt nicht gutheißen.~
-@5506  = ~Uuuuund auf in den nächsten Kampf!~
+Imoen versteckte Edelsteine in der Nähe einiger Zelteingänge des Koalitionslagers. Sie weiß nicht mehr genau, welche Zelte es waren, aber sie weiß, dass es acht Stellen waren, jede an einem anderen Zelt, immer auf der rechten Seite des Zelteingangs.~
+@100002  = ~Imoens Edelsteine
 
-/* imoen_bd0114.baf */
-@5510  = ~Das ist ja ein riiiiiiesen Käfer!~
+Wir sammelten alle Edelsteine von Imoen. Ich schlug vor, sie zu Sir Rayphus zu bringen.~
+@100003  = ~Imoens Edelsteine
 
-/* imoen_bd4300_commenting.baf */
-@5520  = ~Oh! Das war ganz schön knapp.~
-@5521  = ~Er hat dir weh getan, <CHARNAME>! Dieser Hephernaan soll sich mal warm anziehen, denn ich werde ihn mir vorknöpfen, jawohl!~ 
-@5522  = ~(seufz) Jetzt sind sie tot.~
-@5523  = ~Äh, <CHARNAME>? Ich glaube nicht, dass wir von hier aus viel erreichen können.~
-@5524  = ~Was für eine Reise! Ist es jetzt endlich vorbei?~
+Wir sammelten alle Edelsteine von Imoen. Sie hat sie mir gegeben.~
+@100004  = ~Imoens Edelsteine
 
-/* imoen_bd4400_commenting.baf */
-@5530  = ~Ich habe doch gesagt, dass ich dir überall hin folgen würde, <CHARNAME>! Glaubst du es mir jetzt? Wir sind in der *Hölle*!~
-
-/* imoen_bd4601_commenting.baf */
-@5535  = ~Puh... ich hoffe inständig, dass dieses Ding nicht abstürzt.~
-
-/* imoen_bdbark01_commenting.baf */
-@5540  = ~So ein großes Drachenskelett! Das ist jetzt ein Teil des Schlosses! Ich mag es aber nicht. Es wirkt irgendwie... gemein.~
-
-/* imoen_bdvaultd.baf */
-@5545  = ~Ich mag die Türen nicht. Die sehen irgendwie unheimlich aus.~
-
-/* imoen_bd0063.baf */
-@5550  = ~Huch, meine Magie ist irgendwie weg. Ich glaube, das liegt an der Gegend hier.~
+Wir haben die Edelsteine, die Imoen gesammelt hat, Sir Rayphus gegeben, damit er sie an Flüchtlinge verschenken kann. Ich glaube, Imoen hat es gefallen, aber ob sie je wieder versuchen wird, Fremde mit geheimen Geschenken zu überraschen, ist fraglich.~

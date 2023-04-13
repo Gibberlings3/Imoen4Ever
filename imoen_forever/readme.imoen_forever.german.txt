@@ -26,6 +26,8 @@ Die Komponenten 1-5 sind für BGII. Die erste muss installiert sein, damit die op
 Die Komponenten 6-13 sind for SoD. Hier müssen entweder die Komponente 6 oder die Komponente 7 installiert sein, damit die optionalen Komponenten 8-13 installiert werden können (Details der Abhängigkeiten s. Komponentenbeschreibungen).
 Komponente 14 ist unabhängig installierbar und fügt ein alternatives Portrait für Imoen ins gesamte vorliegende Spiel ein.
 
+Bitte beachten: damit Imoen in SoD entsprechend auf die Spielereignisse reagiert, muss die Hauptkomponente (2. Komponente, das "Trackingsystem") der Mod "Road to Discovery" installiert sein.
+
 
 -----------------------------------
 Komponenten für BGII:
@@ -111,8 +113,6 @@ Nach dem Überfall im Herzogspalast wird Imoen durch das Gift zu verletzt sein, u
 
 Kompatibilitätshinweis für Modder: Auch hier ist ihr "finaler" Dialogstate beim Verabschieden im Herzogspalast (BDIMOEN 85) von dieder Mod unverändert gelassen worden, damit andere Mods hier normal ihre Einmischdialoge einfügen können (z.B. um Imoen im Herzogspalst zu verabschieden.)
 
-Ich habe die Idee, dass Imoen aufgrund der Auswirkungen des Giftes im Palast zurückbleibt im BeamDog-Forum gelesen, aber ich weiß nicht mehr, von wem. Wenn Ihr das Zitat findet, dann lasst es mich wissen.
-
 
 9. I4E für SoD: Cutscene mit Imoen und Herzogin Jannath zeigen
 -----------------------------------
@@ -124,6 +124,8 @@ Diese Komponente fügt die Cutscene stattdessen so ein, dass der Spieler Imoen be
 -----------------------------------
 Mit dieser Komonente erhält Imoen Reaktionen und Dialoge in SoD für die Zeit nach ihrer Rückkehr im erten Camp.
 Die Komponente ist noch nicht fertig. Imoen reagiert auf die meisten Spielevents wie es die SoD-NPCs ebenfalls tun ("Floating Text") und hat ein paar Dialoge abhängig vom Spielgeschehen, aber noch keine Banter mit anderen NPCs.
+
+Bitte beachten: damit Imoen in SoD entsprechend auf die Spielereignisse reagiert, muss die Hauptkomponente (2. Komponente, das "Trackingsystem") der Mod "Road to Discovery" installiert sein.
 
 
 11. I4E für SoD: Imoen am Ende des Spiels soll dieselbe wie vorher sein (nur für SoD)
@@ -150,11 +152,15 @@ Mit dieser Komponente folgt der Inhalt von "Imoens Kiste" aus dem obersten Stock
 Voraussetzung ist, dass die Komponente 7 "Imoen kommt im ersten Koalitionslager zurück zum HC" installiert ist.
 
 
+14 I4E in SoD: Give Imoen PID during chapters 8 to 12
 -----------------------------------
-Komponenten für alle Spiele:
------------------------------------
+This component adds player initiated dialogues (PID) to Imoen for chapters 8 to 12 after she returned to the group before the original ending starts.
+It is a new component introduced in v11.
 
-14 I4E für alle Spiele: Alternatives Imoenportrait von Acifer 
+This component requires component 7 "Imoen Returns to PC in First Coalition Camp" to be installed.
+
+
+15 I4E für alle Spiele: Alternatives Imoenportrait von Acifer 
 -----------------------------------
 Diese optionale Komponente fügt ein alternatives Imoenportrait von Acifer ein. 
 Das Portrait wird für alle vorliegenden Teile (BG1, SoD, BGII) des Spiels verwendet. Hierfür werden die originalen Portraitnamen verwendet. 
@@ -295,17 +301,24 @@ Raza, stn & Arcanecoast Team, Arkie - Russisch
 
 
 TOOLS USED
-IESDP					https://gibberlings3.github.io/iesdp/index.htm
-Near Infinity				https://forums.beamdog.com/discussion/30593/new-versions-of-nearinfinity-available/p1
-WeiDU					https://github.com/WeiDUorg/weidu/releases/latest
- 					(formerly: http://www.weidu.org)
+IESDP                      https://gibberlings3.github.io/iesdp/index.htm
+Near Infinity              https://forums.beamdog.com/discussion/30593/new-versions-of-nearinfinity-available/p1
+WeiDU                      https://github.com/WeiDUorg/weidu/releases/latest
+                           (formerly: http://www.weidu.org)
 
 Modding communities, tutorials and technical assistance:
 
-Kerzenburgforum				https://www.baldurs-gate.de/index.php
-The Gibberlings Three			http://gibberlings3.net
-Pocket Plane Group			http://pocketplane.net
+Kerzenburgforum				https://baldurs-gate.de/index.php
+The Gibberlings Three		        https://www.gibberlings3.net/
+Pocket Plane Group			https://www.pocketplane.net/
 Spellhold Studios			http://www.shsforums.net/
+
+Further Links:
+Road to Discovery:
+https://www.gibberlings3.net/mods/other/road_to_discovery/
+
+DLC Merger: 				https://forums.beamdog.com/discussion/71305/mod-dlc-merger-merge-steam-gog-sod-dlc-or-custom-dlcs-with-the-main-game
+
 
 
 LEGAL INFORMATION
@@ -320,6 +333,10 @@ REDISTRIBUTION NOTE: Imoen 4 Ever Mod was created to be freely enjoyed by all Ba
 
 
 HISTORY
+
+Version 11:
+-SoD content finished.
+-German v9 proofread, by Shai Hulud.
 
 Version 10:
 -new optional component (not dependent on the others): new alternate portrait for Imoen for all games, by Acifer.

@@ -262,6 +262,10 @@
 /* imoen_forever.tp2 */
 @5010  = ~Мне очень жаль, <CHARNAME>. Как бы я хотел попасть с тобой в тюрьму!~
 
+/* new for v11 */
+/* imoen_bd0063.baf */
+@5560  = ~You need to come closer to do anything here.~
+
 /* bdimoen_additions_sod.baf */
 @5050  = ~Так глуп! Но - что за * бум *!~
 @5051  = ~<ИМЯ>! Они ничего не могли сделать, чтобы защитить себя. Это так подло!~
@@ -297,3 +301,27 @@
 
 /* imoen_bd0063.baf */
 @5550  = ~Кажется, моя магия ушла. Я думаю, что это делает это место.~
+
+/* new for v11 */
+/* imoen_forever.tp2 */
+@5600  = ~Synthia~
+@5601  = ~Gregory~
+@5602  = ~Holter~
+@5603  = ~Imoen's Gems~
+@5604  = ~These are some gems collected by Imoen. Nothing too valuable, but everything to a person in need.~
+
+/* Journal entries */
+/* SoD quest */
+@100000  = ~Imoen's Gems~
+@100001  = ~Imoen's Gems
+
+Imoen hid gems near some tent entrances of the coalition camp. She doesn't remember which tents exactly, but she knows that it was eight stacks, each on a different tent, always at the right side of a tent's entrance.~
+@100002  = ~Imoen's Gems
+
+We collected all of Imoen's gems. I suggested we would bring them to Sir Rayphus.~
+@100003  = ~Imoen's Gems
+
+We collected all of Imoen's gems. She doesn't want to have them any more.~
+@100004  = ~Imoen's Gems
+
+We gave gems Imoen collected to Sir Rayphus, so he can give them to refugees. I think Imoen liked it, but whether she will try to surprise strangers with presents again is questionable.~

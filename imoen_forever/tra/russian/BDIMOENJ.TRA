@@ -55,7 +55,7 @@
 @100  = ~Честно говоря, мне в данном случае наплевать на ваши проблемы.~
 @101  = ~<CHARNAME>! Ты действительно считаешь меня полной идиоткой? Я никогда бы не стала воровать в лагере. Я имею в виду - так, чтобы меня кто-то мог заметить. Да не смотри ты так не меня! Расслабься. Ручаюсь, никто не "потерял" ничего существенного.~
 @102  = ~Но мне нужно что-то делать, иначе я скоро потеряю навык. Ой! Ой! У меня есть потрясающая идея. Я просто спрячу все, что найду в лагере, в карман какого-нибудь бедного беженца. Эй, не смотри на меня так. Ты говоришь, что я не должна обогащаться в лагере - и я не буду. Я буду делать добрые дела - * и * оставаться в форме! А теперь вперед, снова спасать мир!~
-@103  = ~~
+//@103  = 
 @104  = ~Что? Неееет. Я бы никогда не сделала этого! Хотя герцогиня Джаннат действительно была напугана ...~
 @105  = ~Их карманы чаще пусты, ничего не найти. А некоторые засаленные, фу.~
 @106  = ~Итак, ты * пыталась * украсть у беженцев!~
@@ -93,8 +93,91 @@
 @134   = ~О нет! Бедный человек. Он был таким классным парнем! Ну, кроме того, что он потерял все наше золото, но ... это так печально!~
 @135   = ~Я не чувствую никаких изменений. А ты?~
 
-
-
 /* new for v10 */
 /* #34030 "Archer's Eyes" */
 @136   = ~[Imoen]Глаза Лучника, значит? Только мне кажется, что некоторые талисманы и магические штучки бывают просто... слишком мерзкими?~
+
+/* new for v11 */
+/* continuing sod_quest.d */
+@137  = ~[Imoen]Making other people happy is *difficult*, <CHARNAME>. Who would have thought that they would accept gifts so... so badly?~
+@138  = ~[Imoen]Well, even more the reason to stay in practice, no?~
+@139  = ~[female refugee]An Angel Skin Ring! - Can you believe that? My fiance has an Angel Skin Ring in his pocket, and to me he proposed with a ring twirled out of *tin* because we couldn't afford anything else after losing our home. Or so I thought?!~
+@140  = ~[male refugee]I didn't know it's in there! I don't know where it comes from, either!~
+@141  = ~[Imoen]Uhm, well, that's possible, no?~
+@142  = ~[female refugee]So, were did it come from, eh? Did it create itself out of thin air?~
+@143  = ~[Imoen]Well, mmmmaybe someone put it into your pocket, you know, as a treat. After hearing about your tin ring. It's possible, right?~
+@144  = ~[female refugee]That's the lamest excuse I ever heard. In times like these, noone would just give away a ring. No - you'll get a mouthful later, you hear me? Hiding such a ring from me! Can you believe it...~
+@145  = ~[Imoen]Oof...~
+@146  = ~[female refugee]I don't know where it came from, but it was in my pocket! This gem is worth a fortune. I can book a carriage to Waterdeep!~
+@147  = ~[Imoen]Yes! Isn't this great? - At last, someone who is happy.~
+@148  = ~[female refugee]Which means I don't need *you* any more. I'm a wealthy woman now, I can't share my wealth with everyone.~
+@149  = ~[female refugee]"Everyone"? I thought we are in this together!~
+@150  = ~[female refugee]Not any more. I'm off to Waterdeep. I'm sure you'll be fine, with all the soldiers protecting the camp. Bye!~
+@151  = ~[Imoen]But... aw, man, that was mean. The were meant for both of them!~
+@152  = ~[male refugee]...well aware, but that you would go to such measures is beyond my imagination. Placing a gem into my pillow so *I* would be suspected of thieving and kicked out of camp! How low can one fall!~
+@153  = ~[Imoen]Aw!... No, that's not what...~
+@154  = ~[male refugee]What? I did no such thing! Why would I give a gem to *you* just to get you out of this camp. Had I such a gem, I would use it for myself! ...Wait - yes, of course it's *my* gem! Give me *my* gem back!~
+@155  = ~[male refugee]No way, you liar! You just said it's not yours! So it's mine - I found it!~
+@156  = ~[male refugee]No! Give me the gem! Give it to me!~
+@157  = ~[male refugee]...I swear I don't know where they are coming from. Please believe me!~
+@158  = ~[male refugee]Ah, I wanted to hand these gems in to Sir Rayphus, but he doesn't seem to be available.~
+@159  = ~[male refugee]I just found them stowed away in my pillow. Surely someone is missing them, and I do not want to be accused of thieving! I know I am lucky to have found shelter in this camp, I will not risk it over some trinkets - especially since I don't know who placed them there.~
+@160  = ~[Sir Rayphus]Thanks for your honesty. I will take the gems and look for the rightful owners - as well as the thief who took them.~
+@161  = ~[male refugee]Thank you! That takes a huge weight off my shoulders.~
+@162  = ~[male refugee]I will go now - I don't want to be around in case the thief comes back and notices the gems are gone...~
+@163  = ~[Imoen]But... they were meant for you! And noone here misses them, they belonged to crusaders! Er... I think! I wouldn't *know* of course... uh, but that's what I would *think* happened here.~
+@164  = ~[male refugee]That's a rediculous thought - a saint going around and giving treats to the poor refugees? Hmm - I don't think so. I'll definitely hide to make sure the thief won't hassle me!~
+@165  = ~[Imoen]Not a saint, but... oh, bummer!~
+@166  = ~[Safana]Seems your attempts at pickpocketing also gave rather... unexpected results, Imoen.~
+@167  = ~[Imoen]Yeah, yeah - rub it in.~
+@168  = ~[PC Reply]What do you mean?~
+@169  = ~[PC Reply]Yes, I noticed instances were your gift receiver didn't seem to be too happy about finding trinkets they didn't know they were the owners of.~
+@170  = ~[PC Reply]What did you expect?~
+@171  = ~[PC Reply]I told you it's a bad idea to go around and play gift fairy.~
+@172  = ~[Imoen]I don't know... Some joy? Gratitude not so much, as I didn't want anyone to know it was me.~
+@173  = ~[Imoen]Aw, but you just didn't want to part with the jewels!~
+@174  = ~[Imoen]I think... I think it was wrong to give gems away. Noone seemed really happy to have them...~
+@175  = ~You heard Husam - these are probably just the uncontent ones. The other ones are already happily on their way to Baldur's Gate.~
+@176  = ~[PC Reply]It's hard to please people - especially everyone.~
+@177  = ~[PC Reply]Maybe you are giving the gifts to them wrongly.~
+@178  = ~[PC Reply]I am sorry it didn't go as planned. What would you like to do now?~
+@179  = ~[PC Reply]Aw, I can't see you like this. How about that - we give whatever gems and trinkets you have left to Sir Rayphus, and he can distribute them to the refugees fairly. Sounds like a plan?~
+@180  = ~[PC Reply]You should have given them to me from the start. We'd have a use of them ourselves.~
+@181  = ~[PC Reply]I can't be bothered with this, Imoen. They are your gems, do with them what you want.~
+@182  = ~[Imoen]Yes, but how else should I do it? I wanted to be all *sneaky* about it! That was part of the thrill...~
+@183  = ~[Imoen]Yes, I noticed... (sigh)~
+@184  = ~[Imoen]That's a great idea! Then they'll accept them for sure. He can say that they were donated by an unknown donor!~
+@185  = ~[Imoen]Yes, I guess you are right... I didn't take any from our shared stack, I swear!~
+@186  = ~[Imoen]The thing is... umm... there is still some gems I hid at the tents.~
+@187  = ~[PC Reply]What do you suggest?~
+@188  = ~[PC Reply]We should go and collect them. Where did you put them?~
+@189  = ~[PC Reply]Don't tell me you want *me* to go around and collect them.~
+@190  = ~[Imoen]I would like to get them back. Would you come with me?~
+@191  = ~[Imoen]And if I say please?~
+@192  = ~[PC Reply]Fine - where are they?~
+@193  = ~[Imoen]Thanks! Erm... I don't really remember.. but I placed all of them at the right side of the tent entrances. And it was eight stacks, I remember how I counted the gems so they would be equally distributed.~
+@194  = ~[PC Reply]Alright, we will search the tents for your gems.~
+@195  = ~[PC Reply]You're not serious. Do you expect me to go gem hunting through the whole camp?~
+@196  = ~[Imoen]Umm... yes? Pleeease?~
+@197  = ~[Imoen]Fiiine... I will just leave the others where they are and not listen to people's complaining. I am *sure* they will do some good.~
+@198  = ~[Imoen]Great!~
+@199  = ~[Imoen]Well, I do not want to play fairy any more.~
+@200  = ~[Imoen]You know what - I'll focus on filling *our* pockets again from now on, and leave the decision about how to spend them to you. Sounds like a plan, no?~
+@201  = ~[Imoen]Well, I don't have any now, so I guess it's just a nice throught. Still, it *is* a nice thought!~
+@202  = ~[Imoen]I think we have all of them. Phew, what a waste of time.~
+@203  = ~[PC Reply]Not exactly. That's a nice sum of gems you collected there.~
+@204  = ~[PC Reply]A waste, indeed.~
+@205  = ~[Imoen]Well, it's a nice amount of glittering stones, alright!~
+@206  = ~[Imoen]Let's bring them to Sir Rayphus like you suggested... before I change my mind!~
+@207  = ~[Imoen]Here they are - I'll leave them all with you, like you requested.~
+@208  = ~[Imoen]I tell you what, <CHARNAME> - it's the collecting of gems I like doing best. I think I'll focus on finding them for us again, and leave the rest to you!~
+@209  = ~[PC Reply]My friend collected these gems from the crusaders, and we thought you could distribute them to refugees who would need the help the most.~
+@210  = ~[Sir Rayphus]Oh, what a cheritable donation. I will see to them being given to needing parties accordingly. Have thanks for your generosity.~
+@211  = ~[Imoen]Generosity, uh-huh! He meant me with that, you know? I'm a very generous person - today. Now let's go, <CHARNAME> - I need to fill *our* pockets again.~
+
+
+/* continuing bdimoenj_additions.d */
+@500 = ~[Imoen]Oh, you too? It's really weird to see some of the things people carry with them, isn't it? But wait, the things you listed - oh dear.~
+
+
+

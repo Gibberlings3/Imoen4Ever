@@ -1,0 +1,243 @@
+/* quest: Imoen the gem fairy */
+/* only if Imoen has thieving class */
+
+/* kick off with dialogue: refugees have empty pockets */
+/* activate */
+IF 
+    InParty(Myself)
+    RealGlobalTimerExpired("C#IM_DialogueTimer","GLOBAL")
+    GlobalGT("C#IM_DialogueSoD","GLOBAL",1)
+    Class(Myself,THIEF_ALL)
+    !StateCheck(Player1,CD_STATE_NOTVALID)
+    !StateCheck(Myself,CD_STATE_NOTVALID)
+    See(Player1)
+    !Detect([ENEMY])
+    !Detect([EVILBUTBLUE])
+    CombatCounter(0)
+    GlobalLT("bd_plot","global",485) //before portal scene
+    Global("C#IM_SoDQuest","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#IM_SoDQuest","GLOBAL",1)
+END
+
+/* initiate */
+IF   
+    InParty(Myself)
+  !StateCheck(Player1,CD_STATE_NOTVALID)
+  !StateCheck(Myself,CD_STATE_NOTVALID)
+  See(Player1)
+  !Detect([ENEMY])
+  !Detect([EVILBUTBLUE])
+  CombatCounter(0)
+  Global("C#IM_SoDQuest","GLOBAL",1) 
+THEN
+	RESPONSE #100
+		RealSetGlobalTimer("C#IM_QuestTimerSoD","GLOBAL",800)
+		RealSetGlobalTimer("C#IM_DialogueTimer","GLOBAL",%Dialog_Timer_SoD%)
+		StartDialogueNoSet(Player1)
+END
+
+/* reset timer in case Imoen enters area for first time */
+IF
+  InParty(Myself)
+  !Detect([ENEMY])
+  CombatCounter(0)
+  !StateCheck(Myself,CD_STATE_NOTVALID)
+  See(Player1)
+  OR(2)
+	AreaCheck("bd2100")
+	AreaCheck("bd3000")
+  Global("C#IM_SoDQuest","GLOBAL",2)
+  Global("C#IM_SoDQuestreset","MYAREA",0) 
+THEN
+	RESPONSE #100
+	  RealSetGlobalTimer("C#IM_QuestTimerSoD","GLOBAL",600)
+	  SetGlobal("C#IM_SoDQuestreset","MYAREA",1) 
+END
+
+
+/* Encounter one: bickering betrothed */
+/* can happen anywhere */
+IF
+  InParty(Myself)
+  RealGlobalTimerExpired("C#IM_QuestTimerSoD","GLOBAL")
+  OR(3)
+	  AreaCheck("bd1000")
+	  AreaCheck("bd2100") //Bridgefort interior
+	  AreaCheck("bd3000")
+  !Detect([ENEMY])
+  CombatCounter(0)
+  Global("C#IM_SoDQuest","GLOBAL",2)
+  Global("C#IM_SoDQuest_Enc","GLOBAL",0)
+  InMyArea("ff_camp")
+  NextTriggerObject("ff_camp")
+  IsOverMe("%IMOEN_DV_SOD%")
+THEN
+	RESPONSE #100
+	  SetInterrupt(FALSE)
+	  SetGlobal("C#IM_SoDQuest_Enc","GLOBAL",1)
+	  CreateCreatureObjectOffset("C#IMSQ01",Myself,[20.20])
+	  CreateCreatureObjectOffset("C#IMSQ02",Myself,[35.10])
+	  DisplayStringHead(Myself,~Hehehe!~)
+	  RealSetGlobalTimer("C#IM_QuestTimerSoD","GLOBAL",1200)
+	  SetInterrupt(TRUE)
+END
+
+/* Encounter two: bickering friends no. 1 */
+IF
+  InParty(Myself)
+  RealGlobalTimerExpired("C#IM_QuestTimerSoD","GLOBAL")
+  OR(2)
+	  AreaCheck("bd1000")
+	  AreaCheck("bd3000")
+  OR(2)
+	  AreaCheck("bd1000")
+	  GlobalGT("bd_plot","global",300)
+  !Detect([ENEMY])
+  CombatCounter(0)
+  Global("C#IM_SoDQuest","GLOBAL",2)
+  Global("C#IM_SoDQuest_Enc","GLOBAL",2)
+  InMyArea("ff_camp")
+  NextTriggerObject("ff_camp")
+  IsOverMe("%IMOEN_DV_SOD%")
+THEN
+	RESPONSE #100
+	  SetInterrupt(FALSE)
+	  SetGlobal("C#IM_SoDQuest_Enc","GLOBAL",3)
+	  CreateCreatureObjectOffset("C#IMSQ04",Myself,[20.20])
+	  CreateCreatureObjectOffset("C#IMSQ05",Myself,[35.10])
+	  DisplayStringHead(Myself,~Yup!~)
+	  RealSetGlobalTimer("C#IM_QuestTimerSoD","GLOBAL",1200)
+	  SetInterrupt(TRUE)
+END
+
+/* Encounter three: bickering friends no. 2 */
+IF
+  InParty(Myself)
+  RealGlobalTimerExpired("C#IM_QuestTimerSoD","GLOBAL")
+  OR(2)
+	  AreaCheck("bd1000")
+	  AreaCheck("bd3000")
+  !Detect([ENEMY])
+  CombatCounter(0)
+  Global("C#IM_SoDQuest","GLOBAL",2)
+  Global("C#IM_SoDQuest_Enc","GLOBAL",4)
+  InMyArea("ff_camp")
+  NextTriggerObject("ff_camp")
+  IsOverMe("%IMOEN_DV_SOD%")
+THEN
+	RESPONSE #100
+	  SetInterrupt(FALSE)
+	  SetGlobal("C#IM_SoDQuest_Enc","GLOBAL",5)
+	  CreateCreatureObjectOffset("C#IMSQ06",Myself,[20.20])
+	  CreateCreatureObjectOffset("C#IMSQ07",Myself,[35.10])
+	  DisplayStringHead(Myself,~Gotcha!~)
+	  RealSetGlobalTimer("C#IM_QuestTimerSoD","GLOBAL",1200)
+	  SetInterrupt(TRUE)
+END
+
+/* Encounter 4: no thief */
+/* in bd3000 */
+IF
+  InParty(Myself)
+  RealGlobalTimerExpired("C#IM_QuestTimerSoD","GLOBAL")
+  AreaCheck("bd3000")
+  !Detect([ENEMY])
+  CombatCounter(0)
+  Global("C#IM_SoDQuest","GLOBAL",2)
+  Global("C#IM_SoDQuest_Enc","GLOBAL",6)
+  InMyArea("BDRAYPHU")
+THEN
+	RESPONSE #100
+	  SetInterrupt(FALSE)
+	  SetGlobal("C#IM_SoDQuest_Enc","GLOBAL",7)
+	  CreateCreatureObjectOffset("C#IMSQ03","BDRAYPHU",[20.20])
+	  RealSetGlobalTimer("C#IM_QuestTimerSoD","GLOBAL",800)
+	  SetInterrupt(TRUE)
+END
+/* in bd43000 */
+IF
+  InParty(Myself)
+  AreaCheck("bd4300")
+  !Detect([ENEMY])
+  CombatCounter(0)
+  Global("C#IM_SoDQuest","GLOBAL",2)
+  GlobalLT("C#IM_SoDQuest_Enc","GLOBAL",7)
+  InMyArea("BDRAYPHU")
+THEN
+	RESPONSE #100
+	  SetInterrupt(FALSE)
+	  SetGlobal("C#IM_SoDQuest_Enc","GLOBAL",7)
+	  CreateCreatureObjectOffset("C#IMSQ03","BDRAYPHU",[20.20])
+	  SetInterrupt(TRUE)
+END
+
+/* Last dialogue. In bd4300, it needs to trigger right after meeting the refugee handing in the gems. */
+/* activate */
+IF 
+    InParty(Myself)
+    OR(2)
+		RealGlobalTimerExpired("C#IM_DialogueTimer","GLOBAL")
+		AreaCheck("bd4300")
+    !StateCheck(Player1,CD_STATE_NOTVALID)
+    !StateCheck(Myself,CD_STATE_NOTVALID)
+    See(Player1)
+    !Detect([ENEMY])
+    !Detect([EVILBUTBLUE])
+    CombatCounter(0)
+    Global("C#IM_SoDQuest","GLOBAL",2)
+    Global("C#IM_SoDQuest_Enc","GLOBAL",8)
+THEN
+	RESPONSE #100
+		SetGlobal("C#IM_SoDQuest","GLOBAL",3)
+END
+
+/* initiate */
+IF 
+  InParty(Myself)
+  !StateCheck(Player1,CD_STATE_NOTVALID)
+  !StateCheck(Myself,CD_STATE_NOTVALID)
+  See(Player1)
+  !Detect([ENEMY])
+  !Detect([EVILBUTBLUE])
+  CombatCounter(0)
+  Global("C#IM_SoDQuest","GLOBAL",3) 
+THEN
+	RESPONSE #100
+		RealSetGlobalTimer("C#IM_DialogueTimer","GLOBAL",%Dialog_Timer_SoD%)
+		StartDialogueNoSet(Player1)
+END
+
+/* After finding all of Imoen's gems. Need to be in party inventory. */
+/* activate */
+IF 
+    InParty(Myself)
+    NumItemsParty("c#imsgm",8)
+    !StateCheck(Player1,CD_STATE_NOTVALID)
+    !StateCheck(Myself,CD_STATE_NOTVALID)
+    See(Player1)
+    !Detect([ENEMY])
+    !Detect([EVILBUTBLUE])
+    CombatCounter(0)
+    Global("C#IM_SoDQuest","GLOBAL",5)
+THEN
+	RESPONSE #100
+		SetGlobal("C#IM_SoDQuest","GLOBAL",6)
+END
+
+/* initiate */
+IF 
+  InParty(Myself) 
+  !StateCheck(Player1,CD_STATE_NOTVALID)
+  !StateCheck(Myself,CD_STATE_NOTVALID)
+  See(Player1)
+  !Detect([ENEMY])
+  !Detect([EVILBUTBLUE])
+  CombatCounter(0)
+  Global("C#IM_SoDQuest","GLOBAL",6)
+THEN
+	RESPONSE #100
+		RealSetGlobalTimer("C#IM_DialogueTimer","GLOBAL",%Dialog_Timer_SoD%)
+		StartDialogueNoSet(Player1)
+END

@@ -4,11 +4,11 @@ THEN
 	RESPONSE #100
 		CutSceneId(Player1)
 		SmallWait(5)
-		ActionOverride("imoen",ForceSpell(Myself,WIZARD_SHIELD))  // SPWI114.SPL (Shield)
+		ActionOverride("%IMOEN_DV_SOD%",ForceSpell(Myself,WIZARD_SHIELD))  // SPWI114.SPL (Shield)
 		SmallWait(15)
 		FadeToColor([20.0],0)
 		SmallWait(25)
-		ActionOverride("imoen",DestroySelf())
+		ActionOverride("%IMOEN_DV_SOD%",DestroySelf())
 		ActionOverride("bdliia",DestroySelf())
 		RestorePartyLocations()
 		MultiPlayerSync()

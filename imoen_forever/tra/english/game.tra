@@ -280,7 +280,7 @@ One more troubling thing... Bodhi knew. She knew I am a child of Bhaal.~
 @5520  = ~Oh! That was close.~
 @5521  = ~He hurt you, <CHARNAME>! That Hephernaan should watch his back because I'm comin' for him, oh yes!~ 
 @5522  = ~(sigh) Now they are dead.~
-@5523  = ~Uh, <CHARNAME>, I don't think we can achieve much from here.~
+@5523  = ~We... we need to go *in* there - don't we?~
 @5524  = ~What a trip! Is it really over?~
 
 /* imoen_bd4400_commenting.baf */
@@ -297,3 +297,30 @@ One more troubling thing... Bodhi knew. She knew I am a child of Bhaal.~
 
 /* imoen_bd0063.baf */
 @5550  = ~Uh, my magic seems to be gone. I think it's this place that does that.~
+
+/* new for v11 */
+/* imoen_bd0063.baf */
+@5560  = ~You need to come closer to do anything here.~
+
+/* imoen_forever.tp2 */
+@5600  = ~Synthia~
+@5601  = ~Gregory~
+@5602  = ~Holter~
+@5603  = ~Imoen's Gems~
+@5604  = ~These are some gems collected by Imoen. Nothing too valuable, but everything to a person in need.~
+
+/* Journal entries */
+/* SoD quest */
+@100000  = ~Imoen's Gems~
+@100001  = ~Imoen's Gems
+
+Imoen hid gems near some tent entrances of the coalition camp. She doesn't remember which tents exactly, but she knows that it was eight stacks, each on a different tent, always at the right side of a tent's entrance.~
+@100002  = ~Imoen's Gems
+
+We collected all of Imoen's gems. I suggested we would bring them to Sir Rayphus.~
+@100003  = ~Imoen's Gems
+
+We collected all of Imoen's gems. She doesn't want to have them any more.~
+@100004  = ~Imoen's Gems
+
+We gave gems Imoen collected to Sir Rayphus, so he can give them to refugees. I think Imoen liked it, but whether she will try to surprise strangers with presents again is questionable.~

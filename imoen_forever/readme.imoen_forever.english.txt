@@ -25,6 +25,8 @@ The mod has 14 components. The first 5 are for BGII; for these, the 1st componen
 The last components (numbers 6 to 13) are for SoD; for these, components 6 *or* 7 are required to install any of the other, optional components (for details refer to components' descriptions).
 Component 14 offers an alternate portrait for Imoen by Acifer. It is optional and independent on any other I4E component.
 
+Please note: For Imoen to react to game events in SoD accordingly, the main component (Tracking System, 2nd component) of "Road to Discovery" needs to be installed.
+
 
 Components for BGII content:
 
@@ -105,21 +107,24 @@ This component alters Imoen's "good bye" dialogue the evening before the PC head
 
 Again, the last dialogue state in the Ducal Palace (BDIMOEN 85) stays unchanged in case mod NPCs want to interject (e.g. say hello/goodbye to Imoen after her recovery).
 
-I read this idea in the BeamDog forums but I forgot by whom. If you know who this idea is credited to, please let me know.
-
 
 9 I4E in SoD: Play Cutscene With Imoen and Duke Jannath
 -----------------------------------
 In the original game, the PC can witness Imoen's training with Duke Jannath via a scrying pool in lich area of the dwarven dig (bd1200.are).
 This component makes this a cutscene for the player when the PC is marching out of the City with the Flaming Fist.
 
+This component requires component 7 "Imoen Returns to PC in First Coalition Camp" to be installed.
+
 
 10 I4E in SoD: Give Imoen Dialogue Content in SoD Chapters 8-12
 -----------------------------------
-The aim of this component is to give Imoen more reactions to game events, dialogues, and interjections.
+This component gives Imoen more reactions to game events, dialogues, and interjections, in addition to the basic ones that are included in component 7. I made this an optional component so players have the choice in case they do not agree to my characterization of Imoen.
 
-This component is not finished yet.
-Imoen reacts to most game situations and has some dialogues dependent on game events, but no banter with other NPCs.
+There is also a small quest that plays out in the main coalition camp. Imoen needs to be a thief for the quest to trigger.
+
+This component requires component 7 "Imoen Returns to PC in First Coalition Camp" to be installed.
+
+Please note: For Imoen to react to game events in SoD accordingly, the main component (Tracking System, 2nd component) of "Road to Discovery" needs to be installed.
 
 
 11 I4E in SoD: Imoen at the End of the Game Should be the One that Was in Party (SoD Only)
@@ -145,10 +150,21 @@ This component will be overwritten by component 14 "14 I4E in all games: Alterna
 13 I4E in SoD: Imoen's chest moves with the campaign, too 
 -----------------------------------
 With this component, the contents of Imoen's chest in the 3rd floor of the palace will move along the camps as well - if Imoen joins the group in one of the camps. Imoen's items will be inside the tent next to the PC's chest in each camp in that case.
+
+This component requires component 7 "Imoen Returns to PC in First Coalition Camp" to be installed.
+
+As of version 11, compatibility with Another fine Hell is also provided if I4E is installed after AfH.
+
+
+14 I4E in SoD: Give Imoen PID during chapters 8 to 12
+-----------------------------------
+This component adds player initiated dialogues (PID) to Imoen for chapters 8 to 12 after she returned to the group before the original ending starts.
+It is a new component introduced in v11.
+
 This component requires component 7 "Imoen Returns to PC in First Coalition Camp" to be installed.
 
 
-14 I4E in all games: Alternate Imoen Portrait by Acifer 
+15 I4E in all games: Alternate Imoen Portrait by Acifer 
 -----------------------------------
 This optional component installs an alternate Imoen portrait, by Acifer. 
 The portrait will be used for Imoen in all parts (BG1, SoD, BGII) of the present game. For this, portrait naming of the original Imoen portraits will be used.
@@ -222,7 +238,7 @@ https://www.gibberlings3.net/forums/topic/30399-imoen-4-ever-compatibility-notes
 The mod is *not* compatible with my "Imoen is Stone" mod.
 
 ---------
-more notes for modders:
+more notes for modders with regard to BGII compatibility:
 Crossmod variable: "C#IM_ImoenStays"
 
 Global("C#IM_ImoenStays","GLOBAL",0) - Inside ID, Imoen gets kidnapped, Imoen is taken by the Cowled Wizards at the Promenade
@@ -261,8 +277,14 @@ Global("C#IM_ImoenStays","GLOBAL",1)
 NPC talk to Imoen after Spellhold and explicitely address the fact that she was taken twice, or that she was still taken by Irenicus although the Cowled Wizards let her go the first time he tried to take her with him at the Promenade fight: Global("C#IM_ImoenStays","GLOBAL",3)
 
 
+SoD compatibility:
+--------------------------------------------
+The SoD parts of the mod should be considered as an NPC mod and should be installed after the following mods so the crossmod and compatibility content will be installed:
+-The Boareskyr Bridge Scene (reason: Imoen reacts to the scene)
+-jastey's SoD Tweak Pack (reason: some tweaks would "move" Imoen's interejctions to different dialogue lines than they were intended for)
+Install order with Another fine Hell is unimportant but I'd recommend installing I4E after AfH so AfH can be bundled with the quest mods.
+
 Modder compatibility notes for SoD:
-------------------------------------
 For detection of Imoen4Ever, the component "Imoen remains in the Group in SoD" sets a variable Global("C#IM_ImoenInSoD","GLOBAL",1) in both Undercity area and Ducal Palace third floor (bd0103.bcs).
 If your mod NPC talks in Korlasz' Crypt about Imoen having joined Duke Jannath, please check whether Imoen might be in group, first.
 
@@ -299,10 +321,17 @@ WeiDU                      https://github.com/WeiDUorg/weidu/releases/latest
 
 Modding communities, tutorials and technical assistance:
 
-Kerzenburgforum:           https://www.baldurs-gate.de/index.php
-The Gibberlings Three      http://gibberlings3.net
-Pocket Plane Group         http://pocketplane.net
-Spellhold Studio:          http://www.shsforums.net/
+Kerzenburgforum				https://baldurs-gate.de/index.php
+The Gibberlings Three		        https://www.gibberlings3.net/
+Pocket Plane Group			https://www.pocketplane.net/
+Spellhold Studios			http://www.shsforums.net/
+
+Further Links:
+Road to Discovery:
+https://www.gibberlings3.net/mods/other/road_to_discovery/
+
+DLC Merger: 				https://forums.beamdog.com/discussion/71305/mod-dlc-merger-merge-steam-gog-sod-dlc-or-custom-dlcs-with-the-main-game
+
 
 
 LEGAL INFORMATION
@@ -317,6 +346,10 @@ REDISTRIBUTION NOTE: Imoen 4 Ever Mod was created to be freely enjoyed by all Ba
 
 
 HISTORY
+
+Version 11:
+-SoD content finished.
+-German proofread (v9), by Shai Hulud.
 
 Version 10:
 -new optional component (not dependent on the others): new alternate portrait for Imoen for all games, by Acifer.

@@ -275,6 +275,11 @@ Jeszcze jedna niepokoj¹ca rzecz... Bodhi wiedzia³a, wiedzia³a o moim ojcu – Bhaa
 /* imoen_bd4100.baf */
 @5005  = ~Co? <CHARNAME> nigdy by czegoœ takiego nie zrobi³<PRO_HESHE>! Poszaleliœcie wszyscy?! Zostawcie <PRO_MALEFEMALE>!~
 
+/* new for v11 */
+/* imoen_bd0063.baf */
+@5560  = ~You need to come closer to do anything here.~
+
+
 /* imoen_forever.tp2 */
 @5010  = ~<CHARNAME>, tak mi przykro. ¯a³ujê, ¿e nie mogê iœæ z tob¹ do wiêzienia!~
 
@@ -314,3 +319,26 @@ Jeszcze jedna niepokoj¹ca rzecz... Bodhi wiedzia³a, wiedzia³a o moim ojcu – Bhaa
 /* imoen_bd0063.baf */
 @5550  = ~Hm, moja magia mnie jakoœ opuœci³a. To chyba przez to miejsce.~
 
+/* new for v11 */
+/* imoen_forever.tp2 */
+@5600  = ~Synthia~
+@5601  = ~Gregory~
+@5602  = ~Holter~
+@5603  = ~Imoen's Gems~
+@5604  = ~These are some gems collected by Imoen. Nothing too valuable, but everything to a person in need.~
+
+/* Journal entries */
+/* SoD quest */
+@100000  = ~Imoen's Gems~
+@100001  = ~Imoen's Gems
+
+Imoen hid gems near some tent entrances of the coalition camp. She doesn't remember which tents exactly, but she knows that it was eight stacks, each on a different tent, always at the right side of a tent's entrance.~
+@100002  = ~Imoen's Gems
+
+We collected all of Imoen's gems. I suggested we would bring them to Sir Rayphus.~
+@100003  = ~Imoen's Gems
+
+We collected all of Imoen's gems. She doesn't want to have them any more.~
+@100004  = ~Imoen's Gems
+
+We gave gems Imoen collected to Sir Rayphus, so he can give them to refugees. I think Imoen liked it, but whether she will try to surprise strangers with presents again is questionable.~

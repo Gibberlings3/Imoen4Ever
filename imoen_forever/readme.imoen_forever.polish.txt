@@ -23,6 +23,7 @@ Mod jest kompatybilny z SoD i wszystkimi wersjami gry: BGII, BGT, BGII:EE, EET. 
 Mod ma dwanaœcie komponentów. Pierwsze piêæ dotyczy BGII; pierwszy z nich jest wymagany do zainstalowania któregokolwiek z kolejnych (numery 2 do 4) opcjonalnych komponentów. Ostatnie komponenty (od 6 do 13) dotycz¹ SoD; spoœród nich szósty *lub* siódmy jest wymagany do zainstalowania kolejnych komponentów opcjonalnych (for details refer to components' descriptions).
 Component 14 offers an alternate portrait for Imoen by Acifer. It is optional and independent on any other I4E component.
 
+Please note: For Imoen to react to game events in SoD accordingly, the main component (Tracking System, 2nd component) of "Road to Discovery" needs to be installed.
 
 Komponenty z zawartoœci¹ dla BGII:
 
@@ -103,8 +104,6 @@ Ten komponent zmienia po¿egnalny dialog Imoen i postaci gracza wieczorem, przed 
 
 Uwaga dla modderów dotycz¹ca kompatybilnoœci: jw.
 
-Przeczyta³am o tym pomyœle na forum BeamDoga, ale zapomnia³am, przez kogo zosta³ podsuniêty. Jeœli wiesz, kto by³ jego autorem, daj mi znaæ.
-
 
 9. I4E w SoD: Odgrywa filmik z Imoen i Jannath
 -----------------------------------
@@ -117,6 +116,8 @@ Ten komponent usuwa tê wizjê z sadzawki i sprawia, ¿e jest to przerywnik filmowy
 Celem tego komponentu jest dodanie Imoen wiêcej reakcji na wydarzenia z gry, dialogów i przerywników.
 Komponent nie jest jeszcze ukoñczony.
 Imoen reaguje na wiêkszoœæ wydarzeñ w grze i ma z tym powi¹zane dialogi, ale nie ma banterów z innymi NPCami.
+
+Please note: For Imoen to react to game events in SoD accordingly, the main component (Tracking System, 2nd component) of "Road to Discovery" needs to be installed.
 
 
 11. I4E w SoD: Imoen na koniec gry powinna byæ taka, jak by³a w dru¿ynie (tylko SoD)
@@ -143,7 +144,15 @@ With this component, the contents of Imoen's chest in the 3rd floor of the palac
 This component requires component 7 "Imoen Returns to PC in First Coalition Camp" to be installed.
 
 
-14 I4E in all games: Alternate Imoen Portrait by Acifer 
+14 I4E in SoD: Give Imoen PID during chapters 8 to 12
+-----------------------------------
+This component adds player initiated dialogues (PID) to Imoen for chapters 8 to 12 after she returned to the group before the original ending starts.
+It is a new component introduced in v11.
+
+This component requires component 7 "Imoen Returns to PC in First Coalition Camp" to be installed.
+
+
+15 I4E in all games: Alternate Imoen Portrait by Acifer 
 -----------------------------------
 This optional component installs an alternate Imoen portrait, by Acifer. 
 The portrait will be used for Imoen in all parts (BG1, SoD, BGII) of the present game. For this, portrait naming of the original Imoen portraits will be used.
@@ -236,18 +245,24 @@ Raza, stn & Arcanecoast Team, Arkie - Russian
 
 U¯YTE NARZÊDZIA:
 
-IESDP					https://gibberlings3.github.io/iesdp/index.htm
-Near Infinity				https://forums.beamdog.com/discussion/30593/new-versions-of-nearinfinity-available/p1
-WeiDU					https://github.com/WeiDUorg/weidu/releases/latest
- 					(formerly: http://www.weidu.org)
+IESDP                      https://gibberlings3.github.io/iesdp/index.htm
+Near Infinity              https://forums.beamdog.com/discussion/30593/new-versions-of-nearinfinity-available/p1
+WeiDU                      https://github.com/WeiDUorg/weidu/releases/latest
+                           (formerly: http://www.weidu.org)
 
 Spo³ecznoœci modderskie, przewodniki i wsparcie techniczne:
 
-Kerzenburgforum				https://www.baldurs-gate.de/index.php
-The Gibberlings Three			http://gibberlings3.net
-Pocket Plane Group			http://pocketplane.net
+Kerzenburgforum				https://baldurs-gate.de/index.php
+The Gibberlings Three		        https://www.gibberlings3.net/
+Pocket Plane Group			https://www.pocketplane.net/
 Spellhold Studios			http://www.shsforums.net/
 Forum polskojêzyczne     http://athkatla.cob-bg.pl/
+
+Further Links:
+Road to Discovery:
+https://www.gibberlings3.net/mods/other/road_to_discovery/
+
+DLC Merger: 				https://forums.beamdog.com/discussion/71305/mod-dlc-merger-merge-steam-gog-sod-dlc-or-custom-dlcs-with-the-main-game
 
 INFORMACJE PRAWNE
 
@@ -261,6 +276,10 @@ UWAGI O ROZPOWSZECHNIANIU: Mod Imoen 4 Ever zosta³ stworzony po to, aby mogli si
 
 
 HISTORIA
+
+Version 11:
+-SoD content finished.
+-German v9 proofread, by Shai Hulud.
 
 Version 10:
 -new optional component (not dependent on the others): new alternate portrait for Imoen for all games, by Acifer.

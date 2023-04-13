@@ -1,0 +1,30 @@
+
+IF
+  Global("C#IM_SoDQuest","GLOBAL",4)
+THEN
+  RESPONSE #100
+		TriggerActivation("C#IMST01",TRUE)
+		TriggerActivation("C#IMST02",TRUE)
+		TriggerActivation("C#IMST03",TRUE)
+		TriggerActivation("C#IMST04",TRUE)
+		TriggerActivation("C#IMST05",TRUE)
+		TriggerActivation("C#IMST06",TRUE)
+		TriggerActivation("C#IMST07",TRUE)
+		TriggerActivation("C#IMST08",TRUE)
+		SetGlobal("C#IM_SoDQuest","GLOBAL",5)
+END
+
+IF
+  Global("C#IM_DeactivateStacks","MYAREA",0)
+THEN
+  RESPONSE #100
+		TriggerActivation("C#IMST01",FALSE)
+		TriggerActivation("C#IMST02",FALSE)
+		TriggerActivation("C#IMST03",FALSE)
+		TriggerActivation("C#IMST04",FALSE)
+		TriggerActivation("C#IMST05",FALSE)
+		TriggerActivation("C#IMST06",FALSE)
+		TriggerActivation("C#IMST07",FALSE)
+		TriggerActivation("C#IMST08",FALSE)
+		SetGlobal("C#IM_DeactivateStacks","MYAREA",1)
+END
