@@ -277,6 +277,9 @@ UWAGI O ROZPOWSZECHNIANIU: Mod Imoen 4 Ever zosta³ stworzony po to, aby mogli si
 
 HISTORIA
 
+Version 11.1:
+-English version should not contain German string.
+
 Version 11:
 -SoD content finished.
 -German v9 proofread, by Shai Hulud.

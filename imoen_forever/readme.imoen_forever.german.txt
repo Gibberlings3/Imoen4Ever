@@ -334,6 +334,9 @@ REDISTRIBUTION NOTE: Imoen 4 Ever Mod was created to be freely enjoyed by all Ba
 
 HISTORY
 
+Version 11.1:
+-English version should not contain German string.
+
 Version 11:
 -SoD content finished.
 -German v9 proofread, by Shai Hulud.
