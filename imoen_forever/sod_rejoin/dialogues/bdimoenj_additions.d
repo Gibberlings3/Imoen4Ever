@@ -56,12 +56,12 @@ IF ~~ THEN BEGIN 2 // from:
   SAY #43443 /* ~That's all well and good, but what are we going to do about it?~ */
 */
 EXTEND_BOTTOM BDBF2 2
-+ ~Class("%IMOEN_DV%",MAGE_ALL) IsValidForPartyDialogue("%IMOEN_DV%")~ + ~Imoen, can you see anything in that stone?~ EXTERN bdimoen enchanted_stone
++ ~Class("%IMOEN_DV%",MAGE_ALL) IsValidForPartyDialogue("%IMOEN_DV%")~ + @501 /* ~Imoen, can you see anything in that stone?~ */ EXTERN bdimoen enchanted_stone
 END
 
 APPEND bdimoen
 IF ~~ THEN enchanted_stone
-SAY ~The stone is enchanted and makes everyone sick, but - but I don't think I can do anything about it... sorry? If we had the original curse we could do something. I think.~
+SAY @502 /* ~The stone is enchanted and makes everyone sick, but - but I don't think I can do anything about it... sorry? If we had the original curse we could do something. I think.~ */
 COPY_TRANS BDBF2 2
 END
 END //APPEND
