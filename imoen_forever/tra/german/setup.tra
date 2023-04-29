@@ -29,14 +29,9 @@
 @9930 = ~Diese Komponente muss vor EET_End installiert werden.~
 @9931 = ~Imoens Kiste zieht ebenfalls von Lager zu Lager mit~
 @9932 = ~Diese Komponente ist nicht kompatibel mit der Komponente "Korlasz' Dungeon ist in BG1" von EndlessBG1, und wird für sie auch nicht benoetigt.~
-
-
-/* new for v10 */
-@9933  = ~Imoens Alternatives Portrait von Acifer~
-@9934  = ~Diese Komponente ist mit diesem Spiel nicht kompatibel.~
-
-/* new for v11 */
-@9935  = ~The Boareskyr Bridge Scene mod detected.~
-@9936  = ~Imoen 4 Ever in SoD: Give Imoen PID during chapters 8 to 12~
-@9937  = ~Another fine Hell: "Optional Ending for SoD and BGII Closure" detected.~
-@9938  = ~Another fine Hell: "PC's and Imoen's chest in Palace should have their content" detected.~
+@9933 = ~Imoens alternatives Porträt von Acifer~
+@9934 = ~Diese Komponente ist mit deinem Spiel nicht kompatibel.~
+@9935 = ~Mod "Die Szene auf der Eberfellbrücke" erkannt.~
+@9936 = ~Imoen 4 Ever in SoD: Imoen eine PID in Kapiteln 8 bis 12 geben~
+@9937 = ~Another fine Hell: "Optional Ending for SoD and BGII Closure" erkannt.~
+@9938 = ~Another fine Hell: "PC's and Imoen's chest in Palace should have their content" erkannt.~

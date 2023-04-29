@@ -1,13 +1,13 @@
-@0  = ~<CHARNAME>! <CHARNAME>, wartet!~
-@1  = ~Mir geht es wieder besser! Meine Hände zittern nicht mehr!~
-@2  = ~Darf ich wieder mit Euch mitkommen?~
-@3  = ~Imoen! Ist das schön, Euch wohlauf zu sehen!~
-@4  = ~Kommt Herzogin Jannath gleich hinterher und zerrt Euch dann wieder weg?~
-@5  = ~Wow, Teleportation bis hierher? Habt ja ganz schön was gelernt in der Zwischenzeit!~
-@6  = ~Wie lief Euer Training? (zwinker) Seid Ihr auf der Flucht?~
-@7  = ~Habt Ihr jetzt echt Euer Training mit Herzogin Jannath geschmissen? So eine Chance kriegt Ihr doch nicht alle Tage!~
-@8  = ~Ja, klar! Reiht Euch ein!~
-@9  = ~Ihr müsst ein bisschen warten.~
+@0 = ~<CHARNAME>! <CHARNAME>, wartet!~
+@1 = ~Mir geht es wieder besser! Meine Hände zittern nicht mehr!~
+@2 = ~Darf ich wieder mit Euch mitkommen?~
+@3 = ~Imoen! Ist das schön, Euch wohlauf zu sehen!~
+@4 = ~Kommt Herzogin Jannath gleich hinterher und zerrt Euch dann wieder weg?~
+@5 = ~Wow, Teleportation bis hierher? Habt ja ganz schön was gelernt in der Zwischenzeit!~
+@6 = ~Wie lief Euer Training? (zwinker) Seid Ihr auf der Flucht?~
+@7 = ~Habt Ihr jetzt echt Euer Training mit Herzogin Jannath geschmissen? So eine Chance kriegt Ihr doch nicht alle Tage!~
+@8 = ~Ja, klar! Reiht Euch ein!~
+@9 = ~Ihr müsst ein bisschen warten.~
 @10 = ~Ich freu mich auch, <CHARNAME>! Ich hab noch nichts verpasst, oder?~
 @11 = ~Nein, keine Sorge. Reiht Euch ein!~
 @12 = ~Haha, sehr witzig, <CHARNAME>.~
@@ -21,7 +21,7 @@
 @20 = ~Boah, nicht Ihr auch noch! Ich werde ja wohl genug Übung kriegen, wenn ich mit Euch unterwegs bin, oder habt Ihr da Zweifel?~
 @22 = ~Sie würde zwar gerne mein Training fortsetzen, aber ich möchte nicht mehr. Ich will mit Euch umherziehen!~
 @23 = ~Liia weiß, dass ich wieder auf Abenteuer ziehen möchte.~
-@24 = ~Oh, übrigens, mein Zeug hab ich in das Zelt geschmissen, das neben Eurer Kiste steht.~
+@24 = ~Oh, übrigens, mein Zeug hab ich in das Zelt geschmissen, das neben deiner Kiste steht.~
 @25 = ~Imoens Habseligkeiten
 
 Imoens Gegenstände aus ihrer Kiste im Palast werden im Zelt neben meiner persönlichen Kiste zu finden sein, wenn wir sie brauchen.~

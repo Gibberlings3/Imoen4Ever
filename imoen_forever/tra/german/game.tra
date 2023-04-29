@@ -175,7 +175,7 @@ Eines beunruhigt mich … Bodhi wusste es! Sie wusste, dass ich ein Kind Bhaals bi
 @1113 = ~Ich könnte es tun, aber ich sammle eine große Menge Gold, um einen Gegner zu verfolgen und benötige daher eine Belohnung.~
 @1114 = ~Ich werde ihn finden! Ich werde diesen Irenicus finden!~
 @1115 = ~Aber wir wollen doch beide Irenicus. Sollten wir nicht zusammenarbeiten?~
-@1116 = ~Irenicus ließ zu, dass die Wut ihn übermannte. Er hat sich erholt und ist niemandes Gefangener. Eure Imoen ist nicht so stark, auch wenn mir erzählt wurde, dass sie … Potenzial hat.~
+@1116 = ~Irenicus ließ zu, dass die Wut ihn übermannte. Er hat sich erholt und ist niemandes Gefangener.~
 @1117 = ~Es gibt viel über Euch zu erfahren … und über die kleine Imoen dazu. Der Kampf wird mein Laboratorium sein. Kommt, lasst uns beide ein, zwei Dinge lernen.~
 @1118 = ~Vielleicht, aber auch Spiele können tödlicher Ernst sein, besonders, wenn ich die Spielregeln für mich behalte. Kämpft weiter und sucht nach einem Weg zu Irenicus. Ich habe gesehen, was ich sehen wollte.~
 @1119 = ~Oh, ich krieche nicht aus Furcht vor Eurem Zorn weg. Umhegt, entwickelt und lenkt ihn – unbedingt. Kämpft weiter und sucht nach einem Weg zu Irenicus. Ich habe gesehen, was ich sehen wollte.~
@@ -246,39 +246,29 @@ Eines beunruhigt mich … Bodhi wusste es! Sie wusste, dass ich ein Kind Bhaals bi
 @5520 = ~Oh! Das war ganz schön knapp.~
 @5521 = ~Er hat Euch weh getan, <CHARNAME>! Dieser Ifearnan soll sich mal warm anziehen, denn ich werde ihn mir vorknöpfen, jawohl!~
 @5522 = ~(seufz) Jetzt sind sie tot.~
-@5523 = ~Äh, <CHARNAME>? Ich glaube nicht, dass wir von hier aus viel erreichen können.~
+@5523 = ~Wir … wir müssen da REINGEHEN, oder?~
 @5524 = ~Was für eine Reise! Ist es jetzt endlich vorbei?~
 @5530 = ~Ich habe doch gesagt, dass ich Euch überall hin folgen würde, <CHARNAME>! Glaubt Ihr es mir jetzt? Wir sind in der HÖLLE!~
 @5535 = ~Puh … ich hoffe inständig, dass dieses Ding nicht abstürzt.~
 @5540 = ~So ein großes Drachenskelett! Das ist jetzt ein Teil des Schlosses! Ich mag es aber nicht. Es wirkt irgendwie … gemein.~
 @5545 = ~Ich mag die Türen nicht. Die sehen irgendwie … unheimlich aus.~
 @5550 = ~Huch, meine Magie ist irgendwie weg. Ich glaube, das liegt an der Gegend hier.~
+@5560 = ~Um hier etwas zu tun, müsst Ihr näher kommen.~
+@5600 = ~Synthia~
+@5601 = ~Gregory~
+@5602 = ~Holter~
+@5603 = ~Imoens Edelsteine~
+@5604 = ~Dies sind einige von Imoens gesammelten Edelsteinen. Nichts allzu Wertvolles, aber alles für eine Person in Not.~
+@100000 = ~Imoens Edelsteine~
+@100001 = ~Imoens Edelsteine
 
+Imoen hat Edelsteine in der Nähe einiger Zelteingänge des Bündnislagers versteckt. Sie weiß zwar nicht mehr, welche Zelte es waren, aber sie kan sich erinnern, dass es acht Stapel waren – jeder an einem anderen Zelt, immer auf der rechten Seite des Zelteingangs.~
+@100002 = ~Imoens Edelsteine
 
-/* new for v11 */
-/* imoen_bd0063.baf */
-@5560  = ~Ihr müsst näher treten, um Hier etwas tun zu können.~
+Wir haben alle Edelsteine von Imoen gesammelt. Ich schlug vor, sie zu Sir Raifus zu bringen.~
+@100003 = ~Imoens Edelsteine
 
-/* imoen_forever.tp2 */
-@5600  = ~Synthia~
-@5601  = ~Gregory~
-@5602  = ~Holter~
-@5603  = ~Imoens Edelsteine~
-@5604  = ~Dies sind Edelsteine, die Imoen gesammelt hat. Sie sind nicht besonders wertvoll, aber für eine Person in Nöten könnten sie die Welt bedeuten.~
+Wir haben alle Edelsteine von Imoen gesammelt. Sie will sie nicht mehr haben.~
+@100004 = ~Imoens Edelsteine
 
-
-/* Journal entries */
-/* SoD quest */
-@100000  = ~Imoens Edelsteine~
-@100001  = ~Imoens Edelsteine
-
-Imoen versteckte Edelsteine in der Nähe einiger Zelteingänge des Koalitionslagers. Sie weiß nicht mehr genau, welche Zelte es waren, aber sie weiß, dass es acht Stellen waren, jede an einem anderen Zelt, immer auf der rechten Seite des Zelteingangs.~
-@100002  = ~Imoens Edelsteine
-
-Wir sammelten alle Edelsteine von Imoen. Ich schlug vor, sie zu Sir Rayphus zu bringen.~
-@100003  = ~Imoens Edelsteine
-
-Wir sammelten alle Edelsteine von Imoen. Sie hat sie mir gegeben.~
-@100004  = ~Imoens Edelsteine
-
-Wir haben die Edelsteine, die Imoen gesammelt hat, Sir Rayphus gegeben, damit er sie an Flüchtlinge verschenken kann. Ich glaube, Imoen hat es gefallen, aber ob sie je wieder versuchen wird, Fremde mit geheimen Geschenken zu überraschen, ist fraglich.~
+Wir haben die Edelsteine, die Imoen gesammelt hat, an Sir Raifus gegeben, damit er sie an Geflüchtete verschenken kann. Ich glaube, Imoen hat es gefallen, aber ob sie wieder versuchen wird, Fremde mit Geschenken zu überraschen, ist fraglich.~
