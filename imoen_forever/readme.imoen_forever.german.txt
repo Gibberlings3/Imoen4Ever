@@ -281,22 +281,31 @@ This should be helpful in case Imoen came back but was not taken into party but 
 
 
 
+HINWEIS AN SPIELER DER DEUTSCHEN VERSION
+
+Die deutsche Modversion orientiert sich an der deutschen Fanübersetzung "Deutsche Übersetzung für SoD". Dies bedeutet, dass die im Spiel verwendeten Eigennamen und Übersetzungen der Örtlichkeiten etc. mit der Fanübersetzung konsistent sind und zur offiziellen SoD-Übersetzung Diskrepanzen bestehen, vor allem bei den Namen der Spielcharaktere. Installiert die Fanübersetzung für ein konsistentes Spielerlebnis.
+Download Link: https://baldurs-gate.de/index.php?resources/deutsche-%C3%9Cbersetzung-f%C3%BCr-sod.49/
+
+
+
 CREDITS
 
 Acifer - Imoenportrait, Promotion-Bild, Betatesten, Name der Mod
 
 Argent77 - Codinghilfe für nicht-destruktives ADD_TRANS_TRIGGER Patchen
 
-Lauriel - Korrekturlesen (Englisch)
-
 UnderstandMouseMagic: Idee, dass Imoen aufgrund ihrer Vergiftung in SoD im Palast zurückbleibt. 
 
 Translations:
 ------------
 
-memory, Roberciiik - Polnisch
+Lauriel - Korrekturlesen (Englisch) (v4)
 
-Raza, stn & Arcanecoast Team, Arkie - Russisch
+memory, Roberciiik - Polish (v9)
+
+Raza, stn & Arcanecoast Team, Arkie - Russian (v7.1)
+
+Shai Hulud - German (v11.2)
 
 
 
@@ -333,6 +342,10 @@ REDISTRIBUTION NOTE: Imoen 4 Ever Mod was created to be freely enjoyed by all Ba
 
 
 HISTORY
+
+Version 11.2:
+-German version finished, by Shai Hulud.
+-All strings should be traify-d.
 
 Version 11.1:
 -English version should not contain German string.
