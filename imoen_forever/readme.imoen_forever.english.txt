@@ -294,22 +294,31 @@ This should be helpful in case Imoen came back but was not taken into party but 
 
 
 
+NOTE TO GERMAN PLAYERS
+
+The German version is consistent to the fan-made "Shai Huluds Text-Patch". This means, that names and terms could differ from the official German version shipped with the game. Install the fan made SoD translation for a consistent game experience.
+Download Link: https://www.baldurs-gate.de/index.php?threads/shai-huluds-text-patch.45417/
+
+
+
 CREDITS
 
 Acifer - Imoen portrait, promotion picture, beta testing, mod name
 
 Argent77 - coding help for non-destructive ADD_TRANS_TRIGGER patching
 
-Lauriel - proof reading (English)
-
 UnderstandMouseMagic: idea about Imoen staying behind in SoD because of her poison injury.
 
 Translations:
 ------------
 
-memory, Roberciiik - Polish
+Lauriel - proof reading (English) (v4)
 
-Raza, stn & Arcanecoast Team, Arkie - Russian
+memory, Roberciiik - Polish (v9)
+
+Raza, stn & Arcanecoast Team, Arkie - Russian (v7.1)
+
+Shai Hulud - German (v11.2)
 
 
 
@@ -346,6 +355,10 @@ REDISTRIBUTION NOTE: Imoen 4 Ever Mod was created to be freely enjoyed by all Ba
 
 
 HISTORY
+
+Version 11.2:
+-German version finished, by Shai Hulud.
+-All strings should be traify-d.
 
 Version 11.1:
 -English version should not contain German string.
