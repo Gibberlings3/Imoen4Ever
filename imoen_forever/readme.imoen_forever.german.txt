@@ -343,6 +343,10 @@ REDISTRIBUTION NOTE: Imoen 4 Ever Mod was created to be freely enjoyed by all Ba
 
 HISTORY
 
+Version 11.3:
+-All lines from tp2 should be in setup.tra.
+-typo corrections and small text corrections.
+
 Version 11.2:
 -German version finished, by Shai Hulud.
 -All strings should be traify-d.
