@@ -304,24 +304,31 @@
 
 /* new for v11 */
 /* imoen_forever.tp2 */
-@5600  = ~Synthia~
-@5601  = ~Gregory~
-@5602  = ~Holter~
-@5603  = ~Imoen's Gems~
-@5604  = ~These are some gems collected by Imoen. Nothing too valuable, but everything to a person in need.~
+@5600  = ~Синтия~
+@5601  = ~Грегори~
+@5602  = ~Холтер~
+@5603  = ~Драгоценности Имоен~
+@5604  = ~Это драгоценности, которые собрала Имоен. Не особо ценные, но могут помочь в тяжёлой ситуации.~
 
 /* Journal entries */
 /* SoD quest */
-@100000  = ~Imoen's Gems~
-@100001  = ~Imoen's Gems
+@100000  = ~Драгоценности Имоен~
+@100001  = ~Драгоценности Имоен
 
-Imoen hid gems near some tent entrances of the coalition camp. She doesn't remember which tents exactly, but she knows that it was eight stacks, each on a different tent, always at the right side of a tent's entrance.~
-@100002  = ~Imoen's Gems
+Имоен спрятала драгоценные камни у палаток в лагере Коалиции. Она не помнит, у каких, но всего было восемь мешочков, которые лежат справа от входов в восемь разных палаток.~
+@100002  = ~Драгоценности Имоен
 
-We collected all of Imoen's gems. I suggested we would bring them to Sir Rayphus.~
-@100003  = ~Imoen's Gems
+Я собрал все драгоценности Имоен. Я решил, что стоит отдать их сэру Райфусу.~ ~Драгоценности Имоен
 
-We collected all of Imoen's gems. She doesn't want to have them any more.~
-@100004  = ~Imoen's Gems
+Я собрала все драгоценности Имоен. Я решила, что стоит отдать их сэру Райфусу.~
+@100003  = ~Драгоценности Имоен
 
-We gave gems Imoen collected to Sir Rayphus, so he can give them to refugees. I think Imoen liked it, but whether she will try to surprise strangers with presents again is questionable.~
+Я собрал все драгоценности Имоен. Ей они больше не нужны.~ ~Драгоценности Имоен
+
+Я собрала все драгоценности Имоен. Ей они больше не нужны.~
+@100004  = ~Драгоценности Имоен
+
+Я отдал драгоценности Имоен сэру Райфусу, чтобы он передал их беженцам. Имоен осталась довольна, но вряд ли она снова будет подкидывать незнакомцам такие подарки.~
+~Драгоценности Имоен
+
+Я отдала драгоценности Имоен сэру Райфусу, чтобы он передал их беженцам. Имоен осталась довольна, но вряд ли она снова будет подкидывать незнакомцам такие подарки.~
