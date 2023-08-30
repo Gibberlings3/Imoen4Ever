@@ -220,4 +220,48 @@ SAY @65 /* [Imoen]Well, maybe she'll have something interesting to say next time
 IF ~~ THEN DO ~SetGlobal("C#IM_SoDCaelarBridge","GLOBAL",2)~ EXIT
 END
 
+/* After dream "Candlekeep" */
+IF ~Global("C#IM_SoDNightmare","GLOBAL",1)~ THEN slayer_dream
+SAY @66 /* ~[Imoen]Did ya sleep well?~ */
+++ @67 /* ~Funny you asked. I dreamed about you.~ */ + slayer_dream_01
+++ @68 /* ~I had a weird dream. You were in it, too.~ */ + slayer_dream_01
+++ @69 /* ~I did. Let's move on.~ */ + slayer_dream_05
+END
+
+IF ~~ THEN slayer_dream_01
+SAY @70 /* ~[Imoen]Me?~ */
+++ @71 /* ~Yes, you said I abandoned you and that you have nothing left to live for.~ */ + slayer_dream_02
+++ @72 /* ~You talked as if I had left you.~ */ + slayer_dream_02
+++ @73 /* ~It wasn't funny! Your dream self aksed me to kill you! And you transformed into some blurry beast, and...~ */ + slayer_dream_03
+++ @74 /* ~Let's move on.~ */ + slayer_dream_05
+END
+
+IF ~~ THEN slayer_dream_02
+SAY @81 /* ~[Imoen]Aw, do you feel guilty because you had to leave me at the palace?~ */
+++ @73 /* ~It wasn't funny! Your dream self aksed me to kill you! And you transformed into some blurry beast, and...~ */ + slayer_dream_03
+++ @75 /* ~"Had to leave you"? Last time I checked, it was your decision!~ */ + slayer_dream_06
+++ @76 /* ~No, should I?~ */ + slayer_dream_04
+++ @74 /* ~Let's move on.~ */ + slayer_dream_05
+END
+
+IF ~~ THEN slayer_dream_03
+SAY @77 /* ~[Imoen]Awww, it's so cute when you worry about me!~ */
+IF ~~ THEN + slayer_dream_04
+END
+
+IF ~~ THEN slayer_dream_04
+SAY @78 /* ~[Imoen]Don't worry, I'm fine. Now, at least, that I am here and on the road again - with you!~ */
+IF ~~ THEN DO ~SetGlobal("C#IM_SoDNightmare","GLOBAL",2)~ EXIT
+END
+
+IF ~~ THEN slayer_dream_05
+SAY @79 /* ~[Imoen]Alright! No need to be so short tempered.~ */
+IF ~~ THEN DO ~SetGlobal("C#IM_SoDNightmare","GLOBAL",2)~ EXIT
+END
+
+IF ~~ THEN slayer_dream_06
+SAY @80 /* ~[Imoen]Of course it was! Someone got off on the wrong foot today, huh?~ */
+IF ~~ THEN DO ~SetGlobal("C#IM_SoDNightmare","GLOBAL",2)~ EXIT
+END
+
 END //APPEND

@@ -221,7 +221,7 @@ As of 09/01/20, the mod is compatible with the following mods that add dialogues
     Afaaq, the Djinni Companion for BG2 and BG2:EE
     Ajantis NPC for BGII
     Almateria's Restauration Project "Extended Waukeen's Promenade Cutscene" (independent of installation order)
-    Alternatives (independent of installation order)
+    Alternatives (independent of installation order as long as the compatibility component is installed after Alternatives)
     Ascalon's Breagar NPC
     Edwin Romance
     IEP Banters Mod (v5.7 or higher)
@@ -317,6 +317,7 @@ Lauriel - proof reading (English) (v4)
 memory, Roberciiik - Polish (v9)
 
 Raza, stn & Arcanecoast Team, Arkie - Russian (v7.1)
+RealApxu - Russian (v11.3)
 
 Shai Hulud - German (v11.2)
 
@@ -355,6 +356,12 @@ REDISTRIBUTION NOTE: Imoen 4 Ever Mod was created to be freely enjoyed by all Ba
 
 
 HISTORY
+
+Version 11.3:
+-Russian version finished, by RealApxu.
+-One more dialogue added to SoD: Imoen will react to teh second dream.
+-All lines from tp2 should be in setup.tra.
+-typo corrections and small text corrections.
 
 Version 11.2:
 -German version finished, by Shai Hulud.

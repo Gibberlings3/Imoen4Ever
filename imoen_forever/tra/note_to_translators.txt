@@ -1,4 +1,4 @@
-New for v10:
+New for v10 (still needed in Polish):
 
 new lines:
 -BDIMOENJ.TRA: @136
@@ -8,3 +8,22 @@ new lines:
 readme:
 -general description adjusted to new component number.
 -added component description "14 I4E in all games: Alternate Imoen Portrait by Acifer".
+
+
+
+New for v11.x (still needed in Polish):
+
+new lines:
+-setup.tra: @9935 - @9939
+-BDIMOENJ.TRA: @137 - @502
+-game.tra: @5560; @5600 - @100004
+
+new files:
+-sod_important_reactions_dialogues.tra
+-sod_dialogues.tra
+-sod_banter.tra
+-sod_pid.tra
+
+
+Still needed in Russian, too:
+v11.3 adds more lines to sod_dialogues.tra: @66 - @81 

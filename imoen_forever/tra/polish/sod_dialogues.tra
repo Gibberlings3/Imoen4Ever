@@ -42,7 +42,7 @@
 @41   = ~[PC Reply]Is that all you noticed from the confrontation with Caelar?~
 @42   = ~[PC Reply]Caelar is very charsmatic. Her eyes add to the fact.~
 @43   = ~[PC Reply]Let's not talk about that.~
-@44   = ~[Imoen]I didn't really listen to what Caelar was saying. I watched her eyes and how the sunlight got caught in her white hair...~
+@44   = ~[Imoen]I didn't really listen to what Caelar was saying. I watched her eyes and how the sunlight got caught in her shining hair...~
 @45   = ~[PC Reply]And, what was shinier, her hair or her eyes?~
 @46   = ~[PC Reply]Well, seems someone had fun, at least.~
 @47   = ~[PC Reply]I am glad we do not have to rely on you for diplomatic relations, Imoen.~
@@ -64,3 +64,21 @@
 @63   = ~[PC Reply]Well, she's gone now, anyway.~
 @64   = ~[Imoen]I did listen! I just didn't think it was worth it.~
 @65   = ~[Imoen]Well, maybe she'll have something interesting to say next time. - We need to work on finding our way to her side of the river first, though - with Coastway Crossing turning out to be a "Coastway NON-Crossing" for us, huh.~
+
+/* new in v11.3 */
+@66   = ~[Imoen]Did ya sleep well?~
+@67   = ~Funny you asked. I dreamed about you.~
+@68   = ~I had a weird dream. You were in it, too.~
+@69   = ~I did. Let's move on.~
+@70   = ~[Imoen]Me?~
+@71   = ~Yes, you said I abandoned you and that you have nothing left to live for.~
+@72   = ~You talked as if I had left you.~
+@73   = ~It wasn't funny! Your dream self aksed me to kill you! And you transformed into some blurry beast, and...~
+@74   = ~Let's move on.~
+@75   = ~"Had to leave you"? Last time I checked, it was your decision!~
+@76   = ~No, should I?~
+@77   = ~[Imoen]Awww, it's so cute when you worry about me!~
+@78   = ~[Imoen]Don't worry, I'm fine. Now, at least, that I am here and on the road again - and with you!~
+@79   = ~[Imoen]Alright! No need to be so short tempered.~
+@80   = ~[Imoen]Of course it was! Someone got off on the wrong foot today, huh?~
+@81   = ~[Imoen]Aw, do you feel guilty because you had to leave me at the palace?~
