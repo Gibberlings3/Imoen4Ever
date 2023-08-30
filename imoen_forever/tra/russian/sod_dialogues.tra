@@ -66,19 +66,19 @@
 @65   = ~[Imoen]Может, в следующий раз она скажет что-нибудь полезное. А теперь мы должны найти способ перебраться через реку, а то Прибрежный Путь у нас на глазах превратился в Прибрежный Тупик.~
 
 /* new in v11.3 */
-@66   = ~[Imoen]Did ya sleep well?~
-@67   = ~Funny you asked. I dreamed about you.~
-@68   = ~I had a weird dream. You were in it, too.~
-@69   = ~I did. Let's move on.~
-@70   = ~[Imoen]Me?~
-@71   = ~Yes, you said I abandoned you and that you have nothing left to live for.~
-@72   = ~You talked as if I had left you.~
-@73   = ~It wasn't funny! Your dream self aksed me to kill you! And you transformed into some blurry beast, and...~
-@74   = ~Let's move on.~
-@75   = ~"Had to leave you"? Last time I checked, it was your decision!~
-@76   = ~No, should I?~
-@77   = ~[Imoen]Awww, it's so cute when you worry about me!~
-@78   = ~[Imoen]Don't worry, I'm fine. Now, at least, that I am here and on the road again - and with you!~
-@79   = ~[Imoen]Alright! No need to be so short tempered.~
-@80   = ~[Imoen]Of course it was! Someone got off on the wrong foot today, huh?~
-@81   = ~[Imoen]Aw, do you feel guilty because you had to leave me at the palace?~
+@66   = ~[Imoen]Как спалось?~
+@67   = ~Забавно, что ты спросила. Ты была в моём сне.~
+@68   = ~Мне приснился странный сон. Ты тоже в нём была.~
+@69   = ~Нормально. Давай собираться.~
+@70   = ~[Imoen]Я?~
+@71   = ~Да, ты сказала, что я тебя бросил, и тебе больше незачем жить.~ ~Да, ты сказала, что я тебя бросила, и тебе больше незачем жить.~
+@72   = ~Ты звучала так, словно я оставил тебя одну.~ ~Ты звучала так, словно я оставила тебя одну.~
+@73   = ~Это не смешно! Ты умоляла убить тебя! А потом ты превратилась в непонятное чудовище и...~
+@74   = ~Нам пора идти.~
+@75   = ~"Оставил тебя?" Вообще-то это было твоё решение!~ ~"Оставила тебя?" Вообще-то это было твоё решение!~
+@76   = ~Нет, с чего это вдруг?~
+@77   = ~[Imoen]Оу, ты за меня переживаешь. Как это мило!~
+@78   = ~[Imoen]Не переживай, со мной всё хорошо. По крайней мере, пока я с тобой и в поисках приключений.~
+@79   = ~[Imoen]Ладно-ладно! Не нужно на меня срываться.~
+@80   = ~[Imoen]Конечно моё! Похоже, кто-то сегодня встал не с той ноги...~
+@81   = ~[Imoen]Оу, так ты переживаешь из-за того, что оставил меня во Дворце?~ ~[Imoen]Оу, так ты переживаешь из-за того, что оставила меня во Дворце?~
