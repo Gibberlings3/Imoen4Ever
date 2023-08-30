@@ -248,8 +248,7 @@ Lauriel - proof reading (English) (v4)
 
 memory, Roberciiik - Polish (v9)
 
-Raza, stn & Arcanecoast Team, Arkie - Russian (v7.1)
-RealApxu - Russian (v11.3)
+Raza, stn & Arcanecoast Team, Arkie - Russian (v11.3)
 
 Shai Hulud - German (v11.2)
 
@@ -292,7 +291,7 @@ UWAGI O ROZPOWSZECHNIANIU: Mod Imoen 4 Ever zosta³ stworzony po to, aby mogli si
 HISTORIA
 
 Version 11.3:
--Russian version finished, by RealApxu.
+-Russian version finished, by Arkie.
 -One more dialogue added to SoD: Imoen will react to teh second dream.
 -All lines from tp2 should be in setup.tra.
 -typo corrections and small text corrections.
