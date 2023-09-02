@@ -66,19 +66,19 @@
 @65 = ~[Imoen]Vielleicht hat sie beim nächsten Mal etwas Interessantes zu sagen. Wir müssen allerdings erst einmal daran arbeiten, auf ihre Seite des Flusses zu gelangen – wobei sich die Küstenwegquerung für uns als Küstenwegnichtquerung herausstellt, was?~
 
 /* new in v11.3 */
-@66   = ~[Imoen]Habt Ihr gut geschlafen?~
-@67   = ~Lustig, dass Ihr fragt. Ich habe von Euch geträumt.~
-@68   = ~Ich hatte einen seltsamen Traum. Ihr wart auch darin.~
-@69   = ~Habe ich. Lasst uns den Tag beginnen.~
-@70   = ~[Imoen]Ich?~
-@71   = ~Ja, Ihr sagtet, ich hätte Euch im Stich gelassen und dass es sich für Euch nicht mehr lohnt, weiterzuleben.~
-@72   = ~Ihr redetet, als hätte ich Euch verlassen.~
-@73   = ~Es war nicht lustig! Eure Traumerscheinung verlangte, dass ich sie töte, und dann verwandeltet Ihr Euch in ein verschwommenes Ungeheuer, und ...~
-@74   = ~Lasst uns den Tag beginnen.~
-@75   = ~"Zurückgelassen habt"? Soweit ich mich erinnere, war das Eure Entscheidung!~
-@76   = ~Nö, sollte ich?~
-@77   = ~[Imoen]Oh, das ist so niedlich, wenn Ihr Euch um mich Sorgen macht!~
-@78   = ~[Imoen]Keine Sorge, mir geht's gut. Zumindest jetzt, wo ich hier bin und wieder unterwegs - mit Euch!~
-@79   = ~[Imoen]Ist ja gut! Kein Grund, so kurz angebunden zu sein.~
-@80   = ~[Imoen]War es ja auch! Da ist wohl jemand mit dem falschen Fuß zuerst aufgestanden heute, was?~
-@81   = ~[Imoen]Och, habt Ihr ein schlechtes Gewissen, weil Ihr mich im Palast zurückgelassen habt?~
+@66 = ~[Imoen]Habt Ihr gut geschlafen?~
+@67 = ~Lustig, dass Ihr fragt. Ich habe von Euch geträumt.~
+@68 = ~Ich hatte einen seltsamen Traum. Ihr wart auch darin.~
+@69 = ~Habe ich. Lasst uns den Tag beginnen.~
+@70 = ~[Imoen]Ich?~
+@71 = ~Ja, Ihr sagtet, ich hätte Euch im Stich gelassen und dass es sich für Euch nicht mehr lohnt weiterzuleben.~
+@72 = ~Ihr redetet, als hätte ich Euch verlassen.~
+@73 = ~Es war nicht lustig! Eure Traumerscheinung verlangte, dass ich sie töte, und dann verwandeltet Ihr Euch in ein verschwommenes Ungeheuer, und …~
+@74 = ~Lasst uns den Tag beginnen.~
+@75 = ~„Zurückgelassen habt“? Soweit ich mich erinnere, war das Eure Entscheidung!~
+@76 = ~Nö, sollte ich?~
+@77 = ~[Imoen]Oh, es ist so niedlich, wenn Ihr Euch um mich Sorgen macht!~
+@78 = ~[Imoen]Keine Sorge, mir gehts gut. Zumindest jetzt, wo ich hier bin und wieder unterwegs - mit Euch!~
+@79 = ~[Imoen]Ist ja gut! Kein Grund, so kurz angebunden zu sein.~
+@80 = ~[Imoen]War es ja auch! Da ist wohl heute jemand mit dem falschen Fuß aufgestanden, was?~
+@81 = ~[Imoen]Ooch, habt Ihr ein schlechtes Gewissen, weil Ihr mich im Palast zurückgelassen habt?~
