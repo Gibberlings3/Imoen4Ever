@@ -250,7 +250,7 @@ memory, Roberciiik - Polish (v9)
 
 Raza, stn & Arcanecoast Team, Arkie - Russian (v11.3)
 
-Shai Hulud - German (v11.2)
+Shai Hulud - German (v11.3)
 
 
 
@@ -292,7 +292,7 @@ HISTORIA
 
 Version 11.3:
 -Russian version finished, by Arkie.
--One more dialogue added to SoD: Imoen will react to teh second dream.
+-One more dialogue added to SoD: Imoen will react to the second dream.
 -All lines from tp2 should be in setup.tra.
 -typo corrections and small text corrections.
 
