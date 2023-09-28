@@ -16,7 +16,7 @@ New for v11.x (still needed in Polish):
 new lines:
 -setup.tra: @9935 - @9939
 -BDIMOENJ.TRA: @137 - @502
--game.tra: @5560; @5600 - @100004
+-game.tra: @5560; @5570; @5580-@5582; @5600 - @100004
 
 new files:
 -sod_important_reactions_dialogues.tra

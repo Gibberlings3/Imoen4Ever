@@ -343,6 +343,9 @@ REDISTRIBUTION NOTE: Imoen 4 Ever Mod was created to be freely enjoyed by all Ba
 
 HISTORY
 
+Version 11.4:
+-All lines should be traified.
+
 Version 11.3:
 -Russian version finished, by Arkie.
 -One more dialogue added to SoD: Imoen will react to the second dream.
