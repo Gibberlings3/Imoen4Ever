@@ -279,6 +279,15 @@ Jeszcze jedna niepokoj¹ca rzecz... Bodhi wiedzia³a, wiedzia³a o moim ojcu – Bhaa
 /* imoen_bd0063.baf */
 @5560  = ~You need to come closer to do anything here.~
 
+/* new for v11.4 */
+/* c#imsq07.baf */
+@5570  = ~Wait! Wait!~
+
+/* sod_quest.baf */
+@5580 = ~Hehehe!~
+@5581 = ~Yup!~
+@5582 = ~Gotcha!~ 
+
 
 /* imoen_forever.tp2 */
 @5010  = ~<CHARNAME>, tak mi przykro. ¯a³ujê, ¿e nie mogê iœæ z tob¹ do wiêzienia!~

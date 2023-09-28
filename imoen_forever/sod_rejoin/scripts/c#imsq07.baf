@@ -4,6 +4,6 @@ IF
 	GlobalGT("C#IM_SoDQuest","GLOBAL",2)
 THEN
 	RESPONSE #100
-	  DisplayStringHead(Myself,~Wait! Wait!~)
+	  DisplayStringHead(Myself,@5570)
 	  EscapeAreaDestroy(5)
 END

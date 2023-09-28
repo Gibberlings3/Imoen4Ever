@@ -302,6 +302,15 @@ One more troubling thing... Bodhi knew. She knew I am a child of Bhaal.~
 /* imoen_bd0063.baf */
 @5560  = ~You need to come closer to do anything here.~
 
+/* new for v11.4 */
+/* c#imsq07.baf */
+@5570  = ~Wait! Wait!~
+
+/* sod_quest.baf */
+@5580 = ~Hehehe!~
+@5581 = ~Yup!~
+@5582 = ~Gotcha!~ 
+
 /* imoen_forever.tp2 */
 @5600  = ~Synthia~
 @5601  = ~Gregory~

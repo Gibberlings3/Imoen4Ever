@@ -254,11 +254,25 @@ Eines beunruhigt mich … Bodhi wusste es! Sie wusste, dass ich ein Kind Bhaals bi
 @5545 = ~Ich mag die Türen nicht. Die sehen irgendwie … unheimlich aus.~
 @5550 = ~Huch, meine Magie ist irgendwie weg. Ich glaube, das liegt an der Gegend hier.~
 @5560 = ~Um hier etwas zu tun, müsst Ihr näher kommen.~
+
+/* new for v11.4 */
+/* c#imsq07.baf */
+@5570  = ~Wartet! Wartet!~
+
+/* sod_quest.baf */
+@5580 = ~Hehehe!~
+@5581 = ~Jawoll!~
+@5582 = ~Hab ich dich!~ 
+
+
 @5600 = ~Synthia~
 @5601 = ~Gregory~
 @5602 = ~Holter~
 @5603 = ~Imoens Edelsteine~
 @5604 = ~Dies sind einige von Imoens gesammelten Edelsteinen. Nichts allzu Wertvolles, aber alles für eine Person in Not.~
+
+
+
 @100000 = ~Imoens Edelsteine~
 @100001 = ~Imoens Edelsteine
 
