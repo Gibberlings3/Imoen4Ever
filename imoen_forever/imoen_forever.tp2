@@ -9,7 +9,7 @@ BACKUP ~imoen_forever/backup~
 AUTHOR ~Please post at G3 or Kerzenburgforum, refer to readme.~  
 
 
-VERSION ~v11.4pre~  
+VERSION ~v11.4~  
 
 README ~imoen_forever/readme.imoen_forever.%LANGUAGE%.txt~ ~imoen_forever/readme.imoen_forever.english.txt~
 
@@ -40,16 +40,24 @@ END
   INCLUDE ~imoen_forever/lib/extra_regexp_vars.tph~
   INCLUDE ~imoen_forever/lib/get_respone_sstrrefs.tph~
 
+  ACTION_IF GAME_IS ~bg2ee tob~ THEN BEGIN
+    OUTER_SPRINT ~IT_IS_BGII~ ~~
+  END
+
   ACTION_IF GAME_IS ~bgt~ THEN BEGIN
     INCLUDE ~imoen_forever/lib/g3_bgt_cpmvars.tpa~ 
+    OUTER_SPRINT ~IT_IS_BGII~ ~Global("ENDOFBG1","GLOBAL",2)~
   END
 
   ACTION_IF GAME_IS ~bgee~ THEN BEGIN
     INCLUDE ~imoen_forever/lib/g3_bgee_cpmvars.tpa~
+    OUTER_SPRINT ~IT_IS_BGII~ ~False()~ 
   END
+
 
   ACTION_IF GAME_IS ~eet~ THEN BEGIN
     INCLUDE ~EET/other/cpmvars/eet_cpmvars.tpa~
+    OUTER_SPRINT ~IT_IS_BGII~ ~Global("ENDOFBG1","GLOBAL",2)~
   END
 
 OUTER_SPRINT newline ~%WNL%%LNL%%MNL%%TAB% ~

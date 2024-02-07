@@ -344,7 +344,10 @@ REDISTRIBUTION NOTE: Imoen 4 Ever Mod was created to be freely enjoyed by all Ba
 HISTORY
 
 Version 11.4:
+-Imoen should not give her BGII-Kickout dialogue in BG1 (for BGT).
 -All lines should be traified.
+-Typo corrections.
+-Rephrased note about compatibility with Road to Discovery in the readme: RtD does not have to be installed before Ajantis Expansion.
 
 Version 11.3:
 -Russian version finished, by Arkie.
