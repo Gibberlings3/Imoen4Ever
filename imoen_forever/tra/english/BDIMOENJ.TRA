@@ -110,7 +110,7 @@
 @141  = ~[Imoen]Uhm, well, that's possible, no?~
 @142  = ~[female refugee]So, were did it come from, eh? Did it create itself out of thin air?~
 @143  = ~[Imoen]Well, mmmmaybe someone put it into your pocket, you know, as a treat. After hearing about your tin ring. It's possible, right?~
-@144  = ~[female refugee]That's the lamest excuse I ever heard. In times like these, noone would just give away a ring. No - you'll get a mouthful later, you hear me? Hiding such a ring from me! Can you believe it...~
+@144  = ~[female refugee]That's the lamest excuse I ever heard. In times like these, no one would just give away a ring. No - you'll get a mouthful later, you hear me? Hiding such a ring from me! Can you believe it...~
 @145  = ~[Imoen]Oof...~
 @146  = ~[female refugee]I don't know where it came from, but it was in my pocket! This gem is worth a fortune. I can book a carriage to Waterdeep!~
 @147  = ~[Imoen]Yes! Isn't this great? - At last, someone who is happy.~
@@ -129,7 +129,7 @@
 @160  = ~[Sir Rayphus]Thanks for your honesty. I will take the gems and look for the rightful owners - as well as the thief who took them.~
 @161  = ~[male refugee]Thank you! That takes a huge weight off my shoulders.~
 @162  = ~[male refugee]I will go now - I don't want to be around in case the thief comes back and notices the gems are gone...~
-@163  = ~[Imoen]But... they were meant for you! And noone here misses them, they belonged to crusaders! Er... I think! I wouldn't *know* of course... uh, but that's what I would *think* happened here.~
+@163  = ~[Imoen]But... they were meant for you! And no one here misses them, they belonged to crusaders! Er... I think! I wouldn't *know* of course... uh, but that's what I would *think* happened here.~
 @164  = ~[male refugee]That's a rediculous thought - a saint going around and giving treats to the poor refugees? Hmm - I don't think so. I'll definitely hide to make sure the thief won't hassle me!~
 @165  = ~[Imoen]Not a saint, but... oh, bummer!~
 @166  = ~[Safana]Seems your attempts at pickpocketing also gave rather... unexpected results, Imoen.~
@@ -140,7 +140,7 @@
 @171  = ~[PC Reply]I told you it's a bad idea to go around and play gift fairy.~
 @172  = ~[Imoen]I don't know... Some joy? Gratitude not so much, as I didn't want anyone to know it was me.~
 @173  = ~[Imoen]Aw, but you just didn't want to part with the jewels!~
-@174  = ~[Imoen]I think... I think it was wrong to give gems away. Noone seemed really happy to have them...~
+@174  = ~[Imoen]I think... I think it was wrong to give gems away. No one seemed really happy to have them...~
 @175  = ~You heard Husam - these are probably just the uncontent ones. The other ones are already happily on their way to Baldur's Gate.~
 @176  = ~[PC Reply]It's hard to please people - especially everyone.~
 @177  = ~[PC Reply]Maybe you are giving the gifts to them wrongly.~

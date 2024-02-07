@@ -25,7 +25,7 @@ The mod has 14 components. The first 5 are for BGII; for these, the 1st componen
 The last components (numbers 6 to 13) are for SoD; for these, components 6 *or* 7 are required to install any of the other, optional components (for details refer to components' descriptions).
 Component 14 offers an alternate portrait for Imoen by Acifer. It is optional and independent on any other I4E component.
 
-Please note: For Imoen to react to game events in SoD accordingly, the main component (Tracking System, 2nd component) of "Road to Discovery" needs to be installed.
+Please note: For Imoen to react to game events in SoD accordingly, the main component (Tracking System, 2nd component) of "Road to Discovery" needs to be included in your install (independent of install order).
 
 
 Components for BGII content:
@@ -124,7 +124,7 @@ There is also a small quest that plays out in the main coalition camp. Imoen nee
 
 This component requires component 7 "Imoen Returns to PC in First Coalition Camp" to be installed.
 
-Please note: For Imoen to react to game events in SoD accordingly, the main component (Tracking System, 2nd component) of "Road to Discovery" needs to be installed.
+Please note: For Imoen to react to game events in SoD accordingly, the main component (Tracking System, 2nd component) of "Road to Discovery" needs to be included in your install (independent of install order).
 
 
 11 I4E in SoD: Imoen at the End of the Game Should be the One that Was in Party (SoD Only)
@@ -357,7 +357,10 @@ REDISTRIBUTION NOTE: Imoen 4 Ever Mod was created to be freely enjoyed by all Ba
 HISTORY
 
 Version 11.4:
+-Imoen should not give her BGII-Kickout dialogue in BG1 (for BGT).
 -All lines should be traified.
+-Typo corrections.
+-Rephrased note about compatibility with Road to Discovery in the readme: RtD does not have to be installed before Ajantis Expansion.
 
 Version 11.3:
 -Russian version finished, by Arkie.

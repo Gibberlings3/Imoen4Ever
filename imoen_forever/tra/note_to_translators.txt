@@ -24,6 +24,3 @@ new files:
 -sod_banter.tra
 -sod_pid.tra
 
-
-Still needed in Russian, too:
-v11.3 adds more lines to sod_dialogues.tra: @66 - @81 
