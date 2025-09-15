@@ -1,0 +1,55 @@
+//@9900  = ~Imoen 4 Ever in BGII: Experience BGII without pressure - and with Imoen!~
+@9901  = ~此mod需要安装BGIIFixpack核心修复。~
+@9902  = ~此mod与“Imoen Is Stone”mod不兼容。~
+//@9903  = ~Imoen 4 Ever in SoD: Imoen remains in Group in SoD~
+@9904  = ~该组件仅与SoD（和EET）兼容。~
+@9905  = ~此组件仅与BGII兼容。~
+
+/* new for v5 */
+@9906  = ~SoD中的“永远的爱蒙”： 克拉兹地牢中爱蒙留在队伍中~
+@9907  = ~SoD中的“永远的爱蒙”： 爱蒙在焰拳营地中作为PC加入（bd1000）~
+@9908  = ~需要为此安装组件“克拉兹地牢中爱蒙留在队伍中”。~
+@9909  = ~SoD中的“永远的爱蒙”：爱蒙给出留在宫殿的更好理由~
+@9910  = ~SoD中的“永远的爱蒙”： 爱蒙与詹纳斯大公的剧情~
+@9911  = ~需要为此安装组件“爱蒙在焰拳营地中作为PC加入”。~
+@9912  = ~BGII中的“永远的爱蒙”：SoA中爱蒙的对话内容~
+@9913  = ~要为此安装组件“在第2章与盖兰交谈后爱蒙返回”。~
+@9914  = ~BGII中的“永远的爱蒙”：在第2&3章给爱蒙添加防护法术~
+@9915  = ~BGII中的“永远的爱蒙”：与Alternatives和Saerileth的兼容性~
+@9916  = ~检测到Alternatives：正在打补丁。~
+@9917  = ~没有检测到Alternatives~
+@9918  = ~检测到Saerileth：正在打补丁。~
+@9919  = ~没有检测到Saerileth。~
+@9920  = ~BGII中的“永远的爱蒙”：攸旭摩来到布林罗岛~
+@9921  = ~BGII的内容~
+@9922  = ~SoD的内容~
+@9923  = ~SoD中的“永远的爱蒙”： 第8-12章中爱蒙的对话内容~
+@9924  = ~SoD中的“永远的爱蒙”： 统一的爱蒙肖像~
+@9925  = ~在所有SoD中使用爱蒙的BG1肖像~
+@9926  = ~克拉兹地牢之后使用爱蒙的SoD肖像~
+@9927  = ~要为此安装组件“克拉兹地牢中爱蒙留在队伍中”或“爱蒙在焰拳营地中作为PC加入”~
+@9928  = ~BGII中的“永远的爱蒙”：在第2章与盖兰交谈后爱蒙返回~
+@9929  = ~游戏结束时的爱蒙应该是队伍中唯一的（仅限SoD）~
+
+/* new for v7 */
+@9930  = ~EET安装中需要在EET_End之前安装此组件。~
+
+/* new for v8 */
+@9931  = ~爱蒙的箱子也随着战役而转移~
+
+/* new for v9 */
+@9932  = ~该组件与EndlessBG1的“BG1中克拉兹地牢”不兼容，也不再需要。~
+
+/* new for v10 */
+@9933  = ~来自Acifer的爱蒙的替代肖像~
+@9934  = ~该组件与你的游戏不兼容~
+
+/* new for v11 */
+@9935  = ~检测到“The Boareskyr Bridge Scene”mod。~
+@9936  = ~SoD中的“永远的爱蒙”：在第8-12章中给爱蒙增加玩家发起的对话（PID）~
+@9937  = ~Another fine Hell: "Optional Ending for SoD and BGII Closure" detected.~
+@9938  = ~Another fine Hell: "PC's and Imoen's chest in Palace should have their content" detected.~
+
+/* new for v11.3 */
+@9939  = ~安装此mod之前需要Modmerge 或 Argent's DLC Merger。~
+
