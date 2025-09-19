@@ -158,11 +158,11 @@
 @152   = ~What? How are you supposed to get the notion that you're a child of Bhaal. It's not like they gather at every corner!~
 @153   = ~That we both are children of Bhaal is really a strange coincidence.~
 @154   = ~Imoen, I didn't have the slightest clue in my case, either - and that was after the dreams and abilities!~
-@155   = ~I have felt so sorry for you ever since your heritage was relvealed. I always thought it was so strange that Gorion hadn't told you any of it at all... And now I will ask myself for the rest of my life whether he didn't know anything about mine? What a coincidence this would be, me ending up in Candlekeep and we two going adventuring together?~
+@155   = ~I have felt so sorry for you ever since your heritage was revealed. I always thought it was so strange that Gorion hadn't told you any of it at all... And now I will ask myself for the rest of my life whether he didn't know anything about mine? What a coincidence this would be, me ending up in Candlekeep and we two going adventuring together?~
 @156   = ~All this time I wondered what happened to you, starting with the dreams that granted you abilities.~
 @157   = ~Your "brother" Sarevok chasing you, for the longest time without us even knowing it was him.~
 @158   = ~Caelar with a whole crusade and a trip to Avernus...~
-@159   = ~And then Irenicus. I always thought I had to endure his torture - as your friend. As additional... exprimental material. Like Khalid. (shudders)~
+@159   = ~And then Irenicus. I always thought I had to endure his torture - as your friend. As additional... experimental material. Like Khalid. (shudders)~
 @160   = ~And only now I realize that it could have happened all to me, too? That the same could have happened to me, whether or not we had been together? Or... that most of it is still awaiting me? The thought of all this starting for me now scares me, <CHARNAME>.~
 @161   = ~If that should be the case then you can count on us to get through this - together!~
 @162   = ~We will see, Imoen.~
@@ -220,7 +220,7 @@
 
 /* new for v10 */
 @214   = ~[Imoen]A cow! In the midst of the houses. I didn't expect to see them here.~
-@215   = ~[Imoen]Do you remember poor Mrs Thirsty and her cow in Baldur's Gate? What a hassle it was, with her cow inside the city. "No cows are allowed inside the city walls!"~
+@215   = ~[Imoen]Do you remember poor Mrs. Thirsty and her cow in Baldur's Gate? What a hassle it was, with her cow inside the city. "No cows are allowed inside the city walls!"~
 @216   = ~[Imoen]Unless you are the Seatower farmer, of course. Then you can have - two, three?~
 @217   = ~[Imoen]We are in Athkatla, the biggest city I've ever seen - much bigger than Baldur's Gate - and they keep cows on the streets of the slums. Do you think there will be other animals in other parts of the city? Elefants in the Promenade? Wolves in the Graveyard? Peacocks in the Temple District? (giggle)~
 @218   = ~[Jaheira]This is not a zoo, Imoen. The cows belong to very poor people who can't afford to rent a willow outside of town. They are here for milk and also meat.~

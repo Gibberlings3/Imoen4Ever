@@ -538,7 +538,7 @@ SAY @176 /* ~Ich frage mich immer noch, warum sich bei mir das Bhaalerbe so gar 
 = @177 /* ~Es ist eindeutig, dass bei dir die Bhaalessenz stärker war. Oder... aktiver? Nur Gorion weiß, wovor er dich gerettet hat. Die Harfner hielten dich wohl nicht ohne Grund für besonders gefährdet, und auch Sarevok wusste, auf wen er es abziehlt. Vielleicht ist da schon was in der Vergangenheit mit dir geschehen, weswegen sich bei dir das Erbe so viel früher und stärker gezeigt hat?~ */
 ++ @178 /* ~Hm, das ist gut möglich.~ */ + imoen_bhaalchild_2_01
 ++ @179 /* ~Leider habe ich trotz der Riesenbibliothek in Kerzenburg mich nie mit den Kindern Bhaals oder der Prophezeihung Alaundos beschäftigt. Ich habe keine Ahnung, ob die göttliche Essenz sich in unterschiedlichen Abkömmlingen unterschiedlich zeigt.~ */ + imoen_bhaalchild_2_01
-++ @180 /* ~Trotzdem ist das, was du durchmachst, für dich härter, weil es komplett unvorbereitet war und du es unter sehr traumatisierenden Umständen erst erfahren hast.~ */ + imoen_bhaalchild_2_01
+++ @180 /* ~Trotzdem ist das, was du durchmachst, für dich härter, weil es komplett unvorbereitet war und du es unter sehr traumatisierenden Umständen erst erfahren hast.~ */ + imoen_bhaalchild_2_02
 ++ @181 /* ~Ich bin halt was ganz besonderes.~ */ + imoen_bhaalchild_2_03
 ++ @182 /* ~Wir werden sehen, was passiert. Lass uns weiterziehen, je eher wir unsere Seelen wiederhaben, desto besser.~ */ + imoen_bhaalchild_2_05
 END
@@ -557,7 +557,7 @@ APPEND IMOEN2J
 
 IF ~~ THEN imoen_bhaalchild_2_02
 SAY @184 /* ~Die Seele zu verlieren und im selben Moment erst von meinem Bhaalerbe zu erfahren mag für mich persönlich herber sein als für dich. Trotzdem!~ */
-IF ~~ THEN + imoen_bhaalchild_2_04
+IF ~~ THEN + imoen_bhaalchild_2_01
 END
 
 IF ~~ THEN imoen_bhaalchild_2_03

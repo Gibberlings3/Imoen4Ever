@@ -9,7 +9,7 @@ BACKUP ~imoen_forever/backup~
 AUTHOR ~Please post at G3 or Kerzenburgforum, refer to readme.~  
 
 
-VERSION ~v11.4~  
+VERSION ~v11.5~
 
 README ~imoen_forever/readme.imoen_forever.%LANGUAGE%.txt~ ~imoen_forever/readme.imoen_forever.english.txt~
 
@@ -329,6 +329,8 @@ LANGUAGE  ~Simplified Chinese (translation: Lewis Liu)~
           ~schinese~
          ~imoen_forever/tra/schinese/setup.tra~
          ~imoen_forever/tra/schinese/game.tra~
+
+
 ////////////////////////////////////////////////////////////////////////
 //////
 ////// Imoen 4 Ever in BGII: Imoen returns at the beginning of chapter 2
@@ -342,7 +344,6 @@ REQUIRE_PREDICATE ((GAME_IS ~bg2ee eet~) OR (MOD_IS_INSTALLED ~setup-bg2fixpack.
 REQUIRE_PREDICATE NOT (MOD_IS_INSTALLED ~setup-ImoenIsStone.TP2~ "0") @9902 
 FORBID_COMPONENT ~EET_end.tp2~ ~0~ @9930
 FORBID_COMPONENT ~EET_end.tp2~ ~1~ @9930
-
 
 
 ADD_JOURNAL @1000
@@ -388,6 +389,11 @@ COMPILE EVALUATE_BUFFER ~imoen_forever/dialogue/general.d~
 
 /* disable all instances where the player asks for kidnapped Imoen, but do it non-destructively. Thank you argent77 for the code! */
 INCLUDE ~imoen_forever/tpa/add_trans_trigger_npc.tpa~
+
+ACTION_IF GAME_IS ~bg2ee eet~ THEN BEGIN
+  INCLUDE ~imoen_forever/tpa/add_trans_trigger_npc_ee.tpa~
+END
+
 INCLUDE ~imoen_forever/tpa/add_trans_trigger_general.tpa~
 
 
@@ -396,6 +402,14 @@ INCLUDE ~imoen_forever/tpa/string_set.tpa~
 
 ACTION_IF GAME_IS ~bg2ee eet~ THEN BEGIN
   INCLUDE ~imoen_forever/tpa/string_set_ee.tpa~
+END
+
+/* check for extra content (not needed for English version) */
+ACTION_IF FILE_EXISTS ~imoen_forever/tra/%LANGUAGE%/LYROS20.tra~ THEN BEGIN
+LOAD_TRA ~imoen_forever/tra/autotra/%LANGUAGE%/LYROS20.tra~
+//LYROS 20 (Xzar)
+/* ~Ich habe ein paar bestimmte Informationen … Eure Freundin, die von den Verhüllten Magiern mitgenommen worden ist … Ich weiß, wo sie ist. Erfüllt meinen Auftrag, und ich werde Euch sagen wo … hehehe.~ */
+STRING_SET 22555 @10000000
 END
 
 
@@ -449,6 +463,7 @@ COPY_EXISTING ~AR1600.are~ ~override~
     fj_name             = c#im1600
     fj_reg_script   = c#im1600
   END
+BUT_ONLY
 
 
 
@@ -1217,6 +1232,8 @@ REQUIRE_PREDICATE (MOD_IS_INSTALLED ~setup-imoen_forever.TP2~ "11") @9911
 FORBID_COMPONENT ~EET_end.tp2~ ~0~ @9930
 FORBID_COMPONENT ~EET_end.tp2~ ~1~ @9930
 
+ADD_JOURNAL TITLE (@100000) @100001 @100002 @100003 @100004 USING ~imoen_forever/tra/autotra/%LANGUAGE%/game.tra~
+
 /* React in case crusaders in cages are killed by spikes (bd7230.are) */
 //bdlever2.BCS
 COPY_EXISTING ~bdlever2.BCS~ ~override~
@@ -1479,7 +1496,7 @@ COPY ~%MOD_FOLDER%/sod_rejoin/cres/c#imsq01.cre~ ~override~ EVALUATE_BUFFER
     WRITE_ASCII 0x2cc ~c#imsq01~ #8 // set dialogue file
 WRITE_EVALUATED_ASCII 0x248 ~c#imsq01~ #8   // Override script
 
-/* C#IMSQ02 //Fianc?*/
+/* C#IMSQ02 //Fiancé */
 COPY ~%MOD_FOLDER%/sod_rejoin/cres/c#imsq02.cre~ ~override~ EVALUATE_BUFFER 
 	SAY NAME1 @5601 /* ~Gregory~ */
 	SAY NAME2 @5601 /* ~Gregory~ */
