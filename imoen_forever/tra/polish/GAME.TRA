@@ -265,8 +265,8 @@ Jeszcze jedna niepokoj¹ca rzecz... Bodhi wiedzia³a, wiedzia³a o moim ojcu – Bhaa
 //#56899
 @1174   = ~Och, co za wspania³omyœlnoœæ. Oczekujesz, ¿e to zrekompensuje zw³okê naszych wa¿niejszych obowi¹zków?  Wszyscy gonimy za jak¹œ zemst¹!~
 
-/* new for v11.5 */
-@1175   = ~"Spellhold." I know you have other means for finding whoever you seek, and I suggest you exploit them. The Cowled Wizards are no longer in control of the situation.~
+/* new for v21 */
+@1175   = ~[#42944 BGII]"Spellhold." I know you have other means for finding whoever you seek, and I suggest you exploit them. The Cowled Wizards are no longer in control of the situation.~
 
 /* SoD */
 
