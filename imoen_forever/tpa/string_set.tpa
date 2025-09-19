@@ -280,6 +280,12 @@ STRING_SET 45676 @1120
 /* ~A friend has been taken captive by the Cowled Wizards... do you know where they keep their prisoners?~ */
 STRING_SET 45689 @1120
 
+/* ~A friend has been taken captive by the Cowled Wizards... do you know where they keep their prisoners?~ */
+STRING_SET 45709 @1120
+
+/* ~A friend has been taken captive by the Cowled Wizards... do you know where they keep their prisoners?~ */
+STRING_SET 45717 @1120
+
 
 //DOGHMA 0 DO 2
 /* ~I have a question... a friend has been taken captive by the Cowled Wizards.  Do you know where they keep their prisoners?~ */
@@ -442,7 +448,6 @@ STRING_SET 42402 @1133
 /* ~I was wondering... do you know anything of the Cowled Wizards?  I have a friend who is being held by them.~ */
 STRING_SET 42407 @1132
 
-
 //MARIA 12
 /* ~And when <CHARNAME>'s friend is found...?~ */
 STRING_SET 10400 @1135
@@ -573,6 +578,10 @@ STRING_SET 42941 @1075
 //MGTEOS01 86
 /* ~They are no longer in the city. I could get nothing further from my superiors, and I expect that asking for more would yield a harsh response. ~ */
 STRING_SET 42942 @1076
+
+//MGTEOS01 88
+/* ~"Spellhold." I know you have other means for finding your friend, and I suggest you exploit them. The Cowled Wizards are no longer in control of the situation.~ */
+STRING_SET 42944 @1175
 
 
 //NALIAJ 250

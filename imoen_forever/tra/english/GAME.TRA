@@ -249,6 +249,12 @@ One more troubling thing... Bodhi knew. She knew I am a child of Bhaal.~
 //#56899
 @1174   = ~Oh, how generous.  Do you expect that to compensate while you delay our more important concerns?  We have need of pursuit and vengeance both!~
 
+/* new for v21 */
+@1175   = ~"Spellhold." I know you have other means for finding whoever you seek, and I suggest you exploit them. The Cowled Wizards are no longer in control of the situation.~
+
+/* This line needs to be changed in the German version */
+//@1176 is used!
+
 /* SoD */
 
 /* new for v5 */

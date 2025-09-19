@@ -246,6 +246,8 @@ Translations:
 
 Lauriel - proof reading (English) (v4)
 
+Lewis Liu - Simplified Chinese (v11.5)
+
 memory, Roberciiik - Polish (v9)
 
 Raza, stn & Arcanecoast Team, Arkie - Russian (v11.3)
@@ -289,6 +291,14 @@ UWAGI O ROZPOWSZECHNIANIU: Mod Imoen 4 Ever zosta³ stworzony po to, aby mogli si
 
 
 HISTORIA
+
+Version 11.5:
+-Simplified Chinese Version added, by Lewis Liu.
+-English version (SoD part) should have the correct text encryption.
+-Fovem (fence in front of Harpner building) should not refer to Imoen being kidnapped.
+-SoD: gem stashes should give gems when clicked on, fix by argent77; quest journal entries should be in quest section.
+-BG2: Neera shouldn't mention Imoen if she is not kidnapped.
+-BG2 (German version): Xzar shouldn't mention a kidnapped female friend.
 
 Version 11.4:
 -Imoen should not give her BGII-Kickout dialogue in BG1 (for BGT).

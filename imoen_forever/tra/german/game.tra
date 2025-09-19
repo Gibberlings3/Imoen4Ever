@@ -233,6 +233,9 @@ Eines beunruhigt mich … Bodhi wusste es! Sie wusste, dass ich ein Kind Bhaals bi
 @1171 = ~Ich bin gerade dabei mir ein wenig Gold zusammen zu sparen, um einen Feind zu verfolgen … Wie hoch wäre die Belohnung für diesen Auftrag?~
 @1173 = ~Vielleicht haben sie Mitleid mit meiner Not. Meine Bestrebungen sind eine gerechte Sache.~
 @1174 = ~Oh, wie großzügig. Erwartet Ihr wirklich, dass das eine angemessene Entschädigung dafür ist, dass wir warten und wichtigere Sachen hinten anstellen müssen? Feinde von uns müssen verfolgt und zur Rechenschaft gezogen werden!~
+/* new for v11.5 */
+@1175   = ~Es lautet „Zauberfeste“. Ich weiß, Ihr habt andere Möglichkeiten, zu finden, wen auch immer Ihr sucht, und ich empfehle Euch, sie zu nutzen. Die Verhüllten Magier haben die Situation nicht mehr im Griff.~
+
 @5000 = ~Aber was, wenn <PRO_HESHE> ohne mich in Gefahr gerät?!~
 @5001 = ~Imoen!~
 @5005 = ~Was? Das würde <CHARNAME> niemals tun! Seid Ihr alle verrückt geworden?! Hände weg von meinem Freund!~ ~Was? Das würde <CHARNAME> niemals tun! Seid Ihr alle verrückt geworden?! Hände weg von meiner Freundin!~

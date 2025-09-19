@@ -249,6 +249,9 @@
 //#56899
 @1174   = ~О, как щедро. И ты думаешь, мы удовлетворимся этим, при том, что тянешь с гораздо более важными делами? Мы должны идти следом за Айреникусом, мы должны отомстить!~
 
+/* new for v11.5 */
+@1175   = ~"Spellhold." I know you have other means for finding whoever you seek, and I suggest you exploit them. The Cowled Wizards are no longer in control of the situation.~
+
 /* SoD */
 
 /* new for v5 */

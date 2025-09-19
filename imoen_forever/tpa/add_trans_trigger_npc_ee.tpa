@@ -1,0 +1,10 @@
+
+
+/* Neera */
+<<<<<<<< .../inlined/i4e_NEERA.d
+/* Neera */
+/* Prevent transition to state 500: #102390 ~If it weren't Imoen, <CHARNAME>... Let's get this over with.~ */
+ADD_TRANS_TRIGGER NEERAJ 499 ~Global("C#IM_ImoenStays","GLOBAL",0)~ DO 6
+>>>>>>>>
+COMPILE EVAL ~.../inlined/i4e_NEERA.d~
+

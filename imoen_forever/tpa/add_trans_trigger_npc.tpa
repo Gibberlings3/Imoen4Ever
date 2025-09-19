@@ -634,12 +634,11 @@ BUT_ONLY
 // are now initialized and can be used in the .d file
 COMPILE EVAL ~.../inlined/i4e_NALIA.d~
 
-
 <<<<<<<< .../inlined/i4e_VALYGAR.d
 /* Valygar */
 /* meeting dialogue */
 /* #42348 ~I should probably tell you before you agree that I intend to rescue an old friend of mine, Imoen, who has been taken hostage by the Cowled Wizards.  It could be dangerous.~ */
-ADD_TRANS_TRIGGER VALYGAR 39 ~Global("C#IM_ImoenStays","GLOBAL",0)~ DO%responses_39% //0
+ADD_TRANS_TRIGGER VALYGAR 39 ~Global("C#IM_ImoenStays","GLOBAL",0)~ DO %responses_39% //0
 >>>>>>>>
 
 // List of all potential response strrefs to check
@@ -682,7 +681,7 @@ COMPILE EVAL ~.../inlined/i4e_VALYGAR.d~
 ADD_TRANS_TRIGGER VICONI 4 ~Global("C#IM_ImoenStays","GLOBAL",0)~ DO %responses_4% //0 3
 
 /* #42202 ~One thing, though, Viconia... you should probably know that Imoen is being held hostage by the Cowled Wizards, and that I intend to rescue her.~ */
-ADD_TRANS_TRIGGER VICONI 6 ~Global("C#IM_ImoenStays","GLOBAL",0)~ DO%responses_6% //0
+ADD_TRANS_TRIGGER VICONI 6 ~Global("C#IM_ImoenStays","GLOBAL",0)~ DO %responses_6% //0
 >>>>>>>>
 
 // List of all potential response strrefs to check

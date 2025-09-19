@@ -1,4 +1,31 @@
 IF
+  Clicked([ANYONE])
+  Range(LastTrigger,15)
+  InParty(LastTrigger)
+THEN
+  RESPONSE #100
+    GiveItemCreate("C#IMSGM",LastTrigger,0,0,0)  // Imoen's Gems
+    TriggerActivation(Myself,FALSE)
+END
+
+IF
+  Clicked([ANYONE])
+  !Range(LastTrigger,15)
+  InParty(LastTrigger)
+THEN
+  RESPONSE #100
+    DisplayString(Myself,@5560)  // You need to come closer to do anything here.
+END
+
+IF
+  Clicked([ANYONE])
+THEN
+  RESPONSE #100
+    NoAction()
+END
+
+/*
+IF
 	Clicked([ANYONE])
 	InMyArea(Player1)
 	Range(Player1,15)
@@ -70,3 +97,4 @@ THEN
 	RESPONSE #100
 		DisplayString(Myself,@5560)
 END
+*/
