@@ -60,7 +60,6 @@ STRING_SET 49176 @1097
 /* ~We thought you could lead us to him, and you can. You seek Imoen and Irenicus, and we seek answers. They were taken to the same place, you see. ~ */
 STRING_SET 49185 @1034
 
-
 //BERINVAR 0 DO 3
 /* I'm searching for a friend who has been taken by the Cowled Wizards... do you know anything about this? */
 STRING_SET 42553 @1101
