@@ -6,6 +6,11 @@ ADD_TRANS_TRIGGER ARAN 39 ~Global("C#IM_ImoenStays","GLOBAL",0)~ DO %responses_3
 
 /* #49175 ~Because of this I lost significantly more. Imoen remains missing.~ */
 ADD_TRANS_TRIGGER ARAN 70 ~Global("C#IM_ImoenStays","GLOBAL",0)~ DO %responses_70% //2
+
+/* prevent ARAN 109: #56033 ~And I see that you have your companion back amongst you.  That was your goal, wasn't it?  I trust you are no worse for the wear, my dear?~ */
+EXTEND_BOTTOM ARAN 78
+IF ~!Global("C#IM_ImoenStays","GLOBAL",0)~ THEN + 79
+END
 >>>>>>>>
 
 // List of all potential response strrefs to check
