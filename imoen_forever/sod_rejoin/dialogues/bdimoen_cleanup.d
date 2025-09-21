@@ -1,6 +1,31 @@
 /* Global("C#IM_ImoenComesBackSoD","GLOBAL",1) */
 
+/* Imoen Dream. Prevent Imoen from saying the PC abandoned her if she is in party */
+/*
+~BDCCIMO~
+IF ~  AreaCheck("BD0072")
+~ THEN BEGIN 0 // from:
+  SAY #67213 /* ~Books for bones, words for blood. Candlekeep. Our home. It wasn't your fault we had to leave.~ [BD67213] */
+  IF ~~ THEN GOTO 1
+END
 
+IF ~~ THEN BEGIN 1 // from: 0.0
+  SAY #67214 /* ~Only... it was. Wasn’t it?~ [BD67214] */
+  IF ~~ THEN GOTO 2
+END
+
+IF ~~ THEN BEGIN 2 // from: 1.0
+  SAY #67215 /* ~You were all I had left in the world. And you abandoned me. I've got nothing left now. Nothing.~ [BD67215] */
+  IF ~~ THEN DO ~StartCutSceneMode()
+StartCutSceneEx("bdddd2b",TRUE)
+~ EXIT
+END
+*/
+
+INTERJECT BDCCIMO 0 C#IM_ImoenSoDDream1
+== BDCCIMO IF ~InPartyAllowDead("%IMOEN_DV_SOD%")~ THEN #%67214%
+END
+COPY_TRANS BDCCIMO 2
 
 /* Prevent Imoen in the Scrying Pool in bd1200.are -> is in extra tpa file */
 /* ADD_TRANS_TRIGGER BDSCRY 0 ~FALSE()~ DO 0 */
