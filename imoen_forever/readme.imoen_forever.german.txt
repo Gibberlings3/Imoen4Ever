@@ -349,7 +349,9 @@ Version 11.5:
 -Simplified Chinese Version added, by Lewis Liu.
 -English version (SoD part) should have the correct text encryption.
 -Fovem (fence in front of Harpner building) should not refer to Imoen being kidnapped.
+-Aran should not say that retrieving Imoen was the goal of renting a ship.
 -SoD: gem stashes should give gems when clicked on, fix by argent77; quest journal entries should be in quest section.
+-SoD: Imoen should not complain that PC abandoned her when she is in party.
 -BG2: Neera shouldn't mention Imoen if she is not kidnapped.
 -BG2 (German version): Xzar shouldn't mention a kidnapped female friend.
 
