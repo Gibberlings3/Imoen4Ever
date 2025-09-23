@@ -105,8 +105,8 @@ THEN
 	RESPONSE #100
 	  SetInterrupt(FALSE)
 	  SetGlobal("C#IM_SoDQuest_Enc","GLOBAL",3)
-	  CreateCreatureObjectOffset("C#IMSQ04",Myself,[20.20])
-	  CreateCreatureObjectOffset("C#IMSQ05",Myself,[35.10])
+	  CreateCreatureObjectOffset("C#IMSQ06",Myself,[20.20])
+	  CreateCreatureObjectOffset("C#IMSQ07",Myself,[35.10])
 	  DisplayStringHead(Myself,@5581)
 	  RealSetGlobalTimer("C#IM_QuestTimerSoD","GLOBAL",1200)
 	  SetInterrupt(TRUE)
@@ -130,8 +130,8 @@ THEN
 	RESPONSE #100
 	  SetInterrupt(FALSE)
 	  SetGlobal("C#IM_SoDQuest_Enc","GLOBAL",5)
-	  CreateCreatureObjectOffset("C#IMSQ06",Myself,[20.20])
-	  CreateCreatureObjectOffset("C#IMSQ07",Myself,[35.10])
+	  CreateCreatureObjectOffset("C#IMSQ04",Myself,[20.20])
+	  CreateCreatureObjectOffset("C#IMSQ05",Myself,[35.10])
 	  DisplayStringHead(Myself,@5582)
 	  RealSetGlobalTimer("C#IM_QuestTimerSoD","GLOBAL",1200)
 	  SetInterrupt(TRUE)

@@ -123,24 +123,24 @@ IF ~~ THEN DO ~SetGlobal("C#IM_SoDQuest_Enc","GLOBAL",2)~ EXIT
 
 /* Encounter two: bickering friends no. 1 */
 CHAIN
-IF ~Global("C#IM_SoDQuest_Enc","GLOBAL",3)~ THEN C#IMSQ04 bye
+IF ~Global("C#IM_SoDQuest_Enc","GLOBAL",3)~ THEN C#IMSQ06 bye
 @146 /* [female refugee]I don't know where it came from, but it was in my pocket! This gem is worth a fortune. I can book a carriage to Waterdeep! */
 == bdimoen IF ~InParty("%IMOEN_DV_SOD%") See("%IMOEN_DV_SOD%") !StateCheck("%IMOEN_DV_SOD%",CD_STATE_NOTVALID)~ THEN @147 /* [Imoen]Yes! Isn't this great? - At last, someone who is happy. */
-== C#IMSQ04 @148 /* [female refugee]Which means I don't need *you* any more. I'm a wealthy woman now, I can't share my wealth with everyone. */
-== C#IMSQ05 @149 /* [female refugee]"Everyone"? I thought we are in this together! */
-== C#IMSQ04 @150 /* [female refugee]Not any more. I'm off to Waterdeep. I'm sure you'll be fine, with all the soldiers protecting the camp. Bye! */
+== C#IMSQ06 @148 /* [female refugee]Which means I don't need *you* any more. I'm a wealthy woman now, I can't share my wealth with everyone. */
+== C#IMSQ07 @149 /* [female refugee]"Everyone"? I thought we are in this together! */
+== C#IMSQ06 @150 /* [female refugee]Not any more. I'm off to Waterdeep. I'm sure you'll be fine, with all the soldiers protecting the camp. Bye! */
 == bdimoen IF ~InParty("%IMOEN_DV_SOD%") See("%IMOEN_DV_SOD%") !StateCheck("%IMOEN_DV_SOD%",CD_STATE_NOTVALID)~ THEN @151 /* [Imoen]But... aw, man, that was mean. The were meant for both of them! */
 END
 IF ~~ THEN DO ~SetGlobal("C#IM_SoDQuest_Enc","GLOBAL",4)~ EXIT
 
 /* Encounter three: bickering friends no. 2 */
 CHAIN
-IF ~Global("C#IM_SoDQuest_Enc","GLOBAL",5)~ THEN C#IMSQ06 encounter_3
+IF ~Global("C#IM_SoDQuest_Enc","GLOBAL",5)~ THEN C#IMSQ04 encounter_3
 @152 /* [male refugee]...well aware, but that you would go to such measures is beyond my imagination. Placing a gem into my pillow so *I* would be suspected of thieving and kicked out of camp! How low can one fall! */
 == bdimoen IF ~InParty("%IMOEN_DV_SOD%") See("%IMOEN_DV_SOD%") !StateCheck("%IMOEN_DV_SOD%",CD_STATE_NOTVALID)~ THEN @153 /* [Imoen]Aw!... No, that's not what... */
-== C#IMSQ07 @154 /* [male refugee]What? I did no such thing! Why would I give a gem to *you* just to get you out of this camp. Had I such a gem, I would use it for myself! ...Wait - yes, of course it's *my* gem! Give me *my* gem back! */
-== C#IMSQ06 @155 /* [male refugee]No way, you liar! You just said it's not yours! So it's mine - I found it! */
-== C#IMSQ07 @156 /* [male refugee]No! Give me the gem! Give it to me! */
+== C#IMSQ05 @154 /* [male refugee]What? I did no such thing! Why would I give a gem to *you* just to get you out of this camp. Had I such a gem, I would use it for myself! ...Wait - yes, of course it's *my* gem! Give me *my* gem back! */
+== C#IMSQ04 @155 /* [male refugee]No way, you liar! You just said it's not yours! So it's mine - I found it! */
+== C#IMSQ05 @156 /* [male refugee]No! Give me the gem! Give it to me! */
 END
 IF ~~ THEN DO ~SetGlobal("C#IM_SoDQuest_Enc","GLOBAL",6)~ EXIT
 
