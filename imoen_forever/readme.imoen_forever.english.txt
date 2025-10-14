@@ -316,7 +316,7 @@ Lauriel - proof reading (English) (v4)
 
 Lewis Liu - Simplified Chinese (v11.5)
 
-memory, Roberciiik - Polish (v9)
+memory, Roberciiik,  - Polish (v9)
 
 Raza, stn & Arcanecoast Team, Arkie - Russian (v11.5)
 
@@ -357,6 +357,10 @@ REDISTRIBUTION NOTE: Imoen 4 Ever Mod was created to be freely enjoyed by all Ba
 
 
 HISTORY
+
+Version 11.6:
+-SoD quest: Corrected switched cre files.
+-Removed AreaCheck() from area script (bd4300.bcs).
 
 Version 11.5:
 -Simplified Chinese Version added, by Lewis Liu.
