@@ -305,18 +305,19 @@ CREDITS
 
 Acifer - Imoen portrait, promotion picture, beta testing, mod name
 
-Argent77 - coding help for non-destructive ADD_TRANS_TRIGGER patching
+Argent77 - coding help for non-destructive ADD_TRANS_TRIGGER patching, script optimization
 
 UnderstandMouseMagic: idea about Imoen staying behind in SoD because of her poison injury.
+
 
 Translations:
 ------------
 
-Lauriel - proof reading (English) (v4)
+Lauriel (v4); moggadeet (sod_important_reactions.tra) - proof reading (English)
 
 Lewis Liu - Simplified Chinese (v11.5)
 
-memory, Roberciiik,  - Polish (v9)
+memory, Roberciiik (v9); mdDziadek (v11.6)  - Polish
 
 Raza, stn & Arcanecoast Team, Arkie - Russian (v11.5)
 
@@ -359,7 +360,8 @@ REDISTRIBUTION NOTE: Imoen 4 Ever Mod was created to be freely enjoyed by all Ba
 HISTORY
 
 Version 11.6:
--SoD quest: Corrected switched cre files.
+-Polish version completed, by mdDziadek.
+-SoD quest: Corrected switched cre files to match dialogues.
 -Removed AreaCheck() from area script (bd4300.bcs).
 
 Version 11.5:
