@@ -42,14 +42,14 @@
 @9932  = ~Ten komponent jest niekompatybliny z komponentem "Krypta Korlasz bedzie dostepna w BG1" modyfikacji Endless BG1, a nawet nie jest juz dluzej potrzebny.~
 
 /* new for v10 */
-@9933  = ~Imoen's Alternate Portrait from Acifer~
-@9934  = ~This component is not compatible with your game.~
+@9933  = ~Alternatywny portret Imoen autorstwa Acifera~
+@9934  = ~Ten komponent nie jest kompatybilny z twoj¹ gr¹.~
 
 /* new for v11 */
-@9935  = ~The Boareskyr Bridge Scene mod detected.~
-@9936  = ~Imoen 4 Ever in SoD: Give Imoen PID during chapters 8 to 12~
-@9937  = ~Another fine Hell: "Optional Ending for SoD and BGII Closure" detected.~
-@9938  = ~Another fine Hell: "PC's and Imoen's chest in Palace should have their content" detected.~
+@9935  = ~Wykryto mod The Boareskyr Bridge Scene.~
+@9936  = ~Imoen 4 Ever in SoD: Gracz inicjuje dialogi (PID) z Imoen w rozdzia³ach od 8 do 12~
+@9937  = ~Wykryto komponent "Optional Ending for SoD and BGII Closure" z moda Another fine Hell.~
+@9938  = ~Wykryto komponent "PC's and Imoen's chest in Palace should have their content" z moda Another fine Hell.~
 
 /* new for v11.3 */
-@9939  = ~Modmerge or Argent's DLC Merger is required before mods can be installed on this game.~
+@9939  = ~Program Modmerge lub Argent's DLC Merger jest wymagany do instalacji modów.~

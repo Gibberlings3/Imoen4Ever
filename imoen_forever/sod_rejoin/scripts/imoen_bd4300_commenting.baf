@@ -15,7 +15,6 @@ END
 
 /* 2 Portal is opened after Hephernaan's scheme */
 IF
-	AreaCheck("BD4300")
 	Global("bd_plot","global",495)
 	Global("C#Imoen_SoDPortalComment","bd4300",0) 
 	IfValidForPartyDialog("%IMOEN_DV_SOD%")  

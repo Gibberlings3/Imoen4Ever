@@ -9,7 +9,7 @@ BACKUP ~imoen_forever/backup~
 AUTHOR ~Please post at G3 or Kerzenburgforum, refer to readme.~  
 
 
-VERSION ~v11.6~ //pre
+VERSION ~v11.6~
 
 README ~imoen_forever/readme.imoen_forever.%LANGUAGE%.txt~ ~imoen_forever/readme.imoen_forever.english.txt~
 
@@ -335,7 +335,8 @@ LANGUAGE  ~Simplified Chinese (translation: Lewis Liu)~
 
 ////////////////////////////////////////////////////////////////////////
 //////
-////// Imoen 4 Ever in BGII: Imoen returns at the beginning of chapter 2
+////// Imoen 4 Ever in BGII: Imoen Returns after Talking to Gaelan in Chapter 2
+//(Imoen returns at the beginning of chapter 2)
 //////
 ////////////////////////////////////////////////////////////////////////
 

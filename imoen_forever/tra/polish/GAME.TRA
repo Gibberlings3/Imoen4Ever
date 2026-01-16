@@ -266,7 +266,7 @@ Jeszcze jedna niepokoj¹ca rzecz... Bodhi wiedzia³a, wiedzia³a o moim ojcu – Bhaa
 @1174   = ~Och, co za wspania³omyœlnoœæ. Oczekujesz, ¿e to zrekompensuje zw³okê naszych wa¿niejszych obowi¹zków?  Wszyscy gonimy za jak¹œ zemst¹!~
 
 /* new for v21 */
-@1175   = ~[#42944 BGII]"Spellhold." I know you have other means for finding whoever you seek, and I suggest you exploit them. The Cowled Wizards are no longer in control of the situation.~
+@1175   = ~[#42944 BGII]"Czarowiêzy." Wiem, ¿e masz inne sposoby na znalezienie osoby, której szukasz, i radzê, abyœ z nich skorzysta³. Zakapturzeni Czarodzieje nie panuj¹ ju¿ nad sytuacj¹.~
 
 /* SoD */
 
@@ -280,16 +280,16 @@ Jeszcze jedna niepokoj¹ca rzecz... Bodhi wiedzia³a, wiedzia³a o moim ojcu – Bhaa
 
 /* new for v11 */
 /* imoen_bd0063.baf */
-@5560  = ~You need to come closer to do anything here.~
+@5560  = ~Musisz podejœæ bli¿ej, ¿eby coœ tutaj zrobiæ.~
 
 /* new for v11.4 */
 /* c#imsq07.baf */
-@5570  = ~Wait! Wait!~
+@5570  = ~Czekaj! Czekaj!~
 
 /* sod_quest.baf */
 @5580 = ~Hehehe!~
-@5581 = ~Yup!~
-@5582 = ~Gotcha!~ 
+@5581 = ~Tak!~
+@5582 = ~Rozumiem!~ 
 
 
 /* imoen_forever.tp2 */
@@ -336,21 +336,21 @@ Jeszcze jedna niepokoj¹ca rzecz... Bodhi wiedzia³a, wiedzia³a o moim ojcu – Bhaa
 @5600  = ~Synthia~
 @5601  = ~Gregory~
 @5602  = ~Holter~
-@5603  = ~Imoen's Gems~
-@5604  = ~These are some gems collected by Imoen. Nothing too valuable, but everything to a person in need.~
+@5603  = ~Klejnoty Imoen~
+@5604  = ~Oto kilka klejnotów zebranych przez Imoen. Nie s¹ zbyt cenne, ale dla osoby w potrzebie maj¹ ogromn¹ wartoœæ.~
 
 /* Journal entries */
 /* SoD quest */
-@100000  = ~Imoen's Gems~
-@100001  = ~Imoen's Gems
+@100000  = ~Klejnoty Imoen~
+@100001  = ~Klejnoty Imoen
 
-Imoen hid gems near some tent entrances of the coalition camp. She doesn't remember which tents exactly, but she knows that it was eight stacks, each on a different tent, always at the right side of a tent's entrance.~
-@100002  = ~Imoen's Gems
+Imoen ukry³a klejnoty w pobli¿u wejœæ do namiotów obozu koalicji. Nie pamiêta dok³adnie, w których namiotach, ale wie, ¿e by³o ich osiem, ka¿dy w osobnym namiocie, zawsze po prawej stronie wejœcia do namiotu.~
+@100002 = ~Klejnoty Imoen
 
-We collected all of Imoen's gems. I suggested we would bring them to Sir Rayphus.~
-@100003  = ~Imoen's Gems
+Zebraliœmy wszystkie klejnoty Imoen. Zasugerowa³em, ¿ebyœmy zanieœli je Sir Rayphusowi.~
+@100003 = ~Klejnoty Imoen
 
-We collected all of Imoen's gems. She doesn't want to have them any more.~
-@100004  = ~Imoen's Gems
+Zebraliœmy wszystkie klejnoty. Imoen ju¿ nie chce ich mieæ.~
+@100004 = ~Klejnoty Imoen
 
-We gave gems Imoen collected to Sir Rayphus, so he can give them to refugees. I think Imoen liked it, but whether she will try to surprise strangers with presents again is questionable.~
+Przekazaliœmy klejnoty zebrane przez Imoen Sir Rayphusowi, ¿eby móg³ je przekazaæ uchodŸcom. Myœlê, ¿e Imoen siê to spodoba³o. Czy znów spróbuje zaskoczyæ nieznajomych prezentami, w¹tpiê.~
